@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold Blog - Guides, Tips & Tutorials',
@@ -15,11 +16,72 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  alternates: {
+    canonical: 'https://teenpattigoldgame.com.pk/blog',
+  },
 };
 
 export default function Blog() {
+  // Schema.org structured data for blog collection page
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Teen Patti Gold Blog",
+    "description": "Learn how to create an account, earn money, and get the most out of Teen Patti Gold with our helpful guides and tutorials.",
+    "url": "https://teenpattigoldgame.com.pk/blog",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "BlogPosting",
+            "name": "Is Teen Patti Gold Real or Fake to Earn Money?",
+            "url": "https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "BlogPosting",
+            "name": "How to Create a Teen Patti Gold Account and Login",
+            "url": "https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "BlogPosting",
+            "name": "Tips to Win Big in Teen Patti Gold",
+            "url": "https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold"
+          }
+        }
+      ]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Teen Patti Gold",
+      "url": "https://teenpattigoldgame.com.pk",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp"
+      }
+    }
+  };
+
   return (
-    <div className="container mx-auto px-4 py-12">
+    <>
+      {/* Schema.org JSON-LD */}
+      <Script
+        id="blog-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      
+      <div className="container mx-auto px-4 py-12">
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-accent">Teen Patti Gold Blog</h1>
       <p className="text-gray-300 mb-8 text-lg">Stay updated with the latest guides, tips, and tutorials for Teen Patti Gold</p>
       
@@ -70,5 +132,6 @@ export default function Blog() {
         </div>
       </div>
     </div>
+    </>
   );
 } 
