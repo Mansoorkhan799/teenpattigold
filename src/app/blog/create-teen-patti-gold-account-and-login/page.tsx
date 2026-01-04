@@ -257,7 +257,7 @@ export default function CreateAccountLogin() {
               "name": "Teen Patti Gold",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://teenpattigoldgame.com.pk/Teen-Patti-Gold.webp"
+                "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp"
               }
             },
             "mainEntityOfPage": {

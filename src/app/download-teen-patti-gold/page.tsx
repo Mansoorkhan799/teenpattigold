@@ -81,7 +81,7 @@ export default function DownloadPage() {
       "https://teenpattigoldgame.com.pk/2.webp",
       "https://teenpattigoldgame.com.pk/3.webp"
     ],
-    "image": "https://teenpattigoldgame.com.pk/Teen-Patti-Gold.webp",
+    "image": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
     "author": {
       "@type": "Organization",
       "name": "Teen Patti Gold",

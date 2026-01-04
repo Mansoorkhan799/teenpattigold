@@ -44,7 +44,7 @@ export default function TeenPattiGoldForIOSPage() {
     "@type": "TechArticle",
     "headline": "Teen Patti Gold For iOS Download Latest Version For Free 2026",
     "description": "Complete guide to download and play Teen Patti Gold on iOS devices including iPhone and iPad.",
-    "image": "https://teenpattigoldgame.com.pk/Teen-Patti-Gold.webp",
+    "image": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
     "author": {
       "@type": "Organization",
       "name": "Teen Patti Gold",
@@ -55,7 +55,7 @@ export default function TeenPattiGoldForIOSPage() {
       "name": "Teen Patti Gold",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://teenpattigoldgame.com.pk/Teen-Patti-Gold.webp"
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp"
       }
     },
     "datePublished": "2026-01-05",
@@ -100,7 +100,7 @@ export default function TeenPattiGoldForIOSPage() {
         <div className="flex justify-center mb-12">
           <div className="relative" style={{ width: '280px', height: '280px', maxWidth: '100%' }}>
             <Image
-              src="/Teen-Patti-Gold.webp"
+              src="/teen-patti-gold.webp"
               alt="Teen Patti Gold for iOS"
               width={280}
               height={280}
