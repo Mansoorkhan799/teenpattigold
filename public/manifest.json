@@ -1,0 +1,22 @@
+{
+  "name": "Teenpatti Gold",
+  "short_name": "Teenpatti Gold",
+  "description": "Pakistan's premier card gaming platform offering Teen Patti, Rummy, Dragon vs Tiger and more. Earn real cash rewards!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06091F",
+  "theme_color": "#06091F",
+  "icons": [
+    {
+      "src": "/Teen-Patti-Gold.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/Teen-Patti-Gold.webp",
+      "sizes": "192x192 512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+} 
