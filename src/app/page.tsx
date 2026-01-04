@@ -290,7 +290,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Overview</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              This app is divided into various sections, including card games, slots, poker, and many others, making it easy to find games that you want to play. CardRummy is designed with modern graphics, smooth gameplay, and an easy interface that makes this platform more suitable for both beginners and experienced players. This app also offers you great and interesting services, allowing you to earn significant money even by investing a small amount. You can also win real cash rewards or bonuses for free. So, download the game, and start playing your favorite games to earn real cash for free.
+              This app is divided into various sections, including card games, slots, poker, and many others, making it easy to find games that you want to play. Teen Patti Gold is designed with modern graphics, smooth gameplay, and an easy interface that makes this platform more suitable for both beginners and experienced players. This app also offers you great and interesting services, allowing you to earn significant money even by investing a small amount. You can also win real cash rewards or bonuses for free. So, download the game, and start playing your favorite games to earn real cash for free.
             </p>
           </div>
         </div>
@@ -333,7 +333,7 @@ export default function Home() {
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">How Can We Start with Teen Patti Gold?</h2>
           <div className="space-y-4">
-            <p className="text-gray-300 leading-relaxed">To start the CardRummy game, follow the given steps:</p>
+            <p className="text-gray-300 leading-relaxed">To start the Teen Patti Gold game, follow the given steps:</p>
             <ol className="list-decimal pl-5 space-y-3 text-gray-300">
               <li>Firstly, open the official website of 3 Patti Teen Patti Gold and download the APK file to your device.</li>
               <li>Once downloaded then click on the downloaded APK file to start the installation by allowing the Unknown Sources.</li>
@@ -985,120 +985,180 @@ export default function Home() {
 
       {/* FAQ Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-        <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Frequently Asked Questions</h2>
-        <div className="space-y-4">
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-              Can users play CardRummy without depositing money?
-              <span className="transition group-open:rotate-180">
-                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <div className="p-4 pt-0 text-gray-300">
-              Yes, you can play games in Teen Patti Gold by using the free bonuses like the Welcome Bonus and Referral Commission.
-            </div>
-          </details>
+        <div className="bg-secondary rounded-2xl p-8 md:p-12 shadow-2xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#FFA500]">Frequently Asked Questions</h2>
+            <p className="text-gray-300 text-lg max-w-2xl mx-auto">Find answers to common questions about Teen Patti Gold</p>
+          </div>
+          
+          <div className="space-y-4 max-w-4xl mx-auto">
+            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
+              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#FFA500] transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="bg-[#FFA500]/20 rounded-lg p-2">
+                    <svg className="w-6 h-6 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <span>Can users play Teen Patti Gold without depositing money?</span>
+                </div>
+                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
+                <p className="pt-4">Yes, you can play games in Teen Patti Gold by using the free bonuses like the Welcome Bonus and Referral Commission.</p>
+              </div>
+            </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-              How do users contact customer support?
-              <span className="transition group-open:rotate-180">
-                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <div className="p-4 pt-0 text-gray-300">
-              You can contact the Teen Patti Gold support team through live chat, WhatsApp, or other social media platforms.
-            </div>
-          </details>
+            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#0ea5e9]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
+              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#0ea5e9] transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="bg-[#0ea5e9]/20 rounded-lg p-2">
+                    <svg className="w-6 h-6 text-[#0ea5e9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                  </div>
+                  <span>How do users contact customer support?</span>
+                </div>
+                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#0ea5e9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
+                <p className="pt-4">You can contact the Teen Patti Gold support team through live chat, WhatsApp, or other social media platforms.</p>
+              </div>
+            </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-              What makes Teen Patti Gold different from other card games?
-              <span className="transition group-open:rotate-180">
-                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <div className="p-4 pt-0 text-gray-300">
-              Its simple design, fast transactions, and exciting games make this platform more enjoyable than other apps.
-            </div>
-          </details>
+            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#4ade80]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
+              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#4ade80] transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="bg-[#4ade80]/20 rounded-lg p-2">
+                    <svg className="w-6 h-6 text-[#4ade80]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                  </div>
+                  <span>What makes Teen Patti Gold different from other card games?</span>
+                </div>
+                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#4ade80]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
+                <p className="pt-4">Its simple design, fast transactions, and exciting games make this platform more enjoyable than other apps.</p>
+              </div>
+            </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-              Is Teen Patti Gold safe and legal to use?
-              <span className="transition group-open:rotate-180">
-                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <div className="p-4 pt-0 text-gray-300">
-              Yes, it is safe to use because this makes sure that your data privacy stays secure. However, the legality depends on your local laws, so always check your region's rules.
-            </div>
-          </details>
+            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#f97316]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
+              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#f97316] transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="bg-[#f97316]/20 rounded-lg p-2">
+                    <svg className="w-6 h-6 text-[#f97316]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                  </div>
+                  <span>Is Teen Patti Gold safe and legal to use?</span>
+                </div>
+                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#f97316]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
+                <p className="pt-4">Yes, it is safe to use because this makes sure that your data privacy stays secure. However, the legality depends on your local laws, so always check your region's rules.</p>
+              </div>
+            </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-              Can users lose money while playing?
-              <span className="transition group-open:rotate-180">
-                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <div className="p-4 pt-0 text-gray-300">
-              Yes, this app is involved with real money, so you might lose some amount if you do not play the games carefully. So, always play wisely and set a limit while playing.
-            </div>
-          </details>
+            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#ef4444]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
+              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#ef4444] transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="bg-[#ef4444]/20 rounded-lg p-2">
+                    <svg className="w-6 h-6 text-[#ef4444]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <span>Can users lose money while playing?</span>
+                </div>
+                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#ef4444]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
+                <p className="pt-4">Yes, this app is involved with real money, so you might lose some amount if you do not play the games carefully. So, always play wisely and set a limit while playing.</p>
+              </div>
+            </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-              Is it possible to change the language of Teen Patti Gold?
-              <span className="transition group-open:rotate-180">
-                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <div className="p-4 pt-0 text-gray-300">
-              Yes, it is possible because this app supports multiple languages, so you can change the language from the settings menu easily.
-            </div>
-          </details>
+            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#a855f7]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
+              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#a855f7] transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="bg-[#a855f7]/20 rounded-lg p-2">
+                    <svg className="w-6 h-6 text-[#a855f7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+                    </svg>
+                  </div>
+                  <span>Is it possible to change the language of Teen Patti Gold?</span>
+                </div>
+                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#a855f7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
+                <p className="pt-4">Yes, it is possible because this app supports multiple languages, so you can change the language from the settings menu easily.</p>
+              </div>
+            </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-              How do referral rewards work?
-              <span className="transition group-open:rotate-180">
-                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <div className="p-4 pt-0 text-gray-300">
-              When you share your referral link with others, or when someone joins this app through your link, you can receive a commission.
-            </div>
-          </details>
+            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#60a5fa]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
+              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#60a5fa] transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="bg-[#60a5fa]/20 rounded-lg p-2">
+                    <svg className="w-6 h-6 text-[#60a5fa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                  </div>
+                  <span>How do referral rewards work?</span>
+                </div>
+                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#60a5fa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
+                <p className="pt-4">When you share your referral link with others, or when someone joins this app through your link, you can receive a commission.</p>
+              </div>
+            </details>
 
-          <details className="group bg-[#0a1029]/50 rounded-xl">
-            <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-              Is Teen Patti Gold available on iPhone (iOS)?
-              <span className="transition group-open:rotate-180">
-                <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                  <path d="M6 9l6 6 6-6"></path>
-                </svg>
-              </span>
-            </summary>
-            <div className="p-4 pt-0 text-gray-300">
-              This app is mainly available for Android devices, but you can also check the official website or store for updates about iOS availability.
-            </div>
-          </details>
+            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#10b981]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
+              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#10b981] transition-colors">
+                <div className="flex items-center gap-4">
+                  <div className="bg-[#10b981]/20 rounded-lg p-2">
+                    <svg className="w-6 h-6 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <span>Is Teen Patti Gold available on iPhone (iOS)?</span>
+                </div>
+                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
+                <p className="pt-4">This app is mainly available for Android devices, but you can also check the official website or store for updates about iOS availability.</p>
+              </div>
+            </details>
           </div>
         </div>
       </section>
