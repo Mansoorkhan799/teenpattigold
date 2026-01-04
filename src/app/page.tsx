@@ -240,7 +240,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#06091F]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Developer</td>
-                  <td className="py-4 px-6 text-left text-white">eriocardrummy dev</td>
+                  <td className="py-4 px-6 text-left text-white">teenpattigold dev</td>
                 </tr>
                 <tr className="bg-[#0a1029]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Category</td>
@@ -260,7 +260,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#0a1029]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Update</td>
-                  <td className="py-4 px-6 text-left text-white">1st-November-2025</td>
+                  <td className="py-4 px-6 text-left text-white">5 january 2026</td>
                 </tr>
                 <tr className="bg-[#06091F]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Downloads</td>

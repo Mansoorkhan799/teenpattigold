@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Download Teen Patti Gold Game Free APK For Android | Latest Version 2026',
-  description: 'Download Teen Patti Gold APK free for Android. Play Teen Patti, Rummy, Dragon Tiger & more. Earn real cash with JazzCash & EasyPaisa. Latest version V6.652 - 49MB.',
+  description: 'Download Teen Patti Gold APK free for Android. Play Teen Patti, Rummy, Dragon Tiger & more. Earn real cash with JazzCash & EasyPaisa. Latest version V1.652(0) - 49MB.',
   keywords: [
     'Download Teen Patti Gold',
     'Teen Patti Gold APK download',
@@ -72,7 +72,7 @@ export default function DownloadPage() {
       "bestRating": "5"
     },
     "downloadUrl": "https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000",
-    "softwareVersion": "V6.652",
+    "softwareVersion": "V1.652(0)",
     "fileSize": "49MB",
     "datePublished": "2026-01-05",
     "description": "Download Teen Patti Gold APK free for Android. Play Teen Patti, Rummy, Dragon Tiger & more. Earn real cash with JazzCash & EasyPaisa.",
@@ -165,7 +165,7 @@ export default function DownloadPage() {
                 </tr>
                 <tr className="bg-[#06091F]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Version</td>
-                  <td className="py-4 px-6 text-left text-white">V6.652</td>
+                  <td className="py-4 px-6 text-left text-white">V1.652(0)</td>
                 </tr>
                 <tr className="bg-[#0a1029]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Size</td>
@@ -177,7 +177,7 @@ export default function DownloadPage() {
                 </tr>
                 <tr className="bg-[#0a1029]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Update</td>
-                  <td className="py-4 px-6 text-left text-white">1 Hour Ago</td>
+                  <td className="py-4 px-6 text-left text-white">5 january 2026</td>
                 </tr>
                 <tr className="bg-[#06091F]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Price</td>
