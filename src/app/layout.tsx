@@ -56,11 +56,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/Teen-Patti-Gold.ico', type: 'image/x-icon' },
-      { url: '/Teen-Patti-Gold.webp', type: 'image/webp' }
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/teen-patti-gold.webp', type: 'image/webp', sizes: 'any' }
     ],
+    shortcut: '/favicon.ico',
     apple: [
-      { url: '/Teen-Patti-Gold.webp' }
+      { url: '/teen-patti-gold.webp', sizes: '180x180', type: 'image/webp' }
     ]
   },
   manifest: '/manifest.json',
