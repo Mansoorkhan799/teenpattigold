@@ -13,7 +13,7 @@ export default function Header() {
           <div className="relative h-10 w-10 mr-2">
             <Image
               src="/teen-patti-gold.webp"
-              alt="Teenpatti Gold Logo"
+              alt="Teen Patti Gold Logo"
               width={40}
               height={40}
               className="object-contain rounded-lg"
@@ -22,7 +22,7 @@ export default function Header() {
             />
           </div>
           <span className="text-accent text-xl md:text-2xl font-bold">
-            Teenpatti Gold
+            Teen Patti Gold
           </span>
         </Link>
 

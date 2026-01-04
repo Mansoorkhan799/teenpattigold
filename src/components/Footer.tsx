@@ -11,9 +11,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Column */}
           <div>
-            <h3 className="text-xl font-bold text-accent mb-4">Teenpatti Gold</h3>
+            <h3 className="text-xl font-bold text-accent mb-4">Teen Patti Gold</h3>
             <p className="text-sm text-gray-300 mb-4">
-              Teenpatti Gold is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, Dragon vs Tiger and many other exciting games. Earn real cash with JazzCash & EasyPaisa payments.
+              Teen Patti Gold is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, Dragon vs Tiger and many other exciting games. Earn real cash with JazzCash & EasyPaisa payments.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/share/1at8tjJcje/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -102,7 +102,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-accent">Download App</h3>
             <p className="text-sm text-gray-300 mb-4">
-              Download Teenpatti Gold to enjoy the best card gaming experience and earn real cash rewards on your mobile device.
+              Download Teen Patti Gold to enjoy the best card gaming experience and earn real cash rewards on your mobile device.
             </p>
             <a 
               href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
@@ -121,7 +121,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-400">
-          <p>© 2026 Teenpatti Gold. All rights reserved. | <Link href="/" className="hover:text-accent">teenpattigoldgame.com.pk</Link></p>
+          <p>© 2026 Teen Patti Gold. All rights reserved. | <Link href="/" className="hover:text-accent">teenpattigoldgame.com.pk</Link></p>
         </div>
       </div>
     </footer>
