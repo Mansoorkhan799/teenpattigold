@@ -120,6 +120,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* DNS Prefetch and Preconnect for performance */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
+        
         <link rel="manifest" href="/manifest.json" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -129,12 +135,12 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/teen-patti-gold.webp" />
         <meta property="og:image" content="/teen-patti-gold.webp" />
         
-        {/* Google Analytics */}
+        {/* Google Analytics - Load after page is interactive */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -157,8 +163,8 @@ export default function RootLayout({
         <main className="flex-grow relative z-10">
         {children}
         </main>
-        <DeferredStyles />
         <Footer />
+        <DeferredStyles />
         <ScrollToTop />
         
         {/* Structured data for Organization */}

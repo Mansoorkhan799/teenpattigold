@@ -24,6 +24,21 @@ img {
   height: auto;
 }
 
+/* Prevent layout shift for footer */
+footer {
+  contain: layout style paint;
+}
+
+/* Optimize font loading to prevent FOIT */
+body {
+  font-display: swap;
+}
+
+/* Prevent layout shift for main content */
+main {
+  min-height: 1px;
+}
+
 .download-btn {
   position: relative;
   overflow: hidden;
