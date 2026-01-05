@@ -357,15 +357,16 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {/* Main Game Interface */}
             <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-game.webp"
                   alt="Teen Patti Gold Game Interface"
                   width={400}
                   height={711}
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Game Interface</p>
@@ -373,15 +374,16 @@ export default function Home() {
 
             {/* Games Collection */}
             <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-app.webp"
                   alt="Teen Patti Gold Games Collection"
                   width={400}
                   height={711}
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Games Collection</p>
@@ -389,15 +391,16 @@ export default function Home() {
 
             {/* Bonuses */}
             <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-apk.webp"
                   alt="Teen Patti Gold Bonuses & Rewards"
                   width={400}
                   height={711}
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Bonuses & Rewards</p>
@@ -405,15 +408,16 @@ export default function Home() {
 
             {/* Add Money */}
             <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-deposit-money.webp"
                   alt="Teen Patti Gold Deposit Money"
                   width={400}
                   height={711}
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Add Money</p>
@@ -421,15 +425,16 @@ export default function Home() {
 
             {/* Withdraw Money */}
             <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-refer-and-earn.webp"
                   alt="Teen Patti Gold Withdraw Money"
                   width={400}
                   height={711}
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Withdraw Money</p>
@@ -437,15 +442,16 @@ export default function Home() {
 
             {/* VIP Program */}
             <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-vip-program.webp"
                   alt="Teen Patti Gold VIP Program"
                   width={400}
                   height={711}
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">VIP Program</p>
@@ -456,15 +462,16 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Recharge Rebate */}
             <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
               <Image
                   src="/teen-patti-gold-apk.webp"
                   alt="Teen Patti Gold Recharge Rebate"
                   width={400}
                   height={711}
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ aspectRatio: '400/711' }}
               />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Recharge Rebate</p>
@@ -472,15 +479,16 @@ export default function Home() {
 
             {/* Bind Email */}
             <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
               <Image
                   src="/teen-patti-gold-bind-account.webp"
                   alt="Teen Patti Gold Bind Email"
                   width={400}
                   height={711}
-                  className="w-full h-auto"
+                  className="w-full h-full object-cover"
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ aspectRatio: '400/711' }}
               />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Account Security</p>

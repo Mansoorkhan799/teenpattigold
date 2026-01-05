@@ -27,6 +27,7 @@ img {
 /* Prevent layout shift for footer */
 footer {
   contain: layout style paint;
+  will-change: contents;
 }
 
 /* Optimize font loading to prevent FOIT */
@@ -37,6 +38,23 @@ body {
 /* Prevent layout shift for main content */
 main {
   min-height: 1px;
+}
+
+/* Prevent CLS for images */
+img {
+  aspect-ratio: attr(width) / attr(height);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent layout shift for image containers */
+[style*="aspect-ratio"] {
+  contain: layout;
+}
+
+/* Optimize rendering */
+* {
+  will-change: auto;
 }
 
 .download-btn {
