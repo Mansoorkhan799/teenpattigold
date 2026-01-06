@@ -30,6 +30,11 @@ const nextConfig = {
         source: '/.well-known/:path*',
         destination: '/public/.well-known/:path*',
       },
+      // API route takes precedence over static file for robots.txt
+      {
+        source: '/robots.txt',
+        destination: '/api/robots',
+      },
     ];
   },
 
