@@ -132,12 +132,6 @@ Allow: /
 Sitemap: ${baseUrl}/sitemap-index.xml
 Sitemap: ${baseUrl}/sitemap.xml
 Sitemap: ${baseUrl}/image-sitemap.xml
-
-# ============================================
-# HOST
-# ============================================
-
-Host: ${baseUrl}
 `;
 
   return new NextResponse(robotsTxt, {

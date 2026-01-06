@@ -128,9 +128,3 @@ Sitemap: https://teenpattigoldgame.com.pk/sitemap-index.xml
 Sitemap: https://teenpattigoldgame.com.pk/sitemap.xml
 Sitemap: https://teenpattigoldgame.com.pk/image-sitemap.xml
 
-# ============================================
-# HOST
-# ============================================
-
-Host: https://teenpattigoldgame.com.pk
-
