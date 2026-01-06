@@ -187,4 +187,4 @@ export async function GET() {
       'Cache-Control': 'public, max-age=3600, s-maxage=86400'
     }
   });
-}
+} 

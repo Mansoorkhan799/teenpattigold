@@ -81,7 +81,7 @@ export default function Blog() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       
-      <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12">
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-accent">Teen Patti Gold Blog</h1>
       <p className="text-gray-300 mb-8 text-lg">Stay updated with the latest guides, tips, and tutorials for Teen Patti Gold</p>
       

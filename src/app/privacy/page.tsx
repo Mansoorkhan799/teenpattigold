@@ -55,8 +55,8 @@ export default function PrivacyPolicyPage() {
                           <p className="text-gray-300 mb-0">
                             Such as name, email address, and device details, only when you choose to provide it.
                           </p>
-                        </div>
-                        
+              </div>
+              
                         <div className="bg-secondary rounded-lg p-4 border-l-4 border-green-500">
                           <h3 className="text-lg font-semibold text-white mb-2">Usage Data</h3>
                           <p className="text-gray-300 mb-0">
@@ -68,7 +68,7 @@ export default function PrivacyPolicyPage() {
                   </div>
                 </div>
               </div>
-
+              
               {/* 2. How We Use Your Information */}
               <div className="mb-8">
                 <div className="bg-[#0A1029] rounded-xl p-6 border-2 border-blue-500">
@@ -96,12 +96,12 @@ export default function PrivacyPolicyPage() {
                           <span className="text-blue-500 mr-2 font-bold">•</span>
                           <span>Prevent fraud and maintain security</span>
                         </li>
-                      </ul>
+                </ul>
                     </div>
                   </div>
                 </div>
               </div>
-
+              
               {/* 3. Cookies */}
               <div className="mb-8">
                 <div className="bg-[#0A1029] rounded-xl p-6 border-2 border-purple-500">
@@ -118,7 +118,7 @@ export default function PrivacyPolicyPage() {
                   </div>
                 </div>
               </div>
-
+              
               {/* 4. Data Sharing */}
               <div className="mb-8">
                 <div className="bg-[#0A1029] rounded-xl p-6 border-2 border-green-500">
@@ -130,12 +130,12 @@ export default function PrivacyPolicyPage() {
                       <h2 className="text-2xl font-bold mb-4 text-white">Data Sharing</h2>
                       <p className="text-gray-300 mb-0">
                         We <strong className="text-white">do not sell or share</strong> your personal data with third parties, except when required by law or to provide necessary services.
-                      </p>
+                </p>
                     </div>
                   </div>
                 </div>
               </div>
-
+              
               {/* 5. Children's Privacy */}
               <div className="mb-8">
                 <div className="bg-red-900/20 border-2 border-red-500 rounded-xl p-6">
@@ -147,12 +147,12 @@ export default function PrivacyPolicyPage() {
                       <h2 className="text-2xl font-bold mb-4 text-white">Children's Privacy</h2>
                       <p className="text-gray-300 mb-0">
                         Teen Patti Gold is intended for users <strong className="text-white">18 years or older</strong>. We do not knowingly collect data from minors.
-                      </p>
+                </p>
                     </div>
                   </div>
                 </div>
               </div>
-
+              
               {/* 6. Security */}
               <div className="mb-8">
                 <div className="bg-[#0A1029] rounded-xl p-6 border-2 border-yellow-500">
@@ -164,12 +164,12 @@ export default function PrivacyPolicyPage() {
                       <h2 className="text-2xl font-bold mb-4 text-white">Security</h2>
                       <p className="text-gray-300 mb-0">
                         We implement appropriate measures to protect your information from unauthorized access or misuse.
-                      </p>
-                    </div>
+                </p>
+              </div>
                   </div>
                 </div>
               </div>
-
+              
               {/* 7. Changes to Policy */}
               <div className="mb-8">
                 <div className="bg-[#0A1029] rounded-xl p-6 border-2 border-pink-500">
@@ -181,12 +181,12 @@ export default function PrivacyPolicyPage() {
                       <h2 className="text-2xl font-bold mb-4 text-white">Changes to Policy</h2>
                       <p className="text-gray-300 mb-0">
                         We may update this Privacy Policy from time to time. Please review this page regularly for any changes.
-                      </p>
-                    </div>
+                </p>
+              </div>
                   </div>
                 </div>
               </div>
-
+              
               {/* 8. Contact Us */}
               <div className="mb-8">
                 <div className="bg-accent/10 border-2 border-accent rounded-xl p-6">
@@ -196,9 +196,9 @@ export default function PrivacyPolicyPage() {
                     </div>
                     <div className="flex-1">
                       <h2 className="text-2xl font-bold mb-4 text-white">Contact Us</h2>
-                      <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 mb-4">
                         For any questions or concerns regarding this Privacy Policy, please contact us at:
-                      </p>
+                </p>
                       <div className="flex items-center">
                         <svg className="w-6 h-6 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
                           <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
@@ -212,7 +212,7 @@ export default function PrivacyPolicyPage() {
                   </div>
                 </div>
               </div>
-
+              
               {/* Footer Links */}
               <div className="mt-12 p-6 bg-secondary rounded-xl border-2 border-accent">
                 <h2 className="text-2xl font-bold mb-4 text-white">Related Legal Pages</h2>
@@ -240,7 +240,7 @@ export default function PrivacyPolicyPage() {
                   </Link>
                 </div>
               </div>
-
+              
               {/* Consent Footer */}
               <div className="bg-[#0A1029] rounded-xl p-6 mt-8 text-center">
                 <p className="text-gray-400 text-sm mb-4">
