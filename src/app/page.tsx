@@ -354,8 +354,9 @@ export default function Home() {
         <div className="bg-[#06091F] rounded-xl p-8">
           <h2 className="text-4xl font-bold mb-12 text-[#FFA500] text-center">Teen Patti Gold App Screenshots</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-            {/* Main Game Interface */}
+          {/* 3x2 Grid Formation */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {/* Row 1 - Column 1: Game Interface */}
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
@@ -365,14 +366,14 @@ export default function Home() {
                   height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Game Interface</p>
             </div>
 
-            {/* Games Collection */}
+            {/* Row 1 - Column 2: Games Collection */}
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
@@ -382,14 +383,14 @@ export default function Home() {
                   height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Games Collection</p>
             </div>
 
-            {/* Bonuses */}
+            {/* Row 1 - Column 3: Bonuses & Rewards */}
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
@@ -399,14 +400,14 @@ export default function Home() {
                   height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Bonuses & Rewards</p>
             </div>
 
-            {/* Add Money */}
+            {/* Row 2 - Column 1: Add Money */}
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
@@ -416,14 +417,14 @@ export default function Home() {
                   height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Add Money</p>
             </div>
 
-            {/* Withdraw Money */}
+            {/* Row 2 - Column 2: Withdraw Money */}
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
@@ -433,14 +434,14 @@ export default function Home() {
                   height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Withdraw Money</p>
             </div>
 
-            {/* VIP Program */}
+            {/* Row 2 - Column 3: VIP Program */}
             <div className="w-full">
               <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
@@ -450,48 +451,11 @@ export default function Home() {
                   height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">VIP Program</p>
-            </div>
-          </div>
-
-          {/* Additional Screenshots */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Recharge Rebate */}
-            <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
-              <Image
-                  src="/teen-patti-gold-apk.webp"
-                  alt="Teen Patti Gold Recharge Rebate"
-                  width={400}
-                  height={711}
-                  className="w-full h-full object-cover"
-                loading="lazy"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ aspectRatio: '400/711' }}
-              />
-              </div>
-              <p className="text-center text-gray-300 mt-3 font-medium">Recharge Rebate</p>
-            </div>
-
-            {/* Bind Email */}
-            <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
-              <Image
-                  src="/teen-patti-gold-bind-account.webp"
-                  alt="Teen Patti Gold Bind Email"
-                  width={400}
-                  height={711}
-                  className="w-full h-full object-cover"
-                loading="lazy"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                style={{ aspectRatio: '400/711' }}
-              />
-              </div>
-              <p className="text-center text-gray-300 mt-3 font-medium">Account Security</p>
             </div>
           </div>
         </div>
