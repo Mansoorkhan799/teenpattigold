@@ -357,102 +357,96 @@ export default function Home() {
           {/* 3x2 Grid Formation */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* Row 1 - Column 1: Game Interface */}
-            <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
+            <div className="w-full flex flex-col items-center">
+              <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-game.webp"
                   alt="Teen Patti Gold Game Interface"
                   width={400}
                   height={711}
-                  className="w-full h-full object-cover"
+                  className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Game Interface</p>
             </div>
 
             {/* Row 1 - Column 2: Games Collection */}
-            <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
+            <div className="w-full flex flex-col items-center">
+              <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-app.webp"
                   alt="Teen Patti Gold Games Collection"
                   width={400}
                   height={711}
-                  className="w-full h-full object-cover"
+                  className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Games Collection</p>
             </div>
 
             {/* Row 1 - Column 3: Bonuses & Rewards */}
-            <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
+            <div className="w-full flex flex-col items-center">
+              <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-apk.webp"
                   alt="Teen Patti Gold Bonuses & Rewards"
                   width={400}
                   height={711}
-                  className="w-full h-full object-cover"
+                  className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Bonuses & Rewards</p>
             </div>
 
             {/* Row 2 - Column 1: Add Money */}
-            <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
+            <div className="w-full flex flex-col items-center">
+              <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-deposit-money.webp"
                   alt="Teen Patti Gold Deposit Money"
                   width={400}
                   height={711}
-                  className="w-full h-full object-cover"
+                  className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Add Money</p>
             </div>
 
-            {/* Row 2 - Column 2: Withdraw Money */}
-            <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
+            {/* Row 2 - Column 2: Refer and Earn */}
+            <div className="w-full flex flex-col items-center">
+              <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-refer-and-earn.webp"
-                  alt="Teen Patti Gold Withdraw Money"
+                  alt="Teen Patti Gold Refer and Earn"
                   width={400}
                   height={711}
-                  className="w-full h-full object-cover"
+                  className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
-              <p className="text-center text-gray-300 mt-3 font-medium">Withdraw Money</p>
+              <p className="text-center text-gray-300 mt-3 font-medium">Refer and Earn</p>
             </div>
 
             {/* Row 2 - Column 3: VIP Program */}
-            <div className="w-full">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
+            <div className="w-full flex flex-col items-center">
+              <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-vip-program.webp"
                   alt="Teen Patti Gold VIP Program"
                   width={400}
                   height={711}
-                  className="w-full h-full object-cover"
+                  className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                  style={{ aspectRatio: '400/711' }}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">VIP Program</p>
