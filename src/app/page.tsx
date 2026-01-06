@@ -354,144 +354,144 @@ export default function Home() {
         <div className="bg-[#06091F] rounded-xl p-8">
           <h2 className="text-4xl font-bold mb-12 text-[#FFA500] text-center">Teen Patti Gold App Screenshots</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             {/* Main Game Interface */}
-            <div className="w-full max-w-[280px] mx-auto">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029', maxWidth: '280px' }}>
+            <div className="w-full">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-game.webp"
                   alt="Teen Patti Gold Game Interface"
-                  width={280}
-                  height={498}
+                  width={400}
+                  height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 280px, (max-width: 1024px) 280px, 280px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
-              <p className="text-center text-gray-300 mt-3 font-medium text-sm">Game Interface</p>
+              <p className="text-center text-gray-300 mt-3 font-medium">Game Interface</p>
             </div>
 
             {/* Games Collection */}
-            <div className="w-full max-w-[280px] mx-auto">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029', maxWidth: '280px' }}>
+            <div className="w-full">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-app.webp"
                   alt="Teen Patti Gold Games Collection"
-                  width={280}
-                  height={498}
+                  width={400}
+                  height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 280px, (max-width: 1024px) 280px, 280px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
-              <p className="text-center text-gray-300 mt-3 font-medium text-sm">Games Collection</p>
+              <p className="text-center text-gray-300 mt-3 font-medium">Games Collection</p>
             </div>
 
             {/* Bonuses */}
-            <div className="w-full max-w-[280px] mx-auto">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029', maxWidth: '280px' }}>
+            <div className="w-full">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-apk.webp"
                   alt="Teen Patti Gold Bonuses & Rewards"
-                  width={280}
-                  height={498}
+                  width={400}
+                  height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 280px, (max-width: 1024px) 280px, 280px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
-              <p className="text-center text-gray-300 mt-3 font-medium text-sm">Bonuses & Rewards</p>
+              <p className="text-center text-gray-300 mt-3 font-medium">Bonuses & Rewards</p>
             </div>
 
             {/* Add Money */}
-            <div className="w-full max-w-[280px] mx-auto">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029', maxWidth: '280px' }}>
+            <div className="w-full">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-deposit-money.webp"
                   alt="Teen Patti Gold Deposit Money"
-                  width={280}
-                  height={498}
+                  width={400}
+                  height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 280px, (max-width: 1024px) 280px, 280px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
-              <p className="text-center text-gray-300 mt-3 font-medium text-sm">Add Money</p>
+              <p className="text-center text-gray-300 mt-3 font-medium">Add Money</p>
             </div>
 
             {/* Withdraw Money */}
-            <div className="w-full max-w-[280px] mx-auto">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029', maxWidth: '280px' }}>
+            <div className="w-full">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-refer-and-earn.webp"
                   alt="Teen Patti Gold Withdraw Money"
-                  width={280}
-                  height={498}
+                  width={400}
+                  height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 280px, (max-width: 1024px) 280px, 280px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
-              <p className="text-center text-gray-300 mt-3 font-medium text-sm">Withdraw Money</p>
+              <p className="text-center text-gray-300 mt-3 font-medium">Withdraw Money</p>
             </div>
 
             {/* VIP Program */}
-            <div className="w-full max-w-[280px] mx-auto">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029', maxWidth: '280px' }}>
+            <div className="w-full">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
                 <Image
                   src="/teen-patti-gold-vip-program.webp"
                   alt="Teen Patti Gold VIP Program"
-                  width={280}
-                  height={498}
+                  width={400}
+                  height={711}
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  sizes="(max-width: 768px) 280px, (max-width: 1024px) 280px, 280px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   style={{ aspectRatio: '400/711' }}
                 />
               </div>
-              <p className="text-center text-gray-300 mt-3 font-medium text-sm">VIP Program</p>
+              <p className="text-center text-gray-300 mt-3 font-medium">VIP Program</p>
             </div>
           </div>
 
           {/* Additional Screenshots */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Recharge Rebate */}
-            <div className="w-full max-w-[280px] mx-auto">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029', maxWidth: '280px' }}>
+            <div className="w-full">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
               <Image
                   src="/teen-patti-gold-apk.webp"
                   alt="Teen Patti Gold Recharge Rebate"
-                  width={280}
-                  height={498}
+                  width={400}
+                  height={711}
                   className="w-full h-full object-cover"
                 loading="lazy"
-                sizes="(max-width: 768px) 280px, 280px"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ aspectRatio: '400/711' }}
               />
               </div>
-              <p className="text-center text-gray-300 mt-3 font-medium text-sm">Recharge Rebate</p>
+              <p className="text-center text-gray-300 mt-3 font-medium">Recharge Rebate</p>
             </div>
 
             {/* Bind Email */}
-            <div className="w-full max-w-[280px] mx-auto">
-              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029', maxWidth: '280px' }}>
+            <div className="w-full">
+              <div className="rounded-lg overflow-hidden shadow-2xl" style={{ aspectRatio: '400/711', position: 'relative', backgroundColor: '#0A1029' }}>
               <Image
                   src="/teen-patti-gold-bind-account.webp"
                   alt="Teen Patti Gold Bind Email"
-                  width={280}
-                  height={498}
+                  width={400}
+                  height={711}
                   className="w-full h-full object-cover"
                 loading="lazy"
-                sizes="(max-width: 768px) 280px, 280px"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 style={{ aspectRatio: '400/711' }}
               />
               </div>
-              <p className="text-center text-gray-300 mt-3 font-medium text-sm">Account Security</p>
+              <p className="text-center text-gray-300 mt-3 font-medium">Account Security</p>
             </div>
           </div>
         </div>
@@ -1016,13 +1016,13 @@ export default function Home() {
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </span>
-              </summary>
+                </svg>
+              </span>
+            </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
                 <p className="pt-4">Yes, you can play games in Teen Patti Gold by using the free bonuses like the Welcome Bonus and Referral Commission.</p>
-              </div>
-            </details>
+            </div>
+          </details>
 
             <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#0ea5e9]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
               <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#0ea5e9] transition-colors">
@@ -1037,13 +1037,13 @@ export default function Home() {
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#0ea5e9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </span>
-              </summary>
+                </svg>
+              </span>
+            </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
                 <p className="pt-4">You can contact the Teen Patti Gold support team through live chat, WhatsApp, or other social media platforms.</p>
-              </div>
-            </details>
+            </div>
+          </details>
 
             <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#4ade80]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
               <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#4ade80] transition-colors">
@@ -1058,13 +1058,13 @@ export default function Home() {
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#4ade80]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </span>
-              </summary>
+                </svg>
+              </span>
+            </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
                 <p className="pt-4">Its simple design, fast transactions, and exciting games make this platform more enjoyable than other apps.</p>
-              </div>
-            </details>
+            </div>
+          </details>
 
             <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#f97316]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
               <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#f97316] transition-colors">
@@ -1079,13 +1079,13 @@ export default function Home() {
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#f97316]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </span>
-              </summary>
+                </svg>
+              </span>
+            </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
                 <p className="pt-4">Yes, it is safe to use because this makes sure that your data privacy stays secure. However, the legality depends on your local laws, so always check your region's rules.</p>
-              </div>
-            </details>
+            </div>
+          </details>
 
             <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#ef4444]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
               <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#ef4444] transition-colors">
@@ -1100,13 +1100,13 @@ export default function Home() {
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#ef4444]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </span>
-              </summary>
+                </svg>
+              </span>
+            </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
                 <p className="pt-4">Yes, this app is involved with real money, so you might lose some amount if you do not play the games carefully. So, always play wisely and set a limit while playing.</p>
-              </div>
-            </details>
+            </div>
+          </details>
 
             <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#a855f7]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
               <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#a855f7] transition-colors">
@@ -1121,13 +1121,13 @@ export default function Home() {
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#a855f7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </span>
-              </summary>
+                </svg>
+              </span>
+            </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
                 <p className="pt-4">Yes, it is possible because this app supports multiple languages, so you can change the language from the settings menu easily.</p>
-              </div>
-            </details>
+            </div>
+          </details>
 
             <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#60a5fa]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
               <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#60a5fa] transition-colors">
@@ -1142,13 +1142,13 @@ export default function Home() {
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#60a5fa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </span>
-              </summary>
+                </svg>
+              </span>
+            </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
                 <p className="pt-4">When you share your referral link with others, or when someone joins this app through your link, you can receive a commission.</p>
-              </div>
-            </details>
+            </div>
+          </details>
 
             <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#10b981]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
               <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#10b981] transition-colors">
@@ -1163,13 +1163,13 @@ export default function Home() {
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                  </svg>
-                </span>
-              </summary>
+                </svg>
+              </span>
+            </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
                 <p className="pt-4">This app is mainly available for Android devices, but you can also check the official website or store for updates about iOS availability.</p>
-              </div>
-            </details>
+            </div>
+          </details>
           </div>
         </div>
       </section>
