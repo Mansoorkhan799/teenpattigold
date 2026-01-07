@@ -194,36 +194,34 @@ export default function Home() {
 
           {/* Desktop Image */}
           <div className="hidden md:block md:w-1/2 md:mt-8">
-            <div className="relative ml-auto" style={{ width: '320px', height: '320px', maxWidth: '100%' }}>
+            <div className="relative ml-auto w-[320px] h-[320px] max-w-full">
               <Image
                 src="/teen-patti-gold.webp"
                 alt="Teen Patti Gold Logo"
                 width={320}
                 height={320}
-                className="object-contain drop-shadow-2xl rounded-3xl"
+                className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority={true}
                 fetchPriority="high"
                 quality={90}
                 sizes="320px"
-                style={{ width: '100%', height: '100%' }}
               />
             </div>
           </div>
 
           {/* Mobile Image */}
           <div className="mt-8 md:hidden">
-            <div className="relative mx-auto" style={{ width: '280px', height: '280px', maxWidth: '100%' }}>
+            <div className="relative mx-auto w-[280px] h-[280px] max-w-full">
               <Image
                 src="/teen-patti-gold.webp"
                 alt="Teen Patti Gold Logo"
                 width={280}
                 height={280}
-                className="object-contain drop-shadow-2xl rounded-3xl"
+                className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority={true}
                 fetchPriority="high"
                 quality={90}
                 sizes="280px"
-                style={{ width: '100%', height: '100%' }}
               />
             </div>
           </div>

@@ -98,14 +98,16 @@ export default function TeenPattiGoldForIOSPage() {
 
         {/* Logo Display */}
         <div className="flex justify-center mb-12">
-          <div className="relative" style={{ width: '280px', height: '280px', maxWidth: '100%' }}>
+          <div className="relative w-[280px] h-[280px] max-w-full">
             <Image
               src="/teen-patti-gold.webp"
               alt="Teen Patti Gold for iOS"
               width={280}
               height={280}
-              className="object-contain drop-shadow-2xl rounded-3xl"
+              className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
               priority={true}
+              fetchPriority="high"
+              quality={90}
             />
           </div>
         </div>

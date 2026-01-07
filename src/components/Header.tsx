@@ -9,19 +9,20 @@ export default function Header() {
     <header className="bg-primary py-3 px-4 md:px-8 sticky top-0 z-30 border-b border-gray-800">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <div className="relative h-10 w-10 mr-2">
+        <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
+          <div className="relative h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 mr-2 md:mr-3">
             <Image
               src="/teen-patti-gold.webp"
               alt="Teen Patti Gold Logo"
-              width={40}
-              height={40}
-              className="object-contain rounded-lg"
+              width={56}
+              height={56}
+              className="object-contain rounded-lg w-full h-full"
               priority={true}
               fetchPriority="high"
+              quality={90}
             />
           </div>
-          <span className="text-accent text-xl md:text-2xl font-bold">
+          <span className="text-accent text-xl md:text-2xl lg:text-3xl font-bold">
             Teen Patti Gold
           </span>
         </Link>

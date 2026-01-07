@@ -44,7 +44,7 @@ export default function TeenPattiGoldRealOrFakePage() {
     "@type": "BlogPosting",
     "headline": "Is Teen Patti Gold Real or Fake to Earn Money? - Complete Guide 2026",
     "description": "Discover if Teen Patti Gold app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps.",
-    "image": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+    "image": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
     "author": {
       "@type": "Organization",
       "name": "Teen Patti Gold",
@@ -104,7 +104,7 @@ export default function TeenPattiGoldRealOrFakePage() {
         {/* Featured Image */}
         <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8">
           <Image
-            src="/teen-patti-gold.webp"
+            src="/teen-patti-gold-game.webp"
             alt="Teen Patti Gold Real or Fake"
             fill
             className="object-cover"

@@ -137,13 +137,13 @@ export default function DownloadPage() {
 
         {/* Logo/Image Section */}
         <div className="flex justify-center mb-12">
-          <div className="relative" style={{ width: '320px', height: '320px', maxWidth: '100%' }}>
+          <div className="relative w-[320px] h-[320px] max-w-full">
             <Image
               src="/teen-patti-gold.webp"
               alt="Teen Patti Gold Logo"
               width={320}
               height={320}
-              className="object-contain drop-shadow-2xl rounded-3xl"
+              className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
               priority={true}
               fetchPriority="high"
               quality={90}
