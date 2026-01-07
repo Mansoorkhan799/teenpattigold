@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: "Teen Patti Gold Game Download | New Earning App in Pakistan 2026",
     template: "%s | Teen Patti Gold"
   },
-  description: "Download Teen Patti Gold APK, Pakistan's premier card game platform. Play Teen Patti, Rummy, Dragon vs Tiger & more. Win real cash with JazzCash & EasyPaisa. Join 600K+ players!",
+  description: "Teen Patti Gold APK Download – New Pakistani Earning App 2026. Teen Patti Gold is a most famous online earning app in Pakistan that brings real earning opportunities under different cards & casino games.",
   keywords: [
     "Teen Patti Gold",
     "3 Patti Gold",
@@ -99,7 +99,7 @@ export default function Home() {
         },
         "downloadUrl": "https://teenpattigoldgame.com.pk/download-teen-patti-gold",
         "softwareVersion": "V1.652(0)",
-        "fileSize": "49MB",
+        "fileSize": "40.81MB",
         "description": "Play Teen Patti, Rummy, Dragon Tiger and other card games. Earn real money with JazzCash & EasyPaisa withdrawals.",
         "screenshot": [
           "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
@@ -131,17 +131,17 @@ export default function Home() {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
                 <Link href="/" className="hover:text-[#FFA500] transition-colors">
-                  <span className="text-white">Teen Patti Gold Game Download</span>
+                  <span className="text-white">Teen Patti Gold APK Download</span>
                 </Link>
               </h1>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-                <span className="text-[#FFA500]">New Earning App</span>{' '}
-                <span className="text-white">in Pakistan 2026</span>
+                <span className="text-[#FFA500]">New Pakistani Earning App</span>{' '}
+                <span className="text-white">2026</span>
               </h2>
             </div>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              <Link href="/" className="text-accent hover:underline font-semibold">Teen Patti Gold</Link> is an exciting online card game where you can enjoy a wide collection of casino games with its attractive design, fun background music, and engaging look. Click on the following download button to get this wonderful app.
+              <Link href="/" className="text-accent hover:underline font-semibold">Teen Patti Gold</Link> is a most famous online earning app in Pakistan that brings real earning opportunities under different cards & casino games.
             </p>
 
             {/* Download Button */}
@@ -167,15 +167,15 @@ export default function Home() {
                 <svg className="w-6 h-6 mb-3 text-[#FFA500] mx-auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                   <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
-                <div className="text-white text-2xl font-bold mb-1">600K+</div>
+                <div className="text-white text-2xl font-bold mb-1">800K+</div>
                 <div className="text-gray-400 text-sm">Downloads</div>
               </div>
               
               <div className="bg-[#0A1029] p-6 rounded-2xl text-center flex-1 max-w-[180px]" style={{ minHeight: '120px' }}>
                 <svg className="w-6 h-6 mb-3 text-[#FFA500] mx-auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-                  <path d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v2H8v2h8v-2h-2v-2h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H3V4h18v12z"/>
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
-                <div className="text-white text-2xl font-bold mb-1">200K+</div>
+                <div className="text-white text-2xl font-bold mb-1">4.5/5</div>
                 <div className="text-gray-400 text-sm">Ratings</div>
               </div>
               
@@ -183,7 +183,7 @@ export default function Home() {
                 <svg className="w-6 h-6 mb-3 text-[#FFA500] mx-auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                   <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
                 </svg>
-                <div className="text-white text-2xl font-bold mb-1">49MB</div>
+                <div className="text-white text-2xl font-bold mb-1">40.81MB</div>
                 <div className="text-gray-400 text-sm">App Size</div>
               </div>
             </div>
@@ -240,44 +240,40 @@ export default function Home() {
                   <td className="py-4 px-6 text-left text-white">Teen Patti Gold</td>
                 </tr>
                 <tr className="bg-[#06091F]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Developer</td>
-                  <td className="py-4 px-6 text-left text-white">teenpattigold dev</td>
-                </tr>
-                <tr className="bg-[#0a1029]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Category</td>
                   <td className="py-4 px-6 text-left text-white">Cards, Game</td>
                 </tr>
-                <tr className="bg-[#06091F]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Size</td>
-                  <td className="py-4 px-6 text-left text-white">49MB</td>
-                </tr>
                 <tr className="bg-[#0a1029]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Latest Version</td>
-                  <td className="py-4 px-6 text-left text-white">V1.652(0)</td>
+                  <td className="py-4 px-6 text-left font-medium text-white">APK Size</td>
+                  <td className="py-4 px-6 text-left text-white">40.81MB</td>
                 </tr>
                 <tr className="bg-[#06091F]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Required OS</td>
+                  <td className="py-4 px-6 text-left font-medium text-white">Requirements</td>
                   <td className="py-4 px-6 text-left text-white">Android 5.0+</td>
                 </tr>
                 <tr className="bg-[#0a1029]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Update</td>
-                  <td className="py-4 px-6 text-left text-white">5 january 2026</td>
+                  <td className="py-4 px-6 text-left font-medium text-white">Last Update</td>
+                  <td className="py-4 px-6 text-left text-white">08-November-2025</td>
                 </tr>
                 <tr className="bg-[#06091F]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Downloads</td>
-                  <td className="py-4 px-6 text-left text-white">600k+</td>
+                  <td className="py-4 px-6 text-left text-white">800K+</td>
                 </tr>
                 <tr className="bg-[#0a1029]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Rating Count</td>
-                  <td className="py-4 px-6 text-left text-white">300000+</td>
-                </tr>
-                <tr className="bg-[#06091F]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Language</td>
                   <td className="py-4 px-6 text-left text-white">English, Urdu</td>
                 </tr>
+                <tr className="bg-[#06091F]/50">
+                  <td className="py-4 px-6 text-left font-medium text-white">Ratings</td>
+                  <td className="py-4 px-6 text-left text-white">4.5/5</td>
+                </tr>
                 <tr className="bg-[#0a1029]/50">
+                  <td className="py-4 px-6 text-left font-medium text-white">Developers</td>
+                  <td className="py-4 px-6 text-left text-white">TeenPatti Gold Dev</td>
+                </tr>
+                <tr className="bg-[#06091F]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Price</td>
-                  <td className="py-4 px-6 text-left text-white">Free (0$)</td>
+                  <td className="py-4 px-6 text-left text-white">0$</td>
                 </tr>
               </tbody>
             </table>
@@ -285,63 +281,176 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Overview Section */}
+      {/* Teen Patti Gold Overview Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Overview</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Teen Patti Gold Overview</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              This app is divided into various sections, including card games, slots, poker, and many others, making it easy to find games that you want to play. Teen Patti Gold is designed with modern graphics, smooth gameplay, and an easy interface that makes this platform more suitable for both beginners and experienced players. This app also offers you great and interesting services, allowing you to earn significant money even by investing a small amount. You can also win real cash rewards or bonuses for free. So, download the game, and start playing your favorite games to earn real cash for free.
+              Teen Patti Gold is a fast-paced casino game that offers to play multiple games to entertain and earn real money. Teen Patti Gold is an exciting addition for casino lovers with a wide variety of engaging games and stunning features. It is a completely free download and provides a smooth and secure gaming experience, and you won't have to spend a single penny to get started on the Teen Patti Gold App. Regular updates keep the game fresh and more realistic, and fresh content and mini games are added regularly.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              TeenPatti Gold offers a variety of games, start to play them and earn money to make yourself rich and your family proud. If you're looking for a secure and real money-earning platform, then TeenPatti Gold is a legitimate and trusted platform.
             </p>
           </div>
         </div>
       </section>
 
-      {/* What is Teen Patti Gold Section */}
+      {/* What is Teen Patti Gold APK Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">What is the Teen Patti Gold Game?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">What is Teen Patti Gold APK?</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              Teen Patti Gold Game is an online card game that is based on the classic Teen Patti card game. You can play different games to earn money. It is a safe and easy platform where you can play card games and make good money in a short time. It has become a great opportunity, especially for those people who want to earn money by playing different and interesting games. This game became very popular, and people prefer it because of its beautiful design, simple settings, classic themes, and easy options.
-            </p>
-
-            <p className="text-gray-300 leading-relaxed">
-              You can withdraw your winnings or deposit money anytime by using the local and easy payment methods. When you complete your deposit then you can receive a deposit bonus as well. With its attractive visuals, user-friendly design, and exciting offers, this app is one of the most enjoyable and engaging casino-style card games.
+              TeenPatti Gold apk is considered the hottest online earning game in Pakistan. It has a user-friendly interface and a straightforward navigation system, making the game more engaging and reliable. This game is one of the best casino games, and exclusive rewards and bonuses make the game more attractive and impressive. Teen Patti Gold offers plenty of promotions to players and provides multiple ways to earn real money at home. There are no extra or hidden charges behind its installation, and available for each device user for free.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Why Teen Patti Gold Popular Section */}
+      {/* Promotions & Rewards Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Why Teen Patti Gold Game so Popular?</h2>
-          <div className="space-y-6">
-            <p className="text-gray-300 leading-relaxed">
-              The 3 Patti Teen Patti Gold game is very popular because it allows you to earn real money while having fun. It is easy to play because it provides you with simple rules that are very easy to understand, especially for beginners. The design of this app is very beautiful and colorful, which gives you a real casino experience on your device. Players love this app because you can withdraw and deposit money easily through Easypaisa and Jazzcash without facing any delays.
-            </p>
+          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Promotions & Rewards Offered by TeenPatti Gold Game</h2>
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 text-white">1: Welcome Bonuses</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                New players get a welcome or sign-up bonus for registering their accounts. The welcome bonus is usually credited once you download the app and register an account on the TeenPatti Gold.
+              </p>
+            </div>
 
-            <p className="text-gray-300 leading-relaxed">
-              It also includes many exciting games such as Teen Patti, Dragon vs Tiger, Poker, Rummy, and Slots, so that you never feel bored. The other main reason for the popularity of 3 Patti Teen Patti Gold is its daily bonus and rewards that help you earn coins and extra cash. It is very safe and secure and can protect your personal details or money, and work smoothly even on low-storage devices.
-            </p>
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 text-white">2: Daily Login Rewards</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                Simply logging in Teen Patti Gold each day grants you free chips or rewards that can help you earn money for free.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 text-white">3: Referral Bonus</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                You can simply invite friends and family members to the game through your game link or code, and you can earn real money when they register, deposit, and start to play.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 text-white">4: First Deposit Bonus</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                You will be rewarded with extra chips upto 20% on your first deposit in the game. These free chips help engage you to play the game and earn real money.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 text-white">5: 1St to 7th Rebate</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                The 1st to 7th Rebate bonus is rewarded to those players who deposit money consecutively on the 1st to 7th date of the month. The deposit amount should be above 1000 to get the free chips or rewards after the first week of the month.
+              </p>
+              <div className="overflow-x-auto mt-4">
+                <table className="min-w-full divide-y divide-gray-800 rounded-lg overflow-hidden">
+                  <thead className="bg-[#0a1029]">
+                    <tr>
+                      <th className="py-3 px-6 text-left text-white font-semibold">Rebate</th>
+                      <th className="py-3 px-6 text-left text-white font-semibold">VIP Level</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-800">
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">1%</td><td className="py-3 px-6 text-gray-300">VIP1-VIP2</td></tr>
+                    <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">2%</td><td className="py-3 px-6 text-gray-300">VIP3-VIP4</td></tr>
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">3%</td><td className="py-3 px-6 text-gray-300">VIP5-VIP6</td></tr>
+                    <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">4%</td><td className="py-3 px-6 text-gray-300">VIP7-VIP8</td></tr>
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">5%</td><td className="py-3 px-6 text-gray-300">VIP9-VIP10</td></tr>
+                    <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">6%</td><td className="py-3 px-6 text-gray-300">VIP11-VIP12</td></tr>
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">7%</td><td className="py-3 px-6 text-gray-300">VIP13-VIP14</td></tr>
+                    <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">8%</td><td className="py-3 px-6 text-gray-300">VIP15-VIP16</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 text-white">6: VIP Promotion</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                VIP bonuses are rewarded to those players who are VIP in the game. As your level will be higher in the game, the more you can earn from this bonus.
+              </p>
+              <div className="overflow-x-auto mt-4">
+                <table className="min-w-full divide-y divide-gray-800 rounded-lg overflow-hidden">
+                  <thead className="bg-[#0a1029]">
+                    <tr>
+                      <th className="py-3 px-6 text-left text-white font-semibold">VIP Level</th>
+                      <th className="py-3 px-6 text-left text-white font-semibold">Upgrade Amount</th>
+                      <th className="py-3 px-6 text-left text-white font-semibold">Level bonus</th>
+                      <th className="py-3 px-6 text-left text-white font-semibold">Weekly Bonus</th>
+                      <th className="py-3 px-6 text-left text-white font-semibold">Monthly Bonus</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-800">
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">0</td><td className="py-3 px-6 text-gray-300">0 PKR</td><td className="py-3 px-6 text-gray-300">0 PKR</td><td className="py-3 px-6 text-gray-300">0 PKR</td><td className="py-3 px-6 text-gray-300">0 PKR</td></tr>
+                    <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">1</td><td className="py-3 px-6 text-gray-300">1000</td><td className="py-3 px-6 text-gray-300">20</td><td className="py-3 px-6 text-gray-300">50</td><td className="py-3 px-6 text-gray-300">120</td></tr>
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">2</td><td className="py-3 px-6 text-gray-300">20000</td><td className="py-3 px-6 text-gray-300">40</td><td className="py-3 px-6 text-gray-300">120</td><td className="py-3 px-6 text-gray-300">240</td></tr>
+                    <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">3</td><td className="py-3 px-6 text-gray-300">60000</td><td className="py-3 px-6 text-gray-300">60</td><td className="py-3 px-6 text-gray-300">160</td><td className="py-3 px-6 text-gray-300">280</td></tr>
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">4</td><td className="py-3 px-6 text-gray-300">160000</td><td className="py-3 px-6 text-gray-300">80</td><td className="py-3 px-6 text-gray-300">200</td><td className="py-3 px-6 text-gray-300">320</td></tr>
+                    <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">5</td><td className="py-3 px-6 text-gray-300">300000</td><td className="py-3 px-6 text-gray-300">100</td><td className="py-3 px-6 text-gray-300">240</td><td className="py-3 px-6 text-gray-300">360</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-4 text-white">7: Weekly Agent Bonus</h3>
+              <p className="text-gray-300 leading-relaxed mb-4">
+                A Weekly agent bonus is given to the agents with a good track record every Monday. You can get this weekly bonus every Monday, which will expire after a week.
+              </p>
+              <div className="overflow-x-auto mt-4">
+                <table className="min-w-full divide-y divide-gray-800 rounded-lg overflow-hidden">
+                  <thead className="bg-[#0a1029]">
+                    <tr>
+                      <th className="py-3 px-6 text-left text-white font-semibold">Last Week's Bonus From</th>
+                      <th className="py-3 px-6 text-left text-white font-semibold">Last Week Bonus To</th>
+                      <th className="py-3 px-6 text-left text-white font-semibold">Weekly Extra Bonus</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-800">
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">1000</td><td className="py-3 px-6 text-gray-300">3000</td><td className="py-3 px-6 text-gray-300">500</td></tr>
+                    <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">3001</td><td className="py-3 px-6 text-gray-300">5000</td><td className="py-3 px-6 text-gray-300">1000</td></tr>
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">5001</td><td className="py-3 px-6 text-gray-300">8000</td><td className="py-3 px-6 text-gray-300">3000</td></tr>
+                    <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">8001</td><td className="py-3 px-6 text-gray-300">10000</td><td className="py-3 px-6 text-gray-300">6000</td></tr>
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">10001</td><td className="py-3 px-6 text-gray-300">15000</td><td className="py-3 px-6 text-gray-300">10000</td></tr>
+                    <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">15001</td><td className="py-3 px-6 text-gray-300">20000</td><td className="py-3 px-6 text-gray-300">15000</td></tr>
+                    <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">20001</td><td className="py-3 px-6 text-gray-300">30000</td><td className="py-3 px-6 text-gray-300">20000</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* How to Start Section */}
+      {/* How to Get Started Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">How Can We Start with Teen Patti Gold?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">How to Get Started with Teen Patti Gold?</h2>
           <div className="space-y-4">
-            <p className="text-gray-300 leading-relaxed">To start the Teen Patti Gold game, follow the given steps:</p>
             <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-              <li>Firstly, open the official website of 3 Patti Teen Patti Gold and download the APK file to your device.</li>
-              <li>Once downloaded then click on the downloaded APK file to start the installation by allowing the Unknown Sources.</li>
-              <li>Once installation is complete, click on it to open the 3 Patti Teen Patti Gold app.</li>
-              <li>When the app opens then log in with your mobile number or just play as a guest.</li>
-              <li>When you log in, you will get free chips or welcome bonuses to start playing the game.</li>
-              <li>Choose a table or game that you want to play, and start enjoying the game.</li>
+              <li>
+                <strong>Step 1: Download the App</strong> - Open the browser, and search for the latest version of the Teen Patti Gold App. Locate the official website and download the official app to start the journey with Teen Patti Gold. 
+                <div className="mt-3">
+                  <Link 
+                    href="/download-teen-patti-gold" 
+                    className="inline-flex items-center px-6 py-3 bg-[#FFA500] hover:bg-[#FFA500]/90 text-white font-semibold rounded-lg transition-colors"
+                  >
+                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    Download Teen Patti Gold APK
+                  </Link>
+                </div>
+              </li>
+              <li><strong>Step 2: Complete Installation</strong> - After successfully downloading the app, tap on the APK File to install it on your device. Grant all the necessary permissions and wait for the apk file to be installed on your device.</li>
+              <li><strong>Step 3: Set up the Profile</strong> - Open the game and enter the required credentials to register an account. Set up your profile on the TeenPatti Gold app as well for a smooth gaming experience.</li>
+              <li><strong>Step 4: Deposit Money</strong> - You must deposit the money first to start playing your favorite games on the TeenPatti Gold app. You can deposit money using your preferred payment method.</li>
+              <li><strong>Step 5: Start to Play</strong> - Collect your welcome bonus and start to play your favorite games to get entertainment and earn real money for free.</li>
+              <li><strong>Step 6: Withdraw Your Winnings</strong> - If you win the game on the TeenPatti Gold app, then withdraw all your winnings by using your preferred payment methods like Easypaisa & Jazzcash.</li>
             </ol>
           </div>
         </div>
@@ -453,50 +562,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Top Features Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-accent">Top Features of Teen Patti Gold</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-accent">Top Features of the Teen Patti Gold</h2>
+          
+          <div className="space-y-8 mb-8">
+            <div>
+              <h3 className="text-xl font-semibold mb-3 text-accent">Diversity of Games</h3>
+              <p className="text-gray-300">Teen Patti Gold offers a diversity of games, and casino lovers can simply find their favorite games to play and earn real money. Almost 120+ mini games are available, and there are no restrictions or limitations to open and play these games. You can play any game according to your choice and skill. Players can enjoy variety, excitement, and unique challenges every time they play. The diversity of games keeps the platform fresh, interesting, and enhances social interaction through a new variety of modes.</p>
+          </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-3 text-accent">Earn Real Money</h3>
+              <p className="text-gray-300">Players can earn thousands of rupees on this app just by playing their favorite games. Teen Patti Gold offers many ways to start earning real money, like by inviting people and playing multiple games. You can start playing the game with a few hundred rupees and earn thousands of rupees daily. You must follow proper strategies to win the games and earn real cash. The multiple categories of games help players to play their selected games and earn real cash easily.</p>
+          </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-3 text-accent">Exclusive Rewards and Bonus</h3>
+              <p className="text-gray-300">TeenPatti Gold offers exclusive rewards and bonuses without any restrictions. You can invite as many people as you can through your game links to enhance your free rewards opportunities, like referral bonus and other promotions. When you deposit money in Teen Patti Gold, you can get extra chips as a bonus. During special occasions, themed rewards, and limited-time offers, it offers several rewards that engage players to win real cash for free.</p>
+          </div>
+          </div>
+
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-accent">Key Features of TeenPatti Gold Apk</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="bg-secondary px-8 py-8 rounded-lg card-glow">
-            <h3 className="text-xl font-semibold mb-3 text-accent">1: Real Money Earning</h3>
-            <p className="text-gray-300">Teen Patti Gold allows you to earn real cash rewards just by playing the game that you want to play or like. Whether you enjoy teen patti, poker, or rummy, every match provides you with a chance to win money. This app directly transfers your earnings through the local and easy payment methods safely.</p>
+              <h3 className="text-xl font-semibold mb-3 text-accent">1: Multilingual</h3>
+              <p className="text-gray-300">Multilingual is one of the best features of Teen Patti Gold that makes it unique among its alternatives. This application supports both Urdu and English languages, which makes it much easier to play games in your preferred language. It helps reduce language barriers, makes rules clearer, improves the player experience, and enables more confident management of the game without limitations. The multilingual feature is valuable, user-friendly, and makes the gameplay much easier for newbies.</p>
           </div>
           <div className="bg-secondary px-8 py-8 rounded-lg card-glow">
-            <h3 className="text-xl font-semibold mb-3 text-accent">2: Easy Withdraw & Deposit</h3>
-            <p className="text-gray-300">With 3 Patti Teen Patti Gold, you can manage your money in a super simple or fast way. With just a few steps, you can withdraw or deposit money anytime using local payment methods, such as JazzCash or EasyPaisa. It also ensures you have secure and quick transactions without any delays.</p>
+              <h3 className="text-xl font-semibold mb-3 text-accent">2: Realistic Graphics & Interface</h3>
+              <p className="text-gray-300">The visuals of Teen Patti Gold games are designed to look high-quality, polished, and immersive. The graphics are really remarkable, mind-blowing, and realistic, making the game experience for the players more enjoyable and engaging. The UI of Teen Patti Gold is most reliable, intuitive, optimized, and easy to navigate. It offers a clean and distraction-free design for a smooth and modern experience.</p>
           </div>
           <div className="bg-secondary px-8 py-8 rounded-lg card-glow">
-            <h3 className="text-xl font-semibold mb-3 text-accent">3: Attractive Interface</h3>
-            <p className="text-gray-300">This app is designed with a bright, colorful, and modern interface that can attract its users. The background music, smooth animations, and clear layout create an amazing or pleasant experience. Each section of this app is designed very well, so that you can find your favourite game easily.</p>
+              <h3 className="text-xl font-semibold mb-3 text-accent">3: Regular Updates</h3>
+              <p className="text-gray-300">Teen Patti Gold offers regular updates that generally include stability improvements and bug fixes. Fresh features and games are also added through regular updates in the game. The developers of 3Patti are actively working to make the interface smooth and improve gameplay. Updates reduce the risk of vulnerabilities and keep the content fresh and engaging. You must install the latest version of the app to enjoy the newly added features and games at zero cost.</p>
           </div>
           <div className="bg-secondary px-8 py-8 rounded-lg card-glow">
-            <h3 className="text-xl font-semibold mb-3 text-accent">4: Popular Games</h3>
-            <p className="text-gray-300">3 Teen Patti Gold provides you with a wide variety of famous games in one app so that you can enjoy dragon vs tiger, poker, slots, and many other exciting options. Each game of this app has simple rules that make it perfect for both beginners and experienced players.</p>
+              <h3 className="text-xl font-semibold mb-3 text-accent">4: 24/7 Customer Support</h3>
+              <p className="text-gray-300">Teen Patti Gold provides 24/7 Customer Support to assist players with queries, technical issues, and withdrawals. You can contact the team anytime to get instant solutions without paying a fee. You can contact them via live chat, WhatsApp, or the official email address. This game provides round-the-clock customer support to each user. The support staff is available every day, all day, weekends, including nights, and holidays to provide Instant solutions related to the game.</p>
           </div>
           <div className="bg-secondary px-8 py-8 rounded-lg card-glow">
-            <h3 className="text-xl font-semibold mb-3 text-accent">5: Daily Bonus</h3>
-            <p className="text-gray-300">This app rewards you every day with free login bonuses or chips. You can earn extra coins just by opening the app regularly. It also provides special rewards on weekly or festival occasions. These bonuses help you to keep playing even if you do not want to deposit money.</p>
-          </div>
-          <div className="bg-secondary px-8 py-8 rounded-lg card-glow">
-            <h3 className="text-xl font-semibold mb-3 text-accent">6: Referral Earning</h3>
-            <p className="text-gray-300">3 Patti Teen Patti Gold offers you a referral program where you can earn money without playing games. You just need to share your referral link with your friends and invite them to join. When they start playing games, you receive a commission automatically.</p>
-          </div>
-          <div className="bg-secondary px-8 py-8 rounded-lg card-glow">
-            <h3 className="text-xl font-semibold mb-3 text-accent">7: Fast Performance</h3>
-            <p className="text-gray-300">This app runs smoothly on almost every Android device, even on older models. It does not hang, crash, or use too much storage space. The lightweight design of this app helps it to run faster and load to provide a smooth gameplay.</p>
-          </div>
-          <div className="bg-secondary px-8 py-8 rounded-lg card-glow">
-            <h3 className="text-xl font-semibold mb-3 text-accent">8: Safe & Secure Platform</h3>
-            <p className="text-gray-300">In 3Patti Teen Patti Gold, your privacy and money are completely safe because it uses a secure payment method and data protection system that keeps everything private. This app is trusted by thousands of players for its reliability.</p>
-          </div>
-          <div className="bg-secondary px-8 py-8 rounded-lg card-glow">
-            <h3 className="text-xl font-semibold mb-3 text-accent">9: Free to Play</h3>
-            <p className="text-gray-300">3 Patti Teen Patti Gold is free to download and does not ask for any registration fees. Through this feature, you can start playing games quickly with free chips that are given by the app. This feature is a perfect choice, especially for beginners.</p>
-          </div>
-          <div className="bg-secondary px-8 py-8 rounded-lg card-glow">
-            <h3 className="text-xl font-semibold mb-3 text-accent">10: 24/7 Support</h3>
-            <p className="text-gray-300">This app also provides you with fast customer support, which helps you anytime. Whether you face a deposit issue or a technical error, this support team responds quickly. You can contact the team directly through the app for quick help.</p>
+              <h3 className="text-xl font-semibold mb-3 text-accent">5: Fairness and Security</h3>
+              <p className="text-gray-300">Teen Patti Gold APK always ensures account security and fair gameplay. Anti-cheating and monitoring tools are most useful in this application to detect unfair gameplay, bots, and collusion. User actions also play an essential role in app safety and security, including managing usernames and passwords. Teen Patti Gold also uses multi-layer encryption, real-time monitoring, and fraud risk control.</p>
           </div>
           </div>
         </div>
@@ -683,32 +791,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Download Instructions */}
+      {/* Method to Download & Install */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Download Teen Patti Gold APK Latest Version For Android</h2>
-          <p className="text-gray-300 mb-4">To download the latest version of Teen Patti Gold APK for Android devices, follow the given steps:</p>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Method to Download & Install Teen Patti Gold APK</h2>
+          <p className="text-gray-300 mb-4">To download the Teen Patti Gold is a straightforward process. Follow the steps that are below to download the TeenPatti Gold.</p>
           <div className="mb-8">
           <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-            <li>First, you open the browser on your Android device and click on the search bar.</li>
-            <li>In the search bar, type the latest version of 3Teen Patti Gold and visit the trusted website.</li>
-            <li>On the trusted website, click on the Download button to start downloading.</li>
-            <li>Now wait a few seconds to complete the downloading process.</li>
-            <li>Once complete, that file will be saved in the Download Folder of the device.</li>
-          </ol>
-        </div>
-        
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Installation Guide for Teen Patti Gold APK</h2>
-        <p className="text-gray-300 mb-4">After downloading to installing the Teen Patti Gold APK, follow the given steps:</p>
-        <div className="mb-8">
-          <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-            <li>To start installation, your device grants permission to install unknown sources.</li>
-            <li>Open the Settings &lt; Security and enable the Install Unknown Apps.</li>
-            <li>After this, open the File Manager and go to the Download Folder.</li>
-            <li>Click on the download APK file, and the installation process will start.</li>
-            <li>Wait until the installation completes successfully on your device.</li>
-            <li>Once complete then the app icon will show on your device.</li>
-            <li>Click on it to launch the app and start playing the games that you want.</li>
+            <li><strong>Step 1:</strong> First of all, visit a trusted & official website like www.TeenPattiGoldapp.com.pk, to download Teen Patti Gold.</li>
+            <li><strong>Step 2:</strong> Download the latest version of the Teen Patti Gold APK.</li>
+            <li><strong>Step 3:</strong> Enable "Unknown Sources" from your phone's settings.</li>
+            <li><strong>Step 4:</strong> Open the File Manager and go to the Download folder.</li>
+            <li><strong>Step 5:</strong> Tap the file and confirm the installation prompt on your device.</li>
+            <li><strong>Step 6:</strong> Wait until the app is installed and ready to use.</li>
+            <li><strong>Step 7:</strong> Now, launch the app and start playing your favorite games.</li>
           </ol>
         </div>
 
@@ -750,108 +846,208 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Account Creation */}
+      {/* Method to Register an account */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How to Register & Login on Teen Patti Gold?</h2>
-          
-          <h3 className="text-xl font-semibold mb-4 text-[#FFA500]">1: Register Method</h3>
-          <p className="text-gray-300 mb-4">To register the account on Teen Patti Gold, follow the given steps:</p>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Method to Register an account on the TeenPatti Gold App</h2>
+          <p className="text-gray-300 mb-4">To register your account or bind your Email to the TeenPatti Gold, you should follow the steps that are below:</p>
           <div className="mb-8">
           <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-            <li>Firstly, open the Teen Patti Gold app on your device.</li>
-            <li>On the homescreen, click on the Register or Sign Up option.</li>
-            <li>Now, enter your valid mobile number or email address.</li>
-            <li>Set a strong password that can never be accessed easily.</li>
-            <li>Enter the OTP that you can receive through phone or email for verification.</li>
-            <li>Once verification is complete then your account will be created successfully.</li>
-          </ol>
-          </div>
-
-          <h3 className="text-xl font-semibold mb-4 text-[#FFA500]">2: Login Method</h3>
-          <p className="text-gray-300 mb-4">After registration, the next step is to log account for Follow the given steps:</p>
-          <div className="space-y-4">
-          <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-            <li>Open the Teen Patti Gold app on your device.</li>
-            <li>Click on the Login button on the homescreen.</li>
-            <li>Enter your registered mobile number, email, or password.</li>
-            <li>Make sure that your entered details are correct.</li>
-            <li>Once confirmed, tap on the Sign in or Login option.</li>
-            <li>If you forget your password, then use Forgot Password to reset it.</li>
-            <li>Once logging is complete, you can start playing games.</li>
+            <li><strong>01:</strong> Open the Game on your device.</li>
+            <li><strong>02:</strong> Select the option 'play as guest' in the game.</li>
+            <li><strong>03:</strong> The game will register the account and assign you a unique ID.</li>
+            <li><strong>04:</strong> Edit your details that are visible in the top left corner.</li>
+            <li><strong>05:</strong> Click on the Bound option in the user tab of the Game lobby.</li>
+            <li><strong>06:</strong> Provide all the required details, like Email and Mobile Number.</li>
+            <li><strong>07:</strong> Put the Captcha and set a strong password as well.</li>
+            <li><strong>08:</strong> Verify your account with a code that you will receive at the given email.</li>
+            <li><strong>09:</strong> Now, click on the confirm button to start playing your favorite games.</li>
           </ol>
           </div>
         </div>
       </section>
 
-      {/* Payment Methods Section */}
+      {/* How to Login */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Ways to Deposit & Withdraw Money in Teen Patti Gold</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How to Login to Teen Patti Gold?</h2>
+          <p className="text-gray-300 mb-4">To log in to the Game on the TeenPatti Gold, you should follow the steps that are below:</p>
+          <div className="space-y-4">
+          <ol className="list-decimal pl-5 space-y-3 text-gray-300">
+            <li><strong>01:</strong> Launch the game on your device.</li>
+            <li><strong>02:</strong> Tap on the login option in the game.</li>
+            <li><strong>03:</strong> Enter your registered email and password.</li>
+            <li><strong>04:</strong> After entering all the details, tap on the login option.</li>
+            <li><strong>05:</strong> Now, your account is ready to use, and you can play your favorite game easily.</li>
+          </ol>
+          </div>
+        </div>
+      </section>
+
+      {/* Methods to Deposit & Withdraw Money */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-xl p-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Methods to Deposit & Withdraw Money in TeenPatti Gold</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">1: Jazzcash</h3>
-              <p className="text-gray-300">Jazzcash is one of the most trusted and secure mobile banking services that allows you to deposit money quickly into your gaming account and start playing games quickly. It's a fast and safe transaction system that allows you to withdraw your winnings directly into your account wallet. The best part of this method is that you can wait a long time because the transactions are completed within seconds.</p>
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">1: Using EasyPaisa</h3>
+              <p className="text-gray-300">Easypaisa is one of the most used e-wallets for transactions of different payments in Pakistan. It is used widely because of its smooth transactions and easy-to-use interface. Easypaisa is also a popular wallet that is used on the TeenPatti Gold Game. You can also use this wallet to make your transactions and to deposit or withdraw money on the TeenPatti Gold App.</p>
             </div>
             <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">2: Easypaisa</h3>
-              <p className="text-gray-300">Easypaisa is another secure and most commonly used payment method that is similar to the JazzCash method. It allows you to deposit or withdraw money without any difficulty. Through this method, you can add funds to your game account and transfer winnings to your Easypaisa wallet in just a few steps. The process of this method is very safe, reliable, and suitable for all types of users.</p>
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">2: Using JazzCash</h3>
+              <p className="text-gray-300">JazzCash is a simple and easy payment method that is widely used in Pakistan. You can make all your transactions with Jazzcash safely and securely. It is one of the most popular e-wallets that is used by multiple users of TeenPatti Gold for larger deposits or withdrawals on the game. The simple layout and user-friendly interface of Jazzcash make it one of the trending wallets among casino lovers.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Deposit Instructions */}
+      {/* How to Deposit Money */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-secondary rounded-xl p-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How to Deposit Money?</h2>
-            <p className="text-gray-300 mb-4">To deposit money in Teen Patti Gold, follow the given steps:</p>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How to Deposit Money in TeenPatti Gold?</h2>
+            <p className="text-gray-300 mb-4">Below are the key steps to deposit money in the Teen Patti Gold APK:</p>
                 <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-              <li>First, open the Teen Patti Gold app on your device and log in.</li>
-              <li>Now, click on the Wallet option that is available on the homescreen.</li>
-              <li>In this wallet section, click on the Deposit option.</li>
-              <li>Choose a payment method that you want to use.</li>
-              <li>Enter the amount that you want to deposit.</li>
-              <li>Click on the confirm option and wait to complete it.</li>
-              <li>Once complete, the balance will show in your game wallet.</li>
+              <li><strong>1: Open the Teen Patti Gold</strong> - Open the Teen Patti Gold app on your Android device and ensure you have logged in to a verified account.</li>
+              <li><strong>2: Click on Wallet</strong> - Tap the wallet icon '+' to deposit money that is located on the upper side of the game lobby.</li>
+              <li><strong>3: Enter the Amount</strong> - You will see different recharge amounts listed, so choose the one according to your budget.</li>
+              <li><strong>4: Select Payment Method</strong> - Select your preferred payment method and tap on it to proceed with the transaction process</li>
+              <li><strong>5: Make the Payment</strong> - Enter your phone number linked to your preferred wallet. Accept the payment request by entering the OTP Code of your preferred wallet for payment confirmation.</li>
+              <li><strong>6: Successfully Recharge</strong> - Once payment is successful, your game wallet will be credited instantly. They will show a confirmation pop-up in the app. Now, you can play many games to earn real money.</li>
                 </ol>
               </div>
+      </section>
+
+      {/* How to Withdraw Money */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
           <div className="bg-secondary rounded-xl p-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How to Withdraw Money?</h2>
-            <p className="text-gray-300 mb-4">To withdraw money in Teen Patti Gold, follow the given steps:</p>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How to Withdraw Money in TeenPatti Gold?</h2>
+            <p className="text-gray-300 mb-4">Follow these steps to withdraw your winnings:</p>
                 <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-              <li>Open the Teen Patti Gold app and log in to your account.</li>
-              <li>Click on the Wallet option that is available on the main screen.</li>
-              <li>In the wallet section, click on the Withdrawal option.</li>
-              <li>Choose your payment method, like JazzCash or EasyPaisa.</li>
-              <li>Now enter the amount that you want to withdraw.</li>
-              <li>Enter some required details, like the account number.</li>
-              <li>Double-check all entered details and click on Confirm.</li>
-              <li>Wait a few seconds to complete the withdrawal process.</li>
-              <li>Once complete, that money will be shown in your selected payment method.</li>
+              <li><strong>Step 1)</strong> Open and log in to the Teen Patti Gold App on your device.</li>
+              <li><strong>Step 2:</strong> You must check that you have completed the minimum withdrawal requirements.</li>
+              <li><strong>Step 3)</strong> Navigate to the withdrawal section and tap on it.</li>
+              <li><strong>Step 4)</strong> Choose your preferred e-Wallet option, including JazzCash and EasyPaisa.</li>
+              <li><strong>Step 5)</strong> Now, enter the amount that you want to withdraw from the game.</li>
+              <li><strong>Step 6)</strong> Review all your details, then submit your withdrawal request.</li>
                 </ol>
+          </div>
+      </section>
+
+      {/* How to Use the Game */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-xl p-8">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How to Use the TeenPatti Gold Game?</h2>
+          <p className="text-gray-300 mb-4">Below are the key details to use the TeenPatti Gold App on your device:</p>
+          <div className="space-y-4">
+          <ul className="list-disc pl-5 space-y-3 text-gray-300">
+            <li><strong>Open & Login</strong> - Open the app after successful installation on your device. If you already have an account, then tap to log in.</li>
+            <li><strong>Explore Dashboard</strong> - Once you have logged in, you will directly land on the home dashboard, where you will see different game modes, settings, wallet, and welcome rewards.</li>
+            <li><strong>Choose Favourite Games</strong> - Choose a desired game mode to play your favorite and most profitable games on this application.</li>
+            <li><strong>Deposit Money</strong> - You can claim welcome bonuses to play multiple games for free. You should also deposit money into the Teen Patti Gold to play and explore more.</li>
+            <li><strong>Contact Customer Support</strong> - If you face any problems with the TeenPatti Gold APK, you can contact customer support for instant solutions to login, deposit, and any other issues.</li>
+          </ul>
           </div>
         </div>
       </section>
 
-      {/* Tips and Tricks */}
+      {/* Highest Paying Games */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Tips & Tricks to Earn Maximum on Teen Patti Teen Patti Gold Game</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Highest Paying Games on Teen Patti Gold</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">1: PRAGMATIC Play</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">2: Spribe Slot</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">3: Dragon Tiger</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">4: Roulette</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">5: Jili Slot</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">6: Wingo</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">7: PG Slot</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">8: Zoo Roulette</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">9: Mines</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">10: FC Slot</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">11: JDB Slot</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">12: Teen Patti</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">13: Red Tiger</p>
+            </div>
+            <div className="bg-[#0A1029] p-4 rounded-lg text-center">
+              <p className="text-white font-medium">14: EvoPla</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-xl p-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Why Choose the TeenPatti Gold Game?</h2>
           <div className="space-y-4">
           <ul className="list-disc pl-5 space-y-3 text-gray-300">
-            <li><strong>Start with Small Bets:</strong> Always start a game with a small investment because it will help you to understand the game rules and overcome the risk of losing money. When you become confident, then increase your bet.</li>
-            <li><strong>Use Bonuses Wisely:</strong> Teen Patti Gold offers you daily login bonuses, referral bonuses, or deposit rewards. It helps you to play more games without spending your one money or earning extra money.</li>
-            <li><strong>Play Popular Games:</strong> Focus on high-earning games such as Dragon vs Tiger or Teen Patti Classic that provide you with higher winning chances, and also attract players with better opportunities to earn.</li>
-            <li><strong>Invite Friends:</strong> Use the referral link system to invite friends every time your friends join, and then you can earn commission. The more friends you invite, the higher you can become.</li>
-            <li><strong>Stay Active Daily:</strong> Regularly log in to the app to collect the daily rewards or spin bonuses. Always stay active because it will increase your bonus balance or improve your chances of winning big.</li>
-            <li><strong>Withdraw on Time:</strong> When you earn a good amount then do not delay withdrawal. Always transfer your winnings as soon as possible through Jazcash or EasyPaisa to keep your money safe.</li>
-            <li><strong>Learn from Practice Mode:</strong> Before playing games with real money, try the free or demo mode as practice. This helps you to understand the gameplay easily and develop the winning strategies without any risk.</li>
-            <li><strong>Keep the Emotions in Control:</strong> Never play games with frustration or greed. Always stay calm or make smart decisions during the game because it helps you to avoid unnecessary losses.</li>
-            <li><strong>With Expert Players:</strong> Observe how other players make the moves. Through this, you can learn new techniques or strategies and timing from them to improve your skills.</li>
-            <li><strong>Avoid Fake Apps:</strong> Always download the original Teen Patti Gold app through official or trusted sources because fake links or websites can steal your personal data or money.</li>
+            <li><strong>1: Real Money Earning</strong> - You can earn real cash just by playing your favorite games. This is the key reason to choose the TeenPatti Gold Game that offers exclusive rewards other than any of the casino games.</li>
+            <li><strong>2: Easy Payment Methods</strong> - Teen Patti Gold supports local and easy payment methods, including EasyPaisa and JazzCash, that are widely used among casino lovers. There, you did not face any difficulty regarding your transactions.</li>
+            <li><strong>3: Free Access:</strong> TeenPatti Crown is available for free, and you do not face any hidden charges to download and use this app. You just need to download the game and start playing your favourite games free of cost.</li>
+            <li><strong>4: Smooth Gameplay</strong> - The gameplay of TeenPatti Gold is smooth and fair, which ensures that every player gets an equal chance of winning. Everything present in this game is smooth and easy to use without any difficulty.</li>
+            <li><strong>5: Simple Setup</strong> - You can easily set up your profile on this game without any complications. You just need to download the game, set up your profile, and start playing your favorite games to earn real cash.</li>
+          </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Support */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-xl p-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How Can We Contact the Support Team of TeenPatti Gold Game?</h2>
+          <p className="text-gray-300 mb-6">To submit your problem and resolve your issue, you can contact us through the different methods listed below:</p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-[#0A1029] p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">Live Chat:</h3>
+              <p className="text-gray-300">Live Chat support is available in the game to reply to your problems instantly. Live Chat support is available all the time, and you can contact us at any time to resolve your issues. You just need to submit your details and the problem that you are facing, and the support team will fix it instantly.</p>
+            </div>
+            <div className="bg-[#0A1029] p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">Telegram:</h3>
+              <p className="text-gray-300">Telegram is one of the widely used platforms for communication. You can contact us through our official Telegram channel to get any kind of support from us. On our Telegram channel, you can get any help at any time without waiting. So, contact us through our official Telegram Channel to get any help.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tips to Play & Earn Maximum */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-xl p-8">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Tips to Play & Earn Maximum on TeenPatti Gold</h2>
+          <div className="space-y-4">
+          <ul className="list-disc pl-5 space-y-3 text-gray-300">
+            <li><strong>1: Understand the Game Mechanism</strong> - You should start with a small investment. Before betting big, learn the Teen Patti Crown basics. Practicing on free tables improves your gameplay, skills, and confidence before entering high-stakes rooms.</li>
+            <li><strong>2: Wisely Use of Free Chips</strong> - Wise use of welcome, login, deposit, and other bonuses helps you to play longer without depositing amount. Stay updated with the game and claim your daily free chips.</li>
+            <li><strong>3: Play Favourite Game</strong> - You should always play your favourite games in Teen Patti Gold. You can enjoy and earn money by playing your favourite games.</li>
+            <li><strong>4: Manage Your Bankroll Strictly</strong> - Manage your bankroll strictly, never bet all at once. You must divide your total balance into small portions. Maintain your focus in the game and avoid recovering losses at once. Quit the game for some time when you hit your target profit instead of chasing extra wins.</li>
+            <li><strong>5: Play Strategically- Never Emotionally</strong> - Be Calm! When you start to play. Do not increase your betting score after a loss out of frustration. Try to enjoy the game and avoid playing emotionally. Take a break when you're losing continuously or move to another game mode.</li>
           </ul>
           </div>
         </div>
@@ -881,19 +1077,19 @@ export default function Home() {
       {/* Pros and Cons */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Pros & Cons of using Teen Patti Gold</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Pros & Cons – TeenPatti Gold</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">Pros</h3>
             <div className="bg-[#0A1029] px-8 py-8 rounded-lg">
               <ul className="list-disc pl-5 space-y-3 text-gray-300">
-                <li>Very simple and fun to play</li>
-                <li>Earn money with a small investment</li>
-                <li>Jazzcash and Easypaisa make payment easy</li>
-                <li>Many different games for enjoyment</li>
-                <li>Fast withdrawal of your money</li>
-                <li>Very easy to use and quick to start</li>
-                <li>Daily rewards and bonuses</li>
+                <li>User-Friendly Interface</li>
+                <li>Easy to Join and Play</li>
+                <li>Frequently Updated</li>
+                <li>Amazing Rewards and Bonuses</li>
+                <li>Fast Customer Support</li>
+                <li>Free to Download</li>
+                <li>Multiple Game Options</li>
               </ul>
             </div>
           </div>
@@ -901,13 +1097,13 @@ export default function Home() {
             <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">Cons</h3>
             <div className="bg-[#0A1029] px-8 py-8 rounded-lg">
               <ul className="list-disc pl-5 space-y-3 text-gray-300">
-                <li>Risk of losing money</li>
-                <li>Sometimes withdrawals take time</li>
-                <li>Gameplay can be addictive</li>
-                <li>Run slow on weak phones</li>
+                <li>Gambling Addiction</li>
+                <li>Slow working on some devices</li>
+                <li>Cause Frustration/Worry</li>
+                <li>Over Transaction Charges</li>
+                <li>Time & Money Wasting</li>
+                <li>Drains Battery Efficiently</li>
                 <li>No legal Support</li>
-                <li>No Financial Freedom</li>
-                <li>Gameplay can be complicated</li>
               </ul>
               </div>
             </div>
@@ -927,28 +1123,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Support Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How Can We Contact the Teen Patti Gold?</h2>
-          <p className="text-gray-300 mb-6">To contact the customer support team of Teen Patti Gold, you can use the given methods:</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">Live Chat</h3>
-              <p className="text-gray-300">Teen Patti Gold provides you with a live chat feature inside the app so that you can directly talk to the support team if you face any problems. Whether you face any issue like playing or using the app, this team responds to you quickly and helps you solve your issues in real time. Live chat is the fastest way to get support without leaving the app.</p>
-            </div>
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">WhatsApp</h3>
-              <p className="text-gray-300">You can also contact the support team through WhatsApp. You can simply use the number that is provided in the app to send your problem. This support team replies to you with instructions or solutions that make it easy to fix any problem. This WhatsApp support is very convenient because this is a simple and easy way to get help.</p>
-            </div>
-            <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">FAQs</h3>
-              <p className="text-gray-300">This app also dedicates a FAQs section where common questions are given with their answers. You can check this section before contacting the customer support team to save time. These FAQs mostly cover all topics such as registration, deposit, withdrawals, bonuses, and game rules. So, this is quick and easy to find the solution without waiting long.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
@@ -956,7 +1130,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#FFA500]">Frequently Asked Questions</h2>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">Find answers to common questions about Teen Patti Gold</p>
-          </div>
+            </div>
           
           <div className="space-y-4 max-w-4xl mx-auto">
             <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
@@ -965,9 +1139,9 @@ export default function Home() {
                   <div className="bg-[#FFA500]/20 rounded-lg p-2">
                     <svg className="w-6 h-6 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <span>Can users play Teen Patti Gold without depositing money?</span>
+                </svg>
+            </div>
+                  <span>What is the Teen Patti Gold?</span>
                 </div>
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -976,7 +1150,7 @@ export default function Home() {
               </span>
             </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
-                <p className="pt-4">Yes, you can play games in Teen Patti Gold by using the free bonuses like the Welcome Bonus and Referral Commission.</p>
+                <p className="pt-4">Teen Patti Gold is an online earning game application that offers to play multiple games and earn real money.</p>
             </div>
           </details>
 
@@ -988,7 +1162,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
                     </svg>
                   </div>
-                  <span>How do users contact customer support?</span>
+                  <span>Is the Teen Patti Gold APK free to download?</span>
                 </div>
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#0ea5e9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -997,7 +1171,7 @@ export default function Home() {
               </span>
             </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
-                <p className="pt-4">You can contact the Teen Patti Gold support team through live chat, WhatsApp, or other social media platforms.</p>
+                <p className="pt-4">Yes, Teen Patti Gold APK is completely free to download and install. There are no hidden charges or registration fees.</p>
             </div>
           </details>
 
@@ -1009,7 +1183,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                     </svg>
                   </div>
-                  <span>What makes Teen Patti Gold different from other card games?</span>
+                  <span>What about security on the Teen Patti Gold?</span>
                 </div>
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#4ade80]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1018,7 +1192,7 @@ export default function Home() {
               </span>
             </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
-                <p className="pt-4">Its simple design, fast transactions, and exciting games make this platform more enjoyable than other apps.</p>
+                <p className="pt-4">Teen Patti Gold uses multi-layer encryption, real-time monitoring, and fraud risk control to ensure account security and fair gameplay. Your personal information and money are protected with advanced security measures.</p>
             </div>
           </details>
 
@@ -1030,7 +1204,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                     </svg>
                   </div>
-                  <span>Is Teen Patti Gold safe and legal to use?</span>
+                  <span>Is it possible to play Teen Patti Gold offline?</span>
                 </div>
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#f97316]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1039,7 +1213,7 @@ export default function Home() {
               </span>
             </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
-                <p className="pt-4">Yes, it is safe to use because this makes sure that your data privacy stays secure. However, the legality depends on your local laws, so always check your region's rules.</p>
+                <p className="pt-4">No, Teen Patti Gold requires an active internet connection to play games, make deposits, withdraw money, and interact with other players. The game is designed for online multiplayer gameplay.</p>
             </div>
           </details>
 
@@ -1051,7 +1225,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                   </div>
-                  <span>Can users lose money while playing?</span>
+                  <span>How can I improve my winning opportunities on Teen Patti Gold?</span>
                 </div>
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#ef4444]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1060,7 +1234,7 @@ export default function Home() {
               </span>
             </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
-                <p className="pt-4">Yes, this app is involved with real money, so you might lose some amount if you do not play the games carefully. So, always play wisely and set a limit while playing.</p>
+                <p className="pt-4">To improve your winning opportunities, start with small bets, understand game mechanics, use bonuses wisely, manage your bankroll strictly, play strategically (not emotionally), and practice on free tables before playing with real money.</p>
             </div>
           </details>
 
@@ -1072,7 +1246,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
                     </svg>
                   </div>
-                  <span>Is it possible to change the language of Teen Patti Gold?</span>
+                  <span>Can I earn real money through Teen Patti Gold APK?</span>
                 </div>
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#a855f7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1081,62 +1255,20 @@ export default function Home() {
               </span>
             </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
-                <p className="pt-4">Yes, it is possible because this app supports multiple languages, so you can change the language from the settings menu easily.</p>
-            </div>
-          </details>
-
-            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#60a5fa]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
-              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#60a5fa] transition-colors">
-                <div className="flex items-center gap-4">
-                  <div className="bg-[#60a5fa]/20 rounded-lg p-2">
-                    <svg className="w-6 h-6 text-[#60a5fa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                    </svg>
-                  </div>
-                  <span>How do referral rewards work?</span>
-                </div>
-                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
-                  <svg className="w-6 h-6 text-[#60a5fa]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </span>
-            </summary>
-              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
-                <p className="pt-4">When you share your referral link with others, or when someone joins this app through your link, you can receive a commission.</p>
-            </div>
-          </details>
-
-            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#10b981]/50 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
-              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#10b981] transition-colors">
-                <div className="flex items-center gap-4">
-                  <div className="bg-[#10b981]/20 rounded-lg p-2">
-                    <svg className="w-6 h-6 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                    </svg>
-                  </div>
-                  <span>Is Teen Patti Gold available on iPhone (iOS)?</span>
-                </div>
-                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
-                  <svg className="w-6 h-6 text-[#10b981]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </span>
-            </summary>
-              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
-                <p className="pt-4">This app is mainly available for Android devices, but you can also check the official website or store for updates about iOS availability.</p>
+                <p className="pt-4">Yes, you can earn real money by playing games, winning matches, completing challenges, and through referral bonuses. You can withdraw your winnings using EasyPaisa or JazzCash payment methods.</p>
             </div>
           </details>
           </div>
         </div>
       </section>
 
-      {/* Conclusion */}
+      {/* Final Thoughts */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
         <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Final Thoughts</h2>
           <div className="space-y-4">
-          <p className="text-gray-300">
-            Teen Patti Gold is one of the most popular online card games in the world. It not only provides you with fun or entertainment but also provides you with a great chance to earn money if you play games wisely. This app provides you with a simple and user-friendly interface that can make it easy, especially for beginners, to play games. The deposit or withdrawal system through JazzCash or EasyPaisa is very convenient, which makes this platform very easy to use. If you play responsibly, make plans with smart strategies, and focus on your skill rather than luck, Teen Patti Gold can become a more exciting or rewarding gaming experience.
+          <p className="text-gray-300 leading-relaxed">
+            Teen Patti Gold APK is one of the popular and luxurious games in the online casino world. Exclusive rewards and user-friendly features make the game more unique and realistic. Teen Patti Gold does not require a large storage system to download and install. This game has earned a huge respect among casino games due to its amazing features and style. It is also a great source for relaxation and friendly competitions. There are no extra or hidden charges for depositing or withdrawing money at Teen Patti Gold. It offers exciting rewards, smooth gameplay, and a chance to compete and connect with friends. So, download the game today and start playing your favorite games to earn real cash for free.
           </p>
           </div>
         </div>
