@@ -56,15 +56,17 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon' },
-      { url: '/teen-patti-gold.webp', type: 'image/webp', sizes: 'any' }
+      { url: 'https://teenpattigoldgame.com.pk/favicon.ico', type: 'image/x-icon', sizes: 'any' },
+      { url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp', type: 'image/webp', sizes: '512x512' }
     ],
-    shortcut: '/favicon.ico',
+    shortcut: [
+      { url: 'https://teenpattigoldgame.com.pk/favicon.ico', type: 'image/x-icon' }
+    ],
     apple: [
-      { url: '/teen-patti-gold.webp', sizes: '180x180', type: 'image/webp' }
+      { url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp', sizes: '180x180' }
     ]
   },
-  manifest: '/manifest.json',
+  manifest: 'https://teenpattigoldgame.com.pk/manifest.json',
   verification: {
     google: "8a7c21f6e90a89ef",
   },
@@ -126,14 +128,14 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
         
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="https://teenpattigoldgame.com.pk/manifest.json" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/teen-patti-gold.webp" type="image/webp" sizes="any" />
-        <link rel="apple-touch-icon" href="/teen-patti-gold.webp" />
-        <meta property="og:image" content="/teen-patti-gold.webp" />
+        <link rel="icon" href="https://teenpattigoldgame.com.pk/favicon.ico" type="image/x-icon" sizes="any" />
+        <link rel="shortcut icon" href="https://teenpattigoldgame.com.pk/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" type="image/webp" sizes="512x512" />
+        <link rel="apple-touch-icon" href="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" sizes="180x180" />
+        <meta property="og:image" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
         
         {/* Google Analytics - Load after page is interactive */}
         <Script
@@ -145,7 +147,9 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
+            gtag('config', 'G-XXXXXXXXXX', {
+              page_path: window.location.pathname,
+            });
           `}
         </Script>
       </head>
@@ -178,7 +182,12 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "Teenpatti Gold",
               "url": "https://teenpattigoldgame.com.pk",
-              "logo": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+                "width": 512,
+                "height": 512
+              },
               "description": "Teenpatti Gold is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, and many other card games with real cash rewards.",
               "sameAs": [
                 "https://facebook.com/teenpattigold",
