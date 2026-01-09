@@ -19,10 +19,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://teenpattigoldgame.com.pk'),
   title: {
-    default: "Teen Patti Gold - Download APK Free | Best Card Game in Pakistan",
+    default: "Teen Patti Gold - Download Free APK | Play & Earn Real Money in Pakistan 2026",
     template: "%s | Teen Patti Gold"
   },
-  description: "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating. Safe & secure with JazzCash & EasyPaisa payments.",
+  description: "Teen Patti Gold - Pakistan's #1 card game app. Download Teen Patti Gold APK free, play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating. Safe & secure with JazzCash & EasyPaisa payments.",
   keywords: [
     "teen patti gold",
     "teen patti gold pakistan",
