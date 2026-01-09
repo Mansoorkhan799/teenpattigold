@@ -44,6 +44,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/teen-patti-gold-for-ios" className="text-gray-300 hover:text-accent transition-colors">
+                  iOS Version
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-gray-300 hover:text-accent transition-colors">
                   Blog
                 </Link>
@@ -86,8 +91,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/blog/is-teen-patti-gold-real-or-fake" className="text-gray-300 hover:text-accent transition-colors">
+                  Is Teen Patti Gold Real?
+                </Link>
+              </li>
+              <li>
                 <Link href="/privacy" className="text-gray-300 hover:text-accent transition-colors">
                   Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="text-gray-300 hover:text-accent transition-colors">
+                  Terms of Service
                 </Link>
               </li>
               <li>

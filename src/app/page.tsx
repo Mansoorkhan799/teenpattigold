@@ -6,50 +6,66 @@ import { Metadata } from 'next';
 // This additional metadata enhances the page-specific SEO
 export const metadata: Metadata = {
   title: {
-    default: "Teen Patti Gold Game Download | New Earning App in Pakistan 2026",
+    default: "Teen Patti Gold - Download APK | Best Card Game in Pakistan 2026",
     template: "%s | Teen Patti Gold"
   },
-  description: "Teen Patti Gold APK Download – New Pakistani Earning App 2026. Teen Patti Gold is a most famous online earning app in Pakistan that brings real earning opportunities under different cards & casino games.",
+  description: "Download Teen Patti Gold APK for free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating. Safe & secure with JazzCash & EasyPaisa payments.",
   keywords: [
-    "Teen Patti Gold",
-    "3 Patti Gold",
-    "Pakistan card games",
-    "Teen Patti game",
-    "online rummy game",
-    "earn money playing cards",
-    "Android gaming app 2026",
-    "JazzCash gaming",
-    "EasyPaisa gaming",
-    "mobile card games",
-    "real money games Pakistan",
-    "card game earning app",
-    "Teen Patti online",
-    "Dragon vs Tiger",
-    "best earning app Pakistan"
+    "teen patti gold",
+    "teen patti gold pakistan",
+    "teen patti gold apk",
+    "teen patti gold download",
+    "teen patti gold app",
+    "teen patti gold game",
+    "3 patti gold",
+    "teen patti gold pakistan download",
+    "teen patti gold apk download",
+    "teen patti gold free download",
+    "teen patti gold online",
+    "teen patti gold earn money",
+    "teen patti gold jazzcash",
+    "teen patti gold easypaisa",
+    "card game pakistan",
+    "rummy game pakistan",
+    "dragon tiger pakistan",
+    "best card game pakistan",
+    "earn money games pakistan",
+    "online card games pakistan"
   ],
   openGraph: {
-    title: 'Teen Patti Gold Game Download | New Earning App in Pakistan 2026',
-    description: 'Join 600K+ players on Pakistan\'s premier card game platform. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!',
+    title: 'Teen Patti Gold - Download APK Free | Best Card Game in Pakistan',
+    description: 'Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating. Safe & secure with JazzCash & EasyPaisa.',
+    url: 'https://teenpattigoldgame.com.pk/',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
+    alternateLocale: ['ur_PK'],
+    type: 'website',
     images: [
       {
         url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
         width: 1200,
         height: 630,
-        alt: 'Teen Patti Gold APK Download'
+        alt: 'Teen Patti Gold - Best Card Game in Pakistan - Download APK Free'
       }
-    ],
-    type: 'website'
+    ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Teen Patti Gold Game Download | New Earning App in Pakistan 2026',
-    description: 'Join 600K+ players on Pakistan\'s premier card game platform. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!',
+    title: 'Teen Patti Gold - Download APK Free | Best Card Game in Pakistan',
+    description: 'Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating.',
     images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp']
+  },
+  alternates: {
+    canonical: 'https://teenpattigoldgame.com.pk/',
+    languages: {
+      'en': 'https://teenpattigoldgame.com.pk/',
+      'ur': 'https://teenpattigoldgame.com.pk/'
+    }
   }
 };
 
 export default function Home() {
-  // Schema.org structured data for SEO
+  // Schema.org structured data for SEO with Pakistan geo-targeting
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -57,9 +73,14 @@ export default function Home() {
         "@type": "WebSite",
         "@id": "https://teenpattigoldgame.com.pk/#website",
         "url": "https://teenpattigoldgame.com.pk/",
-        "name": "Teen Patti Gold",
-        "description": "Pakistan's premier card game platform with Teen Patti, Rummy, Dragon Tiger and more",
-        "inLanguage": "en-US"
+        "name": "Teen Patti Gold - Best Card Game in Pakistan",
+        "description": "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger and earn real money. Pakistan's #1 card game app.",
+        "inLanguage": ["en-US", "ur-PK"],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://teenpattigoldgame.com.pk/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       },
       {
         "@type": "Organization",
@@ -79,7 +100,16 @@ export default function Home() {
           "@type": "ContactPoint",
           "email": "support@3pattigoldgame.com.pk",
           "contactType": "Customer Support",
-          "areaServed": "PK"
+          "areaServed": {
+            "@type": "Country",
+            "name": "Pakistan",
+            "identifier": "PK"
+          },
+          "availableLanguage": ["English", "Urdu"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "PK"
         }
       },
       {
@@ -87,20 +117,25 @@ export default function Home() {
         "name": "Teen Patti Gold",
         "operatingSystem": "Android 5.0+",
         "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Card Game",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.5",
-          "ratingCount": "300000"
+          "ratingCount": "300000",
+          "bestRating": "5",
+          "worstRating": "1"
         },
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "PKR"
+          "priceCurrency": "PKR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://teenpattigoldgame.com.pk/download-teen-patti-gold"
         },
         "downloadUrl": "https://teenpattigoldgame.com.pk/download-teen-patti-gold",
         "softwareVersion": "V1.652(0)",
         "fileSize": "40.81MB",
-        "description": "Play Teen Patti, Rummy, Dragon Tiger and other card games. Earn real money with JazzCash & EasyPaisa withdrawals.",
+        "description": "Teen Patti Gold - Download free APK in Pakistan. Play Teen Patti, Rummy, Dragon Tiger card games and earn real money. Secure payments with JazzCash & EasyPaisa.",
         "screenshot": [
           "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
           "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
@@ -108,8 +143,99 @@ export default function Home() {
         ],
         "author": {
           "@type": "Organization",
-          "name": "Teen Patti Gold"
+          "name": "Teen Patti Gold",
+          "url": "https://teenpattigoldgame.com.pk/"
+        },
+        "inLanguage": ["en", "ur"],
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Gamers in Pakistan",
+          "geographicArea": {
+            "@type": "Country",
+            "name": "Pakistan"
+          }
         }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://teenpattigoldgame.com.pk/"
+          }
+        ]
+      },
+      {
+        "@type": "ImageGallery",
+        "name": "Teen Patti Gold App Screenshots",
+        "description": "Screenshots of Teen Patti Gold card game app showing game interface, features, and gameplay in Pakistan",
+        "image": [
+          {
+            "@type": "ImageObject",
+            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+            "name": "Teen Patti Gold - Best Card Game App in Pakistan",
+            "description": "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger card games and earn real money.",
+            "width": 512,
+            "height": 512,
+            "caption": "Teen Patti Gold - Pakistan's #1 card game app with 800K+ downloads"
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
+            "name": "Teen Patti Gold Game Interface",
+            "description": "Teen Patti Gold game interface showing how to play card games in Pakistan",
+            "width": 400,
+            "height": 711,
+            "caption": "Teen Patti Gold game interface - Play card games and earn money"
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
+            "name": "Teen Patti Gold Games Collection",
+            "description": "Teen Patti Gold app showing all available card games including Teen Patti, Rummy, Dragon Tiger",
+            "width": 400,
+            "height": 711,
+            "caption": "Teen Patti Gold games collection - Multiple card games available"
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp",
+            "name": "Teen Patti Gold Bonuses & Rewards",
+            "description": "Teen Patti Gold APK bonuses and rewards system for earning real money",
+            "width": 400,
+            "height": 711,
+            "caption": "Teen Patti Gold bonuses and rewards - Earn real money in Pakistan"
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp",
+            "name": "Teen Patti Gold Deposit Money",
+            "description": "How to deposit money in Teen Patti Gold using JazzCash and EasyPaisa in Pakistan",
+            "width": 400,
+            "height": 711,
+            "caption": "Teen Patti Gold deposit money - Secure payment methods"
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp",
+            "name": "Teen Patti Gold Refer and Earn",
+            "description": "Teen Patti Gold refer and earn program for inviting friends and earning rewards",
+            "width": 400,
+            "height": 711,
+            "caption": "Teen Patti Gold refer and earn - Invite friends get rewards"
+          },
+          {
+            "@type": "ImageObject",
+            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp",
+            "name": "Teen Patti Gold VIP Program",
+            "description": "Teen Patti Gold VIP program benefits and exclusive rewards for members",
+            "width": 400,
+            "height": 711,
+            "caption": "Teen Patti Gold VIP program - Exclusive rewards for VIP members"
+          }
+        ]
       }
     ]
   };
@@ -130,18 +256,16 @@ export default function Home() {
           <div className="md:w-1/2 space-y-6">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-                <Link href="/" className="hover:text-[#FFA500] transition-colors">
-                  <span className="text-white">Teen Patti Gold APK Download</span>
-                </Link>
+                <span className="text-white">Teen Patti Gold</span>{' '}
+                <span className="text-[#FFA500]">- Best Card Game in Pakistan</span>
               </h1>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-                <span className="text-[#FFA500]">New Pakistani Earning App</span>{' '}
-                <span className="text-white">2026</span>
+                <span className="text-white">Download APK Free | Earn Real Money 2026</span>
               </h2>
             </div>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              <Link href="/" className="text-accent hover:underline font-semibold">Teen Patti Gold</Link> is a most famous online earning app in Pakistan that brings real earning opportunities under different cards & casino games.
+              <strong className="text-white">Teen Patti Gold</strong> is Pakistan's #1 online card game app. Download Teen Patti Gold APK free and play Teen Patti, Rummy, Dragon Tiger & more. Earn real money with secure JazzCash & EasyPaisa payments. Join 800K+ players in Pakistan!
             </p>
 
             {/* Download Button */}
@@ -197,7 +321,7 @@ export default function Home() {
             <div className="relative ml-auto w-[320px] h-[320px] max-w-full">
               <Image
                 src="/teen-patti-gold.webp"
-                alt="Teen Patti Gold Logo"
+                alt="Teen Patti Gold - Best Card Game App in Pakistan - Download APK Free"
                 width={320}
                 height={320}
                 className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
@@ -214,7 +338,7 @@ export default function Home() {
             <div className="relative mx-auto w-[280px] h-[280px] max-w-full">
               <Image
                 src="/teen-patti-gold.webp"
-                alt="Teen Patti Gold Logo"
+                alt="Teen Patti Gold - Best Card Game App in Pakistan - Download APK Free"
                 width={280}
                 height={280}
                 className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
@@ -284,13 +408,16 @@ export default function Home() {
       {/* Teen Patti Gold Overview Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Teen Patti Gold Overview</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Teen Patti Gold - Pakistan's #1 Card Game App</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              Teen Patti Gold is a fast-paced casino game that offers to play multiple games to entertain and earn real money. Teen Patti Gold is an exciting addition for casino lovers with a wide variety of engaging games and stunning features. It is a completely free download and provides a smooth and secure gaming experience, and you won't have to spend a single penny to get started on the Teen Patti Gold App. Regular updates keep the game fresh and more realistic, and fresh content and mini games are added regularly.
+              <strong className="text-white">Teen Patti Gold</strong> is Pakistan's most popular online card game app, offering players the chance to play Teen Patti, Rummy, Dragon Tiger, and many other exciting card games while earning real money. Download <Link href="/download-teen-patti-gold" className="text-[#FFA500] hover:underline font-semibold">Teen Patti Gold APK</Link> free and join over 800,000 players across Pakistan who trust Teen Patti Gold for secure gaming and real cash rewards.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              TeenPatti Gold offers a variety of games, start to play them and earn money to make yourself rich and your family proud. If you're looking for a secure and real money-earning platform, then TeenPatti Gold is a legitimate and trusted platform.
+              What makes <strong>Teen Patti Gold</strong> the best card game in Pakistan? It's completely free to download, offers multiple payment methods including JazzCash and EasyPaisa (learn how to <Link href="/deposit-money-in-teen-patti-gold" className="text-[#FFA500] hover:underline">deposit money</Link> and <Link href="/withdraw-money-from-teen-patti-gold" className="text-[#FFA500] hover:underline">withdraw money</Link>), provides 24/7 customer support, and ensures fair gameplay with advanced security. Whether you're looking to play Teen Patti online, enjoy Rummy games, or try your luck at Dragon Tiger, <strong>Teen Patti Gold</strong> has everything you need.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              With regular updates, new games, and exciting bonuses, <strong>Teen Patti Gold</strong> keeps the gaming experience fresh and engaging. You can also play <Link href="/teen-patti-gold-for-pc" className="text-[#FFA500] hover:underline">Teen Patti Gold on PC</Link> or <Link href="/teen-patti-gold-for-ios" className="text-[#FFA500] hover:underline">Teen Patti Gold on iOS</Link>. Download <Link href="/download-teen-patti-gold" className="text-[#FFA500] hover:underline font-semibold">Teen Patti Gold APK</Link> today and start your journey to earn real money playing your favorite card games in Pakistan. Need help? Check our <Link href="/blog" className="text-[#FFA500] hover:underline">blog guides</Link> or <Link href="/blog/create-teen-patti-gold-account-and-login" className="text-[#FFA500] hover:underline">learn how to create an account</Link>.
             </p>
           </div>
         </div>
@@ -468,11 +595,12 @@ export default function Home() {
               <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-game.webp"
-                  alt="Teen Patti Gold Game Interface"
+                  alt="Teen Patti Gold Game Interface - Play Card Games in Pakistan"
                   width={400}
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
-                  loading="lazy"
+                  loading="eager"
+                  fetchPriority="high"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
@@ -484,11 +612,12 @@ export default function Home() {
               <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-app.webp"
-                  alt="Teen Patti Gold Games Collection"
+                  alt="Teen Patti Gold Games Collection - Rummy, Dragon Tiger, Teen Patti"
                   width={400}
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
-                  loading="lazy"
+                  loading="eager"
+                  fetchPriority="high"
                   sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
                 />
               </div>
@@ -500,7 +629,7 @@ export default function Home() {
               <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-apk.webp"
-                  alt="Teen Patti Gold Bonuses & Rewards"
+                  alt="Teen Patti Gold Bonuses & Rewards - Earn Real Money in Pakistan"
                   width={400}
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
@@ -516,7 +645,7 @@ export default function Home() {
               <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-deposit-money.webp"
-                  alt="Teen Patti Gold Deposit Money"
+                  alt="Teen Patti Gold Deposit Money - JazzCash EasyPaisa Payment Methods"
                   width={400}
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
@@ -532,7 +661,7 @@ export default function Home() {
               <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-refer-and-earn.webp"
-                  alt="Teen Patti Gold Refer and Earn"
+                  alt="Teen Patti Gold Refer and Earn - Invite Friends Get Rewards"
                   width={400}
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
@@ -548,7 +677,7 @@ export default function Home() {
               <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-vip-program.webp"
-                  alt="Teen Patti Gold VIP Program"
+                  alt="Teen Patti Gold VIP Program - Exclusive Rewards for VIP Members"
                   width={400}
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
@@ -1142,7 +1271,7 @@ export default function Home() {
                 </svg>
             </div>
                   <span>What is the Teen Patti Gold?</span>
-                </div>
+            </div>
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -1160,8 +1289,8 @@ export default function Home() {
                   <div className="bg-[#0ea5e9]/20 rounded-lg p-2">
                     <svg className="w-6 h-6 text-[#0ea5e9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                    </svg>
-                  </div>
+                </svg>
+            </div>
                   <span>Is the Teen Patti Gold APK free to download?</span>
                 </div>
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
@@ -1181,8 +1310,8 @@ export default function Home() {
                   <div className="bg-[#4ade80]/20 rounded-lg p-2">
                     <svg className="w-6 h-6 text-[#4ade80]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                    </svg>
-                  </div>
+                </svg>
+            </div>
                   <span>What about security on the Teen Patti Gold?</span>
                 </div>
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
@@ -1270,6 +1399,54 @@ export default function Home() {
           <p className="text-gray-300 leading-relaxed">
             Teen Patti Gold APK is one of the popular and luxurious games in the online casino world. Exclusive rewards and user-friendly features make the game more unique and realistic. Teen Patti Gold does not require a large storage system to download and install. This game has earned a huge respect among casino games due to its amazing features and style. It is also a great source for relaxation and friendly competitions. There are no extra or hidden charges for depositing or withdrawing money at Teen Patti Gold. It offers exciting rewards, smooth gameplay, and a chance to compete and connect with friends. So, download the game today and start playing your favorite games to earn real cash for free.
           </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Important Pages Section for SEO - Internal Linking */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-xl p-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Teen Patti Gold Resources & Guides</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-[#0A1029] p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">Download & Installation</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li><Link href="/download-teen-patti-gold" className="hover:text-[#FFA500] transition-colors">Download Teen Patti Gold APK</Link></li>
+                <li><Link href="/teen-patti-gold-for-pc" className="hover:text-[#FFA500] transition-colors">Teen Patti Gold for PC</Link></li>
+                <li><Link href="/teen-patti-gold-for-ios" className="hover:text-[#FFA500] transition-colors">Teen Patti Gold for iOS</Link></li>
+              </ul>
+            </div>
+            <div className="bg-[#0A1029] p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">Payment Guides</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li><Link href="/deposit-money-in-teen-patti-gold" className="hover:text-[#FFA500] transition-colors">How to Deposit Money</Link></li>
+                <li><Link href="/withdraw-money-from-teen-patti-gold" className="hover:text-[#FFA500] transition-colors">How to Withdraw Money</Link></li>
+              </ul>
+            </div>
+            <div className="bg-[#0A1029] p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">Blog & Tutorials</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li><Link href="/blog" className="hover:text-[#FFA500] transition-colors">Teen Patti Gold Blog</Link></li>
+                <li><Link href="/blog/create-teen-patti-gold-account-and-login" className="hover:text-[#FFA500] transition-colors">Create Account & Login</Link></li>
+                <li><Link href="/blog/tips-to-win-big-in-teen-patti-gold" className="hover:text-[#FFA500] transition-colors">Tips to Win Big</Link></li>
+                <li><Link href="/blog/is-teen-patti-gold-real-or-fake" className="hover:text-[#FFA500] transition-colors">Is Teen Patti Gold Real or Fake?</Link></li>
+              </ul>
+            </div>
+            <div className="bg-[#0A1029] p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">About & Support</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li><Link href="/about-us" className="hover:text-[#FFA500] transition-colors">About Teen Patti Gold</Link></li>
+                <li><Link href="/contact-us" className="hover:text-[#FFA500] transition-colors">Contact Us</Link></li>
+              </ul>
+            </div>
+            <div className="bg-[#0A1029] p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">Legal Pages</h3>
+              <ul className="space-y-2 text-gray-300">
+                <li><Link href="/privacy" className="hover:text-[#FFA500] transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="hover:text-[#FFA500] transition-colors">Terms of Service</Link></li>
+                <li><Link href="/disclaimer" className="hover:text-[#FFA500] transition-colors">Disclaimer</Link></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

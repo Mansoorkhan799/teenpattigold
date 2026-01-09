@@ -19,26 +19,31 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://teenpattigoldgame.com.pk'),
   title: {
-    default: "Teenpatti Gold Game Download | New Earning App in Pakistan 2026",
-    template: "%s | Teenpatti Gold"
+    default: "Teen Patti Gold - Download APK Free | Best Card Game in Pakistan",
+    template: "%s | Teen Patti Gold"
   },
-  description: "Download Teenpatti Gold APK, Pakistan's premier card game platform. Play Teen Patti, Rummy, Dragon vs Tiger & more. Win real cash with JazzCash & EasyPaisa. Join 600K+ players!",
+  description: "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating. Safe & secure with JazzCash & EasyPaisa payments.",
   keywords: [
-    "Teenpatti Gold",
-    "Teen Patti Gold",
-    "Pakistan card games",
-    "Teen Patti game",
-    "online rummy game",
-    "earn money playing cards",
-    "Android gaming app 2026",
-    "JazzCash gaming",
-    "EasyPaisa gaming",
-    "mobile card games",
-    "real money games Pakistan",
-    "card game earning app",
-    "Teen Patti online",
-    "Dragon vs Tiger",
-    "best earning app Pakistan"
+    "teen patti gold",
+    "teen patti gold pakistan",
+    "teen patti gold apk",
+    "teen patti gold download",
+    "teen patti gold app",
+    "teen patti gold game",
+    "3 patti gold",
+    "teen patti gold pakistan download",
+    "teen patti gold apk download",
+    "teen patti gold free download",
+    "teen patti gold online",
+    "teen patti gold earn money",
+    "teen patti gold jazzcash",
+    "teen patti gold easypaisa",
+    "card game pakistan",
+    "rummy game pakistan",
+    "dragon tiger pakistan",
+    "best card game pakistan",
+    "earn money games pakistan",
+    "online card games pakistan"
   ],
   authors: [{ name: "Teenpatti Gold Team" }],
   creator: "Teenpatti Gold",
@@ -74,11 +79,12 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk",
   },
   openGraph: {
-    title: "Teenpatti Gold Game Download | New Earning App in Pakistan 2026",
-    description: "Join 600K+ players on Pakistan's premier card game platform. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
+    title: "Teen Patti Gold - Download APK Free | Best Card Game in Pakistan",
+    description: "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating. Safe & secure with JazzCash & EasyPaisa.",
     url: "https://teenpattigoldgame.com.pk",
-    siteName: "Teenpatti Gold",
+    siteName: "Teen Patti Gold",
     locale: "en_US",
+    alternateLocale: ["ur_PK"],
     type: "website",
     images: [
       {
@@ -97,8 +103,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Teenpatti Gold Game Download | New Earning App in Pakistan 2026",
-    description: "Join 600K+ players on Pakistan's premier card game platform. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
+    title: "Teen Patti Gold - Download APK Free | Best Card Game in Pakistan",
+    description: "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating.",
     creator: "@teenpattigold",
     images: [
       {
@@ -109,9 +115,16 @@ export const metadata: Metadata = {
       }
     ],
   },
-  applicationName: "Teenpatti Gold",
+  applicationName: "Teen Patti Gold",
   category: "Gaming",
   classification: "Card Gaming Platform",
+  alternates: {
+    canonical: "https://teenpattigoldgame.com.pk",
+    languages: {
+      'en': 'https://teenpattigoldgame.com.pk/',
+      'ur': 'https://teenpattigoldgame.com.pk/'
+    }
+  },
 };
 
 export default function RootLayout({
@@ -122,6 +135,21 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Hreflang tags for Pakistan region targeting */}
+        <link rel="alternate" hrefLang="en" href="https://teenpattigoldgame.com.pk/" />
+        <link rel="alternate" hrefLang="ur" href="https://teenpattigoldgame.com.pk/" />
+        <link rel="alternate" hrefLang="x-default" href="https://teenpattigoldgame.com.pk/" />
+        <meta name="geo.region" content="PK" />
+        <meta name="geo.placename" content="Pakistan" />
+        <meta name="geo.position" content="30.3753;69.3451" />
+        <meta name="ICBM" content="30.3753, 69.3451" />
+        <meta name="language" content="English, Urdu" />
+        <meta name="target" content="all" />
+        <meta name="audience" content="all" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        
         {/* DNS Prefetch and Preconnect for performance */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
@@ -136,6 +164,15 @@ export default function RootLayout({
         <link rel="icon" href="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" type="image/webp" sizes="512x512" />
         <link rel="apple-touch-icon" href="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" sizes="180x180" />
         <meta property="og:image" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
+        <meta property="og:image:secure_url" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="Teen Patti Gold - Best Card Game App in Pakistan - Download APK Free" />
+        
+        {/* Additional image meta tags for better indexing */}
+        <meta name="image" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
+        <link rel="image_src" href="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
         
         {/* Google Analytics - Load after page is interactive */}
         <Script
@@ -180,7 +217,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Teenpatti Gold",
+              "name": "Teen Patti Gold",
               "url": "https://teenpattigoldgame.com.pk",
               "logo": {
                 "@type": "ImageObject",
@@ -188,7 +225,16 @@ export default function RootLayout({
                 "width": 512,
                 "height": 512
               },
-              "description": "Teenpatti Gold is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, and many other card games with real cash rewards.",
+              "description": "Teen Patti Gold is Pakistan's #1 card gaming platform, offering Teen Patti, Rummy, Dragon Tiger and many other card games with real cash rewards.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "PK"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Pakistan",
+                "identifier": "PK"
+              },
               "sameAs": [
                 "https://facebook.com/teenpattigold",
                 "https://twitter.com/teenpattigold"
@@ -206,19 +252,33 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              "name": "Teenpatti Gold",
+              "name": "Teen Patti Gold",
               "operatingSystem": "Android",
               "applicationCategory": "GameApplication",
+              "applicationSubCategory": "Card Game",
               "offers": {
                 "@type": "Offer",
                 "price": "0",
-                "priceCurrency": "PKR"
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock"
               },
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "4.5",
-                "ratingCount": "300000"
-              }
+                "ratingCount": "300000",
+                "bestRating": "5",
+                "worstRating": "1"
+              },
+              "audience": {
+                "@type": "Audience",
+                "audienceType": "Gamers in Pakistan",
+                "geographicArea": {
+                  "@type": "Country",
+                  "name": "Pakistan",
+                  "identifier": "PK"
+                }
+              },
+              "inLanguage": ["en", "ur"]
             })
           }}
         />
