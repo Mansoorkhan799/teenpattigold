@@ -37,13 +37,40 @@ export default function Blog() {
           "position": 1,
           "item": {
             "@type": "BlogPosting",
+            "name": "How to Use Teen Patti Gold App in Pakistan: Complete Beginner's Guide 2026",
+            "url": "https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "BlogPosting",
+            "name": "How to Play Teen Patti Gold: Complete Gameplay Guide 2026",
+            "url": "https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "BlogPosting",
+            "name": "How to Earn Money from Teen Patti Gold: Complete Guide 2026",
+            "url": "https://teenpattigoldgame.com.pk/blog/how-to-earn-money-from-teen-patti-gold"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "BlogPosting",
             "name": "Is Teen Patti Gold Real or Fake to Earn Money?",
             "url": "https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake"
           }
         },
         {
           "@type": "ListItem",
-          "position": 2,
+          "position": 5,
           "item": {
             "@type": "BlogPosting",
             "name": "How to Create a Teen Patti Gold Account and Login",
@@ -52,7 +79,7 @@ export default function Blog() {
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 6,
           "item": {
             "@type": "BlogPosting",
             "name": "Tips to Win Big in Teen Patti Gold",
@@ -86,11 +113,53 @@ export default function Blog() {
       <p className="text-gray-300 mb-8 text-lg">Stay updated with the latest guides, tips, and tutorials for Teen Patti Gold</p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Featured Post - Is Teen Patti Gold Real or Fake */}
+        {/* Featured Post - How to Use App */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-[#FFA500]">
           <div className="inline-block bg-[#FFA500] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-            ⭐ FEATURED
+            ⭐ NEW
           </div>
+          <h2 className="text-2xl font-bold mb-4 text-white">How to Use Teen Patti Gold App in Pakistan: Complete Beginner's Guide 2026</h2>
+          <p className="text-gray-300 mb-4">Complete beginner's guide on how to use Teen Patti Gold app in Pakistan. Learn navigation, gameplay, deposits, withdrawals, and tips for earning real money.</p>
+          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+            <span>📅 January 10, 2026</span>
+            <span>•</span>
+            <span>12 min read</span>
+          </div>
+          <Link href="/blog/how-to-use-teen-patti-gold-app-in-pakistan" className="text-accent hover:underline font-semibold">
+            Read More →
+          </Link>
+        </div>
+
+        {/* Second Post - How to Play */}
+        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
+          <h2 className="text-2xl font-bold mb-4 text-white">How to Play Teen Patti Gold: Complete Gameplay Guide 2026</h2>
+          <p className="text-gray-300 mb-4">Learn how to play Teen Patti Gold card game. Complete guide with rules, strategies, tips, and winning techniques for beginners and advanced players.</p>
+          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+            <span>📅 January 11, 2026</span>
+            <span>•</span>
+            <span>10 min read</span>
+          </div>
+          <Link href="/blog/how-to-play-teen-patti-gold" className="text-accent hover:underline font-semibold">
+            Read More →
+          </Link>
+        </div>
+
+        {/* Third Post - How to Earn Money */}
+        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
+          <h2 className="text-2xl font-bold mb-4 text-white">How to Earn Money from Teen Patti Gold: Complete Guide 2026</h2>
+          <p className="text-gray-300 mb-4">Learn proven methods to earn real money from Teen Patti Gold. Complete guide on winning strategies, bonuses, referrals, and tips to maximize earnings.</p>
+          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+            <span>📅 January 12, 2026</span>
+            <span>•</span>
+            <span>11 min read</span>
+          </div>
+          <Link href="/blog/how-to-earn-money-from-teen-patti-gold" className="text-accent hover:underline font-semibold">
+            Read More →
+          </Link>
+        </div>
+
+        {/* Fourth Post */}
+        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
           <h2 className="text-2xl font-bold mb-4 text-white">Is Teen Patti Gold Real or Fake to Earn Money?</h2>
           <p className="text-gray-300 mb-4">Discover the truth about Teen Patti Gold legitimacy, payment methods, and how to identify fake apps. Complete guide for 2026.</p>
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
@@ -103,7 +172,7 @@ export default function Blog() {
           </Link>
         </div>
 
-        {/* Second Post */}
+        {/* Fifth Post */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
           <h2 className="text-2xl font-bold mb-4 text-white">How to Create a Teen Patti Gold Account and Login</h2>
           <p className="text-gray-300 mb-4">Learn how to create your Teen Patti Gold account and login to start playing your favorite games and earning real money.</p>
@@ -117,7 +186,7 @@ export default function Blog() {
           </Link>
         </div>
         
-        {/* Third Post */}
+        {/* Sixth Post */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
           <h2 className="text-2xl font-bold mb-4 text-white">Tips to Win Big in Teen Patti Gold</h2>
           <p className="text-gray-300 mb-4">Discover expert strategies and tips to maximize your winnings in Teen Patti, Rummy, and other card games.</p>

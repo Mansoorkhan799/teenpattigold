@@ -137,6 +137,24 @@ export async function GET() {
   // Blog posts
   const blogPosts: PageType[] = [
     {
+      url: '/blog/how-to-use-teen-patti-gold-app-in-pakistan',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.9
+    },
+    {
+      url: '/blog/how-to-play-teen-patti-gold',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.9
+    },
+    {
+      url: '/blog/how-to-earn-money-from-teen-patti-gold',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.9
+    },
+    {
       url: '/blog/is-teen-patti-gold-real-or-fake',
       lastMod: new Date().toISOString(),
       changeFreq: 'monthly',

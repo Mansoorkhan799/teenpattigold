@@ -35,6 +35,11 @@ const nextConfig = {
         source: '/robots.txt',
         destination: '/api/robots',
       },
+      // Sitemap API route
+      {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap',
+      },
     ];
   },
 
@@ -133,6 +138,6 @@ const nextConfig = {
       transform: 'react-icons/{{member}}',
     },
   },
-}
+};
 
 module.exports = nextConfig 
