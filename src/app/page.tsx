@@ -341,25 +341,30 @@ export default function Home() {
       />
       
       {/* Hero Section with improved spacing */}
-      <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
+      <section className="py-6 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="md:flex md:items-start md:justify-between md:space-x-12 lg:space-x-20">
           <div className="md:w-1/2 space-y-6">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold">
                 <span className="text-white">Teen Patti Gold</span>{' '}
                 <span className="text-[#FFA500]">- Download Free APK | Play & Earn Real Money in Pakistan</span>
               </h1>
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-300 mt-4">
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-semibold text-gray-300 mt-3">
                 <span>Pakistan's #1 Card Game App | 800K+ Downloads | 4.5/5 Rating</span>
               </h2>
             </div>
             
-            <p className="text-lg text-gray-300 leading-relaxed">
-              <strong className="text-white">Teen Patti Gold</strong> is Pakistan's most popular and trusted online card game app. This platform offers players the opportunity to download the free APK, play exciting card games like Teen Patti, Rummy, and Dragon Tiger, and earn real money from the comfort of their home. With over 800,000 downloads and a 4.5/5 star rating, the app is the leading card gaming platform in Pakistan, featuring secure payment methods including JazzCash and EasyPaisa. Join millions of players who trust this platform for safe, fair, and rewarding gameplay.
+            {/* Short intro on mobile so the download button stays above the fold */}
+            <p className="text-base text-gray-300 leading-relaxed md:hidden">
+              <strong className="text-white">Teen Patti Gold</strong> is Pakistan&apos;s most popular online card game app. Download the free APK, play Teen Patti, Rummy and Dragon Tiger, and withdraw your real-money winnings securely with JazzCash and EasyPaisa.
+            </p>
+            {/* Full intro on tablet/desktop */}
+            <p className="hidden md:block text-lg text-gray-300 leading-relaxed">
+              <strong className="text-white">Teen Patti Gold</strong> is Pakistan&apos;s most popular and trusted online card game app. This platform offers players the opportunity to download the free APK, play exciting card games like Teen Patti, Rummy, and Dragon Tiger, and earn real money from the comfort of their home. With over 800,000 downloads and a 4.5/5 star rating, the app is the leading card gaming platform in Pakistan, featuring secure payment methods including JazzCash and EasyPaisa. Join millions of players who trust this platform for safe, fair, and rewarding gameplay.
             </p>
 
             {/* Download Button */}
-            <div className="flex justify-center my-8">
+            <div className="flex justify-center mt-6 mb-4 md:my-8">
               <a 
                 href="https://teenpattigold99.com?from_gameid=8442895&channelCode=100000"
                 target="_blank"
