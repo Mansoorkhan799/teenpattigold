@@ -75,9 +75,6 @@ export const metadata: Metadata = {
   verification: {
     google: "8a7c21f6e90a89ef",
   },
-  alternates: {
-    canonical: "https://teenpattigoldgame.com.pk",
-  },
   openGraph: {
     title: "Teen Patti Gold - Download APK Free | Best Card Game in Pakistan",
     description: "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating. Safe & secure with JazzCash & EasyPaisa.",

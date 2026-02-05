@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
-import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'How to Use Teen Patti Gold App in Pakistan: Complete Beginner\'s Guide 2026',
