@@ -6,8 +6,8 @@ import { Metadata } from 'next';
 // This additional metadata enhances the page-specific SEO
 export const metadata: Metadata = {
   title: {
-    default: "Teen Patti Gold - Download Free APK | Play & Earn Real Money in Pakistan 2026",
-    template: "%s | Teen Patti Gold"
+    default: "Teen Patti Gold Pakistan v1.652 | Download Official APK 2026",
+    template: "%s | Teen Patti Gold Pakistan"
   },
   description: "Teen Patti Gold - Pakistan's #1 card game app. Download Teen Patti Gold APK free, play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating. Safe & secure with JazzCash & EasyPaisa payments.",
   keywords: [
