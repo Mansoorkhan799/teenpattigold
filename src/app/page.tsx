@@ -637,23 +637,7 @@ export default function Home() {
               <p className="text-center text-gray-300 mt-3 font-medium">Deposit Money</p>
             </div>
 
-            {/* Row 2 - Column 2: Withdraw Money */}
-            <div className="w-full flex flex-col items-center">
-              <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
-                <Image
-                  src="/teen-patti-gold-refer-and-earn.webp"
-                  alt="Teen Patti Gold Withdraw Money - Fast Withdrawals via JazzCash EasyPaisa"
-                  width={400}
-                  height={711}
-                  className="w-auto h-auto max-w-full object-contain"
-                  loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                />
-              </div>
-              <p className="text-center text-gray-300 mt-3 font-medium">Withdraw Money</p>
-            </div>
-
-            {/* Row 2 - Column 3: Refer & Earn */}
+            {/* Row 2 - Column 2: Refer & Earn */}
             <div className="w-full flex flex-col items-center">
               <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
@@ -685,11 +669,11 @@ export default function Home() {
               <p className="text-center text-gray-300 mt-3 font-medium">Recharge Rebate</p>
             </div>
 
-            {/* Row 3 - Column 2: Bind Email */}
+            {/* Row 3 - Column 2: Account Security */}
             <div className="w-full flex flex-col items-center">
               <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
-                  src="/teen-patti-gold-vip-program.webp"
+                  src="/teen-patti-gold-bind-account.webp"
                   alt="Teen Patti Gold Bind Email - Account Security"
                   width={400}
                   height={711}
