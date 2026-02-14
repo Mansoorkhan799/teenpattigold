@@ -209,7 +209,7 @@ export default function TeenPattiGoldForPCPage() {
           <h3 className="text-xl font-semibold mb-4 text-white">Steps:</h3>
           <div className="space-y-4">
             <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#FFA500]">
-              <p className="text-gray-300">First, find the official website of TeenPatti Gold, like <Link href="/" className="text-[#0ea5e9] hover:underline">www.3pattigoldgame.com.pk</Link>.</p>
+              <p className="text-gray-300">First, find the official website of TeenPatti Gold, like <Link href="/" className="text-[#0ea5e9] hover:underline">www.teenpattigoldgame.com.pk</Link>.</p>
             </div>
 
             <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#4ade80]">

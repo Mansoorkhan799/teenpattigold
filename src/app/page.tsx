@@ -98,7 +98,7 @@ export default function Home() {
         ],
         "contactPoint": {
           "@type": "ContactPoint",
-          "email": "support@3pattigoldgame.com.pk",
+          "email": "support@teenpattigoldgame.com.pk",
           "contactType": "Customer Support",
           "areaServed": {
             "@type": "Country",

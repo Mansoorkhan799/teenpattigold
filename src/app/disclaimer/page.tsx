@@ -58,7 +58,7 @@ export default function Disclaimer() {
               {/* Main Disclaimer Content */}
               <div className="space-y-6 text-gray-300">
                 <p className="text-lg leading-relaxed">
-                  The information provided on this blog (<a href="https://www.3pattigoldgame.com.pk" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">www.3pattigoldgame.com.pk</a>) about <Link href="/" className="text-accent hover:underline font-semibold">Teen Patti Gold</Link> is for <strong>general informational and entertainment purposes only</strong>. We do not host, promote, or encourage any form of gambling or betting activities.
+                  The information provided on this blog (<a href="https://www.teenpattigoldgame.com.pk" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">www.teenpattigoldgame.com.pk</a>) about <Link href="/" className="text-accent hover:underline font-semibold">Teen Patti Gold</Link> is for <strong>general informational and entertainment purposes only</strong>. We do not host, promote, or encourage any form of gambling or betting activities.
                 </p>
 
                 <div className="bg-[#0A1029] rounded-xl p-6 border border-accent">
