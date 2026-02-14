@@ -129,7 +129,7 @@ export default function AboutPage() {
                 "name": "Pakistan"
               },
               "sameAs": [
-                "https://www.facebook.com/share/1at8tjJcje/?mibextid=wwXIfr"
+                "https://www.facebook.com/share/1Ff9hMv5m2/?mibextid=wwXIfr"
               ],
               "founder": {
                 "@type": "Organization",
