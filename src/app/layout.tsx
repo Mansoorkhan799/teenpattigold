@@ -153,6 +153,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
         
+        
         <link rel="manifest" href="https://teenpattigoldgame.com.pk/manifest.json" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -191,8 +192,7 @@ export default function RootLayout({
         className="antialiased bg-primary text-white min-h-screen flex flex-col"
         style={{
           backgroundImage: "radial-gradient(circle at 10% 20%, rgba(10, 16, 41, 0.4) 0%, rgba(6, 9, 31, 0.01) 90%)",
-          backgroundAttachment: "fixed",
-          minHeight: "100vh"
+          backgroundAttachment: "fixed"
         }}
         suppressHydrationWarning
       >

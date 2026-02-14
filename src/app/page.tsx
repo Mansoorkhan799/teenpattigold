@@ -422,7 +422,7 @@ export default function Home() {
                 className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority={true}
                 fetchPriority="high"
-                quality={90}
+                quality={75}
                 sizes="320px"
               />
             </div>
@@ -439,7 +439,7 @@ export default function Home() {
                 className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority={true}
                 fetchPriority="high"
-                quality={90}
+                quality={75}
                 sizes="280px"
               />
             </div>

@@ -9,6 +9,9 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
   
+  // Modern JavaScript output - reduce legacy transpilation
+  swcMinify: true,
+  
   // Optimize images
   images: {
     remotePatterns: [
@@ -20,7 +23,8 @@ const nextConfig = {
     formats: ['image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    qualities: [75, 80, 90, 100], // Configure allowed image quality values
+    minimumCacheTTL: 60,
+    dangerouslyAllowSVG: false,
   },
 
   // Optimize static file serving
@@ -115,6 +119,11 @@ const nextConfig = {
       };
     }
 
+    // Target modern browsers - reduce legacy JavaScript transpilation
+    if (!isServer) {
+      config.target = ['web', 'es2022'];
+    }
+
     // Optimize for development
     if (dev) {
       config.watchOptions = {
@@ -130,6 +139,7 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
     scrollRestoration: true,
+    optimizePackageImports: ['react-icons'],
   },
   
   // Modern module/nomodule pattern

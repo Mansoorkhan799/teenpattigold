@@ -27,7 +27,7 @@ img {
 /* Prevent layout shift for footer */
 footer {
   contain: layout style paint;
-  will-change: contents;
+  min-height: fit-content;
 }
 
 /* Optimize font loading to prevent FOIT */
@@ -52,10 +52,7 @@ img {
   contain: layout;
 }
 
-/* Optimize rendering */
-* {
-  will-change: auto;
-}
+/* Optimize rendering - remove will-change to prevent layout shifts */
 
 .download-btn {
   position: relative;
