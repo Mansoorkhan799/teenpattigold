@@ -472,7 +472,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#0a1029]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Latest Version</td>
-                  <td className="py-4 px-6 text-left text-white">V1.225</td>
+                  <td className="py-4 px-6 text-left text-white">V1.652</td>
                 </tr>
                 <tr className="bg-[#06091F]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Required OS</td>
