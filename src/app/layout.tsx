@@ -85,13 +85,13 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://teenpattigoldgame.com.pk/feature/og-image.webp",
+        url: "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
         width: 1200,
         height: 630,
         alt: "Teenpatti Gold - Premier Card Gaming Platform",
       },
       {
-        url: "https://teenpattigoldgame.com.pk/feature/og-image-square.webp",
+        url: "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
         width: 800,
         height: 800,
         alt: "Teenpatti Gold - Premier Card Gaming Platform",
@@ -105,7 +105,7 @@ export const metadata: Metadata = {
     creator: "@teenpattigold",
     images: [
       {
-        url: "https://teenpattigoldgame.com.pk/feature/twitter-card.webp",
+        url: "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
         width: 1200,
         height: 600,
         alt: "Teenpatti Gold - Premier Card Gaming Platform",

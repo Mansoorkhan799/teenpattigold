@@ -9,9 +9,6 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
   
-  // Modern JavaScript output - reduce legacy transpilation
-  swcMinify: true,
-  
   // Optimize images
   images: {
     remotePatterns: [

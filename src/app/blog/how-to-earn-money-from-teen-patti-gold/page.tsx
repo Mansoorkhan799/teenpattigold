@@ -25,6 +25,20 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-01-12T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
+    images: [
+      {
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
+        width: 1200,
+        height: 630,
+        alt: 'How to Earn Money from Teen Patti Gold',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
+    description: 'Learn proven methods to earn real money from Teen Patti Gold with winning strategies, bonuses, and tips.',
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp'],
   }
 };
 

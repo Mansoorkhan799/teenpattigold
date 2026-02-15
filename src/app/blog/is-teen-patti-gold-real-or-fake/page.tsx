@@ -34,6 +34,20 @@ export const metadata: Metadata = {
     siteName: "Teen Patti Gold",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Is Teen Patti Gold Real or Fake',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Is Teen Patti Gold Real or Fake to Earn Money?',
+    description: 'Complete guide about Teen Patti Gold legitimacy, payment methods, and safety tips for Pakistani players.',
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp'],
   },
 };
 

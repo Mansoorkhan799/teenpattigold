@@ -25,6 +25,20 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-01-05T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
+    images: [
+      {
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Teen Patti Gold - Create Account and Login',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Create Account and Login - Teen Patti Gold',
+    description: 'Learn how to create an account and login to Teen Patti Gold. Step by step guide for registration and accessing your account.',
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp'],
   }
 };
 
