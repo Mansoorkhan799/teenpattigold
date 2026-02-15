@@ -9,6 +9,8 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
   
+  // SWC is enabled by default in Next.js 15 - no need to configure separately
+  
   // Optimize images
   images: {
     remotePatterns: [
@@ -22,6 +24,7 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: false,
+    // Note: quality is set per Image component (default 75), not in config
   },
 
   // Optimize static file serving
@@ -120,6 +123,37 @@ const nextConfig = {
     if (!isServer) {
       config.target = ['web', 'es2022'];
     }
+    
+    // Optimize bundle splitting for better code splitting
+    if (!isServer && !dev) {
+      config.optimization = {
+        ...config.optimization,
+        moduleIds: 'deterministic',
+        runtimeChunk: 'single',
+        splitChunks: {
+          chunks: 'all',
+          cacheGroups: {
+            default: false,
+            vendors: false,
+            // Vendor chunk for node_modules
+            vendor: {
+              name: 'vendor',
+              chunks: 'all',
+              test: /node_modules/,
+              priority: 20,
+            },
+            // Common chunk for shared code
+            common: {
+              name: 'common',
+              minChunks: 2,
+              chunks: 'async',
+              priority: 10,
+              reuseExistingChunk: true,
+            },
+          },
+        },
+      };
+    }
 
     // Optimize for development
     if (dev) {
@@ -138,6 +172,9 @@ const nextConfig = {
     scrollRestoration: true,
     optimizePackageImports: ['react-icons'],
   },
+  
+  // Production source maps for better debugging
+  productionBrowserSourceMaps: true,
   
   // Modern module/nomodule pattern
   modularizeImports: {

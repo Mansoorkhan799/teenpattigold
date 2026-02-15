@@ -21,6 +21,7 @@ export function middleware() {
     `img-src 'self' data: https: blob:;` +
     `font-src 'self';` +
     `connect-src 'self' https://www.google-analytics.com;` +
+    `manifest-src 'self';` +
     `frame-ancestors 'none';`
   );
 

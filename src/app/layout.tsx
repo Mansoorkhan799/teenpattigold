@@ -1,10 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Script from "next/script";
+import dynamic from "next/dynamic";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import DeferredStyles from "@/components/DeferredStyles";
-import ScrollToTop from "@/components/ScrollToTop";
+import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
+
+// Dynamically import non-critical components to reduce initial bundle size
+const Footer = dynamic(() => import("@/components/Footer"), {
+  ssr: true, // Keep SSR for SEO
+});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -71,7 +76,7 @@ export const metadata: Metadata = {
       { url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp', sizes: '180x180' }
     ]
   },
-  manifest: 'https://teenpattigoldgame.com.pk/manifest.json',
+  manifest: '/manifest.json',
   verification: {
     google: "8a7c21f6e90a89ef",
   },
@@ -154,7 +159,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
         
         
-        <link rel="manifest" href="https://teenpattigoldgame.com.pk/manifest.json" />
+        <link rel="manifest" href="/manifest.json" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <link rel="icon" href="https://teenpattigoldgame.com.pk/favicon.ico" type="image/x-icon" sizes="any" />
@@ -172,12 +177,12 @@ export default function RootLayout({
         <meta name="image" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
         <link rel="image_src" href="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
         
-        {/* Google Analytics - Load after page is interactive */}
+        {/* Google Analytics - Load after page is interactive to reduce unused JS */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="lazyOnload">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -203,7 +208,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <DeferredStyles />
-        <ScrollToTop />
+        <ScrollToTopWrapper />
         
         {/* Structured data for Organization */}
         <Script

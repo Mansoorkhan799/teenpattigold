@@ -19,7 +19,7 @@ export default function Header() {
               className="object-contain rounded-lg w-full h-full"
               priority={true}
               fetchPriority="high"
-              quality={90}
+              quality={75}
             />
           </div>
           <span className="text-accent text-xl md:text-2xl lg:text-3xl font-bold">

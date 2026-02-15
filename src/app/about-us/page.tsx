@@ -67,7 +67,7 @@ export default function AboutPage() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 320px"
                       className="object-contain p-4"
                       priority
-                      quality={90}
+                      quality={75}
                     />
                   </Link>
                 </div>

@@ -146,7 +146,7 @@ export default function DownloadPage() {
               className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
               priority={true}
               fetchPriority="high"
-              quality={90}
+              quality={75}
             />
           </div>
         </div>
