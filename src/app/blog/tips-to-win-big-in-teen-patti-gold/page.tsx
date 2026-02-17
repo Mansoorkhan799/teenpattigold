@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { LOGO_URL } from '@/lib/site-images';
 import Link from 'next/link';
 import Script from 'next/script';
 
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
+        url: LOGO_URL,
         width: 1200,
         height: 630,
         alt: 'Tips to Win Big in Teen Patti Gold',
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tips to Win Big in Teen Patti Gold - Expert Strategies',
     description: 'Discover expert strategies and tips to maximize your winnings in Teen Patti, Rummy, and other card games.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp'],
+    images: [LOGO_URL],
   }
 };
 
@@ -318,7 +319,7 @@ export default function TipsToWinBig() {
               "name": "Teen Patti Gold",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp"
+                "url": LOGO_URL
               }
             },
             "mainEntityOfPage": {

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import Script from 'next/script';
 import { Metadata } from 'next';
+import { LOGO_URL, LOGO_PATH_VERSIONED } from '@/lib/site-images';
 
 // This additional metadata enhances the page-specific SEO
 export const metadata: Metadata = {
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
+        url: LOGO_URL,
         width: 1200,
         height: 630,
         alt: 'Teen Patti Gold - Best Card Game in Pakistan - Download APK Free'
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Teen Patti Gold - Download APK Free | Best Card Game in Pakistan',
     description: 'Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp']
+    images: [LOGO_URL]
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/',
@@ -89,7 +90,7 @@ export default function Home() {
         "url": "https://teenpattigoldgame.com.pk/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+          "url": LOGO_URL,
           "width": 512,
           "height": 512
         },
@@ -174,7 +175,7 @@ export default function Home() {
         "image": [
           {
             "@type": "ImageObject",
-            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+            "url": LOGO_URL,
             "name": "Teen Patti Gold - Best Card Game App in Pakistan",
             "description": "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger card games and earn real money.",
             "width": 512,
@@ -304,7 +305,7 @@ export default function Home() {
           "name": "Teen Patti Gold",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp"
+            "url": LOGO_URL
           }
         },
         "datePublished": "2026-01-08",
@@ -314,7 +315,7 @@ export default function Home() {
           "@id": "https://teenpattigoldgame.com.pk/"
         },
         "image": [
-          "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+          LOGO_URL,
           "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
           "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp"
         ],
@@ -415,7 +416,7 @@ export default function Home() {
           <div className="hidden md:block md:w-1/2 md:mt-8">
             <div className="relative ml-auto w-[320px] h-[320px] max-w-full">
               <Image
-                src="/teen-patti-gold.webp"
+                src={LOGO_PATH_VERSIONED}
                 alt="Teen Patti Gold - Best Card Game App in Pakistan - Download APK Free"
                 width={320}
                 height={320}
@@ -432,7 +433,7 @@ export default function Home() {
           <div className="mt-8 md:hidden">
             <div className="relative mx-auto w-[280px] h-[280px] max-w-full">
               <Image
-                src="/teen-patti-gold.webp"
+                src={LOGO_PATH_VERSIONED}
                 alt="Teen Patti Gold - Best Card Game App in Pakistan - Download APK Free"
                 width={280}
                 height={280}

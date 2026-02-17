@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import MobileNavigation from './MobileNavigation';
+import { LOGO_PATH_VERSIONED } from '@/lib/site-images';
 
 export default function Header() {
   return (
@@ -12,7 +13,7 @@ export default function Header() {
         <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
           <div className="relative h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 mr-2 md:mr-3">
             <Image
-              src="/teen-patti-gold.webp"
+              src={LOGO_PATH_VERSIONED}
               alt="Teen Patti Gold Logo"
               width={56}
               height={56}

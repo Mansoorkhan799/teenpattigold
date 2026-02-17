@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { LOGO_URL } from '@/lib/site-images';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
@@ -46,7 +47,7 @@ export default function HowToUseApp() {
       "name": "Teen Patti Gold",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp"
+        "url": LOGO_URL
       }
     },
     "datePublished": "2026-01-10",

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
+import { LOGO_URL, LOGO_PATH_VERSIONED } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: 'About Teen Patti Gold - Pakistan\'s Premier Card Gaming Platform',
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+        url: LOGO_URL,
         width: 1200,
         height: 630,
         alt: "About Teen Patti Gold - Premier Card Gaming Platform",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: 'About Teen Patti Gold - Pakistan\'s Premier Card Gaming Platform',
     description: 'Learn about Teen Patti Gold, our history, mission, and vision for creating the best card gaming platform in Pakistan with real cash rewards.',
-    images: ["https://teenpattigoldgame.com.pk/teen-patti-gold.webp"],
+    images: [LOGO_URL],
   },
 };
 
@@ -61,7 +62,7 @@ export default function AboutPage() {
                 <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-[#0A1029]">
                   <Link href="/">
                     <Image 
-                      src="/teen-patti-gold.webp" 
+                      src={LOGO_PATH_VERSIONED} 
                       alt="Teen Patti Gold Logo" 
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 320px"
@@ -121,7 +122,7 @@ export default function AboutPage() {
               "name": "Teen Patti Gold",
               "alternateName": "3 Patti Gold Game",
               "url": "https://teenpattigoldgame.com.pk",
-              "logo": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+              "logo": LOGO_URL,
               "description": "Teen Patti Gold is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, Dragon vs Tiger and more with real cash rewards.",
               "foundingDate": "2024",
               "foundingLocation": {

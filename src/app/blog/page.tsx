@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
 import Script from 'next/script';
+import { LOGO_URL } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold Blog - Guides, Tips & Tutorials',
@@ -94,7 +95,7 @@ export default function Blog() {
       "url": "https://teenpattigoldgame.com.pk",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp"
+        "url": LOGO_URL
       }
     }
   };

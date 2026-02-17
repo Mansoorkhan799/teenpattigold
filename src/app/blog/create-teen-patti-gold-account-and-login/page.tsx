@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { LOGO_URL } from '@/lib/site-images';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
+        url: LOGO_URL,
         width: 1200,
         height: 630,
         alt: 'Teen Patti Gold - Create Account and Login',
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'How to Create Account and Login - Teen Patti Gold',
     description: 'Learn how to create an account and login to Teen Patti Gold. Step by step guide for registration and accessing your account.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp'],
+    images: [LOGO_URL],
   }
 };
 
@@ -271,7 +272,7 @@ export default function CreateAccountLogin() {
               "name": "Teen Patti Gold",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp"
+                "url": LOGO_URL
               }
             },
             "mainEntityOfPage": {

@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { LOGO_URL } from '@/lib/site-images';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
+        url: LOGO_URL,
         width: 1200,
         height: 630,
         alt: 'How to Earn Money from Teen Patti Gold',
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
     description: 'Learn proven methods to earn real money from Teen Patti Gold with winning strategies, bonuses, and tips.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp'],
+    images: [LOGO_URL],
   }
 };
 

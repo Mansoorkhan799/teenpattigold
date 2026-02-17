@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Header from "@/components/Header";
 import DeferredStyles from "@/components/DeferredStyles";
 import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
+import { LOGO_URL, FAVICON_URL } from "@/lib/site-images";
 
 // Dynamically import non-critical components to reduce initial bundle size
 const Footer = dynamic(() => import("@/components/Footer"), {
@@ -66,14 +67,14 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: 'https://teenpattigoldgame.com.pk/favicon.ico', type: 'image/x-icon', sizes: 'any' },
-      { url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp', type: 'image/webp', sizes: '512x512' }
+      { url: FAVICON_URL, type: 'image/x-icon', sizes: 'any' },
+      { url: LOGO_URL, type: 'image/webp', sizes: '512x512' }
     ],
     shortcut: [
-      { url: 'https://teenpattigoldgame.com.pk/favicon.ico', type: 'image/x-icon' }
+      { url: FAVICON_URL, type: 'image/x-icon' }
     ],
     apple: [
-      { url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp', sizes: '180x180' }
+      { url: LOGO_URL, sizes: '180x180' }
     ]
   },
   manifest: '/manifest.json',
@@ -90,13 +91,13 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+        url: LOGO_URL,
         width: 1200,
         height: 630,
         alt: "Teenpatti Gold - Premier Card Gaming Platform",
       },
       {
-        url: "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+        url: LOGO_URL,
         width: 800,
         height: 800,
         alt: "Teenpatti Gold - Premier Card Gaming Platform",
@@ -110,7 +111,7 @@ export const metadata: Metadata = {
     creator: "@teenpattigold",
     images: [
       {
-        url: "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+        url: LOGO_URL,
         width: 1200,
         height: 600,
         alt: "Teenpatti Gold - Premier Card Gaming Platform",
@@ -162,20 +163,20 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link rel="icon" href="https://teenpattigoldgame.com.pk/favicon.ico" type="image/x-icon" sizes="any" />
-        <link rel="shortcut icon" href="https://teenpattigoldgame.com.pk/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" type="image/webp" sizes="512x512" />
-        <link rel="apple-touch-icon" href="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" sizes="180x180" />
-        <meta property="og:image" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
-        <meta property="og:image:secure_url" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
+        <link rel="icon" href={FAVICON_URL} type="image/x-icon" sizes="any" />
+        <link rel="shortcut icon" href={FAVICON_URL} type="image/x-icon" />
+        <link rel="icon" href={LOGO_URL} type="image/webp" sizes="512x512" />
+        <link rel="apple-touch-icon" href={LOGO_URL} sizes="180x180" />
+        <meta property="og:image" content={LOGO_URL} />
+        <meta property="og:image:secure_url" content={LOGO_URL} />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
         <meta property="og:image:alt" content="Teen Patti Gold - Best Card Game App in Pakistan - Download APK Free" />
         
         {/* Additional image meta tags for better indexing */}
-        <meta name="image" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
-        <link rel="image_src" href="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
+        <meta name="image" content={LOGO_URL} />
+        <link rel="image_src" href={LOGO_URL} />
         
         {/* Google Analytics - Load after page is interactive to reduce unused JS */}
         <Script
@@ -223,7 +224,7 @@ export default function RootLayout({
               "url": "https://teenpattigoldgame.com.pk",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+                "url": LOGO_URL,
                 "width": 512,
                 "height": 512
               },

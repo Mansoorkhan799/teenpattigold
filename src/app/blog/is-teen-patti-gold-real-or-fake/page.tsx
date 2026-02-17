@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { LOGO_URL } from '@/lib/site-images';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
+        url: LOGO_URL,
         width: 1200,
         height: 630,
         alt: 'Is Teen Patti Gold Real or Fake',
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Is Teen Patti Gold Real or Fake to Earn Money?',
     description: 'Complete guide about Teen Patti Gold legitimacy, payment methods, and safety tips for Pakistani players.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp'],
+    images: [LOGO_URL],
   },
 };
 
@@ -69,7 +70,7 @@ export default function TeenPattiGoldRealOrFakePage() {
       "name": "Teen Patti Gold",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp"
+        "url": LOGO_URL
       }
     },
     "datePublished": "2026-01-05",

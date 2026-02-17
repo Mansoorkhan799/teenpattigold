@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { LOGO_URL, LOGO_PATH_VERSIONED } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: 'Download Teen Patti Gold Game Free APK For Android | Latest Version 2026',
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+        url: LOGO_URL,
         width: 1200,
         height: 630,
         alt: "Download Teenpatti Gold APK",
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: 'Download Teen Patti Gold Game Free APK For Android',
     description: 'Download Teen Patti Gold APK free. Play Teen Patti, Rummy & more. Earn real cash with secure payments. 600K+ downloads!',
-    images: ["https://teenpattigoldgame.com.pk/teen-patti-gold.webp"],
+    images: [LOGO_URL],
   },
 };
 
@@ -81,7 +82,7 @@ export default function DownloadPage() {
       "https://teenpattigoldgame.com.pk/2.webp",
       "https://teenpattigoldgame.com.pk/3.webp"
     ],
-    "image": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+    "image": LOGO_URL,
     "author": {
       "@type": "Organization",
       "name": "Teen Patti Gold",
@@ -139,7 +140,7 @@ export default function DownloadPage() {
         <div className="flex justify-center mb-12">
           <div className="relative w-[320px] h-[320px] max-w-full">
             <Image
-              src="/teen-patti-gold.webp"
+              src={LOGO_PATH_VERSIONED}
               alt="Teen Patti Gold Logo"
               width={320}
               height={320}

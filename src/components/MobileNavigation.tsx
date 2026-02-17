@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { LOGO_PATH_VERSIONED } from '@/lib/site-images';
 
 export default function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +63,7 @@ export default function MobileNavigation() {
             <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
               <div className="relative w-8 h-8 flex-shrink-0">
                 <Image
-                  src="/teen-patti-gold.webp"
+                  src={LOGO_PATH_VERSIONED}
                   alt="Teen Patti Gold Logo"
                   fill
                   sizes="(max-width: 768px) 32px, 40px"

@@ -8,12 +8,12 @@
   "theme_color": "#06091F",
   "icons": [
     {
-      "src": "/favicon.ico",
+      "src": "/favicon.ico?v=2",
       "sizes": "16x16 32x32 48x48",
       "type": "image/x-icon"
     },
     {
-      "src": "/teen-patti-gold.webp",
+      "src": "/teen-patti-gold.webp?v=2",
       "sizes": "192x192 512x512",
       "type": "image/webp",
       "purpose": "any maskable"

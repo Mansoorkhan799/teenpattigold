@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { LOGO_URL, LOGO_PATH_VERSIONED } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold For iOS Download Latest Version For Free 2026',
@@ -44,7 +45,7 @@ export default function TeenPattiGoldForIOSPage() {
     "@type": "TechArticle",
     "headline": "Teen Patti Gold For iOS Download Latest Version For Free 2026",
     "description": "Complete guide to download and play Teen Patti Gold on iOS devices including iPhone and iPad.",
-    "image": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+    "image": LOGO_URL,
     "author": {
       "@type": "Organization",
       "name": "Teen Patti Gold",
@@ -55,7 +56,7 @@ export default function TeenPattiGoldForIOSPage() {
       "name": "Teen Patti Gold",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp"
+        "url": LOGO_URL
       }
     },
     "datePublished": "2026-01-05",
@@ -100,7 +101,7 @@ export default function TeenPattiGoldForIOSPage() {
         <div className="flex justify-center mb-12">
           <div className="relative w-[280px] h-[280px] max-w-full">
             <Image
-              src="/teen-patti-gold.webp"
+              src={LOGO_PATH_VERSIONED}
               alt="Teen Patti Gold for iOS"
               width={280}
               height={280}

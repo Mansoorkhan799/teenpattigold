@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
+import { LOGO_URL } from '@/lib/site-images';
 
 export async function GET() {
   const baseUrl = 'https://teenpattigoldgame.com.pk';
+  const logoImageLoc = LOGO_URL;
   
   // Define page type
   type PageType = {
@@ -191,7 +193,7 @@ export async function GET() {
     <mobile:mobile/>
     ${page.images?.map(img => `
     <image:image>
-      <image:loc>${baseUrl}${img.loc}</image:loc>
+      <image:loc>${img.loc === '/teen-patti-gold.webp' ? logoImageLoc : baseUrl + img.loc}</image:loc>
       <image:title>${img.title}</image:title>
       <image:caption>${img.caption}</image:caption>
     </image:image>`).join('') || ''}
