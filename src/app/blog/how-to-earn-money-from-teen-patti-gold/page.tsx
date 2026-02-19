@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { LOGO_URL } from '@/lib/site-images';
 import Script from 'next/script';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
   title: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
@@ -44,6 +45,12 @@ export const metadata: Metadata = {
 };
 
 export default function HowToEarnMoney() {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    BREADCRUMB_HOME,
+    BREADCRUMB_BLOG,
+    { name: 'How to Earn Money from Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk/blog/how-to-earn-money-from-teen-patti-gold' },
+  ]);
+
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -55,6 +62,7 @@ export default function HowToEarnMoney() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Script
         id="blog-post-schema"
         type="application/ld+json"

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { LOGO_URL } from '@/lib/site-images';
 import Script from 'next/script';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
   title: 'How to Create a Teen Patti Gold Account and Login - Step by Step Guide',
@@ -44,8 +45,30 @@ export const metadata: Metadata = {
 };
 
 export default function CreateAccountLogin() {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    BREADCRUMB_HOME,
+    BREADCRUMB_BLOG,
+    { name: 'Create Account and Login', url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login' },
+  ]);
+
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Create a Teen Patti Gold Account and Login',
+    description: 'Step-by-step guide to create your Teen Patti Gold account and login to start playing card games and earning real money.',
+    totalTime: 'PT5M',
+    step: [
+      { '@type': 'HowToStep', name: 'Download the Teen Patti Gold App', text: 'Download the Teen Patti Gold app from the official website and install it on your Android device.' },
+      { '@type': 'HowToStep', name: 'Open the App and Tap Register', text: "Launch the app and tap the Register button on the welcome screen to begin account creation." },
+      { '@type': 'HowToStep', name: 'Fill Out the Registration Form', text: 'Provide your phone number, create a password, and complete the registration form.' },
+      { '@type': 'HowToStep', name: 'Verify and Login', text: 'Verify your account and login to start playing Teen Patti, Rummy, and other card games.' },
+    ],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">
@@ -238,7 +261,7 @@ export default function CreateAccountLogin() {
                 <p className="text-white text-lg mb-8 max-w-2xl mx-auto">Now that you know how to create an account and login to Teen Patti Gold, you're ready to start playing Teen Patti, Rummy, and other card games to earn real money. Download the app today!</p>
                 
                 <Link 
-                  href="https://pkteenpattigold.com/?from_gameid=5784509&channelCode=100000"
+                  href="https://teenpattigold99.com?from_gameid=8442895&channelCode=100000"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-accent font-bold py-4 px-8 rounded-full hover:bg-[#0A1029] transition-all shadow-2xl hover:shadow-3xl transform hover:scale-105"

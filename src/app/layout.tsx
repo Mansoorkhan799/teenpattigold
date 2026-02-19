@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import Header from "@/components/Header";
 import DeferredStyles from "@/components/DeferredStyles";
 import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
-import { LOGO_URL, FAVICON_URL } from "@/lib/site-images";
+import { LOGO_URL, FAVICON_URL, LOGO_PATH_VERSIONED } from "@/lib/site-images";
 
 // Dynamically import non-critical components to reduce initial bundle size
 const Footer = dynamic(() => import("@/components/Footer"), {
@@ -153,6 +153,8 @@ export default function RootLayout({
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
         
+        {/* Preload LCP image (logo used in header and hero) for faster First Contentful Paint */}
+        <link rel="preload" as="image" href={LOGO_PATH_VERSIONED} />
         {/* DNS Prefetch and Preconnect for performance */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
@@ -178,21 +180,25 @@ export default function RootLayout({
         <meta name="image" content={LOGO_URL} />
         <link rel="image_src" href={LOGO_URL} />
         
-        {/* Google Analytics - Load after page is interactive to reduce unused JS */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script>
+        {/* Google Analytics - Set NEXT_PUBLIC_GA_ID in .env.local to enable */}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+                  page_path: window.location.pathname,
+                });
+              `}
+            </Script>
+          </>
+        )}
       </head>
       <body
         className="antialiased bg-primary text-white min-h-screen flex flex-col"

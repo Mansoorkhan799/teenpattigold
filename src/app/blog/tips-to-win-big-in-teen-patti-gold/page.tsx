@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { LOGO_URL } from '@/lib/site-images';
 import Link from 'next/link';
 import Script from 'next/script';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
   title: 'Tips to Win Big in Teen Patti Gold - Expert Strategies & Tricks 2026',
@@ -44,8 +45,15 @@ export const metadata: Metadata = {
 };
 
 export default function TipsToWinBig() {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    BREADCRUMB_HOME,
+    BREADCRUMB_BLOG,
+    { name: 'Tips to Win Big', url: 'https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold' },
+  ]);
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">
@@ -285,7 +293,7 @@ export default function TipsToWinBig() {
                 <p className="text-white text-lg mb-8 max-w-2xl mx-auto">Apply these expert tips and strategies to maximize your winnings in Teen Patti Gold. Download the app now and start playing smarter!</p>
                 
                 <Link 
-                  href="https://pkteenpattigold.com/?from_gameid=5784509&channelCode=100000"
+                  href="https://teenpattigold99.com?from_gameid=8442895&channelCode=100000"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-accent font-bold py-4 px-8 rounded-full hover:bg-[#0A1029] transition-all shadow-2xl hover:shadow-3xl transform hover:scale-105"

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { DOWNLOAD_URL } from '@/lib/site-images';
 
 export default function Footer() {
   // Fixed directly in the JSX to avoid unused variable warnings
@@ -120,7 +121,7 @@ export default function Footer() {
               Download Teen Patti Gold to enjoy the best card gaming experience and earn real cash rewards on your mobile device.
             </p>
             <a 
-              href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
+              href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"

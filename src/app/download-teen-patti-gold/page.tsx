@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { LOGO_URL, LOGO_PATH_VERSIONED } from '@/lib/site-images';
+import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: 'Download Teen Patti Gold Game Free APK For Android | Latest Version 2026',
@@ -72,7 +72,7 @@ export default function DownloadPage() {
       "ratingCount": "300000",
       "bestRating": "5"
     },
-    "downloadUrl": "https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000",
+    "downloadUrl": DOWNLOAD_URL,
     "softwareVersion": "V1.652(0)",
     "fileSize": "49MB",
     "datePublished": "2026-01-05",
@@ -116,7 +116,7 @@ export default function DownloadPage() {
         {/* Download Button - Prominent */}
         <div className="flex justify-center my-12">
           <a 
-            href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
+            href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="relative flex items-center px-12 py-6 text-white font-bold text-xl rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl"
@@ -192,7 +192,7 @@ export default function DownloadPage() {
         {/* Download Button After Table */}
         <div className="flex justify-center mt-8">
           <a 
-            href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
+            href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-4 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"

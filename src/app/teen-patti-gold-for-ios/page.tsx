@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { LOGO_URL, LOGO_PATH_VERSIONED } from '@/lib/site-images';
+import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold For iOS Download Latest Version For Free 2026',
@@ -116,7 +116,7 @@ export default function TeenPattiGoldForIOSPage() {
         {/* Download Button */}
         <div className="flex justify-center mb-8">
           <a 
-            href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
+            href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="relative flex items-center px-12 py-6 text-white font-bold text-xl rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl"
@@ -256,7 +256,7 @@ export default function TeenPattiGoldForIOSPage() {
           {/* Download Button */}
           <div className="flex justify-center mt-10">
             <a 
-              href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
+              href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
@@ -374,7 +374,7 @@ export default function TeenPattiGoldForIOSPage() {
             Download Teen Patti Gold now and start earning!
           </p>
           <a 
-            href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
+            href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-[#0ea5e9] hover:bg-gray-100 font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"

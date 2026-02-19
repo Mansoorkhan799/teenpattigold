@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import Script from 'next/script';
 import { Metadata } from 'next';
-import { LOGO_URL, LOGO_PATH_VERSIONED } from '@/lib/site-images';
+import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 
 // This additional metadata enhances the page-specific SEO
 export const metadata: Metadata = {
@@ -367,7 +367,7 @@ export default function Home() {
             {/* Download Button */}
             <div className="flex justify-center mt-6 mb-4 md:my-8">
               <a 
-                href="https://teenpattigold99.com?from_gameid=8442895&channelCode=100000"
+                href={DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group"
@@ -574,7 +574,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* Row 1 - Column 1: Game Interface */}
             <div className="w-full flex flex-col items-center">
-              <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A10https://github.com/Mansoorkhan799/card-rummy29] flex items-center justify-center">
+              <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-game.webp"
                   alt="Teen Patti Gold Game Interface - Play Card Games in Pakistan"
@@ -971,7 +971,7 @@ export default function Home() {
 
         <div className="flex justify-center">
           <a 
-            href="https://pkcardrummy.com/?from_gameid=5784509&channelCode=100000"
+            href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-4 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"

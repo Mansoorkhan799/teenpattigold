@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { LOGO_URL } from '@/lib/site-images';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -53,6 +54,12 @@ export const metadata: Metadata = {
 };
 
 export default function TeenPattiGoldRealOrFakePage() {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    BREADCRUMB_HOME,
+    BREADCRUMB_BLOG,
+    { name: 'Is Teen Patti Gold Real or Fake?', url: 'https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake' },
+  ]);
+
   // Schema.org structured data for blog post
   const schemaData = {
     "@context": "https://schema.org",
@@ -89,13 +96,34 @@ export default function TeenPattiGoldRealOrFakePage() {
     }
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Does the Teen Patti Gold app actually pay real money?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Yes, the TeenPattiGold app pays real money, so you can easily withdraw your earnings to your account.' },
+      },
+      {
+        '@type': 'Question',
+        name: 'What are the tips for using Teen Patti Gold safely?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Make sure you have downloaded the Teen Patti Gold app from the official site to earn real money and use strong passwords to protect your account from hackers.' },
+      },
+      {
+        '@type': 'Question',
+        name: "What are the signs that Teen Patti Gold is not fake?",
+        acceptedAnswer: { '@type': 'Answer', text: "If your app doesn't have customer support, a poor-quality UI, no updates, or withdrawal options that aren't clear, it's fake. So always verify by reading reviews." },
+      },
+    ],
+  };
+
   return (
     <article className="py-12 px-4 md:px-8 max-w-4xl mx-auto">
-      {/* Schema.org JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      {/* Schema.org JSON-LD - BreadcrumbList + FAQPage for rich results */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm">
         <Link href="/" className="text-[#0ea5e9] hover:underline">Home</Link>
@@ -320,7 +348,7 @@ export default function TeenPattiGoldRealOrFakePage() {
             {/* CTA Button */}
             <div className="mt-6 text-center">
               <a 
-                href="https://pkteenpattigold.com/?from_gameid=5784509&channelCode=100000"
+                href="https://teenpattigold99.com?from_gameid=8442895&channelCode=100000"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"

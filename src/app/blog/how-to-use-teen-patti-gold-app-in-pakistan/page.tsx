@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { LOGO_URL } from '@/lib/site-images';
 import Script from 'next/script';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
   title: 'How to Use Teen Patti Gold App in Pakistan: Complete Beginner\'s Guide 2026',
@@ -31,6 +32,12 @@ export const metadata: Metadata = {
 };
 
 export default function HowToUseApp() {
+  const breadcrumbSchema = getBreadcrumbSchema([
+    BREADCRUMB_HOME,
+    BREADCRUMB_BLOG,
+    { name: 'How to Use Teen Patti Gold App in Pakistan', url: 'https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan' },
+  ]);
+
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -63,6 +70,7 @@ export default function HowToUseApp() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Script
         id="blog-post-schema"
         type="application/ld+json"
