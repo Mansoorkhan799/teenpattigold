@@ -26,7 +26,7 @@ img {
 
 /* Prevent layout shift for footer - reserve space so CLS stays low */
 footer {
-  min-height: 280px;
+  min-height: 350px;
 }
 
 /* Optimize font loading to prevent FOIT */
@@ -39,14 +39,7 @@ main {
   min-height: 1px;
 }
 
-/* Prevent CLS for images */
-img {
-  aspect-ratio: attr(width) / attr(height);
-  max-width: 100%;
-  height: auto;
-}
-
-/* Prevent layout shift for image containers */
+/* Prevent layout shift for image containers with explicit aspect-ratio */
 [style*="aspect-ratio"] {
   contain: layout;
 }

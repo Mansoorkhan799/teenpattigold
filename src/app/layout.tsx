@@ -138,6 +138,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Critical CSS - minimal above-the-fold styles to prevent FOUC while full CSS loads */}
+        <style dangerouslySetInnerHTML={{ __html: 'body{color:rgb(255,255,255);background:#06091f;margin:0;min-height:100vh;display:flex;flex-direction:column}main{flex:1;min-height:1px}footer{min-height:350px}' }} />
         {/* Hreflang tags for Pakistan region targeting */}
         <link rel="alternate" hrefLang="en" href="https://teenpattigoldgame.com.pk/" />
         <link rel="alternate" hrefLang="ur" href="https://teenpattigoldgame.com.pk/" />

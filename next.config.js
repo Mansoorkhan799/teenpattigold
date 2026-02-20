@@ -166,9 +166,9 @@ const nextConfig = {
     return config;
   },
 
-  // Enable experimental features
+  // Enable experimental features - inlineCss eliminates render-blocking CSS (optimizeCss doesn't work with App Router)
   experimental: {
-    optimizeCss: true,
+    inlineCss: true,
     scrollRestoration: true,
     optimizePackageImports: ['react-icons'],
   },
