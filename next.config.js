@@ -13,6 +13,12 @@ const nextConfig = {
   
   // Optimize images
   images: {
+    localPatterns: [
+      {
+        pathname: '/**',
+        // search omitted - allows ?v=2 and other query strings for cache busting
+      },
+    ],
     remotePatterns: [
       {
         protocol: 'https',
