@@ -110,8 +110,9 @@ export default function Blog() {
       />
       
     <div className="container mx-auto px-4 py-12">
+      <p className="text-gray-400 text-sm mb-4"><Link href="/" className="hover:text-[#FFA500] transition-colors">Teen Patti Gold</Link> → Blog</p>
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-accent">Teen Patti Gold Blog</h1>
-      <p className="text-gray-300 mb-8 text-lg">Stay updated with the latest guides, tips, and tutorials for Teen Patti Gold</p>
+      <p className="text-gray-300 mb-8 text-lg">Stay updated with the latest guides, tips, and tutorials for <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Teen Patti Gold</Link></p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {/* Featured Post - How to Use App */}

@@ -25,10 +25,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://teenpattigoldgame.com.pk'),
   title: {
-    default: "Teen Patti Gold Pakistan v1.652 | Download Official APK 2026",
+    default: "Download Teen Patti Gold APK Free | Play & Earn Real Money in Pakistan 2026",
     template: "%s | Teen Patti Gold Pakistan"
   },
-  description: "Teen Patti Gold - Pakistan's #1 card game app. Download Teen Patti Gold APK free, play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating. Safe & secure with JazzCash & EasyPaisa payments.",
+  description: "Download Teen Patti Gold APK free now. Play Teen Patti, Rummy & Dragon Tiger. Earn real money with JazzCash & EasyPaisa. 800K+ downloads. Safe & secure. Get the official APK today!",
   keywords: [
     "teen patti gold",
     "teen patti gold pakistan",
@@ -82,8 +82,8 @@ export const metadata: Metadata = {
     google: "8a7c21f6e90a89ef",
   },
   openGraph: {
-    title: "Teen Patti Gold - Download APK Free | Best Card Game in Pakistan",
-    description: "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating. Safe & secure with JazzCash & EasyPaisa.",
+    title: "Download Teen Patti Gold APK Free | Play & Earn Real Money in Pakistan 2026",
+    description: "Download Teen Patti Gold APK free now. Play Teen Patti, Rummy & Dragon Tiger. Earn real money with JazzCash & EasyPaisa. 800K+ downloads. Get the official APK today!",
     url: "https://teenpattigoldgame.com.pk",
     siteName: "Teen Patti Gold",
     locale: "en_US",
@@ -106,8 +106,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Teen Patti Gold - Download APK Free | Best Card Game in Pakistan",
-    description: "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger & earn real money. 800K+ downloads, 4.5/5 rating.",
+    title: "Download Teen Patti Gold APK Free | Play & Earn Real Money in Pakistan 2026",
+    description: "Download Teen Patti Gold APK free now. Play Teen Patti, Rummy & Dragon Tiger. Earn real money with JazzCash & EasyPaisa. 800K+ downloads.",
     creator: "@teenpattigold",
     images: [
       {
@@ -122,11 +122,16 @@ export const metadata: Metadata = {
   category: "Gaming",
   classification: "Card Gaming Platform",
   alternates: {
-    canonical: "https://teenpattigoldgame.com.pk",
+    canonical: "https://teenpattigoldgame.com.pk/",
     languages: {
       'en': 'https://teenpattigoldgame.com.pk/',
       'ur': 'https://teenpattigoldgame.com.pk/'
     }
+  },
+  formatDetection: {
+    telephone: false,
+    email: false,
+    address: false,
   },
 };
 

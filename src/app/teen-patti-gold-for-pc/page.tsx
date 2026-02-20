@@ -463,11 +463,14 @@ export default function TeenPattiGoldForPCPage() {
         </div>
       </section>
 
-      {/* Back to Home */}
-      <section className="py-8 px-4 md:px-8 max-w-7xl mx-auto text-center">
-        <Link href="/" className="text-[#0ea5e9] hover:text-[#6366f1] font-medium transition-colors">
-          ← Back to Home
-        </Link>
+      {/* Internal link to homepage for SEO - passes link equity with keyword-rich anchor */}
+      <section className="py-8 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-[#0A1029]/60 rounded-xl p-6 text-center border border-gray-700/50">
+          <p className="text-gray-300 mb-3">Prefer playing on your phone?</p>
+          <Link href="/" className="text-[#FFA500] hover:text-[#ffb733] font-semibold text-lg transition-colors underline decoration-[#FFA500]/50 hover:decoration-[#FFA500]">
+            Download Teen Patti Gold APK for Android →
+          </Link>
+        </div>
       </section>
     </>
   );

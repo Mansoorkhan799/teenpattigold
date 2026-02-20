@@ -391,6 +391,7 @@ export default function TeenPattiGoldForIOSPage() {
 
       {/* Back to Home */}
       <section className="py-8 px-4 md:px-8 max-w-7xl mx-auto text-center">
+        <p className="text-gray-300 mb-3">On Android? <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Download Teen Patti Gold APK free</Link> for the best experience.</p>
         <Link href="/" className="text-[#0ea5e9] hover:text-[#6366f1] font-medium transition-colors">
           ← Back to Home
         </Link>
