@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import Header from "@/components/Header";
 import DeferredStyles from "@/components/DeferredStyles";
 import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
-import { LOGO_URL, FAVICON_URL, LOGO_PATH_VERSIONED } from "@/lib/site-images";
+import { LOGO_URL, FAVICON_URL } from "@/lib/site-images";
 
 // Dynamically import non-critical components to reduce initial bundle size
 const Footer = dynamic(() => import("@/components/Footer"), {
@@ -158,8 +158,6 @@ export default function RootLayout({
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
         
-        {/* Preload LCP image (logo used in header and hero) for faster First Contentful Paint */}
-        <link rel="preload" as="image" href={LOGO_PATH_VERSIONED} />
         {/* DNS Prefetch and Preconnect for performance */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
