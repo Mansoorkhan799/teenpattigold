@@ -1,16 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Script from "next/script";
-import dynamic from "next/dynamic";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import DeferredStyles from "@/components/DeferredStyles";
 import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
 import { LOGO_URL, FAVICON_URL } from "@/lib/site-images";
-
-// Dynamically import non-critical components to reduce initial bundle size
-const Footer = dynamic(() => import("@/components/Footer"), {
-  ssr: true, // Keep SSR for SEO
-});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -158,11 +153,15 @@ export default function RootLayout({
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
         
-        {/* DNS Prefetch and Preconnect for performance */}
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
+        {/* DNS Prefetch and Preconnect - only when GA is used to avoid unused preconnect warning */}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+            <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+            <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+            <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
+          </>
+        )}
         
         
         <link rel="manifest" href="/manifest.json" />

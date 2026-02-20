@@ -24,10 +24,9 @@ img {
   height: auto;
 }
 
-/* Prevent layout shift for footer */
+/* Prevent layout shift for footer - reserve space so CLS stays low */
 footer {
-  contain: layout style paint;
-  min-height: fit-content;
+  min-height: 280px;
 }
 
 /* Optimize font loading to prevent FOIT */
