@@ -444,7 +444,7 @@ export default function Home() {
                 className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority={true}
                 fetchPriority="high"
-                quality={75}
+                quality={70}
                 sizes="320px"
               />
             </div>
@@ -461,7 +461,7 @@ export default function Home() {
                 className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority={true}
                 fetchPriority="high"
-                quality={75}
+                quality={70}
                 sizes="280px"
               />
             </div>
@@ -602,9 +602,9 @@ export default function Home() {
                   width={400}
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
-                  loading="eager"
-                  fetchPriority="high"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+                  quality={70}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Game Interface</p>
@@ -619,9 +619,9 @@ export default function Home() {
                   width={400}
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
-                  loading="eager"
-                  fetchPriority="high"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+                  quality={70}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Games Collection</p>
@@ -637,7 +637,8 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+                  quality={70}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Bonuses & Rewards</p>
@@ -653,7 +654,8 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+                  quality={70}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Deposit Money</p>
@@ -669,7 +671,8 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+                  quality={70}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Refer & Earn</p>
@@ -685,7 +688,8 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
+                  quality={70}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Recharge Rebate</p>

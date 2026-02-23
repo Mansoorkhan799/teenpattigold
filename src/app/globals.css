@@ -26,7 +26,7 @@ img {
 
 /* Prevent layout shift for footer - reserve space so CLS stays low */
 footer {
-  min-height: 350px;
+  min-height: 420px;
 }
 
 /* Optimize font loading to prevent FOIT */
