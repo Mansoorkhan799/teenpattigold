@@ -173,6 +173,48 @@ export async function GET() {
       lastMod: new Date().toISOString(),
       changeFreq: 'monthly',
       priority: 0.8
+    },
+    {
+      url: '/blog/teen-patti-gold-old-version-features-review',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/teen-patti-gold-latest-version-2026-updates',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/how-to-claim-welcome-bonus-teen-patti-gold',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/teen-patti-gold-login-problems-solutions',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/latest-offers-rewards-teen-patti-gold',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/responsible-gaming-guide-2026',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/is-teen-patti-gold-better-for-earning-real-cash-2026',
+      lastMod: new Date().toISOString(),
+      changeFreq: 'monthly',
+      priority: 0.8
     }
   ];
 
