@@ -20,31 +20,25 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://teenpattigoldgame.com.pk'),
   title: {
-    default: "Teen Patti Gold Pakistan v1.652 Free Download Official APK",
+    default: "Teen Patti Gold - Play Card Games & Earn Real Money in Pakistan 2026",
     template: "%s | Teen Patti Gold Pakistan"
   },
-  description: "Teen Patti Gold Pakistan is an amazing online earning app where you can play card games and earn real money with easy cashout vis Easypaisa and Jazzcash.",
+  description: "Teen Patti Gold is Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon Tiger and 30+ games. Earn real money with fast withdrawals via JazzCash and EasyPaisa. Free download.",
   keywords: [
     "teen patti gold",
     "teen patti gold pakistan",
     "teen patti gold apk",
     "teen patti gold download",
     "teen patti gold app",
-    "teen patti gold game",
     "3 patti gold",
-    "teen patti gold pakistan download",
-    "teen patti gold apk download",
-    "teen patti gold free download",
-    "teen patti gold online",
-    "teen patti gold earn money",
-    "teen patti gold jazzcash",
-    "teen patti gold easypaisa",
-    "card game pakistan",
-    "rummy game pakistan",
-    "dragon tiger pakistan",
+    "online card games pakistan",
+    "earn money playing cards",
     "best card game pakistan",
+    "rummy game pakistan",
+    "dragon tiger game",
     "earn money games pakistan",
-    "online card games pakistan"
+    "casino card game pakistan",
+    "play cards online pakistan"
   ],
   authors: [{ name: "Teenpatti Gold Team" }],
   creator: "Teenpatti Gold",
@@ -77,8 +71,8 @@ export const metadata: Metadata = {
     google: "8a7c21f6e90a89ef",
   },
   openGraph: {
-    title: "Teen Patti Gold Pakistan v1.652 Free Download Official APK",
-    description: "Teen Patti Gold Pakistan is an amazing online earning app where you can play card games and earn real money with easy cashout vis Easypaisa and Jazzcash.",
+    title: "Teen Patti Gold - Play Card Games & Earn Real Money in Pakistan",
+    description: "Pakistan's #1 card game app with 30+ games. Play Teen Patti, Rummy, Dragon Tiger. Earn real money with fast withdrawals via JazzCash and EasyPaisa.",
     url: "https://teenpattigoldgame.com.pk",
     siteName: "Teen Patti Gold",
     locale: "en_US",
@@ -101,8 +95,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Teen Patti Gold Pakistan v1.652 Free Download Official APK",
-    description: "Teen Patti Gold Pakistan is an amazing online earning app where you can play card games and earn real money with easy cashout vis Easypaisa and Jazzcash.",
+    title: "Teen Patti Gold - Play Card Games & Earn Real Money in Pakistan",
+    description: "Pakistan's #1 card game app with 30+ games. Play Teen Patti, Rummy, Dragon Tiger. Earn real money with fast withdrawals via JazzCash and EasyPaisa.",
     creator: "@teenpattigold",
     images: [
       {
