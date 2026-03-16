@@ -14,7 +14,7 @@ export default function Header() {
           <div className="relative h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 mr-2 md:mr-3">
             <Image
               src={LOGO_PATH_VERSIONED}
-              alt="Teen Patti Gold Logo"
+              alt="Teen Patti Gold - Pakistan's #1 card game app logo"
               width={56}
               height={56}
               className="object-contain rounded-lg w-full h-full"

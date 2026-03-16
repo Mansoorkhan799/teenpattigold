@@ -163,6 +163,20 @@ export default function Home() {
         ]
       },
       {
+        "@type": "WebPage",
+        "@id": "https://teenpattigoldgame.com.pk/#webpage",
+        "url": "https://teenpattigoldgame.com.pk/",
+        "name": "Teen Patti Gold - Play Card Games & Earn Real Money in Pakistan",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": LOGO_URL,
+          "contentUrl": LOGO_URL,
+          "name": "Teen Patti Gold",
+          "description": "Teen Patti Gold - Official app icon and logo. Pakistan's #1 card game. Download Teen Patti Gold APK free. Play Teen Patti, Rummy, Dragon Tiger and earn real money.",
+          "caption": "Teen Patti Gold - Pakistan's #1 card game app with 800K+ downloads"
+        }
+      },
+      {
         "@type": "ImageGallery",
         "name": "Teen Patti Gold App Screenshots",
         "description": "Screenshots of Teen Patti Gold card game app showing game interface, features, and gameplay in Pakistan",
@@ -170,11 +184,12 @@ export default function Home() {
           {
             "@type": "ImageObject",
             "url": LOGO_URL,
-            "name": "Teen Patti Gold - Best Card Game App in Pakistan",
-            "description": "Download Teen Patti Gold APK free in Pakistan. Play Teen Patti, Rummy, Dragon Tiger card games and earn real money.",
+            "contentUrl": LOGO_URL,
+            "name": "Teen Patti Gold",
+            "description": "Teen Patti Gold - Official logo. Pakistan's #1 card game app. Download Teen Patti Gold APK free. Play Teen Patti, Rummy, Dragon Tiger and earn real money.",
             "width": 512,
             "height": 512,
-            "caption": "Teen Patti Gold - Pakistan's #1 card game app with 800K+ downloads"
+            "caption": "Teen Patti Gold - Pakistan's #1 card game app"
           },
           {
             "@type": "ImageObject",
@@ -427,12 +442,12 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Desktop Image */}
-          <div className="hidden md:block md:w-1/2 md:mt-8">
+          {/* Desktop Image - Primary hero image for Google Images ranking (teen patti gold) */}
+          <figure className="hidden md:block md:w-1/2 md:mt-8">
             <div className="relative ml-auto w-[320px] h-[320px] max-w-full">
               <Image
                 src={LOGO_PATH_VERSIONED}
-                alt="Teen Patti Gold - Best Card Game App in Pakistan - Download APK Free"
+                alt="Teen Patti Gold - Official app icon. Pakistan's #1 card game. Download Teen Patti Gold APK free. Play Teen Patti, Rummy, Dragon Tiger."
                 width={320}
                 height={320}
                 className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
@@ -440,16 +455,18 @@ export default function Home() {
                 fetchPriority="high"
                 quality={70}
                 sizes="320px"
+                title="Teen Patti Gold"
               />
             </div>
-          </div>
+            <figcaption className="sr-only">Teen Patti Gold - Pakistan&apos;s #1 card game app</figcaption>
+          </figure>
 
-          {/* Mobile Image */}
-          <div className="mt-8 md:hidden">
+          {/* Mobile Image - Primary hero image for Google Images ranking (teen patti gold) */}
+          <figure className="mt-8 md:hidden">
             <div className="relative mx-auto w-[280px] h-[280px] max-w-full">
               <Image
                 src={LOGO_PATH_VERSIONED}
-                alt="Teen Patti Gold - Best Card Game App in Pakistan - Download APK Free"
+                alt="Teen Patti Gold - Official app icon. Pakistan's #1 card game. Download Teen Patti Gold APK free. Play Teen Patti, Rummy, Dragon Tiger."
                 width={280}
                 height={280}
                 className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
@@ -457,9 +474,11 @@ export default function Home() {
                 fetchPriority="high"
                 quality={70}
                 sizes="280px"
+                title="Teen Patti Gold"
               />
             </div>
-          </div>
+            <figcaption className="sr-only">Teen Patti Gold - Pakistan&apos;s #1 card game app</figcaption>
+          </figure>
         </div>
       </section>
 

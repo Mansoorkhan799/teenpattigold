@@ -172,8 +172,8 @@ export default function RootLayout({
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
-        <meta property="og:image:alt" content="Teen Patti Gold - Best Card Game App in Pakistan - Download APK Free" />
-        
+        <meta property="og:image:alt" content="Teen Patti Gold - Pakistan's #1 card game app. Download free." />
+        <link rel="preload" as="image" href={LOGO_URL} />
         {/* Additional image meta tags for better indexing */}
         <meta name="image" content={LOGO_URL} />
         <link rel="image_src" href={LOGO_URL} />
