@@ -282,7 +282,7 @@ export default function Blog() {
         {/* Eighth Post */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
           <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold Latest Version New Features and 2026 Updates</h2>
-          <p className="text-gray-300 mb-4">Discover the latest Teen Patti Gold V1.652 new features, 2026 updates, improved performance, and enhanced security.</p>
+          <p className="text-gray-300 mb-4">Discover the latest Teen Patti Gold V1.656 new features, 2026 updates, improved performance, and enhanced security.</p>
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
             <span>📅 February 24, 2026</span>
             <span>•</span>

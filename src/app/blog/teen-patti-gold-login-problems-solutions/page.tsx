@@ -112,7 +112,7 @@ export default function TeenPattiGoldLoginProblemsPage() {
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">4. App Crashes on Login</h3>
                     <p className="text-gray-300 mb-2"><strong>Problem:</strong> App closes or freezes when you try to log in.</p>
-                    <p className="text-gray-300"><strong>Solution:</strong> Update to the latest version (V1.652) from the <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official download page</Link>. Clear app cache in Settings. Ensure you have at least 500MB free storage. Restart your device and try again.</p>
+                    <p className="text-gray-300"><strong>Solution:</strong> Update to the latest version (V1.656) from the <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official download page</Link>. Clear app cache in Settings. Ensure you have at least 500MB free storage. Restart your device and try again.</p>
                   </div>
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">5. Wrong Credentials Error</h3>

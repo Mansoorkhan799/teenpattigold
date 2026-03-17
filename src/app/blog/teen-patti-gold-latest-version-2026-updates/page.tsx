@@ -6,8 +6,8 @@ import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/bre
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold Latest Version New Features and 2026 Updates',
-  description: 'Discover the latest Teen Patti Gold version V1.652 new features, 2026 updates, improved performance, and enhanced security. Download the newest APK for Pakistan.',
-  keywords: ['Teen Patti Gold latest version', 'Teen Patti Gold 2026 updates', 'Teen Patti Gold V1.652', 'Teen Patti Gold new features', 'Teen Patti Gold APK 2026'],
+  description: 'Discover the latest Teen Patti Gold version V1.656 new features, 2026 updates, improved performance, and enhanced security. Download the newest APK for Pakistan.',
+  keywords: ['Teen Patti Gold latest version', 'Teen Patti Gold 2026 updates', 'Teen Patti Gold V1.656', 'Teen Patti Gold new features', 'Teen Patti Gold APK 2026'],
   robots: {
     index: true,
     follow: true,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Teen Patti Gold Latest Version New Features and 2026 Updates',
-    description: 'Discover the latest Teen Patti Gold version V1.652 new features and 2026 updates for Pakistan.',
+    description: 'Discover the latest Teen Patti Gold version V1.656 new features and 2026 updates for Pakistan.',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
@@ -42,7 +42,7 @@ export default function TeenPattiGoldLatestVersionPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: 'Teen Patti Gold Latest Version New Features and 2026 Updates',
-    description: 'Discover the latest Teen Patti Gold version V1.652 new features and 2026 updates.',
+    description: 'Discover the latest Teen Patti Gold version V1.656 new features and 2026 updates.',
     datePublished: '2026-02-24',
     dateModified: '2026-02-24',
     author: { '@type': 'Organization', name: 'Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk' },
@@ -76,7 +76,7 @@ export default function TeenPattiGoldLatestVersionPage() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  <strong className="text-white">Teen Patti Gold</strong> version V1.652 brings exciting 2026 updates. The latest APK offers improved performance, enhanced security, 30+ games including Teen Patti, Rummy, Dragon Tiger, and better bonuses. Download the newest version for the best card gaming experience in Pakistan.
+                  <strong className="text-white">Teen Patti Gold</strong> version V1.656 brings exciting 2026 updates. The latest APK offers improved performance, enhanced security, 30+ games including Teen Patti, Rummy, Dragon Tiger, and better bonuses. Download the newest version for the best card gaming experience in Pakistan.
                 </p>
               </div>
 
@@ -91,7 +91,7 @@ export default function TeenPattiGoldLatestVersionPage() {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-800">
-                      <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Latest Version</td><td className="py-3 px-6 text-gray-300">V1.652</td></tr>
+                      <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Latest Version</td><td className="py-3 px-6 text-gray-300">V1.656</td></tr>
                       <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">App Size</td><td className="py-3 px-6 text-gray-300">49MB</td></tr>
                       <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Update Date</td><td className="py-3 px-6 text-gray-300">1st January 2026</td></tr>
                       <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">Required OS</td><td className="py-3 px-6 text-gray-300">Android 5.0+</td></tr>
@@ -129,7 +129,7 @@ export default function TeenPattiGoldLatestVersionPage() {
 
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-4 text-white">Get the Latest Version</h2>
-                <p className="text-white text-lg mb-6">Download Teen Patti Gold V1.652 APK and enjoy all 2026 updates. Play Teen Patti, Rummy, Dragon Tiger and earn real money!</p>
+                <p className="text-white text-lg mb-6">Download Teen Patti Gold V1.656 APK and enjoy all 2026 updates. Play Teen Patti, Rummy, Dragon Tiger and earn real money!</p>
                 <Link href="/download-teen-patti-gold" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</Link>
               </div>
 
