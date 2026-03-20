@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import Script from 'next/script';
 import { LOGO_URL } from '@/lib/site-images';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold Blog - Guides, Tips & Tutorials',
@@ -21,6 +22,8 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog',
   },
 };
+
+const blogBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_BLOG]);
 
 export default function Blog() {
   // Schema.org structured data for blog collection page
@@ -171,7 +174,13 @@ export default function Blog() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      
+      <Script
+        id="blog-breadcrumb-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogBreadcrumbLd) }}
+      />
+
     <div className="container mx-auto px-4 py-12">
       <p className="text-gray-400 text-sm mb-4"><Link href="/" className="hover:text-[#FFA500] transition-colors">Teen Patti Gold</Link> → Blog</p>
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-accent">Teen Patti Gold Blog</h1>

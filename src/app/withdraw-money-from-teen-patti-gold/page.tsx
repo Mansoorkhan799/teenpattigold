@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Script from 'next/script';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_WITHDRAW } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
   title: 'How to Withdraw Money from Teen Patti Gold? | Fast & Secure Withdrawal Guide 2026',
@@ -22,8 +24,17 @@ export const metadata: Metadata = {
   },
 };
 
+const withdrawBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_WITHDRAW]);
+
 export default function WithdrawMoneyPage() {
   return (
+    <>
+      <Script
+        id="withdraw-breadcrumb-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(withdrawBreadcrumbLd) }}
+      />
     <div className="min-h-screen bg-primary">
       {/* Hero Section */}
       <section className="relative py-12 md:py-20 bg-secondary border-b border-gray-800">
@@ -394,6 +405,7 @@ export default function WithdrawMoneyPage() {
         }}
       />
     </div>
+    </>
   );
 }
 

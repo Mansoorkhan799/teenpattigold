@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Script from 'next/script';
 import { Metadata } from 'next';
 import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
+import { SITE_ARTICLE_DATE_PUBLISHED, getSiteArticleDateModified } from '@/lib/site-meta';
 
 // This additional metadata enhances the page-specific SEO - optimized for CTR and ranking
 export const metadata: Metadata = {
@@ -60,6 +61,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const articleDateModified = getSiteArticleDateModified();
+
   // Schema.org structured data for SEO with Pakistan geo-targeting
   const schemaData = {
     "@context": "https://schema.org",
@@ -167,6 +170,13 @@ export default function Home() {
         "@id": "https://teenpattigoldgame.com.pk/#webpage",
         "url": "https://teenpattigoldgame.com.pk/",
         "name": "Teen Patti Gold Pakistan v1.656 Download Official APK for Android",
+        "isPartOf": { "@id": "https://teenpattigoldgame.com.pk/#website" },
+        "datePublished": SITE_ARTICLE_DATE_PUBLISHED,
+        "dateModified": articleDateModified,
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["#speakable-headline", "#speakable-subhead"]
+        },
         "primaryImageOfPage": {
           "@type": "ImageObject",
           "url": LOGO_URL,
@@ -386,11 +396,11 @@ export default function Home() {
             "url": LOGO_URL
           }
         },
-        "datePublished": "2026-01-08",
-        "dateModified": "2026-01-08",
+        "datePublished": SITE_ARTICLE_DATE_PUBLISHED,
+        "dateModified": articleDateModified,
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://teenpattigoldgame.com.pk/"
+          "@id": "https://teenpattigoldgame.com.pk/#webpage"
         },
         "image": [
           LOGO_URL,
@@ -424,10 +434,10 @@ export default function Home() {
         <div className="md:flex md:items-start md:justify-between md:space-x-12 lg:space-x-20">
           <div className="md:w-1/2 space-y-6">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-none tracking-tight whitespace-nowrap">
+              <h1 id="speakable-headline" className="text-5xl md:text-7xl lg:text-8xl font-bold leading-none tracking-tight whitespace-nowrap">
                 <span className="text-white">Teen Patti Gold</span>
               </h1>
-              <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mt-4 leading-tight">
+              <h2 id="speakable-subhead" className="text-2xl md:text-4xl lg:text-5xl font-bold mt-4 leading-tight">
                 <span className="text-[#ffa503]">Download APK & Play</span>{' '}
                 <span className="text-white">Real Money Games in Pakistan 2026</span>
               </h2>
@@ -493,6 +503,58 @@ export default function Home() {
             <div className="mt-8 p-4 bg-[#0A1029]/60 rounded-xl border border-gray-700/50">
               <p className="text-gray-400 text-sm mb-3">Popular: How to download Teen Patti Gold APK? <Link href="/download-teen-patti-gold" className="text-[#FFA500] hover:underline font-medium">Download free</Link> • <Link href="/teen-patti-gold-for-pc" className="text-[#0ea5e9] hover:underline font-medium">Teen Patti Gold for PC</Link> • <Link href="/blog/is-teen-patti-gold-real-or-fake" className="text-[#4ade80] hover:underline font-medium">Is Teen Patti Gold real?</Link></p>
             </div>
+
+            {/* Internal link hub: strengthens topical authority & crawl paths for “Teen Patti Gold” */}
+            <nav
+              className="mt-8 p-5 bg-[#0A1029]/90 rounded-xl border border-[#FFA500]/25"
+              aria-labelledby="homepage-guides-heading"
+            >
+              <h2 id="homepage-guides-heading" className="text-lg font-bold text-[#FFA500] mb-4">
+                Popular Teen Patti Gold guides
+              </h2>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-sm text-gray-300">
+                <li>
+                  <Link href="/download-teen-patti-gold" className="text-[#0ea5e9] hover:text-[#38bdf8] hover:underline font-medium">
+                    Download Teen Patti Gold APK (official steps)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/is-teen-patti-gold-real-or-fake" className="text-[#4ade80] hover:text-[#86efac] hover:underline font-medium">
+                    Is Teen Patti Gold real or fake?
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/how-to-earn-money-from-teen-patti-gold" className="text-[#FFA500] hover:text-[#ffc14d] hover:underline font-medium">
+                    How to earn money from Teen Patti Gold
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/deposit-money-in-teen-patti-gold" className="text-[#0ea5e9] hover:text-[#38bdf8] hover:underline font-medium">
+                    Deposit money (JazzCash & EasyPaisa)
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/withdraw-money-from-teen-patti-gold" className="text-[#a78bfa] hover:text-[#c4b5fd] hover:underline font-medium">
+                    Withdraw money from Teen Patti Gold
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/how-to-use-teen-patti-gold-app-in-pakistan" className="text-[#FFA500] hover:text-[#ffc14d] hover:underline font-medium">
+                    How to use Teen Patti Gold in Pakistan
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog/create-teen-patti-gold-account-and-login" className="text-gray-300 hover:text-white hover:underline">
+                    Create account & login
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/blog" className="text-gray-300 hover:text-white hover:underline">
+                    All Teen Patti Gold blog guides
+                  </Link>
+                </li>
+              </ul>
+            </nav>
           </div>
 
           {/* Desktop Image - Primary hero image for Google Images ranking (teen patti gold) */}

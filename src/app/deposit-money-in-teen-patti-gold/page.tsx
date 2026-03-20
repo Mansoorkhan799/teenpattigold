@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Script from 'next/script';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_DEPOSIT } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
   title: 'How to Deposit Money in Teen Patti Gold? | Quick & Safe Payment Guide 2026',
@@ -22,8 +24,17 @@ export const metadata: Metadata = {
   },
 };
 
+const depositBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_DEPOSIT]);
+
 export default function DepositMoneyPage() {
   return (
+    <>
+      <Script
+        id="deposit-breadcrumb-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(depositBreadcrumbLd) }}
+      />
     <div className="min-h-screen bg-primary">
       {/* Hero Section */}
       <section className="relative py-12 md:py-20 bg-secondary border-b border-gray-800">
@@ -354,6 +365,7 @@ export default function DepositMoneyPage() {
         }}
       />
     </div>
+    </>
   );
 }
 

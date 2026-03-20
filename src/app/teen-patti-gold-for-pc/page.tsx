@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_PC } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold for PC Download Latest Version for free 2026',
@@ -37,6 +38,8 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+const pcBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_PC]);
 
 export default function TeenPattiGoldForPCPage() {
   // Schema.org structured data for PC version page
@@ -83,7 +86,11 @@ export default function TeenPattiGoldForPCPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pcBreadcrumbLd) }}
+      />
+
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">

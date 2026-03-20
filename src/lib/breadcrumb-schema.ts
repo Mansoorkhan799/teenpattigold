@@ -2,19 +2,19 @@
  * Generates BreadcrumbList schema for SEO rich results in Google.
  * Use on all pages for better SERP display and crawlability.
  */
-const BASE_URL = 'https://teenpattigoldgame.com.pk';
+export const BASE_URL = 'https://teenpattigoldgame.com.pk';
 
 export type BreadcrumbItem = {
   name: string;
   url: string;
 };
 
-export function getBreadcrumbSchema(items: BreadcrumbItem[]) {
+/** BreadcrumbList node only (for embedding inside @graph). */
+export function getBreadcrumbList(items: BreadcrumbItem[]) {
   return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
+    '@type': 'BreadcrumbList' as const,
     itemListElement: items.map((item, index) => ({
-      '@type': 'ListItem',
+      '@type': 'ListItem' as const,
       position: index + 1,
       name: item.name,
       item: item.url,
@@ -22,5 +22,32 @@ export function getBreadcrumbSchema(items: BreadcrumbItem[]) {
   };
 }
 
+export function getBreadcrumbSchema(items: BreadcrumbItem[]) {
+  return {
+    '@context': 'https://schema.org',
+    ...getBreadcrumbList(items),
+  };
+}
+
 export const BREADCRUMB_HOME = { name: 'Home', url: `${BASE_URL}/` };
 export const BREADCRUMB_BLOG = { name: 'Blog', url: `${BASE_URL}/blog` };
+export const BREADCRUMB_DOWNLOAD = {
+  name: 'Download Teen Patti Gold APK',
+  url: `${BASE_URL}/download-teen-patti-gold`,
+};
+export const BREADCRUMB_DEPOSIT = {
+  name: 'Deposit Money',
+  url: `${BASE_URL}/deposit-money-in-teen-patti-gold`,
+};
+export const BREADCRUMB_WITHDRAW = {
+  name: 'Withdraw Money',
+  url: `${BASE_URL}/withdraw-money-from-teen-patti-gold`,
+};
+export const BREADCRUMB_PC = {
+  name: 'Teen Patti Gold for PC',
+  url: `${BASE_URL}/teen-patti-gold-for-pc`,
+};
+export const BREADCRUMB_IOS = {
+  name: 'Teen Patti Gold for iOS',
+  url: `${BASE_URL}/teen-patti-gold-for-ios`,
+};

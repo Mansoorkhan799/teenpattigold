@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_DOWNLOAD } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
   title: 'Download Teen Patti Gold Game Free APK For Android | Latest Version 2026',
@@ -52,6 +53,8 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_DOWNLOAD]);
+
 export default function DownloadPage() {
   // Schema.org structured data for download page
   const schemaData = {
@@ -99,7 +102,11 @@ export default function DownloadPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">

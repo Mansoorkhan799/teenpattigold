@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_IOS } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold For iOS Download Latest Version For Free 2026',
@@ -37,6 +38,8 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+const iosBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_IOS]);
 
 export default function TeenPattiGoldForIOSPage() {
   // Schema.org structured data for iOS page
@@ -83,7 +86,11 @@ export default function TeenPattiGoldForIOSPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
-      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(iosBreadcrumbLd) }}
+      />
+
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
