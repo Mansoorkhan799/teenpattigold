@@ -382,11 +382,11 @@ export default function Home() {
             
             {/* Short intro on mobile so the download button stays above the fold */}
             <p className="text-base text-gray-300 leading-relaxed md:hidden">
-              <Link href="/" className="text-white font-semibold hover:text-[#FFA500] transition-colors"><strong>Teen Patti Gold</strong></Link> is Pakistan&apos;s premier online card game platform with 30+ exciting games. Enjoy attractive graphics, smooth gameplay, and real cash rewards. Download now and win real money with fast withdrawals via JazzCash and EasyPaisa.
+              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> is Pakistan&apos;s premier online card game platform, where you can play more than 30+ exciting casino games. Teen Patti Gold offers the best card gaming experience with attractive graphics, smooth gameplay, and real cash rewards. So download now (v1.656), start playing, and win real money with fast withdrawals via JazzCash and EasyPaisa.
             </p>
             {/* Full intro on tablet/desktop */}
             <p className="hidden md:block text-lg text-gray-300 leading-relaxed">
-              <Link href="/" className="text-white font-semibold hover:text-[#FFA500] transition-colors"><strong>Teen Patti Gold</strong></Link> is Pakistan&apos;s premier online card game platform with 30+ exciting games including Teen Patti, Rummy, Dragon Tiger, Poker, and Slots. Enjoy attractive graphics, smooth gameplay, and real cash rewards. Download now and win real money with fast withdrawals via JazzCash and EasyPaisa.
+              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> is Pakistan&apos;s premier online card game platform, where you can play more than 30+ exciting casino games including Teen Patti, Rummy, Dragon Tiger, Poker, and Slots. Teen Patti Gold offers the best card gaming experience with attractive graphics, smooth gameplay, and real cash rewards. So download now (v1.656), start playing, and win real money with fast withdrawals via JazzCash and EasyPaisa.
             </p>
 
             {/* Download Button */}

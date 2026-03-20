@@ -4,7 +4,7 @@ import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DeferredStyles from "@/components/DeferredStyles";
-import ScrollToTopWrapper from "@/components/ScrollToTopWrapper";
+import ScrollToTop from "@/components/ScrollToTop";
 import { LOGO_URL, FAVICON_URL } from "@/lib/site-images";
 
 export const viewport: Viewport = {
@@ -213,7 +213,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <DeferredStyles />
-        <ScrollToTopWrapper />
+        <ScrollToTop />
         
         {/* Structured data for Organization */}
         <Script
