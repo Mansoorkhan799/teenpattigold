@@ -118,7 +118,7 @@ export default function TipsToWinBig() {
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-2xl font-bold mb-3 text-white">6. Withdraw on Time</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      When you earn a good amount, don't delay withdrawal. Transfer your winnings as soon as possible through JazzCash or EasyPaisa to keep your money safe. This prevents you from losing your winnings by playing more games impulsively.
+                      When you earn a good amount, don&apos;t delay withdrawal. Transfer your winnings as soon as possible through JazzCash, EasyPaisa, or Bank Card (up to PKR 20,000 per transaction to your bank account) to keep your money safe. This prevents you from losing your winnings by playing more games impulsively.
                     </p>
                   </div>
 

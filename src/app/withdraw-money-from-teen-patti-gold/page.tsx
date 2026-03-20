@@ -67,7 +67,7 @@ export default function WithdrawMoneyPage() {
                 <Link href="/" className="text-accent hover:underline font-semibold">Teen Patti Gold</Link> is a well-known online card game that offers many variants of Teen Patti and allows players to earn real money. Many players play it to earn extra income. Once you win money, the first step is to cash out your funds securely.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                New players can feel confused when they try to withdraw cash from Teen Patti Gold. But the withdrawal process is straightforward, so that everyone can do it without any confusion. You can send your earnings to your personal accounts, such as Easypaisa and Jazzcash. It is very necessary to follow all steps correctly and provide correct information to payout winnings without any issues.
+                New players can feel confused when they try to withdraw cash from Teen Patti Gold. But the withdrawal process is straightforward, so that everyone can do it without any confusion. You can send your earnings to your personal accounts via Easypaisa, Jazzcash, or Bank Card to your bank account. It is very necessary to follow all steps correctly and provide correct information to payout winnings without any issues.
               </p>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function WithdrawMoneyPage() {
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Select Payment Method</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Teen Patti Gold provides many payment methods, including Easypaisa, Jazzcash, and Bank Transfer. Select the payment method that you want to use easily.
+                      Teen Patti Gold provides many payment methods, including Easypaisa, Jazzcash, and Bank Card (bank transfer). Select the payment method that you want to use easily.
                     </p>
                   </div>
                 </div>
@@ -217,6 +217,20 @@ export default function WithdrawMoneyPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bank Card withdrawal */}
+      <section className="py-12 md:py-16 bg-secondary">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-[#0A1029] rounded-2xl shadow-xl p-8 md:p-12 border border-[#FFA500]/25">
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#FFA500]">3: Bank Card</h2>
+              <p className="text-lg text-gray-300 leading-relaxed">
+                Bank Card is a convenient withdrawal option that lets you send your winnings directly to your bank account. Simply choose your desired bank, enter your account number, user name, and email, then submit your withdrawal request. With Bank Card, you can withdraw up to PKR 20,000 maximum per transaction, making it ideal for larger payouts. This method provides a secure way to receive your earnings straight to your bank account.
+              </p>
             </div>
           </div>
         </div>
@@ -378,7 +392,7 @@ export default function WithdrawMoneyPage() {
               {
                 "@type": "HowToStep",
                 "name": "Select Payment Method",
-                "text": "Select your payment method: Easypaisa, Jazzcash, or Bank Transfer."
+                "text": "Select your payment method: Easypaisa, Jazzcash, or Bank Card (bank transfer)."
               },
               {
                 "@type": "HowToStep",

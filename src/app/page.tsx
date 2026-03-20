@@ -1175,14 +1175,18 @@ export default function Home() {
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Payment Methods</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
             <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">JazzCash</h3>
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">1: JazzCash</h3>
               <p className="text-gray-300">One of Pakistan&apos;s most trusted mobile banking services. Deposit money quickly and withdraw winnings directly to your JazzCash wallet. Transactions complete within seconds — fast, safe, and reliable.</p>
             </div>
             <div className="bg-[#0A1029] p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">EasyPaisa</h3>
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">2: EasyPaisa</h3>
               <p className="text-gray-300">Another secure and widely used payment method in Pakistan. Add funds to your game account and transfer winnings to your EasyPaisa wallet in just a few steps. Safe, reliable, and suitable for all users.</p>
+            </div>
+            <div className="bg-[#0A1029] p-6 rounded-lg md:col-span-2 lg:col-span-1">
+              <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">3: Bank Card</h3>
+              <p className="text-gray-300">Bank Card is a convenient withdrawal option that lets you send your winnings directly to your bank account. Simply choose your desired bank, enter your account number, user name, and email, then submit your withdrawal request. With Bank Card, you can withdraw up to PKR 20,000 maximum per transaction, making it ideal for larger payouts. This method provides a secure way to receive your earnings straight to your bank account.</p>
             </div>
           </div>
         </div>
@@ -1214,7 +1218,7 @@ export default function Home() {
               <li>Open the app and log in to your account.</li>
               <li>Click on the Wallet option that is available on the main screen.</li>
               <li>In the wallet section, click on the Withdrawal option.</li>
-              <li>Choose your payment method, like JazzCash or EasyPaisa.</li>
+              <li>Choose your payment method: JazzCash, EasyPaisa, or Bank Card (bank transfer).</li>
               <li>Now enter the amount that you want to withdraw.</li>
               <li>Enter some required details, like the account number.</li>
               <li>Double-check all entered details and click on Confirm.</li>

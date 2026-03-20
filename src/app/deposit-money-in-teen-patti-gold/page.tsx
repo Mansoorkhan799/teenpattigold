@@ -64,7 +64,7 @@ export default function DepositMoneyPage() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                <Link href="/" className="text-accent hover:underline font-semibold">Teen Patti Gold</Link> is an exciting online game where users can play many amazing games daily. You need to deposit money to enjoy it without any problems. Adding funds to the Teen Patti Gold Game is very easy, as it offers quick and safe payment methods, including JazzCash and Easy Paisa.
+                <Link href="/" className="text-accent hover:underline font-semibold">Teen Patti Gold</Link> is an exciting online game where users can play many amazing games daily. You need to deposit money to enjoy it without any problems. Adding funds to the Teen Patti Gold Game is very easy, as it offers quick and safe payment methods, including JazzCash and Easy Paisa. For withdrawals, you can also use Bank Card to receive winnings in your bank account (up to PKR 20,000 per transaction)—see our <Link href="/withdraw-money-from-teen-patti-gold" className="text-accent hover:underline font-semibold">withdrawal guide</Link> for details.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
                 Teen Patti Gold offers a simple deposit method that all new players can use without any confusion. It takes only a few minutes, and your money will be added immediately. It is essential to learn how to deposit money into Teen Patti Gold.
@@ -122,7 +122,7 @@ export default function DepositMoneyPage() {
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-3">Select Payment Method</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      After clicking the shop button, a deposit page opens, showing payment methods and options. Choose a payment method, like JazzCash or Easy Paisa, that you can use easily.
+                      After clicking the shop button, a deposit page opens, showing payment methods and options. Choose a payment method, like JazzCash, Easy Paisa, or Bank Card where shown, that you can use easily.
                     </p>
                   </div>
                 </div>

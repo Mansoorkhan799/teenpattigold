@@ -245,17 +245,23 @@ export default function HowToUseApp() {
                   To play with real money and earn cash rewards, you'll need to deposit funds into your account. The platform supports popular Pakistani payment methods:
                 </p>
 
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
                   <div className="bg-[#0A1029] rounded-lg p-6">
-                    <h3 className="text-xl font-bold mb-3 text-accent">JazzCash</h3>
+                    <h3 className="text-xl font-bold mb-3 text-accent">1: JazzCash</h3>
                     <p className="text-gray-300 leading-relaxed">
                       One of Pakistan's most popular e-wallets. Fast, secure, and widely used for gaming transactions.
                     </p>
                   </div>
                   <div className="bg-[#0A1029] rounded-lg p-6">
-                    <h3 className="text-xl font-bold mb-3 text-accent">EasyPaisa</h3>
+                    <h3 className="text-xl font-bold mb-3 text-accent">2: EasyPaisa</h3>
                     <p className="text-gray-300 leading-relaxed">
                       Another trusted payment method in Pakistan. Simple interface and quick transaction processing.
+                    </p>
+                  </div>
+                  <div className="bg-[#0A1029] rounded-lg p-6 md:col-span-2 lg:col-span-1">
+                    <h3 className="text-xl font-bold mb-3 text-accent">3: Bank Card</h3>
+                    <p className="text-gray-300 leading-relaxed">
+                      Bank Card is a convenient withdrawal option that lets you send your winnings directly to your bank account. Simply choose your desired bank, enter your account number, user name, and email, then submit your withdrawal request. With Bank Card, you can withdraw up to PKR 20,000 maximum per transaction, making it ideal for larger payouts. This method provides a secure way to receive your earnings straight to your bank account.
                     </p>
                   </div>
                 </div>
@@ -265,7 +271,7 @@ export default function HowToUseApp() {
                   <ol className="list-decimal pl-6 space-y-2 text-gray-300">
                     <li>Tap on the wallet icon (+) in the top right corner</li>
                     <li>Select "Deposit" or "Add Money"</li>
-                    <li>Choose your preferred payment method (JazzCash or EasyPaisa)</li>
+                    <li>Choose your preferred payment method (JazzCash, EasyPaisa, or Bank Card where available)</li>
                     <li>Enter the amount you want to deposit</li>
                     <li>Enter your mobile number linked to your e-wallet</li>
                     <li>Confirm the transaction with OTP</li>
@@ -282,7 +288,7 @@ export default function HowToUseApp() {
                 <h2 className="text-3xl font-bold mb-6 text-white">Withdrawing Your Winnings</h2>
                 
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  When you win games and accumulate winnings, you can withdraw them to your JazzCash or EasyPaisa account. Here's how:
+                  When you win games and accumulate winnings, you can withdraw them to your JazzCash, EasyPaisa, or bank account via Bank Card. Here&apos;s how:
                 </p>
 
                 <div className="bg-[#0A1029] rounded-lg p-6 mb-6">
@@ -290,12 +296,19 @@ export default function HowToUseApp() {
                   <ol className="list-decimal pl-6 space-y-2 text-gray-300">
                     <li>Ensure you meet the minimum withdrawal amount (usually 500 PKR)</li>
                     <li>Go to the wallet section and tap "Withdraw"</li>
-                    <li>Select your preferred payment method</li>
+                    <li>Select your preferred payment method (JazzCash, EasyPaisa, or Bank Card)</li>
                     <li>Enter the amount you want to withdraw</li>
-                    <li>Enter your e-wallet account details</li>
+                    <li>For e-wallets, enter your mobile wallet details; for Bank Card, choose your bank and enter account number, user name, and email</li>
                     <li>Submit the withdrawal request</li>
                     <li>Wait for processing (usually 24-48 hours)</li>
                   </ol>
+                </div>
+
+                <div className="bg-[#0A1029] rounded-lg p-6 mb-6 border border-[#FFA500]/30">
+                  <h3 className="text-xl font-bold mb-3 text-accent">3: Bank Card (withdrawals)</h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    Bank Card is a convenient withdrawal option that lets you send your winnings directly to your bank account. Simply choose your desired bank, enter your account number, user name, and email, then submit your withdrawal request. With Bank Card, you can withdraw up to PKR 20,000 maximum per transaction, making it ideal for larger payouts. This method provides a secure way to receive your earnings straight to your bank account.
+                  </p>
                 </div>
 
                 <p className="text-gray-300 leading-relaxed">
