@@ -108,14 +108,14 @@ export default function HowToClaimWelcomeBonusPage() {
                     <div className="flex-shrink-0 w-10 h-10 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-lg font-bold mr-4">2</div>
                     <div>
                       <h3 className="text-2xl font-bold mb-3 text-white">Make Your First Deposit</h3>
-                      <p className="text-gray-300">Open the app, go to Wallet, and tap Deposit. Choose JazzCash or EasyPaisa. Enter the amount (minimum 100 PKR). Complete the transaction. The welcome bonus is credited automatically.</p>
+                      <p className="text-gray-300">Open the app, go to Wallet, and tap Deposit. Choose JazzCash or EasyPaisa. Enter the amount (minimum 100 PKR). Complete the transaction. The welcome bonus is credited automatically. Need more detail? Use our <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">full deposit guide</Link>.</p>
                     </div>
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 w-10 h-10 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-lg font-bold mr-4">3</div>
                     <div>
                       <h3 className="text-2xl font-bold mb-3 text-white">Start Playing</h3>
-                      <p className="text-gray-300">Your balance will show deposit + bonus. Use it to play Teen Patti, Rummy, Dragon Tiger, or any game. Win real money and withdraw via JazzCash or EasyPaisa.</p>
+                      <p className="text-gray-300">Your balance will show deposit + bonus. Use it to play Teen Patti, Rummy, Dragon Tiger, or any game. Win real money and cash out via JazzCash, EasyPaisa, or bank—see <Link href="/withdraw-money-from-teen-patti-gold" className="text-accent hover:underline">how to withdraw</Link> and <Link href="/blog/how-to-play-teen-patti-gold" className="text-accent hover:underline">gameplay basics</Link> if you are new.</p>
                     </div>
                   </div>
                 </div>
@@ -166,6 +166,8 @@ export default function HowToClaimWelcomeBonusPage() {
                   <li><Link href="/blog/create-teen-patti-gold-account-and-login" className="text-accent hover:underline">→ How to Create a Teen Patti Gold Account and Login</Link></li>
                   <li><Link href="/blog/latest-offers-rewards-teen-patti-gold" className="text-accent hover:underline">→ Latest Offers and Rewards on Teen Patti Gold</Link></li>
                   <li><Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">→ How to Deposit Money in Teen Patti Gold</Link></li>
+                  <li><Link href="/blog/how-to-earn-money-from-teen-patti-gold" className="text-accent hover:underline">→ How to Earn Money from Teen Patti Gold</Link></li>
+                  <li><Link href="/blog/is-teen-patti-gold-real-or-fake" className="text-accent hover:underline">→ Is Teen Patti Gold Real or Fake?</Link></li>
                 </ul>
               </div>
             </div>

@@ -76,7 +76,7 @@ export default function ResponsibleGamingGuidePage() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Playing <strong className="text-white">Teen Patti Gold</strong> should be fun and entertaining. This guide explains responsible gaming practices for 2026—how to set limits, manage your bankroll, avoid chasing losses, and play for enjoyment, not as a source of income.
+                  Playing <strong className="text-white">Teen Patti Gold</strong> should be fun and entertaining. This guide explains responsible gaming practices for 2026—how to set limits, manage your bankroll, avoid chasing losses, and play for enjoyment, not as a source of income. Treat deposits as entertainment spend: only add what you can lose via <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">official deposit methods</Link>, and cash out deliberately using <Link href="/withdraw-money-from-teen-patti-gold" className="text-accent hover:underline">our withdrawal guide</Link>.
                 </p>
               </div>
 
@@ -89,7 +89,7 @@ export default function ResponsibleGamingGuidePage() {
                   </div>
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">2. Manage Your Bankroll</h3>
-                    <p className="text-gray-300">Start with small bets on low-stakes tables. Never bet more than your budget allows. Use the deposit and withdrawal limits to control your spending.</p>
+                    <p className="text-gray-300">Start with small bets on low-stakes tables. Never bet more than your budget allows. Use in-app limits and keep transfers intentional—see <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">how deposits work</Link> so you never top up more than planned.</p>
                   </div>
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">3. Never Chase Losses</h3>
@@ -116,11 +116,11 @@ export default function ResponsibleGamingGuidePage() {
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-6 text-white">Tips for Safe Play</h2>
                 <ul className="list-disc pl-6 space-y-3 text-gray-300">
-                  <li>Withdraw winnings when you reach your target—do not keep playing impulsively</li>
+                  <li><Link href="/withdraw-money-from-teen-patti-gold" className="text-accent hover:underline">Withdraw winnings</Link> when you reach your target—do not keep playing impulsively</li>
                   <li>Use welcome bonuses and free chips to practice before risking real money</li>
                   <li>Keep emotions in control—never play when frustrated or greedy</li>
                   <li>Take regular breaks—avoid long gaming sessions</li>
-                  <li>Only download from official sources to protect your data and money</li>
+                  <li>Only download from our <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official Teen Patti Gold APK page</Link> to protect your data and money</li>
                 </ul>
               </div>
 

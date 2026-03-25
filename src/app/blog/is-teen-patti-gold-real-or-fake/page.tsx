@@ -234,7 +234,7 @@ export default function TeenPattiGoldRealOrFakePage() {
           <div className="bg-secondary rounded-xl p-6 md:p-8">
             <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Supported Payment Methods for the Withdrawal Process</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Teen Patti Gold App claims to encourage withdrawals via different payment options, including Easy Paisa, Jazz Cash, and local bank transfer. Teen Patti Gold offers smooth withdrawals, so you cannot face any issues. The withdrawals typically have:
+              Teen Patti Gold App claims to encourage withdrawals via different payment options, including Easy Paisa, Jazz Cash, and local bank transfer. Teen Patti Gold offers smooth withdrawals, so you cannot face any issues. For practical steps, read our <Link href="/withdraw-money-from-teen-patti-gold" className="text-accent hover:underline">withdrawal guide</Link> and <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">deposit guide</Link>. The withdrawals typically have:
             </p>
             
             <div className="space-y-4">
@@ -263,7 +263,7 @@ export default function TeenPattiGoldRealOrFakePage() {
           <div className="bg-secondary rounded-xl p-6 md:p-8">
             <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Ways to find fake Teen Patti Gold apps</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Because the Teen Patti Gold app is not available on the official Play Store, fake and harmful copies are prevalent. Here are the techniques that will help you identify harmful copies and fake versions:
+              Because the Teen Patti Gold app is not available on the official Play Store, fake and harmful copies are prevalent. Always install from our <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official Teen Patti Gold APK page</Link> only. Here are the techniques that will help you identify harmful copies and fake versions:
             </p>
 
             <div className="space-y-6">

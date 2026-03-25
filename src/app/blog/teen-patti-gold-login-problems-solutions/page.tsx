@@ -87,7 +87,7 @@ export default function TeenPattiGoldLoginProblemsPage() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Facing login issues with <strong className="text-white">Teen Patti Gold</strong>? This 2026 guide covers common login problems and their solutions—forgot password, OTP not received, account locked, app crash, and more. Get back to playing Teen Patti, Rummy, and earning real money quickly.
+                  Facing login issues with <strong className="text-white">Teen Patti Gold</strong>? This 2026 guide covers common login problems and their solutions—forgot password, OTP not received, account locked, app crash, and more. If you have not set up an account yet, start with <Link href="/blog/create-teen-patti-gold-account-and-login" className="text-accent hover:underline">how to create an account and log in</Link>. Get back to playing Teen Patti, Rummy, and earning real money quickly.
                 </p>
               </div>
 
@@ -130,7 +130,7 @@ export default function TeenPattiGoldLoginProblemsPage() {
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-6 text-white">Correct Login Steps (2026)</h2>
                 <ol className="list-decimal pl-6 space-y-3 text-gray-300">
-                  <li>Open the Teen Patti Gold app on your Android device</li>
+                  <li>Open the Teen Patti Gold app on your Android device (install from the <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official APK page</Link> if needed)</li>
                   <li>Tap the Login button on the homescreen</li>
                   <li>Enter your registered mobile number and password</li>
                   <li>Verify details are correct (no extra spaces)</li>

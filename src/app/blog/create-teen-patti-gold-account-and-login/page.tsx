@@ -86,7 +86,7 @@ export default function CreateAccountLogin() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed mb-0">
-                  Getting started with Teen Patti Gold is quick and easy. This guide will walk you through the process of creating your account and logging in, so you can start playing Teen Patti, Rummy, and other card games to earn real money right away.
+                  Getting started with Teen Patti Gold is quick and easy. This guide will walk you through the process of creating your account and logging in, so you can start playing Teen Patti, Rummy, and other card games to earn real money right away. Install the app first from the <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official Teen Patti Gold download page</Link>—never sideload random APKs.
                 </p>
               </div>
 
@@ -100,7 +100,7 @@ export default function CreateAccountLogin() {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold mb-3 text-white">Download the Teen Patti Gold App</h3>
-                      <p className="text-gray-300 leading-relaxed">First, download the Teen Patti Gold app from our official website. Once downloaded, install the app on your Android device.</p>
+                      <p className="text-gray-300 leading-relaxed">First, download the Teen Patti Gold app from our <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official download page</Link>. Once downloaded, install the app on your Android device.</p>
                     </div>
                   </div>
                   
@@ -146,7 +146,7 @@ export default function CreateAccountLogin() {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold mb-3 text-white">Claim Your Welcome Bonus</h3>
-                      <p className="text-gray-300 leading-relaxed">Once your account is created, you'll automatically receive a welcome bonus. This bonus can be used to play games on the platform and start earning real money.</p>
+                      <p className="text-gray-300 leading-relaxed">Once your account is created, you&apos;ll typically receive a welcome bonus after your first deposit. Follow <Link href="/blog/how-to-claim-welcome-bonus-teen-patti-gold" className="text-accent hover:underline">how to claim the welcome bonus</Link> so you meet all requirements, then add funds using <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">deposit instructions</Link> if you need help.</p>
                     </div>
                   </div>
                 </div>
@@ -230,14 +230,16 @@ export default function CreateAccountLogin() {
                     <svg className="w-6 h-6 text-orange-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span><strong>Beware of Phishing:</strong> Only download Teen Patti Gold from official sources and never click on suspicious links.</span>
+                    <span><strong>Beware of Phishing:</strong> Only download Teen Patti Gold from our <Link href="/download-teen-patti-gold" className="text-accent hover:underline">verified download page</Link> and never click suspicious links.</span>
                   </li>
                 </ul>
               </div>
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-8 text-white">Troubleshooting Login Issues</h2>
-                
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  Still stuck after trying the steps below? Our <Link href="/blog/teen-patti-gold-login-problems-solutions" className="text-accent hover:underline">login problems and solutions</Link> article covers OTP delays, app crashes, and locked accounts in more detail.
+                </p>
                 <div className="space-y-6">
                   <div className="bg-[#0A1029] rounded-xl p-6">
                     <h3 className="text-xl font-bold mb-3 text-accent">Forgot Password?</h3>

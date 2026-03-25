@@ -76,7 +76,7 @@ export default function TeenPattiGoldOldVersionPage() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  <strong className="text-white">Teen Patti Gold</strong> has evolved significantly over the years. This review covers the classic features that made the old version popular among Pakistani players—real money earning, easy JazzCash and EasyPaisa payments, daily bonuses, referral program, and the wide variety of card games including Teen Patti, Rummy, and Dragon Tiger.
+                  <strong className="text-white">Teen Patti Gold</strong> has evolved significantly over the years. This review covers the classic features that made the old version popular among Pakistani players—real money earning, easy JazzCash and EasyPaisa payments, daily bonuses, referral program, and the wide variety of card games including Teen Patti, Rummy, and Dragon Tiger. For what changed since then, see <Link href="/blog/teen-patti-gold-latest-version-2026-updates" className="text-accent hover:underline">latest version and 2026 updates</Link> and install from the <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official download page</Link>.
                 </p>
               </div>
 
@@ -89,7 +89,7 @@ export default function TeenPattiGoldOldVersionPage() {
                   </div>
                   <div className="bg-[#0A1029] rounded-lg p-6">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">Easy Withdraw & Deposit</h3>
-                    <p className="text-gray-300">With just a few steps, players could withdraw or deposit money anytime using JazzCash or EasyPaisa with secure and quick transactions.</p>
+                    <p className="text-gray-300">With just a few steps, players could withdraw or deposit money anytime using JazzCash or EasyPaisa with secure and quick transactions. Today&apos;s flow is covered in our <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">deposit</Link> and <Link href="/withdraw-money-from-teen-patti-gold" className="text-accent hover:underline">withdraw</Link> guides.</p>
                   </div>
                   <div className="bg-[#0A1029] rounded-lg p-6">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">Attractive Interface</h3>

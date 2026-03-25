@@ -94,7 +94,7 @@ export default function HowToEarnMoney() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Many players in Pakistan are earning real money through <strong className="text-white">Teen Patti Gold</strong>. This comprehensive guide will show you all the proven methods to maximize your earnings, from winning games to leveraging bonuses and referral programs.
+                  Many players in Pakistan are earning real money through <strong className="text-white">Teen Patti Gold</strong>. This comprehensive guide will show you all the proven methods to maximize your earnings, from winning games to leveraging bonuses and referral programs. If you are just getting started, our <Link href="/blog/how-to-use-teen-patti-gold-app-in-pakistan" className="text-accent hover:underline">beginner&apos;s guide to the app</Link> walks through the interface, and <Link href="/blog/how-to-play-teen-patti-gold" className="text-accent hover:underline">how to play Teen Patti</Link> covers rules before you bet real cash.
                 </p>
               </div>
 
@@ -118,7 +118,7 @@ export default function HowToEarnMoney() {
                   <div>
                     <h3 className="text-2xl font-bold mb-4 text-accent">2. Welcome Bonuses</h3>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      New players receive welcome bonuses when they register and make their first deposit. These bonuses give you extra chips to play with.
+                      New players receive welcome bonuses when they register and make their first deposit. These bonuses give you extra chips to play with. See <Link href="/blog/how-to-claim-welcome-bonus-teen-patti-gold" className="text-accent hover:underline">how to claim the welcome bonus</Link> and our <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">deposit walkthrough</Link> for JazzCash and EasyPaisa.
                     </p>
                     <div className="bg-[#0A1029] rounded-lg p-6">
                       <p className="text-gray-300">
@@ -220,8 +220,11 @@ export default function HowToEarnMoney() {
                   <li>Keep track of your earnings and withdrawals</li>
                   <li>Learn from your losses and improve your strategy</li>
                   <li>Stay updated with new promotions and bonuses</li>
-                  <li>Withdraw your winnings regularly instead of reinvesting everything</li>
+                  <li>Withdraw your winnings regularly instead of reinvesting everything—see <Link href="/withdraw-money-from-teen-patti-gold" className="text-accent hover:underline">how to withdraw from Teen Patti Gold</Link></li>
                 </ul>
+                <p className="text-gray-400 text-sm mt-6 leading-relaxed">
+                  Wondering whether payouts are trustworthy? Read <Link href="/blog/is-teen-patti-gold-real-or-fake" className="text-accent hover:underline">is Teen Patti Gold real or fake</Link>. For sharper gameplay, pair this guide with <Link href="/blog/tips-to-win-big-in-teen-patti-gold" className="text-accent hover:underline">tips to win big</Link>.
+                </p>
               </div>
 
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">

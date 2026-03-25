@@ -76,7 +76,7 @@ export default function IsTeenPattiGoldBetterForEarningPage() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  <strong className="text-white">Teen Patti Gold</strong> has become Pakistan&apos;s premier online card game platform with 500K+ downloads. This 2026 analysis compares Teen Patti Gold with other card games for earning real cash—features, payment methods, bonuses, games, and why players choose it.
+                  <strong className="text-white">Teen Patti Gold</strong> has become Pakistan&apos;s premier online card game platform with 500K+ downloads. This 2026 analysis compares Teen Patti Gold with other card games for earning real cash—features, payment methods, bonuses, games, and why players choose it. For legitimacy questions, see <Link href="/blog/is-teen-patti-gold-real-or-fake" className="text-accent hover:underline">is Teen Patti Gold real or fake</Link>; get the app only from our <Link href="/download-teen-patti-gold" className="text-accent hover:underline">verified download page</Link>.
                 </p>
               </div>
 
@@ -89,11 +89,11 @@ export default function IsTeenPattiGoldBetterForEarningPage() {
                   </div>
                   <div className="bg-[#0A1029] rounded-lg p-6">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">Easy Withdraw & Deposit</h3>
-                    <p className="text-gray-300">JazzCash and EasyPaisa—Pakistan&apos;s trusted payment methods. Withdraw or deposit quickly with secure transactions. No delays.</p>
+                    <p className="text-gray-300">JazzCash and EasyPaisa—Pakistan&apos;s trusted payment methods. Follow <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">deposit steps</Link> and <Link href="/withdraw-money-from-teen-patti-gold" className="text-accent hover:underline">withdrawal steps</Link> for secure, quick transfers.</p>
                   </div>
                   <div className="bg-[#0A1029] rounded-lg p-6">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">100% Welcome Bonus</h3>
-                    <p className="text-gray-300">New players get 100% recharge bonus on first deposit. Deposit 1000 PKR, get 1000 PKR bonus—double your playing power from day one.</p>
+                    <p className="text-gray-300">New players get 100% recharge bonus on first deposit. Deposit 1000 PKR, get 1000 PKR bonus—double your playing power from day one. See <Link href="/blog/how-to-claim-welcome-bonus-teen-patti-gold" className="text-accent hover:underline">how to claim the welcome bonus</Link> for requirements.</p>
                   </div>
                   <div className="bg-[#0A1029] rounded-lg p-6">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">Referral Earning</h3>
@@ -133,7 +133,7 @@ export default function IsTeenPattiGoldBetterForEarningPage() {
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-6 text-white">Important Reminder</h2>
                 <p className="text-gray-300 leading-relaxed">
-                  There is a risk of losing money while playing. Play responsibly, start with small bets, manage your bankroll, and never play with money you cannot afford to lose. Always set limits and play for entertainment, not as a source of income.
+                  There is a risk of losing money while playing. Play responsibly, start with small bets, manage your bankroll, and never play with money you cannot afford to lose. Always set limits and play for entertainment, not as a source of income. Our <Link href="/blog/responsible-gaming-guide-2026" className="text-accent hover:underline">responsible gaming guide</Link> goes deeper on limits and when to stop.
                 </p>
               </div>
 

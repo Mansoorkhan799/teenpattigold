@@ -71,7 +71,7 @@ export default function TipsToWinBig() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed mb-0">
-                  Want to maximize your winnings in Teen Patti Gold? Whether you're playing Teen Patti, Rummy, Dragon vs Tiger, or other card games, these expert strategies and tips will help you play smarter and earn more real cash. Follow these proven techniques to boost your success rate and become a winning player.
+                  Want to maximize your winnings in Teen Patti Gold? Whether you&apos;re playing Teen Patti, Rummy, Dragon vs Tiger, or other card games, these expert strategies and tips will help you play smarter and earn more real cash. New to the tables? Brush up with <Link href="/blog/how-to-play-teen-patti-gold" className="text-accent hover:underline">how to play Teen Patti Gold</Link> and <Link href="/blog/how-to-earn-money-from-teen-patti-gold" className="text-accent hover:underline">how earning and withdrawals work</Link>. Follow these proven techniques to boost your success rate and become a winning player.
                 </p>
               </div>
 

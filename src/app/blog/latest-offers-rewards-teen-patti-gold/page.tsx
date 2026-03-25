@@ -76,13 +76,13 @@ export default function LatestOffersRewardsPage() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  <strong className="text-white">Teen Patti Gold</strong> offers multiple ways to earn rewards in 2026: 100% welcome bonus, recharge rebate up to 30%, VIP daily rebate, daily login bonuses, and referral commissions. This guide covers all current offers and how to maximize your rewards.
+                  <strong className="text-white">Teen Patti Gold</strong> offers multiple ways to earn rewards in 2026: 100% welcome bonus, recharge rebate up to 30%, VIP daily rebate, daily login bonuses, and referral commissions. This guide covers all current offers and how to maximize your rewards. For step-by-step bonus rules, see <Link href="/blog/how-to-claim-welcome-bonus-teen-patti-gold" className="text-accent hover:underline">how to claim the welcome bonus</Link>; fund your wallet with our <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">deposit guide</Link> when you are ready.
                 </p>
               </div>
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-6 text-white">1. New Player Welcome Bonus</h2>
-                <p className="text-gray-300 mb-4">3Patti offers a 100% recharge bonus for all new users on their first deposit. Deposit and get equal bonus!</p>
+                <p className="text-gray-300 mb-4">3Patti offers a 100% recharge bonus for all new users on their first deposit. Deposit and get equal bonus! Follow <Link href="/blog/how-to-claim-welcome-bonus-teen-patti-gold" className="text-accent hover:underline">the full welcome bonus walkthrough</Link> so you meet wagering and timing rules.</p>
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-800 rounded-lg overflow-hidden">
                     <thead className="bg-[#0a1029]">
@@ -105,7 +105,7 @@ export default function LatestOffersRewardsPage() {
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-6 text-white">2. Recharge Rebate</h2>
-                <p className="text-gray-300 mb-4">Huge recharge rebate bonuses when you deposit. Higher deposits = higher rebate percentage.</p>
+                <p className="text-gray-300 mb-4">Huge recharge rebate bonuses when you deposit. Higher deposits = higher rebate percentage. Use <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline">JazzCash, EasyPaisa, or bank card</Link> as shown in our deposit tutorial.</p>
                 <div className="overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-800 rounded-lg overflow-hidden">
                     <thead className="bg-[#0a1029]">
@@ -157,7 +157,7 @@ export default function LatestOffersRewardsPage() {
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-6 text-white">5. Referral Program</h2>
-                <p className="text-gray-300 mb-4">Share your referral link with friends. When they join and start playing, you earn commission automatically. The more friends you invite, the more you earn—without playing games yourself.</p>
+                <p className="text-gray-300 mb-4">Share your referral link with friends. When they join and start playing, you earn commission automatically. The more friends you invite, the more you earn—without playing games yourself. For a broader earning overview, read <Link href="/blog/how-to-earn-money-from-teen-patti-gold" className="text-accent hover:underline">how to earn money from Teen Patti Gold</Link>.</p>
               </div>
 
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">
@@ -172,6 +172,7 @@ export default function LatestOffersRewardsPage() {
                   <li><Link href="/blog/how-to-claim-welcome-bonus-teen-patti-gold" className="text-accent hover:underline">→ How to Claim Your Welcome Bonus on Teen Patti Gold</Link></li>
                   <li><Link href="/blog/how-to-earn-money-from-teen-patti-gold" className="text-accent hover:underline">→ How to Earn Money from Teen Patti Gold</Link></li>
                   <li><Link href="/blog/tips-to-win-big-in-teen-patti-gold" className="text-accent hover:underline">→ Tips to Win Big in Teen Patti Gold</Link></li>
+                  <li><Link href="/withdraw-money-from-teen-patti-gold" className="text-accent hover:underline">→ How to Withdraw Money from Teen Patti Gold</Link></li>
                 </ul>
               </div>
             </div>
