@@ -152,6 +152,33 @@ export default function Blog() {
             "name": "Is Teen Patti Gold Better for Earning Real Cash? 2026",
             "url": "https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-better-for-earning-real-cash-2026"
           }
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "item": {
+            "@type": "BlogPosting",
+            "name": "Teen Patti Gold Free Chips 2026 — Get Daily Bonus Chips Every Day",
+            "url": "https://teenpattigoldgame.com.pk/blog/teen-patti-gold-free-chips-2026"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "item": {
+            "@type": "BlogPosting",
+            "name": "Teen Patti Gold Referral Code Pakistan 2026 — Earn Bonus Chips",
+            "url": "https://teenpattigoldgame.com.pk/blog/teen-patti-gold-referral-code-pakistan"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "item": {
+            "@type": "BlogPosting",
+            "name": "Teen Patti Gold vs Teen Patti Stars 2026 — Which is Better in Pakistan?",
+            "url": "https://teenpattigoldgame.com.pk/blog/teen-patti-gold-vs-teen-patti-stars"
+          }
         }
       ]
     },
@@ -368,6 +395,57 @@ export default function Blog() {
             <span>8 min read</span>
           </div>
           <Link href="/blog/is-teen-patti-gold-better-for-earning-real-cash-2026" className="text-accent hover:underline font-semibold">
+            Read More →
+          </Link>
+        </div>
+
+        {/* Fourteenth Post - Free Chips */}
+        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-[#FFA500]">
+          <div className="inline-block bg-[#FFA500] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
+            🆕 NEW
+          </div>
+          <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold Free Chips 2026 — Get Daily Bonus Chips Every Day</h2>
+          <p className="text-gray-300 mb-4">All the ways to get free chips in Teen Patti Gold: daily login bonuses, referral rewards, lucky spin, tasks, and event promotions.</p>
+          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+            <span>📅 March 1, 2026</span>
+            <span>•</span>
+            <span>6 min read</span>
+          </div>
+          <Link href="/blog/teen-patti-gold-free-chips-2026" className="text-accent hover:underline font-semibold">
+            Read More →
+          </Link>
+        </div>
+
+        {/* Fifteenth Post - Referral Code */}
+        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-[#FFA500]">
+          <div className="inline-block bg-[#FFA500] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
+            🆕 NEW
+          </div>
+          <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold Referral Code Pakistan 2026 — Earn Bonus Chips</h2>
+          <p className="text-gray-300 mb-4">Complete guide on Teen Patti Gold referral codes. Learn how to find your code, share it, and earn chip rewards for every friend you invite.</p>
+          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+            <span>📅 March 5, 2026</span>
+            <span>•</span>
+            <span>5 min read</span>
+          </div>
+          <Link href="/blog/teen-patti-gold-referral-code-pakistan" className="text-accent hover:underline font-semibold">
+            Read More →
+          </Link>
+        </div>
+
+        {/* Sixteenth Post - Comparison */}
+        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-[#FFA500]">
+          <div className="inline-block bg-[#FFA500] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
+            🆕 NEW
+          </div>
+          <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold vs Teen Patti Stars 2026 — Which is Better in Pakistan?</h2>
+          <p className="text-gray-300 mb-4">Full comparison of Teen Patti Gold and Teen Patti Stars. Games, withdrawals, bonuses, community — see which app wins for Pakistani players.</p>
+          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+            <span>📅 March 10, 2026</span>
+            <span>•</span>
+            <span>7 min read</span>
+          </div>
+          <Link href="/blog/teen-patti-gold-vs-teen-patti-stars" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>

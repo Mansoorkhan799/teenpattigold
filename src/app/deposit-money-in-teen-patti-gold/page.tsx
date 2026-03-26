@@ -35,6 +35,57 @@ export default function DepositMoneyPage() {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(depositBreadcrumbLd) }}
       />
+      <Script
+        id="deposit-faq-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the minimum deposit amount in Teen Patti Gold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The minimum deposit amount in Teen Patti Gold is Rs 200. You can deposit Rs 200, Rs 500, Rs 1000, or Rs 2000 using JazzCash or EasyPaisa."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take for the deposit to reflect in Teen Patti Gold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Deposits in Teen Patti Gold are processed instantly. After approving the payment in your JazzCash or EasyPaisa wallet, the chips are added to your account within a few seconds."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which payment methods are supported for Teen Patti Gold deposits in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teen Patti Gold supports JazzCash and EasyPaisa for deposits in Pakistan. These are the safest and fastest payment methods available for Pakistani players."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it safe to deposit money in Teen Patti Gold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, depositing money in Teen Patti Gold is completely safe. The platform uses secure payment gateways and your transaction data is fully encrypted. Always use the official app from teenpattigoldgame.com.pk."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I get a refund on my deposit in Teen Patti Gold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Deposits are generally non-refundable once processed. If you face any issues with a deposit, contact customer support immediately with your transaction reference number."
+              }
+            }
+          ]
+        }) }}
+      />
     <div className="min-h-screen bg-primary">
       {/* Hero Section */}
       <section className="relative py-12 md:py-20 bg-secondary border-b border-gray-800">
@@ -261,33 +312,45 @@ export default function DepositMoneyPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-6">
-              <div className="bg-secondary rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                <h3 className="text-xl font-bold text-accent mb-3">
-                  How can we add money to our Teen Patti Gold account?
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  You can add money to your Teen Patti Gold account by opening the app, selecting the shop option, choosing a payment method and amount, confirming the deposit, and approving the payment request.
-                </p>
-              </div>
-
-              <div className="bg-secondary rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                <h3 className="text-xl font-bold text-accent mb-3">
-                  Is adding funds to Teen Patti Gold secure?
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  Yes, it is safe to add funds to Teen Patti Gold, as it uses a modern security system to protect your personal data and funds.
-                </p>
-              </div>
-
-              <div className="bg-secondary rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                <h3 className="text-xl font-bold text-accent mb-3">
-                  Which payment methods are available on Teen Patti Gold?
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  Teen Patti Gold provides two payment methods, including Easypaisa and Jazzcash, that are secure and authentic.
-                </p>
-              </div>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "What is the minimum deposit amount in Teen Patti Gold?",
+                  a: "The minimum deposit amount in Teen Patti Gold is Rs 200. You can choose from Rs 200, Rs 500, Rs 1000, or Rs 2000 using JazzCash or EasyPaisa."
+                },
+                {
+                  q: "How can we add money to our Teen Patti Gold account?",
+                  a: "Open the app, tap the Shop option, select your payment method (JazzCash or EasyPaisa), choose an amount, tap Add Chips, enter your account number, and approve the payment request. Chips are credited instantly."
+                },
+                {
+                  q: "How long does it take for the deposit to reflect?",
+                  a: "Deposits are processed instantly. After approving the payment in your JazzCash or EasyPaisa wallet, chips appear in your account within seconds."
+                },
+                {
+                  q: "Which payment methods are supported in Pakistan?",
+                  a: "Teen Patti Gold supports JazzCash and EasyPaisa for deposits in Pakistan. These are the fastest and most secure options for Pakistani players."
+                },
+                {
+                  q: "Is it safe to deposit money in Teen Patti Gold?",
+                  a: "Yes. Teen Patti Gold uses encrypted, secure payment gateways. Always download the app from the official site teenpattigoldgame.com.pk to stay protected."
+                },
+                {
+                  q: "Can I get a refund if the deposit fails?",
+                  a: "If money is deducted but chips are not credited, contact customer support immediately with your transaction reference number for a quick resolution."
+                }
+              ].map((item, idx) => (
+                <details key={idx} className="group bg-secondary rounded-xl border border-gray-700/50 overflow-hidden">
+                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold text-lg list-none">
+                    <span>{item.q}</span>
+                    <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
+                    {item.a}
+                  </div>
+                </details>
+              ))}
             </div>
           </div>
         </div>

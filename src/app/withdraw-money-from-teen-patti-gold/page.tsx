@@ -35,6 +35,57 @@ export default function WithdrawMoneyPage() {
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(withdrawBreadcrumbLd) }}
       />
+      <Script
+        id="withdraw-faq-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the minimum withdrawal amount in Teen Patti Gold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The minimum withdrawal amount in Teen Patti Gold is Rs 100. You can withdraw through JazzCash, EasyPaisa, or Bank Card (up to Rs 20,000 per bank transaction)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to receive a withdrawal from Teen Patti Gold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teen Patti Gold typically processes withdrawals within 3 to 24 hours. JazzCash and EasyPaisa withdrawals are usually faster than bank transfers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which payment methods support Teen Patti Gold withdrawals in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teen Patti Gold supports three withdrawal methods in Pakistan: JazzCash, EasyPaisa, and Bank Card (bank transfer). JazzCash and EasyPaisa are the fastest options."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the maximum withdrawal per transaction in Teen Patti Gold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For bank card withdrawals, the maximum per transaction is PKR 20,000. JazzCash and EasyPaisa have their own transaction limits set by the mobile wallet provider."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should I do if my withdrawal fails in Teen Patti Gold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If your withdrawal fails, first verify your payment details are correct. If the issue persists, contact Teen Patti Gold customer support with your transaction reference number for assistance."
+              }
+            }
+          ]
+        }) }}
+      />
     <div className="min-h-screen bg-primary">
       {/* Hero Section */}
       <section className="relative py-12 md:py-20 bg-secondary border-b border-gray-800">
@@ -305,33 +356,41 @@ export default function WithdrawMoneyPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
               Frequently Asked Questions
             </h2>
-            <div className="space-y-6">
-              <div className="bg-secondary rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                <h3 className="text-xl font-bold text-accent mb-3">
-                  What is the minimum amount that we can withdraw from the Teen Patti Gold Game?
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  You can easily withdraw a minimum of Rs 100 from your Teen Patti Gold account, as it supports withdrawals of that amount.
-                </p>
-              </div>
-
-              <div className="bg-secondary rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                <h3 className="text-xl font-bold text-accent mb-3">
-                  How long does Teen Patti Gold take to send withdrawals?
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  Teen Patti Gold usually processes withdrawals in 3 to 24 hours. It may take longer due to some issues.
-                </p>
-              </div>
-
-              <div className="bg-secondary rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
-                <h3 className="text-xl font-bold text-accent mb-3">
-                  What should we do if our payout fails on Teen Patti Gold?
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  If your withdrawal fails on Teen Patti Gold, contact its customer support team to approve your withdrawal.
-                </p>
-              </div>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "What is the minimum withdrawal amount in Teen Patti Gold?",
+                  a: "The minimum withdrawal in Teen Patti Gold is Rs 100. You can cash out via JazzCash, EasyPaisa, or Bank Card (up to Rs 20,000 per bank transaction)."
+                },
+                {
+                  q: "How long does it take to receive a withdrawal?",
+                  a: "Withdrawals are typically processed within 3 to 24 hours. JazzCash and EasyPaisa payments are usually faster than bank transfers."
+                },
+                {
+                  q: "Which payment methods support withdrawals in Pakistan?",
+                  a: "Teen Patti Gold supports JazzCash, EasyPaisa, and Bank Card (bank transfer) for withdrawals in Pakistan. JazzCash and EasyPaisa are the quickest options."
+                },
+                {
+                  q: "What is the maximum withdrawal per transaction?",
+                  a: "For bank card withdrawals, the maximum per transaction is PKR 20,000. JazzCash and EasyPaisa limits depend on your wallet tier."
+                },
+                {
+                  q: "What should I do if my withdrawal fails?",
+                  a: "First verify your payment details are correct. If the issue persists, contact Teen Patti Gold customer support with your transaction reference number for a quick resolution."
+                }
+              ].map((item, idx) => (
+                <details key={idx} className="group bg-secondary rounded-xl border border-gray-700/50 overflow-hidden">
+                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold text-lg list-none">
+                    <span>{item.q}</span>
+                    <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
+                    {item.a}
+                  </div>
+                </details>
+              ))}
             </div>
           </div>
         </div>

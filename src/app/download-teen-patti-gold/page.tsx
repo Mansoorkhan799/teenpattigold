@@ -106,6 +106,63 @@ export default function DownloadPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is Teen Patti Gold free to download?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Teen Patti Gold is completely free to download. Visit teenpattigoldgame.com.pk, click the download button, and install the APK on your Android device at no cost."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Android version is required to run Teen Patti Gold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teen Patti Gold requires Android 5.0 or above. It runs smoothly on most modern Android smartphones and tablets."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I install Teen Patti Gold APK on Android?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Download the APK from teenpattigoldgame.com.pk, enable Install from unknown sources in your device settings, locate the downloaded APK, tap it, and follow the on-screen steps."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Teen Patti Gold safe to download?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Downloading from the official site teenpattigoldgame.com.pk ensures you get a clean, verified APK. Avoid unofficial third-party sources to stay safe."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the latest version of Teen Patti Gold?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The latest version is V1.656 (2026), with a file size of 49MB. It requires Android 5.0+ and is free to download."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I play Teen Patti Gold on PC?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. You can play Teen Patti Gold on PC using an Android emulator like LDPlayer or BlueStacks. Download the APK and load it inside the emulator."
+              }
+            }
+          ]
+        }) }}
+      />
 
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
@@ -298,6 +355,53 @@ export default function DownloadPage() {
             <h3 className="text-xl font-semibold mb-3 text-[#FFA500]">Easy to Use</h3>
             <p className="text-gray-300">Simple interface and smooth gameplay</p>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#FFA500] text-center">
+          Frequently Asked Questions
+        </h2>
+        <div className="max-w-4xl mx-auto space-y-4">
+          {[
+            {
+              q: "Is Teen Patti Gold free to download?",
+              a: "Yes, Teen Patti Gold is completely free to download. Visit teenpattigoldgame.com.pk, click the download button, and install the APK on your Android device at no cost."
+            },
+            {
+              q: "Which Android version is required to run Teen Patti Gold?",
+              a: "Teen Patti Gold requires Android 5.0 or above. It runs smoothly on most modern Android smartphones and tablets."
+            },
+            {
+              q: "How do I install Teen Patti Gold APK on Android?",
+              a: "Download the APK from teenpattigoldgame.com.pk, go to your device Settings and enable 'Install from unknown sources', locate the downloaded APK file, tap it, and follow the on-screen installation steps."
+            },
+            {
+              q: "Is Teen Patti Gold safe to download?",
+              a: "Yes. Downloading from the official site teenpattigoldgame.com.pk ensures you get a clean, verified APK. Avoid unofficial third-party sources to stay safe."
+            },
+            {
+              q: "What is the latest version of Teen Patti Gold?",
+              a: "The latest version is V1.656 (2026), with a file size of 49MB. Updates are released regularly with new games, bug fixes, and performance improvements."
+            },
+            {
+              q: "Can I play Teen Patti Gold on PC?",
+              a: "Yes. You can play Teen Patti Gold on PC using an Android emulator like LDPlayer or BlueStacks. Download the APK and load it inside the emulator."
+            }
+          ].map((item, idx) => (
+            <details key={idx} className="group bg-secondary rounded-xl border border-gray-700/50 overflow-hidden">
+              <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold text-lg list-none">
+                <span>{item.q}</span>
+                <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
+                {item.a}
+              </div>
+            </details>
+          ))}
         </div>
       </section>
 

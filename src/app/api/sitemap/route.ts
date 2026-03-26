@@ -22,7 +22,7 @@ export async function GET() {
   const mainPages: PageType[] = [
     {
       url: '/',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-03-27T00:00:00Z',
       changeFreq: 'daily',
       priority: 1.0,
       images: [
@@ -35,7 +35,7 @@ export async function GET() {
     },
     {
       url: '/download-teen-patti-gold',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-03-27T00:00:00Z',
       changeFreq: 'weekly',
       priority: 0.9,
       images: [
@@ -48,19 +48,19 @@ export async function GET() {
     },
     {
       url: '/deposit-money-in-teen-patti-gold',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-03-27T00:00:00Z',
       changeFreq: 'weekly',
       priority: 0.9
     },
     {
       url: '/withdraw-money-from-teen-patti-gold',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-03-27T00:00:00Z',
       changeFreq: 'weekly',
       priority: 0.9
     },
     {
       url: '/teen-patti-gold-for-pc',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-15T00:00:00Z',
       changeFreq: 'weekly',
       priority: 0.9,
       images: [
@@ -73,7 +73,7 @@ export async function GET() {
     },
     {
       url: '/teen-patti-gold-for-ios',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-15T00:00:00Z',
       changeFreq: 'weekly',
       priority: 0.9,
       images: [
@@ -86,7 +86,7 @@ export async function GET() {
     },
     {
       url: '/about-us',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-05T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.7,
       images: [
@@ -99,7 +99,7 @@ export async function GET() {
     },
     {
       url: '/blog',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-03-10T00:00:00Z',
       changeFreq: 'weekly',
       priority: 0.8,
       images: [
@@ -112,25 +112,25 @@ export async function GET() {
     },
     {
       url: '/contact-us',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-05T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.7
     },
     {
       url: '/privacy',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-05T00:00:00Z',
       changeFreq: 'yearly',
       priority: 0.6
     },
     {
       url: '/disclaimer',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-05T00:00:00Z',
       changeFreq: 'yearly',
       priority: 0.6
     },
     {
       url: '/terms',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-05T00:00:00Z',
       changeFreq: 'yearly',
       priority: 0.6
     }
@@ -140,79 +140,97 @@ export async function GET() {
   const blogPosts: PageType[] = [
     {
       url: '/blog/how-to-use-teen-patti-gold-app-in-pakistan',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-10T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.9
     },
     {
       url: '/blog/how-to-play-teen-patti-gold',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-10T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.9
     },
     {
       url: '/blog/how-to-earn-money-from-teen-patti-gold',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-12T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.9
     },
     {
       url: '/blog/is-teen-patti-gold-real-or-fake',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-15T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.8
     },
     {
       url: '/blog/create-teen-patti-gold-account-and-login',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-15T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.8
     },
     {
       url: '/blog/tips-to-win-big-in-teen-patti-gold',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-20T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.8
     },
     {
       url: '/blog/teen-patti-gold-old-version-features-review',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-20T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.8
     },
     {
       url: '/blog/teen-patti-gold-latest-version-2026-updates',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-22T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.8
     },
     {
       url: '/blog/how-to-claim-welcome-bonus-teen-patti-gold',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-01-25T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.8
     },
     {
       url: '/blog/teen-patti-gold-login-problems-solutions',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-02-01T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.8
     },
     {
       url: '/blog/latest-offers-rewards-teen-patti-gold',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-02-05T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.8
     },
     {
       url: '/blog/responsible-gaming-guide-2026',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-02-10T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.8
     },
     {
       url: '/blog/is-teen-patti-gold-better-for-earning-real-cash-2026',
-      lastMod: new Date().toISOString(),
+      lastMod: '2026-02-15T00:00:00Z',
+      changeFreq: 'monthly',
+      priority: 0.8
+    },
+    {
+      url: '/blog/teen-patti-gold-free-chips-2026',
+      lastMod: '2026-03-01T00:00:00Z',
+      changeFreq: 'monthly',
+      priority: 0.9
+    },
+    {
+      url: '/blog/teen-patti-gold-referral-code-pakistan',
+      lastMod: '2026-03-05T00:00:00Z',
+      changeFreq: 'monthly',
+      priority: 0.9
+    },
+    {
+      url: '/blog/teen-patti-gold-vs-teen-patti-stars',
+      lastMod: '2026-03-10T00:00:00Z',
       changeFreq: 'monthly',
       priority: 0.8
     }
