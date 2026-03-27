@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: LOGO_URL,
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: "About Teen Patti Gold - Premier Card Gaming Platform",
+        alt: "About Teen Patti Gold - Premier Card Gaming Platform Pakistan",
       }
     ],
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: 'About Teen Patti Gold - Pakistan\'s Premier Card Gaming Platform',
     description: 'Learn about Teen Patti Gold, our history, mission, and vision for creating the best card gaming platform in Pakistan with real cash rewards.',
-    images: [LOGO_URL],
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 
@@ -59,19 +59,17 @@ export default function AboutPage() {
           <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-12">
             <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
               <div className="md:w-1/3">
-                <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-[#0A1029]">
-                  <Link href="/">
-                    <Image 
-                      src={LOGO_PATH_VERSIONED} 
-                      alt="Teen Patti Gold Logo" 
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 320px"
-                      className="object-contain p-4"
-                      priority
-                      quality={75}
-                    />
-                  </Link>
-                </div>
+                <Link href="/" className="block w-full aspect-square rounded-lg overflow-hidden bg-[#0A1029] relative">
+                  <Image 
+                    src={LOGO_PATH_VERSIONED} 
+                    alt="Teen Patti Gold Logo" 
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 320px"
+                    className="object-contain p-4"
+                    priority
+                    quality={75}
+                  />
+                </Link>
               </div>
               <div className="md:w-2/3">
                 <div className="prose prose-lg max-w-none">

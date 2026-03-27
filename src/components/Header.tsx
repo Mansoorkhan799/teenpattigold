@@ -18,7 +18,7 @@ export default function Header() {
               width={56}
               height={56}
               className="object-contain rounded-lg w-full h-full"
-              priority={true}
+              loading="eager"
               fetchPriority="high"
               quality={75}
             />
