@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
@@ -47,29 +46,20 @@ export const metadata: Metadata = {
 };
 
 export default function HowToEarnMoney() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'How to Earn Money from Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk/blog/how-to-earn-money-from-teen-patti-gold' },
-  ]);
-
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "How to Earn Money from Teen Patti Gold: Complete Guide 2026",
-    "description": "Complete guide on earning real money from Teen Patti Gold with strategies and tips.",
-    "datePublished": "2026-01-12",
-    "dateModified": "2026-01-12"
-  };
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/how-to-earn-money-from-teen-patti-gold',
+    headline: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
+    description: 'Learn proven methods to earn real money from Teen Patti Gold. Complete guide on winning strategies, bonuses, referrals, and tips to maximize earnings in Pakistan.',
+    datePublished: '2026-01-12T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
+    keywords: 'how to earn money from teen patti gold, teen patti gold earn money, earn money online pakistan, teen patti gold winning strategies',
+    wordCount: 1500,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script
-        id="blog-post-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

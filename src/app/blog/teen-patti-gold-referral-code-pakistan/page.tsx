@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold Referral Code Pakistan 2026 | Earn Bonus with Referrals',
@@ -48,80 +46,26 @@ export const metadata: Metadata = {
 };
 
 export default function ReferralCodePage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Teen Patti Gold Referral Code Pakistan', url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-referral-code-pakistan' },
-  ]);
-
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Teen Patti Gold Referral Code Pakistan 2026 | Earn Bonus with Referrals",
-    "description": "Complete guide on Teen Patti Gold referral codes in Pakistan. Learn how to share your code, earn chips, and maximize referral rewards.",
-    "datePublished": "2026-03-05",
-    "dateModified": "2026-03-05",
-    "author": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "url": "https://teenpattigoldgame.com.pk"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "logo": { "@type": "ImageObject", "url": LOGO_URL }
-    },
-    "image": LOGO_URL,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teenpattigoldgame.com.pk/blog/teen-patti-gold-referral-code-pakistan"
-    }
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the Teen Patti Gold referral code?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The Teen Patti Gold referral code is a unique personal code assigned to every player. When you share it with a friend and they register using your code, both you and your friend receive bonus chips as a reward."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I find my Teen Patti Gold referral code in Pakistan?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Open the Teen Patti Gold app, go to the Refer & Earn or Invitation section, and you will find your unique referral code or shareable link. You can share it directly via WhatsApp, SMS, or social media."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How many chips do I earn per referral in Teen Patti Gold?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The referral reward varies based on active promotions, but typically you earn between 10,000 to 30,000 chips per successful referral. Some special events offer higher referral bonuses."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is there a limit to how many friends I can refer in Teen Patti Gold?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, there is no limit. You can refer as many friends as you want. Each successful referral earns you bonus chips, making it one of the best ways to build your chip balance for free."
-        }
-      }
-    ]
-  };
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-referral-code-pakistan',
+    headline: 'Teen Patti Gold Referral Code Pakistan 2026 | Earn Bonus with Referrals',
+    description: 'Use the Teen Patti Gold referral code in Pakistan to earn bonus chips and cash. Complete guide on how to use, share, and maximize Teen Patti Gold referral rewards in 2026.',
+    datePublished: '2026-03-05T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
+    keywords: 'teen patti gold referral code, teen patti gold referral code pakistan 2026, teen patti gold refer and earn, teen patti gold invitation code',
+    wordCount: 1400,
+    faq: [
+      { question: 'What is the Teen Patti Gold referral code?', answer: 'The Teen Patti Gold referral code is a unique personal code assigned to every player. When you share it with a friend and they register using your code, both you and your friend receive bonus chips as a reward.' },
+      { question: 'How do I find my Teen Patti Gold referral code in Pakistan?', answer: 'Open the Teen Patti Gold app, go to the Refer & Earn or Invitation section, and you will find your unique referral code or shareable link. You can share it directly via WhatsApp, SMS, or social media.' },
+      { question: 'How many chips do I earn per referral in Teen Patti Gold?', answer: 'The referral reward varies based on active promotions, but typically you earn between 10,000 to 30,000 chips per successful referral. Some special events offer higher referral bonuses.' },
+      { question: 'Is there a limit to how many friends I can refer in Teen Patti Gold?', answer: 'No, there is no limit. You can refer as many friends as you want. Each successful referral earns you bonus chips, making it one of the best ways to build your chip balance for free.' },
+    ],
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="blog-post-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
 
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

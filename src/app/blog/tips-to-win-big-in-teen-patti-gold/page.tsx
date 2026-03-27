@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
-import { LOGO_URL } from '@/lib/site-images';
 import Link from 'next/link';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Tips to Win Big in Teen Patti Gold - Expert Strategies & Tricks 2026',
@@ -48,15 +46,20 @@ export const metadata: Metadata = {
 };
 
 export default function TipsToWinBig() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Tips to Win Big', url: 'https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold' },
-  ]);
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold',
+    headline: 'Tips to Win Big in Teen Patti Gold - Expert Strategies & Tricks 2026',
+    description: 'Discover expert strategies and proven tips to maximize your winnings in Teen Patti Gold. Learn how to win big in Teen Patti, Rummy, and other card games.',
+    datePublished: '2026-01-20T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
+    keywords: 'teen patti gold tips, win big teen patti gold, teen patti strategies, rummy tricks, teen patti gold winning tips',
+    wordCount: 1200,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">
@@ -309,37 +312,6 @@ export default function TipsToWinBig() {
         </div>
       </div>
 
-      <Script
-        id="blog-post-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": "Tips to Win Big in Teen Patti Gold - Expert Strategies",
-            "description": "Discover expert strategies and tips to maximize your winnings in Teen Patti, Rummy, and other card games.",
-            "datePublished": "2026-01-05T00:00:00Z",
-            "dateModified": new Date().toISOString(),
-            "author": {
-              "@type": "Organization",
-              "name": "Teen Patti Gold Team",
-              "url": "https://teenpattigoldgame.com.pk"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Teen Patti Gold",
-              "logo": {
-                "@type": "ImageObject",
-                "url": LOGO_URL
-              }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold"
-            }
-          })
-        }}
-      />
     </>
   );
 }

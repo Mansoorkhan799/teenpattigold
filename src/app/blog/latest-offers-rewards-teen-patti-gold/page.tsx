@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Latest Offers and Rewards on Teen Patti Gold (2026)',
@@ -41,28 +39,20 @@ export const metadata: Metadata = {
 };
 
 export default function LatestOffersRewardsPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Latest Offers and Rewards', url: 'https://teenpattigoldgame.com.pk/blog/latest-offers-rewards-teen-patti-gold' },
-  ]);
-
-  const schemaData = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/latest-offers-rewards-teen-patti-gold',
     headline: 'Latest Offers and Rewards on Teen Patti Gold (2026)',
-    description: 'Discover the latest Teen Patti Gold offers and rewards for 2026.',
-    datePublished: '2026-02-24',
-    dateModified: '2026-02-24',
-    author: { '@type': 'Organization', name: 'Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk' },
-    publisher: { '@type': 'Organization', name: 'Teen Patti Gold', logo: { '@type': 'ImageObject', url: LOGO_URL } },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://teenpattigoldgame.com.pk/blog/latest-offers-rewards-teen-patti-gold' },
-  };
+    description: 'Discover the latest Teen Patti Gold offers 2026: 100% welcome bonus, recharge rebate, VIP rebate, daily login rewards, referral program. Complete guide to maximize rewards.',
+    datePublished: '2026-02-05T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp'],
+    keywords: 'teen patti gold offers, teen patti gold rewards 2026, teen patti gold bonus, teen patti gold recharge rebate, teen patti gold VIP rewards',
+    wordCount: 1000,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="blog-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">

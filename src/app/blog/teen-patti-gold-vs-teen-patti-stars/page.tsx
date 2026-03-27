@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold vs Teen Patti Stars 2026 | Which is Better in Pakistan?',
@@ -48,66 +46,21 @@ export const metadata: Metadata = {
 };
 
 export default function ComparisonPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Teen Patti Gold vs Teen Patti Stars', url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-vs-teen-patti-stars' },
-  ]);
-
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Teen Patti Gold vs Teen Patti Stars 2026 | Which is Better in Pakistan?",
-    "description": "Head-to-head comparison of Teen Patti Gold and Teen Patti Stars for Pakistani players.",
-    "datePublished": "2026-03-10",
-    "dateModified": "2026-03-10",
-    "author": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "url": "https://teenpattigoldgame.com.pk"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "logo": { "@type": "ImageObject", "url": LOGO_URL }
-    },
-    "image": LOGO_URL,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teenpattigoldgame.com.pk/blog/teen-patti-gold-vs-teen-patti-stars"
-    }
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is Teen Patti Gold better than Teen Patti Stars?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Teen Patti Gold is generally considered better for Pakistani players due to its larger game variety (30+ games), faster JazzCash/EasyPaisa withdrawals, higher player base, and more frequent bonus events."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which Teen Patti app has more games in Pakistan?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Teen Patti Gold offers 30+ games including Teen Patti, Rummy, Dragon Tiger, Crash, Poker, and more. Teen Patti Stars has a smaller game library focused mainly on Teen Patti and basic card games."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does Teen Patti Gold support JazzCash and EasyPaisa?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Teen Patti Gold fully supports JazzCash and EasyPaisa for both deposits and withdrawals in Pakistan, making it very convenient for Pakistani players."
-        }
-      }
-    ]
-  };
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-vs-teen-patti-stars',
+    headline: 'Teen Patti Gold vs Teen Patti Stars 2026 | Which is Better in Pakistan?',
+    description: 'Comparing Teen Patti Gold vs Teen Patti Stars in 2026. See which app is better for Pakistani players in terms of games, withdrawals, bonuses, and overall experience.',
+    datePublished: '2026-03-10T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
+    keywords: 'teen patti gold vs teen patti stars, best teen patti app pakistan, teen patti comparison 2026, which teen patti app is better',
+    wordCount: 1400,
+    faq: [
+      { question: 'Is Teen Patti Gold better than Teen Patti Stars?', answer: 'Teen Patti Gold is generally considered better for Pakistani players due to its larger game variety (30+ games), faster JazzCash/EasyPaisa withdrawals, higher player base, and more frequent bonus events.' },
+      { question: 'Which Teen Patti app has more games in Pakistan?', answer: 'Teen Patti Gold offers 30+ games including Teen Patti, Rummy, Dragon Tiger, Crash, Poker, and more. Teen Patti Stars has a smaller game library focused mainly on Teen Patti and basic card games.' },
+      { question: 'Does Teen Patti Gold support JazzCash and EasyPaisa?', answer: 'Yes. Teen Patti Gold fully supports JazzCash and EasyPaisa for both deposits and withdrawals in Pakistan, making it very convenient for Pakistani players.' },
+    ],
+  });
 
   const comparisonData = [
     { category: "Number of Games", gold: "30+ games", stars: "10-15 games", winner: "gold" },
@@ -124,9 +77,7 @@ export default function ComparisonPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="blog-post-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
 
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

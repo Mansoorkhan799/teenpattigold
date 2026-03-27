@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'How to Create a Teen Patti Gold Account and Login - Step by Step Guide',
@@ -48,11 +46,16 @@ export const metadata: Metadata = {
 };
 
 export default function CreateAccountLogin() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Create Account and Login', url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login' },
-  ]);
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login',
+    headline: 'How to Create a Teen Patti Gold Account and Login - Step by Step Guide',
+    description: 'Learn how to create your Teen Patti Gold account and login with our step-by-step guide. Get started playing games and earning rewards in minutes.',
+    datePublished: '2026-01-15T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
+    keywords: 'teen patti gold account, teen patti gold login, teen patti gold registration, teen patti gold sign up, create teen patti gold account',
+    wordCount: 900,
+  });
 
   const howToSchema = {
     '@context': 'https://schema.org',
@@ -70,7 +73,7 @@ export default function CreateAccountLogin() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
@@ -279,37 +282,6 @@ export default function CreateAccountLogin() {
         </div>
       </div>
 
-      <Script
-        id="blog-post-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": "How to Create Account and Login - Teen Patti Gold",
-            "description": "Learn how to create an account and login to Teen Patti Gold. Step by step guide for registration and accessing your account.",
-            "datePublished": "2026-01-05T00:00:00Z",
-            "dateModified": new Date().toISOString(),
-            "author": {
-              "@type": "Organization",
-              "name": "Teen Patti Gold Team",
-              "url": "https://teenpattigoldgame.com.pk"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Teen Patti Gold",
-              "logo": {
-                "@type": "ImageObject",
-                "url": LOGO_URL
-              }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login"
-            }
-          })
-        }}
-      />
     </>
   );
 }

@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'How to Play Teen Patti Gold: Complete Gameplay Guide 2026',
@@ -47,33 +46,20 @@ export const metadata: Metadata = {
 };
 
 export default function HowToPlay() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'How to Play Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold' },
-  ]);
-
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "How to Play Teen Patti Gold: Complete Gameplay Guide 2026",
-    "description": "Complete guide on how to play Teen Patti Gold card game with rules, strategies, and winning tips.",
-    "author": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold"
-    },
-    "datePublished": "2026-01-11",
-    "dateModified": "2026-01-11"
-  };
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold',
+    headline: 'How to Play Teen Patti Gold: Complete Gameplay Guide 2026',
+    description: 'Learn how to play Teen Patti Gold card game. Complete guide with rules, strategies, tips, and winning techniques for beginners and advanced players in Pakistan.',
+    datePublished: '2026-01-11T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
+    keywords: 'how to play teen patti gold, teen patti gold rules, teen patti gold gameplay, teen patti gold strategy, teen patti gold tips for beginners',
+    wordCount: 1800,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script
-        id="blog-post-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

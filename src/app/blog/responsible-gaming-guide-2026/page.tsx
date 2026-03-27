@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Responsible Gaming Guide 2026 - Teen Patti Gold',
@@ -41,28 +39,21 @@ export const metadata: Metadata = {
 };
 
 export default function ResponsibleGamingGuidePage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Responsible Gaming Guide 2026', url: 'https://teenpattigoldgame.com.pk/blog/responsible-gaming-guide-2026' },
-  ]);
-
-  const schemaData = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/responsible-gaming-guide-2026',
     headline: 'Responsible Gaming Guide 2026 - Teen Patti Gold',
-    description: 'Learn responsible gaming practices for Teen Patti Gold. Set limits, manage bankroll, and play safely.',
-    datePublished: '2026-02-24',
-    dateModified: '2026-02-24',
-    author: { '@type': 'Organization', name: 'Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk' },
-    publisher: { '@type': 'Organization', name: 'Teen Patti Gold', logo: { '@type': 'ImageObject', url: LOGO_URL } },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://teenpattigoldgame.com.pk/blog/responsible-gaming-guide-2026' },
-  };
+    description: 'Learn responsible gaming practices for Teen Patti Gold 2026. Set limits, manage bankroll, avoid addiction, and play safely. Complete guide for Pakistan players.',
+    datePublished: '2026-02-10T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
+    keywords: 'responsible gaming teen patti gold, teen patti gold safe play, gaming limits pakistan, bankroll management',
+    articleSection: 'Responsible Gaming',
+    wordCount: 900,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="blog-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">

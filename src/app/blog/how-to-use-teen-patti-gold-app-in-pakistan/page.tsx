@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'How to Use Teen Patti Gold App in Pakistan: Complete Beginner\'s Guide 2026',
@@ -41,50 +39,21 @@ export const metadata: Metadata = {
 };
 
 export default function HowToUseApp() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'How to Use Teen Patti Gold App in Pakistan', url: 'https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan' },
-  ]);
-
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "How to Use Teen Patti Gold App in Pakistan: Complete Beginner's Guide 2026",
-    "description": "Complete beginner's guide on how to use Teen Patti Gold app in Pakistan. Learn navigation, gameplay, deposits, withdrawals, and tips for earning real money.",
-    "image": "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
-    "author": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "url": "https://teenpattigoldgame.com.pk"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "logo": {
-        "@type": "ImageObject",
-        "url": LOGO_URL
-      }
-    },
-    "datePublished": "2026-01-10",
-    "dateModified": "2026-01-10",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan"
-    },
-    "articleSection": "Gaming Guide",
-    "keywords": "how to use teen patti gold, teen patti gold app guide, teen patti gold pakistan, beginner guide",
-    "inLanguage": "en-US"
-  };
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan',
+    headline: "How to Use Teen Patti Gold App in Pakistan: Complete Beginner's Guide 2026",
+    description: "Complete beginner's guide on how to use Teen Patti Gold app in Pakistan. Learn navigation, gameplay, deposits, withdrawals, and tips for earning real money in 2026.",
+    datePublished: '2026-01-10T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp'],
+    keywords: 'how to use teen patti gold, teen patti gold app guide, teen patti gold pakistan, teen patti gold beginner guide',
+    articleSection: 'Gaming Guide',
+    wordCount: 1400,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script
-        id="blog-post-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

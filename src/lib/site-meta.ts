@@ -10,7 +10,7 @@
 
 const PKT = '+05:00';
 
-const FALLBACK_ARTICLE_DATE_MODIFIED_YMD = '2026-03-21';
+const FALLBACK_ARTICLE_DATE_MODIFIED_YMD = '2026-03-27';
 
 /** Convert YYYY-MM-DD (or datetime without TZ) to ISO-8601 with Pakistan offset. */
 export function toSchemaDateTimeYmd(dateYmd: string, timeLocal = '12:00:00'): string {

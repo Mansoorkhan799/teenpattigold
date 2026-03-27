@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Is Teen Patti Gold Better for Earning Real Cash? 2026',
@@ -41,28 +39,20 @@ export const metadata: Metadata = {
 };
 
 export default function IsTeenPattiGoldBetterForEarningPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Is Teen Patti Gold Better for Earning Real Cash? 2026', url: 'https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-better-for-earning-real-cash-2026' },
-  ]);
-
-  const schemaData = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-better-for-earning-real-cash-2026',
     headline: 'Is Teen Patti Gold Better for Earning Real Cash? 2026',
-    description: 'Compare Teen Patti Gold with other card games for earning real cash in Pakistan.',
-    datePublished: '2026-02-24',
-    dateModified: '2026-02-24',
-    author: { '@type': 'Organization', name: 'Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk' },
-    publisher: { '@type': 'Organization', name: 'Teen Patti Gold', logo: { '@type': 'ImageObject', url: LOGO_URL } },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-better-for-earning-real-cash-2026' },
-  };
+    description: 'Compare Teen Patti Gold with other card games for earning real cash in Pakistan 2026. 30+ games, JazzCash, EasyPaisa, daily bonuses, referral program. Complete analysis.',
+    datePublished: '2026-02-15T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
+    keywords: 'teen patti gold earn real cash, best card game pakistan earn money, teen patti gold vs other games 2026',
+    wordCount: 1100,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="blog-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">

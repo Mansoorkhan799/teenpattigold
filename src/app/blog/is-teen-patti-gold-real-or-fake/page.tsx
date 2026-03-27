@@ -1,8 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 import Image from 'next/image';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Is Teen Patti Gold Real or Fake to Earn Money? - Complete Guide 2026',
@@ -54,75 +53,24 @@ export const metadata: Metadata = {
 };
 
 export default function TeenPattiGoldRealOrFakePage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Is Teen Patti Gold Real or Fake?', url: 'https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake' },
-  ]);
-
-  // Schema.org structured data for blog post
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Is Teen Patti Gold Real or Fake to Earn Money? - Complete Guide 2026",
-    "description": "Discover if Teen Patti Gold app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps.",
-    "image": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
-    "author": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "url": "https://teenpattigoldgame.com.pk"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "logo": {
-        "@type": "ImageObject",
-        "url": LOGO_URL
-      }
-    },
-    "datePublished": "2026-01-05",
-    "dateModified": "2026-01-05",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake"
-    },
-    "articleSection": "Gaming",
-    "keywords": "Teen Patti Gold real or fake, Teen Patti Gold legit, Teen Patti Gold Pakistan, Teen Patti Gold safety",
-    "articleBody": "Complete guide about Teen Patti Gold legitimacy, payment methods like JazzCash and EasyPaisa, and safety tips for Pakistani players.",
-    "inLanguage": "en-US",
-    "about": {
-      "@type": "Thing",
-      "name": "Teen Patti Gold App Legitimacy"
-    }
-  };
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'Does the Teen Patti Gold app actually pay real money?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Yes, the TeenPattiGold app pays real money, so you can easily withdraw your earnings to your account.' },
-      },
-      {
-        '@type': 'Question',
-        name: 'What are the tips for using Teen Patti Gold safely?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Make sure you have downloaded the Teen Patti Gold app from the official site to earn real money and use strong passwords to protect your account from hackers.' },
-      },
-      {
-        '@type': 'Question',
-        name: "What are the signs that Teen Patti Gold is not fake?",
-        acceptedAnswer: { '@type': 'Answer', text: "If your app doesn't have customer support, a poor-quality UI, no updates, or withdrawal options that aren't clear, it's fake. So always verify by reading reviews." },
-      },
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake',
+    headline: 'Is Teen Patti Gold Real or Fake to Earn Money? - Complete Guide 2026',
+    description: 'Discover if Teen Patti Gold app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps. Complete guide for Pakistani players.',
+    datePublished: '2026-01-15T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
+    keywords: 'teen patti gold real or fake, teen patti gold legit, is teen patti gold safe, teen patti gold withdrawal proof',
+    wordCount: 1600,
+    faq: [
+      { question: 'Does the Teen Patti Gold app actually pay real money?', answer: 'Yes, the Teen Patti Gold app pays real money, so you can easily withdraw your earnings to your account via JazzCash or EasyPaisa.' },
+      { question: 'What are the tips for using Teen Patti Gold safely?', answer: 'Make sure you have downloaded the Teen Patti Gold app from the official site and use strong passwords to protect your account from hackers.' },
+      { question: 'What are the signs that Teen Patti Gold is not fake?', answer: "If the app doesn't have customer support, poor-quality UI, no updates, or unclear withdrawal options, it may be fake. Always verify by reading reviews and downloading from official sources only." },
     ],
-  };
+  });
 
   return (
     <article className="py-12 px-4 md:px-8 max-w-4xl mx-auto">
-      {/* Schema.org JSON-LD - BreadcrumbList + FAQPage for rich results */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm">

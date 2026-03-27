@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold Login Problems and Solutions (2026 Guide)',
@@ -41,39 +39,25 @@ export const metadata: Metadata = {
 };
 
 export default function TeenPattiGoldLoginProblemsPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Login Problems and Solutions', url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-login-problems-solutions' },
-  ]);
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      { '@type': 'Question', name: 'What if I forgot my Teen Patti Gold password?', acceptedAnswer: { '@type': 'Answer', text: 'Tap Forgot Password on the login screen. You will receive an OTP on your registered mobile number to reset your password.' } },
-      { '@type': 'Question', name: 'Why am I not receiving OTP for Teen Patti Gold?', acceptedAnswer: { '@type': 'Answer', text: 'Check your network connection, ensure your mobile number is correct, and try requesting a new OTP. Contact support if the problem persists.' } },
-      { '@type': 'Question', name: 'What if my Teen Patti Gold account is locked?', acceptedAnswer: { '@type': 'Answer', text: 'Wait 30 minutes after multiple failed login attempts, or contact Teen Patti Gold customer support for assistance.' } },
-    ],
-  };
-
-  const schemaData = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-login-problems-solutions',
     headline: 'Teen Patti Gold Login Problems and Solutions (2026 Guide)',
-    description: 'Fix Teen Patti Gold login issues. Complete troubleshooting guide.',
-    datePublished: '2026-02-24',
-    dateModified: '2026-02-24',
-    author: { '@type': 'Organization', name: 'Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk' },
-    publisher: { '@type': 'Organization', name: 'Teen Patti Gold', logo: { '@type': 'ImageObject', url: LOGO_URL } },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-login-problems-solutions' },
-  };
+    description: 'Fix Teen Patti Gold login issues: forgot password, OTP not received, account locked, app crash. Complete troubleshooting guide for 2026.',
+    datePublished: '2026-02-01T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
+    keywords: 'teen patti gold login problems, teen patti gold login issues, teen patti gold forgot password, teen patti gold OTP fix',
+    wordCount: 1000,
+    faq: [
+      { question: 'What if I forgot my Teen Patti Gold password?', answer: 'Tap Forgot Password on the login screen. You will receive an OTP on your registered mobile number to reset your password.' },
+      { question: 'Why am I not receiving OTP for Teen Patti Gold?', answer: 'Check your network connection, ensure your mobile number is correct, and try requesting a new OTP. Contact support if the problem persists.' },
+      { question: 'What if my Teen Patti Gold account is locked?', answer: 'Wait 30 minutes after multiple failed login attempts, or contact Teen Patti Gold customer support for assistance.' },
+    ],
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="blog-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">

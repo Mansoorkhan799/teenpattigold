@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold Latest Version New Features and 2026 Updates',
@@ -41,28 +39,20 @@ export const metadata: Metadata = {
 };
 
 export default function TeenPattiGoldLatestVersionPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Teen Patti Gold Latest Version 2026 Updates', url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-latest-version-2026-updates' },
-  ]);
-
-  const schemaData = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-latest-version-2026-updates',
     headline: 'Teen Patti Gold Latest Version New Features and 2026 Updates',
-    description: 'Discover the latest Teen Patti Gold version V1.656 new features and 2026 updates.',
-    datePublished: '2026-02-24',
-    dateModified: '2026-02-24',
-    author: { '@type': 'Organization', name: 'Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk' },
-    publisher: { '@type': 'Organization', name: 'Teen Patti Gold', logo: { '@type': 'ImageObject', url: LOGO_URL } },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-latest-version-2026-updates' },
-  };
+    description: 'Discover the latest Teen Patti Gold version V1.656 new features, 2026 updates, improved performance, and enhanced security. Download the newest APK for Pakistan.',
+    datePublished: '2026-01-22T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp'],
+    keywords: 'teen patti gold latest version, teen patti gold V1.656, teen patti gold 2026 updates, teen patti gold new features',
+    wordCount: 1000,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="blog-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">

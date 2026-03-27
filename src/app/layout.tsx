@@ -203,35 +203,81 @@ export default function RootLayout({
         <DeferredStyles />
         <ScrollToTop />
         
-        {/* Site-wide Organization schema (rendered server-side for immediate availability) */}
+        {/* Site-wide schema graph (rendered server-side for immediate crawlability) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://teenpattigoldgame.com.pk/#organization",
-              "name": "Teen Patti Gold",
-              "url": "https://teenpattigoldgame.com.pk",
-              "logo": {
-                "@type": "ImageObject",
-                "url": LOGO_URL,
-                "width": 512,
-                "height": 512
-              },
-              "description": "Teen Patti Gold is Pakistan's #1 card gaming platform, offering Teen Patti, Rummy, Dragon Tiger and many other card games with real cash rewards.",
-              "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "PK"
-              },
-              "areaServed": {
-                "@type": "Country",
-                "name": "Pakistan",
-                "identifier": "PK"
-              },
-              "sameAs": [
-                "https://www.facebook.com/teenpattigold",
-                "https://twitter.com/teenpattigold"
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://teenpattigoldgame.com.pk/#organization",
+                  "name": "Teen Patti Gold",
+                  "alternateName": ["Teen Patti Gold Pakistan", "3 Patti Gold", "TeenPattiGold"],
+                  "url": "https://teenpattigoldgame.com.pk",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "@id": "https://teenpattigoldgame.com.pk/#logo",
+                    "url": LOGO_URL,
+                    "contentUrl": LOGO_URL,
+                    "width": 512,
+                    "height": 512,
+                    "caption": "Teen Patti Gold - Pakistan's #1 Card Game"
+                  },
+                  "image": { "@id": "https://teenpattigoldgame.com.pk/#logo" },
+                  "description": "Teen Patti Gold is Pakistan's #1 card gaming platform, offering Teen Patti, Rummy, Dragon Tiger and 30+ card games with real cash rewards via JazzCash and EasyPaisa.",
+                  "foundingDate": "2023",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "PK",
+                    "addressLocality": "Pakistan"
+                  },
+                  "areaServed": {
+                    "@type": "Country",
+                    "name": "Pakistan",
+                    "identifier": "PK"
+                  },
+                  "knowsAbout": [
+                    "Teen Patti",
+                    "Rummy",
+                    "Dragon Tiger",
+                    "Online Card Games",
+                    "Mobile Gaming Pakistan",
+                    "JazzCash Payments",
+                    "EasyPaisa Payments"
+                  ],
+                  "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "support@teenpattigoldgame.com.pk",
+                    "contactType": "customer service",
+                    "areaServed": "PK",
+                    "availableLanguage": ["English", "Urdu"]
+                  },
+                  "sameAs": [
+                    "https://www.facebook.com/teenpattigold",
+                    "https://twitter.com/teenpattigold",
+                    "https://www.youtube.com/@teenpattigold",
+                    "https://www.instagram.com/teenpattigold"
+                  ]
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://teenpattigoldgame.com.pk/#website",
+                  "url": "https://teenpattigoldgame.com.pk/",
+                  "name": "Teen Patti Gold Pakistan",
+                  "description": "Download Teen Patti Gold APK for Pakistan. Play Teen Patti, Rummy, Dragon Tiger and 30+ card games. Earn real money with JazzCash and EasyPaisa withdrawals.",
+                  "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
+                  "inLanguage": ["en-US", "ur-PK"],
+                  "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://teenpattigoldgame.com.pk/blog?q={search_term_string}"
+                    },
+                    "query-input": "required name=search_term_string"
+                  }
+                }
               ]
             })
           }}

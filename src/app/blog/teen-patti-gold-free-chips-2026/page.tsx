@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold Free Chips 2026 | Get Daily Free Chips & Bonus',
@@ -48,66 +46,21 @@ export const metadata: Metadata = {
 };
 
 export default function FreeChipsPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Teen Patti Gold Free Chips 2026', url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-free-chips-2026' },
-  ]);
-
-  const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": "Teen Patti Gold Free Chips 2026 | Get Daily Free Chips & Bonus",
-    "description": "Complete guide to getting free chips in Teen Patti Gold. Daily bonuses, referral rewards, and login chips for Pakistani players.",
-    "datePublished": "2026-03-01",
-    "dateModified": "2026-03-01",
-    "author": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "url": "https://teenpattigoldgame.com.pk"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "logo": { "@type": "ImageObject", "url": LOGO_URL }
-    },
-    "image": LOGO_URL,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teenpattigoldgame.com.pk/blog/teen-patti-gold-free-chips-2026"
-    }
-  };
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How can I get free chips in Teen Patti Gold?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can get free chips in Teen Patti Gold through daily login bonuses, referral rewards, lucky spin, completing tasks, and special event promotions. Log in every day to claim your daily bonus chips."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much are the daily login bonus chips in Teen Patti Gold?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Daily login bonuses in Teen Patti Gold start from 5,000 chips and increase with consecutive logins. A 7-day streak can reward you with up to 50,000+ bonus chips."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I get free chips by referring friends to Teen Patti Gold?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Teen Patti Gold has a referral program where you earn free chips for every friend you invite who registers and plays. Each successful referral earns you bonus chips."
-        }
-      }
-    ]
-  };
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-free-chips-2026',
+    headline: 'Teen Patti Gold Free Chips 2026 | Get Daily Free Chips & Bonus',
+    description: 'Get Teen Patti Gold free chips in 2026. Claim daily bonuses, login rewards, referral chips, and promo codes. Complete guide for Pakistani players to get free chips every day.',
+    datePublished: '2026-03-01T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp'],
+    keywords: 'teen patti gold free chips 2026, teen patti gold daily bonus, free chips teen patti gold pakistan, teen patti gold bonus chips today',
+    wordCount: 1500,
+    faq: [
+      { question: 'How can I get free chips in Teen Patti Gold?', answer: 'You can get free chips in Teen Patti Gold through daily login bonuses, referral rewards, lucky spin, completing tasks, and special event promotions. Log in every day to claim your daily bonus chips.' },
+      { question: 'How much are the daily login bonus chips in Teen Patti Gold?', answer: 'Daily login bonuses in Teen Patti Gold start from 5,000 chips and increase with consecutive logins. A 7-day streak can reward you with up to 50,000+ bonus chips.' },
+      { question: 'Can I get free chips by referring friends to Teen Patti Gold?', answer: 'Yes. Teen Patti Gold has a referral program where you earn free chips for every friend you invite who registers and plays. Each successful referral earns you bonus chips.' },
+    ],
+  });
 
   const freeSources = [
     {
@@ -186,9 +139,7 @@ export default function FreeChipsPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="blog-post-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
 
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

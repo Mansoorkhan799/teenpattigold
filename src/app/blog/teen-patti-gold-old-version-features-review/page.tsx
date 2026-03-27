@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'Teen Patti Gold Old Version: Features Review and Details 2026',
@@ -41,28 +39,20 @@ export const metadata: Metadata = {
 };
 
 export default function TeenPattiGoldOldVersionPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'Teen Patti Gold Old Version Features Review', url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-old-version-features-review' },
-  ]);
-
-  const schemaData = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-old-version-features-review',
     headline: 'Teen Patti Gold Old Version: Features Review and Details 2026',
-    description: 'Complete review of Teen Patti Gold old version features and what made it popular in Pakistan.',
-    datePublished: '2026-02-24',
-    dateModified: '2026-02-24',
-    author: { '@type': 'Organization', name: 'Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk' },
-    publisher: { '@type': 'Organization', name: 'Teen Patti Gold', logo: { '@type': 'ImageObject', url: LOGO_URL } },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-old-version-features-review' },
-  };
+    description: 'Complete review of Teen Patti Gold old version features. Compare classic features, interface, games, and payment methods. Know what made the app popular in Pakistan.',
+    datePublished: '2026-01-20T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
+    keywords: 'teen patti gold old version, teen patti gold features review, 3 patti gold old app, teen patti gold versions',
+    wordCount: 1100,
+  });
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="blog-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">

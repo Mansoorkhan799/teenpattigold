@@ -1,8 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
-import Script from 'next/script';
-import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
+import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: 'How to Claim Your Welcome Bonus on Teen Patti Gold (2026 Guide)',
@@ -41,11 +39,16 @@ export const metadata: Metadata = {
 };
 
 export default function HowToClaimWelcomeBonusPage() {
-  const breadcrumbSchema = getBreadcrumbSchema([
-    BREADCRUMB_HOME,
-    BREADCRUMB_BLOG,
-    { name: 'How to Claim Welcome Bonus', url: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold' },
-  ]);
+  const schemaData = getBlogPostingSchema({
+    url: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
+    headline: 'How to Claim Your Welcome Bonus on Teen Patti Gold (2026 Guide)',
+    description: 'Step-by-step guide to claim your Teen Patti Gold welcome bonus in 2026. Get 100% recharge bonus on first deposit. Learn eligibility, process, and tips.',
+    datePublished: '2026-01-25T09:00:00+05:00',
+    dateModified: '2026-03-27T12:00:00+05:00',
+    image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
+    keywords: 'teen patti gold welcome bonus, teen patti gold first deposit bonus, claim bonus teen patti gold, teen patti gold 100% bonus',
+    wordCount: 900,
+  });
 
   const howToSchema = {
     '@context': 'https://schema.org',
@@ -60,23 +63,10 @@ export default function HowToClaimWelcomeBonusPage() {
     ],
   };
 
-  const schemaData = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'How to Claim Your Welcome Bonus on Teen Patti Gold (2026 Guide)',
-    description: 'Step-by-step guide to claim your Teen Patti Gold welcome bonus.',
-    datePublished: '2026-02-24',
-    dateModified: '2026-02-24',
-    author: { '@type': 'Organization', name: 'Teen Patti Gold', url: 'https://teenpattigoldgame.com.pk' },
-    publisher: { '@type': 'Organization', name: 'Teen Patti Gold', logo: { '@type': 'ImageObject', url: LOGO_URL } },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold' },
-  };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
-      <Script id="blog-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">

@@ -70,47 +70,69 @@ export default function Home() {
         "@type": "WebSite",
         "@id": "https://teenpattigoldgame.com.pk/#website",
         "url": "https://teenpattigoldgame.com.pk/",
-        "name": "Teen Patti Gold - Best Card Game in Pakistan",
-        "description": "Play 30+ card games and earn real money in Pakistan. Download Teen Patti Gold free. Enjoy Teen Patti, Rummy, Dragon Tiger with fast JazzCash and EasyPaisa withdrawals.",
-        "inLanguage": ["en-US", "ur-PK"]
+        "name": "Teen Patti Gold Pakistan",
+        "description": "Download Teen Patti Gold APK free. Play 30+ card games and earn real money in Pakistan. Teen Patti, Rummy, Dragon Tiger with fast JazzCash and EasyPaisa withdrawals.",
+        "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
+        "inLanguage": ["en-US", "ur-PK"],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://teenpattigoldgame.com.pk/blog?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
       },
       {
         "@type": "Organization",
         "@id": "https://teenpattigoldgame.com.pk/#organization",
         "name": "Teen Patti Gold",
+        "alternateName": ["Teen Patti Gold Pakistan", "3 Patti Gold"],
         "url": "https://teenpattigoldgame.com.pk/",
         "logo": {
           "@type": "ImageObject",
+          "@id": "https://teenpattigoldgame.com.pk/#logo",
           "url": LOGO_URL,
+          "contentUrl": LOGO_URL,
           "width": 512,
-          "height": 512
+          "height": 512,
+          "caption": "Teen Patti Gold - Pakistan's #1 Card Game"
         },
+        "image": { "@id": "https://teenpattigoldgame.com.pk/#logo" },
         "sameAs": [
           "https://www.facebook.com/teenpattigold",
-          "https://twitter.com/teenpattigold"
+          "https://twitter.com/teenpattigold",
+          "https://www.youtube.com/@teenpattigold",
+          "https://www.instagram.com/teenpattigold"
         ],
+        "foundingDate": "2023",
+        "knowsAbout": ["Teen Patti", "Rummy", "Dragon Tiger", "Online Card Games", "Mobile Gaming Pakistan"],
         "contactPoint": {
           "@type": "ContactPoint",
           "email": "support@teenpattigoldgame.com.pk",
-          "contactType": "Customer Support",
-          "areaServed": {
-            "@type": "Country",
-            "name": "Pakistan",
-            "identifier": "PK"
-          },
+          "contactType": "customer service",
+          "areaServed": "PK",
           "availableLanguage": ["English", "Urdu"]
         },
         "address": {
           "@type": "PostalAddress",
-          "addressCountry": "PK"
+          "addressCountry": "PK",
+          "addressLocality": "Pakistan"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Pakistan",
+          "identifier": "PK"
         }
       },
       {
         "@type": "SoftwareApplication",
+        "@id": "https://teenpattigoldgame.com.pk/#software",
         "name": "Teen Patti Gold",
         "operatingSystem": "Android 5.0+",
         "applicationCategory": "GameApplication",
         "applicationSubCategory": "Card Game",
+        "url": "https://teenpattigoldgame.com.pk/",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.5",
@@ -134,19 +156,36 @@ export default function Home() {
           "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
           "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp"
         ],
-        "author": {
-          "@type": "Organization",
-          "name": "Teen Patti Gold",
-          "url": "https://teenpattigoldgame.com.pk/"
-        },
+        "author": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
+        "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
         "inLanguage": ["en", "ur"],
+        "review": [
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Ahmed Raza" },
+            "reviewBody": "Best earning app in Pakistan! I withdraw money every week via JazzCash. The games are smooth and the support team is very helpful.",
+            "datePublished": "2026-03-01"
+          },
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Sana Malik" },
+            "reviewBody": "Teen Patti Gold is amazing. I love the Rummy and Dragon Tiger games. Depositing and withdrawing through EasyPaisa is super fast and easy.",
+            "datePublished": "2026-02-15"
+          },
+          {
+            "@type": "Review",
+            "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+            "author": { "@type": "Person", "name": "Bilal Hassan" },
+            "reviewBody": "Great card game with real cash rewards. I started with Rs 200 and made decent earnings. The app is stable and fun to play daily.",
+            "datePublished": "2026-01-20"
+          }
+        ],
         "audience": {
           "@type": "Audience",
           "audienceType": "Gamers in Pakistan",
-          "geographicArea": {
-            "@type": "Country",
-            "name": "Pakistan"
-          }
+          "geographicArea": { "@type": "Country", "name": "Pakistan" }
         }
       },
       {
@@ -376,90 +415,29 @@ export default function Home() {
       },
       {
         "@type": "Article",
+        "@id": "https://teenpattigoldgame.com.pk/#article",
         "headline": "Teen Patti Gold Pakistan v1.656 Download Official APK for Android",
         "description": "Pakistan's top card game platform with 30+ games. Play Teen Patti, Rummy, Dragon Tiger and earn real money. Fast withdrawals via JazzCash and EasyPaisa. 500K+ downloads.",
-        "author": {
-          "@type": "Organization",
-          "name": "Teen Patti Gold",
-          "url": "https://teenpattigoldgame.com.pk/"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Teen Patti Gold",
-          "logo": {
-            "@type": "ImageObject",
-            "url": LOGO_URL
-          }
-        },
+        "author": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
+        "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
         "datePublished": SITE_ARTICLE_DATE_PUBLISHED,
         "dateModified": articleDateModified,
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://teenpattigoldgame.com.pk/#webpage"
-        },
+        "mainEntityOfPage": { "@id": "https://teenpattigoldgame.com.pk/#webpage" },
+        "isPartOf": { "@id": "https://teenpattigoldgame.com.pk/#website" },
         "image": [
           LOGO_URL,
           "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
-          "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp"
+          "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
+          "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp"
         ],
         "articleSection": "Gaming",
-        "keywords": "Teen Patti Gold, Teen Patti Gold Pakistan, Teen Patti Gold APK, Teen Patti Gold download, card game Pakistan, earn money games",
+        "keywords": "Teen Patti Gold, Teen Patti Gold Pakistan, Teen Patti Gold APK, Teen Patti Gold download, card game Pakistan, earn money games, teen patti gold apk download, 3 patti gold",
         "inLanguage": "en-US",
+        "wordCount": 2500,
         "about": {
-          "@type": "Thing",
-          "name": "Teen Patti Gold",
-          "description": "Online card game application for playing Teen Patti, Rummy, Dragon Tiger and earning real money in Pakistan"
+          "@type": "SoftwareApplication",
+          "@id": "https://teenpattigoldgame.com.pk/#software"
         }
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Teen Patti Gold",
-        "applicationCategory": "GameApplication",
-        "operatingSystem": "Android 5.0+",
-        "review": [
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Ahmed Raza"
-            },
-            "reviewBody": "Best earning app in Pakistan! I withdraw money every week via JazzCash. The games are smooth and the support team is very helpful.",
-            "datePublished": "2026-03-01"
-          },
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Sana Malik"
-            },
-            "reviewBody": "Teen Patti Gold is amazing. I love the Rummy and Dragon Tiger games. Depositing and withdrawing through EasyPaisa is super fast and easy.",
-            "datePublished": "2026-02-15"
-          },
-          {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "4",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Bilal Hassan"
-            },
-            "reviewBody": "Great card game with real cash rewards. I started with Rs 200 and made decent earnings. The app is stable and fun to play daily.",
-            "datePublished": "2026-01-20"
-          }
-        ]
       }
     ]
   };
