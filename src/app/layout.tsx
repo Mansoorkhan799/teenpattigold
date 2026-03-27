@@ -162,8 +162,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href={FAVICON_URL} type="image/x-icon" />
         <link rel="icon" href={LOGO_URL} type="image/webp" sizes="512x512" />
         <link rel="apple-touch-icon" href={LOGO_URL} sizes="180x180" />
-        {/* Preload hero logo for LCP */}
-        <link rel="preload" as="image" href={LOGO_URL} />
+        {/* Note: logo LCP preload is handled automatically by Next.js Image priority={true} in Header */}
         {/* Image hint for older scrapers that don't read OG tags */}
         <link rel="image_src" href="https://teenpattigoldgame.com.pk/opengraph-image" />
         

@@ -28,8 +28,8 @@ export default function Header() {
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        {/* Desktop Navigation — only shown at lg (1024px+) to avoid overflow on tablets */}
+        <nav className="hidden lg:flex space-x-8">
           <Link href="/" className="text-white hover:text-accent font-medium transition-colors">
             Home
           </Link>

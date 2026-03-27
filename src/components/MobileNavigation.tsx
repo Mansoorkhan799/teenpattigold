@@ -15,7 +15,7 @@ export default function MobileNavigation() {
 
   if (!mounted) {
     return (
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <button 
           className="flex items-center text-accent p-1"
           aria-label="Open menu"
@@ -36,7 +36,7 @@ export default function MobileNavigation() {
   }
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       {/* Mobile menu button */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
