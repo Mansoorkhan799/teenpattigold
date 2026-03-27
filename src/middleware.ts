@@ -3,16 +3,16 @@ import { NextResponse } from 'next/server';
 export function middleware() {
   const response = NextResponse.next();
 
-  // Add security headers
+  // Security headers
   response.headers.set('X-DNS-Prefetch-Control', 'on');
   response.headers.set('Strict-Transport-Security', 'max-age=63072000; includeSubDomains; preload');
   response.headers.set('X-XSS-Protection', '1; mode=block');
-  response.headers.set('X-Frame-Options', 'SAMEORIGIN');
+  // X-Frame-Options removed — frame-ancestors in CSP is the modern equivalent and takes precedence
   response.headers.set('X-Content-Type-Options', 'nosniff');
   response.headers.set('Referrer-Policy', 'origin-when-cross-origin');
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
 
-  // Add CSP header
+  // CSP: frame-ancestors 'none' blocks all framing (replaces X-Frame-Options)
   response.headers.set(
     'Content-Security-Policy',
     `default-src 'self';` +

@@ -24,10 +24,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Latest Offers and Rewards on Teen Patti Gold (2026)',
     description: 'Discover the latest Teen Patti Gold offers: welcome bonus, recharge rebate, VIP rewards, referral program.',
+    url: 'https://teenpattigoldgame.com.pk/blog/latest-offers-rewards-teen-patti-gold',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: LOGO_URL, width: 1200, height: 630, alt: 'Teen Patti Gold Offers and Rewards 2026' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Latest Teen Patti Gold Offers and Rewards 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Latest Offers and Rewards on Teen Patti Gold (2026)',
+    description: 'Discover the latest Teen Patti Gold offers: welcome bonus, recharge rebate, VIP rewards, referral program.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 

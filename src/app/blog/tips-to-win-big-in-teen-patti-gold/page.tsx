@@ -24,15 +24,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Tips to Win Big in Teen Patti Gold - Expert Strategies',
     description: 'Discover expert strategies and tips to maximize your winnings in Teen Patti, Rummy, and other card games.',
+    url: 'https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-01-05T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: LOGO_URL,
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Tips to Win Big in Teen Patti Gold',
+        alt: 'Tips to Win Big in Teen Patti Gold - Expert Strategies 2026',
       },
     ],
   },
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tips to Win Big in Teen Patti Gold - Expert Strategies',
     description: 'Discover expert strategies and tips to maximize your winnings in Teen Patti, Rummy, and other card games.',
-    images: [LOGO_URL],
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
 

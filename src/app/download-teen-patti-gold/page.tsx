@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: LOGO_URL,
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: "Download Teenpatti Gold APK",
+        alt: "Download Teen Patti Gold APK - Free Card Game for Android",
       }
     ],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: 'Download Teen Patti Gold Game Free APK For Android',
     description: 'Download Teen Patti Gold APK free. Play Teen Patti, Rummy & more. Earn real cash with secure payments. 600K+ downloads!',
-    images: [LOGO_URL],
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 

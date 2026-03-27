@@ -24,15 +24,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Teen Patti Gold Referral Code Pakistan 2026 | Earn Bonus with Referrals',
     description: 'Complete guide on Teen Patti Gold referral codes in Pakistan. Learn how to share your code, earn chips, and maximize referral rewards.',
+    url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-referral-code-pakistan',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-03-05T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: LOGO_URL,
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Teen Patti Gold Referral Code Pakistan 2026',
+        alt: 'Teen Patti Gold Referral Code Pakistan 2026 - Earn Bonus Chips',
       },
     ],
   },
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Teen Patti Gold Referral Code Pakistan 2026',
     description: 'Complete guide on Teen Patti Gold referral codes in Pakistan. Learn how to share your code and earn bonus chips.',
-    images: [LOGO_URL],
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
 

@@ -21,6 +21,21 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/blog',
   },
+  openGraph: {
+    title: 'Teen Patti Gold Blog - Guides, Tips & Tutorials',
+    description: 'Learn how to create an account, earn money, and get the most out of Teen Patti Gold with our helpful guides and tutorials.',
+    url: 'https://teenpattigoldgame.com.pk/blog',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
+    type: 'website',
+    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Teen Patti Gold Blog - Guides & Tips 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Teen Patti Gold Blog - Guides, Tips & Tutorials',
+    description: 'Learn how to create an account, earn money, and get the most out of Teen Patti Gold with our helpful guides and tutorials.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+  },
 };
 
 const blogBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_BLOG]);

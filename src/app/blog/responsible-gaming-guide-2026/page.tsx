@@ -24,10 +24,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Responsible Gaming Guide 2026 - Teen Patti Gold',
     description: 'Learn responsible gaming practices for Teen Patti Gold. Set limits, manage bankroll, and play safely.',
+    url: 'https://teenpattigoldgame.com.pk/blog/responsible-gaming-guide-2026',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: LOGO_URL, width: 1200, height: 630, alt: 'Responsible Gaming Guide Teen Patti Gold' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Responsible Gaming Guide 2026 - Teen Patti Gold Pakistan' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Responsible Gaming Guide 2026 - Teen Patti Gold',
+    description: 'Learn responsible gaming practices for Teen Patti Gold. Set limits, manage bankroll, and play safely.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 

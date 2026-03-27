@@ -24,15 +24,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Teen Patti Gold vs Teen Patti Stars 2026 | Which is Better in Pakistan?',
     description: 'Head-to-head comparison of Teen Patti Gold and Teen Patti Stars for Pakistani players. Games, withdrawals, bonuses, security, and more.',
+    url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-vs-teen-patti-stars',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-03-10T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: LOGO_URL,
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Teen Patti Gold vs Teen Patti Stars',
+        alt: 'Teen Patti Gold vs Teen Patti Stars 2026 - Which is Better in Pakistan?',
       },
     ],
   },
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Teen Patti Gold vs Teen Patti Stars 2026 | Which is Better?',
     description: 'Head-to-head comparison for Pakistani players. Games, withdrawals, bonuses, and overall experience.',
-    images: [LOGO_URL],
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
 

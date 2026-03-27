@@ -24,15 +24,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Create Account and Login - Teen Patti Gold',
     description: 'Learn how to create an account and login to Teen Patti Gold. Step by step guide for registration and accessing your account.',
+    url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-01-05T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: LOGO_URL,
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Teen Patti Gold - Create Account and Login',
+        alt: 'How to Create Teen Patti Gold Account and Login Guide',
       },
     ],
   },
@@ -40,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'How to Create Account and Login - Teen Patti Gold',
     description: 'Learn how to create an account and login to Teen Patti Gold. Step by step guide for registration and accessing your account.',
-    images: [LOGO_URL],
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
 

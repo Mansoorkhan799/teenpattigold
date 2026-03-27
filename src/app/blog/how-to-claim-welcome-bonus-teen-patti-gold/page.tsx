@@ -24,10 +24,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Claim Your Welcome Bonus on Teen Patti Gold (2026 Guide)',
     description: 'Step-by-step guide to claim your Teen Patti Gold welcome bonus. Get 100% recharge bonus on first deposit.',
+    url: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: LOGO_URL, width: 1200, height: 630, alt: 'Teen Patti Gold Welcome Bonus' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'How to Claim Teen Patti Gold Welcome Bonus 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Claim Your Welcome Bonus on Teen Patti Gold (2026 Guide)',
+    description: 'Step-by-step guide to claim your Teen Patti Gold welcome bonus. Get 100% recharge bonus on first deposit.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 

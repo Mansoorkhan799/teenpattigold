@@ -24,10 +24,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Teen Patti Gold Old Version: Features Review and Details 2026',
     description: 'Complete review of Teen Patti Gold old version features. Compare classic features and what made the app popular in Pakistan.',
+    url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-old-version-features-review',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: LOGO_URL, width: 1200, height: 630, alt: 'Teen Patti Gold Old Version Review' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Teen Patti Gold Old Version Features Review 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Teen Patti Gold Old Version: Features Review and Details 2026',
+    description: 'Complete review of Teen Patti Gold old version features. Compare classic features and what made the app popular in Pakistan.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 

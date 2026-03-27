@@ -24,10 +24,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Teen Patti Gold Login Problems and Solutions (2026 Guide)',
     description: 'Fix Teen Patti Gold login issues. Complete troubleshooting guide for forgot password, OTP, account locked, and more.',
+    url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-login-problems-solutions',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: LOGO_URL, width: 1200, height: 630, alt: 'Teen Patti Gold Login Problems Solutions' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Teen Patti Gold Login Problems and Solutions Guide 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Teen Patti Gold Login Problems and Solutions (2026 Guide)',
+    description: 'Fix Teen Patti Gold login issues. Complete troubleshooting guide for forgot password, OTP, account locked, and more.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 

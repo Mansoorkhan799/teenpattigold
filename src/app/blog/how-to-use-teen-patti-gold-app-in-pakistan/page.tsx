@@ -24,10 +24,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Use Teen Patti Gold App in Pakistan: Complete Beginner\'s Guide 2026',
     description: 'Complete beginner\'s guide on how to use Teen Patti Gold app in Pakistan. Learn navigation, gameplay, deposits, withdrawals, and tips for earning real money.',
+    url: 'https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-01-10T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'How to Use Teen Patti Gold App in Pakistan 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Use Teen Patti Gold App in Pakistan: Complete Beginner\'s Guide 2026',
+    description: 'Complete beginner\'s guide on how to use Teen Patti Gold app in Pakistan. Learn navigation, gameplay, deposits, withdrawals, and tips for earning real money.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
 

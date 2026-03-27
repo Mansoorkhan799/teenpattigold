@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: LOGO_URL,
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Is Teen Patti Gold Real or Fake',
+        alt: 'Is Teen Patti Gold Real or Fake - Complete Truth Guide 2026',
       },
     ],
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Is Teen Patti Gold Real or Fake to Earn Money?',
     description: 'Complete guide about Teen Patti Gold legitimacy, payment methods, and safety tips for Pakistani players.',
-    images: [LOGO_URL],
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 

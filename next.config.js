@@ -39,7 +39,7 @@ const nextConfig = {
     return [
       {
         source: '/.well-known/:path*',
-        destination: '/public/.well-known/:path*',
+        destination: '/.well-known/:path*',
       },
       // API route takes precedence over static file for robots.txt
       {
@@ -57,26 +57,10 @@ const nextConfig = {
   // Optimize headers
   async headers() {
     return [
-      {
-        source: '/robots.txt',
-        headers: [
-          {
-            key: 'Content-Type',
-            value: 'text/plain; charset=utf-8',
-          },
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=86400, s-maxage=86400',
-          },
-        ],
-      },
+      // Security headers applied globally
       {
         source: '/:path*',
         headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
           {
             key: 'X-DNS-Prefetch-Control',
             value: 'on',
@@ -91,8 +75,29 @@ const nextConfig = {
           },
         ],
       },
+      // HTML pages: short cache so content updates propagate quickly
+      {
+        source: '/:path((?!_next|api|.*\\..*).*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, no-cache, must-revalidate',
+          },
+        ],
+      },
+      // Immutable cache for versioned Next.js static assets
       {
         source: '/_next/static/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // Immutable cache for public static files (images, icons)
+      {
+        source: '/:path(.*\\.(?:webp|png|jpg|jpeg|ico|svg|woff2|woff)$)',
         headers: [
           {
             key: 'Cache-Control',
@@ -110,6 +115,19 @@ const nextConfig = {
           {
             key: 'Content-Type',
             value: 'text/css',
+          },
+        ],
+      },
+      {
+        source: '/robots.txt',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'text/plain; charset=utf-8',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=86400, s-maxage=86400',
           },
         ],
       },
@@ -180,8 +198,8 @@ const nextConfig = {
     optimizePackageImports: ['react-icons'],
   },
   
-  // Production source maps for better debugging
-  productionBrowserSourceMaps: true,
+  // Source maps disabled in production to protect source code and reduce bundle size
+  productionBrowserSourceMaps: false,
   
   // Modern module/nomodule pattern
   modularizeImports: {

@@ -24,10 +24,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Is Teen Patti Gold Better for Earning Real Cash? 2026',
     description: 'Compare Teen Patti Gold with other card games for earning real cash in Pakistan. 30+ games, easy payments, bonuses.',
+    url: 'https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-better-for-earning-real-cash-2026',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: LOGO_URL, width: 1200, height: 630, alt: 'Teen Patti Gold Earning Real Cash 2026' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Is Teen Patti Gold Better for Earning Real Cash 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Is Teen Patti Gold Better for Earning Real Cash? 2026',
+    description: 'Compare Teen Patti Gold with other card games for earning real cash in Pakistan. 30+ games, easy payments, bonuses.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 

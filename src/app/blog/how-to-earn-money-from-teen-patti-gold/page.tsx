@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { LOGO_URL } from '@/lib/site-images';
 import Script from 'next/script';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 
@@ -24,15 +23,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
     description: 'Learn proven methods to earn real money from Teen Patti Gold with winning strategies, bonuses, and tips.',
+    url: 'https://teenpattigoldgame.com.pk/blog/how-to-earn-money-from-teen-patti-gold',
+    siteName: 'Teen Patti Gold',
+    locale: 'en_US',
     type: 'article',
     publishedTime: '2026-01-12T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: LOGO_URL,
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'How to Earn Money from Teen Patti Gold',
+        alt: 'How to Earn Money from Teen Patti Gold - Complete Guide 2026',
       },
     ],
   },
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
     description: 'Learn proven methods to earn real money from Teen Patti Gold with winning strategies, bonuses, and tips.',
-    images: [LOGO_URL],
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
 

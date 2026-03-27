@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     "casino card game pakistan",
     "play cards online pakistan"
   ],
-  authors: [{ name: "Teenpatti Gold Team" }],
-  creator: "Teenpatti Gold",
-  publisher: "Teenpatti Gold",
+  authors: [{ name: "Teen Patti Gold Team" }],
+  creator: "Teen Patti Gold",
+  publisher: "Teen Patti Gold",
   robots: {
     index: true,
     follow: true,
@@ -80,30 +80,25 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: LOGO_URL,
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: "Teenpatti Gold - Premier Card Gaming Platform",
+        alt: "Teen Patti Gold - Pakistan's #1 Card Game App. Download free APK.",
       },
-      {
-        url: LOGO_URL,
-        width: 800,
-        height: 800,
-        alt: "Teenpatti Gold - Premier Card Gaming Platform",
-      }
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Teen Patti Gold Pakistan v1.656 Download Official APK for Android",
     description: "Pakistan's #1 card game app with 30+ games. Play Teen Patti, Rummy, Dragon Tiger. Earn real money with fast withdrawals via JazzCash and EasyPaisa.",
+    site: "@teenpattigold",
     creator: "@teenpattigold",
     images: [
       {
-        url: LOGO_URL,
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
-        height: 600,
-        alt: "Teenpatti Gold - Premier Card Gaming Platform",
+        height: 630,
+        alt: "Teen Patti Gold - Pakistan's #1 Card Game App",
       }
     ],
   },
@@ -167,16 +162,10 @@ export default function RootLayout({
         <link rel="shortcut icon" href={FAVICON_URL} type="image/x-icon" />
         <link rel="icon" href={LOGO_URL} type="image/webp" sizes="512x512" />
         <link rel="apple-touch-icon" href={LOGO_URL} sizes="180x180" />
-        <meta property="og:image" content={LOGO_URL} />
-        <meta property="og:image:secure_url" content={LOGO_URL} />
-        <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
-        <meta property="og:image:alt" content="Teen Patti Gold - Pakistan's #1 card game app. Download free." />
+        {/* Preload hero logo for LCP */}
         <link rel="preload" as="image" href={LOGO_URL} />
-        {/* Additional image meta tags for better indexing */}
-        <meta name="image" content={LOGO_URL} />
-        <link rel="image_src" href={LOGO_URL} />
+        {/* Image hint for older scrapers that don't read OG tags */}
+        <link rel="image_src" href="https://teenpattigoldgame.com.pk/opengraph-image" />
         
         {/* Google Analytics - Set NEXT_PUBLIC_GA_ID in .env.local to enable */}
         {process.env.NEXT_PUBLIC_GA_ID && (
@@ -215,15 +204,14 @@ export default function RootLayout({
         <DeferredStyles />
         <ScrollToTop />
         
-        {/* Structured data for Organization */}
-        <Script
-          id="organization-schema"
+        {/* Site-wide Organization schema (rendered server-side for immediate availability) */}
+        <script
           type="application/ld+json"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": "https://teenpattigoldgame.com.pk/#organization",
               "name": "Teen Patti Gold",
               "url": "https://teenpattigoldgame.com.pk",
               "logo": {
@@ -243,49 +231,9 @@ export default function RootLayout({
                 "identifier": "PK"
               },
               "sameAs": [
-                "https://facebook.com/teenpattigold",
+                "https://www.facebook.com/teenpattigold",
                 "https://twitter.com/teenpattigold"
               ]
-            })
-          }}
-        />
-        
-        {/* Structured data for SoftwareApplication */}
-        <Script
-          id="app-schema"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "name": "Teen Patti Gold",
-              "operatingSystem": "Android",
-              "applicationCategory": "GameApplication",
-              "applicationSubCategory": "Card Game",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "PKR",
-                "availability": "https://schema.org/InStock"
-              },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "ratingCount": "300000",
-                "bestRating": "5",
-                "worstRating": "1"
-              },
-              "audience": {
-                "@type": "Audience",
-                "audienceType": "Gamers in Pakistan",
-                "geographicArea": {
-                  "@type": "Country",
-                  "name": "Pakistan",
-                  "identifier": "PK"
-                }
-              },
-              "inLanguage": ["en", "ur"]
             })
           }}
         />
