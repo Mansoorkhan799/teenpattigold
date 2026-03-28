@@ -18,14 +18,20 @@ export const metadata: Metadata = {
     "teen patti gold download",
     "teen patti gold app",
     "3 patti gold",
+    "3 patti gold pakistan",
+    "3 patti gold download",
+    "3 patti gold apk",
+    "3 patti gold game",
+    "teen patti gold withdrawal",
+    "teen patti gold jazzcash",
+    "teen patti gold easypaisa",
+    "teen patti gold referral agent",
     "online card games pakistan",
     "earn money playing cards",
     "best card game pakistan",
     "rummy game pakistan",
     "dragon tiger game",
-    "earn money games pakistan",
-    "casino card game pakistan",
-    "play cards online pakistan"
+    "earn money games pakistan"
   ],
   openGraph: {
     title: 'Teen Patti Gold Pakistan v1.656 Download Official APK for Android',
@@ -466,11 +472,11 @@ export default function Home() {
             
             {/* Short intro on mobile so the download button stays above the fold */}
             <p className="text-base text-gray-300 leading-relaxed md:hidden">
-              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> is Pakistan&apos;s premier online card game platform, where you can play more than 30+ exciting casino games. Card Rummy offers the best card gaming experience with attractive graphics, smooth gameplay, and real cash rewards. So download now, start playing, and win real money with fast withdrawals via JazzCash and Easy Paisa.
+              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> — also called <strong className="text-white">3 Patti Gold</strong> — is Pakistan&apos;s premier online card game platform with 30+ exciting games. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
             </p>
             {/* Full intro on tablet/desktop */}
             <p className="hidden md:block text-lg text-gray-300 leading-relaxed">
-              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> is Pakistan&apos;s premier online card game platform, where you can play more than 30+ exciting casino games. Card Rummy offers the best card gaming experience with attractive graphics, smooth gameplay, and real cash rewards. So download now, start playing, and win real money with fast withdrawals via JazzCash and Easy Paisa.
+              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> — also called <strong className="text-white">3 Patti Gold</strong> — is Pakistan&apos;s premier online card game platform with 30+ exciting games including Teen Patti, Rummy, and Dragon Tiger. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
             </p>
 
             {/* Download Button */}
@@ -624,7 +630,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Overview</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              The platform is divided into various sections — card games, slots, poker, and many others — making it easy to find what you enjoy. With modern graphics, smooth gameplay, and an intuitive interface, it suits both beginners and experienced players. You can earn significant money even by investing a small amount, and win real cash rewards or bonuses for free. Download Teen Patti Gold APK safely and start playing your favorite online card games to earn real cash.
+              <strong className="text-white">3 Patti Gold</strong> (Teen Patti Gold) is divided into various sections — card games, slots, poker, and many others — making it easy to find what you enjoy. With modern graphics, smooth gameplay, and an intuitive interface, it suits both beginners and experienced players. You can earn significant money even by investing a small amount, and win real cash rewards or bonuses for free. Download <strong className="text-white">3 Patti Gold APK</strong> safely and start playing your favorite online card games to earn real cash.
             </p>
           </div>
         </div>
@@ -633,10 +639,10 @@ export default function Home() {
       {/* What is Teen Patti Gold APK Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">What is Teen Patti Gold?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">What is Teen Patti Gold (3 Patti Gold)?</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">Teen Patti Gold</strong> is Pakistan&apos;s most popular online card game platform that combines classic games like Teen Patti, Rummy, and Dragon Tiger with modern gaming technology. It delivers a safe, secure, and exciting experience where you can play different card games and earn real money. The platform has become the go-to choice for card game enthusiasts who want beautiful design, simple settings, and easy gameplay.
+              <strong className="text-white">Teen Patti Gold</strong> — widely known as <strong className="text-white">3 Patti Gold</strong> — is Pakistan&apos;s most popular online card game platform that combines classic games like Teen Patti, Rummy, and Dragon Tiger with modern gaming technology. It delivers a safe, secure, and exciting experience where you can play different card games and earn real money. The 3 Patti Gold app has become the go-to choice for card game enthusiasts who want beautiful design, simple settings, and easy gameplay.
             </p>
             <p className="text-gray-300 leading-relaxed">
               You can withdraw winnings or deposit money anytime using local payment methods like JazzCash and EasyPaisa (and bank card where supported). New players receive a deposit bonus on their first recharge. With attractive visuals, a user-friendly interface, and exciting offers, this is one of the most engaging casino-style card game apps available in Pakistan today.
@@ -648,13 +654,13 @@ export default function Home() {
       {/* Why Teen Patti Gold Game so Popular Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Why Is This Game So Popular in Pakistan?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Why Is 3 Patti Gold So Popular in Pakistan?</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              The app is popular because it lets you earn real money while having fun. Simple rules make it easy to understand, especially for beginners. The beautiful, colorful design gives you a real casino experience right on your phone. Players love hassle-free deposits and withdrawals through EasyPaisa and JazzCash without any delays.
+              <strong className="text-white">3 Patti Gold</strong> is popular because it lets you earn real money while having fun. Simple rules make it easy to understand, especially for beginners. The beautiful, colorful design gives you a real casino experience right on your phone. Players love hassle-free deposits and withdrawals through EasyPaisa and JazzCash without any delays — with a minimum withdrawal of just <strong className="text-white">Rs 100</strong>.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              With exciting games like Teen Patti, Dragon vs Tiger, Poker, Rummy, and Slots, you never feel bored. Daily bonuses and rewards help you earn coins and extra cash. The platform is safe, secure, and runs smoothly even on low-storage devices — making it accessible to everyone.
+              With exciting games like Teen Patti, Dragon vs Tiger, Poker, Rummy, and Slots, you never feel bored. Daily bonuses and rewards help you earn coins and extra cash. The 3 Patti Gold platform is safe, secure, and runs smoothly even on low-storage devices — making it accessible to everyone across Pakistan.
             </p>
           </div>
         </div>
@@ -1174,18 +1180,34 @@ export default function Home() {
       {/* How to Withdraw Money */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
           <div className="bg-secondary rounded-xl p-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">How to Withdraw Money?</h2>
-            <p className="text-gray-300 mb-4">Follow these steps to <Link href="/withdraw-money-from-teen-patti-gold" className="text-[#a78bfa] hover:underline font-medium">withdraw your winnings</Link>:</p>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">3 Patti Gold Cash Withdrawal — JazzCash &amp; EasyPaisa</h2>
+
+            {/* Withdrawal callout cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+              <div className="bg-[#0A1029] rounded-lg p-4 text-center border border-green-500/30">
+                <p className="text-green-400 font-bold text-xl">Rs 100</p>
+                <p className="text-gray-400 text-sm mt-1">Minimum Withdrawal</p>
+              </div>
+              <div className="bg-[#0A1029] rounded-lg p-4 text-center border border-[#FFA500]/30">
+                <p className="text-[#FFA500] font-bold text-xl">3–24 Hours</p>
+                <p className="text-gray-400 text-sm mt-1">Processing Time</p>
+              </div>
+              <div className="bg-[#0A1029] rounded-lg p-4 text-center border border-blue-500/30">
+                <p className="text-blue-400 font-bold text-xl">JazzCash / EasyPaisa</p>
+                <p className="text-gray-400 text-sm mt-1">Supported Methods</p>
+              </div>
+            </div>
+
+            <p className="text-gray-300 mb-4">Follow these steps to <Link href="/withdraw-money-from-teen-patti-gold" className="text-[#a78bfa] hover:underline font-medium">withdraw your 3 Patti Gold winnings</Link>:</p>
                 <ol className="list-decimal pl-5 space-y-3 text-gray-300">
               <li>Open the app and log in to your account.</li>
               <li>Click on the Wallet option that is available on the main screen.</li>
               <li>In the wallet section, click on the Withdrawal option.</li>
               <li>Choose your payment method: JazzCash, EasyPaisa, or Bank Card (bank transfer).</li>
-              <li>Now enter the amount that you want to withdraw.</li>
-              <li>Enter some required details, like the account number.</li>
+              <li>Enter the amount you want to withdraw (minimum Rs 100).</li>
+              <li>Enter your mobile number linked to JazzCash or EasyPaisa.</li>
               <li>Double-check all entered details and click on Confirm.</li>
-              <li>Wait a few seconds to complete the withdrawal process.</li>
-              <li>Once complete, that money will be shown in your selected payment method.</li>
+              <li>Wait 3–24 hours for the funds to appear in your wallet.</li>
                 </ol>
           </div>
       </section>
@@ -1315,6 +1337,41 @@ export default function Home() {
             <li><strong>Download from Official Sources:</strong> Only download from trusted sources to protect your personal data and money.</li>
           </ul>
           </div>
+        </div>
+      </section>
+
+      {/* 3 Patti Gold Referral Agent Program */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-xl p-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-accent">3 Patti Gold Referral Agent Program — Earn Without Playing</h2>
+          <p className="text-gray-300 mb-6">
+            The <strong className="text-white">3 Patti Gold Agent Program</strong> lets you earn passive income by inviting new players. Every time someone registers and plays through your referral link, you automatically receive a commission — no deposit required on your part.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="bg-[#0A1029] p-5 rounded-lg">
+              <h3 className="text-lg font-semibold mb-3 text-[#FFA500]">How to Become a 3 Patti Gold Agent</h3>
+              <ol className="list-decimal pl-5 space-y-2 text-gray-300 text-sm">
+                <li>Open Teen Patti Gold and go to the <strong className="text-white">Refer &amp; Earn</strong> section.</li>
+                <li>Register for the Agent Program and create your agent account.</li>
+                <li>Copy your unique referral link or code.</li>
+                <li>Share it on WhatsApp, Facebook, YouTube, or gaming groups.</li>
+                <li>Earn commission automatically when referrals play and deposit.</li>
+              </ol>
+            </div>
+            <div className="bg-[#0A1029] p-5 rounded-lg">
+              <h3 className="text-lg font-semibold mb-3 text-[#FFA500]">Agent Program Benefits</h3>
+              <ul className="list-disc pl-5 space-y-2 text-gray-300 text-sm">
+                <li>Earn commission on every active referral — daily, weekly, monthly.</li>
+                <li>Withdraw your agent earnings via JazzCash or EasyPaisa.</li>
+                <li>Minimum agent withdrawal: <strong className="text-white">Rs 100</strong>.</li>
+                <li>No limit on the number of referrals — the more you invite, the more you earn.</li>
+                <li>Promote via social media, YouTube, or WhatsApp groups for maximum reach.</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-gray-400 text-sm">
+            Tip: Create gameplay videos or guides and share your 3 Patti Gold referral link in the description. This is the fastest way to build a large referral network and earn consistent income.
+          </p>
         </div>
       </section>
 
