@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     url: 'https://teenpattigoldgame.com.pk/',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
-    alternateLocale: ['ur_PK'],
     type: 'website',
     images: [
       {
@@ -59,10 +58,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/',
     languages: {
-      'en': 'https://teenpattigoldgame.com.pk/',
-      'ur': 'https://teenpattigoldgame.com.pk/'
-    }
-  }
+      en: 'https://teenpattigoldgame.com.pk/',
+      'x-default': 'https://teenpattigoldgame.com.pk/',
+    },
+  },
 };
 
 export default function Home() {
@@ -79,7 +78,7 @@ export default function Home() {
         "name": "Teen Patti Gold Pakistan",
         "description": "Download Teen Patti Gold APK free. Play 30+ card games and earn real money in Pakistan. Teen Patti, Rummy, Dragon Tiger with fast JazzCash and EasyPaisa withdrawals.",
         "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
-        "inLanguage": ["en-US", "ur-PK"],
+        "inLanguage": "en-US",
         "potentialAction": {
           "@type": "SearchAction",
           "target": {

@@ -76,7 +76,6 @@ export const metadata: Metadata = {
     url: "https://teenpattigoldgame.com.pk",
     siteName: "Teen Patti Gold",
     locale: "en_US",
-    alternateLocale: ["ur_PK"],
     type: "website",
     images: [
       {
@@ -107,10 +106,6 @@ export const metadata: Metadata = {
   classification: "Card Gaming Platform",
   alternates: {
     canonical: "https://teenpattigoldgame.com.pk/",
-    languages: {
-      'en': 'https://teenpattigoldgame.com.pk/',
-      'ur': 'https://teenpattigoldgame.com.pk/'
-    }
   },
   formatDetection: {
     telephone: false,
@@ -129,10 +124,7 @@ export default function RootLayout({
       <head>
         {/* Critical CSS - minimal above-the-fold styles to prevent FOUC while full CSS loads */}
         <style dangerouslySetInnerHTML={{ __html: 'body{color:rgb(255,255,255);background:#06091f;margin:0;min-height:100vh;display:flex;flex-direction:column}main{flex:1;min-height:1px}footer{min-height:350px}' }} />
-        {/* Hreflang tags for Pakistan region targeting */}
-        <link rel="alternate" hrefLang="en" href="https://teenpattigoldgame.com.pk/" />
-        <link rel="alternate" hrefLang="ur" href="https://teenpattigoldgame.com.pk/" />
-        <link rel="alternate" hrefLang="x-default" href="https://teenpattigoldgame.com.pk/" />
+        {/* Hreflang: set per-page via metadata (homepage only) — avoid fake ur same-URL alternates */}
         <meta name="geo.region" content="PK" />
         <meta name="geo.placename" content="Pakistan" />
         <meta name="geo.position" content="30.3753;69.3451" />
@@ -268,7 +260,7 @@ export default function RootLayout({
                   "name": "Teen Patti Gold Pakistan",
                   "description": "Download Teen Patti Gold APK for Pakistan. Play Teen Patti, Rummy, Dragon Tiger and 30+ card games. Earn real money with JazzCash and EasyPaisa withdrawals.",
                   "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
-                  "inLanguage": ["en-US", "ur-PK"],
+                  "inLanguage": "en-US",
                   "potentialAction": {
                     "@type": "SearchAction",
                     "target": {
