@@ -1,62 +1,12 @@
 import Image from "next/image";
 import Link from 'next/link';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { SITE_ARTICLE_DATE_PUBLISHED, getSiteArticleDateModified } from '@/lib/site-meta';
 
-// This additional metadata enhances the page-specific SEO - optimized for CTR and ranking
+/** Hreflang for `/` only — title, description, OG, etc. come from root `layout.tsx`. */
 export const metadata: Metadata = {
-  title: {
-    default: "Teen Patti Gold Pakistan v1.656 Download Official APK for Android",
-    template: "%s | Teen Patti Gold Pakistan"
-  },
-  description: "Teen Patti Gold is Pakistan's #1 card game app. Play Teen Patti, Rummy, Dragon Tiger and 30+ games. Earn real money with fast withdrawals via JazzCash and EasyPaisa. Free download.",
-  keywords: [
-    "teen patti gold",
-    "teen patti gold pakistan",
-    "teen patti gold apk",
-    "teen patti gold download",
-    "teen patti gold app",
-    "3 patti gold",
-    "3 patti gold pakistan",
-    "3 patti gold download",
-    "3 patti gold apk",
-    "3 patti gold game",
-    "teen patti gold withdrawal",
-    "teen patti gold jazzcash",
-    "teen patti gold easypaisa",
-    "teen patti gold referral agent",
-    "online card games pakistan",
-    "earn money playing cards",
-    "best card game pakistan",
-    "rummy game pakistan",
-    "dragon tiger game",
-    "earn money games pakistan"
-  ],
-  openGraph: {
-    title: 'Teen Patti Gold Pakistan v1.656 Download Official APK for Android',
-    description: 'Pakistan\'s #1 card game app with 30+ games. Play Teen Patti, Rummy, Dragon Tiger. Earn real money with fast withdrawals via JazzCash and EasyPaisa.',
-    url: 'https://teenpattigoldgame.com.pk/',
-    siteName: 'Teen Patti Gold',
-    locale: 'en_US',
-    type: 'website',
-    images: [
-      {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
-        alt: 'Teen Patti Gold - Play Card Games and Earn Real Money in Pakistan'
-      }
-    ]
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Teen Patti Gold Pakistan v1.656 Download Official APK for Android',
-    description: 'Pakistan\'s #1 card game app with 30+ games. Play Teen Patti, Rummy, Dragon Tiger. Earn real money with fast withdrawals via JazzCash and EasyPaisa.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image']
-  },
   alternates: {
-    canonical: 'https://teenpattigoldgame.com.pk/',
     languages: {
       en: 'https://teenpattigoldgame.com.pk/',
       'x-default': 'https://teenpattigoldgame.com.pk/',
@@ -71,65 +21,6 @@ export default function Home() {
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://teenpattigoldgame.com.pk/#website",
-        "url": "https://teenpattigoldgame.com.pk/",
-        "name": "Teen Patti Gold Pakistan",
-        "description": "Download Teen Patti Gold APK free. Play 30+ card games and earn real money in Pakistan. Teen Patti, Rummy, Dragon Tiger with fast JazzCash and EasyPaisa withdrawals.",
-        "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
-        "inLanguage": "en-US",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://teenpattigoldgame.com.pk/blog?q={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://teenpattigoldgame.com.pk/#organization",
-        "name": "Teen Patti Gold",
-        "alternateName": ["Teen Patti Gold Pakistan", "3 Patti Gold"],
-        "url": "https://teenpattigoldgame.com.pk/",
-        "logo": {
-          "@type": "ImageObject",
-          "@id": "https://teenpattigoldgame.com.pk/#logo",
-          "url": LOGO_URL,
-          "contentUrl": LOGO_URL,
-          "width": 512,
-          "height": 512,
-          "caption": "Teen Patti Gold - Pakistan's #1 Card Game"
-        },
-        "image": { "@id": "https://teenpattigoldgame.com.pk/#logo" },
-        "sameAs": [
-          "https://www.facebook.com/teenpattigold",
-          "https://twitter.com/teenpattigold",
-          "https://www.youtube.com/@teenpattigold",
-          "https://www.instagram.com/teenpattigold"
-        ],
-        "foundingDate": "2023",
-        "knowsAbout": ["Teen Patti", "Rummy", "Dragon Tiger", "Online Card Games", "Mobile Gaming Pakistan"],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "support@teenpattigoldgame.com.pk",
-          "contactType": "customer service",
-          "areaServed": "PK",
-          "availableLanguage": ["English", "Urdu"]
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "PK",
-          "addressLocality": "Pakistan"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Pakistan",
-          "identifier": "PK"
-        }
-      },
       {
         "@type": "Person",
         "@id": "https://teenpattigoldgame.com.pk/#author",
@@ -466,7 +357,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Schema.org JSON-LD — inline server-rendered for immediate crawlability */}
+      {/* Home-only JSON-LD (Organization + WebSite are in root layout) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}

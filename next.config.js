@@ -73,6 +73,30 @@ const nextConfig = {
             key: 'X-Content-Type-Options',
             value: 'nosniff',
           },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'origin-when-cross-origin',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=()',
+          },
+          {
+            key: 'Content-Security-Policy',
+            value:
+              "default-src 'self';" +
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com https://www.googletagmanager.com;" +
+              "style-src 'self' 'unsafe-inline';" +
+              "img-src 'self' data: https: blob:;" +
+              "font-src 'self';" +
+              "connect-src 'self' https://www.google-analytics.com;" +
+              "manifest-src 'self';" +
+              "frame-ancestors 'none';",
+          },
         ],
       },
       // HTML pages: short cache so content updates propagate quickly

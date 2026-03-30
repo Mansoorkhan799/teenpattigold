@@ -31,6 +31,14 @@ export const metadata: Metadata = {
     "teen patti gold download",
     "teen patti gold app",
     "3 patti gold",
+    "3 patti gold pakistan",
+    "3 patti gold download",
+    "3 patti gold apk",
+    "3 patti gold game",
+    "teen patti gold withdrawal",
+    "teen patti gold jazzcash",
+    "teen patti gold easypaisa",
+    "teen patti gold referral agent",
     "online card games pakistan",
     "earn money playing cards",
     "best card game pakistan",
@@ -67,13 +75,20 @@ export const metadata: Metadata = {
     ]
   },
   manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black',
+  },
+  other: {
+    'mobile-web-app-capable': 'yes',
+  },
   verification: {
     google: "8a7c21f6e90a89ef",
   },
   openGraph: {
     title: "Teen Patti Gold Pakistan v1.656 Download Official APK for Android",
     description: "Pakistan's #1 card game app with 30+ games. Play Teen Patti, Rummy, Dragon Tiger. Earn real money with fast withdrawals via JazzCash and EasyPaisa.",
-    url: "https://teenpattigoldgame.com.pk",
+    url: "https://teenpattigoldgame.com.pk/",
     siteName: "Teen Patti Gold",
     locale: "en_US",
     type: "website",
@@ -82,7 +97,7 @@ export const metadata: Metadata = {
         url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: "Teen Patti Gold - Pakistan's #1 Card Game App. Download free APK.",
+        alt: "Teen Patti Gold - Play Card Games and Earn Real Money in Pakistan",
       },
     ],
   },
@@ -97,7 +112,7 @@ export const metadata: Metadata = {
         url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: "Teen Patti Gold - Pakistan's #1 Card Game App",
+        alt: "Teen Patti Gold - Play Card Games and Earn Real Money in Pakistan",
       }
     ],
   },
@@ -146,14 +161,7 @@ export default function RootLayout({
           </>
         )}
         
-        
-        <link rel="manifest" href="/manifest.json" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link rel="icon" href={FAVICON_URL} type="image/x-icon" sizes="any" />
-        <link rel="shortcut icon" href={FAVICON_URL} type="image/x-icon" />
-        <link rel="icon" href={LOGO_URL} type="image/webp" sizes="512x512" />
-        <link rel="apple-touch-icon" href={LOGO_URL} sizes="180x180" />
+        {/* Icons, manifest, and PWA meta come from `metadata` (Next injects <link>/<meta>). */}
         {/* Note: logo LCP preload is handled automatically by Next.js Image priority={true} in Header */}
         {/* Image hint for older scrapers that don't read OG tags */}
         <link rel="image_src" href="https://teenpattigoldgame.com.pk/opengraph-image" />
@@ -195,7 +203,7 @@ export default function RootLayout({
         <DeferredStyles />
         <ScrollToTop />
         
-        {/* Site-wide schema graph (rendered server-side for immediate crawlability) */}
+        {/* Site-wide Organization + WebSite only — home page adds Person, SoftwareApplication, FAQ, etc. */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -207,7 +215,7 @@ export default function RootLayout({
                   "@id": "https://teenpattigoldgame.com.pk/#organization",
                   "name": "Teen Patti Gold",
                   "alternateName": ["Teen Patti Gold Pakistan", "3 Patti Gold", "TeenPattiGold"],
-                  "url": "https://teenpattigoldgame.com.pk",
+                  "url": "https://teenpattigoldgame.com.pk/",
                   "logo": {
                     "@type": "ImageObject",
                     "@id": "https://teenpattigoldgame.com.pk/#logo",
