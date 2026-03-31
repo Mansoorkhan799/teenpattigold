@@ -128,7 +128,7 @@ export default function Home() {
           "width": 400,
           "height": 711,
           "name": "Teen Patti Gold game interface",
-          "description": "Teen Patti Gold (3 Patti Gold) — Pakistan card game app interface, APK download and real-money play.",
+          "description": "Teen Patti Gold — Pakistan card game app interface, APK download and real-money play.",
           "caption": "Teen Patti Gold — play Teen Patti and card games in Pakistan"
         }
       },
@@ -275,7 +275,7 @@ export default function Home() {
       {
         "@type": "HowTo",
         "@id": "https://teenpattigoldgame.com.pk/#howto-download-teen-patti-gold-apk",
-        "name": "How to download and install Teen Patti Gold APK on Android (Pakistan)",
+        "name": "How to download and install Teen Patti Gold APK on Android (Pakistan)?",
         "description": "Official steps to download Teen Patti Gold v1.656 APK from a trusted source and install it on Android. Includes enabling unknown sources and completing setup.",
         "inLanguage": "en-US",
         "totalTime": "PT10M",
@@ -344,7 +344,7 @@ export default function Home() {
           "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp"
         ],
         "articleSection": "Gaming",
-        "keywords": "3 patti gold, Teen Patti Gold, Teen Patti Gold Pakistan, Teen Patti Gold APK, Teen Patti Gold download, card game Pakistan, earn money games, teen patti gold apk download",
+        "keywords": "Teen Patti Gold, Teen Patti Gold Pakistan, Teen Patti Gold APK, Teen Patti Gold download, card game Pakistan, earn money games Pakistan, teen patti gold apk download",
         "inLanguage": "en-US",
         "wordCount": 2500,
         "about": [
@@ -379,11 +379,11 @@ export default function Home() {
             
             {/* Short intro on mobile so the download button stays above the fold */}
             <p className="text-base text-gray-300 leading-relaxed md:hidden">
-              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> — also called <strong className="text-white">3 Patti Gold</strong> — is Pakistan&apos;s premier online card game platform with 30+ exciting games. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
+              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> is Pakistan&apos;s premier online card game platform with 30+ exciting games. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
             </p>
             {/* Full intro on tablet/desktop */}
             <p className="hidden md:block text-lg text-gray-300 leading-relaxed">
-              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> — also called <strong className="text-white">3 Patti Gold</strong> — is Pakistan&apos;s premier online card game platform with 30+ exciting games including Teen Patti, Rummy, and Dragon Tiger. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
+              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> is Pakistan&apos;s premier online card game platform with 30+ exciting games including Teen Patti, Rummy, and Dragon Tiger. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
             </p>
 
             {/* Download Button */}
@@ -537,7 +537,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Overview</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">3 Patti Gold</strong> (Teen Patti Gold) is divided into various sections — card games, slots, poker, and many others — making it easy to find what you enjoy. With modern graphics, smooth gameplay, and an intuitive interface, it suits both beginners and experienced players. You can earn significant money even by investing a small amount, and win real cash rewards or bonuses for free. Download <strong className="text-white">3 Patti Gold APK</strong> safely and start playing your favorite online card games to earn real cash.
+              <strong className="text-white">Teen Patti Gold</strong> is divided into various sections — card games, slots, poker, and many others — making it easy to find what you enjoy. With modern graphics, smooth gameplay, and an intuitive interface, it suits both beginners and experienced players. You can earn significant money even by investing a small amount, and win real cash rewards or bonuses for free. Download the <strong className="text-white">Teen Patti Gold APK</strong> safely and start playing your favorite online card games to earn real cash.
             </p>
           </div>
         </div>
@@ -546,10 +546,10 @@ export default function Home() {
       {/* What is Teen Patti Gold APK Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">What is Teen Patti Gold (3 Patti Gold)?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">What is Teen Patti Gold?</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">Teen Patti Gold</strong> — widely known as <strong className="text-white">3 Patti Gold</strong> — is Pakistan&apos;s most popular online card game platform that combines classic games like Teen Patti, Rummy, and Dragon Tiger with modern gaming technology. It delivers a safe, secure, and exciting experience where you can play different card games and earn real money. The 3 Patti Gold app has become the go-to choice for card game enthusiasts who want beautiful design, simple settings, and easy gameplay.
+              <strong className="text-white">Teen Patti Gold</strong> is Pakistan&apos;s most popular online card game platform that combines classic games like Teen Patti, Rummy, and Dragon Tiger with modern gaming technology. It delivers a safe, secure, and exciting experience where you can play different card games and earn real money. The Teen Patti Gold app is the go-to choice for card game enthusiasts in Pakistan who want beautiful design, simple settings, and easy gameplay.
             </p>
             <p className="text-gray-300 leading-relaxed">
               You can withdraw winnings or deposit money anytime using local payment methods like JazzCash and EasyPaisa (and bank card where supported). New players receive a deposit bonus on their first recharge. With attractive visuals, a user-friendly interface, and exciting offers, this is one of the most engaging casino-style card game apps available in Pakistan today.
@@ -561,32 +561,14 @@ export default function Home() {
       {/* Why Teen Patti Gold Game so Popular Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Why Is 3 Patti Gold So Popular in Pakistan?</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Why Is Teen Patti Gold So Popular in Pakistan?</h2>
           <div className="space-y-6">
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">3 Patti Gold</strong> is popular because it lets you earn real money while having fun. Simple rules make it easy to understand, especially for beginners. The beautiful, colorful design gives you a real casino experience right on your phone. Players love hassle-free deposits and withdrawals through EasyPaisa and JazzCash without any delays — with a minimum withdrawal of just <strong className="text-white">Rs 100</strong>.
+              <strong className="text-white">Teen Patti Gold</strong> is popular in Pakistan because it lets you earn real money while having fun. Simple rules make it easy to understand, especially for beginners. The beautiful, colorful design gives you a real casino experience right on your phone. Players love hassle-free deposits and withdrawals through EasyPaisa and JazzCash without any delays — with a minimum withdrawal of just <strong className="text-white">Rs 100</strong>.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              With exciting games like Teen Patti, Dragon vs Tiger, Poker, Rummy, and Slots, you never feel bored. Daily bonuses and rewards help you earn coins and extra cash. The 3 Patti Gold platform is safe, secure, and runs smoothly even on low-storage devices — making it accessible to everyone across Pakistan.
+              With exciting games like Teen Patti, Dragon vs Tiger, Poker, Rummy, and Slots, you never feel bored. Daily bonuses and rewards help you earn coins and extra cash. Teen Patti Gold is safe, secure, and runs smoothly even on low-storage devices — making it accessible to everyone across Pakistan.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* How Can We Start with Teen Patti Gold Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">How to Get Started</h2>
-          <div className="space-y-4">
-            <p className="text-gray-300 leading-relaxed mb-4">Follow these steps to start playing:</p>
-            <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-              <li>Download and save the APK to your Android device. Prefer desktop? <Link href="/teen-patti-gold-for-pc" className="text-[#0ea5e9] hover:underline font-medium">Play Teen Patti Gold on PC</Link> instead.</li>
-              <li>Tap the downloaded APK file and allow installation from Unknown Sources.</li>
-              <li>Once installation is complete, open the app.</li>
-              <li>Log in with your mobile number or play as a guest.</li>
-              <li>Claim your free chips and welcome bonus.</li>
-              <li>Choose a table or game and start playing!</li>
-            </ol>
           </div>
         </div>
       </section>
@@ -715,6 +697,73 @@ export default function Home() {
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Account Security</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Download Teen Patti Gold APK Latest Version For Android */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-xl p-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Download Teen Patti Gold APK Latest Version For Android</h2>
+          <p className="text-gray-300 mb-4">To download the latest APK for Android, follow these steps:</p>
+          <div className="mb-8">
+          <ol className="list-decimal pl-5 space-y-3 text-gray-300">
+            <li>Open the browser on your Android device.</li>
+            <li>Visit <Link href="https://www.teenpattigoldgame.com.pk" className="text-[#0ea5e9] hover:underline font-medium">teenpattigoldgame.com.pk</Link> and click the Download button to get the latest version.</li>
+            <li>Click the Download button to start downloading.</li>
+            <li>Wait a few seconds for the download to complete.</li>
+            <li>The file will be saved in the Download folder of your device.</li>
+          </ol>
+        </div>
+        
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent mt-8">Installation Guide for Teen Patti Gold APK</h2>
+        <p className="text-gray-300 mb-4">After downloading to installing the Teen Patti Gold APK, follow the given steps:</p>
+        <div className="mb-8">
+          <ol className="list-decimal pl-5 space-y-3 text-gray-300">
+            <li>To start installation, your device grants permission to install unknown sources.</li>
+            <li>Open the Settings &lt; Security and enable the Install Unknown Apps.</li>
+            <li>After this, open the File Manager and go to the Download Folder.</li>
+            <li>Click on the download APK file, and the installation process will start.</li>
+            <li>Wait until the installation completes successfully on your device.</li>
+            <li>Once complete then the app icon will show on your device.</li>
+            <li>Click on it to launch the app and start playing the games that you want.</li>
+          </ol>
+        </div>
+
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">System Requirements</h2>
+        <div className="overflow-x-auto mb-8">
+          <table className="min-w-full divide-y divide-gray-800 rounded-lg overflow-hidden">
+            <thead className="bg-[#0a1029]">
+              <tr>
+                <th className="py-3 px-6 text-left text-white font-semibold">System</th>
+                <th className="py-3 px-6 text-left text-white font-semibold">Minimum</th>
+                <th className="py-3 px-6 text-left text-white font-semibold">Recommended</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-800">
+              <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Operating System</td><td className="py-3 px-6 text-gray-300">Android 4.1</td><td className="py-3 px-6 text-gray-300">Android 8.0 or above</td></tr>
+              <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">RAM</td><td className="py-3 px-6 text-gray-300">2GB or more</td><td className="py-3 px-6 text-gray-300">4GB or more</td></tr>
+              <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Storage Space</td><td className="py-3 px-6 text-gray-300">At least 500 MB free</td><td className="py-3 px-6 text-gray-300">1GB free space</td></tr>
+              <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">Processor</td><td className="py-3 px-6 text-gray-300">Quad-core 1.5 GHz</td><td className="py-3 px-6 text-gray-300">Octa-core 2.0 GHz</td></tr>
+              <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Internet</td><td className="py-3 px-6 text-gray-300">Stable 3G or WiFi</td><td className="py-3 px-6 text-gray-300">Fast & stable 4G or WiFi</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="flex justify-center">
+          <a 
+            href={DOWNLOAD_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-4 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
+          >
+            <span className="text-lg">DOWNLOAD NOW</span>
+            <div className="download-icon ml-2 bg-[#f97316] rounded-full p-2">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+              </svg>
+            </div>
+          </a>
           </div>
         </div>
       </section>
@@ -946,73 +995,6 @@ export default function Home() {
               </tbody>
             </table>
           </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Download Teen Patti Gold APK Latest Version For Android */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Download Teen Patti Gold APK Latest Version For Android</h2>
-          <p className="text-gray-300 mb-4">To download the latest APK for Android, follow these steps:</p>
-          <div className="mb-8">
-          <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-            <li>Open the browser on your Android device.</li>
-            <li>Visit <Link href="https://www.teenpattigoldgame.com.pk" className="text-[#0ea5e9] hover:underline font-medium">teenpattigoldgame.com.pk</Link> and click the Download button to get the latest version.</li>
-            <li>Click the Download button to start downloading.</li>
-            <li>Wait a few seconds for the download to complete.</li>
-            <li>The file will be saved in the Download folder of your device.</li>
-          </ol>
-        </div>
-        
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent mt-8">Installation Guide for Teen Patti Gold APK</h2>
-        <p className="text-gray-300 mb-4">After downloading to installing the Teen Patti Gold APK, follow the given steps:</p>
-        <div className="mb-8">
-          <ol className="list-decimal pl-5 space-y-3 text-gray-300">
-            <li>To start installation, your device grants permission to install unknown sources.</li>
-            <li>Open the Settings &lt; Security and enable the Install Unknown Apps.</li>
-            <li>After this, open the File Manager and go to the Download Folder.</li>
-            <li>Click on the download APK file, and the installation process will start.</li>
-            <li>Wait until the installation completes successfully on your device.</li>
-            <li>Once complete then the app icon will show on your device.</li>
-            <li>Click on it to launch the app and start playing the games that you want.</li>
-          </ol>
-        </div>
-
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">System Requirements</h2>
-        <div className="overflow-x-auto mb-8">
-          <table className="min-w-full divide-y divide-gray-800 rounded-lg overflow-hidden">
-            <thead className="bg-[#0a1029]">
-              <tr>
-                <th className="py-3 px-6 text-left text-white font-semibold">System</th>
-                <th className="py-3 px-6 text-left text-white font-semibold">Minimum</th>
-                <th className="py-3 px-6 text-left text-white font-semibold">Recommended</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-800">
-              <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Operating System</td><td className="py-3 px-6 text-gray-300">Android 4.1</td><td className="py-3 px-6 text-gray-300">Android 8.0 or above</td></tr>
-              <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">RAM</td><td className="py-3 px-6 text-gray-300">2GB or more</td><td className="py-3 px-6 text-gray-300">4GB or more</td></tr>
-              <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Storage Space</td><td className="py-3 px-6 text-gray-300">At least 500 MB free</td><td className="py-3 px-6 text-gray-300">1GB free space</td></tr>
-              <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">Processor</td><td className="py-3 px-6 text-gray-300">Quad-core 1.5 GHz</td><td className="py-3 px-6 text-gray-300">Octa-core 2.0 GHz</td></tr>
-              <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Internet</td><td className="py-3 px-6 text-gray-300">Stable 3G or WiFi</td><td className="py-3 px-6 text-gray-300">Fast & stable 4G or WiFi</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div className="flex justify-center">
-          <a 
-            href={DOWNLOAD_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-4 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
-          >
-            <span className="text-lg">DOWNLOAD NOW</span>
-            <div className="download-icon ml-2 bg-[#f97316] rounded-full p-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-              </svg>
-            </div>
-          </a>
           </div>
         </div>
       </section>
@@ -1285,7 +1267,14 @@ export default function Home() {
       {/* What's New in the Latest Version of the Teen Patti Gold */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">What&apos;s New in the Latest Version of the Teen Patti Gold?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">
+            <Link
+              href="/blog/latest-offers-rewards-teen-patti-gold"
+              className="text-inherit hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FFA500] focus-visible:ring-offset-2 focus-visible:ring-offset-[#06091F] rounded-sm"
+            >
+              What&apos;s New in the Latest Version of the Teen Patti Gold?
+            </Link>
+          </h2>
           <div className="space-y-4">
             <ul className="list-disc pl-5 space-y-3 text-gray-300">
               <li>In the latest version, the game looks better with improved graphics and smooth animations.</li>

@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'Responsible Gaming Guide 2026 - Teen Patti Gold',
-  description: 'Learn responsible gaming practices for Teen Patti Gold 2026. Set limits, manage bankroll, avoid addiction, and play safely. Complete guide for Pakistan players.',
+  title: {
+    absolute: 'Responsible Gaming — Teen Patti Gold Pakistan Guide',
+  },
+  description:
+    'Responsible gaming with Teen Patti Gold in Pakistan: budgets & breaks. 2026 guide — spot risky play early and keep Teen Patti, Rummy & slots entertainment only.',
   keywords: ['responsible gaming', 'Teen Patti Gold responsible play', 'gaming limits', 'bankroll management', 'safe gaming Pakistan'],
   robots: {
     index: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog/responsible-gaming-guide-2026',
   },
   openGraph: {
-    title: 'Responsible Gaming Guide 2026 - Teen Patti Gold',
-    description: 'Learn responsible gaming practices for Teen Patti Gold. Set limits, manage bankroll, and play safely.',
+    title: 'Responsible Gaming — Teen Patti Gold Pakistan Guide',
+    description:
+      'Responsible gaming with Teen Patti Gold in Pakistan: budgets & breaks. 2026 guide — spot risky play early and keep Teen Patti, Rummy & slots entertainment only.',
     url: 'https://teenpattigoldgame.com.pk/blog/responsible-gaming-guide-2026',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -32,8 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Responsible Gaming Guide 2026 - Teen Patti Gold',
-    description: 'Learn responsible gaming practices for Teen Patti Gold. Set limits, manage bankroll, and play safely.',
+    title: 'Responsible Gaming — Teen Patti Gold Pakistan Guide',
+    description:
+      'Responsible gaming with Teen Patti Gold in Pakistan: budgets & breaks. 2026 guide — spot risky play early and keep Teen Patti, Rummy & slots entertainment only.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
@@ -41,8 +46,9 @@ export const metadata: Metadata = {
 export default function ResponsibleGamingGuidePage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/responsible-gaming-guide-2026',
-    headline: 'Responsible Gaming Guide 2026 - Teen Patti Gold',
-    description: 'Learn responsible gaming practices for Teen Patti Gold 2026. Set limits, manage bankroll, avoid addiction, and play safely. Complete guide for Pakistan players.',
+    headline: 'Responsible Gaming — Teen Patti Gold Pakistan Guide',
+    description:
+      'Responsible gaming with Teen Patti Gold in Pakistan: budgets & breaks. 2026 guide — spot risky play early and keep Teen Patti, Rummy & slots entertainment only.',
     datePublished: '2026-02-10T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],

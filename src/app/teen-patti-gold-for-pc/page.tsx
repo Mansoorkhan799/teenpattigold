@@ -5,8 +5,11 @@ import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_PC } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
-  title: 'Teen Patti Gold for PC Download Latest Version for free 2026',
-  description: 'Download Teen Patti Gold for PC using Android Emulator. Play Teen Patti, Rummy, Dragon Tiger on bigger screen. Better performance and smooth gameplay on Windows.',
+  title: {
+    absolute: 'Teen Patti Gold for PC — Windows Play Guide Pakistan',
+  },
+  description:
+    'Teen Patti Gold on PC in Pakistan via Android emulator. Bigger screen, same wallet — quick setup and official APK link for safer Teen Patti Gold play at home.',
   keywords: [
     'Teen Patti Gold for PC',
     'Teen Patti Gold PC download',
@@ -30,12 +33,28 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/teen-patti-gold-for-pc",
   },
   openGraph: {
-    title: 'Teen Patti Gold for PC Download Latest Version for free 2026',
-    description: 'Download Teen Patti Gold for PC using Android Emulator. Play on bigger screen with better performance.',
+    title: 'Teen Patti Gold for PC — Windows Play Guide Pakistan',
+    description:
+      'Teen Patti Gold on PC in Pakistan via Android emulator. Bigger screen, same wallet — quick setup and official APK link for safer Teen Patti Gold play at home.',
     url: "https://teenpattigoldgame.com.pk/teen-patti-gold-for-pc",
     siteName: "Teen Patti Gold",
-    locale: "en_US",
+    locale: "en_PK",
     type: "website",
+    images: [
+      {
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Teen Patti Gold PC Pakistan',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Teen Patti Gold for PC — Windows Play Guide Pakistan',
+    description:
+      'Teen Patti Gold on PC in Pakistan via Android emulator. Bigger screen, same wallet — quick setup and official APK link for safer Teen Patti Gold play at home.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 

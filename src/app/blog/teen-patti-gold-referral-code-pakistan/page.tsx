@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'Teen Patti Gold Referral Code Pakistan 2026 | Earn Bonus with Referrals',
-  description: 'Use the Teen Patti Gold referral code in Pakistan to earn bonus chips and cash. Complete guide on how to use, share, and maximize Teen Patti Gold referral rewards in 2026.',
+  title: {
+    absolute: 'Teen Patti Gold Referral Code Pakistan — Bonus 2026',
+  },
+  description:
+    'Teen Patti Gold referral code Pakistan 2026: bonuses & rules. Enter codes correctly — earn extra chips when friends join official Teen Patti Gold tables only.',
   keywords: ['teen patti gold referral code', 'teen patti gold referral code pakistan', 'teen patti gold refer and earn', 'teen patti gold invitation code', 'teen patti gold bonus code 2026'],
   robots: {
     index: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-referral-code-pakistan',
   },
   openGraph: {
-    title: 'Teen Patti Gold Referral Code Pakistan 2026 | Earn Bonus with Referrals',
-    description: 'Complete guide on Teen Patti Gold referral codes in Pakistan. Learn how to share your code, earn chips, and maximize referral rewards.',
+    title: 'Teen Patti Gold Referral Code Pakistan — Bonus 2026',
+    description:
+      'Teen Patti Gold referral code Pakistan 2026: bonuses & rules. Enter codes correctly — earn extra chips when friends join official Teen Patti Gold tables only.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-referral-code-pakistan',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -39,8 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Teen Patti Gold Referral Code Pakistan 2026',
-    description: 'Complete guide on Teen Patti Gold referral codes in Pakistan. Learn how to share your code and earn bonus chips.',
+    title: 'Teen Patti Gold Referral Code Pakistan — Bonus 2026',
+    description:
+      'Teen Patti Gold referral code Pakistan 2026: bonuses & rules. Enter codes correctly — earn extra chips when friends join official Teen Patti Gold tables only.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
@@ -48,8 +53,9 @@ export const metadata: Metadata = {
 export default function ReferralCodePage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-referral-code-pakistan',
-    headline: 'Teen Patti Gold Referral Code Pakistan 2026 | Earn Bonus with Referrals',
-    description: 'Use the Teen Patti Gold referral code in Pakistan to earn bonus chips and cash. Complete guide on how to use, share, and maximize Teen Patti Gold referral rewards in 2026.',
+    headline: 'Teen Patti Gold Referral Code Pakistan — Bonus 2026',
+    description:
+      'Teen Patti Gold referral code Pakistan 2026: bonuses & rules. Enter codes correctly — earn extra chips when friends join official Teen Patti Gold tables only.',
     datePublished: '2026-03-05T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],

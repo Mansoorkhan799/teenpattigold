@@ -4,20 +4,34 @@ import Script from 'next/script';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_DEPOSIT } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
-  title: 'How to Deposit Money in Teen Patti Gold? | Quick & Safe Payment Guide 2026',
-  description: 'Learn how to deposit money in Teen Patti Gold using JazzCash and EasyPaisa. Follow our step-by-step guide for quick, safe, and secure deposits.',
+  title: {
+    absolute: 'Deposit on Teen Patti Gold — JazzCash & EasyPaisa PK',
+  },
+  description:
+    'Deposit on Teen Patti Gold with JazzCash, EasyPaisa or card in Pakistan. Bonuses, minimums & a safe top-up flow before Teen Patti or Rummy real-money play.',
   keywords: 'deposit money teen patti gold, teen patti gold payment methods, jazzcash deposit, easypaisa deposit, add funds teen patti gold, teen patti gold recharge',
   openGraph: {
-    title: 'How to Deposit Money in Teen Patti Gold? | Quick & Safe Payment Guide',
-    description: 'Step-by-step guide to deposit money in Teen Patti Gold using JazzCash and EasyPaisa. Quick, safe, and secure payment methods.',
+    title: 'Deposit on Teen Patti Gold — JazzCash & EasyPaisa PK',
+    description:
+      'Deposit on Teen Patti Gold with JazzCash, EasyPaisa or card in Pakistan. Bonuses, minimums & a safe top-up flow before Teen Patti or Rummy real-money play.',
     url: 'https://teenpattigoldgame.com.pk/deposit-money-in-teen-patti-gold',
     siteName: 'Teen Patti Gold',
     type: 'article',
+    images: [
+      {
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Deposit money Teen Patti Gold Pakistan',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Deposit Money in Teen Patti Gold?',
-    description: 'Learn how to deposit money in Teen Patti Gold using JazzCash and EasyPaisa with our complete guide.',
+    title: 'Deposit on Teen Patti Gold — JazzCash & EasyPaisa PK',
+    description:
+      'Deposit on Teen Patti Gold with JazzCash, EasyPaisa or card in Pakistan. Bonuses, minimums & a safe top-up flow before Teen Patti or Rummy real-money play.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/deposit-money-in-teen-patti-gold',

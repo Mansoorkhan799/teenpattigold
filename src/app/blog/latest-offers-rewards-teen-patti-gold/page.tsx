@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'Latest Offers and Rewards on Teen Patti Gold (2026)',
-  description: 'Discover the latest Teen Patti Gold offers 2026: 100% welcome bonus, recharge rebate, VIP rebate, daily login rewards, referral program. Complete guide to maximize rewards.',
+  title: {
+    absolute: 'Teen Patti Gold Offers & Rewards — Pakistan Deals 2026',
+  },
+  description:
+    'Teen Patti Gold offers & rewards in Pakistan: welcome bonus & rebates. 2026 summary — read turnover rules before you claim so JazzCash deposits stay eligible.',
   keywords: ['Teen Patti Gold offers', 'Teen Patti Gold rewards', 'Teen Patti Gold bonus 2026', 'Teen Patti Gold recharge rebate', 'Teen Patti Gold VIP rewards'],
   robots: {
     index: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog/latest-offers-rewards-teen-patti-gold',
   },
   openGraph: {
-    title: 'Latest Offers and Rewards on Teen Patti Gold (2026)',
-    description: 'Discover the latest Teen Patti Gold offers: welcome bonus, recharge rebate, VIP rewards, referral program.',
+    title: 'Teen Patti Gold Offers & Rewards — Pakistan Deals 2026',
+    description:
+      'Teen Patti Gold offers & rewards in Pakistan: welcome bonus & rebates. 2026 summary — read turnover rules before you claim so JazzCash deposits stay eligible.',
     url: 'https://teenpattigoldgame.com.pk/blog/latest-offers-rewards-teen-patti-gold',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -32,8 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Latest Offers and Rewards on Teen Patti Gold (2026)',
-    description: 'Discover the latest Teen Patti Gold offers: welcome bonus, recharge rebate, VIP rewards, referral program.',
+    title: 'Teen Patti Gold Offers & Rewards — Pakistan Deals 2026',
+    description:
+      'Teen Patti Gold offers & rewards in Pakistan: welcome bonus & rebates. 2026 summary — read turnover rules before you claim so JazzCash deposits stay eligible.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
@@ -41,8 +46,9 @@ export const metadata: Metadata = {
 export default function LatestOffersRewardsPage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/latest-offers-rewards-teen-patti-gold',
-    headline: 'Latest Offers and Rewards on Teen Patti Gold (2026)',
-    description: 'Discover the latest Teen Patti Gold offers 2026: 100% welcome bonus, recharge rebate, VIP rebate, daily login rewards, referral program. Complete guide to maximize rewards.',
+    headline: 'Teen Patti Gold Offers & Rewards — Pakistan Deals 2026',
+    description:
+      'Teen Patti Gold offers & rewards in Pakistan: welcome bonus & rebates. 2026 summary — read turnover rules before you claim so JazzCash deposits stay eligible.',
     datePublished: '2026-02-05T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp'],

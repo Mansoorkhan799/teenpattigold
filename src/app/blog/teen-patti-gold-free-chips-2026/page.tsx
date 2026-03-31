@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'Teen Patti Gold Free Chips 2026 | Get Daily Free Chips & Bonus',
-  description: 'Get Teen Patti Gold free chips in 2026. Claim daily bonuses, login rewards, referral chips, and promo codes. Complete guide for Pakistani players to get free chips every day.',
+  title: {
+    absolute: 'Teen Patti Gold Free Chips 2026 — Daily Bonus Pakistan',
+  },
+  description:
+    'Get Teen Patti Gold free chips in Pakistan: daily login, spins & events. 2026 list of legit bonus paths — stretch playtime without risky unofficial mod APKs.',
   keywords: ['teen patti gold free chips', 'teen patti gold free chips 2026', 'teen patti gold daily bonus', 'free chips teen patti gold pakistan', 'teen patti gold bonus chips'],
   robots: {
     index: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-free-chips-2026',
   },
   openGraph: {
-    title: 'Teen Patti Gold Free Chips 2026 | Get Daily Free Chips & Bonus',
-    description: 'Complete guide to getting free chips in Teen Patti Gold. Daily bonuses, referral rewards, and login chips for Pakistani players.',
+    title: 'Teen Patti Gold Free Chips 2026 — Daily Bonus Pakistan',
+    description:
+      'Get Teen Patti Gold free chips in Pakistan: daily login, spins & events. 2026 list of legit bonus paths — stretch playtime without risky unofficial mod APKs.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-free-chips-2026',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -39,8 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Teen Patti Gold Free Chips 2026 | Get Daily Free Chips & Bonus',
-    description: 'Complete guide to getting free chips in Teen Patti Gold. Daily bonuses, referral rewards, and login chips.',
+    title: 'Teen Patti Gold Free Chips 2026 — Daily Bonus Pakistan',
+    description:
+      'Get Teen Patti Gold free chips in Pakistan: daily login, spins & events. 2026 list of legit bonus paths — stretch playtime without risky unofficial mod APKs.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
@@ -48,8 +53,9 @@ export const metadata: Metadata = {
 export default function FreeChipsPage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-free-chips-2026',
-    headline: 'Teen Patti Gold Free Chips 2026 | Get Daily Free Chips & Bonus',
-    description: 'Get Teen Patti Gold free chips in 2026. Claim daily bonuses, login rewards, referral chips, and promo codes. Complete guide for Pakistani players to get free chips every day.',
+    headline: 'Teen Patti Gold Free Chips 2026 — Daily Bonus Pakistan',
+    description:
+      'Get Teen Patti Gold free chips in Pakistan: daily login, spins & events. 2026 list of legit bonus paths — stretch playtime without risky unofficial mod APKs.',
     datePublished: '2026-03-01T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp'],

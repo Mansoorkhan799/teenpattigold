@@ -5,8 +5,11 @@ import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_IOS } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
-  title: 'Teen Patti Gold For iOS Download Latest Version For Free 2026',
-  description: 'Download Teen Patti Gold for iOS devices. Play Teen Patti, Rummy, Dragon Tiger on iPhone & iPad. Free download with easy installation guide for iOS 12+.',
+  title: {
+    absolute: 'Teen Patti Gold for iOS — Download Info Pakistan 2026',
+  },
+  description:
+    'Teen Patti Gold on iPhone in Pakistan: limited iOS support. Prefer Android APK or PC — avoid fake apps and protect your Teen Patti Gold wallet and login.',
   keywords: [
     'Teen Patti Gold for iOS',
     'Teen Patti Gold iPhone',
@@ -30,12 +33,28 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/teen-patti-gold-for-ios",
   },
   openGraph: {
-    title: 'Teen Patti Gold For iOS Download Latest Version For Free 2026',
-    description: 'Download Teen Patti Gold for iOS. Play on iPhone & iPad with smooth gameplay and amazing features.',
+    title: 'Teen Patti Gold for iOS — Download Info Pakistan 2026',
+    description:
+      'Teen Patti Gold on iPhone in Pakistan: limited iOS support. Prefer Android APK or PC — avoid fake apps and protect your Teen Patti Gold wallet and login.',
     url: "https://teenpattigoldgame.com.pk/teen-patti-gold-for-ios",
     siteName: "Teen Patti Gold",
-    locale: "en_US",
+    locale: "en_PK",
     type: "website",
+    images: [
+      {
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Teen Patti Gold iOS Pakistan',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Teen Patti Gold for iOS — Download Info Pakistan 2026',
+    description:
+      'Teen Patti Gold on iPhone in Pakistan: limited iOS support. Prefer Android APK or PC — avoid fake apps and protect your Teen Patti Gold wallet and login.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
 

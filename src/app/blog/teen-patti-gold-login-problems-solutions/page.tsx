@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'Teen Patti Gold Login Problems and Solutions (2026 Guide)',
-  description: 'Fix Teen Patti Gold login issues: forgot password, OTP not received, account locked, app crash. Complete troubleshooting guide for 2026.',
+  title: {
+    absolute: 'Teen Patti Gold Login Problems? Fixes for Pakistan',
+  },
+  description:
+    'Fix Teen Patti Gold login problems in Pakistan: OTP, password reset & bans. 2026 troubleshooting — get back into your account before you miss bonuses or tables.',
   keywords: ['Teen Patti Gold login problems', 'Teen Patti Gold login issues', 'Teen Patti Gold forgot password', 'Teen Patti Gold OTP not received', 'Teen Patti Gold login fix'],
   robots: {
     index: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-login-problems-solutions',
   },
   openGraph: {
-    title: 'Teen Patti Gold Login Problems and Solutions (2026 Guide)',
-    description: 'Fix Teen Patti Gold login issues. Complete troubleshooting guide for forgot password, OTP, account locked, and more.',
+    title: 'Teen Patti Gold Login Problems? Fixes for Pakistan',
+    description:
+      'Fix Teen Patti Gold login problems in Pakistan: OTP, password reset & bans. 2026 troubleshooting — get back into your account before you miss bonuses or tables.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-login-problems-solutions',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -32,8 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Teen Patti Gold Login Problems and Solutions (2026 Guide)',
-    description: 'Fix Teen Patti Gold login issues. Complete troubleshooting guide for forgot password, OTP, account locked, and more.',
+    title: 'Teen Patti Gold Login Problems? Fixes for Pakistan',
+    description:
+      'Fix Teen Patti Gold login problems in Pakistan: OTP, password reset & bans. 2026 troubleshooting — get back into your account before you miss bonuses or tables.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
@@ -41,8 +46,9 @@ export const metadata: Metadata = {
 export default function TeenPattiGoldLoginProblemsPage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-login-problems-solutions',
-    headline: 'Teen Patti Gold Login Problems and Solutions (2026 Guide)',
-    description: 'Fix Teen Patti Gold login issues: forgot password, OTP not received, account locked, app crash. Complete troubleshooting guide for 2026.',
+    headline: 'Teen Patti Gold Login Problems? Fixes for Pakistan',
+    description:
+      'Fix Teen Patti Gold login problems in Pakistan: OTP, password reset & bans. 2026 troubleshooting — get back into your account before you miss bonuses or tables.',
     datePublished: '2026-02-01T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],

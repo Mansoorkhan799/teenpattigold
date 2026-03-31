@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'How to Create a Teen Patti Gold Account and Login - Step by Step Guide',
-  description: 'Learn how to create your Teen Patti Gold account and login with our step-by-step guide. Get started playing games and earning rewards in minutes.',
+  title: {
+    absolute: 'Create Teen Patti Gold Account & Login? Step Guide',
+  },
+  description:
+    'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
   keywords: ['Teen Patti Gold account', 'Teen Patti Gold login', 'Teen Patti Gold registration', 'Teen Patti Gold sign up', 'Teen Patti Gold guide'],
   robots: {
     index: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login",
   },
   openGraph: {
-    title: 'How to Create Account and Login - Teen Patti Gold',
-    description: 'Learn how to create an account and login to Teen Patti Gold. Step by step guide for registration and accessing your account.',
+    title: 'Create Teen Patti Gold Account & Login? Step Guide',
+    description:
+      'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
     url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -39,8 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Create Account and Login - Teen Patti Gold',
-    description: 'Learn how to create an account and login to Teen Patti Gold. Step by step guide for registration and accessing your account.',
+    title: 'Create Teen Patti Gold Account & Login? Step Guide',
+    description:
+      'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
@@ -48,8 +53,9 @@ export const metadata: Metadata = {
 export default function CreateAccountLogin() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login',
-    headline: 'How to Create a Teen Patti Gold Account and Login - Step by Step Guide',
-    description: 'Learn how to create your Teen Patti Gold account and login with our step-by-step guide. Get started playing games and earning rewards in minutes.',
+    headline: 'Create Teen Patti Gold Account & Login? Step Guide',
+    description:
+      'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
     datePublished: '2026-01-15T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
@@ -60,8 +66,9 @@ export default function CreateAccountLogin() {
   const howToSchema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How to Create a Teen Patti Gold Account and Login',
-    description: 'Step-by-step guide to create your Teen Patti Gold account and login to start playing card games and earning real money.',
+    name: 'Create a Teen Patti Gold account and log in',
+    description:
+      'Create your Teen Patti Gold account and log in from Pakistan: OTP, password and wallet access before JazzCash or EasyPaisa deposits.',
     totalTime: 'PT5M',
     step: [
       { '@type': 'HowToStep', name: 'Download the Teen Patti Gold App', text: 'Download the Teen Patti Gold app from the official website and install it on your Android device.' },
@@ -87,7 +94,7 @@ export default function CreateAccountLogin() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">How to Create a <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link> Account and Login</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">Create a <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link> Account & Login? Step Guide</h1>
             
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">

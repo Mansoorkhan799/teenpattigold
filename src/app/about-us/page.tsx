@@ -5,9 +5,12 @@ import Script from 'next/script';
 import { LOGO_URL, LOGO_PATH_VERSIONED } from '@/lib/site-images';
 
 export const metadata: Metadata = {
-  title: 'About Teen Patti Gold - Pakistan\'s Premier Card Gaming Platform',
-  description: 'Learn about Teen Patti Gold, our history, mission, and vision for creating the best card gaming platform in Pakistan with Teen Patti, Rummy and more.',
-  keywords: ['Teen Patti Gold about', 'about us', 'gaming company Pakistan', 'Teen Patti Gold history', 'card gaming platform', 'Teen Patti', '3 Patti'],
+  title: {
+    absolute: 'About Teen Patti Gold — Pakistan Card Game Platform',
+  },
+  description:
+    'Learn about Teen Patti Gold in Pakistan: mission, fair play & support for Teen Patti fans. Know the team behind the official APK and responsible gaming values.',
+  keywords: ['Teen Patti Gold about', 'about us', 'gaming company Pakistan', 'Teen Patti Gold history', 'card gaming platform', 'Teen Patti'],
   robots: {
     index: true,
     follow: true,
@@ -22,8 +25,9 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/about-us",
   },
   openGraph: {
-    title: 'About Teen Patti Gold - Pakistan\'s Premier Card Gaming Platform',
-    description: 'Learn about Teen Patti Gold, our history, mission, and vision for creating the best card gaming platform in Pakistan with real cash rewards.',
+    title: 'About Teen Patti Gold — Pakistan Card Game Platform',
+    description:
+      'Learn about Teen Patti Gold in Pakistan: mission, fair play & support for Teen Patti fans. Know the team behind the official APK and responsible gaming values.',
     url: "https://teenpattigoldgame.com.pk/about-us",
     siteName: "Teen Patti Gold",
     locale: "en_US",
@@ -39,8 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: 'About Teen Patti Gold - Pakistan\'s Premier Card Gaming Platform',
-    description: 'Learn about Teen Patti Gold, our history, mission, and vision for creating the best card gaming platform in Pakistan with real cash rewards.',
+    title: 'About Teen Patti Gold — Pakistan Card Game Platform',
+    description:
+      'Learn about Teen Patti Gold in Pakistan: mission, fair play & support for Teen Patti fans. Know the team behind the official APK and responsible gaming values.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };

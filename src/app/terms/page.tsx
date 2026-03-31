@@ -2,20 +2,34 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Terms and Conditions - Teen Patti Gold | User Agreement',
-  description: 'Read the terms and conditions for Teen Patti Gold. Important information about user agreement, entertainment policy, and user responsibilities.',
+  title: {
+    absolute: 'Teen Patti Gold Terms — User Agreement Pakistan 2026',
+  },
+  description:
+    'Teen Patti Gold terms in Pakistan: accounts, bonuses & fair play. Read before deposit — rules for our site, official app and real-money Teen Patti tables.',
   keywords: ['Teen Patti Gold terms', 'terms and conditions', 'user agreement', 'terms of service', 'game rules'],
   openGraph: {
-    title: 'Terms and Conditions - Teen Patti Gold',
-    description: 'Terms and conditions for using Teen Patti Gold card game platform.',
+    title: 'Teen Patti Gold Terms — User Agreement Pakistan 2026',
+    description:
+      'Teen Patti Gold terms in Pakistan: accounts, bonuses & fair play. Read before deposit — rules for our site, official app and real-money Teen Patti tables.',
     url: 'https://teenpattigoldgame.com.pk/terms',
     siteName: 'Teen Patti Gold',
     type: 'website',
+    images: [
+      {
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Teen Patti Gold terms Pakistan',
+      },
+    ],
   },
   twitter: {
-    card: 'summary',
-    title: 'Terms and Conditions - Teen Patti Gold',
-    description: 'Terms and conditions for using Teen Patti Gold card game platform.',
+    card: 'summary_large_image',
+    title: 'Teen Patti Gold Terms — User Agreement Pakistan 2026',
+    description:
+      'Teen Patti Gold terms in Pakistan: accounts, bonuses & fair play. Read before deposit — rules for our site, official app and real-money Teen Patti tables.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/terms',

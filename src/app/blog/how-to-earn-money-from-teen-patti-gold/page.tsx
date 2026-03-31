@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
-  description: 'Learn proven methods to earn real money from Teen Patti Gold. Complete guide on winning strategies, bonuses, referrals, and tips to maximize earnings in Pakistan.',
+  title: {
+    absolute: 'How to Earn Money on Teen Patti Gold? Pakistan Guide',
+  },
+  description:
+    'Earn on Teen Patti Gold in Pakistan: tables, referrals & bonuses. 2026 guide — grow chips slowly; no income promise; cap JazzCash and EasyPaisa spend.',
   keywords: ['how to earn money from teen patti gold', 'teen patti gold earn money', 'teen patti gold winning tips', 'earn money online pakistan', 'teen patti gold strategies'],
   robots: {
     index: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/how-to-earn-money-from-teen-patti-gold",
   },
   openGraph: {
-    title: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
-    description: 'Learn proven methods to earn real money from Teen Patti Gold with winning strategies, bonuses, and tips.',
+    title: 'How to Earn Money on Teen Patti Gold? Pakistan Guide',
+    description:
+      'Earn on Teen Patti Gold in Pakistan: tables, referrals & bonuses. 2026 guide — grow chips slowly; no income promise; cap JazzCash and EasyPaisa spend.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-earn-money-from-teen-patti-gold',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -39,8 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
-    description: 'Learn proven methods to earn real money from Teen Patti Gold with winning strategies, bonuses, and tips.',
+    title: 'How to Earn Money on Teen Patti Gold? Pakistan Guide',
+    description:
+      'Earn on Teen Patti Gold in Pakistan: tables, referrals & bonuses. 2026 guide — grow chips slowly; no income promise; cap JazzCash and EasyPaisa spend.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
@@ -48,8 +53,9 @@ export const metadata: Metadata = {
 export default function HowToEarnMoney() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-earn-money-from-teen-patti-gold',
-    headline: 'How to Earn Money from Teen Patti Gold: Complete Guide 2026',
-    description: 'Learn proven methods to earn real money from Teen Patti Gold. Complete guide on winning strategies, bonuses, referrals, and tips to maximize earnings in Pakistan.',
+    headline: 'How to Earn Money on Teen Patti Gold? Pakistan Guide',
+    description:
+      'Earn on Teen Patti Gold in Pakistan: tables, referrals & bonuses. 2026 guide — grow chips slowly; no income promise; cap JazzCash and EasyPaisa spend.',
     datePublished: '2026-01-12T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
@@ -74,7 +80,7 @@ export default function HowToEarnMoney() {
 
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
-              How to Earn Money from <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link>: Complete Guide 2026
+              How to Earn Money on <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link>? Pakistan Guide
             </h1>
             
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-8">

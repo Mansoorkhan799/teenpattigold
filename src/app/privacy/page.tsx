@@ -2,15 +2,34 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - Teen Patti Gold | Your Privacy Matters',
-  description: 'Read our privacy policy to understand how Teen Patti Gold collects, uses, and protects your personal information. We are committed to your data security.',
+  title: {
+    absolute: 'Teen Patti Gold Privacy Policy — Data Protection PK',
+  },
+  description:
+    'Teen Patti Gold privacy for Pakistan: data, cookies & payments. Learn how we protect your info when you browse or download the official Teen Patti Gold APK.',
   keywords: ['Teen Patti Gold privacy policy', 'privacy', 'data protection', 'user privacy', 'data security'],
   openGraph: {
-    title: 'Privacy Policy - Teen Patti Gold',
-    description: 'Learn how Teen Patti Gold protects your personal information and data.',
+    title: 'Teen Patti Gold Privacy Policy — Data Protection PK',
+    description:
+      'Teen Patti Gold privacy for Pakistan: data, cookies & payments. Learn how we protect your info when you browse or download the official Teen Patti Gold APK.',
     url: 'https://teenpattigoldgame.com.pk/privacy',
     siteName: 'Teen Patti Gold',
     type: 'website',
+    images: [
+      {
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Teen Patti Gold privacy policy Pakistan',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Teen Patti Gold Privacy Policy — Data Protection PK',
+    description:
+      'Teen Patti Gold privacy for Pakistan: data, cookies & payments. Learn how we protect your info when you browse or download the official Teen Patti Gold APK.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/privacy',

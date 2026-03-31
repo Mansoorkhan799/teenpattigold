@@ -2,20 +2,34 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer - Teen Patti Gold | Legal Information',
-  description: 'Read the disclaimer for Teen Patti Gold. Important legal information about the use of this blog and third-party platforms.',
+  title: {
+    absolute: 'Teen Patti Gold Disclaimer — Legal Notice Pakistan 2026',
+  },
+  description:
+    'Teen Patti Gold disclaimer: gaming risk, not financial advice. Pakistan users — play responsibly, use official APK sources & understand limits before betting.',
   keywords: ['Teen Patti Gold disclaimer', 'legal disclaimer', 'terms', 'conditions', 'gambling disclaimer'],
   openGraph: {
-    title: 'Disclaimer - Teen Patti Gold',
-    description: 'Legal disclaimer and important information about Teen Patti Gold.',
+    title: 'Teen Patti Gold Disclaimer — Legal Notice Pakistan 2026',
+    description:
+      'Teen Patti Gold disclaimer: gaming risk, not financial advice. Pakistan users — play responsibly, use official APK sources & understand limits before betting.',
     url: 'https://teenpattigoldgame.com.pk/disclaimer',
     siteName: 'Teen Patti Gold',
     type: 'website',
+    images: [
+      {
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Teen Patti Gold disclaimer Pakistan',
+      },
+    ],
   },
   twitter: {
-    card: 'summary',
-    title: 'Disclaimer - Teen Patti Gold',
-    description: 'Legal disclaimer and important information about Teen Patti Gold.',
+    card: 'summary_large_image',
+    title: 'Teen Patti Gold Disclaimer — Legal Notice Pakistan 2026',
+    description:
+      'Teen Patti Gold disclaimer: gaming risk, not financial advice. Pakistan users — play responsibly, use official APK sources & understand limits before betting.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/disclaimer',

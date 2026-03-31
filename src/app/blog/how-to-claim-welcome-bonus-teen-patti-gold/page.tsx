@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'How to Claim Your Welcome Bonus on Teen Patti Gold (2026 Guide)',
-  description: 'Step-by-step guide to claim your Teen Patti Gold welcome bonus in 2026. Get 100% recharge bonus on first deposit. Learn eligibility, process, and tips.',
+  title: {
+    absolute: 'Claim Teen Patti Gold Welcome Bonus? Pakistan Guide 2026',
+  },
+  description:
+    'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
   keywords: ['Teen Patti Gold welcome bonus', 'Teen Patti Gold first deposit bonus', 'claim bonus Teen Patti Gold', 'Teen Patti Gold 100% bonus', 'Teen Patti Gold new player bonus'],
   robots: {
     index: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
   },
   openGraph: {
-    title: 'How to Claim Your Welcome Bonus on Teen Patti Gold (2026 Guide)',
-    description: 'Step-by-step guide to claim your Teen Patti Gold welcome bonus. Get 100% recharge bonus on first deposit.',
+    title: 'Claim Teen Patti Gold Welcome Bonus? Pakistan Guide 2026',
+    description:
+      'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -32,8 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Claim Your Welcome Bonus on Teen Patti Gold (2026 Guide)',
-    description: 'Step-by-step guide to claim your Teen Patti Gold welcome bonus. Get 100% recharge bonus on first deposit.',
+    title: 'Claim Teen Patti Gold Welcome Bonus? Pakistan Guide 2026',
+    description:
+      'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
@@ -41,8 +46,9 @@ export const metadata: Metadata = {
 export default function HowToClaimWelcomeBonusPage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
-    headline: 'How to Claim Your Welcome Bonus on Teen Patti Gold (2026 Guide)',
-    description: 'Step-by-step guide to claim your Teen Patti Gold welcome bonus in 2026. Get 100% recharge bonus on first deposit. Learn eligibility, process, and tips.',
+    headline: 'Claim Teen Patti Gold Welcome Bonus? Pakistan Guide 2026',
+    description:
+      'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
     datePublished: '2026-01-25T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
@@ -53,8 +59,9 @@ export default function HowToClaimWelcomeBonusPage() {
   const howToSchema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'How to Claim Your Welcome Bonus on Teen Patti Gold',
-    description: 'Step-by-step guide to claim your Teen Patti Gold welcome bonus on first deposit.',
+    name: 'Claim your Teen Patti Gold welcome bonus in Pakistan',
+    description:
+      'First deposit, turnover rules and JazzCash or EasyPaisa steps to unlock the Teen Patti Gold 100% welcome bonus without forfeiting chips.',
     totalTime: 'PT5M',
     step: [
       { '@type': 'HowToStep', name: 'Download and Register', text: 'Download Teen Patti Gold app and create a new account with your mobile number.' },
@@ -78,7 +85,7 @@ export default function HowToClaimWelcomeBonusPage() {
 
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
-              How to Claim Your Welcome Bonus on <Link href="/" className="text-accent">Teen Patti Gold</Link> (2026 Guide)
+              Claim Your Welcome Bonus on <Link href="/" className="text-accent">Teen Patti Gold</Link>? Pakistan Guide 2026
             </h1>
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-8">
               <span>📅 February 24, 2026</span>

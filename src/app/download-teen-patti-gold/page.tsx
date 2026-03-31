@@ -5,8 +5,12 @@ import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_DOWNLOAD } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
-  title: 'Download Teen Patti Gold Game Free APK For Android | Latest Version 2026',
-  description: 'Download Teen Patti Gold APK free for Android. Play Teen Patti, Rummy, Dragon Tiger & more. Earn real cash with JazzCash & EasyPaisa. Latest version V1.656(0) - 49MB.',
+  title: {
+    absolute:
+      'Download Teen Patti Gold APK Free | Android Pakistan',
+  },
+  description:
+    'Get the official Teen Patti Gold APK for Android in Pakistan. Latest v1.656, 49MB, JazzCash & EasyPaisa payouts. Safe download steps — start playing in minutes.',
   keywords: [
     'Download Teen Patti Gold',
     'Teen Patti Gold APK download',
@@ -30,8 +34,9 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/download-teen-patti-gold",
   },
   openGraph: {
-    title: 'Download Teen Patti Gold Game Free APK For Android',
-    description: 'Download Teen Patti Gold APK free. Play Teen Patti, Rummy & more. Earn real cash with secure payments. 600K+ downloads!',
+    title: 'Download Teen Patti Gold APK Free | Android Pakistan',
+    description:
+      'Get the official Teen Patti Gold APK for Android in Pakistan. Latest v1.656, 49MB, JazzCash & EasyPaisa payouts. Safe download steps — start playing in minutes.',
     url: "https://teenpattigoldgame.com.pk/download-teen-patti-gold",
     siteName: "Teen Patti Gold",
     locale: "en_US",
@@ -47,8 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: 'Download Teen Patti Gold Game Free APK For Android',
-    description: 'Download Teen Patti Gold APK free. Play Teen Patti, Rummy & more. Earn real cash with secure payments. 600K+ downloads!',
+    title: 'Download Teen Patti Gold APK Free | Android Pakistan',
+    description:
+      'Get the official Teen Patti Gold APK for Android in Pakistan. Latest v1.656, 49MB, JazzCash & EasyPaisa payouts. Safe download steps — start playing in minutes.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };

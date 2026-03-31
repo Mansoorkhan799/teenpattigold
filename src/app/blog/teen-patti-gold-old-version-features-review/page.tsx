@@ -3,9 +3,12 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'Teen Patti Gold Old Version: Features Review and Details 2026',
-  description: 'Complete review of Teen Patti Gold old version features. Compare classic features, interface, games, and payment methods. Know what made the app popular in Pakistan.',
-  keywords: ['Teen Patti Gold old version', 'Teen Patti Gold features', 'Teen Patti Gold review', '3 Patti Gold old app', 'Teen Patti Gold Pakistan'],
+  title: {
+    absolute: 'Teen Patti Gold Old Version Review — Features Pakistan',
+  },
+  description:
+    'Teen Patti Gold old version in Pakistan: classic UI & games. 2026 review — why players liked legacy builds and when upgrading the APK is safer and faster.',
+  keywords: ['Teen Patti Gold old version', 'Teen Patti Gold features', 'Teen Patti Gold review', 'Teen Patti Gold Pakistan'],
   robots: {
     index: true,
     follow: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-old-version-features-review',
   },
   openGraph: {
-    title: 'Teen Patti Gold Old Version: Features Review and Details 2026',
-    description: 'Complete review of Teen Patti Gold old version features. Compare classic features and what made the app popular in Pakistan.',
+    title: 'Teen Patti Gold Old Version Review — Features Pakistan',
+    description:
+      'Teen Patti Gold old version in Pakistan: classic UI & games. 2026 review — why players liked legacy builds and when upgrading the APK is safer and faster.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-old-version-features-review',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -32,8 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Teen Patti Gold Old Version: Features Review and Details 2026',
-    description: 'Complete review of Teen Patti Gold old version features. Compare classic features and what made the app popular in Pakistan.',
+    title: 'Teen Patti Gold Old Version Review — Features Pakistan',
+    description:
+      'Teen Patti Gold old version in Pakistan: classic UI & games. 2026 review — why players liked legacy builds and when upgrading the APK is safer and faster.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
 };
@@ -41,12 +46,13 @@ export const metadata: Metadata = {
 export default function TeenPattiGoldOldVersionPage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-old-version-features-review',
-    headline: 'Teen Patti Gold Old Version: Features Review and Details 2026',
-    description: 'Complete review of Teen Patti Gold old version features. Compare classic features, interface, games, and payment methods. Know what made the app popular in Pakistan.',
+    headline: 'Teen Patti Gold Old Version Review — Features Pakistan',
+    description:
+      'Teen Patti Gold old version in Pakistan: classic UI & games. 2026 review — why players liked legacy builds and when upgrading the APK is safer and faster.',
     datePublished: '2026-01-20T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
-    keywords: 'teen patti gold old version, teen patti gold features review, 3 patti gold old app, teen patti gold versions',
+    keywords: 'teen patti gold old version, teen patti gold features review, teen patti gold versions pakistan',
     wordCount: 1100,
   });
 

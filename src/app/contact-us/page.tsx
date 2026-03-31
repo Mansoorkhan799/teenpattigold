@@ -2,20 +2,34 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Teen Patti Gold | Get Help & Support',
-  description: 'Contact Teen Patti Gold support team for help with the app, content, privacy policy, and more. We are here to assist you.',
+  title: {
+    absolute: 'Contact Teen Patti Gold — Support & Help Pakistan 2026',
+  },
+  description:
+    'Contact Teen Patti Gold in Pakistan for payments or app help. Email, JazzCash & EasyPaisa tips — our team answers account and gameplay questions quickly.',
   keywords: 'contact teen patti gold, teen patti gold support, teen patti gold email, customer support, help teen patti gold',
   openGraph: {
-    title: 'Contact Us - Teen Patti Gold',
-    description: 'Get in touch with Teen Patti Gold support team for any queries or assistance.',
+    title: 'Contact Teen Patti Gold — Support & Help Pakistan 2026',
+    description:
+      'Contact Teen Patti Gold in Pakistan for payments or app help. Email, JazzCash & EasyPaisa tips — our team answers account and gameplay questions quickly.',
     url: 'https://teenpattigoldgame.com.pk/contact-us',
     siteName: 'Teen Patti Gold',
     type: 'website',
+    images: [
+      {
+        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Teen Patti Gold support Pakistan',
+      },
+    ],
   },
   twitter: {
-    card: 'summary',
-    title: 'Contact Us - Teen Patti Gold',
-    description: 'Get in touch with Teen Patti Gold support team for any queries or assistance.',
+    card: 'summary_large_image',
+    title: 'Contact Teen Patti Gold — Support & Help Pakistan 2026',
+    description:
+      'Contact Teen Patti Gold in Pakistan for payments or app help. Email, JazzCash & EasyPaisa tips — our team answers account and gameplay questions quickly.',
+    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/contact-us',

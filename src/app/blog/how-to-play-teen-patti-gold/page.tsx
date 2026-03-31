@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'How to Play Teen Patti Gold: Complete Gameplay Guide 2026',
-  description: 'Learn how to play Teen Patti Gold card game. Complete guide with rules, strategies, tips, and winning techniques for beginners and advanced players in Pakistan.',
+  title: {
+    absolute: 'How to Play Teen Patti Gold? Rules & Tips Pakistan 2026',
+  },
+  description:
+    'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
   keywords: ['how to play teen patti gold', 'teen patti gold rules', 'teen patti gold gameplay', 'teen patti gold strategy', 'how to win teen patti gold', 'teen patti gold tips'],
   robots: {
     index: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold",
   },
   openGraph: {
-    title: 'How to Play Teen Patti Gold: Complete Gameplay Guide 2026',
-    description: 'Learn how to play Teen Patti Gold card game with complete rules, strategies, and winning tips for players in Pakistan.',
+    title: 'How to Play Teen Patti Gold? Rules & Tips Pakistan 2026',
+    description:
+      'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -39,8 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Play Teen Patti Gold: Complete Gameplay Guide 2026',
-    description: 'Learn how to play Teen Patti Gold card game with complete rules, strategies, and winning tips for players in Pakistan.',
+    title: 'How to Play Teen Patti Gold? Rules & Tips Pakistan 2026',
+    description:
+      'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
@@ -48,8 +53,9 @@ export const metadata: Metadata = {
 export default function HowToPlay() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold',
-    headline: 'How to Play Teen Patti Gold: Complete Gameplay Guide 2026',
-    description: 'Learn how to play Teen Patti Gold card game. Complete guide with rules, strategies, tips, and winning techniques for beginners and advanced players in Pakistan.',
+    headline: 'How to Play Teen Patti Gold? Rules & Tips Pakistan 2026',
+    description:
+      'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
     datePublished: '2026-01-11T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
@@ -74,7 +80,7 @@ export default function HowToPlay() {
 
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
-              How to Play <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link>: Complete Gameplay Guide 2026
+              How to Play <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link>? Rules & Tips Pakistan 2026
             </h1>
             
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-8">

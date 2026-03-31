@@ -3,8 +3,11 @@ import Link from 'next/link';
 import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
-  title: 'Teen Patti Gold vs Teen Patti Stars 2026 | Which is Better in Pakistan?',
-  description: 'Comparing Teen Patti Gold vs Teen Patti Stars in 2026. See which app is better for Pakistani players in terms of games, withdrawals, bonuses, and overall experience.',
+  title: {
+    absolute: 'Teen Patti Gold vs Stars — Which Wins in Pakistan?',
+  },
+  description:
+    'Teen Patti Gold vs Teen Patti Stars in Pakistan: games, payouts & trust. 2026 comparison — choose the card app that fits JazzCash play and your risk comfort.',
   keywords: ['teen patti gold vs teen patti stars', 'teen patti gold vs teen patti stars pakistan', 'best teen patti app pakistan', 'teen patti comparison 2026', 'which teen patti app is better'],
   robots: {
     index: true,
@@ -20,8 +23,9 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-vs-teen-patti-stars',
   },
   openGraph: {
-    title: 'Teen Patti Gold vs Teen Patti Stars 2026 | Which is Better in Pakistan?',
-    description: 'Head-to-head comparison of Teen Patti Gold and Teen Patti Stars for Pakistani players. Games, withdrawals, bonuses, security, and more.',
+    title: 'Teen Patti Gold vs Stars — Which Wins in Pakistan?',
+    description:
+      'Teen Patti Gold vs Teen Patti Stars in Pakistan: games, payouts & trust. 2026 comparison — choose the card app that fits JazzCash play and your risk comfort.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-vs-teen-patti-stars',
     siteName: 'Teen Patti Gold',
     locale: 'en_US',
@@ -39,8 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Teen Patti Gold vs Teen Patti Stars 2026 | Which is Better?',
-    description: 'Head-to-head comparison for Pakistani players. Games, withdrawals, bonuses, and overall experience.',
+    title: 'Teen Patti Gold vs Stars — Which Wins in Pakistan?',
+    description:
+      'Teen Patti Gold vs Teen Patti Stars in Pakistan: games, payouts & trust. 2026 comparison — choose the card app that fits JazzCash play and your risk comfort.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
   }
 };
@@ -48,8 +53,9 @@ export const metadata: Metadata = {
 export default function ComparisonPage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-vs-teen-patti-stars',
-    headline: 'Teen Patti Gold vs Teen Patti Stars 2026 | Which is Better in Pakistan?',
-    description: 'Comparing Teen Patti Gold vs Teen Patti Stars in 2026. See which app is better for Pakistani players in terms of games, withdrawals, bonuses, and overall experience.',
+    headline: 'Teen Patti Gold vs Stars — Which Wins in Pakistan?',
+    description:
+      'Teen Patti Gold vs Teen Patti Stars in Pakistan: games, payouts & trust. 2026 comparison — choose the card app that fits JazzCash play and your risk comfort.',
     datePublished: '2026-03-10T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
