@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'How to Use Teen Patti Gold in Pakistan? Beginner 2026',
+    absolute: 'How to Use Teen Patti Gold APK in Pakistan?',
   },
   description:
     'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan",
   },
   openGraph: {
-    title: 'How to Use Teen Patti Gold in Pakistan? Beginner 2026',
+    title: 'How to Use Teen Patti Gold APK in Pakistan?',
     description:
       'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan',
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-01-10T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'How to Use Teen Patti Gold App in Pakistan 2026' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'How to Use Teen Patti Gold APK in Pakistan' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Use Teen Patti Gold in Pakistan? Beginner 2026',
+    title: 'How to Use Teen Patti Gold APK in Pakistan?',
     description:
       'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 export default function HowToUseApp() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan',
-    headline: 'How to Use Teen Patti Gold in Pakistan? Beginner 2026',
+    headline: 'How to Use Teen Patti Gold APK in Pakistan?',
     description:
       'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
     datePublished: '2026-01-10T09:00:00+05:00',
@@ -74,7 +74,7 @@ export default function HowToUseApp() {
 
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
-              How to Use <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link> in Pakistan? Beginner 2026
+              How to Use <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link> APK in Pakistan?
             </h1>
             
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-8">

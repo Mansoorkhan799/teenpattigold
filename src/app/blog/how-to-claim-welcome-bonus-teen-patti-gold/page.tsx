@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Claim Teen Patti Gold Welcome Bonus? Pakistan Guide 2026',
+    absolute: 'How to Claim Teen Patti Gold Welcome Bonus?',
   },
   description:
     'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
   },
   openGraph: {
-    title: 'Claim Teen Patti Gold Welcome Bonus? Pakistan Guide 2026',
+    title: 'How to Claim Teen Patti Gold Welcome Bonus?',
     description:
       'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'How to Claim Teen Patti Gold Welcome Bonus 2026' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'How to Claim Teen Patti Gold Welcome Bonus' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Claim Teen Patti Gold Welcome Bonus? Pakistan Guide 2026',
+    title: 'How to Claim Teen Patti Gold Welcome Bonus?',
     description:
       'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 export default function HowToClaimWelcomeBonusPage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
-    headline: 'Claim Teen Patti Gold Welcome Bonus? Pakistan Guide 2026',
+    headline: 'How to Claim Teen Patti Gold Welcome Bonus?',
     description:
       'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
     datePublished: '2026-01-25T09:00:00+05:00',
@@ -85,7 +85,7 @@ export default function HowToClaimWelcomeBonusPage() {
 
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
-              Claim Your Welcome Bonus on <Link href="/" className="text-accent">Teen Patti Gold</Link>? Pakistan Guide 2026
+              How to Claim <Link href="/" className="text-accent">Teen Patti Gold</Link> Welcome Bonus?
             </h1>
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-8">
               <span>📅 February 24, 2026</span>

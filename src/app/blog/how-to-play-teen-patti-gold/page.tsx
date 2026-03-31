@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'How to Play Teen Patti Gold? Rules & Tips Pakistan 2026',
+    absolute: 'How to Play Teen Patti Gold Pakistan?',
   },
   description:
     'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold",
   },
   openGraph: {
-    title: 'How to Play Teen Patti Gold? Rules & Tips Pakistan 2026',
+    title: 'How to Play Teen Patti Gold Pakistan?',
     description:
       'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold',
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
         url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'How to Play Teen Patti Gold - Complete Guide 2026',
+        alt: 'How to Play Teen Patti Gold Pakistan',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Play Teen Patti Gold? Rules & Tips Pakistan 2026',
+    title: 'How to Play Teen Patti Gold Pakistan?',
     description:
       'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 export default function HowToPlay() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold',
-    headline: 'How to Play Teen Patti Gold? Rules & Tips Pakistan 2026',
+    headline: 'How to Play Teen Patti Gold Pakistan?',
     description:
       'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
     datePublished: '2026-01-11T09:00:00+05:00',
@@ -80,7 +80,7 @@ export default function HowToPlay() {
 
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
-              How to Play <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link>? Rules & Tips Pakistan 2026
+              How to Play <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link> Pakistan?
             </h1>
             
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-8">
@@ -93,6 +93,33 @@ export default function HowToPlay() {
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed">
                   <strong className="text-white">Teen Patti Gold</strong> is one of the most popular card games in Pakistan. This comprehensive guide will teach you everything you need to know about playing Teen Patti, from basic rules to advanced strategies that can help you win real money. Once you are comfortable with the rules, <Link href="/blog/how-to-earn-money-from-teen-patti-gold" className="text-accent hover:underline">earning strategies</Link> and <Link href="/blog/tips-to-win-big-in-teen-patti-gold" className="text-accent hover:underline">expert tips</Link> help you apply them in the app.
+                </p>
+              </div>
+
+              <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
+                <h2 className="text-3xl font-bold mb-4 text-white">Popular games to try first in Teen Patti Gold</h2>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  The app has 30+ tables and modes. If you are new, start with one or two simple games, then move to skill titles as you learn bankroll and timing.
+                </p>
+                <ul className="space-y-4 text-gray-300">
+                  <li>
+                    <strong className="text-[#FFA500]">Teen Patti</strong> — The main game this guide covers. Best for learning hand rankings, blinds, and table flow before you raise stakes.
+                  </li>
+                  <li>
+                    <strong className="text-[#FFA500]">Dragon vs Tiger</strong> — Fast rounds and simple choices; useful to get comfortable with chips and the lobby without complex rules.
+                  </li>
+                  <li>
+                    <strong className="text-[#FFA500]">Rummy</strong> — More skill and longer games; good once you want strategy beyond pure luck.
+                  </li>
+                  <li>
+                    <strong className="text-[#FFA500]">Andar Bahar</strong> — Easy to follow (pick a side); low mental load while you learn how deposits and tables work.
+                  </li>
+                  <li>
+                    <strong className="text-[#FFA500]">Poker</strong> — If you already know hold&apos;em-style play, it transfers well; otherwise finish Teen Patti basics first.
+                  </li>
+                </ul>
+                <p className="text-gray-400 text-sm mt-6 mb-0">
+                  Browse the full list on the <Link href="/#best-games" className="text-accent hover:underline">homepage games section</Link> or open the app lobby and filter by multiplayer or skill games.
                 </p>
               </div>
 

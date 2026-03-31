@@ -45,6 +45,9 @@ export const metadata: Metadata = {
 
 const blogBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_BLOG]);
 
+const blogCardClassName =
+  'group flex h-full flex-col rounded-lg border-2 border-gray-700 bg-secondary px-8 py-8 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FFA500] focus-visible:ring-offset-2 focus-visible:ring-offset-[#06091F]';
+
 export default function Blog() {
   // Schema.org structured data for blog collection page
   const schemaData = {
@@ -61,7 +64,7 @@ export default function Blog() {
           "position": 1,
           "item": {
             "@type": "BlogPosting",
-            "name": "How to Use Teen Patti Gold in Pakistan? Beginner 2026",
+            "name": "How to Use Teen Patti Gold APK in Pakistan?",
             "url": "https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan"
           }
         },
@@ -70,7 +73,7 @@ export default function Blog() {
           "position": 2,
           "item": {
             "@type": "BlogPosting",
-            "name": "How to Play Teen Patti Gold? Rules & Tips Pakistan 2026",
+            "name": "How to Play Teen Patti Gold Pakistan?",
             "url": "https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold"
           }
         },
@@ -79,7 +82,7 @@ export default function Blog() {
           "position": 3,
           "item": {
             "@type": "BlogPosting",
-            "name": "How to Earn Money on Teen Patti Gold? Pakistan Guide",
+            "name": "How to Earn Money on Teen Patti Gold Pakistan?",
             "url": "https://teenpattigoldgame.com.pk/blog/how-to-earn-money-from-teen-patti-gold"
           }
         },
@@ -88,7 +91,7 @@ export default function Blog() {
           "position": 4,
           "item": {
             "@type": "BlogPosting",
-            "name": "Is Teen Patti Gold Real or Fake? Honest Pakistan Guide",
+            "name": "Is Teen Patti Gold Pakistan Real or Fake?",
             "url": "https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake"
           }
         },
@@ -97,7 +100,7 @@ export default function Blog() {
           "position": 5,
           "item": {
             "@type": "BlogPosting",
-            "name": "Create Teen Patti Gold Account & Login? Step Guide",
+            "name": "How to Create Teen Patti Gold Account and Login?",
             "url": "https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login"
           }
         },
@@ -106,7 +109,7 @@ export default function Blog() {
           "position": 6,
           "item": {
             "@type": "BlogPosting",
-            "name": "Win Big at Teen Patti Gold — Expert Tips Pakistan 2026",
+            "name": "How to Win Big at Teen Patti Gold Pakistan 2026?",
             "url": "https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold"
           }
         },
@@ -133,7 +136,7 @@ export default function Blog() {
           "position": 9,
           "item": {
             "@type": "BlogPosting",
-            "name": "Claim Teen Patti Gold Welcome Bonus? Pakistan Guide 2026",
+            "name": "How to Claim Teen Patti Gold Welcome Bonus?",
             "url": "https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold"
           }
         },
@@ -142,7 +145,7 @@ export default function Blog() {
           "position": 10,
           "item": {
             "@type": "BlogPosting",
-            "name": "Teen Patti Gold Login Problems? Fixes for Pakistan",
+            "name": "How to fix Login Problem of Teen Patti Gold?",
             "url": "https://teenpattigoldgame.com.pk/blog/teen-patti-gold-login-problems-solutions"
           }
         },
@@ -233,242 +236,198 @@ export default function Blog() {
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-accent">Teen Patti Gold Blog</h1>
       <p className="text-gray-300 mb-8 text-lg">Stay updated with the latest guides, tips, and tutorials for <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Teen Patti Gold</Link></p>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
         {/* Featured Post - How to Use App */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-[#FFA500]">
-          <div className="inline-block bg-[#FFA500] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-            ⭐ NEW
-          </div>
-          <h2 className="text-2xl font-bold mb-4 text-white">How to Use Teen Patti Gold in Pakistan? Beginner 2026</h2>
-          <p className="text-gray-300 mb-4">Complete beginner's guide on how to use Teen Patti Gold app in Pakistan. Learn navigation, gameplay, deposits, withdrawals, and tips for earning real money.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/how-to-use-teen-patti-gold-app-in-pakistan" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">How to Use Teen Patti Gold APK in Pakistan?</h2>
+          <p className="mb-4 flex-1 text-gray-300">Complete beginner's guide on how to use Teen Patti Gold app in Pakistan. Learn navigation, gameplay, deposits, withdrawals, and tips for earning real money.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 January 10, 2026</span>
             <span>•</span>
             <span>12 min read</span>
           </div>
-          <Link href="/blog/how-to-use-teen-patti-gold-app-in-pakistan" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Second Post - How to Play */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">How to Play Teen Patti Gold? Rules & Tips Pakistan 2026</h2>
-          <p className="text-gray-300 mb-4">Learn how to play Teen Patti Gold card game. Complete guide with rules, strategies, tips, and winning techniques for beginners and advanced players.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/how-to-play-teen-patti-gold" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">How to Play Teen Patti Gold Pakistan?</h2>
+          <p className="mb-4 flex-1 text-gray-300">Learn how to play Teen Patti Gold card game. Complete guide with rules, strategies, tips, and winning techniques for beginners and advanced players.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 January 11, 2026</span>
             <span>•</span>
             <span>10 min read</span>
           </div>
-          <Link href="/blog/how-to-play-teen-patti-gold" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Third Post - How to Earn Money */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">How to Earn Money on Teen Patti Gold? Pakistan Guide</h2>
-          <p className="text-gray-300 mb-4">Learn proven methods to earn real money from Teen Patti Gold. Complete guide on winning strategies, bonuses, referrals, and tips to maximize earnings.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/how-to-earn-money-from-teen-patti-gold" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">How to Earn Money on Teen Patti Gold Pakistan?</h2>
+          <p className="mb-4 flex-1 text-gray-300">Learn proven methods to earn real money from Teen Patti Gold. Complete guide on winning strategies, bonuses, referrals, and tips to maximize earnings.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 January 12, 2026</span>
             <span>•</span>
             <span>11 min read</span>
           </div>
-          <Link href="/blog/how-to-earn-money-from-teen-patti-gold" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Fourth Post */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">Is Teen Patti Gold Real or Fake? Honest Pakistan Guide</h2>
-          <p className="text-gray-300 mb-4">Discover the truth about Teen Patti Gold legitimacy, payment methods, and how to identify fake apps. Complete guide for 2026.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/is-teen-patti-gold-real-or-fake" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">Is Teen Patti Gold Pakistan Real or Fake?</h2>
+          <p className="mb-4 flex-1 text-gray-300">Discover the truth about Teen Patti Gold legitimacy, payment methods, and how to identify fake apps. Complete guide for 2026.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 January 2026</span>
             <span>•</span>
             <span>7 min read</span>
           </div>
-          <Link href="/blog/is-teen-patti-gold-real-or-fake" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Fifth Post */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">Create Teen Patti Gold Account & Login? Step Guide</h2>
-          <p className="text-gray-300 mb-4">Learn how to create your Teen Patti Gold account and login to start playing your favorite games and earning real money.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/create-teen-patti-gold-account-and-login" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">How to Create Teen Patti Gold Account and Login?</h2>
+          <p className="mb-4 flex-1 text-gray-300">Learn how to create your Teen Patti Gold account and login to start playing your favorite games and earning real money.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 January 2026</span>
             <span>•</span>
             <span>5 min read</span>
           </div>
-          <Link href="/blog/create-teen-patti-gold-account-and-login" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
-        
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
+
         {/* Sixth Post */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">Win Big at Teen Patti Gold — Expert Tips Pakistan 2026</h2>
-          <p className="text-gray-300 mb-4">Discover expert strategies and tips to maximize your winnings in Teen Patti, Rummy, and other card games.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/tips-to-win-big-in-teen-patti-gold" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">How to Win Big at Teen Patti Gold Pakistan 2026?</h2>
+          <p className="mb-4 flex-1 text-gray-300">Discover expert strategies and tips to maximize your winnings in Teen Patti, Rummy, and other card games.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 January 2026</span>
             <span>•</span>
             <span>6 min read</span>
           </div>
-          <Link href="/blog/tips-to-win-big-in-teen-patti-gold" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Seventh Post */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold Old Version Review — Features Pakistan</h2>
-          <p className="text-gray-300 mb-4">Complete review of Teen Patti Gold old version features. Compare classic features, interface, games, and what made the app popular.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/teen-patti-gold-old-version-features-review" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">Teen Patti Gold Old Version Review — Features Pakistan</h2>
+          <p className="mb-4 flex-1 text-gray-300">Complete review of Teen Patti Gold old version features. Compare classic features, interface, games, and what made the app popular.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 February 24, 2026</span>
             <span>•</span>
             <span>8 min read</span>
           </div>
-          <Link href="/blog/teen-patti-gold-old-version-features-review" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Eighth Post */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold Latest Version — New Features 2026</h2>
-          <p className="text-gray-300 mb-4">Discover the latest Teen Patti Gold V1.656 new features, 2026 updates, improved performance, and enhanced security.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/teen-patti-gold-latest-version-2026-updates" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">Teen Patti Gold Latest Version — New Features 2026</h2>
+          <p className="mb-4 flex-1 text-gray-300">Discover the latest Teen Patti Gold V1.656 new features, 2026 updates, improved performance, and enhanced security.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 February 24, 2026</span>
             <span>•</span>
             <span>9 min read</span>
           </div>
-          <Link href="/blog/teen-patti-gold-latest-version-2026-updates" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Ninth Post */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">Claim Teen Patti Gold Welcome Bonus? Pakistan Guide 2026</h2>
-          <p className="text-gray-300 mb-4">Step-by-step guide to claim your Teen Patti Gold welcome bonus. Get 100% recharge bonus on first deposit.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/how-to-claim-welcome-bonus-teen-patti-gold" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">How to Claim Teen Patti Gold Welcome Bonus?</h2>
+          <p className="mb-4 flex-1 text-gray-300">Step-by-step guide to claim your Teen Patti Gold welcome bonus. Get 100% recharge bonus on first deposit.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 February 24, 2026</span>
             <span>•</span>
             <span>6 min read</span>
           </div>
-          <Link href="/blog/how-to-claim-welcome-bonus-teen-patti-gold" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Tenth Post */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold Login Problems? Fixes for Pakistan</h2>
-          <p className="text-gray-300 mb-4">Fix Teen Patti Gold login issues: forgot password, OTP not received, account locked. Complete troubleshooting guide.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/teen-patti-gold-login-problems-solutions" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">How to fix Login Problem of Teen Patti Gold?</h2>
+          <p className="mb-4 flex-1 text-gray-300">Fix Teen Patti Gold login issues: forgot password, OTP not received, account locked. Complete troubleshooting guide.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 February 24, 2026</span>
             <span>•</span>
             <span>7 min read</span>
           </div>
-          <Link href="/blog/teen-patti-gold-login-problems-solutions" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Eleventh Post */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold Offers & Rewards — Pakistan Deals 2026</h2>
-          <p className="text-gray-300 mb-4">Discover the latest Teen Patti Gold offers: 100% welcome bonus, recharge rebate, VIP rewards, referral program.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/latest-offers-rewards-teen-patti-gold" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">Teen Patti Gold Offers & Rewards — Pakistan Deals 2026</h2>
+          <p className="mb-4 flex-1 text-gray-300">Discover the latest Teen Patti Gold offers: 100% welcome bonus, recharge rebate, VIP rewards, referral program.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 February 24, 2026</span>
             <span>•</span>
             <span>8 min read</span>
           </div>
-          <Link href="/blog/latest-offers-rewards-teen-patti-gold" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Twelfth Post */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">Responsible Gaming — Teen Patti Gold Pakistan Guide</h2>
-          <p className="text-gray-300 mb-4">Learn responsible gaming practices: set limits, manage bankroll, avoid addiction, and play safely. Complete guide for Pakistan players.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/responsible-gaming-guide-2026" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">Responsible Gaming — Teen Patti Gold Pakistan Guide</h2>
+          <p className="mb-4 flex-1 text-gray-300">Learn responsible gaming practices: set limits, manage bankroll, avoid addiction, and play safely. Complete guide for Pakistan players.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 February 24, 2026</span>
             <span>•</span>
             <span>7 min read</span>
           </div>
-          <Link href="/blog/responsible-gaming-guide-2026" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Thirteenth Post */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">Is Teen Patti Gold Best for Real Cash in Pakistan?</h2>
-          <p className="text-gray-300 mb-4">Compare Teen Patti Gold with other card games for earning real cash. 30+ games, JazzCash, EasyPaisa, daily bonuses. Complete analysis.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/is-teen-patti-gold-better-for-earning-real-cash-2026" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">Is Teen Patti Gold Best for Real Cash in Pakistan?</h2>
+          <p className="mb-4 flex-1 text-gray-300">Compare Teen Patti Gold with other card games for earning real cash. 30+ games, JazzCash, EasyPaisa, daily bonuses. Complete analysis.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 February 24, 2026</span>
             <span>•</span>
             <span>8 min read</span>
           </div>
-          <Link href="/blog/is-teen-patti-gold-better-for-earning-real-cash-2026" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Fourteenth Post - Free Chips */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-[#FFA500]">
-          <div className="inline-block bg-[#FFA500] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-            🆕 NEW
-          </div>
-          <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold Free Chips 2026 — Daily Bonus Pakistan</h2>
-          <p className="text-gray-300 mb-4">All the ways to get free chips in Teen Patti Gold: daily login bonuses, referral rewards, lucky spin, tasks, and event promotions.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/teen-patti-gold-free-chips-2026" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">Teen Patti Gold Free Chips 2026 — Daily Bonus Pakistan</h2>
+          <p className="mb-4 flex-1 text-gray-300">All the ways to get free chips in Teen Patti Gold: daily login bonuses, referral rewards, lucky spin, tasks, and event promotions.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 March 1, 2026</span>
             <span>•</span>
             <span>6 min read</span>
           </div>
-          <Link href="/blog/teen-patti-gold-free-chips-2026" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Fifteenth Post - Referral Code */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-[#FFA500]">
-          <div className="inline-block bg-[#FFA500] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-            🆕 NEW
-          </div>
-          <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold Referral Code Pakistan — Bonus 2026</h2>
-          <p className="text-gray-300 mb-4">Complete guide on Teen Patti Gold referral codes. Learn how to find your code, share it, and earn chip rewards for every friend you invite.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/teen-patti-gold-referral-code-pakistan" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">Teen Patti Gold Referral Code Pakistan — Bonus 2026</h2>
+          <p className="mb-4 flex-1 text-gray-300">Complete guide on Teen Patti Gold referral codes. Learn how to find your code, share it, and earn chip rewards for every friend you invite.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 March 5, 2026</span>
             <span>•</span>
             <span>5 min read</span>
           </div>
-          <Link href="/blog/teen-patti-gold-referral-code-pakistan" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
 
         {/* Sixteenth Post - Comparison */}
-        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-[#FFA500]">
-          <div className="inline-block bg-[#FFA500] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
-            🆕 NEW
-          </div>
-          <h2 className="text-2xl font-bold mb-4 text-white">Teen Patti Gold vs Stars — Which Wins in Pakistan?</h2>
-          <p className="text-gray-300 mb-4">Full comparison of Teen Patti Gold and Teen Patti Stars. Games, withdrawals, bonuses, community — see which app wins for Pakistani players.</p>
-          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+        <Link href="/blog/teen-patti-gold-vs-teen-patti-stars" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">Teen Patti Gold vs Stars — Which Wins in Pakistan?</h2>
+          <p className="mb-4 flex-1 text-gray-300">Full comparison of Teen Patti Gold and Teen Patti Stars. Games, withdrawals, bonuses, community — see which app wins for Pakistani players.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
             <span>📅 March 10, 2026</span>
             <span>•</span>
             <span>7 min read</span>
           </div>
-          <Link href="/blog/teen-patti-gold-vs-teen-patti-stars" className="text-accent hover:underline font-semibold">
-            Read More →
-          </Link>
-        </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
       </div>
     </div>
     </>

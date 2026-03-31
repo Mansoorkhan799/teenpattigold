@@ -819,7 +819,7 @@ export default function Home() {
       </section>
 
       {/* Available Games Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="best-games" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Best Games to Play</h2>
           

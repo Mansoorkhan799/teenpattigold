@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Win Big at Teen Patti Gold — Expert Tips Pakistan 2026',
+    absolute: 'How to Win Big at Teen Patti Gold Pakistan 2026?',
   },
   description:
     'Win more at Teen Patti Gold in Pakistan: bankroll, table choice & patience. 2026 practical tips — smarter play, not guaranteed wins; always gamble responsibly.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold",
   },
   openGraph: {
-    title: 'Win Big at Teen Patti Gold — Expert Tips Pakistan 2026',
+    title: 'How to Win Big at Teen Patti Gold Pakistan 2026?',
     description:
       'Win more at Teen Patti Gold in Pakistan: bankroll, table choice & patience. 2026 practical tips — smarter play, not guaranteed wins; always gamble responsibly.',
     url: 'https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold',
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
         url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Tips to Win Big in Teen Patti Gold - Expert Strategies 2026',
+        alt: 'How to Win Big at Teen Patti Gold Pakistan 2026',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Win Big at Teen Patti Gold — Expert Tips Pakistan 2026',
+    title: 'How to Win Big at Teen Patti Gold Pakistan 2026?',
     description:
       'Win more at Teen Patti Gold in Pakistan: bankroll, table choice & patience. 2026 practical tips — smarter play, not guaranteed wins; always gamble responsibly.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 export default function TipsToWinBig() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold',
-    headline: 'Win Big at Teen Patti Gold — Expert Tips Pakistan 2026',
+    headline: 'How to Win Big at Teen Patti Gold Pakistan 2026?',
     description:
       'Win more at Teen Patti Gold in Pakistan: bankroll, table choice & patience. 2026 practical tips — smarter play, not guaranteed wins; always gamble responsibly.',
     datePublished: '2026-01-20T09:00:00+05:00',
@@ -78,7 +78,7 @@ export default function TipsToWinBig() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">Tips to Win Big in <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link></h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">How to Win Big at <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link> Pakistan 2026?</h1>
             
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">

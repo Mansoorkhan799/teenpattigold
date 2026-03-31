@@ -5,7 +5,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Is Teen Patti Gold Real or Fake? Honest Pakistan Guide',
+    absolute: 'Is Teen Patti Gold Pakistan Real or Fake?',
   },
   description:
     'Teen Patti Gold real or fake in Pakistan? 2026 facts on payouts & APKs. Read before JazzCash — skip scam mirrors; know how official Teen Patti Gold play works.',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake",
   },
   openGraph: {
-    title: 'Is Teen Patti Gold Real or Fake? Honest Pakistan Guide',
+    title: 'Is Teen Patti Gold Pakistan Real or Fake?',
     description:
       'Teen Patti Gold real or fake in Pakistan? 2026 facts on payouts & APKs. Read before JazzCash — skip scam mirrors; know how official Teen Patti Gold play works.',
     url: "https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake",
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
         url: 'https://teenpattigoldgame.com.pk/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Is Teen Patti Gold Real or Fake - Complete Truth Guide 2026',
+        alt: 'Is Teen Patti Gold Pakistan Real or Fake',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Is Teen Patti Gold Real or Fake? Honest Pakistan Guide',
+    title: 'Is Teen Patti Gold Pakistan Real or Fake?',
     description:
       'Teen Patti Gold real or fake in Pakistan? 2026 facts on payouts & APKs. Read before JazzCash — skip scam mirrors; know how official Teen Patti Gold play works.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 export default function TeenPattiGoldRealOrFakePage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake',
-    headline: 'Is Teen Patti Gold Real or Fake? Honest Pakistan Guide',
+    headline: 'Is Teen Patti Gold Pakistan Real or Fake?',
     description:
       'Teen Patti Gold real or fake in Pakistan? 2026 facts on payouts & APKs. Read before JazzCash — skip scam mirrors; know how official Teen Patti Gold play works.',
     datePublished: '2026-01-15T09:00:00+05:00',
@@ -84,13 +84,13 @@ export default function TeenPattiGoldRealOrFakePage() {
         <span className="text-gray-500 mx-2">/</span>
         <Link href="/blog" className="text-[#0ea5e9] hover:underline">Blog</Link>
         <span className="text-gray-500 mx-2">/</span>
-        <span className="text-gray-400">Is Teen Patti Gold Real or Fake?</span>
+        <span className="text-gray-400">Is Teen Patti Gold Pakistan Real or Fake?</span>
       </nav>
 
       {/* Hero Section */}
       <header className="mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-          Is Teen Patti Gold Real or Fake? Honest Pakistan Guide
+          Is Teen Patti Gold Pakistan Real or Fake?
         </h1>
         <div className="flex items-center gap-4 text-gray-400 text-sm mb-6">
           <time>January 2026</time>

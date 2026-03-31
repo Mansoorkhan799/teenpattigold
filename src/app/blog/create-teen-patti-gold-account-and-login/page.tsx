@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Create Teen Patti Gold Account & Login? Step Guide',
+    absolute: 'How to Create Teen Patti Gold Account and Login?',
   },
   description:
     'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login",
   },
   openGraph: {
-    title: 'Create Teen Patti Gold Account & Login? Step Guide',
+    title: 'How to Create Teen Patti Gold Account and Login?',
     description:
       'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
     url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Create Teen Patti Gold Account & Login? Step Guide',
+    title: 'How to Create Teen Patti Gold Account and Login?',
     description:
       'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 export default function CreateAccountLogin() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login',
-    headline: 'Create Teen Patti Gold Account & Login? Step Guide',
+    headline: 'How to Create Teen Patti Gold Account and Login?',
     description:
       'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
     datePublished: '2026-01-15T09:00:00+05:00',
@@ -94,7 +94,7 @@ export default function CreateAccountLogin() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">Create a <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link> Account & Login? Step Guide</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">How to Create <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link> Account and Login?</h1>
             
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
