@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'How to Play Teen Patti Gold Pakistan?',
+    absolute: 'How to Play Teen Patti Gold in Pakistan — Full Guide',
   },
   description:
     'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold",
   },
   openGraph: {
-    title: 'How to Play Teen Patti Gold Pakistan?',
+    title: 'How to Play Teen Patti Gold in Pakistan — Full Guide',
     description:
       'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Play Teen Patti Gold Pakistan?',
+    title: 'How to Play Teen Patti Gold in Pakistan — Full Guide',
     description:
       'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 export default function HowToPlay() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold',
-    headline: 'How to Play Teen Patti Gold Pakistan?',
+    headline: 'How to Play Teen Patti Gold in Pakistan — Full Guide',
     description:
       'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
     datePublished: '2026-01-11T09:00:00+05:00',

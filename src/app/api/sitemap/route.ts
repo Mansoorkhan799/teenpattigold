@@ -22,7 +22,7 @@ export async function GET() {
   const mainPages: PageType[] = [
     {
       url: '/',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'daily',
       priority: 1.0,
       images: [
@@ -35,7 +35,7 @@ export async function GET() {
     },
     {
       url: '/download-teen-patti-gold',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'weekly',
       priority: 0.95,
       images: [
@@ -48,7 +48,7 @@ export async function GET() {
     },
     {
       url: '/deposit-money-in-teen-patti-gold',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'weekly',
       priority: 0.9,
       images: [
@@ -61,7 +61,7 @@ export async function GET() {
     },
     {
       url: '/withdraw-money-from-teen-patti-gold',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'weekly',
       priority: 0.9,
       images: [
@@ -74,7 +74,7 @@ export async function GET() {
     },
     {
       url: '/teen-patti-gold-for-pc',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'weekly',
       priority: 0.9,
       images: [
@@ -87,7 +87,7 @@ export async function GET() {
     },
     {
       url: '/teen-patti-gold-for-ios',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'weekly',
       priority: 0.9,
       images: [
@@ -100,7 +100,7 @@ export async function GET() {
     },
     {
       url: '/about-us',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.7,
       images: [
@@ -113,7 +113,7 @@ export async function GET() {
     },
     {
       url: '/blog',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'weekly',
       priority: 0.85,
       images: [
@@ -126,7 +126,7 @@ export async function GET() {
     },
     {
       url: '/contact-us',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.7
     },
@@ -154,111 +154,111 @@ export async function GET() {
   const blogPosts: PageType[] = [
     {
       url: '/blog/how-to-use-teen-patti-gold-app-in-pakistan',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.9,
       images: [{ loc: '/teen-patti-gold-app.webp', title: 'How to Use Teen Patti Gold App in Pakistan', caption: 'Complete beginner guide for Teen Patti Gold app in Pakistan' }]
     },
     {
       url: '/blog/how-to-play-teen-patti-gold',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.9,
       images: [{ loc: '/teen-patti-gold-game.webp', title: 'How to Play Teen Patti Gold - Complete Guide', caption: 'Complete gameplay guide for Teen Patti Gold card game' }]
     },
     {
       url: '/blog/how-to-earn-money-from-teen-patti-gold',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.9,
       images: [{ loc: '/teen-patti-gold-refer-and-earn.webp', title: 'How to Earn Money from Teen Patti Gold', caption: 'Earn real money from Teen Patti Gold in Pakistan' }]
     },
     {
       url: '/blog/is-teen-patti-gold-real-or-fake',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.9,
       images: [{ loc: '/teen-patti-gold-game.webp', title: 'Is Teen Patti Gold Real or Fake', caption: 'Complete truth guide about Teen Patti Gold legitimacy' }]
     },
     {
       url: '/blog/create-teen-patti-gold-account-and-login',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.85,
       images: [{ loc: '/teen-patti-gold-app.webp', title: 'Create Teen Patti Gold Account and Login', caption: 'Step by step account creation and login guide' }]
     },
     {
       url: '/blog/tips-to-win-big-in-teen-patti-gold',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.85,
       images: [{ loc: '/teen-patti-gold-game.webp', title: 'Tips to Win Big in Teen Patti Gold', caption: 'Expert strategies and tips to win in Teen Patti Gold' }]
     },
     {
       url: '/blog/teen-patti-gold-old-version-features-review',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.8,
       images: [{ loc: '/teen-patti-gold-app.webp', title: 'Teen Patti Gold Old Version Features Review', caption: 'Review of Teen Patti Gold old version features' }]
     },
     {
       url: '/blog/teen-patti-gold-latest-version-2026-updates',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.9,
       images: [{ loc: '/teen-patti-gold-apk.webp', title: 'Teen Patti Gold Latest Version V1.656 Updates 2026', caption: 'Latest Teen Patti Gold V1.656 new features and updates' }]
     },
     {
       url: '/blog/how-to-claim-welcome-bonus-teen-patti-gold',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.85,
       images: [{ loc: '/teen-patti-gold-deposit-money.webp', title: 'Claim Teen Patti Gold Welcome Bonus', caption: 'How to claim 100% first deposit welcome bonus in Teen Patti Gold' }]
     },
     {
       url: '/blog/teen-patti-gold-login-problems-solutions',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.8,
       images: [{ loc: '/teen-patti-gold-app.webp', title: 'Teen Patti Gold Login Problems Solutions', caption: 'Fix Teen Patti Gold login issues and problems' }]
     },
     {
       url: '/blog/latest-offers-rewards-teen-patti-gold',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'weekly',
       priority: 0.9,
       images: [{ loc: '/teen-patti-gold-vip-program.webp', title: 'Teen Patti Gold Latest Offers and Rewards 2026', caption: 'Latest offers, bonuses, and rewards in Teen Patti Gold' }]
     },
     {
       url: '/blog/responsible-gaming-guide-2026',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.75
     },
     {
       url: '/blog/is-teen-patti-gold-better-for-earning-real-cash-2026',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.85,
       images: [{ loc: '/teen-patti-gold-refer-and-earn.webp', title: 'Is Teen Patti Gold Better for Earning Real Cash 2026', caption: 'Analysis of Teen Patti Gold for earning real cash in Pakistan' }]
     },
     {
       url: '/blog/teen-patti-gold-free-chips-2026',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'weekly',
       priority: 0.9,
       images: [{ loc: '/teen-patti-gold-refer-and-earn.webp', title: 'Teen Patti Gold Free Chips 2026', caption: 'Get free chips in Teen Patti Gold daily - complete guide for Pakistan' }]
     },
     {
       url: '/blog/teen-patti-gold-referral-code-pakistan',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'weekly',
       priority: 0.9,
       images: [{ loc: '/teen-patti-gold-refer-and-earn.webp', title: 'Teen Patti Gold Referral Code Pakistan 2026', caption: 'Earn bonus chips with Teen Patti Gold referral code in Pakistan' }]
     },
     {
       url: '/blog/teen-patti-gold-vs-teen-patti-stars',
-      lastMod: '2026-03-27T12:00:00+05:00',
+      lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'monthly',
       priority: 0.85,
       images: [{ loc: '/teen-patti-gold-game.webp', title: 'Teen Patti Gold vs Teen Patti Stars 2026', caption: 'Comparison of Teen Patti Gold and Teen Patti Stars for Pakistan players' }]

@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'How to Use Teen Patti Gold APK in Pakistan?',
+    absolute: 'How to Use Teen Patti Gold APK in Pakistan? 2026 Guide',
   },
   description:
     'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan",
   },
   openGraph: {
-    title: 'How to Use Teen Patti Gold APK in Pakistan?',
+    title: 'How to Use Teen Patti Gold APK in Pakistan? 2026 Guide',
     description:
       'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Use Teen Patti Gold APK in Pakistan?',
+    title: 'How to Use Teen Patti Gold APK in Pakistan? 2026 Guide',
     description:
       'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 export default function HowToUseApp() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan',
-    headline: 'How to Use Teen Patti Gold APK in Pakistan?',
+    headline: 'How to Use Teen Patti Gold APK in Pakistan? 2026 Guide',
     description:
       'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
     datePublished: '2026-01-10T09:00:00+05:00',

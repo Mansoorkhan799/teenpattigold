@@ -123,11 +123,11 @@ export default function AboutPage() {
             "mainEntity": {
               "@type": "Organization",
               "name": "Teen Patti Gold",
-              "alternateName": "3 Patti Gold Game",
+              "alternateName": ["Teen Patti Gold Pakistan", "TeenPattiGold"],
               "url": "https://teenpattigoldgame.com.pk",
               "logo": LOGO_URL,
               "description": "Teen Patti Gold is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, Dragon vs Tiger and more with real cash rewards.",
-              "foundingDate": "2024",
+              "foundingDate": "2023",
               "foundingLocation": {
                 "@type": "Country",
                 "name": "Pakistan"

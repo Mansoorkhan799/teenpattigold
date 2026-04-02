@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'How to Create Teen Patti Gold Account and Login?',
+    absolute: 'How to Create Teen Patti Gold Account and Login? 2026 2026',
   },
   description:
     'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login",
   },
   openGraph: {
-    title: 'How to Create Teen Patti Gold Account and Login?',
+    title: 'How to Create Teen Patti Gold Account and Login? 2026',
     description:
       'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
     url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Create Teen Patti Gold Account and Login?',
+    title: 'How to Create Teen Patti Gold Account and Login? 2026',
     description:
       'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 export default function CreateAccountLogin() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login',
-    headline: 'How to Create Teen Patti Gold Account and Login?',
+    headline: 'How to Create Teen Patti Gold Account and Login? 2026',
     description:
       'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
     datePublished: '2026-01-15T09:00:00+05:00',

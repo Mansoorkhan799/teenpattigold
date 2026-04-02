@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'How to Win Big at Teen Patti Gold Pakistan 2026?',
+    absolute: 'How to Win Big at Teen Patti Gold Pakistan in 2026?',
   },
   description:
     'Win more at Teen Patti Gold in Pakistan: bankroll, table choice & patience. 2026 practical tips — smarter play, not guaranteed wins; always gamble responsibly.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: "https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold",
   },
   openGraph: {
-    title: 'How to Win Big at Teen Patti Gold Pakistan 2026?',
+    title: 'How to Win Big at Teen Patti Gold Pakistan in 2026?',
     description:
       'Win more at Teen Patti Gold in Pakistan: bankroll, table choice & patience. 2026 practical tips — smarter play, not guaranteed wins; always gamble responsibly.',
     url: 'https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Win Big at Teen Patti Gold Pakistan 2026?',
+    title: 'How to Win Big at Teen Patti Gold Pakistan in 2026?',
     description:
       'Win more at Teen Patti Gold in Pakistan: bankroll, table choice & patience. 2026 practical tips — smarter play, not guaranteed wins; always gamble responsibly.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
 export default function TipsToWinBig() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold',
-    headline: 'How to Win Big at Teen Patti Gold Pakistan 2026?',
+    headline: 'How to Win Big at Teen Patti Gold Pakistan in 2026?',
     description:
       'Win more at Teen Patti Gold in Pakistan: bankroll, table choice & patience. 2026 practical tips — smarter play, not guaranteed wins; always gamble responsibly.',
     datePublished: '2026-01-20T09:00:00+05:00',

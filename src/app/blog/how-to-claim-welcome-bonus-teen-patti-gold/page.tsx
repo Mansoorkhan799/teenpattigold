@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'How to Claim Teen Patti Gold Welcome Bonus?',
+    absolute: 'How to Claim Teen Patti Gold Welcome Bonus Pakistan?',
   },
   description:
     'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
   },
   openGraph: {
-    title: 'How to Claim Teen Patti Gold Welcome Bonus?',
+    title: 'How to Claim Teen Patti Gold Welcome Bonus Pakistan?',
     description:
       'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Claim Teen Patti Gold Welcome Bonus?',
+    title: 'How to Claim Teen Patti Gold Welcome Bonus Pakistan?',
     description:
       'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 export default function HowToClaimWelcomeBonusPage() {
   const schemaData = getBlogPostingSchema({
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
-    headline: 'How to Claim Teen Patti Gold Welcome Bonus?',
+    headline: 'How to Claim Teen Patti Gold Welcome Bonus Pakistan?',
     description:
       'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
     datePublished: '2026-01-25T09:00:00+05:00',

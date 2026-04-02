@@ -7,6 +7,7 @@ import { SITE_ARTICLE_DATE_PUBLISHED, getSiteArticleDateModified } from '@/lib/s
 /** Hreflang for `/` only — title, description, OG, etc. come from root `layout.tsx`. */
 export const metadata: Metadata = {
   alternates: {
+    canonical: 'https://teenpattigoldgame.com.pk/',
     languages: {
       en: 'https://teenpattigoldgame.com.pk/',
       'x-default': 'https://teenpattigoldgame.com.pk/',
@@ -709,7 +710,7 @@ export default function Home() {
           <div className="mb-8">
           <ol className="list-decimal pl-5 space-y-3 text-gray-300">
             <li>Open the browser on your Android device.</li>
-            <li>Visit <Link href="https://www.teenpattigoldgame.com.pk" className="text-[#0ea5e9] hover:underline font-medium">teenpattigoldgame.com.pk</Link> and click the Download button to get the latest version.</li>
+            <li>Visit <Link href="/" className="text-[#0ea5e9] hover:underline font-medium">teenpattigoldgame.com.pk</Link> and click the Download button to get the latest version.</li>
             <li>Click the Download button to start downloading.</li>
             <li>Wait a few seconds for the download to complete.</li>
             <li>The file will be saved in the Download folder of your device.</li>
