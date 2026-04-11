@@ -5,13 +5,13 @@ import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_DEPOSIT } from '@/lib/
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Deposit on Teen Patti Gold — JazzCash & EasyPaisa PK',
+    absolute: 'How to Deposit Money in Teen Patti Gold APK Pakistan?',
   },
   description:
     'Deposit on Teen Patti Gold with JazzCash, EasyPaisa or card in Pakistan. Bonuses, minimums & a safe top-up flow before Teen Patti or Rummy real-money play.',
   keywords: 'deposit money teen patti gold, teen patti gold payment methods, jazzcash deposit, easypaisa deposit, add funds teen patti gold, teen patti gold recharge',
   openGraph: {
-    title: 'Deposit on Teen Patti Gold — JazzCash & EasyPaisa PK',
+    title: 'How to Deposit Money in Teen Patti Gold APK Pakistan?',
     description:
       'Deposit on Teen Patti Gold with JazzCash, EasyPaisa or card in Pakistan. Bonuses, minimums & a safe top-up flow before Teen Patti or Rummy real-money play.',
     url: 'https://teenpattigoldgame.com.pk/deposit-money-in-teen-patti-gold',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Deposit on Teen Patti Gold — JazzCash & EasyPaisa PK',
+    title: 'How to Deposit Money in Teen Patti Gold APK Pakistan?',
     description:
       'Deposit on Teen Patti Gold with JazzCash, EasyPaisa or card in Pakistan. Bonuses, minimums & a safe top-up flow before Teen Patti or Rummy real-money play.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
