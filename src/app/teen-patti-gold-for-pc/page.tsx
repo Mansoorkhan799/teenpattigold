@@ -60,6 +60,51 @@ export const metadata: Metadata = {
 
 const pcBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_PC]);
 
+const pcHowToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Download and Play Teen Patti Gold on PC',
+  description: 'Step-by-step guide to install and play Teen Patti Gold on a Windows PC using an Android emulator.',
+  totalTime: 'PT15M',
+  supply: [
+    { '@type': 'HowToSupply', name: 'Windows 7 or higher PC' },
+    { '@type': 'HowToSupply', name: 'Android Emulator (e.g. BlueStacks, LDPlayer)' },
+    { '@type': 'HowToSupply', name: 'Teen Patti Gold APK' },
+  ],
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Visit the Official Website',
+      text: 'Open the official Teen Patti Gold website at www.teenpattigoldgame.com.pk to get the latest APK.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Install an Android Emulator',
+      text: 'Download and install an Android emulator such as BlueStacks, LDPlayer, or Nox Player on your Windows PC.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Download Teen Patti Gold APK',
+      text: 'Download the latest version of the Teen Patti Gold APK from the official website.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Install APK in the Emulator',
+      text: 'Open the emulator, locate the "Install APK" option, and select the downloaded Teen Patti Gold APK file.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Register and Start Playing',
+      text: 'Once installed, open Teen Patti Gold inside the emulator, register or log in, and start playing on your PC.',
+    },
+  ],
+};
+
 export default function TeenPattiGoldForPCPage() {
   // Schema.org structured data for PC version page
   const schemaData = {
@@ -108,6 +153,10 @@ export default function TeenPattiGoldForPCPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pcBreadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pcHowToSchema) }}
       />
 
       {/* Hero Section */}

@@ -57,9 +57,66 @@ export default function HowToUseApp() {
     wordCount: 1400,
   });
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Use the Teen Patti Gold App in Pakistan',
+    description: 'Beginner guide to using the Teen Patti Gold APK in Pakistan: download, install, register, deposit, play, and withdraw.',
+    totalTime: 'PT15M',
+    supply: [
+      { '@type': 'HowToSupply', name: 'Android device (Android 5.0+)' },
+      { '@type': 'HowToSupply', name: 'JazzCash or EasyPaisa account' },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Download the App',
+        text: 'Visit the official Teen Patti Gold download page and download the free APK onto your Android device.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Enable Unknown Sources and Install',
+        text: 'Go to Settings > Security, enable "Install from Unknown Sources", then open and install the downloaded APK.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Create Your Account',
+        text: 'Open the app, tap Register, enter your mobile number, create a password, and verify with the OTP sent to your phone.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Explore the Dashboard',
+        text: 'After logging in, explore the game lobby, wallet, promotions, and profile sections from the main dashboard.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Deposit Money',
+        text: 'Tap the wallet icon, select Deposit, choose JazzCash or EasyPaisa, enter the amount, and approve the payment request.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 6,
+        name: 'Select a Game and Play',
+        text: 'Browse the lobby, pick a game (Teen Patti, Rummy, Dragon Tiger, etc.), choose a table, and start playing.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 7,
+        name: 'Withdraw Winnings',
+        text: 'Go to Wallet > Withdraw, select JazzCash, EasyPaisa, or Bank Card, enter the amount and your account details, and submit.',
+      },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

@@ -63,9 +63,56 @@ export default function HowToPlay() {
     wordCount: 1800,
   });
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Play Teen Patti Gold in Pakistan',
+    description: 'Complete guide to playing Teen Patti Gold: hand rankings, blinds, betting rounds, and winning strategies.',
+    totalTime: 'PT10M',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Download and Register',
+        text: 'Download the Teen Patti Gold app and create an account with your mobile number.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Select a Game',
+        text: 'Browse the game lobby and choose a game (e.g. Teen Patti, Rummy, Dragon Tiger). Start with low-stakes tables.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Receive Your Cards',
+        text: 'Each player receives 3 cards face down at the start of each round.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Place Your Bet',
+        text: 'Decide to play Blind (without looking at cards, bet at half rate) or Seen (view cards, bet at full rate).',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Pack or Show',
+        text: 'Choose to Pack (fold) if your hand is weak, or call a Show to reveal cards when only two players remain.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 6,
+        name: 'Win the Pot',
+        text: 'The player with the best hand (Trail > Pure Sequence > Sequence > Color > Pair > High Card) wins the pot.',
+      },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

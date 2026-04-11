@@ -63,9 +63,62 @@ export default function HowToEarnMoney() {
     wordCount: 1500,
   });
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Earn Money on Teen Patti Gold in Pakistan',
+    description: 'Proven methods to earn real money from Teen Patti Gold including winning card games, bonuses, referrals, and VIP rewards.',
+    totalTime: 'PT20M',
+    step: [
+      {
+        '@type': 'HowToStep',
+        position: 1,
+        name: 'Download and Register',
+        text: 'Download Teen Patti Gold and create your account. New users receive a welcome bonus on their first deposit.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 2,
+        name: 'Claim Your Welcome Bonus',
+        text: 'Make your first deposit via JazzCash or EasyPaisa to unlock the 100% welcome bonus and double your starting balance.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 3,
+        name: 'Master a Game',
+        text: 'Focus on one game (Teen Patti, Rummy, or Dragon Tiger) and learn its strategies before playing for real money.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 4,
+        name: 'Play at Low-Stakes Tables',
+        text: 'Start with low-stakes tables to build confidence and grow your bankroll without taking large risks.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 5,
+        name: 'Use the Referral Program',
+        text: 'Share your referral code with friends. Earn bonus rewards each time someone registers and deposits using your code.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 6,
+        name: 'Claim Daily Login Rewards',
+        text: 'Log in every day to collect free chips and daily rewards that boost your playing balance.',
+      },
+      {
+        '@type': 'HowToStep',
+        position: 7,
+        name: 'Withdraw Your Winnings',
+        text: 'Once you have accumulated winnings, withdraw via JazzCash, EasyPaisa, or Bank Card (up to PKR 20,000 per transaction).',
+      },
+    ],
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

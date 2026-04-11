@@ -60,6 +60,56 @@ export const metadata: Metadata = {
 
 const iosBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_IOS]);
 
+const iosHowToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Download and Install Teen Patti Gold on iOS',
+  description: 'Step-by-step guide to download and install Teen Patti Gold on an iPhone or iPad running iOS 12 or higher.',
+  totalTime: 'PT10M',
+  supply: [
+    { '@type': 'HowToSupply', name: 'iPhone or iPad (iOS 12+)' },
+    { '@type': 'HowToSupply', name: 'Stable internet connection' },
+  ],
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Open Safari Browser',
+      text: 'Open your browser (e.g. Safari) on your iOS device.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Visit the Official Website',
+      text: 'Search for the official Teen Patti Gold website and open it.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Tap the Download Button',
+      text: 'Tap the Download button on the website to begin downloading the Teen Patti Gold app.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Trust the Developer Profile',
+      text: 'Go to Settings > General > Device Management, find the Teen Patti Gold developer profile, and tap "Trust".',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Open the App',
+      text: 'Return to your home screen, tap the Teen Patti Gold app icon, and open it.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 6,
+      name: 'Register and Start Playing',
+      text: 'Create an account or log in, make your first deposit, and start playing games.',
+    },
+  ],
+};
+
 export default function TeenPattiGoldForIOSPage() {
   // Schema.org structured data for iOS page
   const schemaData = {
@@ -108,6 +158,10 @@ export default function TeenPattiGoldForIOSPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(iosBreadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(iosHowToSchema) }}
       />
 
       {/* Hero Section */}

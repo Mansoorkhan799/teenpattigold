@@ -61,6 +61,44 @@ export const metadata: Metadata = {
 
 const breadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_DOWNLOAD]);
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to Download and Install Teen Patti Gold APK on Android',
+  description: 'Step-by-step guide to download and install the Teen Patti Gold APK on an Android device for free.',
+  totalTime: 'PT5M',
+  supply: [
+    { '@type': 'HowToSupply', name: 'Android device (Android 5.0+)' },
+    { '@type': 'HowToSupply', name: 'Stable internet connection' },
+  ],
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Download the APK',
+      text: 'Click the download button on this page to get the Teen Patti Gold APK. Wait for the automatic download to complete.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Enable Unknown Sources',
+      text: 'Go to your device privacy settings and enable "Install from unknown sources" to allow APK installation.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Install the App',
+      text: 'Locate the downloaded APK file, tap on it, and tap Install. Let the installation complete automatically.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Open and Start Playing',
+      text: 'Teen Patti Gold is now installed. Open the app, register or log in, make your first deposit, and start playing.',
+    },
+  ],
+};
+
 export default function DownloadPage() {
   // Schema.org structured data for download page
   const schemaData = {
@@ -111,6 +149,10 @@ export default function DownloadPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <script
         type="application/ld+json"
