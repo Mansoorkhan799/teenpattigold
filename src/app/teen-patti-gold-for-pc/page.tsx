@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
+        width: 1000,
+        height: 1000,
         alt: 'Teen Patti Gold PC Pakistan',
       },
     ],
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: 'Teen Patti Gold for PC — Windows Play Guide Pakistan',
     description:
       'Teen Patti Gold on PC in Pakistan via Android emulator. Bigger screen, same wallet — quick setup and official APK link for safer Teen Patti Gold play at home.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp'],
   },
 };
 
