@@ -51,3 +51,7 @@ export const BREADCRUMB_IOS = {
   name: 'Teen Patti Gold for iOS',
   url: `${BASE_URL}/teen-patti-gold-for-ios`,
 };
+export const BREADCRUMB_APK = {
+  name: 'Teen Patti Gold APK Latest Version',
+  url: `${BASE_URL}/teen-patti-gold-apk`,
+};

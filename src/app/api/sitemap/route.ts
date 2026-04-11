@@ -47,6 +47,19 @@ export async function GET() {
       ]
     },
     {
+      url: '/teen-patti-gold-apk',
+      lastMod: '2026-04-11T12:00:00+05:00',
+      changeFreq: 'weekly',
+      priority: 0.95,
+      images: [
+        {
+          loc: '/teen-patti-gold.webp',
+          title: 'Teen Patti Gold APK Latest Version Free Download 2026',
+          caption: 'Download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Play 30+ card games and earn real cash.'
+        }
+      ]
+    },
+    {
       url: '/deposit-money-in-teen-patti-gold',
       lastMod: '2026-04-02T12:00:00+05:00',
       changeFreq: 'weekly',
