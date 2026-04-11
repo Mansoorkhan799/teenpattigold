@@ -31,13 +31,13 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://teenpattigoldgame.com.pk/teen-patti-gold-apk',
+    canonical: 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk',
   },
   openGraph: {
     title: 'Download Teen Patti Gold APK Latest Version Free 2026',
     description:
       'Download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Play 30+ card games — Teen Patti, Rummy, Dragon Tiger. Earn real cash via JazzCash & EasyPaisa.',
-    url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-apk',
+    url: 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk',
     siteName: 'Teen Patti Gold',
     locale: 'en_PK',
     type: 'website',

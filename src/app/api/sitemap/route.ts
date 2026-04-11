@@ -47,7 +47,7 @@ export async function GET() {
       ]
     },
     {
-      url: '/teen-patti-gold-apk',
+      url: '/download-teen-patti-gold-apk',
       lastMod: '2026-04-11T12:00:00+05:00',
       changeFreq: 'weekly',
       priority: 0.95,

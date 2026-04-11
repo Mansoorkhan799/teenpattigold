@@ -100,7 +100,7 @@ export default function MobileNavigation() {
               Home
             </Link>
             <Link 
-              href="/teen-patti-gold-apk" 
+              href="/download-teen-patti-gold-apk" 
               className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
               onClick={() => setIsOpen(false)}
             >
