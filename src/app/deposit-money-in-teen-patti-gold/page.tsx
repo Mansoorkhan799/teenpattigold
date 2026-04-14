@@ -9,14 +9,15 @@ export const metadata: Metadata = {
   },
   description:
     'Deposit on Teen Patti Gold with JazzCash, EasyPaisa or card in Pakistan. Bonuses, minimums & a safe top-up flow before Teen Patti or Rummy real-money play.',
-  keywords: 'deposit money teen patti gold, teen patti gold payment methods, jazzcash deposit, easypaisa deposit, add funds teen patti gold, teen patti gold recharge',
+  keywords: ['deposit money teen patti gold', 'teen patti gold payment methods', 'jazzcash deposit teen patti gold', 'easypaisa deposit teen patti gold', 'add funds teen patti gold', 'teen patti gold recharge', 'teen patti gold deposit pakistan'],
   openGraph: {
     title: 'How to Deposit Money in Teen Patti Gold APK Pakistan?',
     description:
       'Deposit on Teen Patti Gold with JazzCash, EasyPaisa or card in Pakistan. Bonuses, minimums & a safe top-up flow before Teen Patti or Rummy real-money play.',
     url: 'https://teenpattigoldgame.com.pk/deposit-money-in-teen-patti-gold',
     siteName: 'Teen Patti Gold',
-    type: 'article',
+    locale: 'en_PK',
+    type: 'website',
     images: [
       {
         url: 'https://teenpattigoldgame.com.pk/opengraph-image',
@@ -32,6 +33,11 @@ export const metadata: Metadata = {
     description:
       'Deposit on Teen Patti Gold with JazzCash, EasyPaisa or card in Pakistan. Bonuses, minimums & a safe top-up flow before Teen Patti or Rummy real-money play.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/deposit-money-in-teen-patti-gold',

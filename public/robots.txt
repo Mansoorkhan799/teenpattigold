@@ -64,9 +64,7 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-# Microsoft Copilot / Bing AI answers
-User-agent: bingbot
-Allow: /
+# Microsoft Copilot search (same crawler as Bingbot above — already allowed)
 
 # ============================================
 # AI TRAINING BOTS (Block — content not licensed for model training)

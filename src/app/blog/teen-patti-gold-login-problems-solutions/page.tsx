@@ -49,7 +49,7 @@ export default function TeenPattiGoldLoginProblemsPage() {
     headline: 'How to Fix Teen Patti Gold Login Problems in Pakistan?',
     description:
       'Fix Teen Patti Gold login problems in Pakistan: OTP, password reset & bans. 2026 troubleshooting — get back into your account before you miss bonuses or tables.',
-    datePublished: '2026-02-01T09:00:00+05:00',
+    datePublished: '2026-02-24T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
     keywords: 'teen patti gold login problems, teen patti gold login issues, teen patti gold forgot password, teen patti gold OTP fix',

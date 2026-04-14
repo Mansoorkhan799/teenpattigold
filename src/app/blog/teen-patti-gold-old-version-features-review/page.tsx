@@ -49,7 +49,7 @@ export default function TeenPattiGoldOldVersionPage() {
     headline: 'Teen Patti Gold Old Version Review — Features Pakistan',
     description:
       'Teen Patti Gold old version in Pakistan: classic UI & games. 2026 review — why players liked legacy builds and when upgrading the APK is safer and faster.',
-    datePublished: '2026-01-20T09:00:00+05:00',
+    datePublished: '2026-02-24T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
     keywords: 'teen patti gold old version, teen patti gold features review, teen patti gold versions pakistan',

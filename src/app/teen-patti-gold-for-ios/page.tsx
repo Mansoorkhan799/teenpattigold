@@ -60,6 +60,28 @@ export const metadata: Metadata = {
 
 const iosBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_IOS]);
 
+const iosFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Is it free to download and install Teen Patti Gold on iOS?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, Teen Patti Gold is free to download and install on iOS. You do not need to pay to download or install the app.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is Teen Patti Gold secure to play on iOS devices?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, Teen Patti Gold uses a modern security system to protect your account and funds. iOS devices also offer strong built-in security to protect your Teen Patti Gold account.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is Teen Patti Gold a legit game to earn real money?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, Teen Patti Gold is a legitimate game for earning real money. Players in Pakistan regularly withdraw their winnings via JazzCash and EasyPaisa with a minimum withdrawal of Rs 100.' },
+    },
+  ],
+};
+
 const iosHowToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
@@ -145,7 +167,8 @@ export default function TeenPattiGoldForIOSPage() {
     },
     "articleSection": "Gaming",
     "keywords": "Teen Patti Gold for iOS, Teen Patti iPhone, iOS card game",
-    "inLanguage": "en-US"
+    "inLanguage": "en-PK",
+    "dateModified": "2026-04-11"
   };
 
   return (
@@ -162,6 +185,10 @@ export default function TeenPattiGoldForIOSPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(iosHowToSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(iosFaqSchema) }}
       />
 
       {/* Hero Section */}
@@ -293,7 +320,7 @@ export default function TeenPattiGoldForIOSPage() {
       {/* Download Instructions */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Complete Guide to Downloading Teen Patti Gold for iOS 2025</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Complete Guide to Downloading Teen Patti Gold for iOS 2026</h2>
           
           <div className="space-y-4">
             <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#FFA500]">

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'Teen Patti Gold',
     locale: 'en_PK',
     type: 'article',
-    publishedTime: '2026-01-05T00:00:00Z',
+    publishedTime: '2026-01-20T00:00:00+05:00',
     authors: ['Teen Patti Gold Team'],
     images: [
       {

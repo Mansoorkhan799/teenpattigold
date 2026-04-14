@@ -57,6 +57,17 @@ export default function HowToUseApp() {
     wordCount: 1400,
   });
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      { '@type': 'Question', name: 'Is Teen Patti Gold safe to use in Pakistan?', acceptedAnswer: { '@type': 'Answer', text: 'The app uses encryption and security measures to protect user data. Always download from the official source at teenpattigoldgame.com.pk and use secure payment methods like JazzCash and EasyPaisa.' } },
+      { '@type': 'Question', name: 'Can I play Teen Patti Gold without depositing money?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, you can use the welcome bonus and daily login rewards to play some games without depositing. However, to access all features and earn real money, you will need to make a deposit.' } },
+      { '@type': 'Question', name: 'How long do Teen Patti Gold withdrawals take?', acceptedAnswer: { '@type': 'Answer', text: 'Withdrawals typically process within 24–48 hours depending on your payment method (JazzCash or EasyPaisa) and account verification status. The minimum withdrawal amount is Rs 100.' } },
+      { '@type': 'Question', name: 'What games can I play on Teen Patti Gold?', acceptedAnswer: { '@type': 'Answer', text: 'Teen Patti Gold offers 30+ games including Teen Patti, Rummy, Dragon Tiger, Andar Bahar, Poker, and many more card and casino games available in the app lobby.' } },
+    ],
+  };
+
   const howToSchema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
@@ -117,6 +128,7 @@ export default function HowToUseApp() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

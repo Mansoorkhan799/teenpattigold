@@ -49,7 +49,7 @@ export default function HowToClaimWelcomeBonusPage() {
     headline: 'How to Claim Teen Patti Gold Welcome Bonus Pakistan?',
     description:
       'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
-    datePublished: '2026-01-25T09:00:00+05:00',
+    datePublished: '2026-02-24T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
     keywords: 'teen patti gold welcome bonus, teen patti gold first deposit bonus, claim bonus teen patti gold, teen patti gold 100% bonus',

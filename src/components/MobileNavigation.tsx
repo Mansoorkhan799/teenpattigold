@@ -128,6 +128,13 @@ export default function MobileNavigation() {
               PC Version
             </Link>
             <Link 
+              href="/teen-patti-gold-for-ios" 
+              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              iOS Version
+            </Link>
+            <Link 
               href="/about-us" 
               className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
               onClick={() => setIsOpen(false)}

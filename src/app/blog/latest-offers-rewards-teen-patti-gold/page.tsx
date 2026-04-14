@@ -49,7 +49,7 @@ export default function LatestOffersRewardsPage() {
     headline: 'Teen Patti Gold Offers & Rewards — Pakistan Deals 2026',
     description:
       'Teen Patti Gold offers & rewards in Pakistan: welcome bonus & rebates. 2026 summary — read turnover rules before you claim so JazzCash deposits stay eligible.',
-    datePublished: '2026-02-05T09:00:00+05:00',
+    datePublished: '2026-02-24T09:00:00+05:00',
     dateModified: '2026-03-27T12:00:00+05:00',
     image: ['https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp', 'https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp'],
     keywords: 'teen patti gold offers, teen patti gold rewards 2026, teen patti gold bonus, teen patti gold recharge rebate, teen patti gold VIP rewards',

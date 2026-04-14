@@ -232,13 +232,16 @@ export default function FreeChipsPage() {
                   "Share your referral code in WhatsApp groups — each referral earns you a chip bonus.",
                   "Check the Events tab daily — limited-time events often offer 5x more chips than usual.",
                   "Use free chips on low-stakes tables to practice before playing real money games.",
-                  "After <Link href='/blog/how-to-claim-welcome-bonus-teen-patti-gold'>claiming your welcome bonus</Link>, combine it with daily login chips for a big starting balance."
                 ].map((tip, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-300">
                     <span className="text-accent font-bold flex-shrink-0 mt-0.5">✓</span>
                     <span>{tip}</span>
                   </li>
                 ))}
+                <li className="flex items-start gap-3 text-gray-300">
+                  <span className="text-accent font-bold flex-shrink-0 mt-0.5">✓</span>
+                  <span>After <Link href="/blog/how-to-claim-welcome-bonus-teen-patti-gold" className="text-accent hover:underline font-semibold">claiming your welcome bonus</Link>, combine it with daily login chips for a big starting balance.</span>
+                </li>
               </ul>
             </div>
 

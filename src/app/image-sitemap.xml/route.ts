@@ -32,6 +32,12 @@ export async function GET() {
     { url: '/blog/teen-patti-gold-referral-code-pakistan', images: [{ loc: `${baseUrl}/teen-patti-gold-refer-and-earn.webp`, title: 'Teen Patti Gold Referral Code Pakistan 2026', caption: 'Earn bonus chips with Teen Patti Gold referral code in Pakistan.' }] },
     { url: '/blog/teen-patti-gold-vs-teen-patti-stars', images: [{ loc: `${baseUrl}/teen-patti-gold-game.webp`, title: 'Teen Patti Gold vs Teen Patti Stars 2026', caption: 'Comparison of Teen Patti Gold and Teen Patti Stars for Pakistan players.' }] },
     { url: '/blog/is-teen-patti-gold-better-for-earning-real-cash-2026', images: [{ loc: `${baseUrl}/teen-patti-gold-refer-and-earn.webp`, title: 'Is Teen Patti Gold Better for Earning Real Cash 2026', caption: 'Analysis of Teen Patti Gold for earning real cash in Pakistan.' }] },
+    { url: '/blog/tips-to-win-big-in-teen-patti-gold', images: [{ loc: `${baseUrl}/teen-patti-gold-game.webp`, title: 'Tips to Win Big in Teen Patti Gold Pakistan 2026', caption: 'Expert strategies and tips to win big at Teen Patti Gold in Pakistan.' }] },
+    { url: '/blog/how-to-claim-welcome-bonus-teen-patti-gold', images: [{ loc: `${baseUrl}/teen-patti-gold-deposit-money.webp`, title: 'Claim Teen Patti Gold Welcome Bonus Pakistan', caption: 'How to claim the 100% welcome bonus on first deposit in Teen Patti Gold.' }] },
+    { url: '/blog/latest-offers-rewards-teen-patti-gold', images: [{ loc: `${baseUrl}/teen-patti-gold-vip-program.webp`, title: 'Teen Patti Gold Latest Offers and Rewards 2026', caption: 'Latest bonuses, offers, and rewards in Teen Patti Gold for Pakistan players.' }] },
+    { url: '/blog/teen-patti-gold-old-version-features-review', images: [{ loc: `${baseUrl}/teen-patti-gold-app.webp`, title: 'Teen Patti Gold Old Version Features Review', caption: 'Review of Teen Patti Gold old version features and what changed in 2026.' }] },
+    { url: '/blog/teen-patti-gold-login-problems-solutions', images: [{ loc: `${baseUrl}/teen-patti-gold-app.webp`, title: 'Fix Teen Patti Gold Login Problems Pakistan 2026', caption: 'How to fix Teen Patti Gold login problems — OTP, password, account lock solutions.' }] },
+    { url: '/blog/responsible-gaming-guide-2026', images: [{ loc: logoImageLoc, title: 'Responsible Gaming Guide Teen Patti Gold 2026', caption: 'Responsible gaming tips for Teen Patti Gold players in Pakistan 2026.' }] },
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

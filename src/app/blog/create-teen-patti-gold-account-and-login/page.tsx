@@ -4,7 +4,7 @@ import { getBlogPostingSchema } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'How to Create Teen Patti Gold Account and Login? 2026 2026',
+    absolute: 'How to Create Teen Patti Gold Account and Login? 2026',
   },
   description:
     'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'Teen Patti Gold',
     locale: 'en_PK',
     type: 'article',
-    publishedTime: '2026-01-05T00:00:00Z',
+    publishedTime: '2026-01-15T00:00:00+05:00',
     authors: ['Teen Patti Gold Team'],
     images: [
       {

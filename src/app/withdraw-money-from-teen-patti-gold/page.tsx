@@ -9,14 +9,15 @@ export const metadata: Metadata = {
   },
   description:
     'Withdraw Teen Patti Gold to JazzCash, EasyPaisa or bank in Pakistan. Limits, timing & secure steps — cash out winnings with our step-by-step withdrawal guide.',
-  keywords: 'withdraw money teen patti gold, teen patti gold withdrawal, jazzcash withdrawal, easypaisa withdrawal, cash out teen patti gold, teen patti gold payout',
+  keywords: ['withdraw money teen patti gold', 'teen patti gold withdrawal', 'jazzcash withdrawal teen patti gold', 'easypaisa withdrawal teen patti gold', 'cash out teen patti gold', 'teen patti gold payout pakistan', 'teen patti gold minimum withdrawal'],
   openGraph: {
     title: 'How to Withdraw Money from Teen Patti Gold APK Pakistan?',
     description:
       'Withdraw Teen Patti Gold to JazzCash, EasyPaisa or bank in Pakistan. Limits, timing & secure steps — cash out winnings with our step-by-step withdrawal guide.',
     url: 'https://teenpattigoldgame.com.pk/withdraw-money-from-teen-patti-gold',
     siteName: 'Teen Patti Gold',
-    type: 'article',
+    locale: 'en_PK',
+    type: 'website',
     images: [
       {
         url: 'https://teenpattigoldgame.com.pk/opengraph-image',
@@ -32,6 +33,11 @@ export const metadata: Metadata = {
     description:
       'Withdraw Teen Patti Gold to JazzCash, EasyPaisa or bank in Pakistan. Limits, timing & secure steps — cash out winnings with our step-by-step withdrawal guide.',
     images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/withdraw-money-from-teen-patti-gold',

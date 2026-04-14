@@ -302,7 +302,7 @@ export default function Home() {
         "@id": "https://teenpattigoldgame.com.pk/#howto-download-teen-patti-gold-apk",
         "name": "How to download and install Teen Patti Gold APK on Android (Pakistan)?",
         "description": "Official steps to download Teen Patti Gold v1.656 APK from a trusted source and install it on Android. Includes enabling unknown sources and completing setup.",
-        "inLanguage": "en-US",
+        "inLanguage": "en-PK",
         "totalTime": "PT10M",
         "supply": [
           {
@@ -370,7 +370,7 @@ export default function Home() {
         ],
         "articleSection": "Gaming",
         "keywords": "Teen Patti Gold, Teen Patti Gold Pakistan, Teen Patti Gold APK, Teen Patti Gold download, card game Pakistan, earn money games Pakistan, teen patti gold apk download",
-        "inLanguage": "en-US",
+        "inLanguage": "en-PK",
         "wordCount": 2500,
         "about": [
           { "@id": "https://teenpattigoldgame.com.pk/#software" },
