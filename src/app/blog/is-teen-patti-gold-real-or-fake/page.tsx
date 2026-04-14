@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       'Teen Patti Gold real or fake in Pakistan? 2026 facts on payouts & APKs. Read before JazzCash — skip scam mirrors; know how official Teen Patti Gold play works.',
     url: "https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-real-or-fake",
     siteName: "Teen Patti Gold",
-    locale: "en_US",
+    locale: "en_PK",
     type: "article",
     images: [
       {

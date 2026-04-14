@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-play-teen-patti-gold',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-01-11T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

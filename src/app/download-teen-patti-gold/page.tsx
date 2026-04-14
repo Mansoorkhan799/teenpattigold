@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       'Get the official Teen Patti Gold APK for Android in Pakistan. Latest v1.656, 49MB, JazzCash & EasyPaisa payouts. Safe download steps — start playing in minutes.',
     url: "https://teenpattigoldgame.com.pk/download-teen-patti-gold",
     siteName: "Teen Patti Gold",
-    locale: "en_US",
+    locale: "en_PK",
     type: "website",
     images: [
       {

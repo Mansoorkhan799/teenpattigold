@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Teen Patti Gold old version in Pakistan: classic UI & games. 2026 review — why players liked legacy builds and when upgrading the APK is safer and faster.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-old-version-features-review',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

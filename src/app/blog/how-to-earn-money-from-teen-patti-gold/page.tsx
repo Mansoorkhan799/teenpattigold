@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Earn on Teen Patti Gold in Pakistan: tables, referrals & bonuses. 2026 guide — grow chips slowly; no income promise; cap JazzCash and EasyPaisa spend.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-earn-money-from-teen-patti-gold',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-01-12T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Responsible gaming with Teen Patti Gold in Pakistan: budgets & breaks. 2026 guide — spot risky play early and keep Teen Patti, Rummy & slots entertainment only.',
     url: 'https://teenpattigoldgame.com.pk/blog/responsible-gaming-guide-2026',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

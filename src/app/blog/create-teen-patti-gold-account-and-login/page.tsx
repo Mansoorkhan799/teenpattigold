@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
     url: 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-01-05T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Claim your Teen Patti Gold welcome bonus in Pakistan: first deposit & turnover. 2026 steps — unlock 100% match without breaking promo rules or forfeiting chips.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-claim-welcome-bonus-teen-patti-gold',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

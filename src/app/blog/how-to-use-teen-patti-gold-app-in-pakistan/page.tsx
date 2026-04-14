@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
     url: 'https://teenpattigoldgame.com.pk/blog/how-to-use-teen-patti-gold-app-in-pakistan',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-01-10T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

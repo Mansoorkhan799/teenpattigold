@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Teen Patti Gold latest V1.656 in Pakistan: features & security. 2026 guide — update from official APK only; skip mirrors that risk logins or payment fraud.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-latest-version-2026-updates',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

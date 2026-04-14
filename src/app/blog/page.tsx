@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       'Teen Patti Gold guides for Pakistan: APK, account, earning tips, bonuses & JazzCash. Updated 2026 articles — read before you play real-money card games.',
     url: 'https://teenpattigoldgame.com.pk/blog',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'website',
     images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Teen Patti Gold Blog - Guides & Tips 2026' }],
   },

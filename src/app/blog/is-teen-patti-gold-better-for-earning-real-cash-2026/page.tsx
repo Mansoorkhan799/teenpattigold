@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Is Teen Patti Gold best for real cash in Pakistan? Honest 2026 take on risk, variance & payouts. Compare earning paths before you deposit JazzCash or EasyPaisa.',
     url: 'https://teenpattigoldgame.com.pk/blog/is-teen-patti-gold-better-for-earning-real-cash-2026',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

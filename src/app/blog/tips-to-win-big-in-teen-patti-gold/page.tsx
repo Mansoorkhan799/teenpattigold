@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Win more at Teen Patti Gold in Pakistan: bankroll, table choice & patience. 2026 practical tips — smarter play, not guaranteed wins; always gamble responsibly.',
     url: 'https://teenpattigoldgame.com.pk/blog/tips-to-win-big-in-teen-patti-gold',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-01-05T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

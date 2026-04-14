@@ -33,8 +33,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/download-teen-patti-gold-apk" className="text-gray-300 hover:text-accent transition-colors">
+                  Download APK Latest Version
+                </Link>
+              </li>
+              <li>
                 <Link href="/download-teen-patti-gold" className="text-gray-300 hover:text-accent transition-colors">
-                  Download
+                  Download Guide
                 </Link>
               </li>
               <li>
@@ -71,22 +76,32 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/deposit-money-in-teen-patti-gold" className="text-gray-300 hover:text-accent transition-colors">
-                  Deposit Guide
+                  How to Deposit Money
                 </Link>
               </li>
               <li>
                 <Link href="/withdraw-money-from-teen-patti-gold" className="text-gray-300 hover:text-accent transition-colors">
-                  Withdraw Guide
+                  How to Withdraw Money
                 </Link>
               </li>
               <li>
                 <Link href="/blog/create-teen-patti-gold-account-and-login" className="text-gray-300 hover:text-accent transition-colors">
-                  Account & Login
+                  Account &amp; Login
                 </Link>
               </li>
               <li>
-                <Link href="/blog/tips-to-win-big-in-teen-patti-gold" className="text-gray-300 hover:text-accent transition-colors">
-                  Tips to Win Big
+                <Link href="/blog/how-to-play-teen-patti-gold" className="text-gray-300 hover:text-accent transition-colors">
+                  How to Play
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/how-to-earn-money-from-teen-patti-gold" className="text-gray-300 hover:text-accent transition-colors">
+                  How to Earn Money
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/teen-patti-gold-referral-code-pakistan" className="text-gray-300 hover:text-accent transition-colors">
+                  Referral Code Pakistan
                 </Link>
               </li>
               <li>

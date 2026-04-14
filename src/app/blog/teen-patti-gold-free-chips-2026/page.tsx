@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Get Teen Patti Gold free chips in Pakistan: daily login, spins & events. 2026 list of legit bonus paths — stretch playtime without risky unofficial mod APKs.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-free-chips-2026',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-03-01T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

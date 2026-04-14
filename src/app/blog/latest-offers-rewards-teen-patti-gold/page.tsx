@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Teen Patti Gold offers & rewards in Pakistan: welcome bonus & rebates. 2026 summary — read turnover rules before you claim so JazzCash deposits stay eligible.',
     url: 'https://teenpattigoldgame.com.pk/blog/latest-offers-rewards-teen-patti-gold',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

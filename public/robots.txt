@@ -3,134 +3,110 @@
 # ============================================
 # AI CONTENT USAGE POLICY
 # ============================================
-# As a condition of accessing this website, you agree to abide by the following
-# content signals:
-#
-# (a) If a content-signal = yes, you may collect content for the corresponding use.
-# (b) If a content-signal = no, you may not collect content for the corresponding use.
-# (c) If no signal is present, the website operator neither grants nor restricts
-#     permission via content signal with respect to the corresponding use.
-#
-# Content signals:
-# - search:    Building search index and providing search results
-# - ai-input:  Using content for AI-generated answers and responses
-# - ai-train:  Training or fine-tuning AI models
+# Content signals (per CEUR-WS / AI content signal proposal):
+# - search:    Building search index and providing search results  → YES
+# - ai-input:  Using content for AI-generated answers              → YES
+# - ai-train:  Training or fine-tuning AI models                   → NO
 #
 # ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF
 # RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT
 # AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.
 
 # ============================================
-# MAIN CRAWLER RULES
+# MAIN CRAWLER RULES (all bots)
 # ============================================
-
-# Allow search engines, but prevent AI training
 User-agent: *
 Allow: /
-Disallow: /api/
 Disallow: /admin/
-
-# Priority pages
-Allow: /download-teen-patti-gold
-Allow: /deposit-money-in-teen-patti-gold
-Allow: /withdraw-money-from-teen-patti-gold
-Allow: /teen-patti-gold-for-pc
-Allow: /teen-patti-gold-for-ios
-Allow: /about-us
-Allow: /blog
-Allow: /blog/is-teen-patti-gold-real-or-fake
-Allow: /blog/create-teen-patti-gold-account-and-login
-Allow: /blog/tips-to-win-big-in-teen-patti-gold
-
-# Standard pages
-Allow: /contact-us
-Allow: /privacy
-Allow: /disclaimer
-Allow: /terms
-
-# ============================================
-# AI BOT RESTRICTIONS (Training Prevention)
-# ============================================
-
-# OpenAI GPTBot - Block training, but allow via main rule for answers
-User-agent: GPTBot
-Disallow: /
-
-# Anthropic ClaudeBot - Block training
-User-agent: ClaudeBot
-Disallow: /
-
-# Google Extended (AI Training) - Block training
-User-agent: Google-Extended
-Disallow: /
-
-# Meta AI External Agent
-User-agent: meta-externalagent
-Disallow: /
-
-# Amazon Bot
-User-agent: Amazonbot
-Disallow: /
-
-# Apple AI Extended
-User-agent: Applebot-Extended
-Disallow: /
-
-# ByteDance/TikTok Spider
-User-agent: Bytespider
-Disallow: /
-
-# Common Crawl Bot
-User-agent: CCBot
-Disallow: /
-
-# Perplexity AI Bot
-User-agent: PerplexityBot
-Disallow: /
-
-# Cohere AI Bot
-User-agent: cohere-ai
-Disallow: /
+# Allow the sitemap API route explicitly
+Allow: /api/sitemap
 
 # ============================================
 # SEARCH ENGINE BOTS (Explicitly Allow)
 # ============================================
 
-# Google Search Bot (Not AI training)
 User-agent: Googlebot
 Allow: /
 
-# Google Image Bot
 User-agent: Googlebot-Image
 Allow: /
 
-# Google Mobile Bot
 User-agent: Googlebot-Mobile
 Allow: /
 
-# Bing Bot
 User-agent: Bingbot
 Allow: /
 
-# Baidu Spider (Chinese search)
 User-agent: Baiduspider
 Allow: /
 
-# Yandex Bot (Russian search)
 User-agent: Yandex
 Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ============================================
+# AI ANSWER ENGINES (Allow — answers, not training)
+# These bots retrieve content at query time to answer users.
+# Blocking them prevents the site from appearing in AI overviews.
+# ============================================
+
+# Perplexity AI — real-time answer retrieval (NOT training)
+User-agent: PerplexityBot
+Allow: /
+
+# ChatGPT search / browsing (NOT training — that is GPTBot)
+User-agent: OAI-SearchBot
+Allow: /
+
+# Amazon Alexa / Amazonbot — voice answer retrieval
+User-agent: Amazonbot
+Allow: /
+
+# Microsoft Copilot / Bing AI answers
+User-agent: bingbot
+Allow: /
+
+# ============================================
+# AI TRAINING BOTS (Block — content not licensed for model training)
+# ============================================
+
+# OpenAI model training
+User-agent: GPTBot
+Disallow: /
+
+# Anthropic model training
+User-agent: ClaudeBot
+Disallow: /
+
+# Google Gemini model training (separate from Googlebot search)
+User-agent: Google-Extended
+Disallow: /
+
+# Meta AI training
+User-agent: meta-externalagent
+Disallow: /
+
+# Apple AI training
+User-agent: Applebot-Extended
+Disallow: /
+
+# ByteDance / TikTok training
+User-agent: Bytespider
+Disallow: /
+
+# Common Crawl (used for training datasets)
+User-agent: CCBot
+Disallow: /
+
+# Cohere AI training
+User-agent: cohere-ai
+Disallow: /
 
 # ============================================
 # SITEMAPS
 # ============================================
-
 Sitemap: https://teenpattigoldgame.com.pk/sitemap-index.xml
 Sitemap: https://teenpattigoldgame.com.pk/sitemap.xml
 Sitemap: https://teenpattigoldgame.com.pk/image-sitemap.xml
-
-# ============================================
-# IMPORTANT: DO NOT ADD Host DIRECTIVE
-# ============================================
-# The Host directive is DEPRECATED and IGNORED by Googlebot.
-# Adding it will cause warnings in Google Search Console.
-# Use canonical URLs and redirects instead (handled at hosting level).

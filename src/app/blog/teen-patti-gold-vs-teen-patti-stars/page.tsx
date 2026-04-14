@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Teen Patti Gold vs Teen Patti Stars in Pakistan: games, payouts & trust. 2026 comparison — choose the card app that fits JazzCash play and your risk comfort.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-vs-teen-patti-stars',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-03-10T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

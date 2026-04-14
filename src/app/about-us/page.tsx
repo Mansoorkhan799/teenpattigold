@@ -29,7 +29,7 @@ export const metadata: Metadata = {
       'Learn about Teen Patti Gold in Pakistan: mission, fair play & support for Teen Patti fans. Know the team behind the official APK and responsible gaming values.',
     url: "https://teenpattigoldgame.com.pk/about-us",
     siteName: "Teen Patti Gold",
-    locale: "en_US",
+    locale: "en_PK",
     type: "website",
     images: [
       {

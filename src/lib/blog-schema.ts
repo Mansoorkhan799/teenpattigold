@@ -47,31 +47,41 @@ export function getBlogPostingSchema(opts: BlogPostSchemaOptions) {
       : [opts.image]
     : [LOGO_URL, `${BASE_URL}/teen-patti-gold-game.webp`];
 
+  const breadcrumbItems = [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}/` },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE_URL}/blog` },
+    { '@type': 'ListItem', position: 3, name: opts.headline, item: opts.url },
+  ];
+
   const graph: object[] = [
     {
       '@type': 'BreadcrumbList',
-      itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE_URL}/blog` },
-      ],
+      itemListElement: breadcrumbItems,
     },
     {
       '@type': 'WebPage',
       '@id': webpageId,
       url: opts.url,
       name: opts.headline,
+      description: opts.description,
       isPartOf: { '@id': WEBSITE_ID },
       inLanguage: 'en-PK',
       datePublished: opts.datePublished,
       dateModified: opts.dateModified,
-      breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}/` },
-        { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE_URL}/blog` },
-      ]},
+      breadcrumb: { '@type': 'BreadcrumbList', itemListElement: breadcrumbItems },
       primaryImageOfPage: {
         '@type': 'ImageObject',
         url: images[0],
         contentUrl: images[0],
+      },
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', '.speakable-intro', '.article-intro'],
+      },
+      audience: {
+        '@type': 'Audience',
+        audienceType: 'Gamers in Pakistan',
+        geographicArea: { '@type': 'Country', name: 'Pakistan', identifier: 'PK' },
       },
     },
     {
@@ -102,6 +112,16 @@ export function getBlogPostingSchema(opts: BlogPostSchemaOptions) {
         applicationCategory: 'GameApplication',
       },
       mentions: { '@id': ORG_ID },
+      locationCreated: {
+        '@type': 'Country',
+        name: 'Pakistan',
+        identifier: 'PK',
+      },
+      audience: {
+        '@type': 'Audience',
+        audienceType: 'Gamers in Pakistan',
+        geographicArea: { '@type': 'Country', name: 'Pakistan', identifier: 'PK' },
+      },
     },
   ];
 

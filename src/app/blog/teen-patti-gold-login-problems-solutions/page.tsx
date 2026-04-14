@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Fix Teen Patti Gold login problems in Pakistan: OTP, password reset & bans. 2026 troubleshooting — get back into your account before you miss bonuses or tables.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-login-problems-solutions',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],

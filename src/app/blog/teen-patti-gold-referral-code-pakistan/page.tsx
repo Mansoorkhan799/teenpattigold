@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       'Teen Patti Gold referral code Pakistan 2026: bonuses & rules. Enter codes correctly — earn extra chips when friends join official Teen Patti Gold tables only.',
     url: 'https://teenpattigoldgame.com.pk/blog/teen-patti-gold-referral-code-pakistan',
     siteName: 'Teen Patti Gold',
-    locale: 'en_US',
+    locale: 'en_PK',
     type: 'article',
     publishedTime: '2026-03-05T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
