@@ -209,6 +209,30 @@ export default function Home() {
         "mainEntity": [
           {
             "@type": "Question",
+            "name": "What is Teen Patti Gold?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Teen Patti Gold is Pakistan's #1 online card game app that lets players play 30+ card and casino games — including Teen Patti, Rummy, Dragon Tiger, Andar Bahar, and Poker — and earn real money. The app is free to download as an APK for Android devices, supports JazzCash and EasyPaisa for deposits and withdrawals, offers a 100% welcome bonus on the first deposit, daily login rewards, a referral program, and a VIP loyalty program. It has over 500,000 downloads in Pakistan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Teen Patti Gold APK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Teen Patti Gold APK is the Android application package file for the Teen Patti Gold card game platform. The latest version is V1.656(0), file size 49MB, and it requires Android 5.0 or higher. Because Teen Patti Gold is not available on the Google Play Store, players in Pakistan download the APK directly from the official website at teenpattigoldgame.com.pk, enable 'Install from Unknown Sources' in their device settings, and then install it. The APK is completely free to download."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Teen Patti Gold Pakistan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Teen Patti Gold Pakistan is the localized version of the Teen Patti Gold card game app used by players across Pakistan. It supports Pakistani payment methods JazzCash and EasyPaisa for instant deposits and withdrawals, with a minimum withdrawal of just Rs 100. The platform offers Urdu language support and is the most downloaded card game app in Pakistan with 500,000+ users playing Teen Patti, Rummy, Dragon Tiger, and 30+ other games to earn real money."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "What is Teen Patti Gold and how does it work?",
             "acceptedAnswer": {
               "@type": "Answer",

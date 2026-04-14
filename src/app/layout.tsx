@@ -262,6 +262,45 @@ export default function RootLayout({
                   ]
                 },
                 {
+                  "@type": "DefinedTerm",
+                  "@id": "https://teenpattigoldgame.com.pk/#teen-patti-gold",
+                  "name": "Teen Patti Gold",
+                  "alternateName": ["Teen Patti Gold APK", "Teen Patti Gold Pakistan", "TeenPattiGold", "3 Patti Gold", "TPG"],
+                  "description": "Teen Patti Gold is Pakistan's most popular online card game app where players can play 30+ games including Teen Patti, Rummy, Dragon Tiger, Andar Bahar, and Poker to earn real money. Available as a free APK for Android (Android 5.0+), it supports deposits and withdrawals via JazzCash and EasyPaisa with a minimum withdrawal of Rs 100. The app offers a 100% welcome bonus on the first deposit, daily login rewards, referral earnings, and a VIP program. It is not on the Google Play Store and is downloaded directly as an APK.",
+                  "url": "https://teenpattigoldgame.com.pk/",
+                  "inDefinedTermSet": {
+                    "@type": "DefinedTermSet",
+                    "name": "Teen Patti Gold Pakistan Glossary",
+                    "url": "https://teenpattigoldgame.com.pk/"
+                  }
+                },
+                {
+                  "@type": "DefinedTerm",
+                  "@id": "https://teenpattigoldgame.com.pk/#teen-patti-gold-apk",
+                  "name": "Teen Patti Gold APK",
+                  "alternateName": ["Teen Patti Gold APK Download", "Teen Patti Gold Latest Version APK"],
+                  "description": "Teen Patti Gold APK is the Android application package file for the Teen Patti Gold card game app. The latest version is V1.656(0), with a file size of 49MB, requiring Android 5.0 or higher. Since the app is not listed on the Google Play Store, Pakistani players download it directly as an APK from the official website at teenpattigoldgame.com.pk and install it by enabling 'Install from Unknown Sources' in their device settings. The APK is free to download.",
+                  "url": "https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk",
+                  "inDefinedTermSet": {
+                    "@type": "DefinedTermSet",
+                    "name": "Teen Patti Gold Pakistan Glossary",
+                    "url": "https://teenpattigoldgame.com.pk/"
+                  }
+                },
+                {
+                  "@type": "DefinedTerm",
+                  "@id": "https://teenpattigoldgame.com.pk/#teen-patti-gold-pakistan",
+                  "name": "Teen Patti Gold Pakistan",
+                  "alternateName": ["Teen Patti Gold PK", "Teen Patti Gold Pakistan APK"],
+                  "description": "Teen Patti Gold Pakistan refers to the Teen Patti Gold card game platform as used in Pakistan. It is specially tailored for Pakistani players with JazzCash and EasyPaisa payment support, Urdu language option, and a minimum withdrawal of Rs 100. It is Pakistan's #1 online card game app with over 500,000 downloads and 30+ games. Players across Pakistan use it to play Teen Patti, Rummy, Dragon Tiger, and other card games to earn real money.",
+                  "url": "https://teenpattigoldgame.com.pk/",
+                  "inDefinedTermSet": {
+                    "@type": "DefinedTermSet",
+                    "name": "Teen Patti Gold Pakistan Glossary",
+                    "url": "https://teenpattigoldgame.com.pk/"
+                  }
+                },
+                {
                   "@type": "WebSite",
                   "@id": "https://teenpattigoldgame.com.pk/#website",
                   "url": "https://teenpattigoldgame.com.pk/",

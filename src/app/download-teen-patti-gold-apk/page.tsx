@@ -140,6 +140,16 @@ const howToSchema = {
   ],
 };
 
+const speakableSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk',
+  'speakable': {
+    '@type': 'SpeakableSpecification',
+    'cssSelector': ['#apk-what-is', '#apk-why-download'],
+  },
+};
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -202,6 +212,7 @@ export default function TeenPattiGoldApkPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
 
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
@@ -307,7 +318,7 @@ export default function TeenPattiGoldApkPage() {
       </section>
 
       {/* What is Teen Patti Gold APK */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="apk-what-is" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">What is Teen Patti Gold APK?</h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
@@ -325,7 +336,7 @@ export default function TeenPattiGoldApkPage() {
       </section>
 
       {/* Why Download Teen Patti Gold APK */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section id="apk-why-download" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Why Download Teen Patti Gold APK?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
