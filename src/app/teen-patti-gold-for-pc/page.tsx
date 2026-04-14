@@ -149,7 +149,7 @@ export default function TeenPattiGoldForPCPage() {
       }
     },
     "datePublished": "2026-01-05",
-    "dateModified": "2026-01-05",
+    "dateModified": "2026-04-11",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-for-pc"
@@ -162,8 +162,7 @@ export default function TeenPattiGoldForPCPage() {
     },
     "articleSection": "Gaming",
     "keywords": "Teen Patti Gold for PC, Teen Patti Gold PC download, BlueStacks, Android Emulator, Teen Patti PC",
-    "inLanguage": "en-PK",
-    "dateModified": "2026-04-11"
+    "inLanguage": "en-PK"
   };
 
   return (

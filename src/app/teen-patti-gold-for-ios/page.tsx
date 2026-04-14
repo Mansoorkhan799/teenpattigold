@@ -154,7 +154,7 @@ export default function TeenPattiGoldForIOSPage() {
       }
     },
     "datePublished": "2026-01-05",
-    "dateModified": "2026-01-05",
+    "dateModified": "2026-04-11",
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-for-ios"
@@ -167,8 +167,7 @@ export default function TeenPattiGoldForIOSPage() {
     },
     "articleSection": "Gaming",
     "keywords": "Teen Patti Gold for iOS, Teen Patti iPhone, iOS card game",
-    "inLanguage": "en-PK",
-    "dateModified": "2026-04-11"
+    "inLanguage": "en-PK"
   };
 
   return (
