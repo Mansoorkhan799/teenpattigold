@@ -532,7 +532,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#0a1029]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Update</td>
-                  <td className="py-4 px-6 text-left text-white">1st-January-2026</td>
+                  <td className="py-4 px-6 text-left text-white">April 11, 2026</td>
                 </tr>
                 <tr className="bg-[#06091F]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Downloads</td>
