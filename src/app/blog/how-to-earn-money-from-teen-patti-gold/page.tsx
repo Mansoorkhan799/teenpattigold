@@ -34,9 +34,8 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: 'How to Earn Money on Teen Patti Gold Pakistan',
       },
     ],
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     title: 'How to Earn Money on Teen Patti Gold in Pakistan 2026',
     description:
       'Earn on Teen Patti Gold in Pakistan: tables, referrals & bonuses. 2026 guide — grow chips slowly; no income promise; cap JazzCash and EasyPaisa spend.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   }
 };
 

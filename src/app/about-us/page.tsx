@@ -33,9 +33,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: "About Teen Patti Gold - Premier Card Gaming Platform Pakistan",
       }
     ],
@@ -45,7 +44,7 @@ export const metadata: Metadata = {
     title: 'About Teen Patti Gold — Pakistan Card Game Platform',
     description:
       'Learn about Teen Patti Gold in Pakistan: mission, fair play & support for Teen Patti fans. Know the team behind the official APK and responsible gaming values.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
 };
 

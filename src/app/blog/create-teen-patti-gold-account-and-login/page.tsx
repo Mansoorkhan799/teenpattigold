@@ -34,9 +34,8 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: 'How to Create Teen Patti Gold Account and Login Guide',
       },
     ],
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     title: 'How to Create Teen Patti Gold Account and Login? 2026',
     description:
       'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   }
 };
 

@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Teen Patti Gold Old Version Features Review 2026' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2', width: 512, height: 512, alt: 'Teen Patti Gold Old Version Features Review 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Teen Patti Gold Old Version Review — Features Pakistan',
     description:
       'Teen Patti Gold old version in Pakistan: classic UI & games. 2026 review — why players liked legacy builds and when upgrading the APK is safer and faster.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
 };
 

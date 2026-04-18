@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'How to fix Login Problem of Teen Patti Gold' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2', width: 512, height: 512, alt: 'How to fix Login Problem of Teen Patti Gold' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to Fix Teen Patti Gold Login Problems in Pakistan?',
     description:
       'Fix Teen Patti Gold login problems in Pakistan: OTP, password reset & bans. 2026 troubleshooting — get back into your account before you miss bonuses or tables.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
 };
 

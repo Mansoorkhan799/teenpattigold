@@ -42,9 +42,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: 'Teen Patti Gold iOS Pakistan',
       },
     ],
@@ -54,7 +53,7 @@ export const metadata: Metadata = {
     title: 'Teen Patti Gold for iOS — Download Info Pakistan 2026',
     description:
       'Teen Patti Gold on iPhone in Pakistan: limited iOS support. Prefer Android APK or PC — avoid fake apps and protect your Teen Patti Gold wallet and login.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
 };
 

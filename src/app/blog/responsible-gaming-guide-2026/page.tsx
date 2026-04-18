@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Responsible Gaming Guide 2026 - Teen Patti Gold Pakistan' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2', width: 512, height: 512, alt: 'Responsible Gaming Guide 2026 - Teen Patti Gold Pakistan' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Responsible Gaming — Teen Patti Gold Pakistan Guide',
     description:
       'Responsible gaming with Teen Patti Gold in Pakistan: budgets & breaks. 2026 guide — spot risky play early and keep Teen Patti, Rummy & slots entertainment only.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
 };
 

@@ -20,9 +20,8 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: 'Deposit money Teen Patti Gold Pakistan',
       },
     ],
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
     title: 'How to Deposit Money in Teen Patti Gold APK Pakistan?',
     description:
       'Deposit on Teen Patti Gold with JazzCash, EasyPaisa or card in Pakistan. Bonuses, minimums & a safe top-up flow before Teen Patti or Rummy real-money play.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
   robots: {
     index: true,

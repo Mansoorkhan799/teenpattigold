@@ -20,9 +20,8 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: 'Withdraw Teen Patti Gold Pakistan',
       },
     ],
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
     title: 'How to Withdraw Money from Teen Patti Gold APK Pakistan?',
     description:
       'Withdraw Teen Patti Gold to JazzCash, EasyPaisa or bank in Pakistan. Limits, timing & secure steps — cash out winnings with our step-by-step withdrawal guide.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
   robots: {
     index: true,

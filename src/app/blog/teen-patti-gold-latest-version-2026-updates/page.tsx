@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Teen Patti Gold Latest Version V1.656 New Features 2026' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2', width: 512, height: 512, alt: 'Teen Patti Gold Latest Version V1.656 New Features 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Teen Patti Gold Latest Version — New Features 2026',
     description:
       'Teen Patti Gold latest V1.656 in Pakistan: features & security. 2026 guide — update from official APK only; skip mirrors that risk logins or payment fraud.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
 };
 

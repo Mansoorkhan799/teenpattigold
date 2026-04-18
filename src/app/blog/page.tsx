@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     siteName: 'Teen Patti Gold',
     locale: 'en_PK',
     type: 'website',
-    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'Teen Patti Gold Blog - Guides & Tips 2026' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2', width: 512, height: 512, alt: 'Teen Patti Gold Blog - Guides & Tips 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Teen Patti Gold Blog — Pakistan Tips & Guides 2026',
     description:
       'Teen Patti Gold guides for Pakistan: APK, account, earning tips, bonuses & JazzCash. Updated 2026 articles — read before you play real-money card games.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
 };
 

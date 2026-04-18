@@ -34,9 +34,8 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: 'Teen Patti Gold Free Chips 2026 - Daily Bonus Chips',
       },
     ],
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     title: 'Teen Patti Gold Free Chips 2026 — Daily Bonus Pakistan',
     description:
       'Get Teen Patti Gold free chips in Pakistan: daily login, spins & events. 2026 list of legit bonus paths — stretch playtime without risky unofficial mod APKs.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   }
 };
 

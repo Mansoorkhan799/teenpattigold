@@ -17,9 +17,8 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: 'Teen Patti Gold disclaimer Pakistan',
       },
     ],
@@ -29,7 +28,7 @@ export const metadata: Metadata = {
     title: 'Teen Patti Gold Disclaimer — Legal Notice Pakistan 2026',
     description:
       'Teen Patti Gold disclaimer: gaming risk, not financial advice. Pakistan users — play responsibly, use official APK sources & understand limits before betting.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/disclaimer',

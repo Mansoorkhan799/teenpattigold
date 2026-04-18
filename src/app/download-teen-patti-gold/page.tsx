@@ -43,9 +43,8 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: "Download Teen Patti Gold APK - Free Card Game for Android",
       }
     ],
@@ -55,7 +54,7 @@ export const metadata: Metadata = {
     title: 'Download Teen Patti Gold APK Free | Android Pakistan',
     description:
       'Get the official Teen Patti Gold APK for Android in Pakistan. Latest v1.656, 49MB, JazzCash & EasyPaisa payouts. Safe download steps — start playing in minutes.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   },
 };
 

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
+import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL, OG_IMAGE_WIDTH, OG_IMAGE_HEIGHT } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_PC } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
-        width: 1000,
-        height: 1000,
+        url: LOGO_URL,
+        width: OG_IMAGE_WIDTH,
+        height: OG_IMAGE_HEIGHT,
         alt: 'Teen Patti Gold PC Pakistan',
       },
     ],
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: 'Teen Patti Gold for PC — Windows Play Guide Pakistan',
     description:
       'Teen Patti Gold on PC in Pakistan via Android emulator. Bigger screen, same wallet — quick setup and official APK link for safer Teen Patti Gold play at home.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp'],
+    images: [LOGO_URL],
   },
 };
 

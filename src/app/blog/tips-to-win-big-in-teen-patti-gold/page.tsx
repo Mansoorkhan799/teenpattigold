@@ -34,9 +34,8 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: 'How to Win Big at Teen Patti Gold Pakistan 2026',
       },
     ],
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     title: 'How to Win Big at Teen Patti Gold Pakistan in 2026?',
     description:
       'Win more at Teen Patti Gold in Pakistan: bankroll, table choice & patience. 2026 practical tips — smarter play, not guaranteed wins; always gamble responsibly.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   }
 };
 

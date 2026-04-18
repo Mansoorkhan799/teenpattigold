@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DeferredStyles from "@/components/DeferredStyles";
 import ScrollToTop from "@/components/ScrollToTop";
-import { LOGO_URL, FAVICON_URL } from "@/lib/site-images";
+import { LOGO_URL, FAVICON_URL, OG_IMAGE_URL, OG_IMAGE_WIDTH, OG_IMAGE_HEIGHT } from "@/lib/site-images";
 import {
   META_HOME_DESCRIPTION,
   META_HOME_TITLE,
@@ -94,9 +94,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: OG_IMAGE_URL,
+        width: OG_IMAGE_WIDTH,
+        height: OG_IMAGE_HEIGHT,
         alt: "Teen Patti Gold - Play Card Games and Earn Real Money in Pakistan",
       },
     ],
@@ -109,9 +109,9 @@ export const metadata: Metadata = {
     creator: "@teenpattigold",
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: OG_IMAGE_URL,
+        width: OG_IMAGE_WIDTH,
+        height: OG_IMAGE_HEIGHT,
         alt: "Teen Patti Gold - Play Card Games and Earn Real Money in Pakistan",
       }
     ],
@@ -164,7 +164,7 @@ export default function RootLayout({
         {/* Icons, manifest, and PWA meta come from `metadata` (Next injects <link>/<meta>). */}
         {/* Note: logo LCP preload is handled automatically by Next.js Image priority={true} in Header */}
         {/* Image hint for older scrapers that don't read OG tags */}
-        <link rel="image_src" href="https://teenpattigoldgame.com.pk/opengraph-image" />
+        <link rel="image_src" href={OG_IMAGE_URL} />
         
         {/* Google Analytics - Set NEXT_PUBLIC_GA_ID in .env.local to enable */}
         {process.env.NEXT_PUBLIC_GA_ID && (

@@ -34,9 +34,8 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/opengraph-image',
-        width: 1200,
-        height: 630,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        width: 512, height: 512,
         alt: 'How to Play Teen Patti Gold Pakistan',
       },
     ],
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     title: 'How to Play Teen Patti Gold in Pakistan — Full Guide',
     description:
       'How to play Teen Patti Gold in Pakistan: rules, hands & table etiquette. 2026 gameplay guide — learn ranks, blinds and side bets before you risk real chips.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   }
 };
 

@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-01-10T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: 'https://teenpattigoldgame.com.pk/opengraph-image', width: 1200, height: 630, alt: 'How to Use Teen Patti Gold APK in Pakistan' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2', width: 512, height: 512, alt: 'How to Use Teen Patti Gold APK in Pakistan' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to Use Teen Patti Gold APK in Pakistan? 2026 Guide',
     description:
       'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
-    images: ['https://teenpattigoldgame.com.pk/opengraph-image'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
   }
 };
 

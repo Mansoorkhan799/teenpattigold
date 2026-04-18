@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
+import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL, OG_IMAGE_WIDTH, OG_IMAGE_HEIGHT } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_APK } from '@/lib/breadcrumb-schema';
 
 export const metadata: Metadata = {
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
-        width: 1000,
-        height: 1000,
+        url: LOGO_URL,
+        width: OG_IMAGE_WIDTH,
+        height: OG_IMAGE_HEIGHT,
         alt: 'Teen Patti Gold APK Latest Version Download Pakistan',
       },
     ],
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: 'Download Teen Patti Gold APK Latest Version Free 2026',
     description:
       'Download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Play 30+ card games — Teen Patti, Rummy, Dragon Tiger. Earn real cash via JazzCash & EasyPaisa.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp'],
+    images: [LOGO_URL],
   },
 };
 
