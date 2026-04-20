@@ -743,7 +743,7 @@ export default function Home() {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-800">
-              <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Operating System</td><td className="py-3 px-6 text-gray-300">Android 4.1</td><td className="py-3 px-6 text-gray-300">Android 8.0 or above</td></tr>
+              <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Operating System</td><td className="py-3 px-6 text-gray-300">Android 5.0</td><td className="py-3 px-6 text-gray-300">Android 8.0 or above</td></tr>
               <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">RAM</td><td className="py-3 px-6 text-gray-300">2GB or more</td><td className="py-3 px-6 text-gray-300">4GB or more</td></tr>
               <tr className="bg-[#06091F]/50"><td className="py-3 px-6 text-gray-300">Storage Space</td><td className="py-3 px-6 text-gray-300">At least 500 MB free</td><td className="py-3 px-6 text-gray-300">1GB free space</td></tr>
               <tr className="bg-[#0a1029]/50"><td className="py-3 px-6 text-gray-300">Processor</td><td className="py-3 px-6 text-gray-300">Quad-core 1.5 GHz</td><td className="py-3 px-6 text-gray-300">Octa-core 2.0 GHz</td></tr>
@@ -1280,9 +1280,9 @@ export default function Home() {
           <div className="space-y-4">
             <ul className="list-disc pl-5 space-y-3 text-gray-300">
               <li>In the latest version, the game looks better with improved graphics and smooth animations.</li>
-              <li>Provide fast performance so that the app opens quickly and runs smoothly without lag.</li>
+              <li>Provides fast performance so the app opens quickly and runs smoothly without lag.</li>
               <li>Its menu and layout are simple, which makes it very easy, especially for new users.</li>
-              <li>In the latest versions, more games are added, such as Dragon vs Tiger, Rumany, and others.</li>
+              <li>In the latest versions, more games are added, such as Dragon vs Tiger, Rummy, and others.</li>
               <li>The withdrawal or deposit options work faster and smoothly in the latest version.</li>
               <li>In the latest version, better security measures can be used that can protect your account and money.</li>
               <li>New bonuses and referral rewards provide you with more chances to earn money.</li>
@@ -1321,8 +1321,8 @@ export default function Home() {
                 <li>Sometimes withdrawals take time</li>
                 <li>Gameplay can be addictive</li>
                 <li>Run slow on weak phones</li>
-                <li>No legal Support</li>
-                <li>No Financial Freedom</li>
+                <li>Not available on Google Play Store</li>
+                <li>Requires responsible budget control</li>
                 <li>Gameplay can be complicated</li>
               </ul>
               </div>
