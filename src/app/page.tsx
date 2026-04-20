@@ -70,29 +70,6 @@ export default function Home() {
         "author": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
         "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
         "inLanguage": ["en", "ur"],
-        "review": [
-          {
-            "@type": "Review",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "author": { "@type": "Person", "name": "Ahmed Raza" },
-            "reviewBody": "Best earning app in Pakistan! I withdraw money every week via JazzCash. The games are smooth and the support team is very helpful.",
-            "datePublished": "2026-03-01"
-          },
-          {
-            "@type": "Review",
-            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-            "author": { "@type": "Person", "name": "Sana Malik" },
-            "reviewBody": "Teen Patti Gold is amazing. I love the Rummy and Dragon Tiger games. Depositing and withdrawing through EasyPaisa is super fast and easy.",
-            "datePublished": "2026-02-15"
-          },
-          {
-            "@type": "Review",
-            "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
-            "author": { "@type": "Person", "name": "Bilal Hassan" },
-            "reviewBody": "Great card game with real cash rewards. I started with Rs 200 and made decent earnings. The app is stable and fun to play daily.",
-            "datePublished": "2026-01-20"
-          }
-        ],
         "audience": {
           "@type": "Audience",
           "audienceType": "Gamers in Pakistan",
@@ -404,11 +381,11 @@ export default function Home() {
             
             {/* Short intro on mobile so the download button stays above the fold */}
             <p className="text-base text-gray-300 leading-relaxed md:hidden">
-              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> is Pakistan&apos;s premier online card game platform with 30+ exciting games. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
+              <span className="text-[#FFA500] font-semibold">Teen Patti Gold</span> is Pakistan&apos;s premier online card game platform with 30+ exciting games. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
             </p>
             {/* Full intro on tablet/desktop */}
             <p className="hidden md:block text-lg text-gray-300 leading-relaxed">
-              <Link href="/" className="text-[#FFA500] font-semibold underline decoration-[#FFA500] underline-offset-2 hover:text-[#ffc14d] hover:decoration-[#ffc14d] transition-colors">Teen Patti Gold</Link> is Pakistan&apos;s premier online card game platform with 30+ exciting games including Teen Patti, Rummy, and Dragon Tiger. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
+              <span className="text-[#FFA500] font-semibold">Teen Patti Gold</span> is Pakistan&apos;s premier online card game platform with 30+ exciting games including Teen Patti, Rummy, and Dragon Tiger. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
             </p>
 
             {/* Download Button */}
@@ -416,7 +393,7 @@ export default function Home() {
               <a 
                 href={DOWNLOAD_URL}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="nofollow sponsored noopener noreferrer"
                 className="relative flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group"
               >
                 <span>DOWNLOAD NOW</span>
@@ -734,7 +711,7 @@ export default function Home() {
           <div className="mb-8">
           <ol className="list-decimal pl-5 space-y-3 text-gray-300">
             <li>Open the browser on your Android device.</li>
-            <li>Visit <Link href="/" className="text-[#0ea5e9] hover:underline font-medium">teenpattigoldgame.com.pk</Link> and click the Download button to get the latest version.</li>
+            <li>Visit teenpattigoldgame.com.pk and click the Download button to get the latest version.</li>
             <li>Click the Download button to start downloading.</li>
             <li>Wait a few seconds for the download to complete.</li>
             <li>The file will be saved in the Download folder of your device.</li>
@@ -779,7 +756,7 @@ export default function Home() {
           <a 
             href={DOWNLOAD_URL}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow sponsored noopener noreferrer"
             className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-4 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
           >
             <span className="text-lg">DOWNLOAD NOW</span>

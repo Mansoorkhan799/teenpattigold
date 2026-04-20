@@ -1,6 +1,15 @@
 import { NextResponse } from 'next/server';
 import { LOGO_URL } from '@/lib/site-images';
 
+function escapeXml(value: string): string {
+  return value
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&apos;');
+}
+
 export async function GET() {
   const baseUrl = 'https://teenpattigoldgame.com.pk';
   const logoImageLoc = LOGO_URL;
@@ -288,16 +297,16 @@ export async function GET() {
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   ${allPages.map(page => `
   <url>
-    <loc>${baseUrl}${page.url}</loc>
-    <lastmod>${page.lastMod}</lastmod>
-    <changefreq>${page.changeFreq}</changefreq>
+    <loc>${escapeXml(`${baseUrl}${page.url}`)}</loc>
+    <lastmod>${escapeXml(page.lastMod)}</lastmod>
+    <changefreq>${escapeXml(page.changeFreq)}</changefreq>
     <priority>${page.priority}</priority>
     <mobile:mobile/>
     ${page.images?.map(img => `
     <image:image>
-      <image:loc>${img.loc === '/teen-patti-gold.webp' ? logoImageLoc : baseUrl + img.loc}</image:loc>
-      <image:title>${img.title}</image:title>
-      <image:caption>${img.caption}</image:caption>
+      <image:loc>${escapeXml(img.loc === '/teen-patti-gold.webp' ? logoImageLoc : baseUrl + img.loc)}</image:loc>
+      <image:title>${escapeXml(img.title)}</image:title>
+      <image:caption>${escapeXml(img.caption)}</image:caption>
     </image:image>`).join('') || ''}
   </url>
   `).join('')}

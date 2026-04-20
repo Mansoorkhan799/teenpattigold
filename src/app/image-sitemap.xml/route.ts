@@ -5,6 +5,15 @@
 import { NextResponse } from 'next/server';
 import { LOGO_URL } from '@/lib/site-images';
 
+function escapeXml(value: string): string {
+  return value
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&apos;');
+}
+
 export async function GET() {
   const baseUrl = 'https://teenpattigoldgame.com.pk';
   const logoImageLoc = LOGO_URL;
@@ -39,16 +48,19 @@ export async function GET() {
     { url: '/blog/teen-patti-gold-login-problems-solutions', images: [{ loc: `${baseUrl}/teen-patti-gold-app.webp`, title: 'Fix Teen Patti Gold Login Problems Pakistan 2026', caption: 'How to fix Teen Patti Gold login problems — OTP, password, account lock solutions.' }] },
     { url: '/blog/responsible-gaming-guide-2026', images: [{ loc: logoImageLoc, title: 'Responsible Gaming Guide Teen Patti Gold 2026', caption: 'Responsible gaming tips for Teen Patti Gold players in Pakistan 2026.' }] },
   ];
+  const uniqueImagePages = Array.from(
+    new Map(imagePages.map((page) => [page.url, page])).values()
+  );
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-${imagePages.map(page => `  <url>
-    <loc>${baseUrl}${page.url}</loc>
+${uniqueImagePages.map(page => `  <url>
+    <loc>${escapeXml(`${baseUrl}${page.url}`)}</loc>
     ${page.images.map(img => `<image:image>
-      <image:loc>${img.loc}</image:loc>
-      <image:title>${img.title}</image:title>
-      <image:caption>${img.caption}</image:caption>
+      <image:loc>${escapeXml(img.loc)}</image:loc>
+      <image:title>${escapeXml(img.title)}</image:title>
+      <image:caption>${escapeXml(img.caption)}</image:caption>
     </image:image>`).join('\n    ')}
   </url>`).join('\n')}
 </urlset>`;
