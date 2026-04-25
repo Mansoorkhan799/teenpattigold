@@ -101,7 +101,7 @@ export default function TeenPattiGoldLoginProblemsPage() {
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">2. OTP Not Received</h3>
                     <p className="text-gray-300 mb-2"><strong>Problem:</strong> OTP is not arriving on your phone.</p>
-                    <p className="text-gray-300"><strong>Solution:</strong> Check your network connection. Ensure your mobile number is correct. Wait 2–3 minutes and request a new OTP. Check if SMS is blocked. Contact Teen Patti Gold support via live chat or Telegram if the problem persists.</p>
+                    <p className="text-gray-300"><strong>Solution:</strong> Check your network connection. Ensure your mobile number is correct. Wait 2–3 minutes and request a new OTP. Check if SMS is blocked. Contact Teen Patti Gold support via <a href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">live chat</a> or Telegram if the problem persists.</p>
                   </div>
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">3. Account Locked</h3>
@@ -142,7 +142,7 @@ export default function TeenPattiGoldLoginProblemsPage() {
                 <h2 className="text-3xl font-bold mb-6 text-white">Contact Support</h2>
                 <p className="text-gray-300 mb-4">If problems persist, contact Teen Patti Gold 24/7 support:</p>
                 <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                  <li>Live chat in the app</li>
+                  <li><a href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Live chat</a> in the app</li>
                   <li>Telegram support</li>
                   <li>Email: support@teenpattigoldgame.com.pk</li>
                 </ul>

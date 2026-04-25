@@ -886,12 +886,24 @@ export default function TeenPattiGoldApkPage() {
                       ? 'M6 18L18 6M6 6l12 12'
                       : 'M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z';
                     const sw = cell.type === 'warn' ? 2 : 3;
+                    const isLiveChat = cell.text.toLowerCase() === 'live chat';
                     return (
                       <span className={`inline-flex items-center gap-1.5 ${alignCenter ? 'justify-center' : ''}`} style={{ color }}>
                         <svg className="w-4 h-4 flex-shrink-0" fill="none" stroke={color} viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={sw} d={path} />
                         </svg>
-                        <span className="font-medium">{cell.text}</span>
+                        {isLiveChat ? (
+                          <a
+                            href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium underline-offset-2 hover:underline"
+                          >
+                            {cell.text}
+                          </a>
+                        ) : (
+                          <span className="font-medium">{cell.text}</span>
+                        )}
                       </span>
                     );
                   };
