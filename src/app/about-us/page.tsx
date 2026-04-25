@@ -55,10 +55,7 @@ const aboutSchema = {
   'url': 'https://teenpattigoldgame.com.pk/about-us',
   'name': 'About Teen Patti Gold — Pakistan Card Game Platform',
   'description': 'Teen Patti Gold is Pakistan\'s #1 online card game app. Players across Pakistan use it to play Teen Patti, Rummy, Dragon Tiger, and 30+ games and earn real money via JazzCash and EasyPaisa.',
-  'mainEntity': {
-    '@type': 'Organization',
-    '@id': 'https://teenpattigoldgame.com.pk/#organization',
-  },
+  'mainEntity': { '@id': 'https://teenpattigoldgame.com.pk/#organization' },
   'speakable': {
     '@type': 'SpeakableSpecification',
     'cssSelector': ['#about-what-is', '#about-mission'],

@@ -63,21 +63,9 @@ const iosFaqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Is it free to download and install Teen Patti Gold on iOS?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes, Teen Patti Gold is free to download and install on iOS. You do not need to pay to download or install the app.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is Teen Patti Gold secure to play on iOS devices?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes, Teen Patti Gold uses a modern security system to protect your account and funds. iOS devices also offer strong built-in security to protect your Teen Patti Gold account.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is Teen Patti Gold a legit game to earn real money?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes, Teen Patti Gold is a legitimate game for earning real money. Players in Pakistan regularly withdraw their winnings via JazzCash and EasyPaisa with a minimum withdrawal of Rs 100.' },
-    },
+    { '@type': 'Question', name: 'Is it free to download and install Teen Patti Gold on iOS?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, Teen Patti Gold is free to download and install on iOS. You do not need to pay to download or install the app.' } },
+    { '@type': 'Question', name: 'Is Teen Patti Gold secure to play on iOS devices?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, Teen Patti Gold uses a modern security system to protect your account and funds. iOS devices also offer strong built-in security to protect your Teen Patti Gold account.' } },
+    { '@type': 'Question', name: 'Is Teen Patti Gold a legit game to earn real money?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, Teen Patti Gold is a legitimate game for earning real money. Players in Pakistan regularly withdraw their winnings via JazzCash and EasyPaisa with a minimum withdrawal of Rs 100.' } },
   ],
 };
 
@@ -92,416 +80,434 @@ const iosHowToSchema = {
     { '@type': 'HowToSupply', name: 'Stable internet connection' },
   ],
   step: [
-    {
-      '@type': 'HowToStep',
-      position: 1,
-      name: 'Open Safari Browser',
-      text: 'Open your browser (e.g. Safari) on your iOS device.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 2,
-      name: 'Visit the Official Website',
-      text: 'Search for the official Teen Patti Gold website and open it.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 3,
-      name: 'Tap the Download Button',
-      text: 'Tap the Download button on the website to begin downloading the Teen Patti Gold app.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 4,
-      name: 'Trust the Developer Profile',
-      text: 'Go to Settings > General > Device Management, find the Teen Patti Gold developer profile, and tap "Trust".',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 5,
-      name: 'Open the App',
-      text: 'Return to your home screen, tap the Teen Patti Gold app icon, and open it.',
-    },
-    {
-      '@type': 'HowToStep',
-      position: 6,
-      name: 'Register and Start Playing',
-      text: 'Create an account or log in, make your first deposit, and start playing games.',
-    },
+    { '@type': 'HowToStep', position: 1, name: 'Open Safari Browser', text: 'Open your browser (e.g. Safari) on your iOS device.' },
+    { '@type': 'HowToStep', position: 2, name: 'Visit the Official Website', text: 'Search for the official Teen Patti Gold website and open it.' },
+    { '@type': 'HowToStep', position: 3, name: 'Tap the Download Button', text: 'Tap the Download button on the website to begin downloading the Teen Patti Gold app.' },
+    { '@type': 'HowToStep', position: 4, name: 'Trust the Developer Profile', text: 'Go to Settings > General > Device Management, find the Teen Patti Gold developer profile, and tap "Trust".' },
+    { '@type': 'HowToStep', position: 5, name: 'Open the App', text: 'Return to your home screen, tap the Teen Patti Gold app icon, and open it.' },
+    { '@type': 'HowToStep', position: 6, name: 'Register and Start Playing', text: 'Create an account or log in, make your first deposit, and start playing games.' },
   ],
 };
 
 export default function TeenPattiGoldForIOSPage() {
-  // Schema.org structured data for iOS page
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
+    "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-for-ios#article",
     "headline": "Teen Patti Gold For iOS Download Latest Version For Free 2026",
     "description": "Complete guide to download and play Teen Patti Gold on iOS devices including iPhone and iPad.",
     "image": LOGO_URL,
-    "author": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "url": "https://teenpattigoldgame.com.pk"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "logo": {
-        "@type": "ImageObject",
-        "url": LOGO_URL
-      }
-    },
+    "author": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
+    "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
     "datePublished": "2026-01-05",
     "dateModified": "2026-04-11",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-for-ios"
-    },
-    "about": {
-      "@type": "SoftwareApplication",
-      "name": "Teen Patti Gold",
-      "operatingSystem": "iOS 12 or higher",
-      "applicationCategory": "GameApplication"
-    },
+    "mainEntityOfPage": { "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-for-ios#webpage" },
+    "isPartOf": { "@id": "https://teenpattigoldgame.com.pk/#website" },
+    "about": { "@type": "SoftwareApplication", "name": "Teen Patti Gold", "operatingSystem": "iOS 12 or higher", "applicationCategory": "GameApplication" },
     "articleSection": "Gaming",
     "keywords": "Teen Patti Gold for iOS, Teen Patti iPhone, iOS card game",
     "inLanguage": "en-PK"
   };
 
+  const tocItems = [
+    { href: '#ios-info', label: 'Download Info Table' },
+    { href: '#ios-features', label: 'Key Features on iOS' },
+    { href: '#ios-how-to', label: 'How to Download on iOS' },
+    { href: '#ios-sysreq', label: 'System Requirements' },
+    { href: '#ios-conclusion', label: 'Conclusion' },
+    { href: '#ios-faq', label: 'Frequently Asked Questions' },
+  ];
+
+  const features = [
+    {
+      color: '#FFA500',
+      title: 'Comfortable Gameplay',
+      desc: 'Teen Patti Gold for iOS offers a smooth, comfortable gameplay experience for players of all skill levels. You can fully control options, menus, and games without any technical knowledge.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />,
+    },
+    {
+      color: '#4ade80',
+      title: 'Live Gaming Rooms',
+      desc: 'Live multiplayer rooms let you play Teen Patti with real players from around the world. Real opponents keep the action fresh and competitive.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />,
+    },
+    {
+      color: '#60a5fa',
+      title: 'Regular Prize Offers',
+      desc: 'Daily and weekly prize offers, bonuses, and rewards help boost your balance. Improve your chances of winning without depositing extra funds.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />,
+    },
+    {
+      color: '#a855f7',
+      title: 'Reliable & Simple Platform',
+      desc: 'A secure platform that protects your account details and funds from theft. Easy account creation and intuitive navigation make it perfect for beginners.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />,
+    },
+    {
+      color: '#f97316',
+      title: 'High-Quality Visuals',
+      desc: 'Appealing graphics and an easy-to-use interface. Tables, cards, and animated visuals look stunning on Retina displays — making every session more enjoyable.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z M15 12a3 3 0 11-6 0 3 3 0 016 0z" />,
+    },
+    {
+      color: '#ec4899',
+      title: 'iCloud Account Sync',
+      desc: 'Your Teen Patti Gold profile, wallet, and progress sync seamlessly across iPhone and iPad — pick up where you left off on any iOS device.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />,
+    },
+  ];
+
+  const steps = [
+    {
+      color: '#FFA500',
+      title: 'Open Safari Browser',
+      desc: 'First, open your browser (e.g. Safari) on your iPhone or iPad to begin the download process.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z M9 12l2 2 4-4" />,
+    },
+    {
+      color: '#0ea5e9',
+      title: 'Visit the Official Website',
+      desc: 'Search for the official Teen Patti Gold website (teenpattigoldgame.com.pk) and open it. Always use the official source to avoid fake apps.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />,
+    },
+    {
+      color: '#4ade80',
+      title: 'Tap the Download Button',
+      desc: 'Once the website loads, tap the prominent Download button to start downloading Teen Patti Gold automatically to your device.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />,
+    },
+    {
+      color: '#a855f7',
+      title: 'Open Device Management',
+      desc: 'Go to Settings → General → Device Management. Find the Teen Patti Gold developer profile in the list.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z M15 12a3 3 0 11-6 0 3 3 0 016 0z" />,
+    },
+    {
+      color: '#ec4899',
+      title: 'Trust the Developer Profile',
+      desc: 'Tap the Teen Patti Gold profile and choose "Trust This App". This authorises iOS to run the app on your device.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />,
+    },
+    {
+      color: '#f97316',
+      title: 'Open the App',
+      desc: 'Return to your home screen, tap the Teen Patti Gold app icon, and open the app. The login screen will appear.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />,
+    },
+    {
+      color: '#06b6d4',
+      title: 'Register & Start Playing',
+      desc: 'Create a new account or log in to your existing one, make your first deposit using JazzCash or EasyPaisa, and start playing games to earn real money.',
+      icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />,
+    },
+  ];
+
+  const sysReqs = [
+    { color: '#FFA500', label: 'Device', value: 'iPhone or iPad (iOS 12 or higher)' },
+    { color: '#0ea5e9', label: 'Memory', value: 'At least 500 MB free space' },
+    { color: '#4ade80', label: 'RAM', value: '4 GB recommended' },
+    { color: '#a855f7', label: 'Internet', value: 'Strong Wi-Fi or 4G/5G connection' },
+    { color: '#ec4899', label: 'Security', value: 'Trust developer profile in Settings' },
+  ];
+
   return (
     <>
-      {/* Schema.org JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(iosBreadcrumbLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(iosHowToSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(iosFaqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(iosBreadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(iosHowToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(iosFaqSchema) }} />
 
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-[#FFA500]">Teen Patti Gold For iOS</span>
-            <br />
-            <span className="text-white">Download Latest Version For Free 2026</span>
-          </h1>
-          <p className="text-lg text-gray-300 leading-relaxed max-w-4xl mx-auto">
-            <Link href="/" className="text-accent hover:underline font-semibold">Teen Patti Gold for iOS</Link> is a widely recognized online platform for playing card games like Teen Patti. Many people love playing it for its easy interface, quick gameplay, and amazing features. You can play it on every device as it is compatible with every device.
-          </p>
-        </div>
-
-        {/* Logo Display */}
-        <div className="flex justify-center mb-12">
-          <div className="relative w-[280px] h-[280px] max-w-full">
-            <Image
-              src={LOGO_PATH_VERSIONED}
-              alt="Teen Patti Gold for iOS"
-              width={280}
-              height={280}
-              className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
-              priority={true}
-              fetchPriority="high"
-              quality={75}
-            />
-          </div>
-        </div>
-
-        {/* Download Button */}
-        <div className="flex justify-center mb-8">
-          <a 
-            href={DOWNLOAD_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative flex items-center px-12 py-6 text-white font-bold text-xl rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl"
-          >
-            <span className="mr-4">Download For iOS</span>
-            <div className="bg-[#f97316] rounded-full p-3 group-hover:scale-110 transition-transform">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-              </svg>
+        <div className="md:flex md:items-center md:justify-between md:gap-12">
+          <div className="md:w-1/2 space-y-6 text-center md:text-left">
+            <div className="flex flex-wrap justify-center md:justify-start gap-2">
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#FFA500] border border-[#FFA500]/30">iOS 12+</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#0ea5e9] border border-[#0ea5e9]/30">iPhone &amp; iPad</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#4ade80] border border-[#4ade80]/30">Free</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#a855f7] border border-[#a855f7]/30">600k+ Downloads</span>
             </div>
-          </a>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <span className="text-[#FFA500]">Teen Patti Gold for iOS</span>
+              <br />
+              <span className="text-white">iPhone &amp; iPad Install Guide</span>
+            </h1>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              <Link href="/" className="text-[#FFA500] font-semibold hover:underline">Teen Patti Gold for iOS</Link> is a widely recognized online platform for playing card games like Teen Patti. Players love it for the easy interface, quick gameplay, and amazing features. The app works smoothly on every iOS device.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <a
+                href={DOWNLOAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-10 py-4 text-white font-bold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl"
+              >
+                <span>DOWNLOAD FOR iOS</span>
+                <div className="ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                </div>
+              </a>
+              <span className="self-center text-sm text-[#4ade80] font-semibold bg-[#0A1029] border border-[#4ade80]/30 px-4 py-2 rounded-full inline-flex items-center gap-1.5">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
+                Quick install
+              </span>
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-10 md:mt-0 md:w-1/2">
+            <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px]">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FFA500]/20 to-[#0ea5e9]/10 rounded-3xl blur-3xl pointer-events-none"></div>
+              <Image
+                src={LOGO_PATH_VERSIONED}
+                alt="Teen Patti Gold for iOS"
+                width={320}
+                height={320}
+                className="relative object-contain drop-shadow-2xl rounded-3xl w-full h-full"
+                priority
+                fetchPriority="high"
+                quality={75}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
+      {/* Table of Contents */}
+      <section id="toc" className="px-4 md:px-8 max-w-7xl mx-auto">
+        <details className="group bg-gradient-to-br from-secondary via-secondary to-[#0a1029] rounded-2xl border border-[#FFA500]/20 shadow-xl overflow-hidden">
+          <summary className="cursor-pointer list-none p-6 md:p-7 flex items-center justify-between gap-4 hover:bg-white/[0.02] transition-colors">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 md:w-11 md:h-11 rounded-lg bg-gradient-to-br from-[#FFA500] to-[#f97316] flex items-center justify-center shadow-md shadow-[#FFA500]/20 flex-shrink-0">
+                <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" />
+                </svg>
+              </div>
+              <div>
+                <h2 className="text-xl md:text-2xl font-bold text-[#FFA500] leading-tight">Table of Contents</h2>
+                <p className="text-xs md:text-sm text-gray-400 mt-0.5">{tocItems.length} sections — tap to expand</p>
+              </div>
+            </div>
+            <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#0a1029] border border-gray-700 flex items-center justify-center group-open:border-[#FFA500]/50 transition-all">
+              <svg className="w-5 h-5 text-[#FFA500] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </summary>
+          <div className="px-4 md:px-7 pb-6 md:pb-7 pt-1 border-t border-gray-800/60">
+            <ol className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 mt-5">
+              {tocItems.map((item, idx) => (
+                <li key={item.href} className="list-none">
+                  <a href={item.href} className="group/item flex items-center gap-3 px-3 py-2.5 rounded-lg bg-[#0a1029] border border-gray-800 hover:border-[#FFA500]/40 hover:bg-[#0a1029]/80 transition-all duration-200">
+                    <span className="flex-shrink-0 w-7 h-7 rounded-md bg-gradient-to-br from-[#FFA500]/15 to-[#FFA500]/5 border border-[#FFA500]/30 flex items-center justify-center text-[#FFA500] text-xs font-bold">{idx + 1}</span>
+                    <span className="text-sm md:text-base text-gray-300 group-hover/item:text-[#0ea5e9] transition-colors flex-1 leading-snug">{item.label}</span>
+                    <svg className="w-4 h-4 text-gray-600 group-hover/item:text-[#FFA500] flex-shrink-0 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </details>
+      </section>
+
       {/* Download Info Table */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#FFA500] text-center">Download info Table</h2>
-        <div className="overflow-hidden rounded-2xl shadow-2xl border border-gray-800 max-w-3xl mx-auto">
+      <section id="ios-info" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="flex items-center justify-center gap-3 mb-8">
+          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#FFA500] to-[#f97316] flex items-center justify-center shadow-md shadow-[#FFA500]/20">
+            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <h2 className="text-2xl md:text-3xl font-bold text-[#FFA500] text-center">Download Info Table</h2>
+        </div>
+        <div className="overflow-hidden rounded-2xl shadow-2xl border border-gray-800 max-w-3xl mx-auto bg-secondary">
           <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-gray-800">
               <tbody className="divide-y divide-gray-800">
-                <tr className="bg-[#0a1029]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">App Name</td>
-                  <td className="py-4 px-6 text-left text-white">Teen Patti Gold</td>
-                </tr>
-                <tr className="bg-[#06091F]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Developer</td>
-                  <td className="py-4 px-6 text-left text-white">Teen Patti Gold dev</td>
-                </tr>
-                <tr className="bg-[#0a1029]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Category</td>
-                  <td className="py-4 px-6 text-left text-white">Cards, Game</td>
-                </tr>
-                <tr className="bg-[#06091F]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Size</td>
-                  <td className="py-4 px-6 text-left text-white">49MB</td>
-                </tr>
-                <tr className="bg-[#0a1029]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Update</td>
-                  <td className="py-4 px-6 text-left text-white">Today</td>
-                </tr>
-                <tr className="bg-[#06091F]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Downloads</td>
-                  <td className="py-4 px-6 text-left text-white">600k+</td>
-                </tr>
-                <tr className="bg-[#0a1029]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Rating Count</td>
-                  <td className="py-4 px-6 text-left text-white">300000+</td>
-                </tr>
-                <tr className="bg-[#06091F]/50">
-                  <td className="py-4 px-6 text-left font-medium text-white">Price</td>
-                  <td className="py-4 px-6 text-left text-white">Free (0$)</td>
-                </tr>
+                {[
+                  ['App Name', 'Teen Patti Gold'],
+                  ['Developer', 'Teen Patti Gold dev'],
+                  ['Category', 'Cards, Game'],
+                  ['Size', '49 MB'],
+                  ['Update', 'Today'],
+                  ['Downloads', '600k+'],
+                  ['Rating Count', '300,000+'],
+                  ['Price', 'Free (Rs 0)'],
+                ].map(([label, value], i) => (
+                  <tr key={label} className={i % 2 === 0 ? 'bg-[#0a1029]/50' : 'bg-[#06091F]/50'}>
+                    <td className="py-4 px-6 text-left font-medium text-gray-300">{label}</td>
+                    <td className="py-4 px-6 text-left text-white font-semibold">{value}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
         </div>
       </section>
 
-      {/* Key Features Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Key Features of Teen Patti Gold for iOS</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-[#0A1029] p-6 rounded-lg border-l-4 border-[#FFA500]">
-              <h3 className="text-xl font-bold text-[#FFA500] mb-3">Comfortable Gameplay</h3>
-              <p className="text-gray-300">Teen Patti Gold for iOS offers a comfortable gameplay experience, making it easy for players of all skill levels to enjoy. You can completely control options, menus, and games on it without knowing technical skills.</p>
-            </div>
-
-            <div className="bg-[#0A1029] p-6 rounded-lg border-l-4 border-[#4ade80]">
-              <h3 className="text-xl font-bold text-[#4ade80] mb-3">Live Gaming Rooms</h3>
-              <p className="text-gray-300">Teen Patti Gold for iOS offers live gaming rooms where you can play Teen Patti with real players from around the world. This feature makes the game more enjoyable, and keeps players fresh at all times.</p>
-            </div>
-
-            <div className="bg-[#0A1029] p-6 rounded-lg border-l-4 border-[#60a5fa]">
-              <h3 className="text-xl font-bold text-[#60a5fa] mb-3">Regular Prize Offers</h3>
-              <p className="text-gray-300">Teen Patti Gold for iOS offers regular prize to all players. These offers offer great bonuses and rewards you can claim to boost your balance. It improves your chances of winning without depositing funds.</p>
-            </div>
-
-            <div className="bg-[#0A1029] p-6 rounded-lg border-l-4 border-[#a855f7]">
-              <h3 className="text-xl font-bold text-[#a855f7] mb-3">Reliable and Simple Platform</h3>
-              <p className="text-gray-300">It provides a secure and efficient platform to store your account details and protect your money from theft. You can create an account and navigate easily with it. It has easy games that you can enjoy without any confusion.</p>
-            </div>
-
-            <div className="bg-[#0A1029] p-6 rounded-lg border-l-4 border-[#f97316]">
-              <h3 className="text-xl font-bold text-[#f97316] mb-3">High-Quality Visuals</h3>
-              <p className="text-gray-300">Teen Patti Gold for iOS features appealing graphics and an easy-to-use interface. All things like tables, cards, and animated visuals attract more people. This feature makes the game more lovely and interesting.</p>
-            </div>
-          </div>
+      {/* Key Features */}
+      <section id="ios-features" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#FFA500] mb-3">Key Features of Teen Patti Gold for iOS</h2>
+          <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed">Everything you need for a smooth, secure and rewarding card-game experience on iPhone and iPad.</p>
         </div>
-      </section>
-
-      {/* Download Instructions */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Complete Guide to Downloading Teen Patti Gold for iOS 2026</h2>
-          
-          <div className="space-y-4">
-            <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#FFA500]">
-              <p className="text-gray-300">First, open your browser, such as Safari, on an iOS device.</p>
-            </div>
-
-            <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#4ade80]">
-              <p className="text-gray-300">Search for the official website of Teen Patti Gold and open it.</p>
-            </div>
-
-            <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#60a5fa]">
-              <p className="text-gray-300">You will see the download button after fully opening the official website.</p>
-            </div>
-
-            <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#a855f7]">
-              <p className="text-gray-300">Click the download button to start the download automatically.</p>
-            </div>
-
-            <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#f97316]">
-              <p className="text-gray-300">Download the Teen Patti Gold app successfully.</p>
-            </div>
-
-            <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#ec4899]">
-              <p className="text-gray-300">Go to the device management in the settings and search for the Teen Patti Gold developer profile.</p>
-            </div>
-
-            <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#8b5cf6]">
-              <p className="text-gray-300">Now tap on the Trust This App button.</p>
-            </div>
-
-            <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#10b981]">
-              <p className="text-gray-300">Go to the home page of your iOS device and click on the Teen Patti Gold app.</p>
-            </div>
-
-            <div className="bg-[#0A1029] rounded-lg p-6 border-l-4 border-[#f59e0b]">
-              <p className="text-gray-300">After opening the app, deposit the amount and start playing games.</p>
-            </div>
-          </div>
-
-          {/* Download Button */}
-          <div className="flex justify-center mt-10">
-            <a 
-              href={DOWNLOAD_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
-            >
-              <span className="text-lg">DOWNLOAD NOW</span>
-              <div className="ml-3 bg-[#f97316] rounded-full p-2">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                </svg>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {features.map(({ color, title, desc, icon }) => (
+            <div key={title} className="group bg-secondary rounded-2xl p-6 border border-gray-800 hover:border-gray-600 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-transform group-hover:scale-110" style={{ background: `linear-gradient(135deg, ${color}33, ${color}0d)`, border: `1px solid ${color}40` }}>
+                <svg className="w-6 h-6" fill="none" stroke={color} viewBox="0 0 24 24">{icon}</svg>
               </div>
-            </a>
-          </div>
+              <h3 className="text-lg md:text-xl font-bold mb-2" style={{ color }}>{title}</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">{desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* System Requirements */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">System Requirements</h2>
-          
-          <div className="bg-[#0A1029] p-6 rounded-lg">
-            <ul className="space-y-3 text-gray-300">
-              <li className="flex items-start">
-                <span className="text-[#FFA500] mr-2">•</span>
-                <span><strong>Device:</strong> iOS 12 or higher</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#FFA500] mr-2">•</span>
-                <span><strong>Memory:</strong> At least 500MB</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#FFA500] mr-2">•</span>
-                <span><strong>RAM:</strong> 4GB</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#FFA500] mr-2">•</span>
-                <span><strong>Internet:</strong> Strong connection</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-[#FFA500] mr-2">•</span>
-                <span><strong>Security:</strong> Enable security option</span>
-              </li>
-            </ul>
-          </div>
+      {/* How to Download on iOS */}
+      <section id="ios-how-to" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#FFA500] mb-3">How to Download Teen Patti Gold on iOS?</h2>
+          <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed">Follow this 7-step guide to install Teen Patti Gold on your iPhone or iPad in under 10 minutes.</p>
         </div>
-      </section>
-
-      {/* Conclusion */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Conclusion</h2>
-          <p className="text-gray-300 leading-relaxed">
-            Teen Patti Gold for iOS is a fun and thrilling card game for gaming fans in 2026. Downloading and installing it on iOS devices is a straightforward method if you follow all the steps correctly. You can download it for free. Many iOS users want to enjoy it on their devices for a smooth gaming experience. You must use the official website to get a real Teen Patti Gold game on iOS. Play games wisely and set a fixed budget to avoid significant losses. You can enjoy Teen Patti Gold on iOS by playing patiently and strategically.
-          </p>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">FAQs</h2>
-          <div className="space-y-4">
-            <details className="group bg-[#0a1029]/50 rounded-xl">
-              <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-                Is it free to download and install Teen Patti Gold on iOS?
-                <span className="transition group-open:rotate-180">
-                  <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <div className="p-4 pt-0 text-gray-300">
-                Yes, Teen Patti Gold is free to download and install on iOS because you do not need to pay to download or install.
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {steps.map(({ color, title, desc, icon }) => (
+            <div key={title} className="group bg-secondary rounded-2xl p-6 border border-gray-800 hover:border-gray-600 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 transition-transform group-hover:scale-110" style={{ background: `linear-gradient(135deg, ${color}33, ${color}0d)`, border: `1px solid ${color}40` }}>
+                <svg className="w-6 h-6" fill="none" stroke={color} viewBox="0 0 24 24">{icon}</svg>
               </div>
-            </details>
-
-            <details className="group bg-[#0a1029]/50 rounded-xl">
-              <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-                Is Teen Patti Gold secure to play on iOS devices?
-                <span className="transition group-open:rotate-180">
-                  <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <div className="p-4 pt-0 text-gray-300">
-                Yes, Teen Patti Gold is safe to play on iOS devices, as it uses a modern security system to protect your account and funds. iOS devices also offer strong security to protect your Teen Patti Gold account.
-              </div>
-            </details>
-
-            <details className="group bg-[#0a1029]/50 rounded-xl">
-              <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-                Is Teen Patti Gold a legit game to earn real money?
-                <span className="transition group-open:rotate-180">
-                  <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                    <path d="M6 9l6 6 6-6"></path>
-                  </svg>
-                </span>
-              </summary>
-              <div className="p-4 pt-0 text-gray-300">
-                Yes, Teen Patti Gold is a legit game for earning real money because it pays out to all users without excuses.
-              </div>
-            </details>
-          </div>
+              <h3 className="text-lg md:text-xl font-bold mb-2" style={{ color }}>{title}</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">{desc}</p>
+            </div>
+          ))}
         </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-gradient-to-r from-[#0ea5e9] to-[#6366f1] rounded-2xl p-8 md:p-12 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Ready to Play on iOS?
-          </h2>
-          <p className="text-xl text-white mb-8 opacity-90">
-            Download Teen Patti Gold now and start earning!
-          </p>
-          <a 
+        <div className="flex justify-center mt-10">
+          <a
             href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-[#0ea5e9] hover:bg-gray-100 font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-12 py-4 bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold text-lg rounded-full transition-all shadow-lg hover:shadow-xl"
           >
-            <span className="text-lg">DOWNLOAD FOR iOS</span>
+            <span>DOWNLOAD NOW</span>
             <div className="ml-3 bg-[#f97316] rounded-full p-2">
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
             </div>
           </a>
         </div>
       </section>
 
-      {/* Back to Home */}
-      <section className="py-8 px-4 md:px-8 max-w-7xl mx-auto text-center">
-        <p className="text-gray-300 mb-3">On Android? <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Download Teen Patti Gold APK free</Link> for the best experience.</p>
-        <Link href="/" className="text-[#0ea5e9] hover:text-[#6366f1] font-medium transition-colors">
-          ← Back to Home
-        </Link>
+      {/* System Requirements */}
+      <section id="ios-sysreq" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#FFA500] mb-3">System Requirements</h2>
+          <p className="text-gray-300 max-w-3xl mx-auto leading-relaxed">Make sure your iOS device meets these specifications for smooth gameplay.</p>
+        </div>
+        <div className="max-w-3xl mx-auto bg-secondary rounded-2xl p-6 md:p-8 border border-gray-800">
+          <ul className="space-y-4">
+            {sysReqs.map(({ color, label, value }) => (
+              <li key={label} className="flex items-start gap-4 p-4 rounded-xl bg-[#0a1029]/60 border border-gray-800">
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center" style={{ background: `linear-gradient(135deg, ${color}33, ${color}0d)`, border: `1px solid ${color}40` }}>
+                  <svg className="w-5 h-5" fill="none" stroke={color} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-white font-semibold mb-0.5">{label}</p>
+                  <p className="text-gray-300 text-sm">{value}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Conclusion */}
+      <section id="ios-conclusion" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="relative bg-gradient-to-br from-secondary via-secondary to-[#0a1029] rounded-2xl p-8 md:p-10 border border-[#4ade80]/20 shadow-xl overflow-hidden">
+          <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#4ade80]/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-[#FFA500]/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div className="relative">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-1 h-8 rounded-full bg-gradient-to-b from-[#4ade80] to-[#16a34a]"></span>
+              <h2 className="text-3xl font-bold text-[#4ade80]">Conclusion</h2>
+            </div>
+            <p className="text-gray-200 leading-relaxed text-base md:text-lg">
+              Teen Patti Gold for iOS is a fun and thrilling card game for gaming fans in 2026. Downloading and installing it on iOS devices is a straightforward process if you follow all the steps correctly — and the app is free. Many iOS users love it for the smooth gaming experience. Always use the official website to get the real Teen Patti Gold app on iOS, play wisely, and set a fixed budget to avoid significant losses. With patience and a smart strategy, Teen Patti Gold on iOS can be both fun and rewarding.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section id="ios-faq" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-2xl p-8 border border-gray-800">
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#0ea5e9] to-[#6366f1] flex items-center justify-center shadow-md shadow-[#0ea5e9]/20">
+              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h2 className="text-3xl font-bold text-[#FFA500] text-center">Frequently Asked Questions</h2>
+          </div>
+          <div className="space-y-4">
+            {[
+              { q: 'Is it free to download and install Teen Patti Gold on iOS?', a: 'Yes, Teen Patti Gold is free to download and install on iOS. You do not need to pay anything to download or install the app.' },
+              { q: 'Is Teen Patti Gold secure to play on iOS devices?', a: 'Yes, Teen Patti Gold uses a modern security system to protect your account and funds. iOS devices also offer strong built-in security to protect your Teen Patti Gold account.' },
+              { q: 'Is Teen Patti Gold a legit game to earn real money?', a: 'Yes, Teen Patti Gold is a legitimate game for earning real money. Players in Pakistan regularly withdraw winnings via JazzCash and EasyPaisa with a minimum withdrawal of Rs 100.' },
+              { q: 'Why does iOS show "Untrusted Developer" when I open the app?', a: 'This is a normal iOS security check for apps installed outside the App Store. Go to Settings → General → Device Management, find the Teen Patti Gold profile, and tap "Trust" to authorise it.' },
+              { q: 'Can I sync my Teen Patti Gold account between iPhone and iPad?', a: 'Yes. Log in with the same registered phone number on both devices and your wallet, history, and chips will sync automatically.' },
+            ].map((item, idx) => (
+              <details key={idx} className="group bg-[#0a1029]/50 rounded-xl border border-gray-700/50 overflow-hidden">
+                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold list-none">
+                  <span>{item.q}</span>
+                  <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </summary>
+                <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
+                  {item.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Guides */}
+      <section className="py-8 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-2xl p-6 md:p-7 border border-gray-800">
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#FFA500]/20 to-[#FFA500]/5 border border-[#FFA500]/30 flex items-center justify-center">
+              <svg className="w-4 h-4 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+              </svg>
+            </div>
+            <h2 className="text-xl font-bold text-white">Related Guides</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            {[
+              ['/download-teen-patti-gold-apk', 'Download Teen Patti Gold APK Latest Version'],
+              ['/teen-patti-gold-for-pc', 'Teen Patti Gold for PC — Windows Guide'],
+              ['/deposit-money-in-teen-patti-gold', 'How to Deposit Money in Teen Patti Gold'],
+              ['/withdraw-money-from-teen-patti-gold', 'How to Withdraw Money from Teen Patti Gold'],
+              ['/blog/create-teen-patti-gold-account-and-login', 'How to Create Teen Patti Gold Account'],
+              ['/blog/how-to-play-teen-patti-gold', 'How to Play Teen Patti Gold — Full Guide'],
+            ].map(([href, label]) => (
+              <Link key={href} href={href} className="group flex items-center gap-3 px-3 py-2.5 rounded-lg bg-[#0a1029] border border-gray-800 hover:border-[#FFA500]/40 hover:bg-[#0a1029]/80 transition-all duration-200">
+                <svg className="w-4 h-4 text-[#FFA500] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                </svg>
+                <span className="text-sm text-gray-300 group-hover:text-[#FFA500] transition-colors">{label}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
     </>
   );
 }
-

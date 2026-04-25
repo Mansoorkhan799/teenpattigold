@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: META_HOME_TITLE,
     description: META_HOME_DESCRIPTION,
-    url: "https://teenpattigoldgame.com.pk/",
+    url: "https://teenpattigoldgame.com.pk",
     siteName: "Teen Patti Gold",
     locale: "en_PK",
     type: "website",
@@ -105,7 +105,10 @@ export const metadata: Metadata = {
   category: "Gaming",
   classification: "Card Gaming Platform",
   alternates: {
-    canonical: "https://teenpattigoldgame.com.pk/",
+    // No trailing slash — Next.js (`trailingSlash: false`, the default)
+    // strips it from the rendered <link rel="canonical">, and the sitemap
+    // loc is emitted in the same form so Google sees one consistent URL.
+    canonical: "https://teenpattigoldgame.com.pk",
   },
   formatDetection: {
     telephone: false,

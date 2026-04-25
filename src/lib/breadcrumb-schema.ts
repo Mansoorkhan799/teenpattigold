@@ -31,10 +31,6 @@ export function getBreadcrumbSchema(items: BreadcrumbItem[]) {
 
 export const BREADCRUMB_HOME = { name: 'Home', url: `${BASE_URL}/` };
 export const BREADCRUMB_BLOG = { name: 'Blog', url: `${BASE_URL}/blog` };
-export const BREADCRUMB_DOWNLOAD = {
-  name: 'Download Teen Patti Gold APK',
-  url: `${BASE_URL}/download-teen-patti-gold`,
-};
 export const BREADCRUMB_DEPOSIT = {
   name: 'Deposit Money',
   url: `${BASE_URL}/deposit-money-in-teen-patti-gold`,

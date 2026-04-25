@@ -104,17 +104,7 @@ export function getBlogPostingSchema(opts: BlogPostSchemaOptions) {
       name: 'Teen Patti Gold Editorial Team',
       url: `${BASE_URL}/about-us`,
     },
-    publisher: {
-      '@type': 'Organization',
-      '@id': ORG_ID,
-      name: 'Teen Patti Gold',
-      logo: {
-        '@type': 'ImageObject',
-        url: LOGO_URL,
-        ...imageObjectLicensing,
-        creditText: 'Teen Patti Gold logo',
-      },
-    },
+    publisher: { '@id': ORG_ID },
     image: images,
     mainEntityOfPage: { '@id': webpageId },
     isPartOf: { '@id': WEBSITE_ID },
@@ -129,9 +119,12 @@ export function getBlogPostingSchema(opts: BlogPostSchemaOptions) {
     ...(opts.articleBody ? { articleBody: opts.articleBody } : {}),
   };
 
+  const breadcrumbId = `${opts.url}#breadcrumb`;
+
   const graph: object[] = [
     {
       '@type': 'BreadcrumbList',
+      '@id': breadcrumbId,
       itemListElement: breadcrumbItems,
     },
     {
@@ -144,7 +137,7 @@ export function getBlogPostingSchema(opts: BlogPostSchemaOptions) {
       inLanguage: 'en-PK',
       datePublished: opts.datePublished,
       dateModified: opts.dateModified,
-      breadcrumb: { '@type': 'BreadcrumbList', itemListElement: breadcrumbItems },
+      breadcrumb: { '@id': breadcrumbId },
       primaryImageOfPage: {
         '@type': 'ImageObject',
         url: images[0],

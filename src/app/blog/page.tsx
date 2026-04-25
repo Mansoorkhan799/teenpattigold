@@ -1,7 +1,5 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
-import Script from 'next/script';
-import { LOGO_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 import { safeJsonLd } from '@/lib/blog-schema';
 
@@ -54,9 +52,12 @@ export default function Blog() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
+    "@id": "https://teenpattigoldgame.com.pk/blog#webpage",
     "name": "Teen Patti Gold Blog",
     "description": "Teen Patti Gold guides for Pakistan: APK, account, earning tips, bonuses & JazzCash. Updated 2026 articles — read before you play real-money card games.",
     "url": "https://teenpattigoldgame.com.pk/blog",
+    "isPartOf": { "@id": "https://teenpattigoldgame.com.pk/#website" },
+    "inLanguage": "en-PK",
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": [
@@ -206,29 +207,18 @@ export default function Blog() {
         }
       ]
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Teen Patti Gold",
-      "url": "https://teenpattigoldgame.com.pk",
-      "logo": {
-        "@type": "ImageObject",
-        "url": LOGO_URL
-      }
-    }
+    "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" }
   };
 
   return (
     <>
-      {/* Schema.org JSON-LD */}
-      <Script
-        id="blog-schema"
+      {/* Schema.org JSON-LD — server-rendered so Googlebot sees it on first crawl. */}
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }}
       />
-      <Script
-        id="blog-breadcrumb-schema"
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: safeJsonLd(blogBreadcrumbLd) }}
       />
 

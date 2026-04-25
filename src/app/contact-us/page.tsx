@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   },
   description:
     'Contact Teen Patti Gold in Pakistan for payments or app help. Email, JazzCash & EasyPaisa tips — our team answers account and gameplay questions quickly.',
-  keywords: 'contact teen patti gold, teen patti gold support, teen patti gold email, customer support, help teen patti gold',
+  keywords: [
+    'contact teen patti gold',
+    'teen patti gold support',
+    'teen patti gold email',
+    'customer support',
+    'help teen patti gold',
+  ],
   openGraph: {
     title: 'Contact Teen Patti Gold — Support & Help Pakistan 2026',
     description:
@@ -132,17 +138,12 @@ export default function Contact() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            "mainEntity": {
-              "@type": "Organization",
-              "name": "Teen Patti Gold",
-              "url": "https://teenpattigoldgame.com.pk",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "email": "support@teenpattigoldgame.com.pk",
-                "contactType": "Customer Support",
-                "availableLanguage": ["English", "Urdu"]
-              }
-            }
+            "@id": "https://teenpattigoldgame.com.pk/contact-us#webpage",
+            "url": "https://teenpattigoldgame.com.pk/contact-us",
+            "name": "Contact Teen Patti Gold — Support & Help Pakistan 2026",
+            "isPartOf": { "@id": "https://teenpattigoldgame.com.pk/#website" },
+            "inLanguage": "en-PK",
+            "mainEntity": { "@id": "https://teenpattigoldgame.com.pk/#organization" }
           })
         }}
       />

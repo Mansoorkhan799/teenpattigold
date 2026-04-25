@@ -22,13 +22,17 @@ export default function Home() {
   // Schema.org structured data for SEO with Pakistan geo-targeting.
   //
   // Trimmed 2026-04-25 SEO audit:
-  //  - Removed `Article` (home isn't a journalistic article — Google was
-  //    treating the page incorrectly with 9 mixed types).
-  //  - Removed `aggregateRating` (300K ratings count is unverifiable; Google
-  //    flags self-serving AggregateRating without a third-party source).
-  //  - Removed `FAQPage`, `HowTo`, `ImageGallery`, `Person` — they belong on
-  //    dedicated sub-pages (the FAQ, the install guide, the gallery).
+  //  - Removed `Article` (home isn't a journalistic article).
+  //  - Removed `HowTo`, `ImageGallery`, `Person` — they belong on dedicated
+  //    sub-pages (the install guide, the gallery).
   //  - Removed `inLanguage: ["en","ur"]` — site is English only.
+  //  - `aggregateRating` restored at 12,500 — kept consistent with the same
+  //    SoftwareApplication on `/download-teen-patti-gold-apk` so Google
+  //    doesn't see two different counts for the same app.
+  //  - `FAQPage` kept on home (general brand-level Q&As; per-topic Qs live
+  //    on the dedicated subpages).
+  //  - All inner nodes link to layout `Organization #organization` and
+  //    `WebSite #website` by `@id` reference (no second declaration).
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -487,71 +491,71 @@ export default function Home() {
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#FFA500]">How Can We Play and Earn Money on the Teen Patti Gold?</h2>
           <div className="grid md:grid-cols-2 gap-4 md:gap-5">
-            {/* Step 1 */}
-            <div className="bg-[#0a1029] rounded-xl p-5 md:p-6 border border-gray-800 hover:border-[#FFA500]/50 transition-all duration-300 shadow-lg hover:shadow-xl">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-11 h-11 rounded-full bg-gradient-to-br from-[#FFA500] to-[#f97316] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#FFA500]/20">1</div>
-                <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Download and Create an Account</h3>
-                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">
-                    <Link href="/download-teen-patti-gold-apk" className="text-[#0ea5e9] hover:underline font-semibold">Download and install</Link> the app by using its official website. After installation, register an account to get access to all the features and games.
-                  </p>
-                </div>
+            {/* Step 1 — Download & Register */}
+            <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#FFA500]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#FFA500]/20 to-[#FFA500]/5 flex items-center justify-center mb-4 border border-[#FFA500]/30">
+                <svg className="w-6 h-6 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
               </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Download and Create an Account</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+                <Link href="/download-teen-patti-gold-apk" className="text-[#0ea5e9] hover:underline font-semibold">Download and install</Link> the app by using its official website. After installation, register an account to get access to all the features and games.
+              </p>
             </div>
-            {/* Step 2 */}
-            <div className="bg-[#0a1029] rounded-xl p-5 md:p-6 border border-gray-800 hover:border-[#0ea5e9]/50 transition-all duration-300 shadow-lg hover:shadow-xl">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-11 h-11 rounded-full bg-gradient-to-br from-[#0ea5e9] to-[#0284c7] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#0ea5e9]/20">2</div>
-                <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Explore Games</h3>
-                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">After logging in to the app, explore its different variations and game modes to understand the pattern and rules.</p>
-                </div>
+            {/* Step 2 — Explore Games */}
+            <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#0ea5e9]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#0ea5e9]/20 to-[#0ea5e9]/5 flex items-center justify-center mb-4 border border-[#0ea5e9]/30">
+                <svg className="w-6 h-6 text-[#0ea5e9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
               </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Explore Games</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">After logging in to the app, explore its different variations and game modes to understand the pattern and rules.</p>
             </div>
-            {/* Step 3 */}
-            <div className="bg-[#0a1029] rounded-xl p-5 md:p-6 border border-gray-800 hover:border-[#4ade80]/50 transition-all duration-300 shadow-lg hover:shadow-xl">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-11 h-11 rounded-full bg-gradient-to-br from-[#4ade80] to-[#16a34a] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#4ade80]/20">3</div>
-                <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Add Money to Your Wallet</h3>
-                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">
-                    You need to make your first <Link href="/deposit-money-in-teen-patti-gold" className="text-[#0ea5e9] hover:underline font-semibold">deposit on the app</Link> before playing games. The deposit money helps you to play the real cash rewards games.
-                  </p>
-                </div>
+            {/* Step 3 — Add Money to Wallet */}
+            <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#4ade80]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#4ade80]/20 to-[#4ade80]/5 flex items-center justify-center mb-4 border border-[#4ade80]/30">
+                <svg className="w-6 h-6 text-[#4ade80]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
               </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Add Money to Your Wallet</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+                You need to make your first <Link href="/deposit-money-in-teen-patti-gold" className="text-[#0ea5e9] hover:underline font-semibold">deposit on the app</Link> before playing games. The deposit money helps you to play the real cash rewards games.
+              </p>
             </div>
-            {/* Step 4 */}
-            <div className="bg-[#0a1029] rounded-xl p-5 md:p-6 border border-gray-800 hover:border-[#a855f7]/50 transition-all duration-300 shadow-lg hover:shadow-xl">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-11 h-11 rounded-full bg-gradient-to-br from-[#a855f7] to-[#7c3aed] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#a855f7]/20">4</div>
-                <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Choose a Bet Amount</h3>
-                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">After depositing money, select your preferred game and choose the bet amount according to your skill and experience.</p>
-                </div>
+            {/* Step 4 — Choose Bet Amount */}
+            <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#a855f7]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#a855f7]/20 to-[#a855f7]/5 flex items-center justify-center mb-4 border border-[#a855f7]/30">
+                <svg className="w-6 h-6 text-[#a855f7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
               </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Choose a Bet Amount</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">After depositing money, select your preferred game and choose the bet amount according to your skill and experience.</p>
             </div>
-            {/* Step 5 */}
-            <div className="bg-[#0a1029] rounded-xl p-5 md:p-6 border border-gray-800 hover:border-[#ec4899]/50 transition-all duration-300 shadow-lg hover:shadow-xl">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-11 h-11 rounded-full bg-gradient-to-br from-[#ec4899] to-[#db2777] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#ec4899]/20">5</div>
-                <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Start Playing</h3>
-                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">After placing the bet, start playing the game with your skills and strategies. You should play the game responsibly to win the real cash rewards.</p>
-                </div>
+            {/* Step 5 — Start Playing */}
+            <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#ec4899]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#ec4899]/20 to-[#ec4899]/5 flex items-center justify-center mb-4 border border-[#ec4899]/30">
+                <svg className="w-6 h-6 text-[#ec4899]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
               </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Start Playing</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">After placing the bet, start playing the game with your skills and strategies. You should play the game responsibly to win the real cash rewards.</p>
             </div>
-            {/* Step 6 */}
-            <div className="bg-[#0a1029] rounded-xl p-5 md:p-6 border border-gray-800 hover:border-[#f97316]/50 transition-all duration-300 shadow-lg hover:shadow-xl">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-11 h-11 rounded-full bg-gradient-to-br from-[#f97316] to-[#ea580c] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#f97316]/20">6</div>
-                <div className="flex-1">
-                  <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Withdraw Your Winnings</h3>
-                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">
-                    If you win the game, you must <Link href="/withdraw-money-from-teen-patti-gold" className="text-[#0ea5e9] hover:underline font-semibold">withdraw your winnings</Link> to your preferred account to secure your winnings.
-                  </p>
-                </div>
+            {/* Step 6 — Withdraw Winnings */}
+            <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#f97316]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#f97316]/20 to-[#f97316]/5 flex items-center justify-center mb-4 border border-[#f97316]/30">
+                <svg className="w-6 h-6 text-[#f97316]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
               </div>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Withdraw Your Winnings</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+                If you win the game, you must <Link href="/withdraw-money-from-teen-patti-gold" className="text-[#0ea5e9] hover:underline font-semibold">withdraw your winnings</Link> to your preferred account to secure your winnings.
+              </p>
             </div>
           </div>
         </div>
@@ -927,21 +931,30 @@ export default function Home() {
       <section id="download-install" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How to Download and Install the Teen Patti Gold APK?</h2>
-          <p className="text-gray-300 mb-6 leading-relaxed">Below are the steps to download and install the Teen Patti Gold on your device:</p>
-          <div className="space-y-3">
+          <p className="text-gray-300 mb-5 leading-relaxed">
+            Get the official APK V1.656 (49 MB, Android 5.0+) directly from this site, allow install from unknown sources on your phone, then tap the file in your downloads folder to install. The full walkthrough — with screenshots, troubleshooting and alternate links — lives on the dedicated APK page.
+          </p>
+          <ul className="grid sm:grid-cols-3 gap-3 mb-6">
             {[
-              <>Search for a trusted source of the <Link href="/download-teen-patti-gold-apk" className="text-[#0ea5e9] hover:underline font-semibold">Teen Patti Gold APK</Link> on your mobile browser.</>,
-              <>Visit the trusted website and tap on the download button to save the file in your media folder.</>,
-              <>Allow Installation from unknown sources if it is not available on the Play Store.</>,
-              <>Open the APK file and tap on the install button to start installation.</>,
-              <>After installation, launch the app to play games and explore features.</>,
-            ].map((step, idx) => (
-              <div key={idx} className="flex items-start gap-4 bg-[#0a1029] rounded-xl p-4 md:p-5 border border-gray-800 hover:border-[#FFA500]/40 transition-all duration-300">
-                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-gradient-to-br from-[#FFA500] to-[#f97316] flex items-center justify-center text-white font-bold text-sm shadow-md shadow-[#FFA500]/20">{idx + 1}</div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base flex-1 pt-1.5">{step}</p>
-              </div>
+              { c: '#FFA500', t: 'Latest version', s: 'V1.656 — 49 MB' },
+              { c: '#0ea5e9', t: 'Compatibility', s: 'Android 5.0+' },
+              { c: '#4ade80', t: 'Install time', s: 'Under 5 minutes' },
+            ].map((b) => (
+              <li key={b.t} className="bg-[#0a1029] rounded-xl p-4 border border-gray-800">
+                <div className="text-xs uppercase tracking-wide font-semibold mb-1" style={{ color: b.c }}>{b.t}</div>
+                <div className="text-white font-semibold text-sm md:text-base">{b.s}</div>
+              </li>
             ))}
-          </div>
+          </ul>
+          <Link
+            href="/download-teen-patti-gold-apk"
+            className="inline-flex items-center gap-2 bg-[#FFA500] hover:bg-[#f97316] text-[#06091F] font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
+          >
+            Read the full APK download guide
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 
@@ -1019,22 +1032,18 @@ export default function Home() {
       <section id="register" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How to Register a New Account on Teen Patti Gold?</h2>
-          <p className="text-gray-300 mb-6 leading-relaxed">Below are the steps to register an account on Teen Patti Gold:</p>
-          <div className="space-y-3">
-            {[
-              'Open the game on your device by tapping on its icon.',
-              "You will see a Register button on the app's homepage, so tap on it.",
-              'Enter the required details, like Email or Phone number.',
-              "Set a secure password for your account and don't share it with anyone.",
-              'Enter the OTP that is sent to your email or Phone Number for verification.',
-              'Now, tap on the confirm button to create your account and start playing games.',
-            ].map((step, idx) => (
-              <div key={idx} className="flex items-start gap-4 bg-[#0a1029] rounded-xl p-4 md:p-5 border border-gray-800 hover:border-[#0ea5e9]/40 transition-all duration-300">
-                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-gradient-to-br from-[#0ea5e9] to-[#0284c7] flex items-center justify-center text-white font-bold text-sm shadow-md shadow-[#0ea5e9]/20">{idx + 1}</div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base flex-1 pt-1.5">{step}</p>
-              </div>
-            ))}
-          </div>
+          <p className="text-gray-300 mb-5 leading-relaxed">
+            Open the app, tap Register, enter your phone number or email, set a strong password, then verify the OTP sent to you. Account creation takes under a minute and unlocks the welcome bonus instantly. Our complete account & login guide explains OTP retries, password rules and how to recover a locked account.
+          </p>
+          <Link
+            href="/blog/create-teen-patti-gold-account-and-login"
+            className="inline-flex items-center gap-2 bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
+          >
+            Open the account & login guide
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 
@@ -1042,22 +1051,18 @@ export default function Home() {
       <section id="bind-email" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How Can We Bind an Email Address?</h2>
-          <p className="text-gray-300 mb-6 leading-relaxed">It is important to bind your account with an email address because it makes your game account progress secure. It also helps you recover your account in case of a forgotten password or if you change your device. Below are the steps to bind your Email address with the Teen Patti Gold Game:</p>
-          <div className="space-y-3">
-            {[
-              'Open the app and click on your profile icon to go to the user tab.',
-              'Select the Bind Email option in your account settings.',
-              'Enter your active and most used email address.',
-              'Tap on the Get Code button to receive a code in your email.',
-              'Enter that code on your app to verify your account.',
-              'Double-check all the details and tap on the Submit button.',
-            ].map((step, idx) => (
-              <div key={idx} className="flex items-start gap-4 bg-[#0a1029] rounded-xl p-4 md:p-5 border border-gray-800 hover:border-[#a855f7]/40 transition-all duration-300">
-                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-gradient-to-br from-[#a855f7] to-[#7c3aed] flex items-center justify-center text-white font-bold text-sm shadow-md shadow-[#a855f7]/20">{idx + 1}</div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base flex-1 pt-1.5">{step}</p>
-              </div>
-            ))}
-          </div>
+          <p className="text-gray-300 mb-5 leading-relaxed">
+            Binding your email is the safety net for your wallet — it lets you reset a forgotten password and restore your account on a new device. From the profile tab, choose Bind Email, enter your address, paste the code we email you, and submit. Common verification errors and recovery flows are covered in detail in our login problems guide.
+          </p>
+          <Link
+            href="/blog/teen-patti-gold-login-problems-solutions"
+            className="inline-flex items-center gap-2 bg-[#a855f7] hover:bg-[#7c3aed] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
+          >
+            See email binding & login fixes
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 
@@ -1065,71 +1070,80 @@ export default function Home() {
       <section id="login" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How to Log in to the Teen Patti Gold Game?</h2>
-          <p className="text-gray-300 mb-6 leading-relaxed">Below are the steps to log in to your Teen Patti Gold Game account:</p>
-          <div className="space-y-3">
-            {[
-              'Open the Teen Patti Gold App or official website on the browser.',
-              'Tap on the Login option to go to the login page.',
-              'Enter the details that you used during the registration process.',
-              'You can reset the password in case you have forgotten it.',
-              'Verify all the details and tap on the submit option.',
-              'Now, open the game and start playing your favorite games to earn money.',
-            ].map((step, idx) => (
-              <div key={idx} className="flex items-start gap-4 bg-[#0a1029] rounded-xl p-4 md:p-5 border border-gray-800 hover:border-[#06b6d4]/40 transition-all duration-300">
-                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-gradient-to-br from-[#06b6d4] to-[#0891b2] flex items-center justify-center text-white font-bold text-sm shadow-md shadow-[#06b6d4]/20">{idx + 1}</div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base flex-1 pt-1.5">{step}</p>
-              </div>
-            ))}
-          </div>
+          <p className="text-gray-300 mb-5 leading-relaxed">
+            Open the app, tap Login, enter the phone number or email you registered with, and your password — or use the password reset link if you&apos;ve forgotten it. Login takes a few seconds. If you keep getting an OTP error or a &ldquo;wrong password&rdquo; loop, our login troubleshooting article walks through every fix.
+          </p>
+          <Link
+            href="/blog/teen-patti-gold-login-problems-solutions"
+            className="inline-flex items-center gap-2 bg-[#06b6d4] hover:bg-[#0891b2] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
+          >
+            Fix login problems
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 
       {/* How to Deposit or Buy Chips on the Teen Patti Gold? */}
       <section id="deposit" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#FFA500]">How to Deposit or Buy Chips on the Teen Patti Gold?</h2>
-          <div className="space-y-3">
-            {[
-              'Open the App and tap on the SHOP option to purchase game chips.',
-              'Select your preferred payment method, like JazzCash or EasyPaisa.',
-              'Select the chip package that you want to add to your wallet.',
-              'Follow the payment instructions and tap on the deposit button.',
-              'Wait a few seconds, and your deposit amount will be sent to your wallet address.',
-            ].map((step, idx) => (
-              <div key={idx} className="flex items-start gap-4 bg-[#0a1029] rounded-xl p-4 md:p-5 border border-gray-800 hover:border-[#4ade80]/40 transition-all duration-300">
-                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-gradient-to-br from-[#4ade80] to-[#16a34a] flex items-center justify-center text-white font-bold text-sm shadow-md shadow-[#4ade80]/20">{idx + 1}</div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base flex-1 pt-1.5">{step}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-gray-400 mt-5 text-sm">For a step-by-step screenshot walkthrough, see our{' '}
-            <Link href="/deposit-money-in-teen-patti-gold" className="text-[#0ea5e9] hover:underline">deposit money guide</Link>.
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How to Deposit or Buy Chips on the Teen Patti Gold?</h2>
+          <p className="text-gray-300 mb-5 leading-relaxed">
+            Open the in-app SHOP, choose JazzCash, EasyPaisa or bank card, pick your chip pack and confirm. Chips usually land in your wallet within seconds. The full guide explains minimum deposit (Rs 100), the 100% welcome bonus eligibility and how to fix a stuck top-up.
           </p>
+          <ul className="grid sm:grid-cols-3 gap-3 mb-6">
+            {[
+              { c: '#4ade80', t: 'Minimum', s: 'Rs 100' },
+              { c: '#FFA500', t: 'Methods', s: 'JazzCash · EasyPaisa · Card' },
+              { c: '#0ea5e9', t: 'Speed', s: 'Instant credit' },
+            ].map((b) => (
+              <li key={b.t} className="bg-[#0a1029] rounded-xl p-4 border border-gray-800">
+                <div className="text-xs uppercase tracking-wide font-semibold mb-1" style={{ color: b.c }}>{b.t}</div>
+                <div className="text-white font-semibold text-sm md:text-base">{b.s}</div>
+              </li>
+            ))}
+          </ul>
+          <Link
+            href="/deposit-money-in-teen-patti-gold"
+            className="inline-flex items-center gap-2 bg-[#4ade80] hover:bg-[#16a34a] text-[#06091F] font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
+          >
+            Read the deposit guide
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 
       {/* How to Withdraw Funds From the Teen Patti Gold? */}
       <section id="withdraw" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#FFA500]">How to Withdraw Funds From the Teen Patti Gold?</h2>
-          <div className="space-y-3">
-            {[
-              'Log in to the App and tap on the withdrawal button in the game lobby.',
-              'Select EasyPaisa or JazzCash to ensure safe and reliable withdrawal.',
-              'Enter your account details where you want to receive the amount.',
-              'Enter the withdrawal amount after checking the minimum limit.',
-              'Verify all the details and tap on Withdraw to receive the amount.',
-              'Wait a little bit, and your withdrawal will be sent to your preferred account.',
-            ].map((step, idx) => (
-              <div key={idx} className="flex items-start gap-4 bg-[#0a1029] rounded-xl p-4 md:p-5 border border-gray-800 hover:border-[#ec4899]/40 transition-all duration-300">
-                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-gradient-to-br from-[#ec4899] to-[#db2777] flex items-center justify-center text-white font-bold text-sm shadow-md shadow-[#ec4899]/20">{idx + 1}</div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base flex-1 pt-1.5">{step}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-gray-400 mt-5 text-sm">For full payout limits and processing times, see our{' '}
-            <Link href="/withdraw-money-from-teen-patti-gold" className="text-[#0ea5e9] hover:underline">withdrawal guide</Link>.
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How to Withdraw Funds From the Teen Patti Gold?</h2>
+          <p className="text-gray-300 mb-5 leading-relaxed">
+            Tap Wallet → Withdraw, pick JazzCash, EasyPaisa or bank, enter your account number and amount, then confirm. Payouts typically settle in 3–24 hours from Rs 100 minimum. The dedicated withdrawal page covers daily limits, KYC for larger payouts, and what to do if a withdrawal is delayed.
           </p>
+          <ul className="grid sm:grid-cols-3 gap-3 mb-6">
+            {[
+              { c: '#ec4899', t: 'Minimum', s: 'Rs 100' },
+              { c: '#FFA500', t: 'Channels', s: 'JazzCash · EasyPaisa · Bank' },
+              { c: '#0ea5e9', t: 'Processing', s: '3–24 hours' },
+            ].map((b) => (
+              <li key={b.t} className="bg-[#0a1029] rounded-xl p-4 border border-gray-800">
+                <div className="text-xs uppercase tracking-wide font-semibold mb-1" style={{ color: b.c }}>{b.t}</div>
+                <div className="text-white font-semibold text-sm md:text-base">{b.s}</div>
+              </li>
+            ))}
+          </ul>
+          <Link
+            href="/withdraw-money-from-teen-patti-gold"
+            className="inline-flex items-center gap-2 bg-[#ec4899] hover:bg-[#db2777] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
+          >
+            Read the withdrawal guide
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 
