@@ -8,10 +8,10 @@
  * signal for app-search queries and matches Pakistani user search intent.
  */
 export const META_HOME_TITLE =
-  'Teen Patti Gold Pakistan v1.656 Free Download Official APK';
+  'Teen Patti Gold Game Download APK | Real Money App 2026';
 
 export const META_HOME_DESCRIPTION =
-  'Teen Patti Gold 2026 — Pakistan\'s #1 card game platform. Download Teen Patti Gold APK, play Teen Patti, Rummy, Dragon vs Tiger & win real cash. Fast withdrawals via JazzCash & EasyPaisa. Join 500K+ players!';
+  'Teen Patti Gold — Pakistan\'s most popular online card game platform. Play casino-style games to earn real money, with a user-friendly interface, fast JazzCash/EasyPaisa withdrawals & 24/7 support.';
 
 /** Suffix for pages that use `title: { default: '...' }` with root template. */
 export const META_TITLE_TEMPLATE = '%s | Teen Patti Gold' as const;
