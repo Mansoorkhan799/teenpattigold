@@ -383,34 +383,82 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Table of Contents — internal-link hub */}
+      {/* Table of Contents — collapsible internal-link hub */}
       <section id="toc" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-[#FFA500]">Table of Contents</h2>
-          <ol className="list-decimal pl-5 space-y-2 text-gray-300 columns-1 md:columns-2 gap-8">
-            <li><a href="#introduction" className="text-[#0ea5e9] hover:underline">Introduction to Teen Patti Gold</a></li>
-            <li><a href="#how-to-play-earn" className="text-[#0ea5e9] hover:underline">How Can We Play and Earn Money on the Teen Patti Gold?</a></li>
-            <li><a href="#earn-real-cash" className="text-[#0ea5e9] hover:underline">How to Earn Real Cash on the Teen Patti Gold Game?</a></li>
-            <li><a href="#new-player-benefits" className="text-[#0ea5e9] hover:underline">New Players&apos; Benefits on Teen Patti Gold</a></li>
-            <li><a href="#key-features" className="text-[#0ea5e9] hover:underline">Key Features of the Teen Patti Gold Game</a></li>
-            <li><a href="#why-popular" className="text-[#0ea5e9] hover:underline">What Makes Teen Patti Gold So Much Popular?</a></li>
-            <li><a href="#download-install" className="text-[#0ea5e9] hover:underline">How to Download and Install the Teen Patti Gold APK?</a></li>
-            <li><a href="#system-requirements" className="text-[#0ea5e9] hover:underline">Android System Requirements</a></li>
-            <li><a href="#register" className="text-[#0ea5e9] hover:underline">How to Register a New Account on Teen Patti Gold?</a></li>
-            <li><a href="#bind-email" className="text-[#0ea5e9] hover:underline">How Can We Bind an Email Address?</a></li>
-            <li><a href="#login" className="text-[#0ea5e9] hover:underline">How to Log in to the Teen Patti Gold Game?</a></li>
-            <li><a href="#deposit" className="text-[#0ea5e9] hover:underline">How to Deposit or Buy Chips on the Teen Patti Gold?</a></li>
-            <li><a href="#withdraw" className="text-[#0ea5e9] hover:underline">How to Withdraw Funds From the Teen Patti Gold?</a></li>
-            <li><a href="#popular-games" className="text-[#0ea5e9] hover:underline">Popular Casino Games to Play on the Teen Patti Gold</a></li>
-            <li><a href="#latest-updates" className="text-[#0ea5e9] hover:underline">Latest Updates &amp; Improvements in the Teen Patti Gold App</a></li>
-            <li><a href="#safety-security" className="text-[#0ea5e9] hover:underline">Safety &amp; Security of the Teen Patti Gold Game</a></li>
-            <li><a href="#tips-tricks" className="text-[#0ea5e9] hover:underline">Tips and Tricks to Earn Maximum on Teen Patti Gold Game</a></li>
-            <li><a href="#customer-support" className="text-[#0ea5e9] hover:underline">Customer Support on Teen Patti Gold Game</a></li>
-            <li><a href="#pros-cons" className="text-[#0ea5e9] hover:underline">Pros and Cons of Using the TeenPatti Gold Game</a></li>
-            <li><a href="#final-thoughts" className="text-[#0ea5e9] hover:underline">Final Thoughts</a></li>
-            <li><a href="#faq" className="text-[#0ea5e9] hover:underline">Frequently Asked Questions</a></li>
-          </ol>
-        </div>
+        {(() => {
+          const tocItems = [
+            { href: '#introduction', label: 'Introduction to Teen Patti Gold' },
+            { href: '#how-to-play-earn', label: 'How Can We Play and Earn Money on the Teen Patti Gold?' },
+            { href: '#earn-real-cash', label: 'How to Earn Real Cash on the Teen Patti Gold Game?' },
+            { href: '#new-player-benefits', label: "New Players' Benefits on Teen Patti Gold" },
+            { href: '#key-features', label: 'Key Features of the Teen Patti Gold Game' },
+            { href: '#why-popular', label: 'What Makes Teen Patti Gold So Much Popular?' },
+            { href: '#download-install', label: 'How to Download and Install the Teen Patti Gold APK?' },
+            { href: '#system-requirements', label: 'Android System Requirements' },
+            { href: '#register', label: 'How to Register a New Account on Teen Patti Gold?' },
+            { href: '#bind-email', label: 'How Can We Bind an Email Address?' },
+            { href: '#login', label: 'How to Log in to the Teen Patti Gold Game?' },
+            { href: '#deposit', label: 'How to Deposit or Buy Chips on the Teen Patti Gold?' },
+            { href: '#withdraw', label: 'How to Withdraw Funds From the Teen Patti Gold?' },
+            { href: '#popular-games', label: 'Popular Casino Games to Play on the Teen Patti Gold' },
+            { href: '#latest-updates', label: 'Latest Updates & Improvements in the Teen Patti Gold App' },
+            { href: '#safety-security', label: 'Safety & Security of the Teen Patti Gold Game' },
+            { href: '#tips-tricks', label: 'Tips and Tricks to Earn Maximum on Teen Patti Gold Game' },
+            { href: '#customer-support', label: 'Customer Support on Teen Patti Gold Game' },
+            { href: '#pros-cons', label: 'Pros and Cons of Using the TeenPatti Gold Game' },
+            { href: '#final-thoughts', label: 'Final Thoughts' },
+            { href: '#faq', label: 'Frequently Asked Questions' },
+          ];
+          return (
+            <details className="group bg-gradient-to-br from-secondary via-secondary to-[#0a1029] rounded-2xl border border-[#FFA500]/20 shadow-xl overflow-hidden">
+              <summary className="cursor-pointer list-none p-6 md:p-7 flex items-center justify-between gap-4 hover:bg-white/[0.02] transition-colors">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 md:w-11 md:h-11 rounded-lg bg-gradient-to-br from-[#FFA500] to-[#f97316] flex items-center justify-center shadow-md shadow-[#FFA500]/20 flex-shrink-0">
+                    <svg className="w-5 h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#FFA500] leading-tight">Table of Contents</h2>
+                    <p className="text-xs md:text-sm text-gray-400 mt-0.5">{tocItems.length} sections — tap to expand</p>
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#0a1029] border border-gray-700 flex items-center justify-center group-open:border-[#FFA500]/50 transition-all">
+                  <svg
+                    className="w-5 h-5 text-[#FFA500] transition-transform duration-300 group-open:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </div>
+              </summary>
+              <div className="px-4 md:px-7 pb-6 md:pb-7 pt-1 border-t border-gray-800/60">
+                <ol className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3 mt-5" start={1}>
+                  {tocItems.map((item, idx) => (
+                    <li key={item.href} className="list-none">
+                      <a
+                        href={item.href}
+                        className="group/item flex items-center gap-3 px-3 py-2.5 rounded-lg bg-[#0a1029] border border-gray-800 hover:border-[#FFA500]/40 hover:bg-[#0a1029]/80 transition-all duration-200"
+                      >
+                        <span className="flex-shrink-0 w-7 h-7 rounded-md bg-gradient-to-br from-[#FFA500]/15 to-[#FFA500]/5 border border-[#FFA500]/30 flex items-center justify-center text-[#FFA500] text-xs font-bold">
+                          {idx + 1}
+                        </span>
+                        <span className="text-sm md:text-base text-gray-300 group-hover/item:text-[#0ea5e9] transition-colors flex-1 leading-snug">
+                          {item.label}
+                        </span>
+                        <svg className="w-4 h-4 text-gray-600 group-hover/item:text-[#FFA500] flex-shrink-0 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            </details>
+          );
+        })()}
       </section>
 
       {/* Introduction to Teen Patti Gold */}
