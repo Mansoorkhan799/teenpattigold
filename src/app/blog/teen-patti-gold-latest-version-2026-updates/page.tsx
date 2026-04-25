@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getBlogPostingSchema } from '@/lib/blog-schema';
+import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
@@ -58,7 +58,7 @@ export default function TeenPattiGoldLatestVersionPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">
@@ -81,7 +81,7 @@ export default function TeenPattiGoldLatestVersionPage() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  <strong className="text-white">Teen Patti Gold</strong> version V1.656 brings exciting 2026 updates. The latest APK offers improved performance, enhanced security, 30+ games including Teen Patti, Rummy, Dragon Tiger, and better bonuses. <Link href="/download-teen-patti-gold" className="text-accent hover:underline">Download the newest build</Link> for the best card gaming experience in Pakistan. If you are new, read <Link href="/blog/how-to-play-teen-patti-gold" className="text-accent hover:underline">how to play</Link> after updating.
+                  <strong className="text-white">Teen Patti Gold</strong> version V1.656 brings exciting 2026 updates. The latest APK offers improved performance, enhanced security, 30+ games including Teen Patti, Rummy, Dragon Tiger, and better bonuses. <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">Download the newest build</Link> for the best card gaming experience in Pakistan. If you are new, read <Link href="/blog/how-to-play-teen-patti-gold" className="text-accent hover:underline">how to play</Link> after updating.
                 </p>
               </div>
 
@@ -135,7 +135,7 @@ export default function TeenPattiGoldLatestVersionPage() {
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-4 text-white">Get the Latest Version</h2>
                 <p className="text-white text-lg mb-6">Download Teen Patti Gold V1.656 APK and enjoy all 2026 updates. Play Teen Patti, Rummy, Dragon Tiger and earn real money!</p>
-                <Link href="/download-teen-patti-gold" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</Link>
+                <Link href="/download-teen-patti-gold-apk" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</Link>
               </div>
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">

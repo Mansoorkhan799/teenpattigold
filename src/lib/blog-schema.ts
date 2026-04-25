@@ -1,9 +1,24 @@
 /**
- * Generates a complete, Google-eligible BlogPosting schema for all blog posts.
- * Uses @id references to the global Organization and WebSite nodes defined in layout.tsx.
+ * BlogPosting + WebPage + BreadcrumbList + (optional) FAQPage schema for
+ * blog posts. Pattern aligned with cardrummyapp.com.pk (the #1 ranker for
+ * "Card Rummy 2026"), with these card-rummy-derived improvements:
+ *
+ *   • `safeJsonLd()` escapes `<` to `\u003c` so user-supplied strings can
+ *     never break the JSON-LD island or open an HTML-injection vector.
+ *   • `imageObjectLicensing` spread into the publisher logo so Google
+ *     Search Console "Image Metadata" enhancement is satisfied.
+ *   • `articleBody` is supported as an optional summary — improves AI
+ *     Overview / featured-snippet eligibility.
+ *
+ * Trimmed away from the previous over-engineered version:
+ *   • `mentions` (circular self-reference to Organization — no SEO value)
+ *   • `locationCreated` (intended for Events/Photos, not Articles)
+ *   • `about: SoftwareApplication` (created topical mismatch on every
+ *     post; replaced with a per-post `Thing` topic, like card-rummy does).
  */
 
 import { LOGO_URL } from '@/lib/site-images';
+import { imageObjectLicensing } from '@/lib/schema-image-licensing';
 
 export const BASE_URL = 'https://teenpattigoldgame.com.pk';
 
@@ -29,13 +44,36 @@ export interface BlogPostSchemaOptions {
   keywords?: string;
   /** Article section / category */
   articleSection?: string;
+  /**
+   * What the article is *about* — short noun-phrase like
+   * "Teen Patti Gold withdrawal" or "Teen Patti Gold welcome bonus".
+   * Used for the schema.org `about: { @type: Thing }` node.
+   */
+  topic?: string;
+  /**
+   * Optional 1–3 paragraph summary used as the schema.org `articleBody`.
+   * Helpful for AI Overviews / Bing Copilot / featured snippets that
+   * read the JSON-LD island instead of parsing rendered HTML.
+   */
+  articleBody?: string;
   /** Optional FAQ entities for rich results */
   faq?: Array<{ question: string; answer: string }>;
 }
 
 /**
- * Builds a complete BlogPosting schema with E-E-A-T signals.
- * Returns the raw object ready to be JSON.stringify-ed.
+ * Escape `<` characters in JSON-LD output so a stray angle-bracket inside
+ * a string field can never close the surrounding `<script>` tag or open
+ * an HTML-injection vector. This is the same hardening pattern card-rummy
+ * uses in its `BlogPostSchema` component.
+ */
+export function safeJsonLd(obj: object): string {
+  return JSON.stringify(obj).replace(/</g, '\\u003c');
+}
+
+/**
+ * Builds a complete BlogPosting schema graph with E-E-A-T signals.
+ * Returns the raw object — wrap with `safeJsonLd()` before injecting
+ * into a `<script type="application/ld+json">` tag.
  */
 export function getBlogPostingSchema(opts: BlogPostSchemaOptions) {
   const postId = `${opts.url}#article`;
@@ -52,6 +90,44 @@ export function getBlogPostingSchema(opts: BlogPostSchemaOptions) {
     { '@type': 'ListItem', position: 2, name: 'Blog', item: `${BASE_URL}/blog` },
     { '@type': 'ListItem', position: 3, name: opts.headline, item: opts.url },
   ];
+
+  const blogPosting: Record<string, unknown> = {
+    '@type': 'BlogPosting',
+    '@id': postId,
+    headline: opts.headline,
+    description: opts.description,
+    url: opts.url,
+    datePublished: opts.datePublished,
+    dateModified: opts.dateModified,
+    author: {
+      '@type': 'Organization',
+      name: 'Teen Patti Gold Editorial Team',
+      url: `${BASE_URL}/about-us`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      '@id': ORG_ID,
+      name: 'Teen Patti Gold',
+      logo: {
+        '@type': 'ImageObject',
+        url: LOGO_URL,
+        ...imageObjectLicensing,
+        creditText: 'Teen Patti Gold logo',
+      },
+    },
+    image: images,
+    mainEntityOfPage: { '@id': webpageId },
+    isPartOf: { '@id': WEBSITE_ID },
+    inLanguage: 'en-PK',
+    articleSection: opts.articleSection ?? 'Gaming',
+    about: {
+      '@type': 'Thing',
+      name: opts.topic ?? opts.headline,
+    },
+    ...(opts.wordCount ? { wordCount: opts.wordCount } : {}),
+    ...(opts.keywords ? { keywords: opts.keywords } : {}),
+    ...(opts.articleBody ? { articleBody: opts.articleBody } : {}),
+  };
 
   const graph: object[] = [
     {
@@ -73,56 +149,14 @@ export function getBlogPostingSchema(opts: BlogPostSchemaOptions) {
         '@type': 'ImageObject',
         url: images[0],
         contentUrl: images[0],
+        ...imageObjectLicensing,
       },
       speakable: {
         '@type': 'SpeakableSpecification',
         cssSelector: ['h1', '.speakable-intro', '.article-intro'],
       },
-      audience: {
-        '@type': 'Audience',
-        audienceType: 'Gamers in Pakistan',
-        geographicArea: { '@type': 'Country', name: 'Pakistan', identifier: 'PK' },
-      },
     },
-    {
-      '@type': 'BlogPosting',
-      '@id': postId,
-      headline: opts.headline,
-      description: opts.description,
-      url: opts.url,
-      datePublished: opts.datePublished,
-      dateModified: opts.dateModified,
-      author: {
-        '@type': 'Person',
-        name: 'Teen Patti Gold Editorial Team',
-        url: `${BASE_URL}/about-us`,
-      },
-      publisher: { '@id': ORG_ID },
-      image: images,
-      mainEntityOfPage: { '@id': webpageId },
-      isPartOf: { '@id': WEBSITE_ID },
-      inLanguage: 'en-PK',
-      ...(opts.wordCount ? { wordCount: opts.wordCount } : {}),
-      ...(opts.keywords ? { keywords: opts.keywords } : {}),
-      articleSection: opts.articleSection ?? 'Gaming',
-      about: {
-        '@type': 'SoftwareApplication',
-        name: 'Teen Patti Gold',
-        operatingSystem: 'Android 5.0+',
-        applicationCategory: 'GameApplication',
-      },
-      mentions: { '@id': ORG_ID },
-      locationCreated: {
-        '@type': 'Country',
-        name: 'Pakistan',
-        identifier: 'PK',
-      },
-      audience: {
-        '@type': 'Audience',
-        audienceType: 'Gamers in Pakistan',
-        geographicArea: { '@type': 'Country', name: 'Pakistan', identifier: 'PK' },
-      },
-    },
+    blogPosting,
   ];
 
   if (opts.faq && opts.faq.length > 0) {

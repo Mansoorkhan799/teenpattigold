@@ -29,26 +29,9 @@ export const metadata: Metadata = {
     template: META_TITLE_TEMPLATE,
   },
   description: META_HOME_DESCRIPTION,
-  keywords: [
-    "teen patti gold",
-    "teen patti gold pakistan",
-    "teen patti gold apk",
-    "teen patti gold download",
-    "teen patti gold app",
-    "teen patti gold withdrawal",
-    "teen patti gold jazzcash",
-    "teen patti gold easypaisa",
-    "teen patti gold referral",
-    "online card games pakistan",
-    "earn money playing cards pakistan",
-    "best card game pakistan",
-    "rummy game pakistan",
-    "dragon tiger pakistan",
-    "earn money games pakistan",
-    "casino card game pakistan",
-    "play cards online pakistan",
-  ],
-  authors: [{ name: "Teen Patti Gold Team" }],
+  // `keywords` meta is ignored by Google since 2009 and inflated keyword
+  // lists can be a quality signal against the site — removed intentionally.
+  authors: [{ name: "Teen Patti Gold Editorial Team" }],
   creator: "Teen Patti Gold",
   publisher: "Teen Patti Gold",
   robots: {
@@ -70,8 +53,10 @@ export const metadata: Metadata = {
     shortcut: [
       { url: FAVICON_URL, type: 'image/x-icon' }
     ],
+    // The source asset is 512×512; declaring its real size avoids the
+    // Lighthouse "icons declared size doesn't match actual size" warning.
     apple: [
-      { url: LOGO_URL, sizes: '180x180' }
+      { url: LOGO_URL, sizes: '512x512' }
     ]
   },
   manifest: '/manifest.json',
@@ -144,12 +129,9 @@ export default function RootLayout({
         <meta name="geo.placename" content="Pakistan" />
         <meta name="geo.position" content="30.3753;69.3451" />
         <meta name="ICBM" content="30.3753, 69.3451" />
-        <meta name="language" content="English, Urdu" />
-        <meta name="target" content="all" />
-        <meta name="audience" content="all" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
+        {/* `language` removed — site is English-only; previous "English, Urdu"
+            value was misleading because no Urdu pages exist. */}
+        <meta name="rating" content="adult" />
         
         {/* DNS Prefetch and Preconnect - only when GA is used to avoid unused preconnect warning */}
         {process.env.NEXT_PUBLIC_GA_ID && (
@@ -252,7 +234,7 @@ export default function RootLayout({
                     "email": "support@teenpattigoldgame.com.pk",
                     "contactType": "customer service",
                     "areaServed": "PK",
-                    "availableLanguage": ["English", "Urdu"]
+                    "availableLanguage": ["English"]
                   },
                   "sameAs": [
                     "https://www.facebook.com/teenpattigold",
@@ -307,7 +289,7 @@ export default function RootLayout({
                   "name": "Teen Patti Gold Pakistan",
                   "description": "Download Teen Patti Gold APK for Pakistan. Play 30+ card games, earn real cash, and withdraw fast with JazzCash & EasyPaisa. Official v1.656 — secure & free.",
                   "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
-                  "inLanguage": ["en-PK", "ur-PK"],
+                  "inLanguage": "en-PK",
                   "potentialAction": {
                     "@type": "SearchAction",
                     "target": {

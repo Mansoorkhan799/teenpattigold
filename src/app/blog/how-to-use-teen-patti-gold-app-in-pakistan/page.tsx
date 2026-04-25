@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getBlogPostingSchema } from '@/lib/blog-schema';
+import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
@@ -126,7 +126,7 @@ export default function HowToUseApp() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       
@@ -171,7 +171,7 @@ export default function HowToUseApp() {
                   <div>
                     <h3 className="text-2xl font-bold mb-4 text-accent">Step 1: Download the App</h3>
                     <p className="text-gray-300 leading-relaxed mb-4">
-                      First, visit the official <Link href="/download-teen-patti-gold" className="text-accent hover:underline">Teen Patti Gold download page</Link> on your Android device. The app is available as a free APK file. Make sure you're downloading from a trusted source to avoid security issues.
+                      First, visit the official <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">Teen Patti Gold download page</Link> on your Android device. The app is available as a free APK file. Make sure you're downloading from a trusted source to avoid security issues.
                     </p>
                     <p className="text-gray-300 leading-relaxed">
                       The app size is approximately 40.81MB, so ensure you have enough storage space and a stable internet connection.
@@ -498,7 +498,7 @@ export default function HowToUseApp() {
                   Now that you know how to use the Teen Patti Gold app, download it today and start your journey to earn real money playing your favorite card games!
                 </p>
                 <Link 
-                  href="/download-teen-patti-gold"
+                  href="/download-teen-patti-gold-apk"
                   className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   Download Now

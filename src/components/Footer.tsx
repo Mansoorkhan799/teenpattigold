@@ -38,7 +38,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/download-teen-patti-gold" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/download-teen-patti-gold-apk" className="text-gray-300 hover:text-accent transition-colors">
                   Download Guide
                 </Link>
               </li>

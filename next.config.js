@@ -54,6 +54,21 @@ const nextConfig = {
     ];
   },
 
+  // 301 redirects to consolidate keyword cannibalisation.
+  // /download-teen-patti-gold and /download-teen-patti-gold-apk were both
+  // ranking for the same query — funnel all link equity to the APK URL.
+  // Using explicit `statusCode: 301` (not `permanent: true` which returns
+  // 308) so the redirect shows up correctly in third-party SEO tooling.
+  async redirects() {
+    return [
+      {
+        source: '/download-teen-patti-gold',
+        destination: '/download-teen-patti-gold-apk',
+        statusCode: 301,
+      },
+    ];
+  },
+
   // Optimize headers
   async headers() {
     return [

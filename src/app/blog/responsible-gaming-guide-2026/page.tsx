@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getBlogPostingSchema } from '@/lib/blog-schema';
+import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
@@ -59,7 +59,7 @@ export default function ResponsibleGamingGuidePage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">
@@ -126,7 +126,7 @@ export default function ResponsibleGamingGuidePage() {
                   <li>Use welcome bonuses and free chips to practice before risking real money</li>
                   <li>Keep emotions in control—never play when frustrated or greedy</li>
                   <li>Take regular breaks—avoid long gaming sessions</li>
-                  <li>Only download from our <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official Teen Patti Gold APK page</Link> to protect your data and money</li>
+                  <li>Only download from our <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">official Teen Patti Gold APK page</Link> to protect your data and money</li>
                 </ul>
               </div>
 
@@ -140,7 +140,7 @@ export default function ResponsibleGamingGuidePage() {
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-4 text-white">Play Responsibly</h2>
                 <p className="text-white text-lg mb-6">Enjoy Teen Patti Gold as entertainment. Set limits, manage your bankroll, and play safely. Download now and play responsibly!</p>
-                <Link href="/download-teen-patti-gold" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</Link>
+                <Link href="/download-teen-patti-gold-apk" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</Link>
               </div>
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">

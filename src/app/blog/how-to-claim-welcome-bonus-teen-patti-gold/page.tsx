@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getBlogPostingSchema } from '@/lib/blog-schema';
+import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
@@ -72,7 +72,7 @@ export default function HowToClaimWelcomeBonusPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
@@ -107,7 +107,7 @@ export default function HowToClaimWelcomeBonusPage() {
                     <div className="flex-shrink-0 w-10 h-10 bg-[#0A1029] text-white rounded-full flex items-center justify-center text-lg font-bold mr-4">1</div>
                     <div>
                       <h3 className="text-2xl font-bold mb-3 text-white">Download and Register</h3>
-                      <p className="text-gray-300">Download the Teen Patti Gold app from the <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official download page</Link>. Create a new account with your mobile number. Only new, fresh users are eligible for the welcome bonus.</p>
+                      <p className="text-gray-300">Download the Teen Patti Gold app from the <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">official download page</Link>. Create a new account with your mobile number. Only new, fresh users are eligible for the welcome bonus.</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -163,7 +163,7 @@ export default function HowToClaimWelcomeBonusPage() {
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-4 text-white">Ready to Claim Your Bonus?</h2>
                 <p className="text-white text-lg mb-6">Download Teen Patti Gold, register, make your first deposit, and get 100% welcome bonus. Start playing and earning today!</p>
-                <Link href="/download-teen-patti-gold" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</Link>
+                <Link href="/download-teen-patti-gold-apk" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</Link>
               </div>
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">

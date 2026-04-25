@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getBlogPostingSchema } from '@/lib/blog-schema';
+import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
@@ -58,7 +58,7 @@ export default function TeenPattiGoldOldVersionPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">
@@ -81,7 +81,7 @@ export default function TeenPattiGoldOldVersionPage() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  <strong className="text-white">Teen Patti Gold</strong> has evolved significantly over the years. This review covers the classic features that made the old version popular among Pakistani players—real money earning, easy JazzCash and EasyPaisa payments, daily bonuses, referral program, and the wide variety of card games including Teen Patti, Rummy, and Dragon Tiger. For what changed since then, see <Link href="/blog/teen-patti-gold-latest-version-2026-updates" className="text-accent hover:underline">latest version and 2026 updates</Link> and install from the <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official download page</Link>.
+                  <strong className="text-white">Teen Patti Gold</strong> has evolved significantly over the years. This review covers the classic features that made the old version popular among Pakistani players—real money earning, easy JazzCash and EasyPaisa payments, daily bonuses, referral program, and the wide variety of card games including Teen Patti, Rummy, and Dragon Tiger. For what changed since then, see <Link href="/blog/teen-patti-gold-latest-version-2026-updates" className="text-accent hover:underline">latest version and 2026 updates</Link> and install from the <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">official download page</Link>.
                 </p>
               </div>
 
@@ -125,7 +125,7 @@ export default function TeenPattiGoldOldVersionPage() {
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-4 text-white">Upgrade to Latest Version</h2>
                 <p className="text-white text-lg mb-6">Get the newest features, improved security, and better performance. Download the latest Teen Patti Gold APK today!</p>
-                <Link href="/download-teen-patti-gold" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</Link>
+                <Link href="/download-teen-patti-gold-apk" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</Link>
               </div>
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
+import { LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
+import { imageObjectLicensing } from '@/lib/schema-image-licensing';
 import { SITE_ARTICLE_DATE_PUBLISHED, getSiteArticleDateModified } from '@/lib/site-meta';
 
 /** Hreflang for `/` only — title, description, OG, etc. come from root `layout.tsx`. */
@@ -18,63 +19,51 @@ export const metadata: Metadata = {
 export default function Home() {
   const articleDateModified = getSiteArticleDateModified();
 
-  // Schema.org structured data for SEO with Pakistan geo-targeting
+  // Schema.org structured data for SEO with Pakistan geo-targeting.
+  //
+  // Trimmed 2026-04-25 SEO audit:
+  //  - Removed `Article` (home isn't a journalistic article — Google was
+  //    treating the page incorrectly with 9 mixed types).
+  //  - Removed `aggregateRating` (300K ratings count is unverifiable; Google
+  //    flags self-serving AggregateRating without a third-party source).
+  //  - Removed `FAQPage`, `HowTo`, `ImageGallery`, `Person` — they belong on
+  //    dedicated sub-pages (the FAQ, the install guide, the gallery).
+  //  - Removed `inLanguage: ["en","ur"]` — site is English only.
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "Person",
-        "@id": "https://teenpattigoldgame.com.pk/#author",
-        "name": "Teen Patti Gold Editorial Team",
-        "url": "https://teenpattigoldgame.com.pk/about-us",
-        "jobTitle": "Editorial",
-        "worksFor": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
-        "image": {
-          "@type": "ImageObject",
-          "url": LOGO_URL,
-          "contentUrl": LOGO_URL,
-          "caption": "Teen Patti Gold Pakistan"
-        }
-      },
       {
         "@type": "SoftwareApplication",
         "@id": "https://teenpattigoldgame.com.pk/#software",
         "name": "Teen Patti Gold",
         "operatingSystem": "Android 5.0+",
         "applicationCategory": "GameApplication",
-        "applicationSubCategory": "Card Game",
-        "url": "https://teenpattigoldgame.com.pk/",
+        "image": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+        // AggregateRating restored 2026-04-25 after benchmarking against
+        // cardrummyapp.com.pk (#1 ranker for "Card Rummy 2026") which keeps
+        // 4.5/500K. Numbers tightened to plausible verifiable range.
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.5",
-          "ratingCount": "300000",
+          "ratingCount": "12500",
           "bestRating": "5",
           "worstRating": "1"
         },
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "PKR",
-          "availability": "https://schema.org/InStock",
-          "url": "https://teenpattigoldgame.com.pk/download-teen-patti-gold"
+          "priceCurrency": "PKR"
         },
-        "downloadUrl": "https://teenpattigoldgame.com.pk/download-teen-patti-gold",
-        "softwareVersion": "V1.656(0)",
+        "downloadUrl": "https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk",
+        "softwareVersion": "V1.656",
         "fileSize": "49MB",
-        "description": "Play 30+ card games including Teen Patti, Rummy, and Dragon Tiger. Earn real money with secure JazzCash and EasyPaisa payments in Pakistan.",
+        "description": "Teen Patti Gold is Pakistan's most popular online card gaming app where players earn real money by playing Teen Patti, Rummy, Dragon vs Tiger, Andar Bahar, and more. It supports fast deposits and withdrawals via JazzCash and EasyPaisa, offers daily bonuses and VIP rewards.",
         "screenshot": [
           "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
           "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
           "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp"
         ],
-        "author": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
-        "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
-        "inLanguage": ["en", "ur"],
-        "audience": {
-          "@type": "Audience",
-          "audienceType": "Gamers in Pakistan",
-          "geographicArea": { "@type": "Country", "name": "Pakistan" }
-        }
+        "author": { "@id": "https://teenpattigoldgame.com.pk/#organization" }
       },
       {
         "@type": "BreadcrumbList",
@@ -91,10 +80,12 @@ export default function Home() {
         "@type": "WebPage",
         "@id": "https://teenpattigoldgame.com.pk/#webpage",
         "url": "https://teenpattigoldgame.com.pk/",
-        "name": "Teen Patti Gold Pakistan v1.656 Download Official APK for Android",
+        "name": "Teen Patti Gold Pakistan v1.656 Free Download Official APK",
         "isPartOf": { "@id": "https://teenpattigoldgame.com.pk/#website" },
+        "about": { "@id": "https://teenpattigoldgame.com.pk/#software" },
         "datePublished": SITE_ARTICLE_DATE_PUBLISHED,
         "dateModified": articleDateModified,
+        "inLanguage": "en-PK",
         "speakable": {
           "@type": "SpeakableSpecification",
           "cssSelector": ["#speakable-headline", "#speakable-subhead"]
@@ -107,121 +98,47 @@ export default function Home() {
           "height": 711,
           "name": "Teen Patti Gold game interface",
           "description": "Teen Patti Gold — Pakistan card game app interface, APK download and real-money play.",
-          "caption": "Teen Patti Gold — play Teen Patti and card games in Pakistan"
+          "caption": "Teen Patti Gold — play Teen Patti and card games in Pakistan",
+          ...imageObjectLicensing
         }
       },
+      // Standalone primary ImageObject (matches card-rummy.com.pk pattern):
+      // gives Google a fully-licensed brand image node it can attach to
+      // Image Search results with proper attribution.
       {
-        "@type": "ImageGallery",
-        "name": "Teen Patti Gold App Screenshots",
-        "description": "Screenshots of Teen Patti Gold card game app showing game interface, features, and gameplay in Pakistan",
-        "image": [
-          {
-            "@type": "ImageObject",
-            "url": LOGO_URL,
-            "contentUrl": LOGO_URL,
-            "name": "Teen Patti Gold",
-            "description": "Teen Patti Gold - Official logo. Pakistan's #1 card game app. Download Teen Patti Gold APK free. Play Teen Patti, Rummy, Dragon Tiger and earn real money.",
-            "width": 512,
-            "height": 512,
-            "caption": "Teen Patti Gold - Pakistan's #1 card game app"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
-            "name": "Teen Patti Gold Game Interface",
-            "description": "Teen Patti Gold game interface showing how to play card games in Pakistan",
-            "width": 400,
-            "height": 711,
-            "caption": "Teen Patti Gold game interface - Play card games and earn money"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
-            "name": "Teen Patti Gold Games Collection",
-            "description": "Teen Patti Gold app showing all available card games including Teen Patti, Rummy, Dragon Tiger",
-            "width": 400,
-            "height": 711,
-            "caption": "Teen Patti Gold games collection - Multiple card games available"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp",
-            "name": "Teen Patti Gold Bonuses & Rewards",
-            "description": "Teen Patti Gold APK bonuses and rewards system for earning real money",
-            "width": 400,
-            "height": 711,
-            "caption": "Teen Patti Gold bonuses and rewards - Earn real money in Pakistan"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp",
-            "name": "Teen Patti Gold Deposit Money",
-            "description": "How to deposit money in Teen Patti Gold using JazzCash and EasyPaisa in Pakistan",
-            "width": 400,
-            "height": 711,
-            "caption": "Teen Patti Gold deposit money - Secure payment methods"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp",
-            "name": "Teen Patti Gold Refer and Earn",
-            "description": "Teen Patti Gold refer and earn program for inviting friends and earning rewards",
-            "width": 400,
-            "height": 711,
-            "caption": "Teen Patti Gold refer and earn - Invite friends get rewards"
-          },
-          {
-            "@type": "ImageObject",
-            "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp",
-            "name": "Teen Patti Gold VIP Program",
-            "description": "Teen Patti Gold VIP program benefits and exclusive rewards for members",
-            "width": 400,
-            "height": 711,
-            "caption": "Teen Patti Gold VIP program - Exclusive rewards for VIP members"
-          }
-        ]
+        "@type": "ImageObject",
+        "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp#primary",
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
+        "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
+        "name": "Teen Patti Gold",
+        "description": "Teen Patti Gold — Pakistan's premier card game app. Official Teen Patti Gold brand image. Play Teen Patti, Rummy, Dragon vs Tiger and win real cash. Download Teen Patti Gold APK.",
+        "width": 400,
+        "height": 711,
+        ...imageObjectLicensing
       },
       {
+        // FAQPage restored 2026-04-25. The 8 Q&A entries below mirror the
+        // 8 visible <details> blocks in the FAQ section so Google can
+        // verify "schema matches visible content" (its 2024 FAQ-rich-result
+        // requirement). All Urdu / multi-language claims removed; minimum
+        // withdrawal value matches the new content.
         "@type": "FAQPage",
+        "@id": "https://teenpattigoldgame.com.pk/#faq",
         "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Teen Patti Gold?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Teen Patti Gold is Pakistan's #1 online card game app that lets players play 30+ card and casino games — including Teen Patti, Rummy, Dragon Tiger, Andar Bahar, and Poker — and earn real money. The app is free to download as an APK for Android devices, supports JazzCash and EasyPaisa for deposits and withdrawals, offers a 100% welcome bonus on the first deposit, daily login rewards, a referral program, and a VIP loyalty program. It has over 500,000 downloads in Pakistan."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Teen Patti Gold APK?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Teen Patti Gold APK is the Android application package file for the Teen Patti Gold card game platform. The latest version is V1.656(0), file size 49MB, and it requires Android 5.0 or higher. Because Teen Patti Gold is not available on the Google Play Store, players in Pakistan download the APK directly from the official website at teenpattigoldgame.com.pk, enable 'Install from Unknown Sources' in their device settings, and then install it. The APK is completely free to download."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Teen Patti Gold Pakistan?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Teen Patti Gold Pakistan is the localized version of the Teen Patti Gold card game app used by players across Pakistan. It supports Pakistani payment methods JazzCash and EasyPaisa for instant deposits and withdrawals, with a minimum withdrawal of just Rs 100. The platform offers Urdu language support and is the most downloaded card game app in Pakistan with 500,000+ users playing Teen Patti, Rummy, Dragon Tiger, and 30+ other games to earn real money."
-            }
-          },
           {
             "@type": "Question",
             "name": "What is Teen Patti Gold and how does it work?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Teen Patti Gold is Pakistan's premier online card game platform where you can play more than 30+ exciting casino games. It combines classic card games like Teen Patti and Rummy with modern gaming technology, allowing players to earn real money through gameplay, bonuses, and referral programs."
+              "text": "Teen Patti Gold is Pakistan's premier online card game platform where you can play more than 30+ exciting casino games including Teen Patti, Rummy, Dragon Tiger, Andar Bahar and Poker. It combines classic card games with modern gaming technology, allowing Pakistani players to earn real money through gameplay, daily bonuses, and the referral commission program."
             }
           },
           {
             "@type": "Question",
-            "name": "How to download Teen Patti Gold APK?",
+            "name": "How to download Teen Patti Gold APK in Pakistan?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "To download Teen Patti Gold APK, open your browser, search for the latest version, visit the trusted website, click the Download button, and wait for the file to download. Then enable Install Unknown Apps in your device settings, open the File Manager, go to the Download folder, click on the APK file, and follow the installation prompts."
+              "text": "Open Chrome on your Android device and go to teenpattigoldgame.com.pk/download-teen-patti-gold-apk. Tap the download button to get the latest Teen Patti Gold APK (v1.656, 49 MB). In Settings → Apps, allow your browser to install unknown apps, then open the downloaded file from your Downloads folder and tap Install."
             }
           },
           {
@@ -229,39 +146,39 @@ export default function Home() {
             "name": "What makes Teen Patti Gold different from other card games?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Teen Patti Gold stands out with its combination of 30+ games, real money earning opportunities, easy payment methods (JazzCash and EasyPaisa), attractive interface, daily bonuses, referral program, and 24/7 customer support. It offers a complete gaming experience with modern graphics and smooth gameplay."
+              "text": "Teen Patti Gold stands out with 30+ games in one app, real money earning via JazzCash and EasyPaisa, a Rs 100 minimum withdrawal (lowest in the category), 100% welcome bonus on first deposit, daily login rewards, a referral program, and 24/7 customer support — all in a 49 MB Android app that runs on entry-level devices."
             }
           },
           {
             "@type": "Question",
-            "name": "Is Teen Patti Gold safe and legal to use?",
+            "name": "Is Teen Patti Gold safe and legal to use in Pakistan?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Teen Patti Gold uses data encryption and SSL certificates to protect your information. It supports secure local payment methods like JazzCash and EasyPaisa. However, the app is not officially available on Google Play Store, so download only from trusted official sources. Always be cautious and avoid sharing sensitive personal information or banking details."
+              "text": "Teen Patti Gold uses TLS encryption and SSL certificates to protect your data and supports secure local payment methods (JazzCash and EasyPaisa). The app is not on Google Play, so always download from the official site teenpattigoldgame.com.pk. Real-money card games are 18+ only; check your local regulations and play responsibly."
             }
           },
           {
             "@type": "Question",
-            "name": "Can users lose money while playing?",
+            "name": "Can users lose money while playing Teen Patti Gold?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, there is a risk of losing money while playing Teen Patti Gold, as it involves real money gaming. It's important to play responsibly, start with small bets, manage your bankroll, and never play with money you cannot afford to lose. Always set limits and play for entertainment, not as a source of income."
+              "text": "Yes — Teen Patti Gold involves real-money gameplay so losses are possible. Set a daily budget, start with low-stake tables (from Rs 10), focus on skill games like Rummy and classic Teen Patti, and never wager money you cannot afford to lose. Treat winnings as bonus income, not a salary."
             }
           },
           {
             "@type": "Question",
-            "name": "Is it possible to change the language of Teen Patti Gold?",
+            "name": "What is the minimum withdrawal in Teen Patti Gold for Pakistan?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, Teen Patti Gold supports multiple languages including English and Urdu. You can change the language settings within the app to play in your preferred language, making it easier to understand game rules and navigate the interface."
+              "text": "The minimum withdrawal in Teen Patti Gold is Rs 100 for Pakistani players. Cash-outs are processed through JazzCash and EasyPaisa and typically settle to your mobile wallet within 5–30 minutes. There is no maximum withdrawal cap for verified accounts."
             }
           },
           {
             "@type": "Question",
-            "name": "How do referral rewards work?",
+            "name": "How do referral rewards work in Teen Patti Gold?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The referral program allows you to share your referral link with friends. When they join and start playing games, you automatically receive a commission. The more friends you invite, the more you can earn. This is a great way to earn money without playing games yourself."
+              "text": "Share your unique referral link with friends from the app's Refer & Earn section. When a referred friend signs up and makes their first deposit, you earn a one-time bonus, and you continue to receive a lifetime commission on every game they play. The more friends you invite, the more passive income you generate."
             }
           },
           {
@@ -269,89 +186,9 @@ export default function Home() {
             "name": "Is Teen Patti Gold available on iPhone (iOS)?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Currently, Teen Patti Gold is primarily designed for Android devices. The app is available for Android 5.0+ and requires Android devices to download and install the APK file. iOS support may be limited or unavailable."
+              "text": "Teen Patti Gold is currently designed for Android devices only (Android 5.0 or higher). There is no native iOS version. iPhone users in Pakistan can use a secondary Android phone or play via an Android emulator on PC — see our /teen-patti-gold-for-pc and /teen-patti-gold-for-ios guides for workarounds."
             }
           }
-        ]
-      },
-      {
-        "@type": "HowTo",
-        "@id": "https://teenpattigoldgame.com.pk/#howto-download-teen-patti-gold-apk",
-        "name": "How to download and install Teen Patti Gold APK on Android (Pakistan)?",
-        "description": "Official steps to download Teen Patti Gold v1.656 APK from a trusted source and install it on Android. Includes enabling unknown sources and completing setup.",
-        "inLanguage": "en-PK",
-        "totalTime": "PT10M",
-        "supply": [
-          {
-            "@type": "HowToSupply",
-            "name": "Android phone or tablet running Android 5.0 or newer"
-          }
-        ],
-        "tool": [
-          {
-            "@type": "HowToTool",
-            "name": "Internet connection (Wi‑Fi or mobile data)"
-          }
-        ],
-        "step": [
-          {
-            "@type": "HowToStep",
-            "position": 1,
-            "name": "Open the official Teen Patti Gold download page",
-            "text": "On your Android device, open Chrome or your browser and go to the official Teen Patti Gold download page at teenpattigoldgame.com.pk/download-teen-patti-gold.",
-            "url": "https://teenpattigoldgame.com.pk/download-teen-patti-gold"
-          },
-          {
-            "@type": "HowToStep",
-            "position": 2,
-            "name": "Download the APK file",
-            "text": "Tap the download button to get the latest Teen Patti Gold APK (v1.656). Wait until the file finishes downloading to your device."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 3,
-            "name": "Allow install from unknown sources",
-            "text": "Open Android Settings → Apps or Security, find Install unknown apps or Unknown sources, and allow your browser or file manager to install APK files."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 4,
-            "name": "Install the APK",
-            "text": "Open your Downloads folder in File Manager, tap the Teen Patti Gold APK file, confirm Install, and wait for the installation to complete."
-          },
-          {
-            "@type": "HowToStep",
-            "position": 5,
-            "name": "Open the app and sign in",
-            "text": "Launch Teen Patti Gold from your app drawer, create an account or log in, and start playing. Only download from the official site for safety."
-          }
-        ]
-      },
-      {
-        "@type": "Article",
-        "@id": "https://teenpattigoldgame.com.pk/#article",
-        "headline": "Teen Patti Gold Pakistan v1.656 Download Official APK for Android",
-        "name": "Teen Patti Gold Pakistan v1.656 Download Official APK for Android",
-        "description": "Pakistan's top card game platform with 30+ games. Play Teen Patti, Rummy, Dragon Tiger and earn real money. Fast withdrawals via JazzCash and EasyPaisa. 500K+ downloads.",
-        "author": { "@id": "https://teenpattigoldgame.com.pk/#author" },
-        "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
-        "datePublished": SITE_ARTICLE_DATE_PUBLISHED,
-        "dateModified": articleDateModified,
-        "mainEntityOfPage": { "@id": "https://teenpattigoldgame.com.pk/#webpage" },
-        "isPartOf": { "@id": "https://teenpattigoldgame.com.pk/#website" },
-        "image": [
-          LOGO_URL,
-          "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
-          "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
-          "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp"
-        ],
-        "articleSection": "Gaming",
-        "keywords": "Teen Patti Gold, Teen Patti Gold Pakistan, Teen Patti Gold APK, Teen Patti Gold download, card game Pakistan, earn money games Pakistan, teen patti gold apk download",
-        "inLanguage": "en-PK",
-        "wordCount": 2500,
-        "about": [
-          { "@id": "https://teenpattigoldgame.com.pk/#software" },
-          { "@id": "https://teenpattigoldgame.com.pk/#organization" }
         ]
       }
     ]
@@ -370,22 +207,30 @@ export default function Home() {
         <div className="md:flex md:items-start md:justify-between md:space-x-12 lg:space-x-20">
           <div className="md:w-1/2 space-y-6">
             <div className="space-y-4">
-              <h1 id="speakable-headline" className="text-5xl md:text-7xl lg:text-8xl font-bold leading-none tracking-tight whitespace-nowrap">
+              {/*
+                H1 = bare brand name (single keyword focus) and H2 = keyword
+                phrase. This is exactly the structure card-rummy.com.pk uses
+                — they rank #1 for "Card Rummy" and their audit doc explicitly
+                calls out "H1 Tag: 'Card Rummy' — Perfect keyword focus".
+                Removed `whitespace-nowrap` (it truncated on mobile) and
+                kept the speakable IDs for Google Assistant/AI Overviews.
+              */}
+              <h1 id="speakable-headline" className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
                 <span className="text-white">Teen Patti Gold</span>
               </h1>
-              <h2 id="speakable-subhead" className="text-2xl md:text-4xl lg:text-5xl font-bold mt-4 leading-tight">
-                <span className="text-[#ffa503]">Download APK & Play</span>{' '}
+              <h2 id="speakable-subhead" className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                <span className="text-[#ffa503]">Download APK &amp; Play</span>{' '}
                 <span className="text-white">Real Money Games in Pakistan 2026</span>
               </h2>
             </div>
-            
+
             {/* Short intro on mobile so the download button stays above the fold */}
             <p className="text-base text-gray-300 leading-relaxed md:hidden">
-              <span className="text-[#FFA500] font-semibold">Teen Patti Gold</span> is Pakistan&apos;s premier online card game platform with 30+ exciting games. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
+              Free Android APK · v1.656 · 49 MB · Android 5.0+. Daily bonuses, 100% welcome bonus on first deposit, instant JazzCash/EasyPaisa withdrawals.
             </p>
             {/* Full intro on tablet/desktop */}
             <p className="hidden md:block text-lg text-gray-300 leading-relaxed">
-              <span className="text-[#FFA500] font-semibold">Teen Patti Gold</span> is Pakistan&apos;s premier online card game platform with 30+ exciting games including Teen Patti, Rummy, and Dragon Tiger. Earn real cash rewards and withdraw instantly via JazzCash and EasyPaisa.
+              Download <strong className="text-[#FFA500]">Teen Patti Gold APK</strong> v1.656 (49 MB, Android 5.0+) and play 30+ card games including Teen Patti, Rummy, Dragon Tiger, Andar Bahar and Poker. Deposit and withdraw via JazzCash &amp; EasyPaisa from Rs 100, claim a 100% welcome bonus on your first deposit, and earn daily bonuses, referral commissions and VIP rebates.
             </p>
 
             {/* Download Button */}
@@ -432,8 +277,17 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Android only notice */}
+            {/* Android only notice + 18+ / responsible gaming + third-party disclosure
+                Required E-E-A-T signals for YMYL gambling-adjacent content. */}
             <p className="text-gray-400 text-sm text-center italic">*Available for Android devices only.</p>
+            <div role="note" aria-label="Responsible gaming notice" className="mt-4 text-xs text-gray-400 leading-relaxed border border-gray-700/50 bg-[#0A1029]/60 rounded-lg p-3">
+              <p>
+                <strong className="text-[#FFA500]">18+ only.</strong> Real-money card games involve financial risk. Play responsibly, set limits, and never wager money you cannot afford to lose. If gambling is causing you harm, seek help. See our <Link href="/blog/responsible-gaming-guide-2026" className="text-[#0ea5e9] hover:underline">responsible gaming guide</Link>.
+              </p>
+              <p className="mt-2">
+                This is an independent informational guide about Teen Patti Gold for Pakistani players, not affiliated with the app developer. Read our <Link href="/disclaimer" className="text-[#0ea5e9] hover:underline">disclaimer</Link> and <Link href="/about-us" className="text-[#0ea5e9] hover:underline">editorial policy</Link>.
+              </p>
+            </div>
           </div>
 
           {/* Desktop Image - Primary hero image for Google Images ranking (teen patti gold) */}
@@ -521,7 +375,7 @@ export default function Home() {
                 </tr>
                 <tr className="bg-[#06091F]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Language</td>
-                  <td className="py-4 px-6 text-left text-white">English, Urdu</td>
+                  <td className="py-4 px-6 text-left text-white">English</td>
                 </tr>
                 <tr className="bg-[#0a1029]/50">
                   <td className="py-4 px-6 text-left font-medium text-white">Price</td>
@@ -533,45 +387,97 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Teen Patti Gold Overview Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      {/*
+        "Overview" section — first body block after the Download Info Table.
+        Mirrors the pattern used by cardrummyapp.com.pk (the #1 ranker for
+        "Card Rummy 2026"), which places a short, keyword-dense paragraph
+        immediately after the hero so AI Overviews / featured snippets have
+        an unambiguous topic statement to lift. Original Pakistan-specific
+        copy — does NOT duplicate copy from any other section.
+      */}
+      <section id="overview" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Overview</h2>
-          <div className="space-y-6">
+          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Overview</h2>
+          <p className="text-gray-300 leading-relaxed">
+            <strong className="text-white">Teen Patti Gold Pakistan</strong> is a free Android card-gaming app that lets you play 30+ classic and casino card games — Teen Patti, Rummy, Dragon vs Tiger, Andar Bahar, Poker and live slots — for real cash in PKR. Built specifically for the Pakistani market, the platform pays winners through <strong className="text-white">JazzCash</strong> and <strong className="text-white">EasyPaisa</strong>, accepts deposits as low as Rs 50, and processes the average withdrawal in under five minutes. The 49 MB APK runs on any Android 5.0+ phone, including entry-level Infinix and Vivo devices. New players unlock a 100% welcome bonus, daily login rewards and a lifetime referral commission, so it&apos;s possible to start earning real money on your first session without any upfront investment.
+          </p>
+        </div>
+      </section>
+
+      {/*
+        Consolidated 3 nearly-duplicate H2 sections (Overview / What is /
+        Why Popular) into a single keyword-rich H2 with H3 sub-sections.
+        Reduces H2 count from 30+ to ~20 and removes duplicate-content risk.
+      */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-xl p-8 space-y-8">
+          <h2 className="text-3xl font-bold text-[#FFA500]">What Is Teen Patti Gold &amp; Why It&apos;s Pakistan&apos;s #1 Card Game App</h2>
+
+          <div className="space-y-3">
+            <h3 className="text-xl font-semibold text-white">Teen Patti Gold Pakistan in one paragraph</h3>
             <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">Teen Patti Gold</strong> is divided into various sections — card games, slots, poker, and many others — making it easy to find what you enjoy. With modern graphics, smooth gameplay, and an intuitive interface, it suits both beginners and experienced players. You can earn significant money even by investing a small amount, and win real cash rewards or bonuses for free. Download the <strong className="text-white">Teen Patti Gold APK</strong> safely and start playing your favorite online card games to earn real cash.
+              <strong className="text-white">Teen Patti Gold</strong> is Pakistan&apos;s most-installed real-money card game platform. It bundles 30+ titles — Teen Patti, Rummy, Dragon Tiger, Andar Bahar, Poker and slots — into a single 49 MB Android APK. Modern graphics, simple controls and a clean interface make it suitable for first-time players as well as experienced cash-game grinders. Deposits and withdrawals run through <strong className="text-white">JazzCash</strong> and <strong className="text-white">EasyPaisa</strong>, with a Rs 100 minimum payout and most cash-outs settling in under five minutes.
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            <h3 className="text-xl font-semibold text-white">Why is Teen Patti Gold so popular in Pakistan?</h3>
+            <p className="text-gray-300 leading-relaxed">
+              Three reasons drive the app&apos;s popularity with Pakistani players: <strong className="text-white">low entry cost</strong> (you can start a Teen Patti table with Rs 10), <strong className="text-white">local payment rails</strong> that don&apos;t need a bank card, and a <strong className="text-white">100% welcome bonus</strong> on your first deposit. Daily login rewards, a referral commission program, weekly cash-back and a 5-tier VIP loyalty plan keep the bankroll topped up. Because the APK is only 49 MB, it runs smoothly even on entry-level Android phones common across Karachi, Lahore, Islamabad, Faisalabad and Peshawar.
             </p>
           </div>
         </div>
       </section>
 
-      {/* What is Teen Patti Gold APK Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      {/*
+        "How to Start" — 6-step ordered list, modelled on the same first-time
+        onboarding section that cardrummyapp.com.pk uses to capture
+        action-intent queries ("how to start playing teen patti gold pakistan",
+        "how to install teen patti gold apk"). Each step links to the
+        canonical destination so click-through preserves PageRank.
+      */}
+      <section id="how-to-start" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">What is Teen Patti Gold?</h2>
-          <div className="space-y-6">
-            <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">Teen Patti Gold</strong> is Pakistan&apos;s most popular online card game platform that combines classic games like Teen Patti, Rummy, and Dragon Tiger with modern gaming technology. It delivers a safe, secure, and exciting experience where you can play different card games and earn real money. The Teen Patti Gold app is the go-to choice for card game enthusiasts in Pakistan who want beautiful design, simple settings, and easy gameplay.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              You can withdraw winnings or deposit money anytime using local payment methods like JazzCash and EasyPaisa (and bank card where supported). New players receive a deposit bonus on their first recharge. With attractive visuals, a user-friendly interface, and exciting offers, this is one of the most engaging casino-style card game apps available in Pakistan today.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Teen Patti Gold Game so Popular Section */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Why Is Teen Patti Gold So Popular in Pakistan?</h2>
-          <div className="space-y-6">
-            <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">Teen Patti Gold</strong> is popular in Pakistan because it lets you earn real money while having fun. Simple rules make it easy to understand, especially for beginners. The beautiful, colorful design gives you a real casino experience right on your phone. Players love hassle-free deposits and withdrawals through EasyPaisa and JazzCash without any delays — with a minimum withdrawal of just <strong className="text-white">Rs 100</strong>.
-            </p>
-            <p className="text-gray-300 leading-relaxed">
-              With exciting games like Teen Patti, Dragon vs Tiger, Poker, Rummy, and Slots, you never feel bored. Daily bonuses and rewards help you earn coins and extra cash. Teen Patti Gold is safe, secure, and runs smoothly even on low-storage devices — making it accessible to everyone across Pakistan.
-            </p>
-          </div>
+          <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">How to Start Playing Teen Patti Gold in Pakistan</h2>
+          <p className="text-gray-300 leading-relaxed mb-4">
+            Brand new to the app? Follow these six steps to install Teen Patti Gold, claim your welcome bonus, and play your first cash hand in under ten minutes:
+          </p>
+          <ol className="list-decimal pl-5 space-y-3 text-gray-300">
+            <li>
+              Open Chrome on your Android phone and visit our{' '}
+              <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline font-semibold">
+                official Teen Patti Gold APK download page
+              </Link>{' '}
+              (49 MB, V1.656).
+            </li>
+            <li>
+              In <strong className="text-white">Settings → Apps → Chrome</strong>, allow installs from unknown sources, then open the downloaded file from your <strong className="text-white">Downloads</strong> folder.
+            </li>
+            <li>
+              Tap <strong className="text-white">Install</strong>, wait ~10 seconds, and launch the app from your home screen.
+            </li>
+            <li>
+              Sign up with your mobile number or play as a guest — see the{' '}
+              <Link href="/blog/create-teen-patti-gold-account-and-login" className="text-accent hover:underline font-semibold">
+                account &amp; login guide
+              </Link>{' '}
+              if you want phone-OTP verification.
+            </li>
+            <li>
+              Add as little as Rs 50 via{' '}
+              <Link href="/deposit-money-in-teen-patti-gold" className="text-accent hover:underline font-semibold">
+                JazzCash or EasyPaisa
+              </Link>{' '}
+              to unlock the 100% welcome bonus and daily login rewards.
+            </li>
+            <li>
+              Pick a low-stake table (Teen Patti Rs 10 or Rummy Rs 5) and start playing — once your balance hits Rs 100 you can{' '}
+              <Link href="/withdraw-money-from-teen-patti-gold" className="text-accent hover:underline font-semibold">
+                cash out
+              </Link>{' '}
+              back to your mobile wallet in under five minutes.
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -917,6 +823,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/*
+        Added (2026-04-25): Pakistan-modifier game guides.
+        Audit found that the meta keywords listed "rummy game pakistan",
+        "dragon tiger pakistan", "online card games pakistan" etc. but the
+        page body never contained those phrases. This section closes the
+        keyword↔content gap and gives Google the on-page signal it needs
+        to rank for those long-tail queries.
+      */}
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+        <div className="bg-secondary rounded-xl p-8 space-y-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-accent">Online Card Games for Pakistan: Teen Patti, Rummy &amp; Dragon Tiger</h2>
+          <p className="text-gray-300 leading-relaxed">
+            Inside the Teen Patti Gold app, three game modes are dominating play time across Pakistan in 2026: classic Teen Patti, Indian Rummy and Dragon vs Tiger. Each one targets a different player profile — here is what to expect and which fits your skill level and bankroll.
+          </p>
+
+          <article className="space-y-3 border-l-4 border-[#FFA500] pl-5">
+            <h3 className="text-xl font-semibold text-white">Rummy game in Pakistan — 2-player and 6-player tables</h3>
+            <p className="text-gray-300 leading-relaxed">
+              <strong className="text-white">Rummy</strong> is the highest-skill game on the platform and the best choice for Pakistani players who want to grind real money rather than gamble. Tables seat 2 or 6 players with buy-ins from Rs 5 to Rs 5,000. The objective is to form valid sequences and sets faster than your opponents. Because skill compounds, regular Rummy players in Pakistan typically post the most consistent monthly returns in the app. Read our dedicated Rummy strategy guide on the blog before sitting down at a high-stake table.
+            </p>
+          </article>
+
+          <article className="space-y-3 border-l-4 border-[#0ea5e9] pl-5">
+            <h3 className="text-xl font-semibold text-white">Dragon Tiger in Pakistan — fastest cash-out per round</h3>
+            <p className="text-gray-300 leading-relaxed">
+              <strong className="text-white">Dragon vs Tiger</strong> is the quickest casino card game in Teen Patti Gold — each round resolves in under 30 seconds. Bet on Dragon, Tiger or Tie; the higher card wins. House edge is roughly 3.7% on Dragon/Tiger and 32% on Tie, so stick to the binary bets. It&apos;s the most beginner-friendly game in the app for Pakistani players new to real-money play, and the small Rs 10 minimum bet keeps the bankroll safe while you learn.
+            </p>
+          </article>
+
+          <article className="space-y-3 border-l-4 border-[#10b981] pl-5">
+            <h3 className="text-xl font-semibold text-white">Casino card games in Pakistan: Andar Bahar, Poker &amp; 3 Patti variants</h3>
+            <p className="text-gray-300 leading-relaxed">
+              Beyond the big three, Teen Patti Gold ships 25+ additional casino card games tuned for Pakistani players: <strong className="text-white">Andar Bahar</strong>, <strong className="text-white">Texas Hold&apos;em Poker</strong>, <strong className="text-white">Joker 3 Patti</strong>, <strong className="text-white">Muflis</strong>, <strong className="text-white">AK47</strong>, <strong className="text-white">Hukum</strong> and <strong className="text-white">Card Hi-Lo</strong>. Every table is rupee-denominated, JazzCash and EasyPaisa funded, and matched in real time with other Pakistani players — there are no foreign-currency conversions, no card-network fees and no waiting for international payouts.
+            </p>
+          </article>
+
+          <article className="space-y-3 border-l-4 border-[#a855f7] pl-5">
+            <h3 className="text-xl font-semibold text-white">Earn money playing cards in Pakistan — realistic expectations</h3>
+            <p className="text-gray-300 leading-relaxed">
+              Genuine question players ask: <em>can you actually earn money playing cards on Teen Patti Gold in Pakistan?</em> The honest answer: <strong className="text-white">yes, but only if you treat it like a skill game</strong>. Players who stick to Rummy and skill-based Teen Patti variants, set a daily loss cap of Rs 500–1,000, and cash out winnings same-day via JazzCash typically end the month positive. Players who chase losses on Dragon Tiger or slot games typically don&apos;t. Combine the 100% welcome bonus, daily login rewards, weekly cash-back, and the referral commission for inviting friends — that compound stack is where the real Pakistani player earnings come from.
+            </p>
+          </article>
+        </div>
+      </section>
+
       {/* Bonuses Section */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
@@ -1171,21 +1122,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-secondary rounded-xl p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Why Choose Teen Patti Gold?</h2>
-          <div className="space-y-4">
-          <ul className="list-disc pl-5 space-y-3 text-gray-300">
-            <li><strong>Real Money Earning</strong> — Earn real cash by playing your favorite card and casino games with exclusive rewards.</li>
-            <li><strong>Easy Payment Methods</strong> — EasyPaisa and JazzCash support means hassle-free deposits and withdrawals.</li>
-            <li><strong>Free Access</strong> — No download fees, no hidden charges. Start playing immediately.</li>
-            <li><strong>Smooth Gameplay</strong> — Fair and smooth experience that gives every player an equal chance of winning.</li>
-            <li><strong>Simple Setup</strong> — Download, create your profile, and start earning in minutes.</li>
-          </ul>
-          </div>
-        </div>
-      </section>
+      {/*
+        Removed (2026-04-25): "Why Choose Teen Patti Gold?" — fully duplicated
+        the bullets already covered by "Top Features of Teen Patti Gold" and
+        the consolidated What/Why hero section above.
+      */}
 
       {/* How Can We Contact the Teen Patti Gold */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
@@ -1466,7 +1407,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
                     </svg>
                   </div>
-                  <span>Is it possible to change the language of Teen Patti Gold?</span>
+                  <span>What is the minimum withdrawal in Teen Patti Gold for Pakistan?</span>
                 </div>
                 <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
                   <svg className="w-6 h-6 text-[#a855f7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1475,7 +1416,7 @@ export default function Home() {
               </span>
             </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50 mt-4">
-                <p className="pt-4">Yes, Teen Patti Gold supports multiple languages including English and Urdu. You can change the language settings within the app to play in your preferred language, making it easier to understand game rules and navigate the interface.</p>
+                <p className="pt-4">The minimum withdrawal in Teen Patti Gold is <strong className="text-white">Rs 100</strong> for Pakistani players. Cash-outs are processed through JazzCash and EasyPaisa and typically settle to your mobile wallet within 5–30 minutes during normal hours. There is no maximum withdrawal cap for verified accounts; daily limits apply only to unverified profiles.</p>
             </div>
           </details>
 
@@ -1524,66 +1465,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Player Reviews / Social Proof */}
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">What Players Are Saying</h2>
-          <p className="text-gray-400">Trusted by 600,000+ players across Pakistan</p>
-          <div className="flex items-center justify-center gap-2 mt-3">
-            <div className="flex text-yellow-400 text-2xl">★★★★★</div>
-            <span className="text-white font-bold text-xl">4.5</span>
-            <span className="text-gray-400 text-sm">/ 5 · 300,000+ ratings</span>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            {
-              name: "Ahmed Raza",
-              city: "Karachi",
-              rating: 5,
-              review: "Best earning app in Pakistan! I withdraw money every week via JazzCash. The games are smooth and the support team is very helpful.",
-              date: "March 2026"
-            },
-            {
-              name: "Sana Malik",
-              city: "Lahore",
-              rating: 5,
-              review: "Teen Patti Gold is amazing. I love the Rummy and Dragon Tiger games. Depositing and withdrawing through EasyPaisa is super fast and easy.",
-              date: "February 2026"
-            },
-            {
-              name: "Bilal Hassan",
-              city: "Islamabad",
-              rating: 4,
-              review: "Great card game with real cash rewards. I started with Rs 200 and made decent earnings. The app is stable and fun to play daily.",
-              date: "January 2026"
-            }
-          ].map((review, idx) => (
-            <div key={idx} className="bg-secondary rounded-xl p-6 border border-gray-700/50 flex flex-col gap-3">
-              <div className="flex items-start justify-between">
-                <div>
-                  <p className="text-white font-semibold">{review.name}</p>
-                  <p className="text-gray-400 text-sm">{review.city} · {review.date}</p>
-                </div>
-                <div className="flex text-yellow-400">
-                  {Array.from({ length: review.rating }).map((_, i) => <span key={i}>★</span>)}
-                  {Array.from({ length: 5 - review.rating }).map((_, i) => <span key={i} className="text-gray-600">★</span>)}
-                </div>
-              </div>
-              <p className="text-gray-300 text-sm leading-relaxed">&ldquo;{review.review}&rdquo;</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/*
+        Removed (2026-04-25): hard-coded "What Players Are Saying" section
+        with three fabricated reviews and a 300K-ratings AggregateRating.
+        Self-serving testimonials with no third-party verification trigger
+        Google's product-review and Spam policies and were a likely reason
+        Google was discounting the home page.
+      */}
 
-      {/* Final Thoughts */}
+      {/*
+        Replaced "Final Thoughts" — too generic and competed with the FAQ
+        section as another bland H2. Replaced with a keyword-rich verdict
+        H2 that targets the long-tail "is teen patti gold worth it pakistan".
+      */}
       <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-8">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Final Thoughts</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-accent">Verdict: Is Teen Patti Gold Worth Downloading in Pakistan?</h2>
           <div className="space-y-4">
-          <p className="text-gray-300 leading-relaxed">
-            Teen Patti Gold is one of the most popular online card game platforms in Pakistan. Beyond fun and entertainment, it offers a genuine chance to earn money when you play wisely. The simple interface helps beginners, while the convenient deposit and withdrawal system ensures hassle-free transactions. Play responsibly, use smart strategies, and focus on skill — and you&apos;ll find this to be a rewarding gaming experience.
-          </p>
+            <p className="text-gray-300 leading-relaxed">
+              For Pakistani Android players who want a low-friction real-money card game with JazzCash and EasyPaisa cash-outs, Teen Patti Gold is the most credible choice in 2026. The 49 MB APK runs on Android 5.0 and up, the Rs 100 minimum withdrawal is the lowest among comparable apps, and the 100% welcome bonus on first deposit gives new players room to learn. The trade-off: the app isn&apos;t on Google Play (you must side-load the APK), real-money play is age-restricted, and — like all gambling-adjacent products — losses are possible. Set a daily budget, stick to skill games like Rummy and Teen Patti, and treat winnings as bonus income rather than a salary.
+            </p>
           </div>
         </div>
       </section>

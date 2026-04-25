@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getBlogPostingSchema } from '@/lib/blog-schema';
+import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
@@ -116,7 +116,7 @@ export default function HowToEarnMoney() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       
       <div className="min-h-screen bg-primary">
@@ -283,7 +283,7 @@ export default function HowToEarnMoney() {
                   Follow these strategies and start earning real money from Teen Patti Gold. Download the app and begin your journey!
                 </p>
                 <Link 
-                  href="/download-teen-patti-gold"
+                  href="/download-teen-patti-gold-apk"
                   className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   Download Now

@@ -78,9 +78,11 @@ Disallow: /
 User-agent: ClaudeBot
 Disallow: /
 
-# Google Gemini model training (separate from Googlebot search)
+# Google-Extended controls Gemini model training AND, more importantly,
+# eligibility to appear in Google AI Overviews / SGE answers. Allowing this
+# is required for the site to surface in AI-generated SERP results.
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 # Meta AI training
 User-agent: meta-externalagent

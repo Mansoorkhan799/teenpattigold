@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getBlogPostingSchema } from '@/lib/blog-schema';
+import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
@@ -110,7 +110,7 @@ export default function HowToPlay() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       
       <div className="min-h-screen bg-primary">
@@ -265,10 +265,10 @@ export default function HowToPlay() {
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-4 text-white">Ready to Play?</h2>
                 <p className="text-white text-lg mb-6">
-                  Now that you know how to play Teen Patti, download the app and start playing to earn real money. Grab the APK from our <Link href="/download-teen-patti-gold" className="underline font-semibold">official download page</Link> and create your account with the <Link href="/blog/create-teen-patti-gold-account-and-login" className="underline font-semibold">account setup guide</Link> if needed.
+                  Now that you know how to play Teen Patti, download the app and start playing to earn real money. Grab the APK from our <Link href="/download-teen-patti-gold-apk" className="underline font-semibold">official download page</Link> and create your account with the <Link href="/blog/create-teen-patti-gold-account-and-login" className="underline font-semibold">account setup guide</Link> if needed.
                 </p>
                 <Link 
-                  href="/download-teen-patti-gold"
+                  href="/download-teen-patti-gold-apk"
                   className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   Download Now

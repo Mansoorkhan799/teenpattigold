@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getBlogPostingSchema } from '@/lib/blog-schema';
+import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
@@ -79,7 +79,7 @@ export default function CreateAccountLogin() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
@@ -98,7 +98,7 @@ export default function CreateAccountLogin() {
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed mb-0">
-                  Getting started with Teen Patti Gold is quick and easy. This guide will walk you through the process of creating your account and logging in, so you can start playing Teen Patti, Rummy, and other card games to earn real money right away. Install the app first from the <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official Teen Patti Gold download page</Link>—never sideload random APKs.
+                  Getting started with Teen Patti Gold is quick and easy. This guide will walk you through the process of creating your account and logging in, so you can start playing Teen Patti, Rummy, and other card games to earn real money right away. Install the app first from the <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">official Teen Patti Gold download page</Link>—never sideload random APKs.
                 </p>
               </div>
 
@@ -112,7 +112,7 @@ export default function CreateAccountLogin() {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-2xl font-bold mb-3 text-white">Download the Teen Patti Gold App</h3>
-                      <p className="text-gray-300 leading-relaxed">First, download the Teen Patti Gold app from our <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official download page</Link>. Once downloaded, install the app on your Android device.</p>
+                      <p className="text-gray-300 leading-relaxed">First, download the Teen Patti Gold app from our <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">official download page</Link>. Once downloaded, install the app on your Android device.</p>
                     </div>
                   </div>
                   
@@ -242,7 +242,7 @@ export default function CreateAccountLogin() {
                     <svg className="w-6 h-6 text-orange-500 mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span><strong>Beware of Phishing:</strong> Only download Teen Patti Gold from our <Link href="/download-teen-patti-gold" className="text-accent hover:underline">verified download page</Link> and never click suspicious links.</span>
+                    <span><strong>Beware of Phishing:</strong> Only download Teen Patti Gold from our <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">verified download page</Link> and never click suspicious links.</span>
                   </li>
                 </ul>
               </div>

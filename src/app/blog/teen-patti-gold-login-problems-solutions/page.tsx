@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getBlogPostingSchema } from '@/lib/blog-schema';
+import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
@@ -63,7 +63,7 @@ export default function TeenPattiGoldLoginProblemsPage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">
@@ -111,7 +111,7 @@ export default function TeenPattiGoldLoginProblemsPage() {
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">4. App Crashes on Login</h3>
                     <p className="text-gray-300 mb-2"><strong>Problem:</strong> App closes or freezes when you try to log in.</p>
-                    <p className="text-gray-300"><strong>Solution:</strong> Update to the latest version (V1.656) from the <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official download page</Link>. Clear app cache in Settings. Ensure you have at least 500MB free storage. Restart your device and try again.</p>
+                    <p className="text-gray-300"><strong>Solution:</strong> Update to the latest version (V1.656) from the <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">official download page</Link>. Clear app cache in Settings. Ensure you have at least 500MB free storage. Restart your device and try again.</p>
                   </div>
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-xl font-bold mb-3 text-[#FFA500]">5. Wrong Credentials Error</h3>
@@ -129,7 +129,7 @@ export default function TeenPattiGoldLoginProblemsPage() {
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-6 text-white">Correct Login Steps (2026)</h2>
                 <ol className="list-decimal pl-6 space-y-3 text-gray-300">
-                  <li>Open the Teen Patti Gold app on your Android device (install from the <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official APK page</Link> if needed)</li>
+                  <li>Open the Teen Patti Gold app on your Android device (install from the <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">official APK page</Link> if needed)</li>
                   <li>Tap the Login button on the homescreen</li>
                   <li>Enter your registered mobile number and password</li>
                   <li>Verify details are correct (no extra spaces)</li>
@@ -151,7 +151,7 @@ export default function TeenPattiGoldLoginProblemsPage() {
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-4 text-white">Need a Fresh Start?</h2>
                 <p className="text-white text-lg mb-6">Download the latest Teen Patti Gold APK and ensure you have the correct version. Sometimes reinstalling fixes login issues.</p>
-                <Link href="/download-teen-patti-gold" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Latest APK</Link>
+                <Link href="/download-teen-patti-gold-apk" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Latest APK</Link>
               </div>
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">

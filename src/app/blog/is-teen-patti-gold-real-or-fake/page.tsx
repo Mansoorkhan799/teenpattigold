@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getBlogPostingSchema } from '@/lib/blog-schema';
+import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
   title: {
@@ -76,7 +76,7 @@ export default function TeenPattiGoldRealOrFakePage() {
 
   return (
     <article className="py-12 px-4 md:px-8 max-w-4xl mx-auto">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       {/* Breadcrumb */}
       <nav className="mb-8 text-sm">
         <Link href="/" className="text-[#0ea5e9] hover:underline">Home</Link>
@@ -216,7 +216,7 @@ export default function TeenPattiGoldRealOrFakePage() {
           <div className="bg-secondary rounded-xl p-6 md:p-8">
             <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Ways to find fake Teen Patti Gold apps</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Because the Teen Patti Gold app is not available on the official Play Store, fake and harmful copies are prevalent. Always install from our <Link href="/download-teen-patti-gold" className="text-accent hover:underline">official Teen Patti Gold APK page</Link> only. Here are the techniques that will help you identify harmful copies and fake versions:
+              Because the Teen Patti Gold app is not available on the official Play Store, fake and harmful copies are prevalent. Always install from our <Link href="/download-teen-patti-gold-apk" className="text-accent hover:underline">official Teen Patti Gold APK page</Link> only. Here are the techniques that will help you identify harmful copies and fake versions:
             </p>
 
             <div className="space-y-6">
@@ -370,7 +370,7 @@ export default function TeenPattiGoldRealOrFakePage() {
           <div className="bg-secondary rounded-xl p-6 md:p-8">
             <h3 className="text-2xl font-bold mb-6 text-[#FFA500]">Related Articles</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Link href="/download-teen-patti-gold" className="bg-[#0A1029] p-4 rounded-lg hover:bg-[#0A1029]/70 transition-colors">
+              <Link href="/download-teen-patti-gold-apk" className="bg-[#0A1029] p-4 rounded-lg hover:bg-[#0A1029]/70 transition-colors">
                 <h4 className="text-white font-semibold mb-2">📥 Download Teen Patti Gold APK</h4>
                 <p className="text-gray-400 text-sm">Get the latest version of Teen Patti Gold for Android</p>
               </Link>
