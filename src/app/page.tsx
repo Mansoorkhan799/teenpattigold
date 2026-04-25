@@ -224,13 +224,8 @@ export default function Home() {
               </h2>
             </div>
 
-            {/* Short intro on mobile so the download button stays above the fold */}
-            <p className="text-base text-gray-300 leading-relaxed md:hidden">
-              Free Android APK · v1.656 · 49 MB · Android 5.0+. Daily bonuses, 100% welcome bonus on first deposit, instant JazzCash/EasyPaisa withdrawals.
-            </p>
-            {/* Full intro on tablet/desktop */}
-            <p className="hidden md:block text-lg text-gray-300 leading-relaxed">
-              Download <strong className="text-[#FFA500]">Teen Patti Gold APK</strong> v1.656 (49 MB, Android 5.0+) and play 30+ card games including Teen Patti, Rummy, Dragon Tiger, Andar Bahar and Poker. Deposit and withdraw via JazzCash &amp; EasyPaisa from Rs 100, claim a 100% welcome bonus on your first deposit, and earn daily bonuses, referral commissions and VIP rebates.
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+              <Link href="/download-teen-patti-gold-apk" className="text-[#FFA500] font-semibold hover:underline"><strong>Teen Patti Gold</strong></Link> Game is based on card games that you can play to earn real money with daily and weekly big rewards. This earning app offers very easy games, fast withdrawals, and 24/7 Customer Support.
             </p>
 
             {/* Download Button */}
@@ -277,17 +272,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Android only notice + 18+ / responsible gaming + third-party disclosure
-                Required E-E-A-T signals for YMYL gambling-adjacent content. */}
             <p className="text-gray-400 text-sm text-center italic">*Available for Android devices only.</p>
-            <div role="note" aria-label="Responsible gaming notice" className="mt-4 text-xs text-gray-400 leading-relaxed border border-gray-700/50 bg-[#0A1029]/60 rounded-lg p-3">
-              <p>
-                <strong className="text-[#FFA500]">18+ only.</strong> Real-money card games involve financial risk. Play responsibly, set limits, and never wager money you cannot afford to lose. If gambling is causing you harm, seek help. See our <Link href="/blog/responsible-gaming-guide-2026" className="text-[#0ea5e9] hover:underline">responsible gaming guide</Link>.
-              </p>
-              <p className="mt-2">
-                This is an independent informational guide about Teen Patti Gold for Pakistani players, not affiliated with the app developer. Read our <Link href="/disclaimer" className="text-[#0ea5e9] hover:underline">disclaimer</Link> and <Link href="/about-us" className="text-[#0ea5e9] hover:underline">editorial policy</Link>.
-              </p>
-            </div>
           </div>
 
           {/* Desktop Image - Primary hero image for Google Images ranking (teen patti gold) */}
