@@ -291,6 +291,9 @@ export default function Home() {
           </div>
 
           {/* Desktop Image - Primary hero image for Google Images ranking (teen patti gold) */}
+          {/* unoptimized=true so Googlebot sees the canonical /teen-patti-gold.webp URL
+              directly in the HTML <img src>, matching sitemap and schema declarations.
+              Without it Next.js serves /_next/image?url=... which mismatches the sitemap. */}
           <figure className="hidden md:block md:w-1/2 md:mt-8">
             <div className="relative ml-auto w-[320px] h-[320px] max-w-full">
               <Image
@@ -301,8 +304,7 @@ export default function Home() {
                 className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority={true}
                 fetchPriority="high"
-                quality={70}
-                sizes="320px"
+                unoptimized={true}
                 title="Teen Patti Gold"
               />
             </div>
@@ -320,8 +322,7 @@ export default function Home() {
                 className="object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority={true}
                 fetchPriority="high"
-                quality={70}
-                sizes="280px"
+                unoptimized={true}
                 title="Teen Patti Gold"
               />
             </div>
