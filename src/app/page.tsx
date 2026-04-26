@@ -8,10 +8,10 @@ import { SITE_ARTICLE_DATE_PUBLISHED, getSiteArticleDateModified } from '@/lib/s
 /** Hreflang for `/` only — title, description, OG, etc. come from root `layout.tsx`. */
 export const metadata: Metadata = {
   alternates: {
-    canonical: 'https://teenpattigoldgame.com.pk/',
+    canonical: 'https://teenpattigoldgame.com.pk',
     languages: {
-      en: 'https://teenpattigoldgame.com.pk/',
-      'x-default': 'https://teenpattigoldgame.com.pk/',
+      en: 'https://teenpattigoldgame.com.pk',
+      'x-default': 'https://teenpattigoldgame.com.pk',
     },
   },
 };
