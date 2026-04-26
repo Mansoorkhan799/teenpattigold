@@ -96,28 +96,28 @@ export default function Home() {
         },
         "primaryImageOfPage": {
           "@type": "ImageObject",
-          "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
-          "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
-          "width": 400,
-          "height": 711,
-          "name": "Teen Patti Gold game interface",
-          "description": "Teen Patti Gold — Pakistan card game app interface, APK download and real-money play.",
-          "caption": "Teen Patti Gold — play Teen Patti and card games in Pakistan",
+          "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+          "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+          "width": 512,
+          "height": 512,
+          "name": "Teen Patti Gold official app icon",
+          "description": "Teen Patti Gold — Pakistan's #1 card game app. Download Teen Patti Gold APK free. Play Teen Patti, Rummy, Dragon Tiger and earn real money.",
+          "caption": "Teen Patti Gold — Pakistan's #1 card game app. Download free APK.",
           ...imageObjectLicensing
         }
       },
-      // Standalone primary ImageObject (matches card-rummy.com.pk pattern):
-      // gives Google a fully-licensed brand image node it can attach to
-      // Image Search results with proper attribution.
+      // Standalone primary ImageObject — gives Google a fully-licensed brand
+      // image node it can attach to Image Search results with proper attribution.
+      // Must match primaryImageOfPage so Google sees one consistent signal.
       {
         "@type": "ImageObject",
-        "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp#primary",
-        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
-        "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
+        "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp#primary",
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
+        "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
         "name": "Teen Patti Gold",
         "description": "Teen Patti Gold — Pakistan's premier card game app. Official Teen Patti Gold brand image. Play Teen Patti, Rummy, Dragon vs Tiger and win real cash. Download Teen Patti Gold APK.",
-        "width": 400,
-        "height": 711,
+        "width": 512,
+        "height": 512,
         ...imageObjectLicensing
       },
       {

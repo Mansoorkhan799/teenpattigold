@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import { LOGO_URL } from '@/lib/site-images';
 
 function escapeXml(value: string): string {
   return value
@@ -12,7 +11,6 @@ function escapeXml(value: string): string {
 
 export async function GET() {
   const baseUrl = 'https://teenpattigoldgame.com.pk';
-  const logoImageLoc = LOGO_URL;
   // Single source-of-truth lastmod for the dynamic sitemap. Re-deploys
   // automatically refresh the date so Google's "Last read" matches.
   const lastModNow = new Date().toISOString();
@@ -304,7 +302,7 @@ export async function GET() {
     <mobile:mobile/>
     ${page.images?.map(img => `
     <image:image>
-      <image:loc>${escapeXml(img.loc === '/teen-patti-gold.webp' ? logoImageLoc : baseUrl + img.loc)}</image:loc>
+      <image:loc>${escapeXml(baseUrl + img.loc)}</image:loc>
       <image:title>${escapeXml(img.title)}</image:title>
       <image:caption>${escapeXml(img.caption)}</image:caption>
     </image:image>`).join('') || ''}
