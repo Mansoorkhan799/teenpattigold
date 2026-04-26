@@ -46,10 +46,18 @@ const nextConfig = {
         source: '/robots.txt',
         destination: '/api/robots',
       },
-      // Sitemap API route
+      // Sitemap API routes
       {
         source: '/sitemap.xml',
         destination: '/api/sitemap',
+      },
+      {
+        source: '/sitemap-index.xml',
+        destination: '/api/sitemap-index',
+      },
+      {
+        source: '/image-sitemap.xml',
+        destination: '/api/image-sitemap',
       },
     ];
   },
