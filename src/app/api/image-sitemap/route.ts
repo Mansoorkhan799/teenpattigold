@@ -31,6 +31,41 @@ export async function GET() {
           title: "Teen Patti Gold - Pakistan's #1 Card Game App",
           caption: 'Download Teen Patti Gold APK free. Play Teen Patti, Rummy, Dragon Tiger and earn real money in Pakistan.',
         },
+        {
+          loc: '/teen-patti-gold-game.webp',
+          title: 'Teen Patti Gold Game Interface - Play Card Games in Pakistan',
+          caption: 'Teen Patti Gold game screen — real-money card games including Teen Patti, Rummy, Dragon vs Tiger in Pakistan.',
+        },
+        {
+          loc: '/teen-patti-gold-app.webp',
+          title: 'Teen Patti Gold App - Games Collection',
+          caption: 'Teen Patti Gold app games collection — Rummy, Dragon Tiger, Teen Patti and more.',
+        },
+        {
+          loc: '/teen-patti-gold-apk.webp',
+          title: 'Teen Patti Gold APK V1.656 Download',
+          caption: 'Teen Patti Gold APK V1.656 for Android — free download for Pakistan players.',
+        },
+        {
+          loc: '/teen-patti-gold-deposit-money.webp',
+          title: 'Teen Patti Gold Deposit Money via JazzCash EasyPaisa',
+          caption: 'Deposit money in Teen Patti Gold using JazzCash and EasyPaisa in Pakistan.',
+        },
+        {
+          loc: '/teen-patti-gold-refer-and-earn.webp',
+          title: 'Teen Patti Gold Refer and Earn - Invite Friends',
+          caption: 'Earn real money by referring friends to Teen Patti Gold in Pakistan.',
+        },
+        {
+          loc: '/teen-patti-gold-vip-program.webp',
+          title: 'Teen Patti Gold VIP Program - Recharge Rebate Bonuses',
+          caption: 'Teen Patti Gold VIP program with recharge rebates and daily bonuses for Pakistan players.',
+        },
+        {
+          loc: '/teen-patti-gold-bind-account.webp',
+          title: 'Teen Patti Gold Bind Email - Account Security',
+          caption: 'Secure your Teen Patti Gold account by binding your email address.',
+        },
       ],
     },
     {
