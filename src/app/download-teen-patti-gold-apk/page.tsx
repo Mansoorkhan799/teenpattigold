@@ -6,10 +6,10 @@ import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_APK } from '@/lib/brea
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'Download Teen Patti Gold APK Latest Version Free 2026',
+    absolute: 'How to Download Teen Patti Gold APK Free 2026 — Latest Version V1.656',
   },
   description:
-    'Download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Play 30+ card games — Teen Patti, Rummy, Dragon Tiger. Earn real cash via JazzCash & EasyPaisa.',
+    'How to download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Step-by-step install guide — play 30+ card games, earn real cash via JazzCash & EasyPaisa.',
   keywords: [
     'Teen Patti Gold APK',
     'Teen Patti Gold APK download',
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     canonical: 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk',
   },
   openGraph: {
-    title: 'Download Teen Patti Gold APK Latest Version Free 2026',
+    title: 'How to Download Teen Patti Gold APK Free 2026 — Latest Version V1.656',
     description:
-      'Download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Play 30+ card games — Teen Patti, Rummy, Dragon Tiger. Earn real cash via JazzCash & EasyPaisa.',
+      'How to download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Step-by-step install guide — play 30+ card games, earn real cash via JazzCash & EasyPaisa.',
     url: 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk',
     siteName: 'Teen Patti Gold',
     locale: 'en_PK',
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Download Teen Patti Gold APK Latest Version Free 2026',
+    title: 'How to Download Teen Patti Gold APK Free 2026 — Latest Version V1.656',
     description:
-      'Download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Play 30+ card games — Teen Patti, Rummy, Dragon Tiger. Earn real cash via JazzCash & EasyPaisa.',
+      'How to download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Step-by-step install guide — play 30+ card games, earn real cash via JazzCash & EasyPaisa.',
     images: [LOGO_URL],
   },
 };
@@ -97,43 +97,50 @@ const softwareSchema = {
 const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'How to Download Teen Patti Gold APK Latest Version on Android',
-  description: 'Step-by-step guide to download and install the latest Teen Patti Gold APK on Android devices in Pakistan.',
+  '@id': 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk#howto',
+  name: 'How to Download Teen Patti Gold APK on Android',
+  description: 'Step-by-step guide to download and install the latest Teen Patti Gold APK V1.656 free on any Android device in Pakistan.',
   totalTime: 'PT5M',
   supply: [
-    { '@type': 'HowToSupply', name: 'Android device (Android 5.0+)' },
-    { '@type': 'HowToSupply', name: 'Stable internet connection' },
+    { '@type': 'HowToSupply', name: 'Android device (Android 5.0 or higher)' },
+    { '@type': 'HowToSupply', name: 'Stable internet connection (Wi-Fi or 4G)' },
+    { '@type': 'HowToSupply', name: 'At least 100 MB free storage space' },
   ],
   step: [
     {
       '@type': 'HowToStep',
       position: 1,
       name: 'Tap the Download Button',
-      text: 'Click the Download Now button on this page to start downloading the Teen Patti Gold APK V1.656 file.',
+      url: 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk#download-button',
+      text: 'Tap the orange "Download Now" button on this page. The official Teen Patti Gold APK V1.656 (49 MB) will begin downloading to your Android device immediately.',
     },
     {
       '@type': 'HowToStep',
       position: 2,
-      name: 'Enable Unknown Sources',
-      text: 'Go to Settings > Security > enable "Install from Unknown Sources" or "Allow from this source" on your Android device.',
+      name: 'Enable Install from Unknown Sources',
+      url: 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk#enable-unknown-sources',
+      text: 'Go to your phone\'s Settings > Security (or Privacy on newer Android). Find "Install Unknown Apps" or "Unknown Sources" and enable it for your browser or file manager. This allows you to install APK files downloaded outside the Play Store.',
     },
     {
       '@type': 'HowToStep',
       position: 3,
-      name: 'Open the APK File',
-      text: 'Open your Downloads folder in the File Manager, find the Teen Patti Gold APK, and tap it to begin installation.',
+      name: 'Open the Downloaded APK File',
+      url: 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk#open-apk',
+      text: 'Open your phone\'s Downloads folder using the File Manager app. Find the Teen Patti Gold APK file (teen-patti-gold.apk) and tap it to launch the installer.',
     },
     {
       '@type': 'HowToStep',
       position: 4,
-      name: 'Install the App',
-      text: 'Tap Install and wait a few seconds for the installation to complete automatically.',
+      name: 'Install Teen Patti Gold',
+      url: 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk#install',
+      text: 'Tap the "Install" button when the installer prompt appears. The app will be installed automatically within a few seconds. Do not close the screen during installation.',
     },
     {
       '@type': 'HowToStep',
       position: 5,
-      name: 'Register and Start Playing',
-      text: 'Open Teen Patti Gold, create a new account with your mobile number, make your first deposit, and start earning real money.',
+      name: 'Open the App and Register',
+      url: 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk#register',
+      text: 'Tap "Open" once installation is complete, or find the Teen Patti Gold icon on your home screen. Register a free account using your mobile number, verify with the OTP, make your first deposit via JazzCash or EasyPaisa, and start playing.',
     },
   ],
 };
@@ -229,9 +236,9 @@ export default function TeenPattiGoldApkPage() {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              <span className="text-[#FFA500]">Teen Patti Gold APK</span>
+              <span className="text-[#FFA500]">How to Download</span>
               <br />
-              <span className="text-white">Latest Version Free Download 2026</span>
+              <span className="text-white">Teen Patti Gold APK Free 2026</span>
             </h1>
             <p className="text-lg text-gray-300 leading-relaxed">
               <Link href="/" className="text-[#FFA500] font-semibold hover:underline">Teen Patti Gold</Link> is Pakistan&apos;s most popular online card game app. Download the latest APK V1.656 free for Android and play 30+ exciting games like Teen Patti, Rummy, and Dragon Tiger. Earn real cash and withdraw instantly via JazzCash & EasyPaisa.

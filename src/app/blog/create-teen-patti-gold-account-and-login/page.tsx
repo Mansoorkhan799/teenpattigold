@@ -65,15 +65,77 @@ export default function CreateAccountLogin() {
   const howToSchema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'Create a Teen Patti Gold account and log in',
-    description:
-      'Create your Teen Patti Gold account and log in from Pakistan: OTP, password and wallet access before JazzCash or EasyPaisa deposits.',
+    '@id': 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login#howto-register',
+    name: 'How to Create a Teen Patti Gold Account',
+    description: 'Step-by-step guide to register a new Teen Patti Gold account in Pakistan using your mobile number and OTP verification.',
     totalTime: 'PT5M',
+    supply: [
+      { '@type': 'HowToSupply', name: 'Teen Patti Gold app installed on Android' },
+      { '@type': 'HowToSupply', name: 'Valid Pakistani mobile number' },
+      { '@type': 'HowToSupply', name: 'Stable internet connection' },
+    ],
     step: [
-      { '@type': 'HowToStep', name: 'Download the Teen Patti Gold App', text: 'Download the Teen Patti Gold app from the official website and install it on your Android device.' },
-      { '@type': 'HowToStep', name: 'Open the App and Tap Register', text: "Launch the app and tap the Register button on the welcome screen to begin account creation." },
-      { '@type': 'HowToStep', name: 'Fill Out the Registration Form', text: 'Provide your phone number, create a password, and complete the registration form.' },
-      { '@type': 'HowToStep', name: 'Verify and Login', text: 'Verify your account and login to start playing Teen Patti, Rummy, and other card games.' },
+      {
+        '@type': 'HowToStep', position: 1,
+        name: 'Download and Install Teen Patti Gold',
+        url: 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk',
+        text: 'Download the Teen Patti Gold APK V1.656 from the official website. Enable "Install from Unknown Sources" in Settings, then open the APK file and tap Install.',
+      },
+      {
+        '@type': 'HowToStep', position: 2,
+        name: 'Open the App and Tap Register',
+        text: 'Launch the Teen Patti Gold app on your device. On the welcome screen, tap the "Register" button to begin creating your new account.',
+      },
+      {
+        '@type': 'HowToStep', position: 3,
+        name: 'Fill Out the Registration Form',
+        text: 'Enter your valid Pakistani mobile number, create a strong password (minimum 6 characters with letters and numbers), confirm the password, and enter the OTP sent to your mobile number.',
+      },
+      {
+        '@type': 'HowToStep', position: 4,
+        name: 'Complete Registration',
+        text: 'After filling all required fields, tap the "Register" button. Your Teen Patti Gold account is created instantly and you are logged in automatically.',
+      },
+      {
+        '@type': 'HowToStep', position: 5,
+        name: 'Claim Your Welcome Bonus',
+        text: 'After registration, make your first deposit via JazzCash or EasyPaisa to unlock the welcome bonus. Your chips are added instantly and you can start playing all 30+ card games.',
+      },
+    ],
+  };
+
+  const loginHowToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    '@id': 'https://teenpattigoldgame.com.pk/blog/create-teen-patti-gold-account-and-login#howto-login',
+    name: 'How to Login to Teen Patti Gold',
+    description: 'Step-by-step guide to log in to your existing Teen Patti Gold account on Android using your mobile number and password.',
+    totalTime: 'PT2M',
+    supply: [
+      { '@type': 'HowToSupply', name: 'Teen Patti Gold app installed on Android' },
+      { '@type': 'HowToSupply', name: 'Registered mobile number and password' },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep', position: 1,
+        name: 'Open the Teen Patti Gold App',
+        text: 'Tap the Teen Patti Gold icon on your Android home screen to launch the app. Make sure you have a stable internet connection.',
+      },
+      {
+        '@type': 'HowToStep', position: 2,
+        name: 'Enter Your Mobile Number and Password',
+        text: 'On the welcome screen, tap "Login". Enter the mobile number you used during registration and your account password in the fields provided.',
+      },
+      {
+        '@type': 'HowToStep', position: 3,
+        name: 'Tap the Login Button',
+        text: 'Tap the orange "Login" button. If your credentials are correct, you will be taken directly to the Teen Patti Gold lobby.',
+      },
+      {
+        '@type': 'HowToStep', position: 4,
+        name: 'Verify Identity If Prompted',
+        text: 'If logging in from a new device, Teen Patti Gold may send an OTP to your registered mobile number for security verification. Enter the OTP to complete login.',
+      },
     ],
   };
 
@@ -81,6 +143,7 @@ export default function CreateAccountLogin() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(loginHowToSchema) }} />
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
           <div className="mb-6">
