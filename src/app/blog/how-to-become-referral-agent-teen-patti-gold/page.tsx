@@ -99,6 +99,44 @@ export default function ReferralAgentPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        'name': 'How to Become a Referral Agent for Teen Patti Gold',
+        'description': 'Step-by-step guide to register as a Teen Patti Gold referral agent, get your agent link, invite players, earn commission, and withdraw earnings in Pakistan.',
+        'totalTime': 'PT10M',
+        'supply': [
+          { '@type': 'HowToSupply', 'name': 'Teen Patti Gold app (Android 5.0+)' },
+          { '@type': 'HowToSupply', 'name': 'Registered Teen Patti Gold account' },
+          { '@type': 'HowToSupply', 'name': 'JazzCash or EasyPaisa for withdrawals' },
+        ],
+        'step': [
+          {
+            '@type': 'HowToStep',
+            'position': 1,
+            'name': 'Register for the Referral Program',
+            'text': 'Open the Teen Patti Gold app, go to the "Refer & Earn" or "Agent Program" section, sign up with your details, and verify your phone number or email to activate your agent account.',
+          },
+          {
+            '@type': 'HowToStep',
+            'position': 2,
+            'name': 'Get Your Unique Referral Link',
+            'text': 'Once registered, open the Agent or Refer & Earn section to find your unique referral link and agent code. Tap Copy or Share to distribute it on WhatsApp, Facebook, Instagram, and gaming forums.',
+          },
+          {
+            '@type': 'HowToStep',
+            'position': 3,
+            'name': 'Invite Players and Earn Commission',
+            'text': 'Share your referral link with friends and online users. When they download the app, register, and start depositing and playing, commission is automatically credited to your agent account based on their activity.',
+          },
+          {
+            '@type': 'HowToStep',
+            'position': 4,
+            'name': 'Withdraw Your Earnings',
+            'text': 'Go to the Wallet or Agent Earnings section, tap Withdraw, select JazzCash, EasyPaisa, or Bank Card, enter your account details and amount (minimum Rs 500), and confirm. Earnings are transferred within 3–24 hours.',
+          },
+        ],
+      }) }} />
 
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">

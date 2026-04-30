@@ -189,6 +189,12 @@ export default function WithdrawMoneyPage() {
         "@type": "HowTo",
         "name": "How to Withdraw Money from Teen Patti Gold",
         "description": "Step-by-step guide to withdraw money from Teen Patti Gold using JazzCash, EasyPaisa, and Bank Transfer.",
+        "totalTime": "PT10M",
+        "supply": [
+          { "@type": "HowToSupply", "name": "Teen Patti Gold app with available balance" },
+          { "@type": "HowToSupply", "name": "JazzCash, EasyPaisa, or Bank Card account" },
+          { "@type": "HowToSupply", "name": "Minimum Rs 100 withdrawal balance" },
+        ],
         "step": steps.map((s, i) => ({ "@type": "HowToStep", "position": i + 1, "name": s.title, "text": s.desc })),
       }) }} />
 

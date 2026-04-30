@@ -177,6 +177,12 @@ export default function DepositMoneyPage() {
         "@type": "HowTo",
         "name": "How to Deposit Money in Teen Patti Gold",
         "description": "Step-by-step guide to deposit money in Teen Patti Gold using JazzCash, EasyPaisa, or Bank Card.",
+        "totalTime": "PT5M",
+        "supply": [
+          { "@type": "HowToSupply", "name": "Teen Patti Gold app (Android 5.0+)" },
+          { "@type": "HowToSupply", "name": "JazzCash, EasyPaisa, or Bank Card account" },
+          { "@type": "HowToSupply", "name": "Minimum Rs 200" },
+        ],
         "step": steps.map((s, i) => ({ "@type": "HowToStep", "position": i + 1, "name": s.title, "text": s.desc })),
       }) }} />
 
