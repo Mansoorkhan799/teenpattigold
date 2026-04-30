@@ -126,6 +126,14 @@ export default function Home() {
         "mainEntity": [
           {
             "@type": "Question",
+            "name": "What is Teen Patti Gold?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Teen Patti Gold is a popular online real-money card game app developed for Android and iOS devices. It lets players in Pakistan play classic card games like Teen Patti, Rummy, Dragon Tiger, and 30+ other variations against real opponents. Players can deposit money via JazzCash or EasyPaisa, win chips through skill-based gameplay, and withdraw real cash earnings directly to their mobile wallets or bank accounts. The app is free to download, supports Android 5.0+ devices, and offers features like daily rewards, VIP membership, referral bonuses, and private tables for friends."
+            }
+          },
+          {
+            "@type": "Question",
             "name": "How many players can play Teen Patti Gold at a time?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -208,6 +216,63 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        '@id': 'https://teenpattigoldgame.com.pk/#howto-get-started',
+        'name': 'How to Download and Start Playing Teen Patti Gold in Pakistan',
+        'description': 'Complete step-by-step guide to download the Teen Patti Gold APK, create an account, make a deposit, play card games, and withdraw real money in Pakistan.',
+        'totalTime': 'PT20M',
+        'supply': [
+          { '@type': 'HowToSupply', 'name': 'Android device (Android 5.0+)' },
+          { '@type': 'HowToSupply', 'name': 'JazzCash or EasyPaisa mobile wallet' },
+          { '@type': 'HowToSupply', 'name': 'Minimum Rs 200 for first deposit' },
+        ],
+        'step': [
+          {
+            '@type': 'HowToStep',
+            'position': 1,
+            'name': 'Download the Teen Patti Gold APK',
+            'url': 'https://teenpattigoldgame.com.pk/#download-install',
+            'text': 'Tap the Download Now button on this page to get the official Teen Patti Gold APK V1.656 (49 MB). Go to Settings > Security on your Android device and enable "Install from Unknown Sources", then open the downloaded APK from your Downloads folder and tap Install.',
+          },
+          {
+            '@type': 'HowToStep',
+            'position': 2,
+            'name': 'Register a New Account',
+            'url': 'https://teenpattigoldgame.com.pk/#register',
+            'text': 'Open the app and tap Register. Enter your mobile phone number, verify it with the OTP sent via SMS, and set a strong password. Your account is created instantly and you receive a welcome bonus.',
+          },
+          {
+            '@type': 'HowToStep',
+            'position': 3,
+            'name': 'Bind Your Email Address',
+            'url': 'https://teenpattigoldgame.com.pk/#bind-email',
+            'text': 'Go to Settings inside the app and tap Bind Email. Enter your email address and confirm it. Binding your email secures your account and allows account recovery if you ever lose access.',
+          },
+          {
+            '@type': 'HowToStep',
+            'position': 4,
+            'name': 'Deposit Money to Get Chips',
+            'url': 'https://teenpattigoldgame.com.pk/#deposit',
+            'text': 'Tap the Shop button in the app, choose a payment method (JazzCash, EasyPaisa, or Bank Card), select a deposit amount (minimum Rs 200), enter your account number, and approve the payment request. Chips are added to your wallet instantly.',
+          },
+          {
+            '@type': 'HowToStep',
+            'position': 5,
+            'name': 'Choose a Game and Start Playing',
+            'url': 'https://teenpattigoldgame.com.pk/#how-to-play-earn',
+            'text': 'Browse the lobby and choose from 30+ games including Teen Patti, Rummy, Dragon Tiger, and more. Join a table that matches your budget, place your bets, and compete against real players to win chips.',
+          },
+          {
+            '@type': 'HowToStep',
+            'position': 6,
+            'name': 'Withdraw Your Winnings',
+            'url': 'https://teenpattigoldgame.com.pk/#withdraw',
+            'text': 'Open the Wallet section and tap Withdraw. Select JazzCash, EasyPaisa, or Bank Card, enter the amount (minimum Rs 100) and your account details, then confirm. Your earnings are transferred within 3–24 hours.',
+          },
+        ],
+      }) }} />
       
       {/* Hero Section with improved spacing */}
       <section className="py-6 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
@@ -473,7 +538,7 @@ export default function Home() {
           <div className="relative">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-1.5 h-8 bg-gradient-to-b from-[#FFA500] to-[#f97316] rounded-full"></div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#FFA500]">Introduction to Teen Patti Gold</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#FFA500]">What is Teen Patti Gold?</h2>
             </div>
             <div className="space-y-4">
               <p className="text-gray-300 leading-relaxed text-base md:text-lg">
@@ -1550,6 +1615,20 @@ export default function Home() {
         <div className="bg-secondary rounded-xl p-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#FFA500] text-center">Frequently Asked Questions</h2>
           <div className="space-y-4">
+            <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-[#FFA500]/50 transition-all duration-300 shadow-lg overflow-hidden" open>
+              <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#FFA500] transition-colors">
+                <span>What is Teen Patti Gold?</span>
+                <span className="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                  <svg className="w-6 h-6 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </span>
+              </summary>
+              <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50">
+                <p className="pt-4">Teen Patti Gold is a popular online real-money card game app for Android and iOS. It lets players in Pakistan enjoy classic card games like Teen Patti, Rummy, Dragon Tiger, and 30+ other variations against real opponents. Players can deposit money via JazzCash or EasyPaisa, win chips through skill-based gameplay, and withdraw real cash earnings directly to their mobile wallets or bank accounts. The app is free to download, supports Android 5.0+ devices, and offers daily rewards, VIP membership, referral bonuses, and private tables for friends.</p>
+              </div>
+            </details>
+
             <details className="group bg-gradient-to-r from-[#0a1029] to-[#0a1029]/80 rounded-xl border border-gray-700 hover:border-[#FFA500]/50 transition-all duration-300 shadow-lg overflow-hidden">
               <summary className="flex items-center justify-between p-5 md:p-6 cursor-pointer text-white font-semibold text-lg hover:text-[#FFA500] transition-colors">
                 <span>How many players can play Teen Patti Gold at a time?</span>
