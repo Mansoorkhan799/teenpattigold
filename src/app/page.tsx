@@ -932,9 +932,20 @@ export default function Home() {
       <section id="download-install" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How to Download and Install the Teen Patti Gold APK?</h2>
-          <p className="text-gray-300 mb-5 leading-relaxed">
-            Get the official APK V1.656 (49 MB, Android 5.0+) directly from this site, allow install from unknown sources on your phone, then tap the file in your downloads folder to install. The full walkthrough — with screenshots, troubleshooting and alternate links — lives on the dedicated APK page.
-          </p>
+          <ol className="space-y-3 mb-5">
+            {[
+              'Open this site and tap the Download Now button to get the official APK V1.656 (49 MB).',
+              'Once the file is downloaded, go to your phone Settings and enable "Install from unknown sources".',
+              'Open your Downloads folder and tap the Teen Patti Gold APK file.',
+              'Tap Install and wait for the installation to complete.',
+              'Open the app and start playing.',
+            ].map((step, i) => (
+              <li key={i} className="flex items-start gap-3 text-gray-300 text-sm md:text-base">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#FFA500] text-[#06091F] font-bold text-sm flex items-center justify-center mt-0.5">{i + 1}</span>
+                <span className="leading-relaxed">{step}</span>
+              </li>
+            ))}
+          </ol>
           <ul className="grid sm:grid-cols-3 gap-3 mb-6">
             {[
               { c: '#FFA500', t: 'Latest version', s: 'V1.656 — 49 MB' },
@@ -1033,9 +1044,21 @@ export default function Home() {
       <section id="register" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How to Register a New Account on Teen Patti Gold?</h2>
-          <p className="text-gray-300 mb-5 leading-relaxed">
-            Open the app, tap Register, enter your phone number or email, set a strong password, then verify the OTP sent to you. Account creation takes under a minute and unlocks the welcome bonus instantly. Our complete account & login guide explains OTP retries, password rules and how to recover a locked account.
-          </p>
+          <ol className="space-y-3 mb-5">
+            {[
+              'Download and open the Teen Patti Gold app on your Android device.',
+              'On the main screen, tap the Register button.',
+              'Enter your phone number or email address.',
+              'Set a strong password using letters, numbers, and symbols.',
+              'Verify the OTP sent to your phone or email.',
+              'Your account is created — the welcome bonus is added instantly.',
+            ].map((step, i) => (
+              <li key={i} className="flex items-start gap-3 text-gray-300 text-sm md:text-base">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#0ea5e9] text-white font-bold text-sm flex items-center justify-center mt-0.5">{i + 1}</span>
+                <span className="leading-relaxed">{step}</span>
+              </li>
+            ))}
+          </ol>
           <Link
             href="/blog/create-teen-patti-gold-account-and-login"
             className="inline-flex items-center gap-2 bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
@@ -1052,9 +1075,21 @@ export default function Home() {
       <section id="bind-email" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How Can We Bind an Email Address?</h2>
-          <p className="text-gray-300 mb-5 leading-relaxed">
-            Binding your email is the safety net for your wallet — it lets you reset a forgotten password and restore your account on a new device. From the profile tab, choose Bind Email, enter your address, paste the code we email you, and submit. Common verification errors and recovery flows are covered in detail in our login problems guide.
-          </p>
+          <ol className="space-y-3 mb-5">
+            {[
+              'Open the Teen Patti Gold app and log in to your account.',
+              'Go to your Profile tab and tap on Bind Email.',
+              'Enter your active email address in the field provided.',
+              'Check your inbox for the verification code sent by the app.',
+              'Paste the code into the app and tap Submit.',
+              'Your email is now bound — use it to recover your account or reset your password anytime.',
+            ].map((step, i) => (
+              <li key={i} className="flex items-start gap-3 text-gray-300 text-sm md:text-base">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#a855f7] text-white font-bold text-sm flex items-center justify-center mt-0.5">{i + 1}</span>
+                <span className="leading-relaxed">{step}</span>
+              </li>
+            ))}
+          </ol>
           <Link
             href="/blog/teen-patti-gold-login-problems-solutions"
             className="inline-flex items-center gap-2 bg-[#a855f7] hover:bg-[#7c3aed] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
@@ -1071,9 +1106,21 @@ export default function Home() {
       <section id="login" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How to Log in to the Teen Patti Gold Game?</h2>
-          <p className="text-gray-300 mb-5 leading-relaxed">
-            Open the app, tap Login, enter the phone number or email you registered with, and your password — or use the password reset link if you&apos;ve forgotten it. Login takes a few seconds. If you keep getting an OTP error or a &ldquo;wrong password&rdquo; loop, our login troubleshooting article walks through every fix.
-          </p>
+          <ol className="space-y-3 mb-5">
+            {[
+              'Open the Teen Patti Gold app on your device.',
+              'Tap the Login button on the main screen.',
+              'Enter your registered phone number or email address.',
+              'Type your password and tap Login.',
+              'If you forgot your password, tap "Forgot Password" and follow the OTP reset steps.',
+              'You are now logged in and ready to play.',
+            ].map((step, i) => (
+              <li key={i} className="flex items-start gap-3 text-gray-300 text-sm md:text-base">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#06b6d4] text-white font-bold text-sm flex items-center justify-center mt-0.5">{i + 1}</span>
+                <span className="leading-relaxed">{step}</span>
+              </li>
+            ))}
+          </ol>
           <Link
             href="/blog/teen-patti-gold-login-problems-solutions"
             className="inline-flex items-center gap-2 bg-[#06b6d4] hover:bg-[#0891b2] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
@@ -1090,9 +1137,21 @@ export default function Home() {
       <section id="deposit" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How to Deposit or Buy Chips on the Teen Patti Gold?</h2>
-          <p className="text-gray-300 mb-5 leading-relaxed">
-            Open the in-app SHOP, choose JazzCash, EasyPaisa or bank card, pick your chip pack and confirm. Chips usually land in your wallet within seconds. The full guide explains minimum deposit (Rs 100), the 100% welcome bonus eligibility and how to fix a stuck top-up.
-          </p>
+          <ol className="space-y-3 mb-5">
+            {[
+              'Open the Teen Patti Gold app and log in to your account.',
+              'Tap the Shop or Deposit button from the main menu.',
+              'Select your payment method — JazzCash, EasyPaisa, or bank card.',
+              'Choose a chip pack and enter the amount you want to deposit (minimum Rs 100).',
+              'Confirm the payment and enter your transaction PIN.',
+              'Chips are credited to your wallet instantly.',
+            ].map((step, i) => (
+              <li key={i} className="flex items-start gap-3 text-gray-300 text-sm md:text-base">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#4ade80] text-[#06091F] font-bold text-sm flex items-center justify-center mt-0.5">{i + 1}</span>
+                <span className="leading-relaxed">{step}</span>
+              </li>
+            ))}
+          </ol>
           <ul className="grid sm:grid-cols-3 gap-3 mb-6">
             {[
               { c: '#4ade80', t: 'Minimum', s: 'Rs 100' },
@@ -1121,9 +1180,21 @@ export default function Home() {
       <section id="withdraw" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#FFA500]">How to Withdraw Funds From the Teen Patti Gold?</h2>
-          <p className="text-gray-300 mb-5 leading-relaxed">
-            Tap Wallet → Withdraw, pick JazzCash, EasyPaisa or bank, enter your account number and amount, then confirm. Payouts typically settle in 3–24 hours from Rs 100 minimum. The dedicated withdrawal page covers daily limits, KYC for larger payouts, and what to do if a withdrawal is delayed.
-          </p>
+          <ol className="space-y-3 mb-5">
+            {[
+              'Open the Teen Patti Gold app and log in to your account.',
+              'Tap Wallet and then select the Withdraw option.',
+              'Choose your preferred payment channel — JazzCash, EasyPaisa, or bank transfer.',
+              'Enter your account number and the amount you want to withdraw (minimum Rs 100).',
+              'Double-check all details and tap Confirm.',
+              'Your withdrawal is processed and funds settle in 3–24 hours.',
+            ].map((step, i) => (
+              <li key={i} className="flex items-start gap-3 text-gray-300 text-sm md:text-base">
+                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#ec4899] text-white font-bold text-sm flex items-center justify-center mt-0.5">{i + 1}</span>
+                <span className="leading-relaxed">{step}</span>
+              </li>
+            ))}
+          </ol>
           <ul className="grid sm:grid-cols-3 gap-3 mb-6">
             {[
               { c: '#ec4899', t: 'Minimum', s: 'Rs 100' },
