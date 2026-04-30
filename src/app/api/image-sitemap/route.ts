@@ -293,6 +293,16 @@ export async function GET() {
         },
       ],
     },
+    {
+      pageUrl: '/blog/how-to-become-referral-agent-teen-patti-gold',
+      images: [
+        {
+          loc: '/teen-patti-gold-refer-and-earn.webp',
+          title: 'How to Become a Referral Agent for Teen Patti Gold 2026',
+          caption: 'Step by step guide to become a Teen Patti Gold referral agent and earn commission in Pakistan',
+        },
+      ],
+    },
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

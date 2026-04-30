@@ -204,6 +204,15 @@ export default function Blog() {
             "name": "Teen Patti Gold vs Stars — Which Wins in Pakistan?",
             "url": "https://teenpattigoldgame.com.pk/blog/teen-patti-gold-vs-teen-patti-stars"
           }
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "item": {
+            "@type": "BlogPosting",
+            "name": "How to Become a Referral Agent for Teen Patti Gold 2026",
+            "url": "https://teenpattigoldgame.com.pk/blog/how-to-become-referral-agent-teen-patti-gold"
+          }
         }
       ]
     },
@@ -416,6 +425,18 @@ export default function Blog() {
             <span>📅 March 10, 2026</span>
             <span>•</span>
             <span>7 min read</span>
+          </div>
+          <span className="font-semibold text-accent group-hover:underline">Read More →</span>
+        </Link>
+
+        {/* Seventeenth Post - Referral Agent */}
+        <Link href="/blog/how-to-become-referral-agent-teen-patti-gold" className={blogCardClassName}>
+          <h2 className="text-2xl font-bold mb-4 text-white transition-colors group-hover:text-[#FFA500]">How to Become a Referral Agent for Teen Patti Gold</h2>
+          <p className="mb-4 flex-1 text-gray-300">Become a Teen Patti Gold referral agent in Pakistan. Get your unique agent link, invite players, earn commission on deposits, and withdraw via JazzCash or EasyPaisa.</p>
+          <div className="mb-4 flex flex-wrap items-center gap-2 text-sm text-gray-400">
+            <span>📅 April 30, 2026</span>
+            <span>•</span>
+            <span>6 min read</span>
           </div>
           <span className="font-semibold text-accent group-hover:underline">Read More →</span>
         </Link>

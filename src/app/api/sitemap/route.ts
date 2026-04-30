@@ -317,6 +317,13 @@ export async function GET() {
       changeFreq: 'monthly',
       priority: 0.85,
       images: [{ loc: '/teen-patti-gold-game.webp', title: 'Teen Patti Gold vs Teen Patti Stars 2026', caption: 'Comparison of Teen Patti Gold and Teen Patti Stars for Pakistan players' }]
+    },
+    {
+      url: '/blog/how-to-become-referral-agent-teen-patti-gold',
+      lastMod: lastModNow,
+      changeFreq: 'monthly',
+      priority: 0.9,
+      images: [{ loc: '/teen-patti-gold-refer-and-earn.webp', title: 'How to Become a Referral Agent for Teen Patti Gold 2026', caption: 'Step by step guide to become a Teen Patti Gold referral agent and earn commission in Pakistan' }]
     }
   ];
 
