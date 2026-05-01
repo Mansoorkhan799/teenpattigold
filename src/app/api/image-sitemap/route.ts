@@ -303,6 +303,16 @@ export async function GET() {
         },
       ],
     },
+    {
+      pageUrl: '/blog/responsible-gaming-guide-2026',
+      images: [
+        {
+          loc: '/teen-patti-gold-game.webp',
+          title: 'Responsible Gaming Guide 2026 - Teen Patti Gold Pakistan',
+          caption: 'Play Teen Patti Gold responsibly in Pakistan — set budgets, manage bankroll, avoid chasing losses.',
+        },
+      ],
+    },
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
