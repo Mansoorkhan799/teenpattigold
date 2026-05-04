@@ -904,7 +904,7 @@ export default function TeenPattiGoldApkPage() {
                             href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="font-medium underline-offset-2 hover:underline"
+                            className="font-medium text-blue-400 underline underline-offset-2 hover:text-blue-300"
                           >
                             {cell.text}
                           </a>

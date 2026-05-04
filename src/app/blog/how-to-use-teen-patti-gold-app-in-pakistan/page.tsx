@@ -238,7 +238,7 @@ export default function HowToUseApp() {
                       <li><strong>Wallet Section:</strong> View your balance, deposit money, and withdraw winnings</li>
                       <li><strong>Promotions:</strong> Check available bonuses, rewards, and special offers</li>
                       <li><strong>Profile:</strong> Manage your account settings and personal information</li>
-                      <li><strong>Support:</strong> Access 24/7 customer support via <a href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">live chat</a></li>
+                      <li><strong>Support:</strong> Access 24/7 customer support via <a href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-300">live chat</a></li>
                     </ul>
                   </div>
 
@@ -438,7 +438,7 @@ export default function HowToUseApp() {
                   <div className="bg-[#0A1029] rounded-lg p-6">
                     <h3 className="text-xl font-bold mb-3 text-accent">24/7 Support</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Access customer support anytime via <a href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">live chat</a>, Telegram, or email for instant help.
+                      Access customer support anytime via <a href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-300">live chat</a>, Telegram, or email for instant help.
                     </p>
                   </div>
                 </div>

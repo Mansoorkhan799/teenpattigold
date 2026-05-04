@@ -953,7 +953,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Private Tables &amp; Friend Play</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The Teen Patti Gold Game allows you to create private tables with your friends, promoting social gaming and friendly competition. You can set your preferred rules and stakes, where the private tables are ideal for beginners. The private tables offer you access to <a href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">live chat</a> and real-time interaction, making the gameplay exciting.</p>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The Teen Patti Gold Game allows you to create private tables with your friends, promoting social gaming and friendly competition. You can set your preferred rules and stakes, where the private tables are ideal for beginners. The private tables offer you access to <a href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-300">live chat</a> and real-time interaction, making the gameplay exciting.</p>
             </div>
             {/* Cross-Platform */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#06b6d4]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1126,7 +1126,7 @@ export default function Home() {
           </ol>
           <Link
             href="/blog/create-teen-patti-gold-account-and-login"
-            className="inline-flex items-center gap-2 bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-[#1d4ed8] hover:bg-[#1e3a8a] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
           >
             Open the account & login guide
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1157,7 +1157,7 @@ export default function Home() {
           </ol>
           <Link
             href="/blog/teen-patti-gold-login-problems-solutions"
-            className="inline-flex items-center gap-2 bg-[#a855f7] hover:bg-[#7c3aed] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-[#1d4ed8] hover:bg-[#1e3a8a] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
           >
             See email binding & login fixes
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1188,7 +1188,7 @@ export default function Home() {
           </ol>
           <Link
             href="/blog/teen-patti-gold-login-problems-solutions"
-            className="inline-flex items-center gap-2 bg-[#06b6d4] hover:bg-[#0891b2] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-[#1d4ed8] hover:bg-[#1e3a8a] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
           >
             Fix login problems
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1274,7 +1274,7 @@ export default function Home() {
           </ul>
           <Link
             href="/withdraw-money-from-teen-patti-gold"
-            className="inline-flex items-center gap-2 bg-[#ec4899] hover:bg-[#db2777] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 bg-[#1d4ed8] hover:bg-[#1e3a8a] text-white font-bold py-3 px-6 rounded-full transition-all shadow-lg hover:shadow-xl"
           >
             Read the withdrawal guide
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1511,7 +1511,7 @@ export default function Home() {
                 href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center mt-4 px-4 py-2 rounded-lg bg-[#0ea5e9]/20 border border-[#0ea5e9]/40 text-[#7dd3fc] hover:bg-[#0ea5e9]/30 transition-colors duration-200 text-sm font-semibold"
+                className="inline-flex items-center justify-center mt-4 px-4 py-2 rounded-lg bg-[#1d4ed8] hover:bg-[#1e3a8a] text-white border border-[#3b82f6] transition-colors duration-200 text-sm font-semibold"
               >
                 Open Live Chat Support
               </a>
