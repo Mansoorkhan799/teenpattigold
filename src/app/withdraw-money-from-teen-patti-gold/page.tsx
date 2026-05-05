@@ -1,6 +1,32 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_WITHDRAW } from '@/lib/breadcrumb-schema';
+import { imageObjectLicensing } from '@/lib/schema-image-licensing';
+
+const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
+
+// Licensed ImageObject for the on-page hero image so this page is a
+// Valid item in Search Console's "Image metadata" enhancement. We re-use
+// the canonical brand image @id so Google merges this signal with the
+// matching node already declared on the home, APK, iOS and PC pages.
+const withdrawImageGraphLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold.webp#primary`,
+      url: `${SITE_ORIGIN}/teen-patti-gold.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold.webp`,
+      name: 'Withdraw Money from Teen Patti Gold to JazzCash EasyPaisa',
+      description:
+        'How to withdraw money from Teen Patti Gold to JazzCash, EasyPaisa in Pakistan.',
+      width: 512,
+      height: 512,
+      ...imageObjectLicensing,
+    },
+  ],
+};
 
 export const metadata: Metadata = {
   title: {
@@ -173,6 +199,7 @@ export default function WithdrawMoneyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(withdrawBreadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(withdrawImageGraphLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -200,39 +227,57 @@ export default function WithdrawMoneyPage() {
 
       {/* Hero */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="flex flex-wrap justify-center gap-2">
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#FFA500] border border-[#FFA500]/30">JazzCash</span>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#4ade80] border border-[#4ade80]/30">EasyPaisa</span>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#60a5fa] border border-[#60a5fa]/30">Bank Card</span>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#a855f7] border border-[#a855f7]/30">Min Rs 100</span>
+        <div className="md:flex md:items-center md:justify-between md:gap-12">
+          <div className="md:w-1/2 space-y-6 text-center md:text-left">
+            <div className="flex flex-wrap justify-center md:justify-start gap-2">
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#FFA500] border border-[#FFA500]/30">JazzCash</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#4ade80] border border-[#4ade80]/30">EasyPaisa</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#60a5fa] border border-[#60a5fa]/30">Bank Card</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#a855f7] border border-[#a855f7]/30">Min Rs 100</span>
+            </div>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <span className="text-[#FFA500]">How to Withdraw Money</span>
+              <br />
+              <span className="text-white">from Teen Patti Gold?</span>
+            </h1>
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Fast, secure cash-outs via <strong className="text-white">JazzCash</strong>, <strong className="text-white">EasyPaisa</strong> and <strong className="text-white">Bank Card</strong>. Cash out your <Link href="/" className="text-[#FFA500] font-semibold hover:underline">Teen Patti Gold</Link> winnings in 3–24 hours with our step-by-step guide.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4">
+              <Link
+                href={DOWNLOAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-10 py-4 text-white font-bold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl"
+              >
+                <span>DOWNLOAD &amp; EARN</span>
+                <div className="ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                </div>
+              </Link>
+              <span className="text-sm text-[#4ade80] font-semibold bg-[#0A1029] border border-[#4ade80]/30 px-4 py-2 rounded-full inline-flex items-center gap-1.5">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
+                Payouts in 3–24 hours
+              </span>
+            </div>
           </div>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            <span className="text-[#FFA500]">How to Withdraw Money</span>
-            <br />
-            <span className="text-white">from Teen Patti Gold?</span>
-          </h1>
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-            Fast, secure cash-outs via <strong className="text-white">JazzCash</strong>, <strong className="text-white">EasyPaisa</strong> and <strong className="text-white">Bank Card</strong>. Cash out your <Link href="/" className="text-[#FFA500] font-semibold hover:underline">Teen Patti Gold</Link> winnings in 3–24 hours with our step-by-step guide.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href={DOWNLOAD_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-10 py-4 text-white font-bold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl"
-            >
-              <span>DOWNLOAD &amp; EARN</span>
-              <div className="ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-              </div>
-            </Link>
-            <span className="text-sm text-[#4ade80] font-semibold bg-[#0A1029] border border-[#4ade80]/30 px-4 py-2 rounded-full inline-flex items-center gap-1.5">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
-              Payouts in 3–24 hours
-            </span>
+
+          <div className="flex justify-center mt-10 md:mt-0 md:w-1/2">
+            <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px]">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#FFA500]/20 to-[#4ade80]/10 rounded-3xl blur-3xl pointer-events-none"></div>
+              <Image
+                src="/teen-patti-gold.webp"
+                alt="Withdraw money from Teen Patti Gold to JazzCash and EasyPaisa in Pakistan"
+                width={320}
+                height={320}
+                className="relative object-contain drop-shadow-2xl rounded-3xl w-full h-full"
+                priority
+                fetchPriority="high"
+                quality={75}
+              />
+            </div>
           </div>
         </div>
       </section>

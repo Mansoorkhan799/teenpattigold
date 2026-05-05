@@ -1,6 +1,32 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_DEPOSIT } from '@/lib/breadcrumb-schema';
+import { imageObjectLicensing } from '@/lib/schema-image-licensing';
+
+const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
+
+// Licensed ImageObject for the on-page hero image so this page becomes a
+// Valid item in Search Console's "Image metadata" enhancement. Re-uses
+// the canonical @id used in the image-sitemap so Google merges signals.
+const depositImageGraphLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold-deposit-money.webp#image`,
+      url: `${SITE_ORIGIN}/teen-patti-gold-deposit-money.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold-deposit-money.webp`,
+      name: 'Deposit Money in Teen Patti Gold via JazzCash EasyPaisa',
+      description:
+        'How to deposit money in Teen Patti Gold using JazzCash and EasyPaisa in Pakistan.',
+      width: 400,
+      height: 711,
+      representativeOfPage: true,
+      ...imageObjectLicensing,
+    },
+  ],
+};
 
 export const metadata: Metadata = {
   title: {
@@ -161,6 +187,7 @@ export default function DepositMoneyPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(depositBreadcrumbLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(depositImageGraphLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -188,39 +215,58 @@ export default function DepositMoneyPage() {
 
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="flex flex-wrap justify-center gap-2">
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#FFA500] border border-[#FFA500]/30">JazzCash</span>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#4ade80] border border-[#4ade80]/30">EasyPaisa</span>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#60a5fa] border border-[#60a5fa]/30">Bank Card</span>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#a855f7] border border-[#a855f7]/30">Min Rs 200</span>
+        <div className="md:flex md:items-center md:justify-between md:gap-12">
+          <div className="md:w-1/2 space-y-6 text-center md:text-left">
+            <div className="flex flex-wrap justify-center md:justify-start gap-2">
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#FFA500] border border-[#FFA500]/30">JazzCash</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#4ade80] border border-[#4ade80]/30">EasyPaisa</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#60a5fa] border border-[#60a5fa]/30">Bank Card</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#a855f7] border border-[#a855f7]/30">Min Rs 200</span>
+            </div>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <span className="text-[#FFA500]">How to Deposit Money</span>
+              <br />
+              <span className="text-white">in Teen Patti Gold?</span>
+            </h1>
+            <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+              Quick, safe and easy top-ups using <strong className="text-white">JazzCash</strong>, <strong className="text-white">EasyPaisa</strong> and <strong className="text-white">Bank Card</strong>. Add chips and start playing real-money games on <Link href="/" className="text-[#FFA500] font-semibold hover:underline">Teen Patti Gold</Link> in under a minute.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4">
+              <Link
+                href={DOWNLOAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-10 py-4 text-white font-bold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl"
+              >
+                <span>DOWNLOAD &amp; DEPOSIT</span>
+                <div className="ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                </div>
+              </Link>
+              <span className="text-sm text-[#4ade80] font-semibold bg-[#0A1029] border border-[#4ade80]/30 px-4 py-2 rounded-full inline-flex items-center gap-1.5">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
+                Instant chip credit
+              </span>
+            </div>
           </div>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            <span className="text-[#FFA500]">How to Deposit Money</span>
-            <br />
-            <span className="text-white">in Teen Patti Gold?</span>
-          </h1>
-          <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-            Quick, safe and easy top-ups using <strong className="text-white">JazzCash</strong>, <strong className="text-white">EasyPaisa</strong> and <strong className="text-white">Bank Card</strong>. Add chips and start playing real-money games on <Link href="/" className="text-[#FFA500] font-semibold hover:underline">Teen Patti Gold</Link> in under a minute.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href={DOWNLOAD_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-10 py-4 text-white font-bold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl"
-            >
-              <span>DOWNLOAD &amp; DEPOSIT</span>
-              <div className="ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-              </div>
-            </Link>
-            <span className="text-sm text-[#4ade80] font-semibold bg-[#0A1029] border border-[#4ade80]/30 px-4 py-2 rounded-full inline-flex items-center gap-1.5">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
-              Instant chip credit
-            </span>
+
+          <div className="flex justify-center mt-10 md:mt-0 md:w-1/2">
+            <div className="relative w-[260px] md:w-[300px]">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#4ade80]/20 to-[#FFA500]/10 rounded-3xl blur-3xl pointer-events-none"></div>
+              <Image
+                src="/teen-patti-gold-deposit-money.webp"
+                alt="Deposit money in Teen Patti Gold via JazzCash and EasyPaisa in Pakistan"
+                width={400}
+                height={711}
+                className="relative w-full h-auto object-contain drop-shadow-2xl rounded-2xl"
+                priority
+                fetchPriority="high"
+                quality={75}
+                sizes="(max-width: 768px) 260px, 300px"
+              />
+            </div>
           </div>
         </div>
       </section>
