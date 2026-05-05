@@ -62,10 +62,17 @@ export default function Home() {
         "softwareVersion": "V1.656",
         "fileSize": "49MB",
         "description": "Teen Patti Gold is Pakistan's most popular online card gaming app where players earn real money by playing Teen Patti, Rummy, Dragon vs Tiger, Andar Bahar, and more. It supports fast deposits and withdrawals via JazzCash and EasyPaisa, offers daily bonuses and VIP rewards.",
+        // Reference (not redeclare) the licensed ImageObject nodes below by @id
+        // so Google sees one consistent signal per image and counts each one
+        // in the Search Console "Image metadata" enhancement.
         "screenshot": [
-          "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
-          "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
-          "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp"
+          { "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp#image" },
+          { "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp#image" },
+          { "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp#image" },
+          { "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp#image" },
+          { "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp#image" },
+          { "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp#image" },
+          { "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-bind-account.webp#image" }
         ],
         "author": { "@id": "https://teenpattigoldgame.com.pk/#organization" }
       },
@@ -118,6 +125,95 @@ export default function Home() {
         "description": "Teen Patti Gold — Pakistan's premier card game app. Official Teen Patti Gold brand image. Play Teen Patti, Rummy, Dragon vs Tiger and win real cash. Download Teen Patti Gold APK.",
         "width": 512,
         "height": 512,
+        ...imageObjectLicensing
+      },
+      // Per-screenshot ImageObject nodes — every image actually shipped in
+      // /public is given its own licensed ImageObject so Search Console's
+      // "Image metadata" enhancement registers each one as a Valid item.
+      // Each node's @id matches the SoftwareApplication.screenshot reference
+      // above so Google merges them into a single signal per image.
+      {
+        "@type": "ImageObject",
+        "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp#image",
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
+        "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
+        "name": "Teen Patti Gold Game Interface - Play Card Games in Pakistan",
+        "description": "Teen Patti Gold game screen — real-money card games including Teen Patti, Rummy, Dragon vs Tiger in Pakistan.",
+        "width": 400,
+        "height": 711,
+        "representativeOfPage": false,
+        ...imageObjectLicensing
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp#image",
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
+        "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp",
+        "name": "Teen Patti Gold App - Games Collection",
+        "description": "Teen Patti Gold app games collection — Rummy, Dragon Tiger, Teen Patti and more in one Pakistan card-gaming app.",
+        "width": 400,
+        "height": 711,
+        "representativeOfPage": false,
+        ...imageObjectLicensing
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp#image",
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp",
+        "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp",
+        "name": "Teen Patti Gold APK V1.656 Download",
+        "description": "Teen Patti Gold APK V1.656 for Android — free download for Pakistan players.",
+        "width": 400,
+        "height": 711,
+        "representativeOfPage": false,
+        ...imageObjectLicensing
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp#image",
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp",
+        "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp",
+        "name": "Teen Patti Gold Deposit Money via JazzCash EasyPaisa",
+        "description": "Deposit money in Teen Patti Gold using JazzCash and EasyPaisa in Pakistan.",
+        "width": 400,
+        "height": 711,
+        "representativeOfPage": false,
+        ...imageObjectLicensing
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp#image",
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp",
+        "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp",
+        "name": "Teen Patti Gold Refer and Earn - Invite Friends",
+        "description": "Earn real money by referring friends to Teen Patti Gold in Pakistan.",
+        "width": 400,
+        "height": 711,
+        "representativeOfPage": false,
+        ...imageObjectLicensing
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp#image",
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp",
+        "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp",
+        "name": "Teen Patti Gold VIP Program - Recharge Rebate Bonuses",
+        "description": "Teen Patti Gold VIP program with recharge rebates and daily bonuses for Pakistan players.",
+        "width": 400,
+        "height": 711,
+        "representativeOfPage": false,
+        ...imageObjectLicensing
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-bind-account.webp#image",
+        "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-bind-account.webp",
+        "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-bind-account.webp",
+        "name": "Teen Patti Gold Bind Email - Account Security",
+        "description": "Secure your Teen Patti Gold account by binding your email address.",
+        "width": 400,
+        "height": 711,
+        "representativeOfPage": false,
         ...imageObjectLicensing
       },
       {
