@@ -3,6 +3,31 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL, OG_IMAGE_WIDTH, OG_IMAGE_HEIGHT } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_PC } from '@/lib/breadcrumb-schema';
+import { imageObjectLicensing } from '@/lib/schema-image-licensing';
+
+const PC_PAGE_URL = 'https://teenpattigoldgame.com.pk/teen-patti-gold-for-pc';
+const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
+
+// Licensed ImageObject for the brand image actually rendered on this page
+// (LOGO_PATH_VERSIONED → /teen-patti-gold.webp). Re-uses the canonical
+// `teen-patti-gold.webp#primary` @id so Google merges this with the
+// matching node already declared on the home and APK pages.
+const pcImageGraphLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold.webp#primary`,
+      url: `${SITE_ORIGIN}/teen-patti-gold.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold.webp`,
+      name: 'Teen Patti Gold for PC - Play on Windows & Mac',
+      description: 'Play Teen Patti Gold on PC using Android Emulator on Windows and Mac.',
+      width: 512,
+      height: 512,
+      ...imageObjectLicensing,
+    },
+  ],
+};
 
 export const metadata: Metadata = {
   title: {
@@ -97,7 +122,7 @@ export default function TeenPattiGoldForPCPage() {
     "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-for-pc#article",
     "headline": "Teen Patti Gold for PC Download Latest Version for free 2026",
     "description": "Complete guide to download and play Teen Patti Gold on PC using Android emulator. Learn about system requirements, best emulators, and features.",
-    "image": LOGO_URL,
+    "image": { "@id": `${SITE_ORIGIN}/teen-patti-gold.webp#primary` },
     "author": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
     "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
     "datePublished": "2026-01-05",
@@ -212,6 +237,7 @@ export default function TeenPattiGoldForPCPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pcBreadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pcHowToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pcFaqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pcImageGraphLd) }} />
 
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">

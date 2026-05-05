@@ -83,26 +83,12 @@ export async function GET() {
         },
       ],
     },
-    {
-      pageUrl: '/deposit-money-in-teen-patti-gold',
-      images: [
-        {
-          loc: '/teen-patti-gold-deposit-money.webp',
-          title: 'Deposit Money in Teen Patti Gold via JazzCash EasyPaisa',
-          caption: 'How to deposit money in Teen Patti Gold using JazzCash and EasyPaisa in Pakistan.',
-        },
-      ],
-    },
-    {
-      pageUrl: '/withdraw-money-from-teen-patti-gold',
-      images: [
-        {
-          loc: '/teen-patti-gold.webp',
-          title: 'Withdraw Money from Teen Patti Gold to JazzCash EasyPaisa',
-          caption: 'How to withdraw money from Teen Patti Gold to JazzCash, EasyPaisa in Pakistan.',
-        },
-      ],
-    },
+    // /deposit-money-in-teen-patti-gold and /withdraw-money-from-teen-patti-gold
+    // intentionally omitted: those pages currently render no <img> elements
+    // (only inline SVG icons), so claiming an image here would create a
+    // page-vs-sitemap mismatch that Google flags as invalid. The relevant
+    // images (teen-patti-gold-deposit-money.webp, teen-patti-gold.webp) are
+    // still surfaced via the home page entries above.
     {
       pageUrl: '/teen-patti-gold-for-pc',
       images: [

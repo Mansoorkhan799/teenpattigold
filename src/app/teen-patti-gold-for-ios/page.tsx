@@ -3,6 +3,31 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_IOS } from '@/lib/breadcrumb-schema';
+import { imageObjectLicensing } from '@/lib/schema-image-licensing';
+
+const IOS_PAGE_URL = 'https://teenpattigoldgame.com.pk/teen-patti-gold-for-ios';
+const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
+
+// Licensed ImageObject for the brand image actually rendered on this page
+// (LOGO_PATH_VERSIONED → /teen-patti-gold.webp). Re-uses the canonical
+// `teen-patti-gold.webp#primary` @id so Google merges this with the
+// matching node already declared on the home and APK pages.
+const iosImageGraphLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold.webp#primary`,
+      url: `${SITE_ORIGIN}/teen-patti-gold.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold.webp`,
+      name: 'Teen Patti Gold for iOS - iPhone and iPad',
+      description: 'Play Teen Patti Gold on iPhone and iPad. Complete iOS guide for Pakistan.',
+      width: 512,
+      height: 512,
+      ...imageObjectLicensing,
+    },
+  ],
+};
 
 export const metadata: Metadata = {
   title: {
@@ -96,7 +121,7 @@ export default function TeenPattiGoldForIOSPage() {
     "@id": "https://teenpattigoldgame.com.pk/teen-patti-gold-for-ios#article",
     "headline": "Teen Patti Gold For iOS Download Latest Version For Free 2026",
     "description": "Complete guide to download and play Teen Patti Gold on iOS devices including iPhone and iPad.",
-    "image": LOGO_URL,
+    "image": { "@id": `${SITE_ORIGIN}/teen-patti-gold.webp#primary` },
     "author": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
     "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
     "datePublished": "2026-01-05",
@@ -216,6 +241,7 @@ export default function TeenPattiGoldForIOSPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(iosBreadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(iosHowToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(iosFaqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(iosImageGraphLd) }} />
 
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
