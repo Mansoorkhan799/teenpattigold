@@ -3,6 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL, OG_IMAGE_WIDTH, OG_IMAGE_HEIGHT } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_APK } from '@/lib/breadcrumb-schema';
+import { imageObjectLicensing } from '@/lib/schema-image-licensing';
+
+const APK_PAGE_URL = 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk';
+const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
 
 export const metadata: Metadata = {
   title: {
@@ -87,11 +91,119 @@ const softwareSchema = {
   datePublished: '2026-01-05',
   description:
     'Teen Patti Gold APK — Play 30+ card games including Teen Patti, Rummy, and Dragon Tiger. Earn real money with JazzCash & EasyPaisa withdrawals in Pakistan.',
-  image: LOGO_URL,
+  image: { '@id': `${SITE_ORIGIN}/teen-patti-gold.webp#primary` },
+  // Reference (not redeclare) the licensed ImageObject nodes below by @id
+  // so Google sees one consistent signal per image and counts each one in
+  // the Search Console "Image metadata" enhancement report.
+  screenshot: [
+    { '@id': `${SITE_ORIGIN}/teen-patti-gold-game.webp#image` },
+    { '@id': `${SITE_ORIGIN}/teen-patti-gold-app.webp#image` },
+    { '@id': `${SITE_ORIGIN}/teen-patti-gold-apk.webp#image` },
+    { '@id': `${SITE_ORIGIN}/teen-patti-gold-deposit-money.webp#image` },
+    { '@id': `${SITE_ORIGIN}/teen-patti-gold-refer-and-earn.webp#image` },
+    { '@id': `${SITE_ORIGIN}/teen-patti-gold-vip-program.webp#image` },
+  ],
   author: { '@id': 'https://teenpattigoldgame.com.pk/#organization' },
   publisher: { '@id': 'https://teenpattigoldgame.com.pk/#organization' },
   inLanguage: 'en-PK',
   countriesSupported: 'PK',
+};
+
+// Per-image licensed ImageObject graph. Every image actually rendered on
+// /download-teen-patti-gold-apk is declared here with full licensing
+// metadata (license, creator, creditText, copyrightNotice,
+// acquireLicensePage) so each image becomes a Valid item in the Search
+// Console "Image metadata" enhancement.
+const imageGraphLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold.webp#primary`,
+      url: `${SITE_ORIGIN}/teen-patti-gold.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold.webp`,
+      name: 'Teen Patti Gold APK Latest Version Free Download 2026',
+      description:
+        'Download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Play 30+ card games and earn real cash.',
+      width: 512,
+      height: 512,
+      ...imageObjectLicensing,
+    },
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold-game.webp#image`,
+      url: `${SITE_ORIGIN}/teen-patti-gold-game.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold-game.webp`,
+      name: 'Teen Patti Gold Game Interface - Play Card Games in Pakistan',
+      description:
+        'Teen Patti Gold game screen — real-money card games including Teen Patti, Rummy, Dragon vs Tiger in Pakistan.',
+      width: 400,
+      height: 711,
+      representativeOfPage: false,
+      ...imageObjectLicensing,
+    },
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold-app.webp#image`,
+      url: `${SITE_ORIGIN}/teen-patti-gold-app.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold-app.webp`,
+      name: 'Teen Patti Gold App - Games Collection',
+      description:
+        'Teen Patti Gold app games collection — Rummy, Dragon Tiger, Teen Patti and more in one Pakistan card-gaming app.',
+      width: 400,
+      height: 711,
+      representativeOfPage: false,
+      ...imageObjectLicensing,
+    },
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold-apk.webp#image`,
+      url: `${SITE_ORIGIN}/teen-patti-gold-apk.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold-apk.webp`,
+      name: 'Teen Patti Gold APK V1.656 Download',
+      description: 'Teen Patti Gold APK V1.656 for Android — free download for Pakistan players.',
+      width: 400,
+      height: 711,
+      representativeOfPage: false,
+      ...imageObjectLicensing,
+    },
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold-deposit-money.webp#image`,
+      url: `${SITE_ORIGIN}/teen-patti-gold-deposit-money.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold-deposit-money.webp`,
+      name: 'Teen Patti Gold Deposit Money via JazzCash EasyPaisa',
+      description: 'Deposit money in Teen Patti Gold using JazzCash and EasyPaisa in Pakistan.',
+      width: 400,
+      height: 711,
+      representativeOfPage: false,
+      ...imageObjectLicensing,
+    },
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold-refer-and-earn.webp#image`,
+      url: `${SITE_ORIGIN}/teen-patti-gold-refer-and-earn.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold-refer-and-earn.webp`,
+      name: 'Teen Patti Gold Refer and Earn - Invite Friends',
+      description: 'Earn real money by referring friends to Teen Patti Gold in Pakistan.',
+      width: 400,
+      height: 711,
+      representativeOfPage: false,
+      ...imageObjectLicensing,
+    },
+    {
+      '@type': 'ImageObject',
+      '@id': `${SITE_ORIGIN}/teen-patti-gold-vip-program.webp#image`,
+      url: `${SITE_ORIGIN}/teen-patti-gold-vip-program.webp`,
+      contentUrl: `${SITE_ORIGIN}/teen-patti-gold-vip-program.webp`,
+      name: 'Teen Patti Gold VIP Program - Recharge Rebate Bonuses',
+      description: 'Teen Patti Gold VIP program with recharge rebates and daily bonuses for Pakistan players.',
+      width: 400,
+      height: 711,
+      representativeOfPage: false,
+      ...imageObjectLicensing,
+    },
+  ],
 };
 
 const howToSchema = {
@@ -148,14 +260,15 @@ const howToSchema = {
 const speakableSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  '@id': 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk#webpage',
-  'url': 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk',
-  'name': 'Download Teen Patti Gold APK Latest Version Free 2026',
-  'isPartOf': { '@id': 'https://teenpattigoldgame.com.pk/#website' },
-  'inLanguage': 'en-PK',
-  'speakable': {
+  '@id': `${APK_PAGE_URL}#webpage`,
+  url: APK_PAGE_URL,
+  name: 'Download Teen Patti Gold APK Latest Version Free 2026',
+  isPartOf: { '@id': 'https://teenpattigoldgame.com.pk/#website' },
+  inLanguage: 'en-PK',
+  primaryImageOfPage: { '@id': `${SITE_ORIGIN}/teen-patti-gold.webp#primary` },
+  speakable: {
     '@type': 'SpeakableSpecification',
-    'cssSelector': ['#apk-what-is', '#apk-why-download'],
+    cssSelector: ['#apk-what-is', '#apk-why-download'],
   },
 };
 
@@ -222,6 +335,7 @@ export default function TeenPattiGoldApkPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(imageGraphLd) }} />
 
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
