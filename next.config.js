@@ -152,7 +152,7 @@ const nextConfig = {
       // Optimised image responses from /_next/image — also noindex so the
       // resized variants don't pollute Search Console.
       {
-        source: '/_next/image:path*',
+        source: '/_next/image',
         headers: [
           {
             key: 'X-Robots-Tag',
