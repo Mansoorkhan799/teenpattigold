@@ -132,7 +132,10 @@ const nextConfig = {
           },
         ],
       },
-      // Immutable cache for versioned Next.js static assets
+      // Immutable cache for versioned Next.js static assets.
+      // X-Robots-Tag: noindex tells Google not to list these CSS/JS chunks
+      // in the index. Google still fetches them (needed to render the page),
+      // but they stop appearing in GSC "Crawled - currently not indexed".
       {
         source: '/_next/static/:path*',
         headers: [
@@ -140,15 +143,35 @@ const nextConfig = {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
           },
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
+          },
         ],
       },
-      // Immutable cache for public static files (images, icons)
+      // Optimised image responses from /_next/image — also noindex so the
+      // resized variants don't pollute Search Console.
       {
-        source: '/:path(.*\\.(?:webp|png|jpg|jpeg|ico|svg|woff2|woff)$)',
+        source: '/_next/image:path*',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
+          },
+        ],
+      },
+      // Immutable cache for public static files (images, icons, fonts).
+      // noindex prevents favicon.ico?v=2 etc. from showing up in GSC.
+      {
+        source: '/:path(.*\\.(?:webp|png|jpg|jpeg|gif|ico|svg|woff2|woff|ttf|otf|eot)$)',
         headers: [
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
           },
         ],
       },
@@ -162,6 +185,20 @@ const nextConfig = {
           {
             key: 'Content-Type',
             value: 'text/css',
+          },
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
+          },
+        ],
+      },
+      // Manifest, browserconfig, and other non-HTML files in /public.
+      {
+        source: '/manifest.json',
+        headers: [
+          {
+            key: 'X-Robots-Tag',
+            value: 'noindex',
           },
         ],
       },
