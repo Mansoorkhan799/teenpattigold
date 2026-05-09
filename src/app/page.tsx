@@ -91,7 +91,7 @@ export default function Home() {
         "@type": "WebPage",
         "@id": "https://teenpattigoldgame.com.pk/#webpage",
         "url": "https://teenpattigoldgame.com.pk/",
-        "name": "Teen Patti Gold Game Download APK | Real Money App 2026",
+        "name": "Teen Patti Gold Pakistan APK Download | Real Money 2026",
         "isPartOf": { "@id": "https://teenpattigoldgame.com.pk/#website" },
         "about": { "@id": "https://teenpattigoldgame.com.pk/#software" },
         "datePublished": SITE_ARTICLE_DATE_PUBLISHED,
@@ -376,24 +376,29 @@ export default function Home() {
           <div className="md:w-1/2 space-y-6">
             <div className="space-y-4">
               {/*
-                H1 = bare brand name (single keyword focus) and H2 = keyword
-                phrase. This is exactly the structure card-rummy.com.pk uses
-                — they rank #1 for "Card Rummy" and their audit doc explicitly
-                calls out "H1 Tag: 'Card Rummy' — Perfect keyword focus".
-                Removed `whitespace-nowrap` (it truncated on mobile) and
-                kept the speakable IDs for Google Assistant/AI Overviews.
+                H1 = "Teen Patti Gold Pakistan" (geo-qualified primary
+                keyword). The bare brand "Teen Patti Gold" is owned globally
+                by Moonfrog Labs (Play Store), so a Pakistan-only site
+                cannot realistically outrank them for the unqualified term.
+                The H1 mirrors the pattern used by every Pakistan competitor
+                that currently ranks on page 1 for "teen patti gold pakistan"
+                (teenpattigoldpak.com #3, 3pattigold.pk #9, 3pattigold.com.pk
+                #4 for "teen patti gold apk pakistan"). H2 carries the
+                supporting "APK Download — Real Money App 2026" intent.
+                Speakable IDs preserved for Google Assistant / AI Overviews.
               */}
               <h1 id="speakable-headline" className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
-                <span className="text-white">Teen Patti Gold</span>
+                <span className="text-white">Teen Patti Gold </span>
+                <span className="text-[#ffa503]">Pakistan</span>
               </h1>
               <h2 id="speakable-subhead" className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                <span className="text-[#ffa503]">Game Download APK</span>{' '}
+                <span className="text-[#ffa503]">APK Download</span>{' '}
                 <span className="text-white">— Real Money App 2026</span>
               </h2>
             </div>
 
             <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-              <Link href="/download-teen-patti-gold-apk" className="text-[#FFA500] font-semibold hover:underline"><strong>Teen Patti Gold</strong></Link> is Pakistan&apos;s most popular traditional online card game platform, offering a variety of casino-style games to play and earn real money. It brings a user-friendly interface and 24/7 Customer Support. Download this app from the given button and get started today.
+              <Link href="/download-teen-patti-gold-apk" className="text-[#FFA500] font-semibold hover:underline"><strong>Teen Patti Gold Pakistan</strong></Link> is the country&apos;s most popular traditional online card game platform, offering a variety of casino-style games to play and earn real money. It brings a user-friendly interface and 24/7 Customer Support. Download the Teen Patti Gold APK from the button below and start playing today.
             </p>
 
             {/* Hero badges — short value props from the user's brief */}

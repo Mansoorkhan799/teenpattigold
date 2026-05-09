@@ -1,17 +1,19 @@
 /**
  * Central SEO copy — lengths checked for Google SERP display.
- * Title: aim 50–60 chars; description: 140–160 chars; primary keyword: Teen Patti Gold.
+ * Title: aim 50–60 chars; description: 140–160 chars.
  *
- * Title format mirrors the card-rummy.com.pk #1-ranking page:
- *   "<Brand> Pakistan v<Version> Free Download Official APK"
- * — the version + "Free Download" + "Official APK" tail is a strong CTR
- * signal for app-search queries and matches Pakistani user search intent.
+ * Primary keyword: "Teen Patti Gold Pakistan" (not the bare brand term
+ * "Teen Patti Gold", which is dominated globally by Moonfrog Labs / the
+ * Play Store listing). Pakistan-qualified competitors like
+ * teenpattigoldpak.com (rank #3) and 3pattigold.pk (rank #9) all open
+ * with "Teen Patti Gold Pakistan" in the H1 and title — matching that
+ * pattern is what makes the page eligible to rank in the same SERP.
  */
 export const META_HOME_TITLE =
-  'Teen Patti Gold Game Download APK | Real Money App 2026';
+  'Teen Patti Gold Pakistan APK Download | Real Money 2026';
 
 export const META_HOME_DESCRIPTION =
-  'Teen Patti Gold — Pakistan\'s most popular online card game platform. Play casino-style games to earn real money, with a user-friendly interface, fast JazzCash/EasyPaisa withdrawals & 24/7 support.';
+  'Download Teen Patti Gold Pakistan APK free. Play 30+ card games — Teen Patti, Rummy, Dragon Tiger — and earn real money with fast JazzCash & EasyPaisa withdrawals, daily bonuses & 24/7 support.';
 
 /** Suffix for pages that use `title: { default: '...' }` with root template. */
 export const META_TITLE_TEMPLATE = '%s | Teen Patti Gold' as const;
