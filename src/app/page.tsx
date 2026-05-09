@@ -91,7 +91,7 @@ export default function Home() {
         "@type": "WebPage",
         "@id": "https://teenpattigoldgame.com.pk/#webpage",
         "url": "https://teenpattigoldgame.com.pk/",
-        "name": "Teen Patti Gold Pakistan APK Download | Real Money 2026",
+        "name": "Teen Patti Gold Pakistan APK v1.656 | Real Money 2026",
         "isPartOf": { "@id": "https://teenpattigoldgame.com.pk/#website" },
         "about": { "@id": "https://teenpattigoldgame.com.pk/#software" },
         "datePublished": SITE_ARTICLE_DATE_PUBLISHED,

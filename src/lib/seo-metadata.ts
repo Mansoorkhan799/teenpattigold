@@ -10,7 +10,7 @@
  * pattern is what makes the page eligible to rank in the same SERP.
  */
 export const META_HOME_TITLE =
-  'Teen Patti Gold Pakistan APK Download | Real Money 2026';
+  'Teen Patti Gold Pakistan APK v1.656 | Real Money 2026';
 
 export const META_HOME_DESCRIPTION =
   'Download Teen Patti Gold Pakistan APK free. Play 30+ card games — Teen Patti, Rummy, Dragon Tiger — and earn real money with fast JazzCash & EasyPaisa withdrawals, daily bonuses & 24/7 support.';
