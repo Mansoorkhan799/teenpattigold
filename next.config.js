@@ -160,10 +160,27 @@ const nextConfig = {
           },
         ],
       },
-      // Immutable cache for public static files (images, icons, fonts).
-      // noindex prevents favicon.ico?v=2 etc. from showing up in GSC.
+      // Immutable cache for content images (webp/png/jpg/jpeg/gif/svg).
+      // IMPORTANT: do NOT send X-Robots-Tag: noindex here — these are the
+      // assets we want indexed in Google Image Search (hero logo, app
+      // screenshots, OG image). Earlier this rule was bundled with favicons
+      // and fonts under a single `noindex` header, which silently dropped
+      // teen-patti-gold.webp and every screenshot from the image index.
       {
-        source: '/:path(.*\\.(?:webp|png|jpg|jpeg|gif|ico|svg|woff2|woff|ttf|otf|eot)$)',
+        source: '/:path(.*\\.(?:webp|png|jpg|jpeg|gif|svg)$)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // Non-content static assets (favicon, web fonts). These are render-only
+      // resources, never user-facing search results, so we keep `noindex` to
+      // prevent favicon.ico?v=2 and font files from showing up in Search
+      // Console as "Crawled - currently not indexed" URLs.
+      {
+        source: '/:path(.*\\.(?:ico|woff2|woff|ttf|otf|eot)$)',
         headers: [
           {
             key: 'Cache-Control',
