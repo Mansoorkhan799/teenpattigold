@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp',
         width: 512, height: 512,
         alt: 'How to Create Teen Patti Gold Account and Login Guide',
       },
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     title: 'How to Create Teen Patti Gold Account and Login? 2026',
     description:
       'Create Teen Patti Gold account & login from Pakistan: OTP & passwords. Step-by-step 2026 guide — verify safely before your first JazzCash or EasyPaisa deposit.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
   }
 };
 
@@ -157,7 +158,21 @@ export default function CreateAccountLogin() {
 
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">How to Create <Link href="/" className="text-accent hover:text-accent">Teen Patti Gold</Link> Account and Login?</h1>
-            
+
+            {/* Featured image — canonical /teen-patti-gold-app.webp embedded so
+                Google sees it on the page declared in image-sitemap.xml.
+                unoptimized=true keeps <img src> on the indexable path. */}
+            <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8">
+              <Image
+                src="/teen-patti-gold-app.webp"
+                alt="Create Teen Patti Gold Account and Login"
+                fill
+                className="object-cover"
+                priority
+                unoptimized={true}
+              />
+            </div>
+
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed mb-0">

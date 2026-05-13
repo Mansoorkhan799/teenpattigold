@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
@@ -32,14 +33,14 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2', width: 512, height: 512, alt: 'Is Teen Patti Gold Better for Earning Real Cash 2026' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp', width: 512, height: 512, alt: 'Is Teen Patti Gold Better for Earning Real Cash 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Is Teen Patti Gold Best for Real Cash in Pakistan?',
     description:
       'Is Teen Patti Gold best for real cash in Pakistan? Honest 2026 take on risk, variance & payouts. Compare earning paths before you deposit JazzCash or EasyPaisa.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp'],
   },
 };
 
@@ -76,6 +77,20 @@ export default function IsTeenPattiGoldBetterForEarningPage() {
               <span>📅 February 24, 2026</span>
               <span>•</span>
               <span>⏱️ 8 min read</span>
+            </div>
+
+            {/* Featured image — canonical /teen-patti-gold-refer-and-earn.webp embedded
+                so Google sees it on the page declared in image-sitemap.xml.
+                unoptimized=true keeps <img src> on the indexable path. */}
+            <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8">
+              <Image
+                src="/teen-patti-gold-refer-and-earn.webp"
+                alt="Is Teen Patti Gold Better for Earning Real Cash 2026"
+                fill
+                className="object-cover"
+                priority
+                unoptimized={true}
+              />
             </div>
 
             <div className="prose prose-lg max-w-none">

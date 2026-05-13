@@ -12,6 +12,11 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
           <div className="relative h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 mr-2 md:mr-3">
+            {/* unoptimized=true so every page's <img src> for the logo is the
+                canonical /teen-patti-gold.webp, matching image-sitemap.xml and
+                the Organization "logo" ImageObject. The /_next/image route is
+                X-Robots-Tag: noindex (see next.config.js), which previously
+                made the logo URL on the page mismatch the indexable canonical. */}
             <Image
               src={LOGO_PATH_VERSIONED}
               alt="Teen Patti Gold - Pakistan's #1 card game app logo"
@@ -20,7 +25,7 @@ export default function Header() {
               className="object-contain rounded-lg w-full h-full"
               loading="eager"
               fetchPriority="high"
-              quality={75}
+              unoptimized={true}
             />
           </div>
           <span className="text-accent text-xl md:text-2xl lg:text-3xl font-bold">

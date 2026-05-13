@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
@@ -32,14 +33,14 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-02-24T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2', width: 512, height: 512, alt: 'Teen Patti Gold Latest Version V1.656 New Features 2026' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp', width: 512, height: 512, alt: 'Teen Patti Gold Latest Version V1.656 New Features 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Teen Patti Gold Latest Version — New Features 2026',
     description:
       'Teen Patti Gold latest V1.656 in Pakistan: features & security. 2026 guide — update from official APK only; skip mirrors that risk logins or payment fraud.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp'],
   },
 };
 
@@ -76,6 +77,20 @@ export default function TeenPattiGoldLatestVersionPage() {
               <span>📅 February 24, 2026</span>
               <span>•</span>
               <span>⏱️ 9 min read</span>
+            </div>
+
+            {/* Featured image — canonical /teen-patti-gold-apk.webp embedded so
+                Google sees it on the page declared in image-sitemap.xml.
+                unoptimized=true keeps <img src> on the indexable path. */}
+            <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8">
+              <Image
+                src="/teen-patti-gold-apk.webp"
+                alt="Teen Patti Gold Latest Version V1.656 Updates 2026"
+                fill
+                className="object-cover"
+                priority
+                unoptimized={true}
+              />
             </div>
 
             <div className="prose prose-lg max-w-none">

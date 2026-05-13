@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp',
         width: 512, height: 512,
         alt: 'Deposit money Teen Patti Gold Pakistan',
       },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: 'How to Deposit Money in Teen Patti Gold APK Pakistan?',
     description:
       'Add chips to your Teen Patti Gold wallet from Rs 100 in seconds. JazzCash, EasyPaisa and bank card top-ups, with welcome and reload bonus eligibility for Pakistan players.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-deposit-money.webp'],
   },
   robots: {
     index: true,
@@ -263,8 +263,7 @@ export default function DepositMoneyPage() {
                 className="relative w-full h-auto object-contain drop-shadow-2xl rounded-2xl"
                 priority
                 fetchPriority="high"
-                quality={75}
-                sizes="(max-width: 768px) 260px, 300px"
+                unoptimized={true}
               />
             </div>
           </div>

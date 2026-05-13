@@ -5,6 +5,17 @@ import { LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
 import { SITE_ARTICLE_DATE_PUBLISHED, getSiteArticleDateModified } from '@/lib/site-meta';
 
+/**
+ * Revalidate the home page once a day so the JSON-LD `dateModified` and the
+ * sitemap.xml `<lastmod>` stay in sync with each other (the sitemap already
+ * uses `new Date()` per request). This is the freshness signal Google uses
+ * to decide how often to re-crawl the home page.
+ *
+ * 86400 seconds = 24 hours. After this window any incoming request triggers
+ * a background regeneration with the new date applied.
+ */
+export const revalidate = 86400;
+
 /** Hreflang for `/` only — title, description, OG, etc. come from root `layout.tsx`. */
 export const metadata: Metadata = {
   alternates: {
@@ -18,6 +29,20 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const articleDateModified = getSiteArticleDateModified();
+
+  // Display-friendly version of the schema dateModified (YYYY-MM-DDTHH:MM:SS+05:00).
+  // Used in the visible "Updated …" byline so the human-readable date matches
+  // the JSON-LD `lastReviewed` / `dateModified` fields on the same render.
+  const articleDateModifiedYmd = articleDateModified.slice(0, 10);
+  const articleDateModifiedDisplay = (() => {
+    const d = new Date(`${articleDateModifiedYmd}T00:00:00+05:00`);
+    return d.toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+      timeZone: 'Asia/Karachi',
+    });
+  })();
 
   // Schema.org structured data for SEO with Pakistan geo-targeting.
   //
@@ -87,6 +112,32 @@ export default function Home() {
           }
         ]
       },
+      // Named human reviewer — single biggest E-E-A-T signal for YMYL/gambling
+      // content. The Person node is referenced (not redeclared) by `reviewedBy`
+      // on the WebPage below and by `author` on the SoftwareApplication's
+      // implicit Review. The same @id is used on /about-us so Google merges
+      // the two appearances into a single author entity.
+      {
+        "@type": "Person",
+        "@id": "https://teenpattigoldgame.com.pk/about-us#yasir-ahmed",
+        "name": "Yasir Ahmed",
+        "url": "https://teenpattigoldgame.com.pk/about-us#yasir-ahmed",
+        "jobTitle": "Editor & Reviewer",
+        "description": "Yasir Ahmed is a Pakistan-based card-game writer covering Teen Patti, Rummy and real-money mobile gaming apps. He reviews each release of Teen Patti Gold APK and tests JazzCash and EasyPaisa deposit/withdrawal flows from Karachi.",
+        "knowsAbout": [
+          "Teen Patti",
+          "Teen Patti Gold",
+          "3-card poker (Flash / Flush)",
+          "Rummy (Points, Pool, Deals)",
+          "Real-money mobile gaming apps in Pakistan",
+          "JazzCash",
+          "EasyPaisa",
+          "Responsible gaming"
+        ],
+        "worksFor": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
+        "nationality": { "@type": "Country", "name": "Pakistan" },
+        "homeLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "PK" } }
+      },
       {
         "@type": "WebPage",
         "@id": "https://teenpattigoldgame.com.pk/#webpage",
@@ -94,6 +145,9 @@ export default function Home() {
         "name": "Teen Patti Gold Pakistan APK v1.656 | Real Money 2026",
         "isPartOf": { "@id": "https://teenpattigoldgame.com.pk/#website" },
         "about": { "@id": "https://teenpattigoldgame.com.pk/#software" },
+        "author": { "@id": "https://teenpattigoldgame.com.pk/about-us#yasir-ahmed" },
+        "reviewedBy": { "@id": "https://teenpattigoldgame.com.pk/about-us#yasir-ahmed" },
+        "lastReviewed": articleDateModified,
         "datePublished": SITE_ARTICLE_DATE_PUBLISHED,
         "dateModified": articleDateModified,
         "inLanguage": "en-PK",
@@ -257,7 +311,7 @@ export default function Home() {
             "name": "What different variations of Teen Patti Gold are available?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Teen Patti Gold offers several variations including Points Rummy, Pool Rummy, and 13-card Teen Patti Gold. Each variation has its own unique rules and scoring system, making the gameplay dynamic and entertaining for both casual and competitive players."
+              "text": "Teen Patti Gold offers six 3-card Teen Patti variants \u2014 Classic, Joker, AK47, Muflis, Best of Four and 999 \u2014 alongside Points Rummy, Pool Rummy, Deals Rummy, Andar Bahar and Dragon vs Tiger. Each variant has its own bet structure, blind/chaal limits and side-show rules."
             }
           },
           {
@@ -397,8 +451,51 @@ export default function Home() {
               </h2>
             </div>
 
+            {/*
+              Author byline — primary E-E-A-T signal for YMYL/gambling content.
+              Reads as: [Avatar] Reviewed by Yasir Ahmed · Updated {date} · 18+
+              The link target (`/about-us#yasir-ahmed`) carries the matching
+              Person JSON-LD `@id`, so Google merges this surface and the
+              about-us bio into a single named-author entity for the home page.
+            */}
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-gray-300 border-y border-gray-800 py-3">
+              <div className="flex items-center gap-2">
+                <span
+                  aria-hidden="true"
+                  className="inline-flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#FFA500] to-[#f97316] text-sm font-bold text-[#0a1029] shadow-md shadow-[#FFA500]/20"
+                >
+                  YA
+                </span>
+                <span className="leading-tight">
+                  <span className="block text-[11px] uppercase tracking-wider text-gray-500">Reviewed by</span>
+                  <Link
+                    href="/about-us#yasir-ahmed"
+                    rel="author"
+                    className="font-semibold text-white hover:text-[#FFA500] transition-colors"
+                  >
+                    Yasir Ahmed
+                  </Link>
+                  <span className="text-gray-500">, Karachi</span>
+                </span>
+              </div>
+              <span className="hidden sm:inline text-gray-700">·</span>
+              <span className="text-gray-400">
+                Updated{' '}
+                <time dateTime={articleDateModifiedYmd} className="font-medium text-gray-200">
+                  {articleDateModifiedDisplay}
+                </time>
+              </span>
+              <span className="hidden sm:inline text-gray-700">·</span>
+              <span className="text-[#ec4899] font-semibold text-xs px-2 py-0.5 rounded-full border border-[#ec4899]/40 bg-[#ec4899]/5">
+                18+ Only
+              </span>
+            </div>
+
             <p className="text-base md:text-lg text-gray-300 leading-relaxed">
-              <Link href="/download-teen-patti-gold-apk" className="text-[#FFA500] font-semibold hover:underline"><strong>Teen Patti Gold Pakistan</strong></Link> is the country&apos;s most popular traditional online card game platform, offering a variety of casino-style games to play and earn real money. It brings a user-friendly interface and 24/7 Customer Support. Download the Teen Patti Gold APK from the button below and start playing today.
+              <Link href="/download-teen-patti-gold-apk" className="text-[#FFA500] font-semibold hover:underline"><strong>Teen Patti Gold Pakistan</strong></Link> is a real-money 3-card poker app built for Pakistani players. The official APK (v1.656, 49&nbsp;MB, Android&nbsp;5.0+) supports JazzCash and EasyPaisa for both deposits and withdrawals, with a Rs&nbsp;100 minimum withdrawal that usually settles within 3&ndash;24&nbsp;hours. Tap <span className="text-[#FFA500] font-semibold">Download Now</span> to install the latest build directly &mdash; the app is not on Google Play, so APK download is the only official path.
+            </p>
+            <p className="text-xs md:text-sm text-gray-400 leading-relaxed">
+              Real-money card games involve financial risk. Set a budget, never chase losses, and read our <Link href="/blog/responsible-gaming-guide-2026" className="text-[#0ea5e9] hover:underline font-semibold">responsible gaming guide</Link> before depositing.
             </p>
 
             {/* Hero badges — short value props from the user's brief */}
@@ -643,10 +740,10 @@ export default function Home() {
             </div>
             <div className="space-y-4">
               <p className="text-gray-300 leading-relaxed text-base md:text-lg">
-                <Link href="/download-teen-patti-gold-apk" className="text-[#FFA500] font-semibold hover:underline">Teen Patti Gold</Link> is a popular and strategic card game, where you can play your favorite games to earn real money. This game is a perfect combination of skill, strategy, and luck, making it ideal for beginners and experts to play and earn. The wide variety of games and smooth gameplay make it more accessible and convenient. The interface of the game is simple and user-friendly, ensuring smooth and reliable gameplay.
+                <Link href="/download-teen-patti-gold-apk" className="text-[#FFA500] font-semibold hover:underline">Teen Patti Gold</Link> is the Pakistan-localised version of the classic 3-card Indian poker game (also called Flash or Flush). The app is distributed as a free Android APK, weighs 49&nbsp;MB and runs on Android 5.0 (Lollipop) and above. It is not available on the Google Play Store, so Pakistani players install it directly from the APK file. After registration the wallet supports two local payment rails &mdash; <strong>JazzCash</strong> and <strong>EasyPaisa</strong> &mdash; with deposits as low as Rs&nbsp;100 and withdrawals processed in 3 to 24 hours.
               </p>
               <p className="text-gray-300 leading-relaxed text-base md:text-lg">
-                This game promotes social interaction and friendly competition, where the rewards and tournaments make it an engaging and exciting game to play. The Teen Patti Gold App is the best game to play, which provides you with an entertaining and rewarding experience.
+                Inside the app you&apos;ll find Teen Patti (Classic, Joker, AK47, Muflis, Best of Four, 999), plus Rummy (Points, Pool and Deals), Andar Bahar, and Dragon vs Tiger. The hand rankings follow standard Teen Patti order: Trail (three of a kind) &gt; Pure Sequence &gt; Sequence &gt; Color &gt; Pair &gt; High Card. Skill, bluffing and bankroll management decide long-term outcomes &mdash; the cards themselves are dealt by a server-side RNG.
               </p>
             </div>
           </div>
@@ -787,6 +884,12 @@ export default function Home() {
             {/* Row 1 - Column 1: Game Interface */}
             <div className="w-full flex flex-col items-center">
               <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
+                {/* unoptimized=true so Googlebot sees the canonical
+                    /teen-patti-gold-game.webp URL in <img src>, matching
+                    image-sitemap.xml and the ImageObject JSON-LD. Without it
+                    Next.js serves /_next/image?url=... which is X-Robots-Tag:
+                    noindex (see next.config.js) and breaks page→image
+                    association in Google Image Search. */}
                 <Image
                   src="/teen-patti-gold-game.webp"
                   alt="Teen Patti Gold Game Interface - Play Card Games in Pakistan"
@@ -794,8 +897,7 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
-                  quality={70}
+                  unoptimized={true}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Game Interface</p>
@@ -811,8 +913,7 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
-                  quality={70}
+                  unoptimized={true}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Games Collection</p>
@@ -828,8 +929,7 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
-                  quality={70}
+                  unoptimized={true}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Bonuses & Rewards</p>
@@ -845,8 +945,7 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
-                  quality={70}
+                  unoptimized={true}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Deposit Money</p>
@@ -862,8 +961,7 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
-                  quality={70}
+                  unoptimized={true}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Refer & Earn</p>
@@ -879,8 +977,7 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
-                  quality={70}
+                  unoptimized={true}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Recharge Rebate</p>
@@ -896,7 +993,7 @@ export default function Home() {
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"
                   loading="lazy"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                  unoptimized={true}
                 />
               </div>
               <p className="text-center text-gray-300 mt-3 font-medium">Account Security</p>
@@ -1004,7 +1101,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Multiple Game Variations</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The Teen Patti Gold includes multiple formats, including Points Rummy, Pool Rummy, and Deals Rummy, where each variation has its own unique rules and scoring system. You can face different challenges for each format, and the use of different strategies is required, which makes the gameplay dynamic and interesting. You can easily choose your preferred game, making the gameplay versatile and entertaining for everyone.</p>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Teen Patti Gold ships with six Teen Patti variants &mdash; Classic, Joker, AK47, Muflis, Best of Four and 999 &mdash; plus Rummy in Points, Pool and Deals formats, Andar Bahar, and Dragon vs Tiger. Each variant has its own bet structure and side-show rules, so you can pick a format that fits your skill level and chip stack instead of being locked into one ruleset.</p>
             </div>
             {/* Real-Time Multiplayer */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#0ea5e9]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1013,8 +1110,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Real-Time Multiplayer Mode</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The multiplayer mode of Teen Patti Gold allows you to compete with other players in real time. The matches are online with balanced matchmaking according to opponents&apos; skill level. Social interaction is a key part where you can communicate with others and make friends, which improves decision-making power and strategy. You can also take part in various challenges, making the gameplay competitive and enjoyable.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Real-Time Multiplayer Tables</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Tables seat 2&ndash;6 players and matchmaking is buy-in based: your boot amount and stack size determine which lobby you enter. Built-in emojis and table chat let you side-show or rib opponents the same way you would at a real Teen Patti table.</p>
             </div>
             {/* Secure & Fair */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#4ade80]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1023,8 +1120,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Secure &amp; Fair Gameplay</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Teen Patti Gold uses a Random Number Generator and anti-cheat system to protect your account, personal data, and transactions. It also ensures fair gameplay and offers every player an equal winning opportunity, making the gameplay safe and trustworthy. The secure login system provides an extra layer of security where fraud and cheating attempts are automatically detected.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">RNG-Dealt Cards &amp; Anti-Collusion</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Every deal is generated server-side by an RNG so the deck cannot be predicted from the client. Anti-collusion checks flag accounts that consistently soft-play with the same opponents from the same IP range, which is the most common cheating pattern on private Teen Patti tables.</p>
             </div>
             {/* User-Friendly */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#a855f7]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1033,8 +1130,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">User-Friendly Interface</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The interface of Teen Patti Gold is user-friendly and suitable for beginners and experienced players. The menus and buttons are logically organized with a clean layout. The game is made responsive, where you can access each feature in a single click, providing you with a stress-free experience. This app runs smoothly on low-end devices, making it more accessible to a wide range of players.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Beginner-Friendly Interface</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The lobby groups tables by buy-in (Easy, Classic, Premium, VIP) so new players don&apos;t accidentally sit at a Rs&nbsp;10,000 boot table. Hand-ranking helper, side-show explainer and a free-chip practice mode are all reachable in two taps from the home screen.</p>
             </div>
             {/* Daily Rewards & Bonuses */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#ec4899]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1043,8 +1140,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Daily Rewards &amp; Bonuses</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The platform introduces rewards and bonuses for new and active players. You can use these rewards to enhance your gameplay and play games without investing your own money. The referral bonuses and tournament prizes enhance your gameplay and motivate you to engage. This feature makes you consistent and active, making the gameplay exciting and rewarding for everyone.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Daily Login &amp; First-Deposit Bonus</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">A 7-day login streak unlocks an escalating chip bonus, and the first deposit returns 5%&ndash;30% as bonus chips on a 2x&ndash;7x wagering requirement (full table further down this page). Bonus chips are credited instantly to the wallet and are subject to the same withdrawal rules as deposit chips once cleared.</p>
             </div>
             {/* Private Tables */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#f97316]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1053,8 +1150,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Private Tables &amp; Friend Play</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The Teen Patti Gold Game allows you to create private tables with your friends, promoting social gaming and friendly competition. You can set your preferred rules and stakes, where the private tables are ideal for beginners. The private tables offer you access to <a href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-300">live chat</a> and real-time interaction, making the gameplay exciting.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Private Tables &amp; Room Codes</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Generate a 6-digit room code, set your own boot, blind cap and Teen Patti variant (Classic, Joker, AK47, etc.), and share the code on WhatsApp. Up to six friends can join the same private table &mdash; useful for replacing in-person card nights without the dealer overhead. <a href="https://3pattiparty.com/JoyTechAI-PAK-Label-1.html" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline hover:text-blue-300">Live chat support</a> is available if a player drops mid-hand.</p>
             </div>
             {/* Cross-Platform */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#06b6d4]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1063,8 +1160,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Cross-Platform Accessibility</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Teen Patti Gold runs smoothly on Android and iOS devices, where the mobile-friendly design allows you to play this game anywhere and at any time. The app is lightweight, making it easier to work on low-end devices. The cross-platform makes the global competition and real-time matches possible, where your progress can be saved, making the gameplay convenient and inclusive.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Android-First, PC via Emulator</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The 49&nbsp;MB APK is built for Android 5.0+ and runs comfortably on 2&nbsp;GB RAM phones. There is no native iOS or Windows build &mdash; iPhone users can sideload via TestFlight ports (limited support) and PC players use BlueStacks or LDPlayer. See the <Link href="/teen-patti-gold-for-pc" className="text-[#0ea5e9] hover:underline font-semibold">PC guide</Link> and <Link href="/teen-patti-gold-for-ios" className="text-[#0ea5e9] hover:underline font-semibold">iOS guide</Link> for setup steps.</p>
             </div>
             {/* Tournaments */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#facc15]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1073,23 +1170,30 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Tournaments &amp; Competitive Events</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Teen Patti Gold conducts regular tournaments and special events where you can take part and compete to win prizes and rewards. The competitive events make the gameplay challenging to test your skills and strategies. The leaderboard system creates a sense of competition and motivates you to do your best, making this app thrilling to play.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Tournaments &amp; Daily Leaderboards</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Daily Sit-and-Go tournaments run from Rs&nbsp;50 buy-in upward and pay out the top three finishers. Weekly leaderboard rankings are based on chips won, not number of hands played, so you can&apos;t farm the leaderboard by grinding free tables.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What Makes Teen Patti Gold So Much Popular? */}
+      {/* Why Pakistani Players Choose Teen Patti Gold */}
       <section id="why-popular" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="relative bg-gradient-to-br from-secondary via-secondary to-[#0a1029] rounded-2xl p-6 md:p-8 border border-[#a855f7]/20 shadow-xl overflow-hidden">
           <div className="absolute top-0 left-0 w-48 h-48 bg-gradient-to-br from-[#a855f7]/10 to-transparent rounded-br-full blur-2xl pointer-events-none"></div>
           <div className="relative">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-1.5 h-8 bg-gradient-to-b from-[#a855f7] to-[#7c3aed] rounded-full"></div>
-              <h2 className="text-2xl md:text-3xl font-bold text-[#FFA500]">What Makes Teen Patti Gold So Much Popular?</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-[#FFA500]">Why Pakistani Players Choose Teen Patti Gold</h2>
             </div>
-            <p className="text-gray-300 leading-relaxed text-base md:text-lg">The biggest reason Teen Patti Gold&apos;s popularity is its simple but strategic gameplay, which allows you to use your skills, planning, and smart decision-making. Its online gameplay makes it easy for you to use the app anytime, making it convenient to play. The multiplayer mode also allows you to compete with other players in real time and earn jackpot rewards. Apart from this, the tournaments, daily rewards, and bonuses make the gameplay exciting. The social interaction and option to play with friends on private tables make it entertaining and popular among casino lovers.</p>
+            <p className="text-gray-300 leading-relaxed text-base md:text-lg mb-4">Most Pakistani card-game apps copy the same Teen Patti template, so why does Teen Patti Gold keep coming up as the default pick on Reddit, WhatsApp groups and YouTube reviews? Five concrete reasons:</p>
+            <ul className="space-y-3 text-gray-200 text-sm md:text-base">
+              <li className="flex gap-3"><span className="text-[#FFA500] font-bold flex-shrink-0">1.</span><span><strong className="text-white">JazzCash &amp; EasyPaisa, no card needed.</strong> Most Pakistani players don&apos;t own a Visa/Mastercard. Teen Patti Gold supports the two wallet apps that 110+ million Pakistanis already use, with the same Rs&nbsp;100 minimum on both deposit and withdrawal.</span></li>
+              <li className="flex gap-3"><span className="text-[#FFA500] font-bold flex-shrink-0">2.</span><span><strong className="text-white">Withdrawals settle in 3&ndash;24 hours.</strong> Faster than the 1&ndash;3 day window most international card apps quote for Pakistan, because the cash-out is routed through a local rail rather than an SWIFT transfer.</span></li>
+              <li className="flex gap-3"><span className="text-[#FFA500] font-bold flex-shrink-0">3.</span><span><strong className="text-white">49&nbsp;MB APK runs on entry-level Android.</strong> The minimum spec is Android 5.0 with 2&nbsp;GB RAM, so the app installs on Rs&nbsp;15,000 budget phones that dominate the Pakistani market &mdash; not just flagship devices.</span></li>
+              <li className="flex gap-3"><span className="text-[#FFA500] font-bold flex-shrink-0">4.</span><span><strong className="text-white">Real Teen Patti depth, not just slots.</strong> Six Teen Patti variants (Classic, Joker, AK47, Muflis, Best of Four, 999) cover every house rule played in Pakistan, plus 13-card Rummy for players who want a longer skill format.</span></li>
+              <li className="flex gap-3"><span className="text-[#FFA500] font-bold flex-shrink-0">5.</span><span><strong className="text-white">Live chat and in-app support in English.</strong> Disputes, deposit failures and KYC issues can be raised inside the app and usually receive a reply the same day, which removes the language barrier most players hit on India-only Teen Patti apps.</span></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -1385,77 +1489,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Popular Casino Games to Play on the Teen Patti Gold */}
+      {/* Popular Card Games on Teen Patti Gold */}
       <section id="popular-games" className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="bg-secondary rounded-xl p-6 md:p-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#FFA500]">Popular Casino Games to Play on the Teen Patti Gold</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-2 text-[#FFA500]">Popular Card Games on Teen Patti Gold</h2>
+          <p className="text-gray-400 text-sm md:text-base mb-8">All games are dealt with a server-side RNG. Hand rankings follow the standard Teen Patti order: Trail &gt; Pure Sequence &gt; Sequence &gt; Color &gt; Pair &gt; High Card.</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-            {/* 1. Dragon vs Tiger */}
-            <div className="relative bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#ef4444]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[#ef4444]/20 to-transparent rounded-bl-full"></div>
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#ef4444] to-[#dc2626] flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-[#ef4444]/20">1</div>
-                  <h3 className="text-lg md:text-xl font-semibold text-white">Dragon vs Tiger</h3>
+            {[
+              { color: '#ef4444', name: 'Teen Patti Classic', desc: 'The standard 3-card game. Each player antes a boot, then alternates blind or chaal until showdown. Best for learning the ranking ladder.' },
+              { color: '#FFA500', name: 'Teen Patti Joker', desc: 'A random card is set as Joker before the deal. Any matching card in your hand becomes a wildcard, dramatically improving Trail and Pure Sequence frequency.' },
+              { color: '#4ade80', name: 'Teen Patti AK47', desc: 'A, K, 4 and 7 of every suit act as wildcards. Higher hand strength on average, so play tighter ranges and avoid bluffing low pairs.' },
+              { color: '#0ea5e9', name: 'Teen Patti Muflis', desc: 'Reverse hand rankings: the lowest hand wins. High Card 2-3-5 (offsuit) becomes the strongest hand. Useful for breaking habits formed in Classic.' },
+              { color: '#a855f7', name: 'Best of Four', desc: 'You receive 4 cards and must select your best 3. More information per hand, slower fold rate, larger pots.' },
+              { color: '#ec4899', name: 'Rummy (Points / Pool / Deals)', desc: '13-card Indian Rummy. Form pure and impure sequences plus sets. Skill-heavy format with longer matches than Teen Patti.' },
+              { color: '#f97316', name: 'Andar Bahar', desc: 'Pure-luck side game. A Joker card is drawn, then cards are dealt left (Andar) and right (Bahar) until the Joker rank reappears. Bet on which side wins.' },
+              { color: '#facc15', name: 'Dragon vs Tiger', desc: 'Two cards are dealt face-up; the higher rank wins. One of the fastest tables in the app \u2014 typical round is under 30 seconds.' },
+              { color: '#06b6d4', name: '999', desc: 'Each card adds to a running total; the hand closest to 9 wins. Quick, low-variance Teen Patti spin-off.' },
+            ].map((g, idx) => (
+              <div key={g.name} className="relative bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden" style={{ borderColor: 'transparent' }} onMouseEnter={undefined}>
+                <div className="absolute top-0 right-0 w-16 h-16 rounded-bl-full" style={{ backgroundImage: `linear-gradient(to bottom right, ${g.color}33, transparent)` }}></div>
+                <div className="relative">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-9 h-9 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg" style={{ backgroundImage: `linear-gradient(to bottom right, ${g.color}, ${g.color}cc)`, boxShadow: `0 4px 12px ${g.color}33` }}>{idx + 1}</div>
+                    <h3 className="text-lg md:text-xl font-semibold text-white">{g.name}</h3>
+                  </div>
+                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">{g.desc}</p>
                 </div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base">Dragon vs Tiger is a simple and exciting card game where players bet which side of the card will be more in quantity. This is a fast-paced game for quick matches to earn rewards.</p>
               </div>
-            </div>
-            {/* 2. Mines */}
-            <div className="relative bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#FFA500]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[#FFA500]/20 to-transparent rounded-bl-full"></div>
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#FFA500] to-[#f97316] flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-[#FFA500]/20">2</div>
-                  <h3 className="text-lg md:text-xl font-semibold text-white">Mines</h3>
-                </div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base">Mines is a strategic puzzle-style game where you need to save yourself from hidden mines by uncovering the tiles. Each saved tile multiplies the reward and is known as a combination of risk and calculation.</p>
-              </div>
-            </div>
-            {/* 3. Zoo Roulette */}
-            <div className="relative bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#4ade80]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[#4ade80]/20 to-transparent rounded-bl-full"></div>
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#4ade80] to-[#16a34a] flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-[#4ade80]/20">3</div>
-                  <h3 className="text-lg md:text-xl font-semibold text-white">Zoo Roulette</h3>
-                </div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base">Zoo Roulette is a fun-themed game where you need to match symbols and animals to complete challenges and win rewards. This is a beginner-friendly game offering you with casual entertaining gameplay.</p>
-              </div>
-            </div>
-            {/* 4. Car Roulette */}
-            <div className="relative bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#0ea5e9]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[#0ea5e9]/20 to-transparent rounded-bl-full"></div>
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#0ea5e9] to-[#0284c7] flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-[#0ea5e9]/20">4</div>
-                  <h3 className="text-lg md:text-xl font-semibold text-white">Car Roulette</h3>
-                </div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base">Car Roulette is a themed and faster version of roulette where players make bets and win rewards and chips according to the results of rounds. This game is a combination of luck and risk management.</p>
-              </div>
-            </div>
-            {/* 5. Domino */}
-            <div className="relative bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#a855f7]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[#a855f7]/20 to-transparent rounded-bl-full"></div>
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#a855f7] to-[#7c3aed] flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-[#a855f7]/20">5</div>
-                  <h3 className="text-lg md:text-xl font-semibold text-white">Domino</h3>
-                </div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base">Domino is a strategy game where you match tiles, and you need to connect the same numbers or patterns. This is a competitive game, and it is important to block opponents to maximize your points.</p>
-              </div>
-            </div>
-            {/* 6. Roulette */}
-            <div className="relative bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#ec4899]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl overflow-hidden">
-              <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-[#ec4899]/20 to-transparent rounded-bl-full"></div>
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#ec4899] to-[#db2777] flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-[#ec4899]/20">6</div>
-                  <h3 className="text-lg md:text-xl font-semibold text-white">Roulette</h3>
-                </div>
-                <p className="text-gray-300 leading-relaxed text-sm md:text-base">Roulette is a classic casino-style game where you make bets on numbers, colors, and combinations. The outcome is decided by the spinning wheel, offering you a high-risk and high-reward gameplay.</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -1478,8 +1539,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Redesigned User Interface</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Teen Patti Gold has completely redesigned its interface so that you can get a smooth and engaging experience. The menus, buttons, and game screens are visually appealing, making it easy for beginners to explore different features. The new interface comes with a modern look that makes the long gaming sessions comfortable and attractive.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Redesigned Lobby (v1.656)</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Tables are now grouped by stake bracket and Teen Patti variant in a single lobby view, replacing the old multi-tab layout. Average time-to-table dropped from 4 taps to 2.</p>
             </div>
             {/* Optimized Performance */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#facc15]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1488,8 +1549,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Optimized Game Performance</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The performance of the app is intensively optimized, where the loading times are fast, and the games run smoothly on low-end devices. The lag and freeze issues have been reduced because the backend system has been upgraded. This optimization allows you to enjoy uninterrupted and seamless gameplay.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Smaller APK, Faster Cold Start</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The v1.656 build is 49&nbsp;MB &mdash; about 8&nbsp;MB lighter than v1.5x &mdash; thanks to texture compression and removal of legacy assets. Cold-start time on Android 8 mid-range hardware is around 2.5 seconds.</p>
             </div>
             {/* Security */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#4ade80]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1498,8 +1559,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Enhanced Security Measures</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The Teen Patti Gold has upgraded its security measures. 2FA, OTP verification, and encrypted transactions make your account and transactions secure and reliable. These improvements ensure that your data remains safe and minimizes the chances of unauthorized access, allowing you to enjoy it without any stress.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Email Binding &amp; Account Recovery</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Optional email binding lets you recover an account if you lose access to the registered phone number &mdash; the previous phone-only flow locked players out when they switched SIMs. OTP is now also accepted via WhatsApp for users on weak SMS networks.</p>
             </div>
             {/* New Game Modes */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#a855f7]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1509,8 +1570,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">New Game Modes &amp; Variations</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The latest update of Teen Patti Gold has introduced new game modes and variations where you can enjoy speed Rummy, private tables, and tournament-style matches. These additions make the gameplay more engaging and competitive with new challenges and rules that help you improve your skills and strategies.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Best of Four &amp; Speed Rummy Added</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Best of Four (deal 4 cards, pick best 3) and Speed Rummy (15-second turn timer) are now available alongside the existing Classic, Joker, AK47, Muflis and 999 variants. Both modes have their own dedicated tables in the lobby.</p>
             </div>
             {/* Multi-Device */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#06b6d4]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1519,8 +1580,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Multi-Device Synchronization</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">The latest update allows you to access your account on multiple devices, where progress is automatically synced. This feature enables you to enjoy your game seamlessly on mobile and tablet. It ensures convenience and is ideal for those who travel frequently or use the app on multiple devices.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Cross-Device Wallet Sync</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Sign in on a tablet or PC emulator and your chip balance, hand history and bonus progress sync from your phone in under 5 seconds. Concurrent multi-device login is blocked &mdash; only one active session per account.</p>
             </div>
             {/* Improved Rewards */}
             <div className="bg-[#0a1029] rounded-xl p-6 border border-gray-800 hover:border-[#ec4899]/50 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-xl">
@@ -1529,8 +1590,8 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Improved Rewards &amp; Bonus Systems</h3>
-              <p className="text-gray-300 leading-relaxed text-sm md:text-base">Teen Patti Gold has restructured its bonus and reward system, where the daily login rewards, seasonal promotions, and tournament prizes have been made more attractive and rewarding. Loyalty rewards and surprise gifts have been introduced for regular players, motivating them to become active.</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-2 text-white">Tiered First-Deposit Rebate</h3>
+              <p className="text-gray-300 leading-relaxed text-sm md:text-base">First-deposit bonus now scales from 5% (Rs&nbsp;3,000 deposit, 2x wager) up to 30% (Rs&nbsp;50,000 deposit, 7x wager) &mdash; see the full table in the New Players section above. Replaces the old flat 100% match that effectively never cleared.</p>
             </div>
           </div>
         </div>
@@ -1542,12 +1603,12 @@ export default function Home() {
           <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#FFA500]">Safety &amp; Security of the Teen Patti Gold Game</h2>
           <div className="grid md:grid-cols-2 gap-3 md:gap-4">
             {[
-              'This app uses OTP verification and a strong password system to secure your account.',
-              'Encrypted payment gateways are used with local payment methods.',
-              'The game has implemented anti-cheat algorithms with monitoring tools.',
-              'The personal data of users is stored on secure servers.',
-              'Teen Patti Gold regularly updates itself to fix bugs.',
-              'This platform is licensed and verified, making it safe from any fraud.',
+              'OTP verification on every login from a new device, plus optional password binding to your phone number or email.',
+              'JazzCash and EasyPaisa payments use the operators\u2019 own encrypted gateways \u2014 the app never stores your CNIC PIN or wallet credentials.',
+              'A server-side RNG (Random Number Generator) shuffles every deal; cards cannot be predicted from the client.',
+              'Anti-collusion checks flag accounts that consistently soft-play with the same opponents from the same IP range.',
+              'The APK is updated roughly every 4\u20136 weeks (current build: v1.656). Always grab the latest build from this page \u2014 third-party mirrors often inject ads or malware.',
+              'Real-money play is restricted to users 18 and above. Gambling is regulated differently in each Pakistani province; check your local laws before depositing.',
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-3 bg-[#0a1029] rounded-xl p-4 md:p-5 border border-gray-800 hover:border-[#4ade80]/40 transition-all duration-300">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-[#4ade80] to-[#16a34a] flex items-center justify-center shadow-md shadow-[#4ade80]/20">
@@ -1706,7 +1767,7 @@ export default function Home() {
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-[#FFA500]">Final Thoughts</h2>
             </div>
-            <p className="text-gray-200 leading-relaxed text-base md:text-lg">Teen Patti Gold is a popular game that combines traditional rules with multiple earning opportunities. It allows you to create private tables and enjoy real-time matches, making it more accessible and interactive. The multiple formats and games make it more exciting to play and earn money. The security measures and fair gameplay systems ensure that your experience remains safe and trustworthy, with daily rewards and referral programs. In short, the Teen Patti Gold Game is a perfect combination of fun, competition, and rewards if you want to play games and earn real cash rewards.</p>
+            <p className="text-gray-200 leading-relaxed text-base md:text-lg">Teen Patti Gold is the most practical real-money 3-card poker option for Pakistani players in 2026: the official APK is free, JazzCash and EasyPaisa work on both deposits and withdrawals, the minimum is Rs&nbsp;100, and cash-outs typically land in your wallet within 3 to 24 hours. If you stick to <Link href="/blog/responsible-gaming-guide-2026" className="text-[#0ea5e9] hover:underline font-semibold">a sensible bankroll</Link>, learn the hand rankings before chasing pots, and treat the bonus structure as a discount rather than free money, the app is a fair way to play Teen Patti against real opponents from your phone. <Link href="/download-teen-patti-gold-apk" className="text-[#FFA500] hover:underline font-semibold">Download v1.656</Link> to get started, or read the <Link href="/blog/how-to-play-teen-patti-gold" className="text-[#0ea5e9] hover:underline font-semibold">full gameplay guide</Link> first if Teen Patti is new to you.</p>
           </div>
         </div>
       </section>
@@ -1782,7 +1843,7 @@ export default function Home() {
                 </span>
               </summary>
               <div className="px-5 md:px-6 pb-5 md:pb-6 pt-0 text-gray-300 leading-relaxed border-t border-gray-700/50">
-                <p className="pt-4">Teen Patti Gold offers several variations including Points Rummy, Pool Rummy, and 13-card Teen Patti Gold. Each variation has its own unique rules and scoring system, making the gameplay dynamic and entertaining for both casual and competitive players.</p>
+                <p className="pt-4">Teen Patti Gold offers six 3-card Teen Patti variants &mdash; Classic, Joker, AK47, Muflis, Best of Four and 999 &mdash; alongside Points Rummy, Pool Rummy, Deals Rummy, Andar Bahar and Dragon vs Tiger. Each variant has its own bet structure, blind/chaal limits and side-show rules.</p>
               </div>
             </details>
 

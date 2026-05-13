@@ -66,9 +66,9 @@ export default function MobileNavigation() {
                   src={LOGO_PATH_VERSIONED}
                   alt="Teen Patti Gold Logo"
                   fill
-                  sizes="(max-width: 768px) 32px, 40px"
                   className="object-contain"
                   priority={true}
+                  unoptimized={true}
                 />
               </div>
               <span className="text-accent text-xl font-bold">Teen Patti Gold</span>

@@ -134,7 +134,13 @@ export default function RootLayout({
         <meta name="ICBM" content="30.3753, 69.3451" />
         {/* `language` removed — site is English-only; previous "English, Urdu"
             value was misleading because no Urdu pages exist. */}
-        <meta name="rating" content="adult" />
+        {/* `rating: adult` was previously declared here and was telling Google
+            the entire site is adult-rated — that is exactly what triggers the
+            SafeSearch "Blur" filter on every image in Google Image Search,
+            even though the site is a card-gaming app, not adult content.
+            Card gaming is allowed under SafeSearch's "general audience" tier
+            so this tag is removed. */}
+        <meta name="rating" content="general" />
         
         {/* DNS Prefetch and Preconnect - only when GA is used to avoid unused preconnect warning */}
         {process.env.NEXT_PUBLIC_GA_ID && (

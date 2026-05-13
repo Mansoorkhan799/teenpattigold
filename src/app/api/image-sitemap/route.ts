@@ -134,10 +134,15 @@ export async function GET() {
       ],
     },
     {
+      // IMPORTANT: /blog must NOT claim /teen-patti-gold.webp — that asset is
+      // the home page's primary brand image. Listing it here was telling
+      // Google "/blog owns this image", which caused the GSC Image Sitemap
+      // enhancement to attribute the brand logo to /blog instead of /.
+      // Use a blog-specific screenshot instead.
       pageUrl: '/blog',
       images: [
         {
-          loc: '/teen-patti-gold.webp',
+          loc: '/teen-patti-gold-game.webp',
           title: 'Teen Patti Gold Blog - Guides and Tips for Pakistan',
           caption: 'Guides, tutorials, and tips for Teen Patti Gold players in Pakistan.',
         },

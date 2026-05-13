@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp',
         width: 512, height: 512,
         alt: 'Withdraw Teen Patti Gold Pakistan',
       },
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: 'How to Withdraw Money from Teen Patti Gold APK Pakistan?',
     description:
       'Cash out your Teen Patti Gold winnings from Rs 100. Send payouts straight to JazzCash, EasyPaisa or your Pakistani bank — typical processing in 3 to 24 hours.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-vip-program.webp'],
   },
   robots: {
     index: true,
@@ -275,7 +275,7 @@ export default function WithdrawMoneyPage() {
                 className="relative object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority
                 fetchPriority="high"
-                quality={75}
+                unoptimized={true}
               />
             </div>
           </div>

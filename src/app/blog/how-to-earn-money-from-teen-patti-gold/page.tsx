@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp',
         width: 512, height: 512,
         alt: 'How to Earn Money on Teen Patti Gold Pakistan',
       },
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     title: 'How to Earn Money on Teen Patti Gold in Pakistan 2026',
     description:
       'Earn on Teen Patti Gold in Pakistan: tables, referrals & bonuses. 2026 guide — grow chips slowly; no income promise; cap JazzCash and EasyPaisa spend.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp'],
   }
 };
 
@@ -139,6 +140,20 @@ export default function HowToEarnMoney() {
               <span>📅 January 12, 2026</span>
               <span>•</span>
               <span>⏱️ 11 min read</span>
+            </div>
+
+            {/* Featured image — embedded canonical /teen-patti-gold-refer-and-earn.webp
+                matches image-sitemap.xml. unoptimized=true keeps <img src> on
+                the indexable canonical path (the /_next/image proxy is noindex). */}
+            <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8">
+              <Image
+                src="/teen-patti-gold-refer-and-earn.webp"
+                alt="How to Earn Money from Teen Patti Gold"
+                fill
+                className="object-cover"
+                priority
+                unoptimized={true}
+              />
             </div>
 
             <div className="prose prose-lg max-w-none">

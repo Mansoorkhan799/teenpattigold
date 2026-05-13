@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL, OG_IMAGE_WIDTH, OG_IMAGE_HEIGHT } from '@/lib/site-images';
+import { LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_APK } from '@/lib/breadcrumb-schema';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
 
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: LOGO_URL,
-        width: OG_IMAGE_WIDTH,
-        height: OG_IMAGE_HEIGHT,
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp',
+        width: 400,
+        height: 711,
         alt: 'Teen Patti Gold APK Latest Version Download Pakistan',
       },
     ],
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: 'How to Download Teen Patti Gold APK Free 2026 — Latest Version V1.656',
     description:
       'How to download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Step-by-step install guide — play 30+ card games, earn real cash via JazzCash & EasyPaisa.',
-    images: [LOGO_URL],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-apk.webp'],
   },
 };
 
@@ -406,7 +406,7 @@ export default function TeenPattiGoldApkPage() {
                 className="relative object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority
                 fetchPriority="high"
-                quality={75}
+                unoptimized={true}
               />
             </div>
           </div>
@@ -635,8 +635,7 @@ export default function TeenPattiGoldApkPage() {
                     height={711}
                     className="w-auto h-auto max-w-full object-contain"
                     loading="lazy"
-                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 400px"
-                    quality={70}
+                    unoptimized={true}
                   />
                 </div>
                 <p className="text-center text-gray-300 mt-3 font-medium">{label}</p>

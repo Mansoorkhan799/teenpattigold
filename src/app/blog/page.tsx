@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 import { safeJsonLd } from '@/lib/blog-schema';
@@ -31,14 +32,14 @@ export const metadata: Metadata = {
     siteName: 'Teen Patti Gold',
     locale: 'en_PK',
     type: 'website',
-    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2', width: 512, height: 512, alt: 'Teen Patti Gold Blog - Guides & Tips 2026' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp', width: 400, height: 711, alt: 'Teen Patti Gold Blog - Guides & Tips 2026' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Teen Patti Gold Blog — Pakistan Tips & Guides 2026',
     description:
       'Teen Patti Gold guides for Pakistan: APK, account, earning tips, bonuses & JazzCash. Updated 2026 articles — read before you play real-money card games.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
   },
 };
 
@@ -235,7 +236,22 @@ export default function Blog() {
       <p className="text-gray-400 text-sm mb-4"><Link href="/" className="hover:text-[#FFA500] transition-colors">Teen Patti Gold</Link> → Blog</p>
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-accent">Teen Patti Gold Blog</h1>
       <p className="text-gray-300 mb-8 text-lg">Stay updated with the latest guides, tips, and tutorials for <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Teen Patti Gold</Link></p>
-      
+
+      {/* Featured image — canonical /teen-patti-gold-game.webp embedded so
+          Google sees it on the /blog page declared in image-sitemap.xml.
+          unoptimized=true keeps <img src> on the indexable path (the
+          /_next/image proxy is X-Robots-Tag: noindex). */}
+      <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-10">
+        <Image
+          src="/teen-patti-gold-game.webp"
+          alt="Teen Patti Gold Blog - Guides and Tips for Pakistan"
+          fill
+          className="object-cover"
+          priority
+          unoptimized={true}
+        />
+      </div>
+
       <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
         {/* Featured Post - How to Use App */}
         <Link href="/blog/how-to-use-teen-patti-gold-app-in-pakistan" className={blogCardClassName}>

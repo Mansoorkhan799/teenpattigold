@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp',
         width: 512, height: 512,
         alt: 'Contact Teen Patti Gold support Pakistan',
       },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: 'Contact Teen Patti Gold — Support & Help Pakistan 2026',
     description:
       'Contact Teen Patti Gold in Pakistan for payments or app help. Email, JazzCash & EasyPaisa tips — our team answers account and gameplay questions quickly.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/contact-us',

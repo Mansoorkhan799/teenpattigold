@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
@@ -67,7 +68,6 @@ export default function ReferralAgentPage() {
     dateModified: '2026-04-30T09:00:00+05:00',
     image: [
       'https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp',
-      'https://teenpattigoldgame.com.pk/teen-patti-gold.webp',
     ],
     keywords:
       'teen patti gold referral agent, teen patti gold agent program pakistan, teen patti gold refer and earn, teen patti gold commission 2026',
@@ -166,6 +166,20 @@ export default function ReferralAgentPage() {
               <span>📅 Published: April 2026</span>
               <span>⏱ 6 min read</span>
               <span>🇵🇰 Pakistan Guide</span>
+            </div>
+
+            {/* Featured image — canonical /teen-patti-gold-refer-and-earn.webp embedded
+                so Google sees it on the page declared in image-sitemap.xml.
+                unoptimized=true keeps <img src> on the indexable path. */}
+            <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mt-8">
+              <Image
+                src="/teen-patti-gold-refer-and-earn.webp"
+                alt="How to Become a Referral Agent for Teen Patti Gold 2026"
+                fill
+                className="object-cover"
+                priority
+                unoptimized={true}
+              />
             </div>
           </div>
 

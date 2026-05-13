@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { LOGO_URL, LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
+import { LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_IOS } from '@/lib/breadcrumb-schema';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
 
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp',
         width: 512, height: 512,
         alt: 'Teen Patti Gold iOS Pakistan',
       },
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     title: 'Teen Patti Gold for iOS — Download Info Pakistan 2026',
     description:
       'Teen Patti Gold on iPhone in Pakistan: limited iOS support. Prefer Android APK or PC — avoid fake apps and protect your Teen Patti Gold wallet and login.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
   },
 };
 
@@ -293,7 +293,7 @@ export default function TeenPattiGoldForIOSPage() {
                 className="relative object-contain drop-shadow-2xl rounded-3xl w-full h-full"
                 priority
                 fetchPriority="high"
-                quality={75}
+                unoptimized={true}
               />
             </div>
           </div>

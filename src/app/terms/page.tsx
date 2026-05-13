@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp',
         width: 512, height: 512,
         alt: 'Teen Patti Gold terms Pakistan',
       },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'Teen Patti Gold Terms — User Agreement Pakistan 2026',
     description:
       'Teen Patti Gold terms in Pakistan: accounts, bonuses & fair play. Read before deposit — rules for our site, official app and real-money Teen Patti tables.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/terms',

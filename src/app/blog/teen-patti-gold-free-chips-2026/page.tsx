@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     authors: ['Teen Patti Gold Team'],
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp',
         width: 512, height: 512,
         alt: 'Teen Patti Gold Free Chips 2026 - Daily Bonus Chips',
       },
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     title: 'Teen Patti Gold Free Chips 2026 — Daily Bonus Pakistan',
     description:
       'Get Teen Patti Gold free chips in Pakistan: daily login, spins & events. 2026 list of legit bonus paths — stretch playtime without risky unofficial mod APKs.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp'],
   }
 };
 
@@ -174,6 +175,20 @@ export default function FreeChipsPage() {
               <span>📅 Published: March 2026</span>
               <span>⏱ 6 min read</span>
               <span>🇵🇰 Pakistan Guide</span>
+            </div>
+
+            {/* Featured image — canonical /teen-patti-gold-refer-and-earn.webp embedded
+                so Google sees it on the page declared in image-sitemap.xml.
+                unoptimized=true keeps <img src> on the indexable path. */}
+            <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mt-8">
+              <Image
+                src="/teen-patti-gold-refer-and-earn.webp"
+                alt="Teen Patti Gold Free Chips 2026"
+                fill
+                className="object-cover"
+                priority
+                unoptimized={true}
+              />
             </div>
           </div>
 

@@ -17,7 +17,6 @@
  *     post; replaced with a per-post `Thing` topic, like card-rummy does).
  */
 
-import { LOGO_URL } from '@/lib/site-images';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
 
 export const BASE_URL = 'https://teenpattigoldgame.com.pk';
@@ -79,11 +78,16 @@ export function getBlogPostingSchema(opts: BlogPostSchemaOptions) {
   const postId = `${opts.url}#article`;
   const webpageId = `${opts.url}#webpage`;
 
+  // Default fallback intentionally avoids the home-page brand logo
+  // (`/teen-patti-gold.webp`). When that URL was the default, every blog
+  // post that didn't pass `image` ended up declaring the brand logo as its
+  // primary image, and Google attributed the logo to the blog cluster
+  // instead of the home page in Search Console's Image enhancement.
   const images = opts.image
     ? Array.isArray(opts.image)
       ? opts.image
       : [opts.image]
-    : [LOGO_URL, `${BASE_URL}/teen-patti-gold-game.webp`];
+    : [`${BASE_URL}/teen-patti-gold-game.webp`];
 
   const breadcrumbItems = [
     { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}/` },

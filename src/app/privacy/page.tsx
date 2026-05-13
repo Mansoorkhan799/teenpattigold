@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2',
+        url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp',
         width: 512, height: 512,
         alt: 'Teen Patti Gold privacy policy Pakistan',
       },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: 'Teen Patti Gold Privacy Policy — Data Protection PK',
     description:
       'Teen Patti Gold privacy for Pakistan: data, cookies & payments. Learn how we protect your info when you browse or download the official Teen Patti Gold APK.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp'],
   },
   alternates: {
     canonical: 'https://teenpattigoldgame.com.pk/privacy',

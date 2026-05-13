@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 
 export const metadata: Metadata = {
@@ -32,14 +33,14 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-01-10T00:00:00Z',
     authors: ['Teen Patti Gold Team'],
-    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2', width: 512, height: 512, alt: 'How to Use Teen Patti Gold APK in Pakistan' }],
+    images: [{ url: 'https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp', width: 512, height: 512, alt: 'How to Use Teen Patti Gold APK in Pakistan' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to Use Teen Patti Gold APK in Pakistan? 2026 Guide',
     description:
       'Teen Patti Gold app tour for Pakistan: wallet, lobby & tables. 2026 basics — learn screens before your first real-money Teen Patti or Rummy session on mobile.',
-    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold.webp?v=2'],
+    images: ['https://teenpattigoldgame.com.pk/teen-patti-gold-app.webp'],
   }
 };
 
@@ -152,6 +153,21 @@ export default function HowToUseApp() {
               <span>⏱️ 12 min read</span>
               <span>•</span>
               <span>📱 Beginner Guide</span>
+            </div>
+
+            {/* Featured image — embedded so the canonical /teen-patti-gold-app.webp
+                actually appears on the page Google associates with it in
+                image-sitemap.xml. unoptimized=true keeps <img src> equal to the
+                indexable canonical path (the /_next/image proxy is noindex). */}
+            <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8">
+              <Image
+                src="/teen-patti-gold-app.webp"
+                alt="How to Use Teen Patti Gold App in Pakistan"
+                fill
+                className="object-cover"
+                priority
+                unoptimized={true}
+              />
             </div>
 
             <div className="prose prose-lg max-w-none">
