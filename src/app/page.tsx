@@ -162,7 +162,7 @@ export default function Home() {
           "width": 512,
           "height": 512,
           "name": "Teen Patti Gold official app icon",
-          "description": "Teen Patti Gold — Pakistan's #1 card game app. Download Teen Patti Gold APK free. Play Teen Patti, Rummy, Dragon Tiger and earn real money.",
+          "description": "Teen Patti Gold — Pakistan's #1 card game app. Download Teen Patti Gold APK free. Play Teen Patti, Rummy, and Dragon Tiger.",
           "caption": "Teen Patti Gold — Pakistan's #1 card game app. Download free APK.",
           ...imageObjectLicensing
         }
@@ -176,7 +176,7 @@ export default function Home() {
         "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
         "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
         "name": "Teen Patti Gold",
-        "description": "Teen Patti Gold — Pakistan's premier card game app. Official Teen Patti Gold brand image. Play Teen Patti, Rummy, Dragon vs Tiger and win real cash. Download Teen Patti Gold APK.",
+        "description": "Teen Patti Gold — Pakistan's premier card game app. Official Teen Patti Gold brand image for Teen Patti, Rummy, and Dragon Tiger. Download Teen Patti Gold APK.",
         "width": 512,
         "height": 512,
         ...imageObjectLicensing
@@ -192,7 +192,7 @@ export default function Home() {
         "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
         "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-game.webp",
         "name": "Teen Patti Gold Game Interface - Play Card Games in Pakistan",
-        "description": "Teen Patti Gold game screen — real-money card games including Teen Patti, Rummy, Dragon vs Tiger in Pakistan.",
+        "description": "Teen Patti Gold game screen showing Teen Patti, Rummy, and Dragon vs Tiger gameplay in Pakistan.",
         "width": 400,
         "height": 711,
         "representativeOfPage": false,
@@ -240,7 +240,7 @@ export default function Home() {
         "url": "https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp",
         "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold-refer-and-earn.webp",
         "name": "Teen Patti Gold Refer and Earn - Invite Friends",
-        "description": "Earn real money by referring friends to Teen Patti Gold in Pakistan.",
+        "description": "Teen Patti Gold refer-and-earn screen for inviting friends in Pakistan.",
         "width": 400,
         "height": 711,
         "representativeOfPage": false,
@@ -924,7 +924,7 @@ export default function Home() {
               <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center">
                 <Image
                   src="/teen-patti-gold-apk.webp"
-                  alt="Teen Patti Gold Bonuses & Rewards - Earn Real Money in Pakistan"
+                  alt="Teen Patti Gold bonuses and rewards screen in Pakistan"
                   width={400}
                   height={711}
                   className="w-auto h-auto max-w-full object-contain"

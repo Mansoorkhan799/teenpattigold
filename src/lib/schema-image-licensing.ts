@@ -32,10 +32,21 @@ export const IMAGE_CREATOR = {
  *     ...imageObjectLicensing
  *   }
  */
+/** General-audience rating for ImageObject nodes (not adult / restricted). */
+export const imageObjectGeneralAudience = {
+  contentRating: {
+    '@type': 'Rating',
+    ratingValue: 'General',
+    bestRating: 'General',
+    worstRating: 'Restricted',
+  },
+} as const;
+
 export const imageObjectLicensing = {
   license: SITE_ORIGIN,
   creator: IMAGE_CREATOR,
   acquireLicensePage: `${SITE_ORIGIN}/contact-us`,
   copyrightNotice: '© Teen Patti Gold. All rights reserved.',
   creditText: 'Teen Patti Gold',
+  ...imageObjectGeneralAudience,
 } as const;

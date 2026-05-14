@@ -29,12 +29,12 @@ export async function GET() {
         {
           loc: '/teen-patti-gold.webp',
           title: "Teen Patti Gold - Pakistan's #1 Card Game App",
-          caption: 'Download Teen Patti Gold APK free. Play Teen Patti, Rummy, Dragon Tiger and earn real money in Pakistan.',
+          caption: 'Download Teen Patti Gold APK free. Play Teen Patti, Rummy, and Dragon Tiger in Pakistan.',
         },
         {
           loc: '/teen-patti-gold-game.webp',
           title: 'Teen Patti Gold Game Interface - Play Card Games in Pakistan',
-          caption: 'Teen Patti Gold game screen — real-money card games including Teen Patti, Rummy, Dragon vs Tiger in Pakistan.',
+          caption: 'Teen Patti Gold game screen showing Teen Patti, Rummy, and Dragon vs Tiger gameplay in Pakistan.',
         },
         {
           loc: '/teen-patti-gold-app.webp',
@@ -54,7 +54,7 @@ export async function GET() {
         {
           loc: '/teen-patti-gold-refer-and-earn.webp',
           title: 'Teen Patti Gold Refer and Earn - Invite Friends',
-          caption: 'Earn real money by referring friends to Teen Patti Gold in Pakistan.',
+          caption: 'Teen Patti Gold refer-and-earn screen for inviting friends in Pakistan.',
         },
         {
           loc: '/teen-patti-gold-vip-program.webp',
@@ -74,7 +74,7 @@ export async function GET() {
         {
           loc: '/teen-patti-gold.webp',
           title: 'Teen Patti Gold APK Latest Version Free Download 2026',
-          caption: 'Download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Play 30+ card games and earn real cash.',
+          caption: 'Download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Play 30+ card games.',
         },
         {
           loc: '/teen-patti-gold-apk.webp',
@@ -174,7 +174,7 @@ export async function GET() {
         {
           loc: '/teen-patti-gold-refer-and-earn.webp',
           title: 'How to Earn Money from Teen Patti Gold',
-          caption: 'Earn real money from Teen Patti Gold in Pakistan',
+          caption: 'Ways to earn rewards from Teen Patti Gold in Pakistan',
         },
       ],
     },
@@ -264,7 +264,7 @@ export async function GET() {
         {
           loc: '/teen-patti-gold-refer-and-earn.webp',
           title: 'Is Teen Patti Gold Better for Earning Real Cash 2026',
-          caption: 'Analysis of Teen Patti Gold for earning real cash in Pakistan',
+          caption: 'Analysis of Teen Patti Gold rewards and features in Pakistan',
         },
       ],
     },

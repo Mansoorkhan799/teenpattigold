@@ -82,7 +82,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE_URL,
         width: OG_IMAGE_WIDTH,
         height: OG_IMAGE_HEIGHT,
-        alt: "Teen Patti Gold - Play Card Games and Earn Real Money in Pakistan",
+        alt: "Teen Patti Gold - Pakistan's #1 card game app for Teen Patti, Rummy, and Dragon Tiger",
       },
     ],
   },
@@ -97,7 +97,7 @@ export const metadata: Metadata = {
         url: OG_IMAGE_URL,
         width: OG_IMAGE_WIDTH,
         height: OG_IMAGE_HEIGHT,
-        alt: "Teen Patti Gold - Play Card Games and Earn Real Money in Pakistan",
+        alt: "Teen Patti Gold - Pakistan's #1 card game app for Teen Patti, Rummy, and Dragon Tiger",
       }
     ],
   },
