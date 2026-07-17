@@ -28,8 +28,8 @@ export async function GET() {
       images: [
         {
           loc: '/teen-patti-gold.webp',
-          title: "Teen Patti Gold - Pakistan's #1 Card Game App",
-          caption: 'Download Teen Patti Gold APK free. Play Teen Patti, Rummy, and Dragon Tiger in Pakistan.',
+          title: 'Teen Patti Gold',
+          caption: 'Teen Patti Gold — official Teen Patti Gold app icon. Download Teen Patti Gold APK free for Android in Pakistan.',
         },
         {
           loc: '/teen-patti-gold-game.webp',

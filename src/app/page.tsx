@@ -185,9 +185,10 @@ export default function Home() {
           "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
           "width": 512,
           "height": 512,
-          "name": "Teen Patti Gold official app icon",
-          "description": "Teen Patti Gold — Download free APK and play real money games in Pakistan 2026.",
-          "caption": "Teen Patti Gold Game Download – New Online Earning App 2026",
+          "name": "Teen Patti Gold",
+          "description": "Teen Patti Gold — official app icon and brand image for the Teen Patti Gold real money earning app in Pakistan.",
+          "caption": "Teen Patti Gold",
+          "keywords": "Teen Patti Gold, Teen Patti Gold APK, Teen Patti Gold Pakistan",
           ...imageObjectLicensing
         }
       },
@@ -197,7 +198,9 @@ export default function Home() {
         "url": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
         "contentUrl": "https://teenpattigoldgame.com.pk/teen-patti-gold.webp",
         "name": "Teen Patti Gold",
-        "description": "Teen Patti Gold official brand image. Download Teen Patti Gold APK for Android — play Teen Patti, Rummy, Mines, Ludo and Sports in Pakistan.",
+        "description": "Teen Patti Gold — official Teen Patti Gold app icon. Download Teen Patti Gold APK for Android and play real money games in Pakistan.",
+        "caption": "Teen Patti Gold",
+        "keywords": "Teen Patti Gold",
         "width": 512,
         "height": 512,
         "representativeOfPage": true,
@@ -462,7 +465,7 @@ export default function Home() {
             <meta itemProp="name" content="Teen Patti Gold" />
             <meta
               itemProp="description"
-              content="Teen Patti Gold - Download free APK and play real money games in Pakistan. Play Teen Patti, Rummy, Mines, Ludo and Sports."
+              content="Teen Patti Gold — official Teen Patti Gold app icon. Download Teen Patti Gold APK for Android in Pakistan."
             />
             <meta itemProp="url" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
             <meta itemProp="contentUrl" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
@@ -472,8 +475,8 @@ export default function Home() {
             <meta itemProp="copyrightNotice" content="© Teen Patti Gold. All rights reserved." />
             <Image
               src={LOGO_PATH_VERSIONED}
-              alt="Teen Patti Gold – Download & Play Real Money Games in Pakistan 2026"
-              title="Teen Patti Gold Game Download – New Online Earning App 2026"
+              alt="Teen Patti Gold"
+              title="Teen Patti Gold"
               width={320}
               height={320}
               className="object-contain drop-shadow-2xl rounded-3xl w-[260px] h-[260px] md:w-[320px] md:h-[320px]"
@@ -483,7 +486,7 @@ export default function Home() {
               itemProp="image"
             />
             <figcaption className="sr-only">
-              Teen Patti Gold – Pakistan real money earning app. Download the APK and play Teen Patti, Rummy, Mines, Ludo and Sports with JazzCash &amp; EasyPaisa.
+              Teen Patti Gold — official Teen Patti Gold app icon. Download Teen Patti Gold APK free for Android in Pakistan.
             </figcaption>
           </figure>
         </div>

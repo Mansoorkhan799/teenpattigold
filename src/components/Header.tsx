@@ -19,7 +19,8 @@ export default function Header() {
                 made the logo URL on the page mismatch the indexable canonical. */}
             <Image
               src={LOGO_PATH_VERSIONED}
-              alt="Teen Patti Gold - Pakistan's #1 card game app logo"
+              alt="Teen Patti Gold"
+              title="Teen Patti Gold"
               width={56}
               height={56}
               className="object-contain rounded-lg w-full h-full"
