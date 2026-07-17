@@ -2,6 +2,10 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { LOGO_PATH_VERSIONED } from '@/lib/site-images';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_ABOUT } from '@/lib/breadcrumb-schema';
+import Breadcrumbs from '@/components/Breadcrumbs';
+
+const aboutBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_ABOUT]);
 
 export const metadata: Metadata = {
   title: {
@@ -101,11 +105,19 @@ export default function AboutPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutBreadcrumbLd) }} />
       <div className="min-h-screen bg-primary py-12 px-4">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             {/* Hero Section */}
             <div className="text-center mb-12">
+              <Breadcrumbs
+                items={[
+                  { name: 'Home', href: '/' },
+                  { name: 'About Us' },
+                ]}
+                className="mb-6 text-left"
+              />
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">About Us</h1>
             </div>
 

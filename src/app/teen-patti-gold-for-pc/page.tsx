@@ -5,6 +5,7 @@ import { LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_PC } from '@/lib/breadcrumb-schema';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
 import FaqAccordion from '@/components/FaqAccordion';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const PC_PAGE_URL = 'https://teenpattigoldgame.com.pk/teen-patti-gold-for-pc';
 const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
@@ -242,6 +243,12 @@ export default function TeenPattiGoldForPCPage() {
 
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
+        <Breadcrumbs
+          items={[
+            { name: 'Home', href: '/' },
+            { name: 'Teen Patti Gold for PC' },
+          ]}
+        />
         <div className="md:flex md:items-center md:justify-between md:gap-12">
           <div className="md:w-1/2 space-y-6 text-center md:text-left">
             <div className="flex flex-wrap justify-center md:justify-start gap-2">

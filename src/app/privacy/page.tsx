@@ -1,5 +1,9 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_PRIVACY } from '@/lib/breadcrumb-schema';
+import Breadcrumbs from '@/components/Breadcrumbs';
+
+const privacyBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_PRIVACY]);
 
 export const metadata: Metadata = {
   title: {
@@ -37,11 +41,20 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicyPage() {
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(privacyBreadcrumbLd) }} />
     <div className="min-h-screen bg-primary py-12 px-4">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-12">
+            <Breadcrumbs
+              items={[
+                { name: 'Home', href: '/' },
+                { name: 'Privacy Policy' },
+              ]}
+              className="mb-6 text-left"
+            />
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Privacy Policy</h1>
             <p className="text-lg text-gray-400">Last Updated: January 5, 2026</p>
           </div>
@@ -287,5 +300,6 @@ export default function PrivacyPolicyPage() {
         }}
       />
     </div>
+    </>
   );
 }

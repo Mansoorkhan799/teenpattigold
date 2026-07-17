@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_BLOG } from '@/lib/breadcrumb-schema';
 import { safeJsonLd } from '@/lib/blog-schema';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: {
@@ -233,7 +234,12 @@ export default function Blog() {
       />
 
     <div className="container mx-auto px-4 py-12">
-      <p className="text-gray-400 text-sm mb-4"><Link href="/" className="hover:text-[#FFA500] transition-colors">Teen Patti Gold</Link> → Blog</p>
+      <Breadcrumbs
+        items={[
+          { name: 'Home', href: '/' },
+          { name: 'Blog' },
+        ]}
+      />
       <h1 className="text-3xl md:text-4xl font-bold mb-8 text-accent">Teen Patti Gold Blog</h1>
       <p className="text-gray-300 mb-8 text-lg">Stay updated with the latest guides, tips, and tutorials for <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Teen Patti Gold</Link></p>
 

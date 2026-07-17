@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 import FaqAccordion from '@/components/FaqAccordion';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: {
@@ -89,15 +90,13 @@ export default function ComparisonPage() {
       <div className="min-h-screen bg-primary">
         <div className="container mx-auto px-4 py-12">
 
-          {/* Breadcrumb */}
-          <div className="mb-6">
-            <Link href="/blog" className="text-accent hover:text-accent font-semibold inline-flex items-center">
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-              </svg>
-              Back to Blog
-            </Link>
-          </div>
+          <Breadcrumbs
+            items={[
+              { name: 'Home', href: '/' },
+              { name: 'Blog', href: '/blog' },
+              { name: 'vs Teen Patti Stars' },
+            ]}
+          />
 
           {/* Hero */}
           <div className="max-w-4xl mx-auto mb-12">

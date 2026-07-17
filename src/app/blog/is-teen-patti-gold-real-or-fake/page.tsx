@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 import FaqAccordion from '@/components/FaqAccordion';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export const metadata: Metadata = {
   title: {
@@ -78,14 +79,13 @@ export default function TeenPattiGoldRealOrFakePage() {
   return (
     <article className="py-12 px-4 md:px-8 max-w-4xl mx-auto">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(schemaData) }} />
-      {/* Breadcrumb */}
-      <nav className="mb-8 text-sm">
-        <Link href="/" className="text-[#0ea5e9] hover:underline">Home</Link>
-        <span className="text-gray-500 mx-2">/</span>
-        <Link href="/blog" className="text-[#0ea5e9] hover:underline">Blog</Link>
-        <span className="text-gray-500 mx-2">/</span>
-        <span className="text-gray-400">Is Teen Patti Gold Pakistan Real or Fake? 2026 Truth</span>
-      </nav>
+      <Breadcrumbs
+            items={[
+              { name: 'Home', href: '/' },
+              { name: 'Blog', href: '/blog' },
+              { name: 'Real or Fake?' },
+            ]}
+          />
 
       {/* Hero Section */}
       <header className="mb-12">

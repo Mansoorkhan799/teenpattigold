@@ -9,12 +9,26 @@ export type Crumb = {
  * Visible breadcrumb trail — pairs with BreadcrumbList JSON-LD for Google
  * breadcrumb rich results. Last item is the current page (no link).
  */
-export default function Breadcrumbs({ items }: { items: Crumb[] }) {
+export default function Breadcrumbs({
+  items,
+  className = 'mb-6',
+}: {
+  items: Crumb[];
+  className?: string;
+}) {
+  // Ensure Home is always a link to /
+  const normalized = items.map((item, index) => {
+    if (index === 0 && item.name.toLowerCase() === 'home') {
+      return { ...item, href: '/' };
+    }
+    return item;
+  });
+
   return (
-    <nav aria-label="Breadcrumb" className="mb-6">
+    <nav aria-label="Breadcrumb" className={className}>
       <ol className="flex flex-wrap items-center gap-1.5 text-sm text-gray-400">
-        {items.map((item, index) => {
-          const isLast = index === items.length - 1;
+        {normalized.map((item, index) => {
+          const isLast = index === normalized.length - 1;
           return (
             <li key={`${item.name}-${index}`} className="flex items-center gap-1.5">
               {index > 0 && (

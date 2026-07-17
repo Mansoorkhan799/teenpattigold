@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import { LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
 import { SITE_ARTICLE_DATE_PUBLISHED, getSiteArticleDateModified } from '@/lib/site-meta';
-import Breadcrumbs from '@/components/Breadcrumbs';
 import FaqAccordion from '@/components/FaqAccordion';
 
 /**
@@ -401,8 +400,6 @@ export default function Home() {
 
       {/* Hero */}
       <section className="py-6 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
-        <Breadcrumbs items={[{ name: 'Home' }]} />
-
         <div className="md:flex md:items-start md:justify-between md:space-x-12 lg:space-x-20">
           <div className="md:w-1/2 space-y-6">
             <div className="space-y-4">

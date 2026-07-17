@@ -51,3 +51,23 @@ export const BREADCRUMB_APK = {
   name: 'Teen Patti Gold APK Latest Version',
   url: `${BASE_URL}/download-teen-patti-gold-apk`,
 };
+export const BREADCRUMB_ABOUT = {
+  name: 'About Us',
+  url: `${BASE_URL}/about-us`,
+};
+export const BREADCRUMB_CONTACT = {
+  name: 'Contact Us',
+  url: `${BASE_URL}/contact-us`,
+};
+export const BREADCRUMB_PRIVACY = {
+  name: 'Privacy Policy',
+  url: `${BASE_URL}/privacy`,
+};
+export const BREADCRUMB_TERMS = {
+  name: 'Terms and Conditions',
+  url: `${BASE_URL}/terms`,
+};
+export const BREADCRUMB_DISCLAIMER = {
+  name: 'Disclaimer',
+  url: `${BASE_URL}/disclaimer`,
+};
