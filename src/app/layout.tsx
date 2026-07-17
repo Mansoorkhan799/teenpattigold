@@ -270,7 +270,7 @@ export default function RootLayout({
                   "@id": "https://teenpattigoldgame.com.pk/#teen-patti-gold-apk",
                   "name": "Teen Patti Gold APK",
                   "alternateName": ["Teen Patti Gold APK Download", "Teen Patti Gold Latest Version APK"],
-                  "description": "Teen Patti Gold APK is the Android application package file for the Teen Patti Gold card game app. The latest version is V1.656(0), with a file size of 49MB, requiring Android 5.0 or higher. Since the app is not listed on the Google Play Store, Pakistani players download it directly as an APK from the official website at teenpattigoldgame.com.pk and install it by enabling 'Install from Unknown Sources' in their device settings. The APK is free to download.",
+                  "description": "Teen Patti Gold APK is the Android application package file for the Teen Patti Gold card game app. The latest version is 1.224(1), with a file size of 47.21MB, requiring Android 5.0 or higher. Since the app is not listed on the Google Play Store, Pakistani players download it directly as an APK from the official website at teenpattigoldgame.com.pk and install it by enabling 'Install from Unknown Sources' in their device settings. The APK is free to download.",
                   "url": "https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk",
                   "inDefinedTermSet": {
                     "@type": "DefinedTermSet",
@@ -296,7 +296,7 @@ export default function RootLayout({
                   "@id": "https://teenpattigoldgame.com.pk/#website",
                   "url": "https://teenpattigoldgame.com.pk/",
                   "name": "Teen Patti Gold Pakistan",
-                  "description": "Download Teen Patti Gold APK for Pakistan. Play 30+ card games, earn real cash, and withdraw fast with JazzCash & EasyPaisa. Official v1.656 — secure & free.",
+                  "description": "Download Teen Patti Gold APK for Pakistan. Play Ludo, Cards, Mines, Rummy & Sports — earn real cash with JazzCash & EasyPaisa. Official 1.224(1) — secure & free.",
                   "publisher": { "@id": "https://teenpattigoldgame.com.pk/#organization" },
                   "inLanguage": "en-PK",
                   "potentialAction": {

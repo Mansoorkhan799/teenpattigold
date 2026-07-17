@@ -43,8 +43,8 @@ export async function GET() {
         },
         {
           loc: '/teen-patti-gold-apk.webp',
-          title: 'Teen Patti Gold APK V1.656 Download',
-          caption: 'Teen Patti Gold APK V1.656 for Android — free download for Pakistan players.',
+          title: 'Teen Patti Gold APK 1.224 Download',
+          caption: 'Teen Patti Gold APK 1.224(1) for Android — free download for Pakistan players.',
         },
         {
           loc: '/teen-patti-gold-deposit-money.webp',
@@ -74,12 +74,12 @@ export async function GET() {
         {
           loc: '/teen-patti-gold.webp',
           title: 'Teen Patti Gold APK Latest Version Free Download 2026',
-          caption: 'Download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Play 30+ card games.',
+          caption: 'Download Teen Patti Gold APK latest version 1.224(1) free for Android in Pakistan. Play 100+ games.',
         },
         {
           loc: '/teen-patti-gold-apk.webp',
           title: 'Teen Patti Gold APK Download',
-          caption: 'Teen Patti Gold APK V1.656 for Android — free download.',
+          caption: 'Teen Patti Gold APK 1.224(1) for Android — free download.',
         },
       ],
     },
@@ -223,8 +223,8 @@ export async function GET() {
       images: [
         {
           loc: '/teen-patti-gold-apk.webp',
-          title: 'Teen Patti Gold Latest Version V1.656 Updates 2026',
-          caption: 'Latest Teen Patti Gold V1.656 new features and updates',
+          title: 'Teen Patti Gold Latest Version 1.224 Updates 2026',
+          caption: 'Latest Teen Patti Gold 1.224(1) new features and updates',
         },
       ],
     },

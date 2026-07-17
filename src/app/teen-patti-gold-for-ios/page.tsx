@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_IOS } from '@/lib/breadcrumb-schema';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
+import FaqAccordion from '@/components/FaqAccordion';
 
 const IOS_PAGE_URL = 'https://teenpattigoldgame.com.pk/teen-patti-gold-for-ios';
 const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
@@ -480,27 +481,15 @@ export default function TeenPattiGoldForIOSPage() {
             </div>
             <h2 className="text-3xl font-bold text-[#FFA500] text-center">Frequently Asked Questions</h2>
           </div>
-          <div className="space-y-4">
-            {[
-              { q: 'Is it free to download and install Teen Patti Gold on iOS?', a: 'Yes, Teen Patti Gold is free to download and install on iOS. You do not need to pay anything to download or install the app.' },
-              { q: 'Is Teen Patti Gold secure to play on iOS devices?', a: 'Yes, Teen Patti Gold uses a modern security system to protect your account and funds. iOS devices also offer strong built-in security to protect your Teen Patti Gold account.' },
-              { q: 'Is Teen Patti Gold a legit game to earn real money?', a: 'Yes, Teen Patti Gold is a legitimate game for earning real money. Players in Pakistan regularly withdraw winnings via JazzCash and EasyPaisa with a minimum withdrawal of Rs 100.' },
-              { q: 'Why does iOS show "Untrusted Developer" when I open the app?', a: 'This is a normal iOS security check for apps installed outside the App Store. Go to Settings → General → Device Management, find the Teen Patti Gold profile, and tap "Trust" to authorise it.' },
-              { q: 'Can I sync my Teen Patti Gold account between iPhone and iPad?', a: 'Yes. Log in with the same registered phone number on both devices and your wallet, history, and chips will sync automatically.' },
-            ].map((item, idx) => (
-              <details key={idx} className="group bg-[#0a1029]/50 rounded-xl border border-gray-700/50 overflow-hidden">
-                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold list-none">
-                  <span>{item.q}</span>
-                  <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
-                  {item.a}
-                </div>
-              </details>
-            ))}
-          </div>
+          <FaqAccordion
+            items={[
+              { question: 'Is it free to download and install Teen Patti Gold on iOS?', answer: 'Yes, Teen Patti Gold is free to download and install on iOS. You do not need to pay anything to download or install the app.' },
+              { question: 'Is Teen Patti Gold secure to play on iOS devices?', answer: 'Yes, Teen Patti Gold uses a modern security system to protect your account and funds. iOS devices also offer strong built-in security to protect your Teen Patti Gold account.' },
+              { question: 'Is Teen Patti Gold a legit game to earn real money?', answer: 'Yes, Teen Patti Gold is a legitimate game for earning real money. Players in Pakistan regularly withdraw winnings via JazzCash and EasyPaisa with a minimum withdrawal of Rs 100.' },
+              { question: 'Why does iOS show "Untrusted Developer" when I open the app?', answer: 'This is a normal iOS security check for apps installed outside the App Store. Go to Settings → General → Device Management, find the Teen Patti Gold profile, and tap "Trust" to authorise it.' },
+              { question: 'Can I sync my Teen Patti Gold account between iPhone and iPad?', answer: 'Yes. Log in with the same registered phone number on both devices and your wallet, history, and chips will sync automatically.' },
+            ]}
+          />
         </div>
       </section>
 

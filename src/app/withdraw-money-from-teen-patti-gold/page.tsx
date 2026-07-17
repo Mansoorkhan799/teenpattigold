@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_WITHDRAW } from '@/lib/breadcrumb-schema';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import FaqAccordion from '@/components/FaqAccordion';
 
 const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
 
@@ -227,6 +229,12 @@ export default function WithdrawMoneyPage() {
 
       {/* Hero */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
+        <Breadcrumbs
+          items={[
+            { name: 'Home', href: '/' },
+            { name: 'Withdraw Money' },
+          ]}
+        />
         <div className="md:flex md:items-center md:justify-between md:gap-12">
           <div className="md:w-1/2 space-y-6 text-center md:text-left">
             <div className="flex flex-wrap justify-center md:justify-start gap-2">
@@ -434,27 +442,15 @@ export default function WithdrawMoneyPage() {
             </div>
             <h2 className="text-3xl font-bold text-[#FFA500] text-center">Frequently Asked Questions</h2>
           </div>
-          <div className="space-y-4">
-            {[
-              { q: "What is the minimum withdrawal amount in Teen Patti Gold?", a: "The minimum withdrawal in Teen Patti Gold is Rs 100. You can cash out via JazzCash, EasyPaisa, or Bank Card (up to Rs 20,000 per bank transaction)." },
-              { q: "How long does it take to receive a withdrawal?", a: "Withdrawals are typically processed within 3 to 24 hours. JazzCash and EasyPaisa payments are usually faster than bank transfers." },
-              { q: "Which payment methods support withdrawals in Pakistan?", a: "Teen Patti Gold supports JazzCash, EasyPaisa, and Bank Card (bank transfer) for withdrawals in Pakistan. JazzCash and EasyPaisa are the quickest options." },
-              { q: "What is the maximum withdrawal per transaction?", a: "For bank card withdrawals, the maximum per transaction is PKR 20,000. JazzCash and EasyPaisa limits depend on your wallet tier." },
-              { q: "What should I do if my withdrawal fails?", a: "First verify your payment details are correct. If the issue persists, contact Teen Patti Gold customer support with your transaction reference number for a quick resolution." }
-            ].map((item, idx) => (
-              <details key={idx} className="group bg-[#0a1029]/50 rounded-xl border border-gray-700/50 overflow-hidden">
-                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold list-none">
-                  <span>{item.q}</span>
-                  <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
-                  {item.a}
-                </div>
-              </details>
-            ))}
-          </div>
+          <FaqAccordion
+            items={[
+              { question: 'What is the minimum withdrawal amount in Teen Patti Gold?', answer: 'The minimum withdrawal in Teen Patti Gold is Rs 100. You can cash out via JazzCash, EasyPaisa, or Bank Card (up to Rs 20,000 per bank transaction).' },
+              { question: 'How long does it take to receive a withdrawal?', answer: 'Withdrawals are typically processed within 3 to 24 hours. JazzCash and EasyPaisa payments are usually faster than bank transfers.' },
+              { question: 'Which payment methods support withdrawals in Pakistan?', answer: 'Teen Patti Gold supports JazzCash, EasyPaisa, and Bank Card (bank transfer) for withdrawals in Pakistan. JazzCash and EasyPaisa are the quickest options.' },
+              { question: 'What is the maximum withdrawal per transaction?', answer: 'For bank card withdrawals, the maximum per transaction is PKR 20,000. JazzCash and EasyPaisa limits depend on your wallet tier.' },
+              { question: 'What should I do if my withdrawal fails?', answer: 'First verify your payment details are correct. If the issue persists, contact Teen Patti Gold customer support with your transaction reference number for a quick resolution.' },
+            ]}
+          />
         </div>
       </section>
 

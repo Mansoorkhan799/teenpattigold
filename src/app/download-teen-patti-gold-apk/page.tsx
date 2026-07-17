@@ -4,16 +4,18 @@ import Link from 'next/link';
 import { LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_APK } from '@/lib/breadcrumb-schema';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import FaqAccordion from '@/components/FaqAccordion';
 
 const APK_PAGE_URL = 'https://teenpattigoldgame.com.pk/download-teen-patti-gold-apk';
 const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'How to Download Teen Patti Gold APK Free 2026 — Latest Version V1.656',
+    absolute: 'How to Download Teen Patti Gold APK Free 2026 — Latest Version 1.224',
   },
   description:
-    'How to download Teen Patti Gold APK latest version V1.656 free for Android in Pakistan. Step-by-step install guide — play 30+ card games, earn real cash via JazzCash & EasyPaisa.',
+    'How to download Teen Patti Gold APK latest version 1.224(1) free for Android in Pakistan. Step-by-step install guide — play cards, Ludo, Mines, Rummy — earn via JazzCash & EasyPaisa.',
   keywords: [
     'Teen Patti Gold APK',
     'Teen Patti Gold APK download',
@@ -86,8 +88,8 @@ const softwareSchema = {
     worstRating: '1',
   },
   downloadUrl: DOWNLOAD_URL,
-  softwareVersion: 'V1.656(0)',
-  fileSize: '49MB',
+  softwareVersion: '1.224(1)',
+  fileSize: '47.21MB',
   datePublished: '2026-01-05',
   description:
     'Teen Patti Gold APK — Play 30+ card games including Teen Patti, Rummy, and Dragon Tiger. Earn real money with JazzCash & EasyPaisa withdrawals in Pakistan.',
@@ -339,11 +341,17 @@ export default function TeenPattiGoldApkPage() {
 
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
+        <Breadcrumbs
+          items={[
+            { name: 'Home', href: '/' },
+            { name: 'Download Teen Patti Gold APK' },
+          ]}
+        />
         <div className="md:flex md:items-center md:justify-between md:gap-12">
           <div className="md:w-1/2 space-y-6 text-center md:text-left">
             {/* Badges row */}
             <div className="flex flex-wrap justify-center md:justify-start gap-2">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#FFA500] border border-[#FFA500]/30">v1.656</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#FFA500] border border-[#FFA500]/30">1.224(1)</span>
               <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#0ea5e9] border border-[#0ea5e9]/30">Android 5.0+</span>
               <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#4ade80] border border-[#4ade80]/30">49 MB</span>
               <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#0A1029] text-[#a855f7] border border-[#a855f7]/30">Free</span>
@@ -1052,29 +1060,17 @@ export default function TeenPattiGoldApkPage() {
             </div>
             <h2 className="text-3xl font-bold text-[#FFA500] text-center">Frequently Asked Questions</h2>
           </div>
-          <div className="space-y-4">
-            {[
-              { q: 'What is the latest version of Teen Patti Gold APK?', a: 'The latest version of Teen Patti Gold APK is V1.656(0), released in January 2026. The file size is 49MB and it requires Android 5.0 or higher.' },
-              { q: 'Is Teen Patti Gold APK free to download?', a: 'Yes, Teen Patti Gold APK is completely free to download and install. There are no upfront costs — simply download the APK from this page and start playing.' },
-              { q: 'Is Teen Patti Gold APK safe to install?', a: 'Yes. Downloading from the official site teenpattigoldgame.com.pk gives you a clean, verified APK file. Always avoid unofficial third-party sources to protect your device and account data.' },
-              { q: 'How do I withdraw money from Teen Patti Gold?', a: 'Open the app, go to Wallet, tap Withdraw, enter the amount, select JazzCash, EasyPaisa, or Bank Card, provide your account details, and confirm. Withdrawals are processed within 3–24 hours. The minimum withdrawal is Rs 100.' },
-              { q: 'Which payment methods are supported?', a: 'Teen Patti Gold supports JazzCash, EasyPaisa, and Bank Card (bank transfer up to PKR 20,000 per transaction) for both deposits and withdrawals in Pakistan.' },
-              { q: 'Can I play Teen Patti Gold on PC?', a: 'Yes! Use an Android emulator like BlueStacks or LDPlayer on Windows to run the Teen Patti Gold APK on your PC. Visit our Teen Patti Gold for PC guide for detailed setup instructions.' },
-              { q: 'Does Teen Patti Gold work on iOS (iPhone)?', a: 'Teen Patti Gold is primarily designed for Android. iOS support is limited. Android users get the best and most stable experience via the official APK.' },
-            ].map((item, idx) => (
-              <details key={idx} className="group bg-[#0a1029]/50 rounded-xl border border-gray-700/50 overflow-hidden">
-                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold list-none">
-                  <span>{item.q}</span>
-                  <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
-                  {item.a}
-                </div>
-              </details>
-            ))}
-          </div>
+          <FaqAccordion
+            items={[
+              { question: 'What is the latest version of Teen Patti Gold APK?', answer: 'The latest version of Teen Patti Gold APK is 1.224(1), released in February 2026. The file size is 47.21MB and it requires Android 5.0 or higher.' },
+              { question: 'Is Teen Patti Gold APK free to download?', answer: 'Yes, Teen Patti Gold APK is completely free to download and install. There are no upfront costs — simply download the APK from this page and start playing.' },
+              { question: 'Is Teen Patti Gold APK safe to install?', answer: 'Yes. Downloading from the official site teenpattigoldgame.com.pk gives you a clean, verified APK file. Always avoid unofficial third-party sources to protect your device and account data.' },
+              { question: 'How do I withdraw money from Teen Patti Gold?', answer: 'Open the app, go to Wallet, tap Withdraw, enter the amount, select JazzCash, EasyPaisa, or Bank Card, provide your account details, and confirm. Withdrawals are processed within 3–24 hours. The minimum withdrawal is Rs 100.' },
+              { question: 'Which payment methods are supported?', answer: 'Teen Patti Gold supports JazzCash, EasyPaisa, and Bank Card (bank transfer up to PKR 20,000 per transaction) for both deposits and withdrawals in Pakistan.' },
+              { question: 'Can I play Teen Patti Gold on PC?', answer: 'Yes! Use an Android emulator like BlueStacks or LDPlayer on Windows to run the Teen Patti Gold APK on your PC. Visit our Teen Patti Gold for PC guide for detailed setup instructions.' },
+              { question: 'Does Teen Patti Gold work on iOS (iPhone)?', answer: 'Teen Patti Gold is primarily designed for Android. iOS support is limited. Android users get the best and most stable experience via the official APK.' },
+            ]}
+          />
         </div>
       </section>
 

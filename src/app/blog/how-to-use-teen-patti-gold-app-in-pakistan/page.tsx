@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
+import FaqAccordion from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
   title: {
@@ -476,36 +477,30 @@ export default function HowToUseApp() {
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-6 text-white">Frequently Asked Questions</h2>
-                
-                <div className="space-y-6">
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-accent">Is Teen Patti Gold safe to use in Pakistan?</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      The app uses encryption and security measures to protect user data. However, always download from official sources and use secure payment methods.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-accent">Can I play without depositing money?</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      Yes, you can use welcome bonuses and daily login rewards to play some games. However, to access all features and earn real money, you'll need to deposit.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-accent">How long do withdrawals take?</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      Withdrawals typically process within 24-48 hours, depending on your payment method and account verification status.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-xl font-bold mb-2 text-accent">What games can I play?</h3>
-                    <p className="text-gray-300 leading-relaxed">
-                      The platform offers 120+ games including Teen Patti, Rummy, Dragon Tiger, Andar Bahar, slots, and many more card and casino games.
-                    </p>
-                  </div>
-                </div>
+                <FaqAccordion
+                  items={[
+                    {
+                      question: 'Is Teen Patti Gold safe to use in Pakistan?',
+                      answer:
+                        'The app uses encryption and security measures to protect user data. However, always download from official sources and use secure payment methods.',
+                    },
+                    {
+                      question: 'Can I play without depositing money?',
+                      answer:
+                        "Yes, you can use welcome bonuses and daily login rewards to play some games. However, to access all features and earn real money, you'll need to deposit.",
+                    },
+                    {
+                      question: 'How long do withdrawals take?',
+                      answer:
+                        'Withdrawals typically process within 24-48 hours, depending on your payment method and account verification status.',
+                    },
+                    {
+                      question: 'What games can I play?',
+                      answer:
+                        'The platform offers 120+ games including Teen Patti, Rummy, Dragon Tiger, Andar Bahar, slots, and many more card and casino games.',
+                    },
+                  ]}
+                />
               </div>
 
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">

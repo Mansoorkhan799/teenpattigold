@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
+import FaqAccordion from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
   title: {
@@ -244,42 +245,36 @@ export default function ReferralCodePage() {
 
             {/* FAQ */}
             <h2 className="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-4 mb-12">
-              {[
+            <FaqAccordion
+              className="mb-12"
+              items={[
                 {
-                  q: "What is the Teen Patti Gold referral code?",
-                  a: "A referral code is your unique personal invitation code. When a friend registers using your code, both of you receive bonus chips as a reward."
+                  question: 'What is the Teen Patti Gold referral code?',
+                  answer:
+                    'A referral code is your unique personal invitation code. When a friend registers using your code, both of you receive bonus chips as a reward.',
                 },
                 {
-                  q: "Where do I find my referral code?",
-                  a: "Open the app, go to the Refer & Earn or Invitation section, and your unique code or shareable link will be displayed there."
+                  question: 'Where do I find my referral code?',
+                  answer:
+                    'Open the app, go to the Refer & Earn or Invitation section, and your unique code or shareable link will be displayed there.',
                 },
                 {
-                  q: "How many chips do I earn per referral?",
-                  a: "Typically 10,000–30,000 chips per successful referral. Amounts may vary based on current promotions. Check the Refer & Earn section for the latest rewards."
+                  question: 'How many chips do I earn per referral?',
+                  answer:
+                    'Typically 10,000–30,000 chips per successful referral. Amounts may vary based on current promotions. Check the Refer & Earn section for the latest rewards.',
                 },
                 {
-                  q: "Is there a limit to how many friends I can refer?",
-                  a: "No limit. You can refer as many friends as you want, and each successful referral earns you chips."
+                  question: 'Is there a limit to how many friends I can refer?',
+                  answer:
+                    'No limit. You can refer as many friends as you want, and each successful referral earns you chips.',
                 },
                 {
-                  q: "Can I enter a referral code after registration?",
-                  a: "No. The referral code must be entered during registration. Once an account is created without a referral code, it cannot be added afterward."
-                }
-              ].map((item, idx) => (
-                <details key={idx} className="group bg-secondary rounded-xl border border-gray-700/50 overflow-hidden">
-                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold list-none">
-                    <span>{item.q}</span>
-                    <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
-                    {item.a}
-                  </div>
-                </details>
-              ))}
-            </div>
+                  question: 'Can I enter a referral code after registration?',
+                  answer:
+                    'No. The referral code must be entered during registration. Once an account is created without a referral code, it cannot be added afterward.',
+                },
+              ]}
+            />
 
             {/* CTA */}
             <div className="bg-secondary rounded-2xl p-8 text-center border border-accent/30">

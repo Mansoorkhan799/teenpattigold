@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
+import FaqAccordion from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
   title: {
@@ -349,42 +350,36 @@ export default function ReferralAgentPage() {
 
             {/* FAQ */}
             <h2 className="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-4 mb-12">
-              {[
+            <FaqAccordion
+              className="mb-12"
+              items={[
                 {
-                  q: 'How do I become a Teen Patti Gold referral agent?',
-                  a: 'Open the Teen Patti Gold app and go to the Refer & Earn or Agent Program section. Sign up with your details, get your unique referral link, and start sharing it with others to earn commission.',
+                  question: 'How do I become a Teen Patti Gold referral agent?',
+                  answer:
+                    'Open the Teen Patti Gold app and go to the Refer & Earn or Agent Program section. Sign up with your details, get your unique referral link, and start sharing it with others to earn commission.',
                 },
                 {
-                  q: 'How much commission does a Teen Patti Gold agent earn?',
-                  a: 'Commission is based on how much your referred players deposit and play. The more active players you bring in, the higher your total commission. Check the Agent Program section in the app for the current commission rates.',
+                  question: 'How much commission does a Teen Patti Gold agent earn?',
+                  answer:
+                    'Commission is based on how much your referred players deposit and play. The more active players you bring in, the higher your total commission. Check the Agent Program section in the app for the current commission rates.',
                 },
                 {
-                  q: 'How do I withdraw my agent commission?',
-                  a: 'Go to the Wallet section in the app, tap Withdraw, choose JazzCash, EasyPaisa, or bank transfer, enter your account details, and confirm. The minimum withdrawal is typically Rs 500. Payouts process within 3–24 hours.',
+                  question: 'How do I withdraw my agent commission?',
+                  answer:
+                    'Go to the Wallet section in the app, tap Withdraw, choose JazzCash, EasyPaisa, or bank transfer, enter your account details, and confirm. The minimum withdrawal is typically Rs 500. Payouts process within 3–24 hours.',
                 },
                 {
-                  q: 'Is there a limit on how many players I can refer?',
-                  a: 'No limit at all. You can refer as many players as you want. Every active referral earns you commission, so the bigger your network, the higher your earnings.',
+                  question: 'Is there a limit on how many players I can refer?',
+                  answer:
+                    'No limit at all. You can refer as many players as you want. Every active referral earns you commission, so the bigger your network, the higher your earnings.',
                 },
                 {
-                  q: 'Do I need to keep playing to earn as an agent?',
-                  a: 'No. As an agent, you earn commission from your referred players\' activity. You do not need to deposit or play yourself to earn — your earnings come from the players you invite.',
+                  question: 'Do I need to keep playing to earn as an agent?',
+                  answer:
+                    'No. As an agent, you earn commission from your referred players\' activity. You do not need to deposit or play yourself to earn — your earnings come from the players you invite.',
                 },
-              ].map((item, idx) => (
-                <details key={idx} className="group bg-secondary rounded-xl border border-gray-700/50 overflow-hidden">
-                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold list-none">
-                    <span>{item.q}</span>
-                    <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
-                    {item.a}
-                  </div>
-                </details>
-              ))}
-            </div>
+              ]}
+            />
 
             {/* CTA */}
             <div className="bg-secondary rounded-2xl p-8 text-center border border-accent/30">

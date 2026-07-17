@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
+import FaqAccordion from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
   title: {
@@ -261,38 +262,31 @@ export default function FreeChipsPage() {
 
             {/* FAQ */}
             <h2 className="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-4 mb-12">
-              {[
+            <FaqAccordion
+              className="mb-12"
+              items={[
                 {
-                  q: "How can I get free chips in Teen Patti Gold?",
-                  a: "You can get free chips through daily login bonuses, referral rewards, lucky spin, completing daily tasks, and participating in special events. Log in every day for the highest rewards."
+                  question: 'How can I get free chips in Teen Patti Gold?',
+                  answer:
+                    'You can get free chips through daily login bonuses, referral rewards, lucky spin, completing daily tasks, and participating in special events. Log in every day for the highest rewards.',
                 },
                 {
-                  q: "How much are the daily login bonus chips?",
-                  a: "Daily login bonuses start from 5,000 chips and increase with consecutive logins. A 7-day streak can reward you with 50,000+ bonus chips."
+                  question: 'How much are the daily login bonus chips?',
+                  answer:
+                    'Daily login bonuses start from 5,000 chips and increase with consecutive logins. A 7-day streak can reward you with 50,000+ bonus chips.',
                 },
                 {
-                  q: "Can I get free chips by referring friends?",
-                  a: "Yes. Teen Patti Gold has a referral program where you earn 10,000–30,000 chips for every friend you invite who registers and starts playing."
+                  question: 'Can I get free chips by referring friends?',
+                  answer:
+                    'Yes. Teen Patti Gold has a referral program where you earn 10,000–30,000 chips for every friend you invite who registers and starts playing.',
                 },
                 {
-                  q: "Do free chips expire in Teen Patti Gold?",
-                  a: "Free chips from bonuses and events may have an expiry. Always check the bonus terms. Standard chips in your balance do not expire."
-                }
-              ].map((item, idx) => (
-                <details key={idx} className="group bg-secondary rounded-xl border border-gray-700/50 overflow-hidden">
-                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold list-none">
-                    <span>{item.q}</span>
-                    <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
-                    {item.a}
-                  </div>
-                </details>
-              ))}
-            </div>
+                  question: 'Do free chips expire in Teen Patti Gold?',
+                  answer:
+                    'Free chips from bonuses and events may have an expiry. Always check the bonus terms. Standard chips in your balance do not expire.',
+                },
+              ]}
+            />
 
             {/* CTA */}
             <div className="bg-secondary rounded-2xl p-8 text-center border border-accent/30">

@@ -3,6 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_DEPOSIT } from '@/lib/breadcrumb-schema';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import FaqAccordion from '@/components/FaqAccordion';
 
 const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
 
@@ -215,6 +217,12 @@ export default function DepositMoneyPage() {
 
       {/* Hero Section */}
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
+        <Breadcrumbs
+          items={[
+            { name: 'Home', href: '/' },
+            { name: 'Deposit Money' },
+          ]}
+        />
         <div className="md:flex md:items-center md:justify-between md:gap-12">
           <div className="md:w-1/2 space-y-6 text-center md:text-left">
             <div className="flex flex-wrap justify-center md:justify-start gap-2">
@@ -422,28 +430,16 @@ export default function DepositMoneyPage() {
             </div>
             <h2 className="text-3xl font-bold text-[#FFA500] text-center">Frequently Asked Questions</h2>
           </div>
-          <div className="space-y-4">
-            {[
-              { q: "What is the minimum deposit amount in Teen Patti Gold?", a: "The minimum deposit amount in Teen Patti Gold is Rs 200. You can choose from Rs 200, Rs 500, Rs 1,000, or Rs 2,000 using JazzCash or EasyPaisa." },
-              { q: "How can we add money to our Teen Patti Gold account?", a: "Open the app, tap the Shop option, select your payment method (JazzCash or EasyPaisa), choose an amount, tap Add Chips, enter your account number, and approve the payment request. Chips are credited instantly." },
-              { q: "How long does it take for the deposit to reflect?", a: "Deposits are processed instantly. After approving the payment in your JazzCash or EasyPaisa wallet, chips appear in your account within seconds." },
-              { q: "Which payment methods are supported in Pakistan?", a: "Teen Patti Gold supports JazzCash and EasyPaisa for deposits in Pakistan. These are the fastest and most secure options for Pakistani players." },
-              { q: "Is it safe to deposit money in Teen Patti Gold?", a: "Yes. Teen Patti Gold uses encrypted, secure payment gateways. Always download the app from the official site teenpattigoldgame.com.pk to stay protected." },
-              { q: "Can I get a refund if the deposit fails?", a: "If money is deducted but chips are not credited, contact customer support immediately with your transaction reference number for a quick resolution." }
-            ].map((item, idx) => (
-              <details key={idx} className="group bg-[#0a1029]/50 rounded-xl border border-gray-700/50 overflow-hidden">
-                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold list-none">
-                  <span>{item.q}</span>
-                  <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
-                  {item.a}
-                </div>
-              </details>
-            ))}
-          </div>
+          <FaqAccordion
+            items={[
+              { question: 'What is the minimum deposit amount in Teen Patti Gold?', answer: 'The minimum deposit amount in Teen Patti Gold is Rs 200. You can choose from Rs 200, Rs 500, Rs 1,000, or Rs 2,000 using JazzCash or EasyPaisa.' },
+              { question: 'How can we add money to our Teen Patti Gold account?', answer: 'Open the app, tap the Shop option, select your payment method (JazzCash or EasyPaisa), choose an amount, tap Add Chips, enter your account number, and approve the payment request. Chips are credited instantly.' },
+              { question: 'How long does it take for the deposit to reflect?', answer: 'Deposits are processed instantly. After approving the payment in your JazzCash or EasyPaisa wallet, chips appear in your account within seconds.' },
+              { question: 'Which payment methods are supported in Pakistan?', answer: 'Teen Patti Gold supports JazzCash and EasyPaisa for deposits in Pakistan. These are the fastest and most secure options for Pakistani players.' },
+              { question: 'Is it safe to deposit money in Teen Patti Gold?', answer: 'Yes. Teen Patti Gold uses encrypted, secure payment gateways. Always download the app from the official site teenpattigoldgame.com.pk to stay protected.' },
+              { question: 'Can I get a refund if the deposit fails?', answer: 'If money is deducted but chips are not credited, contact customer support immediately with your transaction reference number for a quick resolution.' },
+            ]}
+          />
         </div>
       </section>
 

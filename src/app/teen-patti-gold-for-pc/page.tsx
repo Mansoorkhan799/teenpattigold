@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_PC } from '@/lib/breadcrumb-schema';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
+import FaqAccordion from '@/components/FaqAccordion';
 
 const PC_PAGE_URL = 'https://teenpattigoldgame.com.pk/teen-patti-gold-for-pc';
 const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
@@ -613,27 +614,15 @@ export default function TeenPattiGoldForPCPage() {
             </div>
             <h2 className="text-3xl font-bold text-[#FFA500] text-center">Frequently Asked Questions</h2>
           </div>
-          <div className="space-y-4">
-            {[
-              { q: 'Is an emulator safe to use on a PC?', a: 'Yes, emulators are generally safe if you download them from official websites such as bluestacks.com or ldplayer.net. Always download from the official source and keep the emulator updated.' },
-              { q: 'Why is the APK not installing in the emulator?', a: 'If the Teen Patti Gold APK is not installing, make sure your emulator is properly configured and has enough storage space. Also ensure you have downloaded the latest version V1.656 from the official site and that your emulator supports Android 5.0 or higher.' },
-              { q: 'Which emulator is best for Teen Patti Gold?', a: 'BlueStacks is the most recommended emulator for Teen Patti Gold due to its high performance, user-friendly interface, and excellent compatibility. For low-end PCs, LD Player is a great lightweight alternative that offers smooth gameplay.' },
-              { q: 'Can I use the same Teen Patti Gold account on PC and phone?', a: 'Yes. Log in with the same registered phone number and password and your wallet, history, and chips sync across both devices.' },
-              { q: 'Do I need a separate APK for PC?', a: 'No. The same official Teen Patti Gold APK works inside the emulator on your PC — there is no separate Windows installer required.' },
-            ].map((item, idx) => (
-              <details key={idx} className="group bg-[#0a1029]/50 rounded-xl border border-gray-700/50 overflow-hidden">
-                <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold list-none">
-                  <span>{item.q}</span>
-                  <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </summary>
-                <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
-                  {item.a}
-                </div>
-              </details>
-            ))}
-          </div>
+          <FaqAccordion
+            items={[
+              { question: 'Is an emulator safe to use on a PC?', answer: 'Yes, emulators are generally safe if you download them from official websites such as bluestacks.com or ldplayer.net. Always download from the official source and keep the emulator updated.' },
+              { question: 'Why is the APK not installing in the emulator?', answer: 'If the Teen Patti Gold APK is not installing, make sure your emulator is properly configured and has enough storage space. Also ensure you have downloaded the latest version 1.224(1) from the official site and that your emulator supports Android 5.0 or higher.' },
+              { question: 'Which emulator is best for Teen Patti Gold?', answer: 'BlueStacks is the most recommended emulator for Teen Patti Gold due to its high performance, user-friendly interface, and excellent compatibility. For low-end PCs, LD Player is a great lightweight alternative that offers smooth gameplay.' },
+              { question: 'Can I use the same Teen Patti Gold account on PC and phone?', answer: 'Yes. Log in with the same registered phone number and password and your wallet, history, and chips sync across both devices.' },
+              { question: 'Do I need a separate APK for PC?', answer: 'No. The same official Teen Patti Gold APK works inside the emulator on your PC — there is no separate Windows installer required.' },
+            ]}
+          />
         </div>
       </section>
 

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
+import FaqAccordion from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
   title: {
@@ -320,49 +321,25 @@ export default function TeenPattiGoldRealOrFakePage() {
         <section id="faq" className="mb-12">
           <div className="bg-secondary rounded-xl p-6 md:p-8">
             <h2 className="text-3xl font-bold mb-8 text-[#FFA500]">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              <details className="group bg-[#0a1029]/50 rounded-xl">
-                <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-                  Does the Teen Patti Gold app actually pay real money?
-                  <span className="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                      <path d="M6 9l6 6 6-6"></path>
-                    </svg>
-                  </span>
-                </summary>
-                <div className="p-4 pt-0 text-gray-300">
-                  Yes, the TeenPattiGold app pays real money, so you can easily withdraw your earnings to your account.
-                </div>
-              </details>
-
-              <details className="group bg-[#0a1029]/50 rounded-xl">
-                <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-                  What are the tips for using Teen Patti Gold safely?
-                  <span className="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                      <path d="M6 9l6 6 6-6"></path>
-                    </svg>
-                  </span>
-                </summary>
-                <div className="p-4 pt-0 text-gray-300">
-                  Make sure you have downloaded the Teen Patti Gold app from the official site to earn real money and use strong passwords to protect your account from hackers.
-                </div>
-              </details>
-
-              <details className="group bg-[#0a1029]/50 rounded-xl">
-                <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-                  What are the signs that Teen Patti Gold is not fake?
-                  <span className="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
-                      <path d="M6 9l6 6 6-6"></path>
-                    </svg>
-                  </span>
-                </summary>
-                <div className="p-4 pt-0 text-gray-300">
-                  If your app doesn't have customer support, a poor-quality UI, no updates, or withdrawal options that aren't clear, it's fake. So always verify by reading reviews.
-                </div>
-              </details>
-            </div>
+            <FaqAccordion
+              items={[
+                {
+                  question: 'Does the Teen Patti Gold app actually pay real money?',
+                  answer:
+                    'Yes, the TeenPattiGold app pays real money, so you can easily withdraw your earnings to your account.',
+                },
+                {
+                  question: 'What are the tips for using Teen Patti Gold safely?',
+                  answer:
+                    'Make sure you have downloaded the Teen Patti Gold app from the official site to earn real money and use strong passwords to protect your account from hackers.',
+                },
+                {
+                  question: 'What are the signs that Teen Patti Gold is not fake?',
+                  answer:
+                    "If your app doesn't have customer support, a poor-quality UI, no updates, or withdrawal options that aren't clear, it's fake. So always verify by reading reviews.",
+                },
+              ]}
+            />
           </div>
         </section>
 

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
+import FaqAccordion from '@/components/FaqAccordion';
 
 export const metadata: Metadata = {
   title: {
@@ -273,38 +274,31 @@ export default function ComparisonPage() {
 
             {/* FAQ */}
             <h2 className="text-2xl font-bold text-white mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-4 mb-12">
-              {[
+            <FaqAccordion
+              className="mb-12"
+              items={[
                 {
-                  q: "Is Teen Patti Gold better than Teen Patti Stars?",
-                  a: "Yes, for Pakistani players in 2026. Teen Patti Gold offers more games (30+), faster JazzCash/EasyPaisa withdrawals, a larger community, and higher daily bonuses."
+                  question: 'Is Teen Patti Gold better than Teen Patti Stars?',
+                  answer:
+                    'Yes, for Pakistani players in 2026. Teen Patti Gold offers more games (30+), faster JazzCash/EasyPaisa withdrawals, a larger community, and higher daily bonuses.',
                 },
                 {
-                  q: "Which Teen Patti app has more games?",
-                  a: "Teen Patti Gold has 30+ games vs Teen Patti Stars' smaller library. Teen Patti Gold includes Teen Patti, Rummy, Dragon Tiger, Crash, Baccarat, and many more."
+                  question: 'Which Teen Patti app has more games?',
+                  answer:
+                    "Teen Patti Gold has 30+ games vs Teen Patti Stars' smaller library. Teen Patti Gold includes Teen Patti, Rummy, Dragon Tiger, Crash, Baccarat, and many more.",
                 },
                 {
-                  q: "Does Teen Patti Gold support JazzCash and EasyPaisa?",
-                  a: "Yes. Teen Patti Gold fully supports JazzCash and EasyPaisa for both deposits and withdrawals, with a minimum deposit of Rs 200 and minimum withdrawal of Rs 100."
+                  question: 'Does Teen Patti Gold support JazzCash and EasyPaisa?',
+                  answer:
+                    'Yes. Teen Patti Gold fully supports JazzCash and EasyPaisa for both deposits and withdrawals, with a minimum deposit of Rs 200 and minimum withdrawal of Rs 100.',
                 },
                 {
-                  q: "Which app is safer to use in Pakistan?",
-                  a: "Both apps have security measures, but Teen Patti Gold's larger player base and established reputation in Pakistan give it an edge. Always download from the official site teenpattigoldgame.com.pk."
-                }
-              ].map((item, idx) => (
-                <details key={idx} className="group bg-secondary rounded-xl border border-gray-700/50 overflow-hidden">
-                  <summary className="flex items-center justify-between px-6 py-5 cursor-pointer select-none text-white font-semibold list-none">
-                    <span>{item.q}</span>
-                    <svg className="w-5 h-5 ml-4 flex-shrink-0 transition-transform group-open:rotate-180 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </summary>
-                  <div className="px-6 pb-5 pt-2 text-gray-300 leading-relaxed border-t border-gray-700/50">
-                    {item.a}
-                  </div>
-                </details>
-              ))}
-            </div>
+                  question: 'Which app is safer to use in Pakistan?',
+                  answer:
+                    "Both apps have security measures, but Teen Patti Gold's larger player base and established reputation in Pakistan give it an edge. Always download from the official site teenpattigoldgame.com.pk.",
+                },
+              ]}
+            />
 
             {/* CTA */}
             <div className="bg-secondary rounded-2xl p-8 text-center border border-accent/30">
