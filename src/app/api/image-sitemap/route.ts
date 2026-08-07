@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 function escapeXml(value: string): string {
   return value
     .replaceAll('&', '&amp;')
@@ -11,7 +14,10 @@ function escapeXml(value: string): string {
 
 export async function GET() {
   const baseUrl = 'https://teenpattigoldgame.com.pk';
-  const lastMod = new Date().toISOString();
+  const lastMod =
+    process.env.VERCEL_GIT_COMMIT_AUTHOR_DATE ||
+    process.env.NEXT_PUBLIC_BUILD_TIME ||
+    new Date().toISOString();
 
   type ImageEntry = {
     pageUrl: string;
@@ -338,8 +344,9 @@ export async function GET() {
 
   return new NextResponse(sitemap, {
     headers: {
-      'Content-Type': 'application/xml',
-      'Cache-Control': 'public, max-age=3600, s-maxage=86400',
+      'Content-Type': 'application/xml; charset=utf-8',
+      'Cache-Control': 'public, max-age=0, s-maxage=3600, must-revalidate',
+      'CDN-Cache-Control': 'public, max-age=3600, must-revalidate',
       'X-Robots-Tag': 'noindex',
     },
   });

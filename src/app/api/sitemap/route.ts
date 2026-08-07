@@ -1,5 +1,9 @@
 import { NextResponse } from 'next/server';
 
+/** Never serve a build-time frozen sitemap — Google was stuck on Jul 17 lastmod. */
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 function escapeXml(value: string): string {
   return value
     .replaceAll('&', '&amp;')
@@ -11,9 +15,13 @@ function escapeXml(value: string): string {
 
 export async function GET() {
   const baseUrl = 'https://teenpattigoldgame.com.pk';
-  // Single source-of-truth lastmod for the dynamic sitemap. Re-deploys
-  // automatically refresh the date so Google's "Last read" matches.
-  const lastModNow = new Date().toISOString();
+  // Prefer deploy commit time so lastmod is stable within a deploy (Google
+  // ignores lastmod that changes on every single request), but still refreshes
+  // after each Vercel deploy — unlike the previous CDN-frozen Jul 17 snapshot.
+  const lastModNow =
+    process.env.VERCEL_GIT_COMMIT_AUTHOR_DATE ||
+    process.env.NEXT_PUBLIC_BUILD_TIME ||
+    new Date().toISOString();
 
   // Define page type
   type PageType = {
@@ -156,11 +164,11 @@ export async function GET() {
 
   return new NextResponse(sitemap, {
     headers: {
-      'Content-Type': 'application/xml',
-      'Cache-Control': 'public, max-age=3600, s-maxage=86400',
-      // Prevent /api/sitemap from being indexed as a separate URL alongside
-      // /sitemap.xml — both routes serve identical XML, but Google should
-      // only crawl the canonical /sitemap.xml.
+      'Content-Type': 'application/xml; charset=utf-8',
+      // Short CDN TTL — previous s-maxage=86400 left a HIT cached ~21 days
+      // with lastmod stuck at 2026-07-17, so Google barely re-crawled /.
+      'Cache-Control': 'public, max-age=0, s-maxage=3600, must-revalidate',
+      'CDN-Cache-Control': 'public, max-age=3600, must-revalidate',
       'X-Robots-Tag': 'noindex',
     },
   });

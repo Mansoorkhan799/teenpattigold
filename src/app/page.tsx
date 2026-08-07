@@ -5,6 +5,7 @@ import { LOGO_PATH_VERSIONED, DOWNLOAD_URL } from '@/lib/site-images';
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
 import { SITE_ARTICLE_DATE_PUBLISHED, getSiteArticleDateModified } from '@/lib/site-meta';
 import FaqAccordion from '@/components/FaqAccordion';
+import ImageLicensingMicrodata from '@/components/ImageLicensingMicrodata';
 
 /**
  * Revalidate daily so JSON-LD dateModified stays fresh for Google crawl signals.
@@ -466,10 +467,7 @@ export default function Home() {
             />
             <meta itemProp="url" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
             <meta itemProp="contentUrl" content="https://teenpattigoldgame.com.pk/teen-patti-gold.webp" />
-            <meta itemProp="license" content="https://teenpattigoldgame.com.pk" />
-            <meta itemProp="acquireLicensePage" content="https://teenpattigoldgame.com.pk/contact-us" />
-            <meta itemProp="creditText" content="Teen Patti Gold" />
-            <meta itemProp="copyrightNotice" content="© Teen Patti Gold. All rights reserved." />
+            <ImageLicensingMicrodata />
             <Image
               src={LOGO_PATH_VERSIONED}
               alt="Teen Patti Gold"
@@ -482,7 +480,7 @@ export default function Home() {
               unoptimized={true}
               itemProp="image"
             />
-            <figcaption className="sr-only">
+            <figcaption className="sr-only" itemProp="caption">
               Teen Patti Gold — official Teen Patti Gold app icon. Download Teen Patti Gold APK free for Android in Pakistan.
             </figcaption>
           </figure>
@@ -710,8 +708,7 @@ export default function Home() {
                 <meta itemProp="description" content={shot.alt} />
                 <meta itemProp="url" content={`https://teenpattigoldgame.com.pk${shot.src}`} />
                 <meta itemProp="contentUrl" content={`https://teenpattigoldgame.com.pk${shot.src}`} />
-                <meta itemProp="license" content="https://teenpattigoldgame.com.pk" />
-                <meta itemProp="creditText" content="Teen Patti Gold" />
+                <ImageLicensingMicrodata />
                 <div className="rounded-lg overflow-hidden shadow-2xl bg-[#0A1029] flex items-center justify-center w-full">
                   <Image
                     src={shot.src}
