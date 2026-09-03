@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { DOWNLOAD_URL } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: {
@@ -318,14 +319,14 @@ export default function TipsToWinBig() {
                 <h2 className="text-3xl font-bold mb-4 text-white">Ready to Win Big?</h2>
                 <p className="text-white text-lg mb-8 max-w-2xl mx-auto">Apply these expert tips and strategies to maximize your winnings in Teen Patti Gold. Download the app now and start playing smarter!</p>
                 
-                <Link 
-                  href="https://teenpattigold99.com?from_gameid=8442895&channelCode=100000"
+                <a
+                  href={DOWNLOAD_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-accent font-bold py-4 px-8 rounded-full hover:bg-[#0A1029] transition-all shadow-2xl hover:shadow-3xl transform hover:scale-105"
                 >
                   DOWNLOAD TEEN PATTI GOLD NOW
-                </Link>
+                </a>
               </div>
             </div>
           </div>

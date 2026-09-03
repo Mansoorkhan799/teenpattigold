@@ -24,4 +24,4 @@ export const FAVICON_PATH_VERSIONED = `${FAVICON_PATH}?v=${LOGO_VERSION}`;
 export const FAVICON_URL = `${SITE_BASE}${FAVICON_PATH}?v=${LOGO_VERSION}`;
 
 /** Main download URL for Teen Patti Gold APK */
-export const DOWNLOAD_URL = 'https://teenpattigold99.com?from_gameid=8442895&channelCode=100000';
+export const DOWNLOAD_URL = 'https://teenpattigold99.com/?from_gameid=8736537&channelCode=8442895';

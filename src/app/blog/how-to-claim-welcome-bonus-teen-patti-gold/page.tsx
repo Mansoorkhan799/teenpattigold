@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { DOWNLOAD_URL } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: {
@@ -180,7 +181,7 @@ export default function HowToClaimWelcomeBonusPage() {
               <div className="bg-gradient-to-r from-[#FFA500] to-[#f97316] rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <h2 className="text-3xl font-bold mb-4 text-white">Ready to Claim Your Bonus?</h2>
                 <p className="text-white text-lg mb-6">Download Teen Patti Gold, register, make your first deposit, and get 100% welcome bonus. Start playing and earning today!</p>
-                <Link href="/download-teen-patti-gold-apk" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</Link>
+                <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">Download Now</a>
               </div>
 
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">

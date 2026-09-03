@@ -235,6 +235,8 @@ const nextConfig = {
     ];
   },
 
+  turbopack: {},
+
   // Handle webpack configuration
   webpack: (config, { dev, isServer }) => {
     // Enable proper static file handling

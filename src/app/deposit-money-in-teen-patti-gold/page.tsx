@@ -5,6 +5,7 @@ import { getBreadcrumbSchema, BREADCRUMB_HOME, BREADCRUMB_DEPOSIT } from '@/lib/
 import { imageObjectLicensing } from '@/lib/schema-image-licensing';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import FaqAccordion from '@/components/FaqAccordion';
+import { DOWNLOAD_URL } from '@/lib/site-images';
 
 const SITE_ORIGIN = 'https://teenpattigoldgame.com.pk';
 
@@ -71,8 +72,6 @@ export const metadata: Metadata = {
 };
 
 const depositBreadcrumbLd = getBreadcrumbSchema([BREADCRUMB_HOME, BREADCRUMB_DEPOSIT]);
-
-const DOWNLOAD_URL = 'https://teenpattigold99.com?from_gameid=8442895&channelCode=100000';
 
 export default function DepositMoneyPage() {
   const tocItems = [

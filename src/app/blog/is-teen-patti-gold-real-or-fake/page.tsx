@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 import FaqAccordion from '@/components/FaqAccordion';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { DOWNLOAD_URL } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: {
@@ -303,7 +304,7 @@ export default function TeenPattiGoldRealOrFakePage() {
             {/* CTA Button */}
             <div className="mt-6 text-center">
               <a 
-                href="https://teenpattigold99.com?from_gameid=8442895&channelCode=100000"
+                href={DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"

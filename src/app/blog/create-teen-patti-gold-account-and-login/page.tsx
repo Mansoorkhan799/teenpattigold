@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { DOWNLOAD_URL } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: {
@@ -352,14 +353,14 @@ export default function CreateAccountLogin() {
                 <h2 className="text-3xl font-bold mb-4 text-white">Ready to Start Playing?</h2>
                 <p className="text-white text-lg mb-8 max-w-2xl mx-auto">Now that you know how to create an account and login to Teen Patti Gold, you're ready to start playing Teen Patti, Rummy, and other card games to earn real money. Download the app today!</p>
                 
-                <Link 
-                  href="https://teenpattigold99.com?from_gameid=8442895&channelCode=100000"
+                <a
+                  href={DOWNLOAD_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-accent font-bold py-4 px-8 rounded-full hover:bg-[#0A1029] transition-all shadow-2xl hover:shadow-3xl transform hover:scale-105"
                 >
                   DOWNLOAD NOW
-                </Link>
+                </a>
               </div>
             </div>
           </div>

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 import FaqAccordion from '@/components/FaqAccordion';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { DOWNLOAD_URL } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: {
@@ -294,12 +295,14 @@ export default function FreeChipsPage() {
                 Download Teen Patti Gold now and start claiming your daily login bonus, referral chips, and event rewards. New players also receive a generous welcome bonus on their first deposit.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/download-teen-patti-gold-apk"
+                <a
+                  href={DOWNLOAD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-accent text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/90 transition-all duration-300 shadow-xl"
                 >
                   Download Teen Patti Gold
-                </Link>
+                </a>
                 <Link
                   href="/blog/how-to-claim-welcome-bonus-teen-patti-gold"
                   className="inline-block border border-accent text-accent px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/10 transition-all duration-300"

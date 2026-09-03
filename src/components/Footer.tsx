@@ -1,9 +1,13 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { DOWNLOAD_URL } from '@/lib/site-images';
 
 export default function Footer() {
-  // Fixed directly in the JSX to avoid unused variable warnings
-  
+  const isDownloadPage = usePathname() === '/download-teen-patti-gold-apk';
+  const downloadHref = isDownloadPage ? '/' : DOWNLOAD_URL;
+
   return (
     <footer className="bg-primary text-white py-8 px-4 md:px-8 border-t border-gray-800 relative z-20 shrink-0 min-h-[420px] flex flex-col">
       <div className="container mx-auto">
@@ -134,9 +138,8 @@ export default function Footer() {
               Download Teen Patti Gold to enjoy the best card gaming experience and earn real cash rewards on your mobile device.
             </p>
             <a 
-              href={DOWNLOAD_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={downloadHref}
+              {...(!isDownloadPage ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
             >
               <span>DOWNLOAD NOW</span>

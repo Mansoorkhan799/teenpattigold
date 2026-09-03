@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 import FaqAccordion from '@/components/FaqAccordion';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { DOWNLOAD_URL } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: {
@@ -177,9 +178,9 @@ export default function ReferralCodePage() {
                 ))}
               </div>
               <div className="mt-6">
-                <Link href="/download-teen-patti-gold-apk" className="inline-block bg-accent text-primary px-6 py-3 rounded-full font-bold hover:bg-accent/90 transition-all">
+                <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-accent text-primary px-6 py-3 rounded-full font-bold hover:bg-accent/90 transition-all">
                   Download Teen Patti Gold →
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -282,12 +283,14 @@ export default function ReferralCodePage() {
                 Download Teen Patti Gold, find your referral code, and start sharing. Every friend you invite earns you free chips — no deposit required.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/download-teen-patti-gold-apk"
+                <a
+                  href={DOWNLOAD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-accent text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/90 transition-all duration-300 shadow-xl"
                 >
                   Download Teen Patti Gold
-                </Link>
+                </a>
                 <Link
                   href="/blog/teen-patti-gold-free-chips-2026"
                   className="inline-block border border-accent text-accent px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/10 transition-all duration-300"

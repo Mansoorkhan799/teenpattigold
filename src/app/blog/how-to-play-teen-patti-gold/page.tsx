@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getBlogPostingSchema, safeJsonLd } from '@/lib/blog-schema';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { DOWNLOAD_URL } from '@/lib/site-images';
 
 export const metadata: Metadata = {
   title: {
@@ -282,12 +283,14 @@ export default function HowToPlay() {
                 <p className="text-white text-lg mb-6">
                   Now that you know how to play Teen Patti, download the app and start playing to earn real money. Grab the APK from our <Link href="/download-teen-patti-gold-apk" className="underline font-semibold">official download page</Link> and create your account with the <Link href="/blog/create-teen-patti-gold-account-and-login" className="underline font-semibold">account setup guide</Link> if needed.
                 </p>
-                <Link 
-                  href="/download-teen-patti-gold-apk"
+                <a
+                  href={DOWNLOAD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-white text-[#FFA500] font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors"
                 >
                   Download Now
-                </Link>
+                </a>
               </div>
             </div>
           </div>
